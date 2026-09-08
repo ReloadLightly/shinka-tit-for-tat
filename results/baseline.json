@@ -1,0 +1,4453 @@
+{
+  "kind": "reference baseline and exhaustive 32-policy comparator; no LLM evolution",
+  "python": "3.12.13",
+  "llm_calls": 0,
+  "source_sha256": {
+    "baseline.py": "3f2df25a0a5aedc9c2c997e00b9b9fa891cd331ec25874aeb968879dc0cfb33d",
+    "environment.py": "20028098fba7b04a9cd1c2eee6f000f942b18574347ec00e53d7d079c120b408",
+    "evaluate.py": "8b1e3dcde26226953b9ec3d83cb3f9fdc74cff1c3d6ac030e507409065430410",
+    "initial.py": "f83fb4c8ffc3313079ff6fa09bef89da8b6ed67d8f604a414c3493d97ba9a32b",
+    "policy.py": "9c73317fe183288609117e4f837015deb2d70aa58e7301329291cab91662fe39",
+    "recognize.py": "20647c8362e0a2a53247a868dc420636d2387a02e6a9f94fcc461207c80d9d7d",
+    "run_evo.py": "c7442d7548d3dfba7d7677eecb27686fa47c4e8f79d3a263ef48d5b340328b96"
+  },
+  "train_horizons": [
+    174,
+    747,
+    126,
+    25,
+    110
+  ],
+  "holdout_horizons": [
+    241,
+    293,
+    199,
+    55,
+    62
+  ],
+  "baselines": {
+    "initial": {
+      "train": {
+        "total_payoff": 16532,
+        "opponent_total_payoff": 4732,
+        "turns": 7092,
+        "cooperations": 0,
+        "mean_payoff": 2.3310772701635645,
+        "cooperation_rate": 0.0,
+        "matches": 30,
+        "rows": [
+          {
+            "opponent": "always_cooperate",
+            "seed": 11,
+            "total_payoff": 870,
+            "opponent_total_payoff": 0,
+            "turns": 174,
+            "cooperations": 0,
+            "mean_payoff": 5.0,
+            "opponent_mean_payoff": 0.0
+          },
+          {
+            "opponent": "always_cooperate",
+            "seed": 23,
+            "total_payoff": 3735,
+            "opponent_total_payoff": 0,
+            "turns": 747,
+            "cooperations": 0,
+            "mean_payoff": 5.0,
+            "opponent_mean_payoff": 0.0
+          },
+          {
+            "opponent": "always_cooperate",
+            "seed": 47,
+            "total_payoff": 630,
+            "opponent_total_payoff": 0,
+            "turns": 126,
+            "cooperations": 0,
+            "mean_payoff": 5.0,
+            "opponent_mean_payoff": 0.0
+          },
+          {
+            "opponent": "always_cooperate",
+            "seed": 89,
+            "total_payoff": 125,
+            "opponent_total_payoff": 0,
+            "turns": 25,
+            "cooperations": 0,
+            "mean_payoff": 5.0,
+            "opponent_mean_payoff": 0.0
+          },
+          {
+            "opponent": "always_cooperate",
+            "seed": 131,
+            "total_payoff": 550,
+            "opponent_total_payoff": 0,
+            "turns": 110,
+            "cooperations": 0,
+            "mean_payoff": 5.0,
+            "opponent_mean_payoff": 0.0
+          },
+          {
+            "opponent": "always_defect",
+            "seed": 11,
+            "total_payoff": 174,
+            "opponent_total_payoff": 174,
+            "turns": 174,
+            "cooperations": 0,
+            "mean_payoff": 1.0,
+            "opponent_mean_payoff": 1.0
+          },
+          {
+            "opponent": "always_defect",
+            "seed": 23,
+            "total_payoff": 747,
+            "opponent_total_payoff": 747,
+            "turns": 747,
+            "cooperations": 0,
+            "mean_payoff": 1.0,
+            "opponent_mean_payoff": 1.0
+          },
+          {
+            "opponent": "always_defect",
+            "seed": 47,
+            "total_payoff": 126,
+            "opponent_total_payoff": 126,
+            "turns": 126,
+            "cooperations": 0,
+            "mean_payoff": 1.0,
+            "opponent_mean_payoff": 1.0
+          },
+          {
+            "opponent": "always_defect",
+            "seed": 89,
+            "total_payoff": 25,
+            "opponent_total_payoff": 25,
+            "turns": 25,
+            "cooperations": 0,
+            "mean_payoff": 1.0,
+            "opponent_mean_payoff": 1.0
+          },
+          {
+            "opponent": "always_defect",
+            "seed": 131,
+            "total_payoff": 110,
+            "opponent_total_payoff": 110,
+            "turns": 110,
+            "cooperations": 0,
+            "mean_payoff": 1.0,
+            "opponent_mean_payoff": 1.0
+          },
+          {
+            "opponent": "random",
+            "seed": 11,
+            "total_payoff": 526,
+            "opponent_total_payoff": 86,
+            "turns": 174,
+            "cooperations": 0,
+            "mean_payoff": 3.0229885057471266,
+            "opponent_mean_payoff": 0.4942528735632184
+          },
+          {
+            "opponent": "random",
+            "seed": 23,
+            "total_payoff": 2179,
+            "opponent_total_payoff": 389,
+            "turns": 747,
+            "cooperations": 0,
+            "mean_payoff": 2.9170013386880855,
+            "opponent_mean_payoff": 0.5207496653279786
+          },
+          {
+            "opponent": "random",
+            "seed": 47,
+            "total_payoff": 394,
+            "opponent_total_payoff": 59,
+            "turns": 126,
+            "cooperations": 0,
+            "mean_payoff": 3.126984126984127,
+            "opponent_mean_payoff": 0.46825396825396826
+          },
+          {
+            "opponent": "random",
+            "seed": 89,
+            "total_payoff": 89,
+            "opponent_total_payoff": 9,
+            "turns": 25,
+            "cooperations": 0,
+            "mean_payoff": 3.56,
+            "opponent_mean_payoff": 0.36
+          },
+          {
+            "opponent": "random",
+            "seed": 131,
+            "total_payoff": 298,
+            "opponent_total_payoff": 63,
+            "turns": 110,
+            "cooperations": 0,
+            "mean_payoff": 2.709090909090909,
+            "opponent_mean_payoff": 0.5727272727272728
+          },
+          {
+            "opponent": "tit_for_tat",
+            "seed": 11,
+            "total_payoff": 178,
+            "opponent_total_payoff": 173,
+            "turns": 174,
+            "cooperations": 0,
+            "mean_payoff": 1.0229885057471264,
+            "opponent_mean_payoff": 0.9942528735632183
+          },
+          {
+            "opponent": "tit_for_tat",
+            "seed": 23,
+            "total_payoff": 751,
+            "opponent_total_payoff": 746,
+            "turns": 747,
+            "cooperations": 0,
+            "mean_payoff": 1.0053547523427042,
+            "opponent_mean_payoff": 0.998661311914324
+          },
+          {
+            "opponent": "tit_for_tat",
+            "seed": 47,
+            "total_payoff": 130,
+            "opponent_total_payoff": 125,
+            "turns": 126,
+            "cooperations": 0,
+            "mean_payoff": 1.0317460317460319,
+            "opponent_mean_payoff": 0.9920634920634921
+          },
+          {
+            "opponent": "tit_for_tat",
+            "seed": 89,
+            "total_payoff": 29,
+            "opponent_total_payoff": 24,
+            "turns": 25,
+            "cooperations": 0,
+            "mean_payoff": 1.16,
+            "opponent_mean_payoff": 0.96
+          },
+          {
+            "opponent": "tit_for_tat",
+            "seed": 131,
+            "total_payoff": 114,
+            "opponent_total_payoff": 109,
+            "turns": 110,
+            "cooperations": 0,
+            "mean_payoff": 1.0363636363636364,
+            "opponent_mean_payoff": 0.990909090909091
+          },
+          {
+            "opponent": "grim",
+            "seed": 11,
+            "total_payoff": 178,
+            "opponent_total_payoff": 173,
+            "turns": 174,
+            "cooperations": 0,
+            "mean_payoff": 1.0229885057471264,
+            "opponent_mean_payoff": 0.9942528735632183
+          },
+          {
+            "opponent": "grim",
+            "seed": 23,
+            "total_payoff": 751,
+            "opponent_total_payoff": 746,
+            "turns": 747,
+            "cooperations": 0,
+            "mean_payoff": 1.0053547523427042,
+            "opponent_mean_payoff": 0.998661311914324
+          },
+          {
+            "opponent": "grim",
+            "seed": 47,
+            "total_payoff": 130,
+            "opponent_total_payoff": 125,
+            "turns": 126,
+            "cooperations": 0,
+            "mean_payoff": 1.0317460317460319,
+            "opponent_mean_payoff": 0.9920634920634921
+          },
+          {
+            "opponent": "grim",
+            "seed": 89,
+            "total_payoff": 29,
+            "opponent_total_payoff": 24,
+            "turns": 25,
+            "cooperations": 0,
+            "mean_payoff": 1.16,
+            "opponent_mean_payoff": 0.96
+          },
+          {
+            "opponent": "grim",
+            "seed": 131,
+            "total_payoff": 114,
+            "opponent_total_payoff": 109,
+            "turns": 110,
+            "cooperations": 0,
+            "mean_payoff": 1.0363636363636364,
+            "opponent_mean_payoff": 0.990909090909091
+          },
+          {
+            "opponent": "win_stay_lose_shift",
+            "seed": 11,
+            "total_payoff": 522,
+            "opponent_total_payoff": 87,
+            "turns": 174,
+            "cooperations": 0,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 0.5
+          },
+          {
+            "opponent": "win_stay_lose_shift",
+            "seed": 23,
+            "total_payoff": 2243,
+            "opponent_total_payoff": 373,
+            "turns": 747,
+            "cooperations": 0,
+            "mean_payoff": 3.002677376171352,
+            "opponent_mean_payoff": 0.499330655957162
+          },
+          {
+            "opponent": "win_stay_lose_shift",
+            "seed": 47,
+            "total_payoff": 378,
+            "opponent_total_payoff": 63,
+            "turns": 126,
+            "cooperations": 0,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 0.5
+          },
+          {
+            "opponent": "win_stay_lose_shift",
+            "seed": 89,
+            "total_payoff": 77,
+            "opponent_total_payoff": 12,
+            "turns": 25,
+            "cooperations": 0,
+            "mean_payoff": 3.08,
+            "opponent_mean_payoff": 0.48
+          },
+          {
+            "opponent": "win_stay_lose_shift",
+            "seed": 131,
+            "total_payoff": 330,
+            "opponent_total_payoff": 55,
+            "turns": 110,
+            "cooperations": 0,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 0.5
+          }
+        ]
+      },
+      "holdout": {
+        "total_payoff": 10208,
+        "opponent_total_payoff": 3823,
+        "turns": 5100,
+        "cooperations": 0,
+        "mean_payoff": 2.0015686274509803,
+        "cooperation_rate": 0.0,
+        "matches": 30,
+        "rows": [
+          {
+            "opponent": "alternator",
+            "seed": 211,
+            "total_payoff": 725,
+            "opponent_total_payoff": 120,
+            "turns": 241,
+            "cooperations": 0,
+            "mean_payoff": 3.008298755186722,
+            "opponent_mean_payoff": 0.4979253112033195
+          },
+          {
+            "opponent": "alternator",
+            "seed": 307,
+            "total_payoff": 881,
+            "opponent_total_payoff": 146,
+            "turns": 293,
+            "cooperations": 0,
+            "mean_payoff": 3.006825938566553,
+            "opponent_mean_payoff": 0.49829351535836175
+          },
+          {
+            "opponent": "alternator",
+            "seed": 401,
+            "total_payoff": 599,
+            "opponent_total_payoff": 99,
+            "turns": 199,
+            "cooperations": 0,
+            "mean_payoff": 3.0100502512562812,
+            "opponent_mean_payoff": 0.49748743718592964
+          },
+          {
+            "opponent": "alternator",
+            "seed": 503,
+            "total_payoff": 167,
+            "opponent_total_payoff": 27,
+            "turns": 55,
+            "cooperations": 0,
+            "mean_payoff": 3.036363636363636,
+            "opponent_mean_payoff": 0.4909090909090909
+          },
+          {
+            "opponent": "alternator",
+            "seed": 601,
+            "total_payoff": 186,
+            "opponent_total_payoff": 31,
+            "turns": 62,
+            "cooperations": 0,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 0.5
+          },
+          {
+            "opponent": "suspicious_tit_for_tat",
+            "seed": 211,
+            "total_payoff": 241,
+            "opponent_total_payoff": 241,
+            "turns": 241,
+            "cooperations": 0,
+            "mean_payoff": 1.0,
+            "opponent_mean_payoff": 1.0
+          },
+          {
+            "opponent": "suspicious_tit_for_tat",
+            "seed": 307,
+            "total_payoff": 293,
+            "opponent_total_payoff": 293,
+            "turns": 293,
+            "cooperations": 0,
+            "mean_payoff": 1.0,
+            "opponent_mean_payoff": 1.0
+          },
+          {
+            "opponent": "suspicious_tit_for_tat",
+            "seed": 401,
+            "total_payoff": 199,
+            "opponent_total_payoff": 199,
+            "turns": 199,
+            "cooperations": 0,
+            "mean_payoff": 1.0,
+            "opponent_mean_payoff": 1.0
+          },
+          {
+            "opponent": "suspicious_tit_for_tat",
+            "seed": 503,
+            "total_payoff": 55,
+            "opponent_total_payoff": 55,
+            "turns": 55,
+            "cooperations": 0,
+            "mean_payoff": 1.0,
+            "opponent_mean_payoff": 1.0
+          },
+          {
+            "opponent": "suspicious_tit_for_tat",
+            "seed": 601,
+            "total_payoff": 62,
+            "opponent_total_payoff": 62,
+            "turns": 62,
+            "cooperations": 0,
+            "mean_payoff": 1.0,
+            "opponent_mean_payoff": 1.0
+          },
+          {
+            "opponent": "tit_for_two_tats",
+            "seed": 211,
+            "total_payoff": 249,
+            "opponent_total_payoff": 239,
+            "turns": 241,
+            "cooperations": 0,
+            "mean_payoff": 1.033195020746888,
+            "opponent_mean_payoff": 0.991701244813278
+          },
+          {
+            "opponent": "tit_for_two_tats",
+            "seed": 307,
+            "total_payoff": 301,
+            "opponent_total_payoff": 291,
+            "turns": 293,
+            "cooperations": 0,
+            "mean_payoff": 1.0273037542662116,
+            "opponent_mean_payoff": 0.9931740614334471
+          },
+          {
+            "opponent": "tit_for_two_tats",
+            "seed": 401,
+            "total_payoff": 207,
+            "opponent_total_payoff": 197,
+            "turns": 199,
+            "cooperations": 0,
+            "mean_payoff": 1.0402010050251256,
+            "opponent_mean_payoff": 0.9899497487437185
+          },
+          {
+            "opponent": "tit_for_two_tats",
+            "seed": 503,
+            "total_payoff": 63,
+            "opponent_total_payoff": 53,
+            "turns": 55,
+            "cooperations": 0,
+            "mean_payoff": 1.1454545454545455,
+            "opponent_mean_payoff": 0.9636363636363636
+          },
+          {
+            "opponent": "tit_for_two_tats",
+            "seed": 601,
+            "total_payoff": 70,
+            "opponent_total_payoff": 60,
+            "turns": 62,
+            "cooperations": 0,
+            "mean_payoff": 1.1290322580645162,
+            "opponent_mean_payoff": 0.967741935483871
+          },
+          {
+            "opponent": "hard_tit_for_tat",
+            "seed": 211,
+            "total_payoff": 245,
+            "opponent_total_payoff": 240,
+            "turns": 241,
+            "cooperations": 0,
+            "mean_payoff": 1.016597510373444,
+            "opponent_mean_payoff": 0.995850622406639
+          },
+          {
+            "opponent": "hard_tit_for_tat",
+            "seed": 307,
+            "total_payoff": 297,
+            "opponent_total_payoff": 292,
+            "turns": 293,
+            "cooperations": 0,
+            "mean_payoff": 1.0136518771331058,
+            "opponent_mean_payoff": 0.9965870307167235
+          },
+          {
+            "opponent": "hard_tit_for_tat",
+            "seed": 401,
+            "total_payoff": 203,
+            "opponent_total_payoff": 198,
+            "turns": 199,
+            "cooperations": 0,
+            "mean_payoff": 1.020100502512563,
+            "opponent_mean_payoff": 0.9949748743718593
+          },
+          {
+            "opponent": "hard_tit_for_tat",
+            "seed": 503,
+            "total_payoff": 59,
+            "opponent_total_payoff": 54,
+            "turns": 55,
+            "cooperations": 0,
+            "mean_payoff": 1.0727272727272728,
+            "opponent_mean_payoff": 0.9818181818181818
+          },
+          {
+            "opponent": "hard_tit_for_tat",
+            "seed": 601,
+            "total_payoff": 66,
+            "opponent_total_payoff": 61,
+            "turns": 62,
+            "cooperations": 0,
+            "mean_payoff": 1.064516129032258,
+            "opponent_mean_payoff": 0.9838709677419355
+          },
+          {
+            "opponent": "random_20",
+            "seed": 211,
+            "total_payoff": 457,
+            "opponent_total_payoff": 187,
+            "turns": 241,
+            "cooperations": 0,
+            "mean_payoff": 1.896265560165975,
+            "opponent_mean_payoff": 0.7759336099585062
+          },
+          {
+            "opponent": "random_20",
+            "seed": 307,
+            "total_payoff": 545,
+            "opponent_total_payoff": 230,
+            "turns": 293,
+            "cooperations": 0,
+            "mean_payoff": 1.8600682593856654,
+            "opponent_mean_payoff": 0.7849829351535836
+          },
+          {
+            "opponent": "random_20",
+            "seed": 401,
+            "total_payoff": 327,
+            "opponent_total_payoff": 167,
+            "turns": 199,
+            "cooperations": 0,
+            "mean_payoff": 1.64321608040201,
+            "opponent_mean_payoff": 0.8391959798994975
+          },
+          {
+            "opponent": "random_20",
+            "seed": 503,
+            "total_payoff": 103,
+            "opponent_total_payoff": 43,
+            "turns": 55,
+            "cooperations": 0,
+            "mean_payoff": 1.8727272727272728,
+            "opponent_mean_payoff": 0.7818181818181819
+          },
+          {
+            "opponent": "random_20",
+            "seed": 601,
+            "total_payoff": 98,
+            "opponent_total_payoff": 53,
+            "turns": 62,
+            "cooperations": 0,
+            "mean_payoff": 1.5806451612903225,
+            "opponent_mean_payoff": 0.8548387096774194
+          },
+          {
+            "opponent": "random_80",
+            "seed": 211,
+            "total_payoff": 981,
+            "opponent_total_payoff": 56,
+            "turns": 241,
+            "cooperations": 0,
+            "mean_payoff": 4.070539419087137,
+            "opponent_mean_payoff": 0.23236514522821577
+          },
+          {
+            "opponent": "random_80",
+            "seed": 307,
+            "total_payoff": 1205,
+            "opponent_total_payoff": 65,
+            "turns": 293,
+            "cooperations": 0,
+            "mean_payoff": 4.112627986348123,
+            "opponent_mean_payoff": 0.22184300341296928
+          },
+          {
+            "opponent": "random_80",
+            "seed": 401,
+            "total_payoff": 843,
+            "opponent_total_payoff": 38,
+            "turns": 199,
+            "cooperations": 0,
+            "mean_payoff": 4.236180904522613,
+            "opponent_mean_payoff": 0.19095477386934673
+          },
+          {
+            "opponent": "random_80",
+            "seed": 503,
+            "total_payoff": 235,
+            "opponent_total_payoff": 10,
+            "turns": 55,
+            "cooperations": 0,
+            "mean_payoff": 4.2727272727272725,
+            "opponent_mean_payoff": 0.18181818181818182
+          },
+          {
+            "opponent": "random_80",
+            "seed": 601,
+            "total_payoff": 246,
+            "opponent_total_payoff": 16,
+            "turns": 62,
+            "cooperations": 0,
+            "mean_payoff": 3.967741935483871,
+            "opponent_mean_payoff": 0.25806451612903225
+          }
+        ]
+      },
+      "recognition": {
+        "matches_tft_probes": false,
+        "probe_count": 1640,
+        "first_mismatches": [
+          {
+            "length": 0,
+            "own_tail": [],
+            "other_tail": [],
+            "expected": 0,
+            "actual": 1
+          },
+          {
+            "length": 1,
+            "own_tail": [
+              0
+            ],
+            "other_tail": [
+              0
+            ],
+            "expected": 0,
+            "actual": 1
+          },
+          {
+            "length": 1,
+            "own_tail": [
+              1
+            ],
+            "other_tail": [
+              0
+            ],
+            "expected": 0,
+            "actual": 1
+          },
+          {
+            "length": 2,
+            "own_tail": [
+              0,
+              0
+            ],
+            "other_tail": [
+              0,
+              0
+            ],
+            "expected": 0,
+            "actual": 1
+          },
+          {
+            "length": 2,
+            "own_tail": [
+              0,
+              0
+            ],
+            "other_tail": [
+              1,
+              0
+            ],
+            "expected": 0,
+            "actual": 1
+          },
+          {
+            "length": 2,
+            "own_tail": [
+              0,
+              1
+            ],
+            "other_tail": [
+              0,
+              0
+            ],
+            "expected": 0,
+            "actual": 1
+          },
+          {
+            "length": 2,
+            "own_tail": [
+              0,
+              1
+            ],
+            "other_tail": [
+              1,
+              0
+            ],
+            "expected": 0,
+            "actual": 1
+          },
+          {
+            "length": 2,
+            "own_tail": [
+              1,
+              0
+            ],
+            "other_tail": [
+              0,
+              0
+            ],
+            "expected": 0,
+            "actual": 1
+          }
+        ],
+        "claim": "Agreement on finite probes is not proof of equivalence on every possible history."
+      }
+    },
+    "always_cooperate": {
+      "train": {
+        "total_payoff": 15912,
+        "opponent_total_payoff": 24852,
+        "turns": 7092,
+        "cooperations": 7092,
+        "mean_payoff": 2.2436548223350252,
+        "cooperation_rate": 1.0,
+        "matches": 30,
+        "rows": [
+          {
+            "opponent": "always_cooperate",
+            "seed": 11,
+            "total_payoff": 522,
+            "opponent_total_payoff": 522,
+            "turns": 174,
+            "cooperations": 174,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "always_cooperate",
+            "seed": 23,
+            "total_payoff": 2241,
+            "opponent_total_payoff": 2241,
+            "turns": 747,
+            "cooperations": 747,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "always_cooperate",
+            "seed": 47,
+            "total_payoff": 378,
+            "opponent_total_payoff": 378,
+            "turns": 126,
+            "cooperations": 126,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "always_cooperate",
+            "seed": 89,
+            "total_payoff": 75,
+            "opponent_total_payoff": 75,
+            "turns": 25,
+            "cooperations": 25,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "always_cooperate",
+            "seed": 131,
+            "total_payoff": 330,
+            "opponent_total_payoff": 330,
+            "turns": 110,
+            "cooperations": 110,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "always_defect",
+            "seed": 11,
+            "total_payoff": 0,
+            "opponent_total_payoff": 870,
+            "turns": 174,
+            "cooperations": 174,
+            "mean_payoff": 0.0,
+            "opponent_mean_payoff": 5.0
+          },
+          {
+            "opponent": "always_defect",
+            "seed": 23,
+            "total_payoff": 0,
+            "opponent_total_payoff": 3735,
+            "turns": 747,
+            "cooperations": 747,
+            "mean_payoff": 0.0,
+            "opponent_mean_payoff": 5.0
+          },
+          {
+            "opponent": "always_defect",
+            "seed": 47,
+            "total_payoff": 0,
+            "opponent_total_payoff": 630,
+            "turns": 126,
+            "cooperations": 126,
+            "mean_payoff": 0.0,
+            "opponent_mean_payoff": 5.0
+          },
+          {
+            "opponent": "always_defect",
+            "seed": 89,
+            "total_payoff": 0,
+            "opponent_total_payoff": 125,
+            "turns": 25,
+            "cooperations": 25,
+            "mean_payoff": 0.0,
+            "opponent_mean_payoff": 5.0
+          },
+          {
+            "opponent": "always_defect",
+            "seed": 131,
+            "total_payoff": 0,
+            "opponent_total_payoff": 550,
+            "turns": 110,
+            "cooperations": 110,
+            "mean_payoff": 0.0,
+            "opponent_mean_payoff": 5.0
+          },
+          {
+            "opponent": "random",
+            "seed": 11,
+            "total_payoff": 264,
+            "opponent_total_payoff": 694,
+            "turns": 174,
+            "cooperations": 174,
+            "mean_payoff": 1.5172413793103448,
+            "opponent_mean_payoff": 3.9885057471264367
+          },
+          {
+            "opponent": "random",
+            "seed": 23,
+            "total_payoff": 1074,
+            "opponent_total_payoff": 3019,
+            "turns": 747,
+            "cooperations": 747,
+            "mean_payoff": 1.4377510040160641,
+            "opponent_mean_payoff": 4.041499330655957
+          },
+          {
+            "opponent": "random",
+            "seed": 47,
+            "total_payoff": 201,
+            "opponent_total_payoff": 496,
+            "turns": 126,
+            "cooperations": 126,
+            "mean_payoff": 1.5952380952380953,
+            "opponent_mean_payoff": 3.9365079365079363
+          },
+          {
+            "opponent": "random",
+            "seed": 89,
+            "total_payoff": 48,
+            "opponent_total_payoff": 93,
+            "turns": 25,
+            "cooperations": 25,
+            "mean_payoff": 1.92,
+            "opponent_mean_payoff": 3.72
+          },
+          {
+            "opponent": "random",
+            "seed": 131,
+            "total_payoff": 141,
+            "opponent_total_payoff": 456,
+            "turns": 110,
+            "cooperations": 110,
+            "mean_payoff": 1.2818181818181817,
+            "opponent_mean_payoff": 4.1454545454545455
+          },
+          {
+            "opponent": "tit_for_tat",
+            "seed": 11,
+            "total_payoff": 522,
+            "opponent_total_payoff": 522,
+            "turns": 174,
+            "cooperations": 174,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "tit_for_tat",
+            "seed": 23,
+            "total_payoff": 2241,
+            "opponent_total_payoff": 2241,
+            "turns": 747,
+            "cooperations": 747,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "tit_for_tat",
+            "seed": 47,
+            "total_payoff": 378,
+            "opponent_total_payoff": 378,
+            "turns": 126,
+            "cooperations": 126,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "tit_for_tat",
+            "seed": 89,
+            "total_payoff": 75,
+            "opponent_total_payoff": 75,
+            "turns": 25,
+            "cooperations": 25,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "tit_for_tat",
+            "seed": 131,
+            "total_payoff": 330,
+            "opponent_total_payoff": 330,
+            "turns": 110,
+            "cooperations": 110,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "grim",
+            "seed": 11,
+            "total_payoff": 522,
+            "opponent_total_payoff": 522,
+            "turns": 174,
+            "cooperations": 174,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "grim",
+            "seed": 23,
+            "total_payoff": 2241,
+            "opponent_total_payoff": 2241,
+            "turns": 747,
+            "cooperations": 747,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "grim",
+            "seed": 47,
+            "total_payoff": 378,
+            "opponent_total_payoff": 378,
+            "turns": 126,
+            "cooperations": 126,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "grim",
+            "seed": 89,
+            "total_payoff": 75,
+            "opponent_total_payoff": 75,
+            "turns": 25,
+            "cooperations": 25,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "grim",
+            "seed": 131,
+            "total_payoff": 330,
+            "opponent_total_payoff": 330,
+            "turns": 110,
+            "cooperations": 110,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "win_stay_lose_shift",
+            "seed": 11,
+            "total_payoff": 522,
+            "opponent_total_payoff": 522,
+            "turns": 174,
+            "cooperations": 174,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "win_stay_lose_shift",
+            "seed": 23,
+            "total_payoff": 2241,
+            "opponent_total_payoff": 2241,
+            "turns": 747,
+            "cooperations": 747,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "win_stay_lose_shift",
+            "seed": 47,
+            "total_payoff": 378,
+            "opponent_total_payoff": 378,
+            "turns": 126,
+            "cooperations": 126,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "win_stay_lose_shift",
+            "seed": 89,
+            "total_payoff": 75,
+            "opponent_total_payoff": 75,
+            "turns": 25,
+            "cooperations": 25,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "win_stay_lose_shift",
+            "seed": 131,
+            "total_payoff": 330,
+            "opponent_total_payoff": 330,
+            "turns": 110,
+            "cooperations": 110,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          }
+        ]
+      },
+      "holdout": {
+        "total_payoff": 11421,
+        "opponent_total_payoff": 17886,
+        "turns": 5100,
+        "cooperations": 5100,
+        "mean_payoff": 2.239411764705882,
+        "cooperation_rate": 1.0,
+        "matches": 30,
+        "rows": [
+          {
+            "opponent": "alternator",
+            "seed": 211,
+            "total_payoff": 363,
+            "opponent_total_payoff": 963,
+            "turns": 241,
+            "cooperations": 241,
+            "mean_payoff": 1.5062240663900415,
+            "opponent_mean_payoff": 3.995850622406639
+          },
+          {
+            "opponent": "alternator",
+            "seed": 307,
+            "total_payoff": 441,
+            "opponent_total_payoff": 1171,
+            "turns": 293,
+            "cooperations": 293,
+            "mean_payoff": 1.5051194539249146,
+            "opponent_mean_payoff": 3.9965870307167237
+          },
+          {
+            "opponent": "alternator",
+            "seed": 401,
+            "total_payoff": 300,
+            "opponent_total_payoff": 795,
+            "turns": 199,
+            "cooperations": 199,
+            "mean_payoff": 1.5075376884422111,
+            "opponent_mean_payoff": 3.9949748743718594
+          },
+          {
+            "opponent": "alternator",
+            "seed": 503,
+            "total_payoff": 84,
+            "opponent_total_payoff": 219,
+            "turns": 55,
+            "cooperations": 55,
+            "mean_payoff": 1.5272727272727273,
+            "opponent_mean_payoff": 3.981818181818182
+          },
+          {
+            "opponent": "alternator",
+            "seed": 601,
+            "total_payoff": 93,
+            "opponent_total_payoff": 248,
+            "turns": 62,
+            "cooperations": 62,
+            "mean_payoff": 1.5,
+            "opponent_mean_payoff": 4.0
+          },
+          {
+            "opponent": "suspicious_tit_for_tat",
+            "seed": 211,
+            "total_payoff": 720,
+            "opponent_total_payoff": 725,
+            "turns": 241,
+            "cooperations": 241,
+            "mean_payoff": 2.987551867219917,
+            "opponent_mean_payoff": 3.008298755186722
+          },
+          {
+            "opponent": "suspicious_tit_for_tat",
+            "seed": 307,
+            "total_payoff": 876,
+            "opponent_total_payoff": 881,
+            "turns": 293,
+            "cooperations": 293,
+            "mean_payoff": 2.9897610921501707,
+            "opponent_mean_payoff": 3.006825938566553
+          },
+          {
+            "opponent": "suspicious_tit_for_tat",
+            "seed": 401,
+            "total_payoff": 594,
+            "opponent_total_payoff": 599,
+            "turns": 199,
+            "cooperations": 199,
+            "mean_payoff": 2.9849246231155777,
+            "opponent_mean_payoff": 3.0100502512562812
+          },
+          {
+            "opponent": "suspicious_tit_for_tat",
+            "seed": 503,
+            "total_payoff": 162,
+            "opponent_total_payoff": 167,
+            "turns": 55,
+            "cooperations": 55,
+            "mean_payoff": 2.9454545454545453,
+            "opponent_mean_payoff": 3.036363636363636
+          },
+          {
+            "opponent": "suspicious_tit_for_tat",
+            "seed": 601,
+            "total_payoff": 183,
+            "opponent_total_payoff": 188,
+            "turns": 62,
+            "cooperations": 62,
+            "mean_payoff": 2.9516129032258065,
+            "opponent_mean_payoff": 3.032258064516129
+          },
+          {
+            "opponent": "tit_for_two_tats",
+            "seed": 211,
+            "total_payoff": 723,
+            "opponent_total_payoff": 723,
+            "turns": 241,
+            "cooperations": 241,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "tit_for_two_tats",
+            "seed": 307,
+            "total_payoff": 879,
+            "opponent_total_payoff": 879,
+            "turns": 293,
+            "cooperations": 293,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "tit_for_two_tats",
+            "seed": 401,
+            "total_payoff": 597,
+            "opponent_total_payoff": 597,
+            "turns": 199,
+            "cooperations": 199,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "tit_for_two_tats",
+            "seed": 503,
+            "total_payoff": 165,
+            "opponent_total_payoff": 165,
+            "turns": 55,
+            "cooperations": 55,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "tit_for_two_tats",
+            "seed": 601,
+            "total_payoff": 186,
+            "opponent_total_payoff": 186,
+            "turns": 62,
+            "cooperations": 62,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "hard_tit_for_tat",
+            "seed": 211,
+            "total_payoff": 723,
+            "opponent_total_payoff": 723,
+            "turns": 241,
+            "cooperations": 241,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "hard_tit_for_tat",
+            "seed": 307,
+            "total_payoff": 879,
+            "opponent_total_payoff": 879,
+            "turns": 293,
+            "cooperations": 293,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "hard_tit_for_tat",
+            "seed": 401,
+            "total_payoff": 597,
+            "opponent_total_payoff": 597,
+            "turns": 199,
+            "cooperations": 199,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "hard_tit_for_tat",
+            "seed": 503,
+            "total_payoff": 165,
+            "opponent_total_payoff": 165,
+            "turns": 55,
+            "cooperations": 55,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "hard_tit_for_tat",
+            "seed": 601,
+            "total_payoff": 186,
+            "opponent_total_payoff": 186,
+            "turns": 62,
+            "cooperations": 62,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "random_20",
+            "seed": 211,
+            "total_payoff": 162,
+            "opponent_total_payoff": 1097,
+            "turns": 241,
+            "cooperations": 241,
+            "mean_payoff": 0.6721991701244814,
+            "opponent_mean_payoff": 4.551867219917012
+          },
+          {
+            "opponent": "random_20",
+            "seed": 307,
+            "total_payoff": 189,
+            "opponent_total_payoff": 1339,
+            "turns": 293,
+            "cooperations": 293,
+            "mean_payoff": 0.6450511945392492,
+            "opponent_mean_payoff": 4.5699658703071675
+          },
+          {
+            "opponent": "random_20",
+            "seed": 401,
+            "total_payoff": 96,
+            "opponent_total_payoff": 931,
+            "turns": 199,
+            "cooperations": 199,
+            "mean_payoff": 0.4824120603015075,
+            "opponent_mean_payoff": 4.678391959798995
+          },
+          {
+            "opponent": "random_20",
+            "seed": 503,
+            "total_payoff": 36,
+            "opponent_total_payoff": 251,
+            "turns": 55,
+            "cooperations": 55,
+            "mean_payoff": 0.6545454545454545,
+            "opponent_mean_payoff": 4.5636363636363635
+          },
+          {
+            "opponent": "random_20",
+            "seed": 601,
+            "total_payoff": 27,
+            "opponent_total_payoff": 292,
+            "turns": 62,
+            "cooperations": 62,
+            "mean_payoff": 0.43548387096774194,
+            "opponent_mean_payoff": 4.709677419354839
+          },
+          {
+            "opponent": "random_80",
+            "seed": 211,
+            "total_payoff": 555,
+            "opponent_total_payoff": 835,
+            "turns": 241,
+            "cooperations": 241,
+            "mean_payoff": 2.3029045643153525,
+            "opponent_mean_payoff": 3.4647302904564317
+          },
+          {
+            "opponent": "random_80",
+            "seed": 307,
+            "total_payoff": 684,
+            "opponent_total_payoff": 1009,
+            "turns": 293,
+            "cooperations": 293,
+            "mean_payoff": 2.3344709897610922,
+            "opponent_mean_payoff": 3.4436860068259385
+          },
+          {
+            "opponent": "random_80",
+            "seed": 401,
+            "total_payoff": 483,
+            "opponent_total_payoff": 673,
+            "turns": 199,
+            "cooperations": 199,
+            "mean_payoff": 2.4271356783919598,
+            "opponent_mean_payoff": 3.3819095477386933
+          },
+          {
+            "opponent": "random_80",
+            "seed": 503,
+            "total_payoff": 135,
+            "opponent_total_payoff": 185,
+            "turns": 55,
+            "cooperations": 55,
+            "mean_payoff": 2.4545454545454546,
+            "opponent_mean_payoff": 3.3636363636363638
+          },
+          {
+            "opponent": "random_80",
+            "seed": 601,
+            "total_payoff": 138,
+            "opponent_total_payoff": 218,
+            "turns": 62,
+            "cooperations": 62,
+            "mean_payoff": 2.225806451612903,
+            "opponent_mean_payoff": 3.5161290322580645
+          }
+        ]
+      },
+      "recognition": {
+        "matches_tft_probes": false,
+        "probe_count": 1640,
+        "first_mismatches": [
+          {
+            "length": 1,
+            "own_tail": [
+              0
+            ],
+            "other_tail": [
+              1
+            ],
+            "expected": 1,
+            "actual": 0
+          },
+          {
+            "length": 1,
+            "own_tail": [
+              1
+            ],
+            "other_tail": [
+              1
+            ],
+            "expected": 1,
+            "actual": 0
+          },
+          {
+            "length": 2,
+            "own_tail": [
+              0,
+              0
+            ],
+            "other_tail": [
+              0,
+              1
+            ],
+            "expected": 1,
+            "actual": 0
+          },
+          {
+            "length": 2,
+            "own_tail": [
+              0,
+              0
+            ],
+            "other_tail": [
+              1,
+              1
+            ],
+            "expected": 1,
+            "actual": 0
+          },
+          {
+            "length": 2,
+            "own_tail": [
+              0,
+              1
+            ],
+            "other_tail": [
+              0,
+              1
+            ],
+            "expected": 1,
+            "actual": 0
+          },
+          {
+            "length": 2,
+            "own_tail": [
+              0,
+              1
+            ],
+            "other_tail": [
+              1,
+              1
+            ],
+            "expected": 1,
+            "actual": 0
+          },
+          {
+            "length": 2,
+            "own_tail": [
+              1,
+              0
+            ],
+            "other_tail": [
+              0,
+              1
+            ],
+            "expected": 1,
+            "actual": 0
+          },
+          {
+            "length": 2,
+            "own_tail": [
+              1,
+              0
+            ],
+            "other_tail": [
+              1,
+              1
+            ],
+            "expected": 1,
+            "actual": 0
+          }
+        ],
+        "claim": "Agreement on finite probes is not proof of equivalence on every possible history."
+      }
+    },
+    "always_defect": {
+      "train": {
+        "total_payoff": 16532,
+        "opponent_total_payoff": 4732,
+        "turns": 7092,
+        "cooperations": 0,
+        "mean_payoff": 2.3310772701635645,
+        "cooperation_rate": 0.0,
+        "matches": 30,
+        "rows": [
+          {
+            "opponent": "always_cooperate",
+            "seed": 11,
+            "total_payoff": 870,
+            "opponent_total_payoff": 0,
+            "turns": 174,
+            "cooperations": 0,
+            "mean_payoff": 5.0,
+            "opponent_mean_payoff": 0.0
+          },
+          {
+            "opponent": "always_cooperate",
+            "seed": 23,
+            "total_payoff": 3735,
+            "opponent_total_payoff": 0,
+            "turns": 747,
+            "cooperations": 0,
+            "mean_payoff": 5.0,
+            "opponent_mean_payoff": 0.0
+          },
+          {
+            "opponent": "always_cooperate",
+            "seed": 47,
+            "total_payoff": 630,
+            "opponent_total_payoff": 0,
+            "turns": 126,
+            "cooperations": 0,
+            "mean_payoff": 5.0,
+            "opponent_mean_payoff": 0.0
+          },
+          {
+            "opponent": "always_cooperate",
+            "seed": 89,
+            "total_payoff": 125,
+            "opponent_total_payoff": 0,
+            "turns": 25,
+            "cooperations": 0,
+            "mean_payoff": 5.0,
+            "opponent_mean_payoff": 0.0
+          },
+          {
+            "opponent": "always_cooperate",
+            "seed": 131,
+            "total_payoff": 550,
+            "opponent_total_payoff": 0,
+            "turns": 110,
+            "cooperations": 0,
+            "mean_payoff": 5.0,
+            "opponent_mean_payoff": 0.0
+          },
+          {
+            "opponent": "always_defect",
+            "seed": 11,
+            "total_payoff": 174,
+            "opponent_total_payoff": 174,
+            "turns": 174,
+            "cooperations": 0,
+            "mean_payoff": 1.0,
+            "opponent_mean_payoff": 1.0
+          },
+          {
+            "opponent": "always_defect",
+            "seed": 23,
+            "total_payoff": 747,
+            "opponent_total_payoff": 747,
+            "turns": 747,
+            "cooperations": 0,
+            "mean_payoff": 1.0,
+            "opponent_mean_payoff": 1.0
+          },
+          {
+            "opponent": "always_defect",
+            "seed": 47,
+            "total_payoff": 126,
+            "opponent_total_payoff": 126,
+            "turns": 126,
+            "cooperations": 0,
+            "mean_payoff": 1.0,
+            "opponent_mean_payoff": 1.0
+          },
+          {
+            "opponent": "always_defect",
+            "seed": 89,
+            "total_payoff": 25,
+            "opponent_total_payoff": 25,
+            "turns": 25,
+            "cooperations": 0,
+            "mean_payoff": 1.0,
+            "opponent_mean_payoff": 1.0
+          },
+          {
+            "opponent": "always_defect",
+            "seed": 131,
+            "total_payoff": 110,
+            "opponent_total_payoff": 110,
+            "turns": 110,
+            "cooperations": 0,
+            "mean_payoff": 1.0,
+            "opponent_mean_payoff": 1.0
+          },
+          {
+            "opponent": "random",
+            "seed": 11,
+            "total_payoff": 526,
+            "opponent_total_payoff": 86,
+            "turns": 174,
+            "cooperations": 0,
+            "mean_payoff": 3.0229885057471266,
+            "opponent_mean_payoff": 0.4942528735632184
+          },
+          {
+            "opponent": "random",
+            "seed": 23,
+            "total_payoff": 2179,
+            "opponent_total_payoff": 389,
+            "turns": 747,
+            "cooperations": 0,
+            "mean_payoff": 2.9170013386880855,
+            "opponent_mean_payoff": 0.5207496653279786
+          },
+          {
+            "opponent": "random",
+            "seed": 47,
+            "total_payoff": 394,
+            "opponent_total_payoff": 59,
+            "turns": 126,
+            "cooperations": 0,
+            "mean_payoff": 3.126984126984127,
+            "opponent_mean_payoff": 0.46825396825396826
+          },
+          {
+            "opponent": "random",
+            "seed": 89,
+            "total_payoff": 89,
+            "opponent_total_payoff": 9,
+            "turns": 25,
+            "cooperations": 0,
+            "mean_payoff": 3.56,
+            "opponent_mean_payoff": 0.36
+          },
+          {
+            "opponent": "random",
+            "seed": 131,
+            "total_payoff": 298,
+            "opponent_total_payoff": 63,
+            "turns": 110,
+            "cooperations": 0,
+            "mean_payoff": 2.709090909090909,
+            "opponent_mean_payoff": 0.5727272727272728
+          },
+          {
+            "opponent": "tit_for_tat",
+            "seed": 11,
+            "total_payoff": 178,
+            "opponent_total_payoff": 173,
+            "turns": 174,
+            "cooperations": 0,
+            "mean_payoff": 1.0229885057471264,
+            "opponent_mean_payoff": 0.9942528735632183
+          },
+          {
+            "opponent": "tit_for_tat",
+            "seed": 23,
+            "total_payoff": 751,
+            "opponent_total_payoff": 746,
+            "turns": 747,
+            "cooperations": 0,
+            "mean_payoff": 1.0053547523427042,
+            "opponent_mean_payoff": 0.998661311914324
+          },
+          {
+            "opponent": "tit_for_tat",
+            "seed": 47,
+            "total_payoff": 130,
+            "opponent_total_payoff": 125,
+            "turns": 126,
+            "cooperations": 0,
+            "mean_payoff": 1.0317460317460319,
+            "opponent_mean_payoff": 0.9920634920634921
+          },
+          {
+            "opponent": "tit_for_tat",
+            "seed": 89,
+            "total_payoff": 29,
+            "opponent_total_payoff": 24,
+            "turns": 25,
+            "cooperations": 0,
+            "mean_payoff": 1.16,
+            "opponent_mean_payoff": 0.96
+          },
+          {
+            "opponent": "tit_for_tat",
+            "seed": 131,
+            "total_payoff": 114,
+            "opponent_total_payoff": 109,
+            "turns": 110,
+            "cooperations": 0,
+            "mean_payoff": 1.0363636363636364,
+            "opponent_mean_payoff": 0.990909090909091
+          },
+          {
+            "opponent": "grim",
+            "seed": 11,
+            "total_payoff": 178,
+            "opponent_total_payoff": 173,
+            "turns": 174,
+            "cooperations": 0,
+            "mean_payoff": 1.0229885057471264,
+            "opponent_mean_payoff": 0.9942528735632183
+          },
+          {
+            "opponent": "grim",
+            "seed": 23,
+            "total_payoff": 751,
+            "opponent_total_payoff": 746,
+            "turns": 747,
+            "cooperations": 0,
+            "mean_payoff": 1.0053547523427042,
+            "opponent_mean_payoff": 0.998661311914324
+          },
+          {
+            "opponent": "grim",
+            "seed": 47,
+            "total_payoff": 130,
+            "opponent_total_payoff": 125,
+            "turns": 126,
+            "cooperations": 0,
+            "mean_payoff": 1.0317460317460319,
+            "opponent_mean_payoff": 0.9920634920634921
+          },
+          {
+            "opponent": "grim",
+            "seed": 89,
+            "total_payoff": 29,
+            "opponent_total_payoff": 24,
+            "turns": 25,
+            "cooperations": 0,
+            "mean_payoff": 1.16,
+            "opponent_mean_payoff": 0.96
+          },
+          {
+            "opponent": "grim",
+            "seed": 131,
+            "total_payoff": 114,
+            "opponent_total_payoff": 109,
+            "turns": 110,
+            "cooperations": 0,
+            "mean_payoff": 1.0363636363636364,
+            "opponent_mean_payoff": 0.990909090909091
+          },
+          {
+            "opponent": "win_stay_lose_shift",
+            "seed": 11,
+            "total_payoff": 522,
+            "opponent_total_payoff": 87,
+            "turns": 174,
+            "cooperations": 0,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 0.5
+          },
+          {
+            "opponent": "win_stay_lose_shift",
+            "seed": 23,
+            "total_payoff": 2243,
+            "opponent_total_payoff": 373,
+            "turns": 747,
+            "cooperations": 0,
+            "mean_payoff": 3.002677376171352,
+            "opponent_mean_payoff": 0.499330655957162
+          },
+          {
+            "opponent": "win_stay_lose_shift",
+            "seed": 47,
+            "total_payoff": 378,
+            "opponent_total_payoff": 63,
+            "turns": 126,
+            "cooperations": 0,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 0.5
+          },
+          {
+            "opponent": "win_stay_lose_shift",
+            "seed": 89,
+            "total_payoff": 77,
+            "opponent_total_payoff": 12,
+            "turns": 25,
+            "cooperations": 0,
+            "mean_payoff": 3.08,
+            "opponent_mean_payoff": 0.48
+          },
+          {
+            "opponent": "win_stay_lose_shift",
+            "seed": 131,
+            "total_payoff": 330,
+            "opponent_total_payoff": 55,
+            "turns": 110,
+            "cooperations": 0,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 0.5
+          }
+        ]
+      },
+      "holdout": {
+        "total_payoff": 10208,
+        "opponent_total_payoff": 3823,
+        "turns": 5100,
+        "cooperations": 0,
+        "mean_payoff": 2.0015686274509803,
+        "cooperation_rate": 0.0,
+        "matches": 30,
+        "rows": [
+          {
+            "opponent": "alternator",
+            "seed": 211,
+            "total_payoff": 725,
+            "opponent_total_payoff": 120,
+            "turns": 241,
+            "cooperations": 0,
+            "mean_payoff": 3.008298755186722,
+            "opponent_mean_payoff": 0.4979253112033195
+          },
+          {
+            "opponent": "alternator",
+            "seed": 307,
+            "total_payoff": 881,
+            "opponent_total_payoff": 146,
+            "turns": 293,
+            "cooperations": 0,
+            "mean_payoff": 3.006825938566553,
+            "opponent_mean_payoff": 0.49829351535836175
+          },
+          {
+            "opponent": "alternator",
+            "seed": 401,
+            "total_payoff": 599,
+            "opponent_total_payoff": 99,
+            "turns": 199,
+            "cooperations": 0,
+            "mean_payoff": 3.0100502512562812,
+            "opponent_mean_payoff": 0.49748743718592964
+          },
+          {
+            "opponent": "alternator",
+            "seed": 503,
+            "total_payoff": 167,
+            "opponent_total_payoff": 27,
+            "turns": 55,
+            "cooperations": 0,
+            "mean_payoff": 3.036363636363636,
+            "opponent_mean_payoff": 0.4909090909090909
+          },
+          {
+            "opponent": "alternator",
+            "seed": 601,
+            "total_payoff": 186,
+            "opponent_total_payoff": 31,
+            "turns": 62,
+            "cooperations": 0,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 0.5
+          },
+          {
+            "opponent": "suspicious_tit_for_tat",
+            "seed": 211,
+            "total_payoff": 241,
+            "opponent_total_payoff": 241,
+            "turns": 241,
+            "cooperations": 0,
+            "mean_payoff": 1.0,
+            "opponent_mean_payoff": 1.0
+          },
+          {
+            "opponent": "suspicious_tit_for_tat",
+            "seed": 307,
+            "total_payoff": 293,
+            "opponent_total_payoff": 293,
+            "turns": 293,
+            "cooperations": 0,
+            "mean_payoff": 1.0,
+            "opponent_mean_payoff": 1.0
+          },
+          {
+            "opponent": "suspicious_tit_for_tat",
+            "seed": 401,
+            "total_payoff": 199,
+            "opponent_total_payoff": 199,
+            "turns": 199,
+            "cooperations": 0,
+            "mean_payoff": 1.0,
+            "opponent_mean_payoff": 1.0
+          },
+          {
+            "opponent": "suspicious_tit_for_tat",
+            "seed": 503,
+            "total_payoff": 55,
+            "opponent_total_payoff": 55,
+            "turns": 55,
+            "cooperations": 0,
+            "mean_payoff": 1.0,
+            "opponent_mean_payoff": 1.0
+          },
+          {
+            "opponent": "suspicious_tit_for_tat",
+            "seed": 601,
+            "total_payoff": 62,
+            "opponent_total_payoff": 62,
+            "turns": 62,
+            "cooperations": 0,
+            "mean_payoff": 1.0,
+            "opponent_mean_payoff": 1.0
+          },
+          {
+            "opponent": "tit_for_two_tats",
+            "seed": 211,
+            "total_payoff": 249,
+            "opponent_total_payoff": 239,
+            "turns": 241,
+            "cooperations": 0,
+            "mean_payoff": 1.033195020746888,
+            "opponent_mean_payoff": 0.991701244813278
+          },
+          {
+            "opponent": "tit_for_two_tats",
+            "seed": 307,
+            "total_payoff": 301,
+            "opponent_total_payoff": 291,
+            "turns": 293,
+            "cooperations": 0,
+            "mean_payoff": 1.0273037542662116,
+            "opponent_mean_payoff": 0.9931740614334471
+          },
+          {
+            "opponent": "tit_for_two_tats",
+            "seed": 401,
+            "total_payoff": 207,
+            "opponent_total_payoff": 197,
+            "turns": 199,
+            "cooperations": 0,
+            "mean_payoff": 1.0402010050251256,
+            "opponent_mean_payoff": 0.9899497487437185
+          },
+          {
+            "opponent": "tit_for_two_tats",
+            "seed": 503,
+            "total_payoff": 63,
+            "opponent_total_payoff": 53,
+            "turns": 55,
+            "cooperations": 0,
+            "mean_payoff": 1.1454545454545455,
+            "opponent_mean_payoff": 0.9636363636363636
+          },
+          {
+            "opponent": "tit_for_two_tats",
+            "seed": 601,
+            "total_payoff": 70,
+            "opponent_total_payoff": 60,
+            "turns": 62,
+            "cooperations": 0,
+            "mean_payoff": 1.1290322580645162,
+            "opponent_mean_payoff": 0.967741935483871
+          },
+          {
+            "opponent": "hard_tit_for_tat",
+            "seed": 211,
+            "total_payoff": 245,
+            "opponent_total_payoff": 240,
+            "turns": 241,
+            "cooperations": 0,
+            "mean_payoff": 1.016597510373444,
+            "opponent_mean_payoff": 0.995850622406639
+          },
+          {
+            "opponent": "hard_tit_for_tat",
+            "seed": 307,
+            "total_payoff": 297,
+            "opponent_total_payoff": 292,
+            "turns": 293,
+            "cooperations": 0,
+            "mean_payoff": 1.0136518771331058,
+            "opponent_mean_payoff": 0.9965870307167235
+          },
+          {
+            "opponent": "hard_tit_for_tat",
+            "seed": 401,
+            "total_payoff": 203,
+            "opponent_total_payoff": 198,
+            "turns": 199,
+            "cooperations": 0,
+            "mean_payoff": 1.020100502512563,
+            "opponent_mean_payoff": 0.9949748743718593
+          },
+          {
+            "opponent": "hard_tit_for_tat",
+            "seed": 503,
+            "total_payoff": 59,
+            "opponent_total_payoff": 54,
+            "turns": 55,
+            "cooperations": 0,
+            "mean_payoff": 1.0727272727272728,
+            "opponent_mean_payoff": 0.9818181818181818
+          },
+          {
+            "opponent": "hard_tit_for_tat",
+            "seed": 601,
+            "total_payoff": 66,
+            "opponent_total_payoff": 61,
+            "turns": 62,
+            "cooperations": 0,
+            "mean_payoff": 1.064516129032258,
+            "opponent_mean_payoff": 0.9838709677419355
+          },
+          {
+            "opponent": "random_20",
+            "seed": 211,
+            "total_payoff": 457,
+            "opponent_total_payoff": 187,
+            "turns": 241,
+            "cooperations": 0,
+            "mean_payoff": 1.896265560165975,
+            "opponent_mean_payoff": 0.7759336099585062
+          },
+          {
+            "opponent": "random_20",
+            "seed": 307,
+            "total_payoff": 545,
+            "opponent_total_payoff": 230,
+            "turns": 293,
+            "cooperations": 0,
+            "mean_payoff": 1.8600682593856654,
+            "opponent_mean_payoff": 0.7849829351535836
+          },
+          {
+            "opponent": "random_20",
+            "seed": 401,
+            "total_payoff": 327,
+            "opponent_total_payoff": 167,
+            "turns": 199,
+            "cooperations": 0,
+            "mean_payoff": 1.64321608040201,
+            "opponent_mean_payoff": 0.8391959798994975
+          },
+          {
+            "opponent": "random_20",
+            "seed": 503,
+            "total_payoff": 103,
+            "opponent_total_payoff": 43,
+            "turns": 55,
+            "cooperations": 0,
+            "mean_payoff": 1.8727272727272728,
+            "opponent_mean_payoff": 0.7818181818181819
+          },
+          {
+            "opponent": "random_20",
+            "seed": 601,
+            "total_payoff": 98,
+            "opponent_total_payoff": 53,
+            "turns": 62,
+            "cooperations": 0,
+            "mean_payoff": 1.5806451612903225,
+            "opponent_mean_payoff": 0.8548387096774194
+          },
+          {
+            "opponent": "random_80",
+            "seed": 211,
+            "total_payoff": 981,
+            "opponent_total_payoff": 56,
+            "turns": 241,
+            "cooperations": 0,
+            "mean_payoff": 4.070539419087137,
+            "opponent_mean_payoff": 0.23236514522821577
+          },
+          {
+            "opponent": "random_80",
+            "seed": 307,
+            "total_payoff": 1205,
+            "opponent_total_payoff": 65,
+            "turns": 293,
+            "cooperations": 0,
+            "mean_payoff": 4.112627986348123,
+            "opponent_mean_payoff": 0.22184300341296928
+          },
+          {
+            "opponent": "random_80",
+            "seed": 401,
+            "total_payoff": 843,
+            "opponent_total_payoff": 38,
+            "turns": 199,
+            "cooperations": 0,
+            "mean_payoff": 4.236180904522613,
+            "opponent_mean_payoff": 0.19095477386934673
+          },
+          {
+            "opponent": "random_80",
+            "seed": 503,
+            "total_payoff": 235,
+            "opponent_total_payoff": 10,
+            "turns": 55,
+            "cooperations": 0,
+            "mean_payoff": 4.2727272727272725,
+            "opponent_mean_payoff": 0.18181818181818182
+          },
+          {
+            "opponent": "random_80",
+            "seed": 601,
+            "total_payoff": 246,
+            "opponent_total_payoff": 16,
+            "turns": 62,
+            "cooperations": 0,
+            "mean_payoff": 3.967741935483871,
+            "opponent_mean_payoff": 0.25806451612903225
+          }
+        ]
+      },
+      "recognition": {
+        "matches_tft_probes": false,
+        "probe_count": 1640,
+        "first_mismatches": [
+          {
+            "length": 0,
+            "own_tail": [],
+            "other_tail": [],
+            "expected": 0,
+            "actual": 1
+          },
+          {
+            "length": 1,
+            "own_tail": [
+              0
+            ],
+            "other_tail": [
+              0
+            ],
+            "expected": 0,
+            "actual": 1
+          },
+          {
+            "length": 1,
+            "own_tail": [
+              1
+            ],
+            "other_tail": [
+              0
+            ],
+            "expected": 0,
+            "actual": 1
+          },
+          {
+            "length": 2,
+            "own_tail": [
+              0,
+              0
+            ],
+            "other_tail": [
+              0,
+              0
+            ],
+            "expected": 0,
+            "actual": 1
+          },
+          {
+            "length": 2,
+            "own_tail": [
+              0,
+              0
+            ],
+            "other_tail": [
+              1,
+              0
+            ],
+            "expected": 0,
+            "actual": 1
+          },
+          {
+            "length": 2,
+            "own_tail": [
+              0,
+              1
+            ],
+            "other_tail": [
+              0,
+              0
+            ],
+            "expected": 0,
+            "actual": 1
+          },
+          {
+            "length": 2,
+            "own_tail": [
+              0,
+              1
+            ],
+            "other_tail": [
+              1,
+              0
+            ],
+            "expected": 0,
+            "actual": 1
+          },
+          {
+            "length": 2,
+            "own_tail": [
+              1,
+              0
+            ],
+            "other_tail": [
+              0,
+              0
+            ],
+            "expected": 0,
+            "actual": 1
+          }
+        ],
+        "claim": "Agreement on finite probes is not proof of equivalence on every possible history."
+      }
+    },
+    "tit_for_tat": {
+      "train": {
+        "total_payoff": 17987,
+        "opponent_total_payoff": 18022,
+        "turns": 7092,
+        "cooperations": 5311,
+        "mean_payoff": 2.5362380146644106,
+        "cooperation_rate": 0.7488719684151156,
+        "matches": 30,
+        "rows": [
+          {
+            "opponent": "always_cooperate",
+            "seed": 11,
+            "total_payoff": 522,
+            "opponent_total_payoff": 522,
+            "turns": 174,
+            "cooperations": 174,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "always_cooperate",
+            "seed": 23,
+            "total_payoff": 2241,
+            "opponent_total_payoff": 2241,
+            "turns": 747,
+            "cooperations": 747,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "always_cooperate",
+            "seed": 47,
+            "total_payoff": 378,
+            "opponent_total_payoff": 378,
+            "turns": 126,
+            "cooperations": 126,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "always_cooperate",
+            "seed": 89,
+            "total_payoff": 75,
+            "opponent_total_payoff": 75,
+            "turns": 25,
+            "cooperations": 25,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "always_cooperate",
+            "seed": 131,
+            "total_payoff": 330,
+            "opponent_total_payoff": 330,
+            "turns": 110,
+            "cooperations": 110,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "always_defect",
+            "seed": 11,
+            "total_payoff": 173,
+            "opponent_total_payoff": 178,
+            "turns": 174,
+            "cooperations": 1,
+            "mean_payoff": 0.9942528735632183,
+            "opponent_mean_payoff": 1.0229885057471264
+          },
+          {
+            "opponent": "always_defect",
+            "seed": 23,
+            "total_payoff": 746,
+            "opponent_total_payoff": 751,
+            "turns": 747,
+            "cooperations": 1,
+            "mean_payoff": 0.998661311914324,
+            "opponent_mean_payoff": 1.0053547523427042
+          },
+          {
+            "opponent": "always_defect",
+            "seed": 47,
+            "total_payoff": 125,
+            "opponent_total_payoff": 130,
+            "turns": 126,
+            "cooperations": 1,
+            "mean_payoff": 0.9920634920634921,
+            "opponent_mean_payoff": 1.0317460317460319
+          },
+          {
+            "opponent": "always_defect",
+            "seed": 89,
+            "total_payoff": 24,
+            "opponent_total_payoff": 29,
+            "turns": 25,
+            "cooperations": 1,
+            "mean_payoff": 0.96,
+            "opponent_mean_payoff": 1.16
+          },
+          {
+            "opponent": "always_defect",
+            "seed": 131,
+            "total_payoff": 109,
+            "opponent_total_payoff": 114,
+            "turns": 110,
+            "cooperations": 1,
+            "mean_payoff": 0.990909090909091,
+            "opponent_mean_payoff": 1.0363636363636364
+          },
+          {
+            "opponent": "random",
+            "seed": 11,
+            "total_payoff": 396,
+            "opponent_total_payoff": 396,
+            "turns": 174,
+            "cooperations": 88,
+            "mean_payoff": 2.2758620689655173,
+            "opponent_mean_payoff": 2.2758620689655173
+          },
+          {
+            "opponent": "random",
+            "seed": 23,
+            "total_payoff": 1653,
+            "opponent_total_payoff": 1658,
+            "turns": 747,
+            "cooperations": 359,
+            "mean_payoff": 2.21285140562249,
+            "opponent_mean_payoff": 2.21954484605087
+          },
+          {
+            "opponent": "random",
+            "seed": 47,
+            "total_payoff": 286,
+            "opponent_total_payoff": 291,
+            "turns": 126,
+            "cooperations": 68,
+            "mean_payoff": 2.2698412698412698,
+            "opponent_mean_payoff": 2.3095238095238093
+          },
+          {
+            "opponent": "random",
+            "seed": 89,
+            "total_payoff": 62,
+            "opponent_total_payoff": 62,
+            "turns": 25,
+            "cooperations": 16,
+            "mean_payoff": 2.48,
+            "opponent_mean_payoff": 2.48
+          },
+          {
+            "opponent": "random",
+            "seed": 131,
+            "total_payoff": 229,
+            "opponent_total_payoff": 229,
+            "turns": 110,
+            "cooperations": 47,
+            "mean_payoff": 2.081818181818182,
+            "opponent_mean_payoff": 2.081818181818182
+          },
+          {
+            "opponent": "tit_for_tat",
+            "seed": 11,
+            "total_payoff": 522,
+            "opponent_total_payoff": 522,
+            "turns": 174,
+            "cooperations": 174,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "tit_for_tat",
+            "seed": 23,
+            "total_payoff": 2241,
+            "opponent_total_payoff": 2241,
+            "turns": 747,
+            "cooperations": 747,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "tit_for_tat",
+            "seed": 47,
+            "total_payoff": 378,
+            "opponent_total_payoff": 378,
+            "turns": 126,
+            "cooperations": 126,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "tit_for_tat",
+            "seed": 89,
+            "total_payoff": 75,
+            "opponent_total_payoff": 75,
+            "turns": 25,
+            "cooperations": 25,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "tit_for_tat",
+            "seed": 131,
+            "total_payoff": 330,
+            "opponent_total_payoff": 330,
+            "turns": 110,
+            "cooperations": 110,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "grim",
+            "seed": 11,
+            "total_payoff": 522,
+            "opponent_total_payoff": 522,
+            "turns": 174,
+            "cooperations": 174,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "grim",
+            "seed": 23,
+            "total_payoff": 2241,
+            "opponent_total_payoff": 2241,
+            "turns": 747,
+            "cooperations": 747,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "grim",
+            "seed": 47,
+            "total_payoff": 378,
+            "opponent_total_payoff": 378,
+            "turns": 126,
+            "cooperations": 126,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "grim",
+            "seed": 89,
+            "total_payoff": 75,
+            "opponent_total_payoff": 75,
+            "turns": 25,
+            "cooperations": 25,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "grim",
+            "seed": 131,
+            "total_payoff": 330,
+            "opponent_total_payoff": 330,
+            "turns": 110,
+            "cooperations": 110,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "win_stay_lose_shift",
+            "seed": 11,
+            "total_payoff": 522,
+            "opponent_total_payoff": 522,
+            "turns": 174,
+            "cooperations": 174,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "win_stay_lose_shift",
+            "seed": 23,
+            "total_payoff": 2241,
+            "opponent_total_payoff": 2241,
+            "turns": 747,
+            "cooperations": 747,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "win_stay_lose_shift",
+            "seed": 47,
+            "total_payoff": 378,
+            "opponent_total_payoff": 378,
+            "turns": 126,
+            "cooperations": 126,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "win_stay_lose_shift",
+            "seed": 89,
+            "total_payoff": 75,
+            "opponent_total_payoff": 75,
+            "turns": 25,
+            "cooperations": 25,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "win_stay_lose_shift",
+            "seed": 131,
+            "total_payoff": 330,
+            "opponent_total_payoff": 330,
+            "turns": 110,
+            "cooperations": 110,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          }
+        ]
+      },
+      "holdout": {
+        "total_payoff": 12976,
+        "opponent_total_payoff": 13031,
+        "turns": 5100,
+        "cooperations": 3396,
+        "mean_payoff": 2.544313725490196,
+        "cooperation_rate": 0.6658823529411765,
+        "matches": 30,
+        "rows": [
+          {
+            "opponent": "alternator",
+            "seed": 211,
+            "total_payoff": 603,
+            "opponent_total_payoff": 603,
+            "turns": 241,
+            "cooperations": 121,
+            "mean_payoff": 2.5020746887966805,
+            "opponent_mean_payoff": 2.5020746887966805
+          },
+          {
+            "opponent": "alternator",
+            "seed": 307,
+            "total_payoff": 733,
+            "opponent_total_payoff": 733,
+            "turns": 293,
+            "cooperations": 147,
+            "mean_payoff": 2.5017064846416384,
+            "opponent_mean_payoff": 2.5017064846416384
+          },
+          {
+            "opponent": "alternator",
+            "seed": 401,
+            "total_payoff": 498,
+            "opponent_total_payoff": 498,
+            "turns": 199,
+            "cooperations": 100,
+            "mean_payoff": 2.5025125628140703,
+            "opponent_mean_payoff": 2.5025125628140703
+          },
+          {
+            "opponent": "alternator",
+            "seed": 503,
+            "total_payoff": 138,
+            "opponent_total_payoff": 138,
+            "turns": 55,
+            "cooperations": 28,
+            "mean_payoff": 2.5090909090909093,
+            "opponent_mean_payoff": 2.5090909090909093
+          },
+          {
+            "opponent": "alternator",
+            "seed": 601,
+            "total_payoff": 153,
+            "opponent_total_payoff": 158,
+            "turns": 62,
+            "cooperations": 32,
+            "mean_payoff": 2.467741935483871,
+            "opponent_mean_payoff": 2.5483870967741935
+          },
+          {
+            "opponent": "suspicious_tit_for_tat",
+            "seed": 211,
+            "total_payoff": 600,
+            "opponent_total_payoff": 605,
+            "turns": 241,
+            "cooperations": 121,
+            "mean_payoff": 2.4896265560165975,
+            "opponent_mean_payoff": 2.5103734439834025
+          },
+          {
+            "opponent": "suspicious_tit_for_tat",
+            "seed": 307,
+            "total_payoff": 730,
+            "opponent_total_payoff": 735,
+            "turns": 293,
+            "cooperations": 147,
+            "mean_payoff": 2.491467576791809,
+            "opponent_mean_payoff": 2.508532423208191
+          },
+          {
+            "opponent": "suspicious_tit_for_tat",
+            "seed": 401,
+            "total_payoff": 495,
+            "opponent_total_payoff": 500,
+            "turns": 199,
+            "cooperations": 100,
+            "mean_payoff": 2.487437185929648,
+            "opponent_mean_payoff": 2.512562814070352
+          },
+          {
+            "opponent": "suspicious_tit_for_tat",
+            "seed": 503,
+            "total_payoff": 135,
+            "opponent_total_payoff": 140,
+            "turns": 55,
+            "cooperations": 28,
+            "mean_payoff": 2.4545454545454546,
+            "opponent_mean_payoff": 2.5454545454545454
+          },
+          {
+            "opponent": "suspicious_tit_for_tat",
+            "seed": 601,
+            "total_payoff": 155,
+            "opponent_total_payoff": 155,
+            "turns": 62,
+            "cooperations": 31,
+            "mean_payoff": 2.5,
+            "opponent_mean_payoff": 2.5
+          },
+          {
+            "opponent": "tit_for_two_tats",
+            "seed": 211,
+            "total_payoff": 723,
+            "opponent_total_payoff": 723,
+            "turns": 241,
+            "cooperations": 241,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "tit_for_two_tats",
+            "seed": 307,
+            "total_payoff": 879,
+            "opponent_total_payoff": 879,
+            "turns": 293,
+            "cooperations": 293,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "tit_for_two_tats",
+            "seed": 401,
+            "total_payoff": 597,
+            "opponent_total_payoff": 597,
+            "turns": 199,
+            "cooperations": 199,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "tit_for_two_tats",
+            "seed": 503,
+            "total_payoff": 165,
+            "opponent_total_payoff": 165,
+            "turns": 55,
+            "cooperations": 55,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "tit_for_two_tats",
+            "seed": 601,
+            "total_payoff": 186,
+            "opponent_total_payoff": 186,
+            "turns": 62,
+            "cooperations": 62,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "hard_tit_for_tat",
+            "seed": 211,
+            "total_payoff": 723,
+            "opponent_total_payoff": 723,
+            "turns": 241,
+            "cooperations": 241,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "hard_tit_for_tat",
+            "seed": 307,
+            "total_payoff": 879,
+            "opponent_total_payoff": 879,
+            "turns": 293,
+            "cooperations": 293,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "hard_tit_for_tat",
+            "seed": 401,
+            "total_payoff": 597,
+            "opponent_total_payoff": 597,
+            "turns": 199,
+            "cooperations": 199,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "hard_tit_for_tat",
+            "seed": 503,
+            "total_payoff": 165,
+            "opponent_total_payoff": 165,
+            "turns": 55,
+            "cooperations": 55,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "hard_tit_for_tat",
+            "seed": 601,
+            "total_payoff": 186,
+            "opponent_total_payoff": 186,
+            "turns": 62,
+            "cooperations": 62,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "random_20",
+            "seed": 211,
+            "total_payoff": 393,
+            "opponent_total_payoff": 398,
+            "turns": 241,
+            "cooperations": 55,
+            "mean_payoff": 1.6307053941908713,
+            "opponent_mean_payoff": 1.6514522821576763
+          },
+          {
+            "opponent": "random_20",
+            "seed": 307,
+            "total_payoff": 462,
+            "opponent_total_payoff": 467,
+            "turns": 293,
+            "cooperations": 64,
+            "mean_payoff": 1.57679180887372,
+            "opponent_mean_payoff": 1.5938566552901023
+          },
+          {
+            "opponent": "random_20",
+            "seed": 401,
+            "total_payoff": 289,
+            "opponent_total_payoff": 294,
+            "turns": 199,
+            "cooperations": 33,
+            "mean_payoff": 1.4522613065326633,
+            "opponent_mean_payoff": 1.4773869346733668
+          },
+          {
+            "opponent": "random_20",
+            "seed": 503,
+            "total_payoff": 87,
+            "opponent_total_payoff": 92,
+            "turns": 55,
+            "cooperations": 13,
+            "mean_payoff": 1.5818181818181818,
+            "opponent_mean_payoff": 1.6727272727272726
+          },
+          {
+            "opponent": "random_20",
+            "seed": 601,
+            "total_payoff": 86,
+            "opponent_total_payoff": 91,
+            "turns": 62,
+            "cooperations": 10,
+            "mean_payoff": 1.3870967741935485,
+            "opponent_mean_payoff": 1.467741935483871
+          },
+          {
+            "opponent": "random_80",
+            "seed": 211,
+            "total_payoff": 652,
+            "opponent_total_payoff": 657,
+            "turns": 241,
+            "cooperations": 186,
+            "mean_payoff": 2.7053941908713695,
+            "opponent_mean_payoff": 2.7261410788381744
+          },
+          {
+            "opponent": "random_80",
+            "seed": 307,
+            "total_payoff": 795,
+            "opponent_total_payoff": 795,
+            "turns": 293,
+            "cooperations": 228,
+            "mean_payoff": 2.7133105802047783,
+            "opponent_mean_payoff": 2.7133105802047783
+          },
+          {
+            "opponent": "random_80",
+            "seed": 401,
+            "total_payoff": 549,
+            "opponent_total_payoff": 549,
+            "turns": 199,
+            "cooperations": 161,
+            "mean_payoff": 2.758793969849246,
+            "opponent_mean_payoff": 2.758793969849246
+          },
+          {
+            "opponent": "random_80",
+            "seed": 503,
+            "total_payoff": 153,
+            "opponent_total_payoff": 153,
+            "turns": 55,
+            "cooperations": 45,
+            "mean_payoff": 2.7818181818181817,
+            "opponent_mean_payoff": 2.7818181818181817
+          },
+          {
+            "opponent": "random_80",
+            "seed": 601,
+            "total_payoff": 170,
+            "opponent_total_payoff": 170,
+            "turns": 62,
+            "cooperations": 46,
+            "mean_payoff": 2.7419354838709675,
+            "opponent_mean_payoff": 2.7419354838709675
+          }
+        ]
+      },
+      "recognition": {
+        "matches_tft_probes": true,
+        "probe_count": 1640,
+        "first_mismatches": [],
+        "claim": "Agreement on finite probes is not proof of equivalence on every possible history."
+      }
+    },
+    "grim": {
+      "train": {
+        "total_payoff": 18832,
+        "opponent_total_payoff": 16027,
+        "turns": 7092,
+        "cooperations": 4743,
+        "mean_payoff": 2.655386350817823,
+        "cooperation_rate": 0.6687817258883249,
+        "matches": 30,
+        "rows": [
+          {
+            "opponent": "always_cooperate",
+            "seed": 11,
+            "total_payoff": 522,
+            "opponent_total_payoff": 522,
+            "turns": 174,
+            "cooperations": 174,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "always_cooperate",
+            "seed": 23,
+            "total_payoff": 2241,
+            "opponent_total_payoff": 2241,
+            "turns": 747,
+            "cooperations": 747,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "always_cooperate",
+            "seed": 47,
+            "total_payoff": 378,
+            "opponent_total_payoff": 378,
+            "turns": 126,
+            "cooperations": 126,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "always_cooperate",
+            "seed": 89,
+            "total_payoff": 75,
+            "opponent_total_payoff": 75,
+            "turns": 25,
+            "cooperations": 25,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "always_cooperate",
+            "seed": 131,
+            "total_payoff": 330,
+            "opponent_total_payoff": 330,
+            "turns": 110,
+            "cooperations": 110,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "always_defect",
+            "seed": 11,
+            "total_payoff": 173,
+            "opponent_total_payoff": 178,
+            "turns": 174,
+            "cooperations": 1,
+            "mean_payoff": 0.9942528735632183,
+            "opponent_mean_payoff": 1.0229885057471264
+          },
+          {
+            "opponent": "always_defect",
+            "seed": 23,
+            "total_payoff": 746,
+            "opponent_total_payoff": 751,
+            "turns": 747,
+            "cooperations": 1,
+            "mean_payoff": 0.998661311914324,
+            "opponent_mean_payoff": 1.0053547523427042
+          },
+          {
+            "opponent": "always_defect",
+            "seed": 47,
+            "total_payoff": 125,
+            "opponent_total_payoff": 130,
+            "turns": 126,
+            "cooperations": 1,
+            "mean_payoff": 0.9920634920634921,
+            "opponent_mean_payoff": 1.0317460317460319
+          },
+          {
+            "opponent": "always_defect",
+            "seed": 89,
+            "total_payoff": 24,
+            "opponent_total_payoff": 29,
+            "turns": 25,
+            "cooperations": 1,
+            "mean_payoff": 0.96,
+            "opponent_mean_payoff": 1.16
+          },
+          {
+            "opponent": "always_defect",
+            "seed": 131,
+            "total_payoff": 109,
+            "opponent_total_payoff": 114,
+            "turns": 110,
+            "cooperations": 1,
+            "mean_payoff": 0.990909090909091,
+            "opponent_mean_payoff": 1.0363636363636364
+          },
+          {
+            "opponent": "random",
+            "seed": 11,
+            "total_payoff": 521,
+            "opponent_total_payoff": 96,
+            "turns": 174,
+            "cooperations": 3,
+            "mean_payoff": 2.9942528735632186,
+            "opponent_mean_payoff": 0.5517241379310345
+          },
+          {
+            "opponent": "random",
+            "seed": 23,
+            "total_payoff": 2176,
+            "opponent_total_payoff": 396,
+            "turns": 747,
+            "cooperations": 2,
+            "mean_payoff": 2.9129852744310574,
+            "opponent_mean_payoff": 0.5301204819277109
+          },
+          {
+            "opponent": "random",
+            "seed": 47,
+            "total_payoff": 393,
+            "opponent_total_payoff": 63,
+            "turns": 126,
+            "cooperations": 1,
+            "mean_payoff": 3.119047619047619,
+            "opponent_mean_payoff": 0.5
+          },
+          {
+            "opponent": "random",
+            "seed": 89,
+            "total_payoff": 88,
+            "opponent_total_payoff": 13,
+            "turns": 25,
+            "cooperations": 1,
+            "mean_payoff": 3.52,
+            "opponent_mean_payoff": 0.52
+          },
+          {
+            "opponent": "random",
+            "seed": 131,
+            "total_payoff": 293,
+            "opponent_total_payoff": 73,
+            "turns": 110,
+            "cooperations": 3,
+            "mean_payoff": 2.6636363636363636,
+            "opponent_mean_payoff": 0.6636363636363637
+          },
+          {
+            "opponent": "tit_for_tat",
+            "seed": 11,
+            "total_payoff": 522,
+            "opponent_total_payoff": 522,
+            "turns": 174,
+            "cooperations": 174,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "tit_for_tat",
+            "seed": 23,
+            "total_payoff": 2241,
+            "opponent_total_payoff": 2241,
+            "turns": 747,
+            "cooperations": 747,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "tit_for_tat",
+            "seed": 47,
+            "total_payoff": 378,
+            "opponent_total_payoff": 378,
+            "turns": 126,
+            "cooperations": 126,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "tit_for_tat",
+            "seed": 89,
+            "total_payoff": 75,
+            "opponent_total_payoff": 75,
+            "turns": 25,
+            "cooperations": 25,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "tit_for_tat",
+            "seed": 131,
+            "total_payoff": 330,
+            "opponent_total_payoff": 330,
+            "turns": 110,
+            "cooperations": 110,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "grim",
+            "seed": 11,
+            "total_payoff": 522,
+            "opponent_total_payoff": 522,
+            "turns": 174,
+            "cooperations": 174,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "grim",
+            "seed": 23,
+            "total_payoff": 2241,
+            "opponent_total_payoff": 2241,
+            "turns": 747,
+            "cooperations": 747,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "grim",
+            "seed": 47,
+            "total_payoff": 378,
+            "opponent_total_payoff": 378,
+            "turns": 126,
+            "cooperations": 126,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "grim",
+            "seed": 89,
+            "total_payoff": 75,
+            "opponent_total_payoff": 75,
+            "turns": 25,
+            "cooperations": 25,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "grim",
+            "seed": 131,
+            "total_payoff": 330,
+            "opponent_total_payoff": 330,
+            "turns": 110,
+            "cooperations": 110,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "win_stay_lose_shift",
+            "seed": 11,
+            "total_payoff": 522,
+            "opponent_total_payoff": 522,
+            "turns": 174,
+            "cooperations": 174,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "win_stay_lose_shift",
+            "seed": 23,
+            "total_payoff": 2241,
+            "opponent_total_payoff": 2241,
+            "turns": 747,
+            "cooperations": 747,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "win_stay_lose_shift",
+            "seed": 47,
+            "total_payoff": 378,
+            "opponent_total_payoff": 378,
+            "turns": 126,
+            "cooperations": 126,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "win_stay_lose_shift",
+            "seed": 89,
+            "total_payoff": 75,
+            "opponent_total_payoff": 75,
+            "turns": 25,
+            "cooperations": 25,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "win_stay_lose_shift",
+            "seed": 131,
+            "total_payoff": 330,
+            "opponent_total_payoff": 330,
+            "turns": 110,
+            "cooperations": 110,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          }
+        ]
+      },
+      "holdout": {
+        "total_payoff": 13514,
+        "opponent_total_payoff": 7364,
+        "turns": 5100,
+        "cooperations": 1737,
+        "mean_payoff": 2.6498039215686275,
+        "cooperation_rate": 0.34058823529411764,
+        "matches": 30,
+        "rows": [
+          {
+            "opponent": "alternator",
+            "seed": 211,
+            "total_payoff": 722,
+            "opponent_total_payoff": 127,
+            "turns": 241,
+            "cooperations": 2,
+            "mean_payoff": 2.995850622406639,
+            "opponent_mean_payoff": 0.5269709543568465
+          },
+          {
+            "opponent": "alternator",
+            "seed": 307,
+            "total_payoff": 878,
+            "opponent_total_payoff": 153,
+            "turns": 293,
+            "cooperations": 2,
+            "mean_payoff": 2.9965870307167237,
+            "opponent_mean_payoff": 0.5221843003412969
+          },
+          {
+            "opponent": "alternator",
+            "seed": 401,
+            "total_payoff": 596,
+            "opponent_total_payoff": 106,
+            "turns": 199,
+            "cooperations": 2,
+            "mean_payoff": 2.9949748743718594,
+            "opponent_mean_payoff": 0.5326633165829145
+          },
+          {
+            "opponent": "alternator",
+            "seed": 503,
+            "total_payoff": 164,
+            "opponent_total_payoff": 34,
+            "turns": 55,
+            "cooperations": 2,
+            "mean_payoff": 2.981818181818182,
+            "opponent_mean_payoff": 0.6181818181818182
+          },
+          {
+            "opponent": "alternator",
+            "seed": 601,
+            "total_payoff": 183,
+            "opponent_total_payoff": 38,
+            "turns": 62,
+            "cooperations": 2,
+            "mean_payoff": 2.9516129032258065,
+            "opponent_mean_payoff": 0.6129032258064516
+          },
+          {
+            "opponent": "suspicious_tit_for_tat",
+            "seed": 211,
+            "total_payoff": 244,
+            "opponent_total_payoff": 244,
+            "turns": 241,
+            "cooperations": 1,
+            "mean_payoff": 1.012448132780083,
+            "opponent_mean_payoff": 1.012448132780083
+          },
+          {
+            "opponent": "suspicious_tit_for_tat",
+            "seed": 307,
+            "total_payoff": 296,
+            "opponent_total_payoff": 296,
+            "turns": 293,
+            "cooperations": 1,
+            "mean_payoff": 1.0102389078498293,
+            "opponent_mean_payoff": 1.0102389078498293
+          },
+          {
+            "opponent": "suspicious_tit_for_tat",
+            "seed": 401,
+            "total_payoff": 202,
+            "opponent_total_payoff": 202,
+            "turns": 199,
+            "cooperations": 1,
+            "mean_payoff": 1.015075376884422,
+            "opponent_mean_payoff": 1.015075376884422
+          },
+          {
+            "opponent": "suspicious_tit_for_tat",
+            "seed": 503,
+            "total_payoff": 58,
+            "opponent_total_payoff": 58,
+            "turns": 55,
+            "cooperations": 1,
+            "mean_payoff": 1.0545454545454545,
+            "opponent_mean_payoff": 1.0545454545454545
+          },
+          {
+            "opponent": "suspicious_tit_for_tat",
+            "seed": 601,
+            "total_payoff": 65,
+            "opponent_total_payoff": 65,
+            "turns": 62,
+            "cooperations": 1,
+            "mean_payoff": 1.0483870967741935,
+            "opponent_mean_payoff": 1.0483870967741935
+          },
+          {
+            "opponent": "tit_for_two_tats",
+            "seed": 211,
+            "total_payoff": 723,
+            "opponent_total_payoff": 723,
+            "turns": 241,
+            "cooperations": 241,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "tit_for_two_tats",
+            "seed": 307,
+            "total_payoff": 879,
+            "opponent_total_payoff": 879,
+            "turns": 293,
+            "cooperations": 293,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "tit_for_two_tats",
+            "seed": 401,
+            "total_payoff": 597,
+            "opponent_total_payoff": 597,
+            "turns": 199,
+            "cooperations": 199,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "tit_for_two_tats",
+            "seed": 503,
+            "total_payoff": 165,
+            "opponent_total_payoff": 165,
+            "turns": 55,
+            "cooperations": 55,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "tit_for_two_tats",
+            "seed": 601,
+            "total_payoff": 186,
+            "opponent_total_payoff": 186,
+            "turns": 62,
+            "cooperations": 62,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "hard_tit_for_tat",
+            "seed": 211,
+            "total_payoff": 723,
+            "opponent_total_payoff": 723,
+            "turns": 241,
+            "cooperations": 241,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "hard_tit_for_tat",
+            "seed": 307,
+            "total_payoff": 879,
+            "opponent_total_payoff": 879,
+            "turns": 293,
+            "cooperations": 293,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "hard_tit_for_tat",
+            "seed": 401,
+            "total_payoff": 597,
+            "opponent_total_payoff": 597,
+            "turns": 199,
+            "cooperations": 199,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "hard_tit_for_tat",
+            "seed": 503,
+            "total_payoff": 165,
+            "opponent_total_payoff": 165,
+            "turns": 55,
+            "cooperations": 55,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "hard_tit_for_tat",
+            "seed": 601,
+            "total_payoff": 186,
+            "opponent_total_payoff": 186,
+            "turns": 62,
+            "cooperations": 62,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "random_20",
+            "seed": 211,
+            "total_payoff": 454,
+            "opponent_total_payoff": 194,
+            "turns": 241,
+            "cooperations": 2,
+            "mean_payoff": 1.883817427385892,
+            "opponent_mean_payoff": 0.8049792531120332
+          },
+          {
+            "opponent": "random_20",
+            "seed": 307,
+            "total_payoff": 544,
+            "opponent_total_payoff": 234,
+            "turns": 293,
+            "cooperations": 1,
+            "mean_payoff": 1.8566552901023892,
+            "opponent_mean_payoff": 0.7986348122866894
+          },
+          {
+            "opponent": "random_20",
+            "seed": 401,
+            "total_payoff": 326,
+            "opponent_total_payoff": 171,
+            "turns": 199,
+            "cooperations": 1,
+            "mean_payoff": 1.6381909547738693,
+            "opponent_mean_payoff": 0.8592964824120602
+          },
+          {
+            "opponent": "random_20",
+            "seed": 503,
+            "total_payoff": 102,
+            "opponent_total_payoff": 47,
+            "turns": 55,
+            "cooperations": 1,
+            "mean_payoff": 1.8545454545454545,
+            "opponent_mean_payoff": 0.8545454545454545
+          },
+          {
+            "opponent": "random_20",
+            "seed": 601,
+            "total_payoff": 97,
+            "opponent_total_payoff": 57,
+            "turns": 62,
+            "cooperations": 1,
+            "mean_payoff": 1.564516129032258,
+            "opponent_mean_payoff": 0.9193548387096774
+          },
+          {
+            "opponent": "random_80",
+            "seed": 211,
+            "total_payoff": 978,
+            "opponent_total_payoff": 63,
+            "turns": 241,
+            "cooperations": 2,
+            "mean_payoff": 4.058091286307054,
+            "opponent_mean_payoff": 0.26141078838174275
+          },
+          {
+            "opponent": "random_80",
+            "seed": 307,
+            "total_payoff": 1200,
+            "opponent_total_payoff": 75,
+            "turns": 293,
+            "cooperations": 3,
+            "mean_payoff": 4.09556313993174,
+            "opponent_mean_payoff": 0.25597269624573377
+          },
+          {
+            "opponent": "random_80",
+            "seed": 401,
+            "total_payoff": 826,
+            "opponent_total_payoff": 66,
+            "turns": 199,
+            "cooperations": 9,
+            "mean_payoff": 4.150753768844221,
+            "opponent_mean_payoff": 0.3316582914572864
+          },
+          {
+            "opponent": "random_80",
+            "seed": 503,
+            "total_payoff": 234,
+            "opponent_total_payoff": 14,
+            "turns": 55,
+            "cooperations": 1,
+            "mean_payoff": 4.254545454545455,
+            "opponent_mean_payoff": 0.2545454545454545
+          },
+          {
+            "opponent": "random_80",
+            "seed": 601,
+            "total_payoff": 245,
+            "opponent_total_payoff": 20,
+            "turns": 62,
+            "cooperations": 1,
+            "mean_payoff": 3.9516129032258065,
+            "opponent_mean_payoff": 0.3225806451612903
+          }
+        ]
+      },
+      "recognition": {
+        "matches_tft_probes": false,
+        "probe_count": 1640,
+        "first_mismatches": [
+          {
+            "length": 2,
+            "own_tail": [
+              0,
+              0
+            ],
+            "other_tail": [
+              1,
+              0
+            ],
+            "expected": 0,
+            "actual": 1
+          },
+          {
+            "length": 2,
+            "own_tail": [
+              0,
+              1
+            ],
+            "other_tail": [
+              1,
+              0
+            ],
+            "expected": 0,
+            "actual": 1
+          },
+          {
+            "length": 2,
+            "own_tail": [
+              1,
+              0
+            ],
+            "other_tail": [
+              1,
+              0
+            ],
+            "expected": 0,
+            "actual": 1
+          },
+          {
+            "length": 2,
+            "own_tail": [
+              1,
+              1
+            ],
+            "other_tail": [
+              1,
+              0
+            ],
+            "expected": 0,
+            "actual": 1
+          },
+          {
+            "length": 3,
+            "own_tail": [
+              0,
+              0,
+              0
+            ],
+            "other_tail": [
+              0,
+              1,
+              0
+            ],
+            "expected": 0,
+            "actual": 1
+          },
+          {
+            "length": 3,
+            "own_tail": [
+              0,
+              0,
+              0
+            ],
+            "other_tail": [
+              1,
+              0,
+              0
+            ],
+            "expected": 0,
+            "actual": 1
+          },
+          {
+            "length": 3,
+            "own_tail": [
+              0,
+              0,
+              0
+            ],
+            "other_tail": [
+              1,
+              1,
+              0
+            ],
+            "expected": 0,
+            "actual": 1
+          },
+          {
+            "length": 3,
+            "own_tail": [
+              0,
+              0,
+              1
+            ],
+            "other_tail": [
+              0,
+              1,
+              0
+            ],
+            "expected": 0,
+            "actual": 1
+          }
+        ],
+        "claim": "Agreement on finite probes is not proof of equivalence on every possible history."
+      }
+    },
+    "win_stay_lose_shift": {
+      "train": {
+        "total_payoff": 17383,
+        "opponent_total_payoff": 20418,
+        "turns": 7092,
+        "cooperations": 5911,
+        "mean_payoff": 2.4510716300056403,
+        "cooperation_rate": 0.8334743372814439,
+        "matches": 30,
+        "rows": [
+          {
+            "opponent": "always_cooperate",
+            "seed": 11,
+            "total_payoff": 522,
+            "opponent_total_payoff": 522,
+            "turns": 174,
+            "cooperations": 174,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "always_cooperate",
+            "seed": 23,
+            "total_payoff": 2241,
+            "opponent_total_payoff": 2241,
+            "turns": 747,
+            "cooperations": 747,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "always_cooperate",
+            "seed": 47,
+            "total_payoff": 378,
+            "opponent_total_payoff": 378,
+            "turns": 126,
+            "cooperations": 126,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "always_cooperate",
+            "seed": 89,
+            "total_payoff": 75,
+            "opponent_total_payoff": 75,
+            "turns": 25,
+            "cooperations": 25,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "always_cooperate",
+            "seed": 131,
+            "total_payoff": 330,
+            "opponent_total_payoff": 330,
+            "turns": 110,
+            "cooperations": 110,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "always_defect",
+            "seed": 11,
+            "total_payoff": 87,
+            "opponent_total_payoff": 522,
+            "turns": 174,
+            "cooperations": 87,
+            "mean_payoff": 0.5,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "always_defect",
+            "seed": 23,
+            "total_payoff": 373,
+            "opponent_total_payoff": 2243,
+            "turns": 747,
+            "cooperations": 374,
+            "mean_payoff": 0.499330655957162,
+            "opponent_mean_payoff": 3.002677376171352
+          },
+          {
+            "opponent": "always_defect",
+            "seed": 47,
+            "total_payoff": 63,
+            "opponent_total_payoff": 378,
+            "turns": 126,
+            "cooperations": 63,
+            "mean_payoff": 0.5,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "always_defect",
+            "seed": 89,
+            "total_payoff": 12,
+            "opponent_total_payoff": 77,
+            "turns": 25,
+            "cooperations": 13,
+            "mean_payoff": 0.48,
+            "opponent_mean_payoff": 3.08
+          },
+          {
+            "opponent": "always_defect",
+            "seed": 131,
+            "total_payoff": 55,
+            "opponent_total_payoff": 330,
+            "turns": 110,
+            "cooperations": 55,
+            "mean_payoff": 0.5,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "random",
+            "seed": 11,
+            "total_payoff": 391,
+            "opponent_total_payoff": 396,
+            "turns": 174,
+            "cooperations": 89,
+            "mean_payoff": 2.2471264367816093,
+            "opponent_mean_payoff": 2.2758620689655173
+          },
+          {
+            "opponent": "random",
+            "seed": 23,
+            "total_payoff": 1632,
+            "opponent_total_payoff": 1697,
+            "turns": 747,
+            "cooperations": 371,
+            "mean_payoff": 2.1847389558232932,
+            "opponent_mean_payoff": 2.2717536813922354
+          },
+          {
+            "opponent": "random",
+            "seed": 47,
+            "total_payoff": 300,
+            "opponent_total_payoff": 275,
+            "turns": 126,
+            "cooperations": 62,
+            "mean_payoff": 2.380952380952381,
+            "opponent_mean_payoff": 2.1825396825396823
+          },
+          {
+            "opponent": "random",
+            "seed": 89,
+            "total_payoff": 78,
+            "opponent_total_payoff": 38,
+            "turns": 25,
+            "cooperations": 8,
+            "mean_payoff": 3.12,
+            "opponent_mean_payoff": 1.52
+          },
+          {
+            "opponent": "random",
+            "seed": 131,
+            "total_payoff": 208,
+            "opponent_total_payoff": 278,
+            "turns": 110,
+            "cooperations": 61,
+            "mean_payoff": 1.8909090909090909,
+            "opponent_mean_payoff": 2.5272727272727273
+          },
+          {
+            "opponent": "tit_for_tat",
+            "seed": 11,
+            "total_payoff": 522,
+            "opponent_total_payoff": 522,
+            "turns": 174,
+            "cooperations": 174,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "tit_for_tat",
+            "seed": 23,
+            "total_payoff": 2241,
+            "opponent_total_payoff": 2241,
+            "turns": 747,
+            "cooperations": 747,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "tit_for_tat",
+            "seed": 47,
+            "total_payoff": 378,
+            "opponent_total_payoff": 378,
+            "turns": 126,
+            "cooperations": 126,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "tit_for_tat",
+            "seed": 89,
+            "total_payoff": 75,
+            "opponent_total_payoff": 75,
+            "turns": 25,
+            "cooperations": 25,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "tit_for_tat",
+            "seed": 131,
+            "total_payoff": 330,
+            "opponent_total_payoff": 330,
+            "turns": 110,
+            "cooperations": 110,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "grim",
+            "seed": 11,
+            "total_payoff": 522,
+            "opponent_total_payoff": 522,
+            "turns": 174,
+            "cooperations": 174,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "grim",
+            "seed": 23,
+            "total_payoff": 2241,
+            "opponent_total_payoff": 2241,
+            "turns": 747,
+            "cooperations": 747,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "grim",
+            "seed": 47,
+            "total_payoff": 378,
+            "opponent_total_payoff": 378,
+            "turns": 126,
+            "cooperations": 126,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "grim",
+            "seed": 89,
+            "total_payoff": 75,
+            "opponent_total_payoff": 75,
+            "turns": 25,
+            "cooperations": 25,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "grim",
+            "seed": 131,
+            "total_payoff": 330,
+            "opponent_total_payoff": 330,
+            "turns": 110,
+            "cooperations": 110,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "win_stay_lose_shift",
+            "seed": 11,
+            "total_payoff": 522,
+            "opponent_total_payoff": 522,
+            "turns": 174,
+            "cooperations": 174,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "win_stay_lose_shift",
+            "seed": 23,
+            "total_payoff": 2241,
+            "opponent_total_payoff": 2241,
+            "turns": 747,
+            "cooperations": 747,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "win_stay_lose_shift",
+            "seed": 47,
+            "total_payoff": 378,
+            "opponent_total_payoff": 378,
+            "turns": 126,
+            "cooperations": 126,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "win_stay_lose_shift",
+            "seed": 89,
+            "total_payoff": 75,
+            "opponent_total_payoff": 75,
+            "turns": 25,
+            "cooperations": 25,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "win_stay_lose_shift",
+            "seed": 131,
+            "total_payoff": 330,
+            "opponent_total_payoff": 330,
+            "turns": 110,
+            "cooperations": 110,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          }
+        ]
+      },
+      "holdout": {
+        "total_payoff": 12466,
+        "opponent_total_payoff": 12611,
+        "turns": 5100,
+        "cooperations": 3274,
+        "mean_payoff": 2.444313725490196,
+        "cooperation_rate": 0.6419607843137255,
+        "matches": 30,
+        "rows": [
+          {
+            "opponent": "alternator",
+            "seed": 211,
+            "total_payoff": 543,
+            "opponent_total_payoff": 543,
+            "turns": 241,
+            "cooperations": 121,
+            "mean_payoff": 2.2531120331950207,
+            "opponent_mean_payoff": 2.2531120331950207
+          },
+          {
+            "opponent": "alternator",
+            "seed": 307,
+            "total_payoff": 660,
+            "opponent_total_payoff": 660,
+            "turns": 293,
+            "cooperations": 147,
+            "mean_payoff": 2.2525597269624575,
+            "opponent_mean_payoff": 2.2525597269624575
+          },
+          {
+            "opponent": "alternator",
+            "seed": 401,
+            "total_payoff": 449,
+            "opponent_total_payoff": 449,
+            "turns": 199,
+            "cooperations": 100,
+            "mean_payoff": 2.2562814070351758,
+            "opponent_mean_payoff": 2.2562814070351758
+          },
+          {
+            "opponent": "alternator",
+            "seed": 503,
+            "total_payoff": 125,
+            "opponent_total_payoff": 125,
+            "turns": 55,
+            "cooperations": 28,
+            "mean_payoff": 2.272727272727273,
+            "opponent_mean_payoff": 2.272727272727273
+          },
+          {
+            "opponent": "alternator",
+            "seed": 601,
+            "total_payoff": 138,
+            "opponent_total_payoff": 143,
+            "turns": 62,
+            "cooperations": 32,
+            "mean_payoff": 2.225806451612903,
+            "opponent_mean_payoff": 2.306451612903226
+          },
+          {
+            "opponent": "suspicious_tit_for_tat",
+            "seed": 211,
+            "total_payoff": 480,
+            "opponent_total_payoff": 485,
+            "turns": 241,
+            "cooperations": 81,
+            "mean_payoff": 1.991701244813278,
+            "opponent_mean_payoff": 2.012448132780083
+          },
+          {
+            "opponent": "suspicious_tit_for_tat",
+            "seed": 307,
+            "total_payoff": 587,
+            "opponent_total_payoff": 587,
+            "turns": 293,
+            "cooperations": 98,
+            "mean_payoff": 2.0034129692832763,
+            "opponent_mean_payoff": 2.0034129692832763
+          },
+          {
+            "opponent": "suspicious_tit_for_tat",
+            "seed": 401,
+            "total_payoff": 396,
+            "opponent_total_payoff": 401,
+            "turns": 199,
+            "cooperations": 67,
+            "mean_payoff": 1.9899497487437185,
+            "opponent_mean_payoff": 2.0150753768844223
+          },
+          {
+            "opponent": "suspicious_tit_for_tat",
+            "seed": 503,
+            "total_payoff": 108,
+            "opponent_total_payoff": 113,
+            "turns": 55,
+            "cooperations": 19,
+            "mean_payoff": 1.9636363636363636,
+            "opponent_mean_payoff": 2.0545454545454547
+          },
+          {
+            "opponent": "suspicious_tit_for_tat",
+            "seed": 601,
+            "total_payoff": 125,
+            "opponent_total_payoff": 125,
+            "turns": 62,
+            "cooperations": 21,
+            "mean_payoff": 2.0161290322580645,
+            "opponent_mean_payoff": 2.0161290322580645
+          },
+          {
+            "opponent": "tit_for_two_tats",
+            "seed": 211,
+            "total_payoff": 723,
+            "opponent_total_payoff": 723,
+            "turns": 241,
+            "cooperations": 241,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "tit_for_two_tats",
+            "seed": 307,
+            "total_payoff": 879,
+            "opponent_total_payoff": 879,
+            "turns": 293,
+            "cooperations": 293,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "tit_for_two_tats",
+            "seed": 401,
+            "total_payoff": 597,
+            "opponent_total_payoff": 597,
+            "turns": 199,
+            "cooperations": 199,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "tit_for_two_tats",
+            "seed": 503,
+            "total_payoff": 165,
+            "opponent_total_payoff": 165,
+            "turns": 55,
+            "cooperations": 55,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "tit_for_two_tats",
+            "seed": 601,
+            "total_payoff": 186,
+            "opponent_total_payoff": 186,
+            "turns": 62,
+            "cooperations": 62,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "hard_tit_for_tat",
+            "seed": 211,
+            "total_payoff": 723,
+            "opponent_total_payoff": 723,
+            "turns": 241,
+            "cooperations": 241,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "hard_tit_for_tat",
+            "seed": 307,
+            "total_payoff": 879,
+            "opponent_total_payoff": 879,
+            "turns": 293,
+            "cooperations": 293,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "hard_tit_for_tat",
+            "seed": 401,
+            "total_payoff": 597,
+            "opponent_total_payoff": 597,
+            "turns": 199,
+            "cooperations": 199,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "hard_tit_for_tat",
+            "seed": 503,
+            "total_payoff": 165,
+            "opponent_total_payoff": 165,
+            "turns": 55,
+            "cooperations": 55,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "hard_tit_for_tat",
+            "seed": 601,
+            "total_payoff": 186,
+            "opponent_total_payoff": 186,
+            "turns": 62,
+            "cooperations": 62,
+            "mean_payoff": 3.0,
+            "opponent_mean_payoff": 3.0
+          },
+          {
+            "opponent": "random_20",
+            "seed": 211,
+            "total_payoff": 301,
+            "opponent_total_payoff": 656,
+            "turns": 241,
+            "cooperations": 125,
+            "mean_payoff": 1.2489626556016598,
+            "opponent_mean_payoff": 2.7219917012448134
+          },
+          {
+            "opponent": "random_20",
+            "seed": 307,
+            "total_payoff": 360,
+            "opponent_total_payoff": 795,
+            "turns": 293,
+            "cooperations": 150,
+            "mean_payoff": 1.2286689419795223,
+            "opponent_mean_payoff": 2.7133105802047783
+          },
+          {
+            "opponent": "random_20",
+            "seed": 401,
+            "total_payoff": 211,
+            "opponent_total_payoff": 551,
+            "turns": 199,
+            "cooperations": 100,
+            "mean_payoff": 1.0603015075376885,
+            "opponent_mean_payoff": 2.7688442211055277
+          },
+          {
+            "opponent": "random_20",
+            "seed": 503,
+            "total_payoff": 65,
+            "opponent_total_payoff": 155,
+            "turns": 55,
+            "cooperations": 30,
+            "mean_payoff": 1.1818181818181819,
+            "opponent_mean_payoff": 2.8181818181818183
+          },
+          {
+            "opponent": "random_20",
+            "seed": 601,
+            "total_payoff": 59,
+            "opponent_total_payoff": 179,
+            "turns": 62,
+            "cooperations": 33,
+            "mean_payoff": 0.9516129032258065,
+            "opponent_mean_payoff": 2.8870967741935485
+          },
+          {
+            "opponent": "random_80",
+            "seed": 211,
+            "total_payoff": 765,
+            "opponent_total_payoff": 450,
+            "turns": 241,
+            "cooperations": 122,
+            "mean_payoff": 3.1742738589211617,
+            "opponent_mean_payoff": 1.8672199170124482
+          },
+          {
+            "opponent": "random_80",
+            "seed": 307,
+            "total_payoff": 962,
+            "opponent_total_payoff": 512,
+            "turns": 293,
+            "cooperations": 138,
+            "mean_payoff": 3.2832764505119454,
+            "opponent_mean_payoff": 1.7474402730375427
+          },
+          {
+            "opponent": "random_80",
+            "seed": 401,
+            "total_payoff": 650,
+            "opponent_total_payoff": 375,
+            "turns": 199,
+            "cooperations": 106,
+            "mean_payoff": 3.2663316582914574,
+            "opponent_mean_payoff": 1.8844221105527639
+          },
+          {
+            "opponent": "random_80",
+            "seed": 503,
+            "total_payoff": 198,
+            "opponent_total_payoff": 78,
+            "turns": 55,
+            "cooperations": 21,
+            "mean_payoff": 3.6,
+            "opponent_mean_payoff": 1.4181818181818182
+          },
+          {
+            "opponent": "random_80",
+            "seed": 601,
+            "total_payoff": 184,
+            "opponent_total_payoff": 129,
+            "turns": 62,
+            "cooperations": 35,
+            "mean_payoff": 2.967741935483871,
+            "opponent_mean_payoff": 2.0806451612903225
+          }
+        ]
+      },
+      "recognition": {
+        "matches_tft_probes": false,
+        "probe_count": 1640,
+        "first_mismatches": [
+          {
+            "length": 1,
+            "own_tail": [
+              1
+            ],
+            "other_tail": [
+              0
+            ],
+            "expected": 0,
+            "actual": 1
+          },
+          {
+            "length": 1,
+            "own_tail": [
+              1
+            ],
+            "other_tail": [
+              1
+            ],
+            "expected": 1,
+            "actual": 0
+          },
+          {
+            "length": 2,
+            "own_tail": [
+              0,
+              1
+            ],
+            "other_tail": [
+              0,
+              0
+            ],
+            "expected": 0,
+            "actual": 1
+          },
+          {
+            "length": 2,
+            "own_tail": [
+              0,
+              1
+            ],
+            "other_tail": [
+              0,
+              1
+            ],
+            "expected": 1,
+            "actual": 0
+          },
+          {
+            "length": 2,
+            "own_tail": [
+              0,
+              1
+            ],
+            "other_tail": [
+              1,
+              0
+            ],
+            "expected": 0,
+            "actual": 1
+          },
+          {
+            "length": 2,
+            "own_tail": [
+              0,
+              1
+            ],
+            "other_tail": [
+              1,
+              1
+            ],
+            "expected": 1,
+            "actual": 0
+          },
+          {
+            "length": 2,
+            "own_tail": [
+              1,
+              1
+            ],
+            "other_tail": [
+              0,
+              0
+            ],
+            "expected": 0,
+            "actual": 1
+          },
+          {
+            "length": 2,
+            "own_tail": [
+              1,
+              1
+            ],
+            "other_tail": [
+              0,
+              1
+            ],
+            "expected": 1,
+            "actual": 0
+          }
+        ],
+        "claim": "Agreement on finite probes is not proof of equivalence on every possible history."
+      }
+    }
+  },
+  "memory_one_order": [
+    "initial",
+    "CC",
+    "CD",
+    "DC",
+    "DD"
+  ],
+  "memory_one_ranking": [
+    {
+      "bits": "00111",
+      "train_mean_payoff": 2.655386350817823
+    },
+    {
+      "bits": "00101",
+      "train_mean_payoff": 2.5362380146644106
+    },
+    {
+      "bits": "00110",
+      "train_mean_payoff": 2.4510716300056403
+    },
+    {
+      "bits": "00100",
+      "train_mean_payoff": 2.411308516638466
+    },
+    {
+      "bits": "10011",
+      "train_mean_payoff": 2.3310772701635645
+    },
+    {
+      "bits": "10111",
+      "train_mean_payoff": 2.3310772701635645
+    },
+    {
+      "bits": "11011",
+      "train_mean_payoff": 2.3310772701635645
+    },
+    {
+      "bits": "11111",
+      "train_mean_payoff": 2.3310772701635645
+    },
+    {
+      "bits": "01111",
+      "train_mean_payoff": 2.330936266215454
+    },
+    {
+      "bits": "01110",
+      "train_mean_payoff": 2.245628877608573
+    },
+    {
+      "bits": "11110",
+      "train_mean_payoff": 2.24492385786802
+    },
+    {
+      "bits": "00000",
+      "train_mean_payoff": 2.2436548223350252
+    },
+    {
+      "bits": "00001",
+      "train_mean_payoff": 2.2436548223350252
+    },
+    {
+      "bits": "00010",
+      "train_mean_payoff": 2.2436548223350252
+    },
+    {
+      "bits": "00011",
+      "train_mean_payoff": 2.2436548223350252
+    },
+    {
+      "bits": "10110",
+      "train_mean_payoff": 2.2048787366046247
+    },
+    {
+      "bits": "01101",
+      "train_mean_payoff": 2.1653976311336716
+    },
+    {
+      "bits": "11101",
+      "train_mean_payoff": 2.1642695995487875
+    },
+    {
+      "bits": "01011",
+      "train_mean_payoff": 2.1641285956006766
+    },
+    {
+      "bits": "10010",
+      "train_mean_payoff": 2.081923293852228
+    },
+    {
+      "bits": "11010",
+      "train_mean_payoff": 2.079385222786238
+    },
+    {
+      "bits": "01010",
+      "train_mean_payoff": 2.0792442188381273
+    },
+    {
+      "bits": "01100",
+      "train_mean_payoff": 2.0001410039481105
+    },
+    {
+      "bits": "11100",
+      "train_mean_payoff": 1.997179921037789
+    },
+    {
+      "bits": "10101",
+      "train_mean_payoff": 1.959531866892273
+    },
+    {
+      "bits": "10100",
+      "train_mean_payoff": 1.9151156232374507
+    },
+    {
+      "bits": "11001",
+      "train_mean_payoff": 1.655668358714044
+    },
+    {
+      "bits": "01001",
+      "train_mean_payoff": 1.4874506486181613
+    },
+    {
+      "bits": "01000",
+      "train_mean_payoff": 1.4471235194585448
+    },
+    {
+      "bits": "11000",
+      "train_mean_payoff": 1.4447264523406655
+    },
+    {
+      "bits": "10001",
+      "train_mean_payoff": 1.4200507614213198
+    },
+    {
+      "bits": "10000",
+      "train_mean_payoff": 1.2532430908065426
+    }
+  ],
+  "tft_rank_competition": 2
+}

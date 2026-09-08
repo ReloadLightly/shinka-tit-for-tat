@@ -1,0 +1,19 @@
+{
+  "api_cost_usd": 0.0,
+  "api_stop_threshold_usd": 0.5,
+  "budget_semantics": "soft scheduling threshold; an in-flight request can exceed it",
+  "dependency": {
+    "installed": false,
+    "pinned_commit_matches": false
+  },
+  "live_ready": false,
+  "mode": "preflight",
+  "model": "gpt-5-mini",
+  "model_calls": 0,
+  "mutation_budget": 5,
+  "openai_api_key_present": false,
+  "provider_connectivity_tested": false,
+  "seed_combined_score": 2.3310772701635645,
+  "seed_valid": true,
+  "shinka_num_generations_including_seed": 6
+}
