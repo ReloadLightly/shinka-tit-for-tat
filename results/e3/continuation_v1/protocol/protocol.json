@@ -1,0 +1,85 @@
+{
+  "external_proposal_invocations": 0,
+  "seed_sha256": "fc938dea6c869791ffb3d7fbbb03f95b21ea86152fb3414345a9d107323d56a1",
+  "initial_prompt_sha256": "ceabf3f5cf9db08168cdabe290e45851213ed4eab5300b950247a706aabee1bf",
+  "dependency": {
+    "installed": true,
+    "version": "0.0.7",
+    "installed_commit": "9912af12d423504b8d580f4179fd15f5f88b8c50",
+    "pinned_commit_matches": true
+  },
+  "model": "gpt-5.6-terra",
+  "reasoning_effort": "low",
+  "versions": {
+    "codex": "codex-cli 0.153.4",
+    "headless": "0.6.1"
+  },
+  "run_ids": [
+    "S101",
+    "S202",
+    "S303"
+  ],
+  "local_seeds": [
+    101,
+    202,
+    303
+  ],
+  "remote_deterministic": false,
+  "limit": 60,
+  "per_run_limit": 20,
+  "generations_including_seed": 21,
+  "database": {
+    "db_path": null,
+    "num_islands": 1,
+    "archive_size": 16,
+    "max_stdout_log_chars": null,
+    "elite_selection_ratio": 0.3,
+    "num_archive_inspirations": 0,
+    "num_top_k_inspirations": 1,
+    "migration_interval": 10,
+    "migration_rate": 0.0,
+    "island_elitism": true,
+    "enforce_island_separation": true,
+    "island_selection_strategy": "uniform",
+    "enable_dynamic_islands": false,
+    "stagnation_threshold": 100,
+    "island_spawn_strategy": "initial",
+    "island_spawn_subtree_size": 1,
+    "parent_selection_strategy": "weighted",
+    "exploitation_alpha": 1.0,
+    "exploitation_ratio": 0.2,
+    "parent_selection_lambda": 10.0,
+    "num_beams": 5,
+    "archive_selection_strategy": "fitness",
+    "archive_criteria": {
+      "combined_score": 1.0
+    }
+  },
+  "upstream_sha256": {
+    "shinka.core.async_runner": "153a6e1b9a7bdb673767bd3109de085c2f4e60cae07a0107858c5318f7557fed",
+    "shinka.core.sampler": "cdfa7fcbe0d3be09a0901f972ca579628074b87df34224d4549bb03bd758e29d",
+    "shinka.database.dbase": "8179b5dc05c8863978b7d7c37d38210b12eb2f7d79343319c7d6c9eedf579b1b",
+    "shinka.database.async_dbase": "2dce0625e4b9d47c3e48a65dfd0da7b564a4a237e17367de17c2e8144a33bd20",
+    "shinka.database.parents": "3bd262bdacee19e063758b0712d9c8c792e9c6b5e12b97a522df79a37cba616a",
+    "shinka.database.inspirations": "50ffe1993ec79e482abd49715cd7669ee5b1b77cc9a10e32c2b7e8f82d78b49a",
+    "shinka.database.island_sampler": "ba42c62835496b0bd1e1192ba0f02a6ddf5780bb0002766c1f77bfddf30e34e6",
+    "shinka.launch.scheduler": "c32d0682ac0c572d01dc10b49887cb54eb7d6b6ba760ba74c132465a1366266b",
+    "shinka.llm.providers.headless": "c9a5295c615eb9dd2b6dfc353b1f6ca08dcbfb3536582f39dcad048ee6a8693f"
+  },
+  "automatic_recoveries": 2,
+  "timeouts_seconds": {
+    "codex": 180,
+    "headless_wrapper": 210,
+    "native_provider": 240,
+    "evaluation": 60,
+    "drain": 350,
+    "cumulative_per_run": 9000,
+    "transfer_worker_per_policy_panel": 300
+  },
+  "fitness": "unchanged original-training total own payoff / total rounds",
+  "selection": "highest admissible original-training payoff including seed; earliest exact tie",
+  "primary_outcome": "selected development payoff minus seed development payoff",
+  "analysis_gate": "all three runs completed and selections frozen",
+  "retries": "one Shinka attempt, zero Codex request/stream retries, no resampling",
+  "continuation": "quiescent native archive/database/generation/Python+NumPy RNG checkpoint; no best-only restart"
+}

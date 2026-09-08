@@ -1,0 +1,10 @@
+{
+  "run_id": "S101",
+  "slot": 2,
+  "status": "local_prelaunch_failure",
+  "assigned_utc": "2026-09-08T21:50:19.838768+00:00",
+  "local_attempts": 1,
+  "external_launches": 0,
+  "finished_utc": "2026-09-08T21:50:52.882399+00:00",
+  "no_program": true
+}

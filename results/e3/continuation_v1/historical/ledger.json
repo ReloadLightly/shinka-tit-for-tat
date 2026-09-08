@@ -1,0 +1,31 @@
+{
+  "limit": 60,
+  "per_run_limit": 20,
+  "order": [
+    "S101",
+    "S202",
+    "S303"
+  ],
+  "invocations": [],
+  "stopped": true,
+  "closed": false,
+  "execution_started": true,
+  "recoveries": [],
+  "runs": {
+    "S101": {
+      "status": "paused",
+      "returncode": 2,
+      "runtime_seconds": 67.56626177899307,
+      "finished_utc": "2026-09-08T20:44:34.993946+00:00"
+    },
+    "S202": {
+      "status": "unstarted"
+    },
+    "S303": {
+      "status": "unstarted"
+    }
+  },
+  "protocol_commit": "3288b90e625daf0f02e684eb32d791c4f3f261a1",
+  "stop_reason": "Ambiguous checkpoint generation boundary",
+  "failure_class": "checkpoint_integrity"
+}

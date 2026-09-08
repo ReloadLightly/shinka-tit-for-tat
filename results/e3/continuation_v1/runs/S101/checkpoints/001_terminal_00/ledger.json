@@ -1,0 +1,33 @@
+{
+  "limit": 60,
+  "per_run_limit": 20,
+  "order": [
+    "S101",
+    "S202",
+    "S303"
+  ],
+  "invocations": [],
+  "stopped": true,
+  "closed": false,
+  "execution_started": true,
+  "recoveries": [],
+  "runs": {
+    "S101": {
+      "status": "running",
+      "open_segment": {
+        "monotonic": 304696.684117149,
+        "boot_id": "63a22045-f6ab-4292-a95b-2da600c81b12",
+        "utc": "2026-09-08T20:43:22.339190+00:00"
+      }
+    },
+    "S202": {
+      "status": "unstarted"
+    },
+    "S303": {
+      "status": "unstarted"
+    }
+  },
+  "protocol_commit": "3288b90e625daf0f02e684eb32d791c4f3f261a1",
+  "stop_reason": "No terminal invocation for assigned generation",
+  "failure_class": "ambiguous"
+}

@@ -1,0 +1,20 @@
+fatal: not a git repository (or any of the parent directories): .git
+Traceback (most recent call last):
+  File "/home/roland/actir/shinka-tit-for-tat/results/e3/bin/codex", line 215, in <module>
+    raise SystemExit(run_codex(sys.argv[1:]) if Path(sys.argv[0]).name == "codex"
+                     ~~~~~~~~~^^^^^^^^^^^^^^
+  File "/home/roland/actir/shinka-tit-for-tat/results/e3/bin/codex", line 114, in run_codex
+    verify_committed()
+    ~~~~~~~~~~~~~~~~^^
+  File "/home/roland/actir/shinka-tit-for-tat/run_e3.py", line 81, in verify_committed
+    commit = subprocess.check_output(['git', 'rev-parse', 'HEAD'], text=True).strip()
+             ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/roland/.local/share/uv/python/cpython-3.13-linux-x86_64-gnu/lib/python3.13/subprocess.py", line 472, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+           ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+               **kwargs).stdout
+               ^^^^^^^^^
+  File "/home/roland/.local/share/uv/python/cpython-3.13-linux-x86_64-gnu/lib/python3.13/subprocess.py", line 577, in run
+    raise CalledProcessError(retcode, process.args,
+                             output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '['git', 'rev-parse', 'HEAD']' returned non-zero exit status 128.

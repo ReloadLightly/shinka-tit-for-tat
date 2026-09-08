@@ -1,0 +1,33 @@
+{
+  "run_id": "S101",
+  "records": [
+    {
+      "slot": 0,
+      "source": "results/e3/continuation_v1/runs/S101/gen_0/main.py",
+      "sha256": "fc938dea6c869791ffb3d7fbbb03f95b21ea86152fb3414345a9d107323d56a1",
+      "correct": true,
+      "error": null,
+      "training": 2.655386350817823
+    },
+    {
+      "slot": 3,
+      "source": "results/e3/continuation_v1/runs/S101/gen_3/main.py",
+      "sha256": "fc938dea6c869791ffb3d7fbbb03f95b21ea86152fb3414345a9d107323d56a1",
+      "correct": true,
+      "error": null,
+      "training": 2.655386350817823
+    }
+  ],
+  "training_selected": {
+    "slot": 0,
+    "source": "results/e3/continuation_v1/runs/S101/gen_0/main.py",
+    "sha256": "fc938dea6c869791ffb3d7fbbb03f95b21ea86152fb3414345a9d107323d56a1",
+    "correct": true,
+    "error": null,
+    "training": 2.655386350817823
+  },
+  "runtime_seconds": 25.876518174016383,
+  "finished_utc": "2026-09-08T21:51:42.587879+00:00",
+  "shinka_completed_generations": 4,
+  "headless_list_price_estimate_not_charge": 0.0
+}

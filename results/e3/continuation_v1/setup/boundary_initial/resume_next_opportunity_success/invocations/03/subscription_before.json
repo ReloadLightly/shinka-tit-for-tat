@@ -1,0 +1,64 @@
+{
+  "model_turns": 0,
+  "account": {
+    "type": "chatgpt",
+    "planType": "pro"
+  },
+  "limits": {
+    "rateLimits": {
+      "limitId": null,
+      "limitName": null,
+      "primary": {
+        "usedPercent": 0
+      },
+      "secondary": null,
+      "credits": null,
+      "spendControlReached": null,
+      "planType": null,
+      "rateLimitReachedType": null
+    },
+    "rateLimitsByLimitId": {}
+  },
+  "models": [
+    {
+      "id": null,
+      "model": "gpt-5.6-terra",
+      "displayName": null,
+      "supportedReasoningEfforts": [
+        {
+          "reasoningEffort": "low"
+        }
+      ]
+    }
+  ],
+  "rpc_diagnostics": [
+    {
+      "method": "initialize",
+      "notifications": 0,
+      "unmatched_responses": 0,
+      "outcome": "response",
+      "runtime_seconds": 0.14183335099369287
+    },
+    {
+      "method": "account/read",
+      "notifications": 0,
+      "unmatched_responses": 0,
+      "outcome": "response",
+      "runtime_seconds": 0.00039333105087280273
+    },
+    {
+      "method": "account/rateLimits/read",
+      "notifications": 0,
+      "unmatched_responses": 0,
+      "outcome": "response",
+      "runtime_seconds": 0.00030712404986843467
+    },
+    {
+      "method": "model/list",
+      "notifications": 0,
+      "unmatched_responses": 0,
+      "outcome": "response",
+      "runtime_seconds": 0.0003629770362749696
+    }
+  ]
+}

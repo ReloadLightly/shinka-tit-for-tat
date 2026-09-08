@@ -18,7 +18,7 @@ import threading
 import time
 
 from e3_backend import E3, MODEL, ORDER, ROOT, utc, verify_freeze
-from e3_state import checkpoint, verify_checkpoint, restore, read, sha, surviving_workers
+from e3_state import checkpoint, verify_checkpoint, restore, read, sha, surviving_workers, opportunities, assign_opportunity
 from e1r_io import write_json
 from e1r_runtime import install, verify_upstream
 from e1r_status import read_status, require_subscription_capacity
@@ -52,6 +52,22 @@ def progress(run_id, slot, stage, valid=None, score=None, best=None):
           f'training={score} current_best={best} invocations={len(ledger()["invocations"])}/60', flush=True)
 
 
+def heartbeat(stop, child, run_id, started, prior):
+    while not stop.wait(25):
+        state = ledger()
+        rows = training_records(run_id)
+        generated = [r for r in rows if r['slot'] > 0]
+        records = [r for r in opportunities(state) if r['run_id'] == run_id]
+        last = records[-1] if records else {}
+        best = select(rows)['training'] if rows else None
+        print(f'[E3 heartbeat] stage=search run={run_id} opportunity={last.get("slot", 0)}/20 '
+              f'external={len(state["invocations"])}/{state.get("further_external_limit", 60)} '
+              f'generated={len(generated)} evaluated={sum(r["training"] is not None for r in generated)} '
+              f'best_training={best} elapsed={prior + time.monotonic()-started:.1f}s '
+              f'last_progress={last.get("finished_utc", last.get("assigned_utc", last.get("reconciled_utc")))} '
+              f'worker_pid={child.pid} active={child.poll() is None}', flush=True)
+
+
 def training_records(run_id):
     rows = []
     for slot in range(21):
@@ -81,7 +97,8 @@ def verify_committed():
     verify_freeze()
     commit = subprocess.check_output(['git', 'rev-parse', 'HEAD'], text=True, cwd=ROOT).strip()
     frozen = read(E3 / 'protocol/freeze.json')
-    names = list(frozen['source_sha256']) + ['results/e3/' + n for n in frozen['artifact_sha256']] + ['results/e3/protocol/freeze.json']
+    prefix = str(E3.relative_to(ROOT)) + '/'
+    names = list(frozen['source_sha256']) + [prefix + n for n in frozen['artifact_sha256']] + [prefix + 'protocol/freeze.json']
     for name in names:
         if subprocess.check_output(['git', 'show', f'{commit}:{name}'], cwd=ROOT) != (ROOT / name).read_bytes():
             raise RuntimeError('Uncommitted freeze: ' + name)
@@ -167,6 +184,9 @@ def execute(resume=False):
                         stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True, start_new_session=True)
                     timer = threading.Timer(remaining, lambda: os.killpg(child.pid, signal.SIGKILL) if child.poll() is None else None)
                     timer.start()
+                    heartbeat_stop = threading.Event()
+                    reporter = threading.Thread(target=heartbeat, args=(heartbeat_stop, child, run_id, start, used_time))
+                    reporter.start()
                     try:
                         for line in child.stdout:
                             log.write(line)
@@ -176,6 +196,11 @@ def execute(resume=False):
                         rc = child.wait()
                     finally:
                         timer.cancel()
+                        heartbeat_stop.set()
+                        reporter.join()
+                        if child.poll() is None:
+                            os.killpg(child.pid, signal.SIGKILL)
+                            child.wait(timeout=10)
                 state = ledger()
                 state['runs'][run_id].update(returncode=rc, runtime_seconds=used_time + time.monotonic()-start,
                                               status='paused', finished_utc=utc())
@@ -204,7 +229,8 @@ def execute(resume=False):
                 if not state.get('recoveries'):
                     raise RuntimeError('Unexpected incomplete run')
         state = ledger()
-        assert len(state['invocations']) == 60
+        assert len(opportunities(state)) == 60
+        assert len(state['invocations']) <= state.get('further_external_limit', 60)
         state.update(closed=True, completed_utc=utc())
         write_json(E3 / 'ledger.json', state)
         freeze_selections()
@@ -266,7 +292,7 @@ def run_one(run_id):
         async def _count_completed_generations_from_db(self):
             count = await super()._count_completed_generations_from_db()
             present = set(await self.async_db.get_persisted_generation_ids_async())
-            records = [r for r in ledger()['invocations'] if r['run_id'] == run_id]
+            records = [r for r in opportunities(ledger()) if r['run_id'] == run_id]
             # Accounting only: no fabricated Program row or policy fitness.
             return count + sum(r['slot'] not in present and r['status'] != 'reserved'
                                for r in records if (folder / f"gen_{r['slot']}" / 'opportunity.json').exists()
@@ -283,19 +309,31 @@ def run_one(run_id):
                 self.should_stop.set()
                 return
             checkpoint(self, E3, run_id, 'boundary')
+            if self.should_stop.is_set():
+                return
             return await super()._start_proposals(min(num_proposals, 1))
 
         async def _generate_proposal_async(self, generation, task_id):
             try:
                 return await super()._generate_proposal_async(generation, task_id)
             finally:
-                records = [r for r in ledger()['invocations'] if r['run_id'] == run_id and r['slot'] == generation]
+                state = ledger()
+                records = [r for r in state['invocations'] if r['run_id'] == run_id and r['slot'] == generation]
                 if records and records[0]['status'] != 'reserved':
+                    if 'opportunities' in state:
+                        opportunity = next(r for r in state['opportunities'] if (r['run_id'], r['slot']) == (run_id, generation))
+                        opportunity.update(status=records[0]['status'], finished_utc=utc())
+                        write_json(E3 / 'ledger.json', state)
                     no_program = not any(j.generation == generation for j in self.running_jobs)
                     write_json(folder / f'gen_{generation}' / 'opportunity.json', {**records[0], 'no_program': no_program})
                     await self._update_completed_generations()
                 else:
-                    state = ledger()
+                    if not records and 'opportunities' in state:
+                        matches = [r for r in state['opportunities'] if (r['run_id'], r['slot']) == (run_id, generation)]
+                        if matches:
+                            matches[0].update(status='local_prelaunch_failure', local_attempts=1,
+                                              external_launches=0, finished_utc=utc())
+                            write_json(folder / f'gen_{generation}' / 'opportunity.json', {**matches[0], 'no_program': True})
                     state.update(stopped=True, failure_class='ambiguous', stop_reason='No terminal invocation for assigned generation')
                     write_json(E3 / 'ledger.json', state)
                     self.should_stop.set()
@@ -313,6 +351,11 @@ def run_one(run_id):
             if ledger().get("stopped"):
                 raise RuntimeError("Stopped experiment: no further proposals")
             os.environ["E3_SLOT"] = str(generation)
+            state = ledger()
+            if 'opportunities' in state:
+                assigned = assign_opportunity(state, run_id, generation)
+                assigned['assigned_utc'] = utc()
+                write_json(E3 / 'ledger.json', state)
             target = folder / f"gen_{generation}"
             target.mkdir(exist_ok=True)
             write_json(target / "supplied_context.json", {"parent": parent_program.to_dict(),

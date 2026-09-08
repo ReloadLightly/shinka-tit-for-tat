@@ -1,0 +1,58 @@
+{
+  "passed": true,
+  "records": [
+    {
+      "mode": "original_prelaunch_failure",
+      "passed": true,
+      "consumed_opportunities": 2,
+      "synthetic_final_launches": 0,
+      "external_proposal_invocations": 0,
+      "returncode": 2,
+      "runner": {
+        "completed_generations": 3,
+        "next_generation_to_submit": 3,
+        "best_program_id": null,
+        "total_proposals_generated": 2,
+        "total_api_cost": 0.0,
+        "completed_proposal_costs": [],
+        "avg_proposal_cost": 0.0,
+        "_sampling_seconds_ewma": null,
+        "_evaluation_seconds_ewma": null,
+        "_proposal_timing_samples": 0,
+        "prompt_evolution_counter": 0,
+        "prompt_percentile_recompute_counter": 0,
+        "prompt_api_cost": 0.0,
+        "stuck_detection_count": 0,
+        "cost_limit_reached": false
+      }
+    },
+    {
+      "mode": "resume_next_opportunity_success",
+      "passed": true,
+      "consumed_opportunities": 3,
+      "synthetic_final_launches": 1,
+      "external_proposal_invocations": 0,
+      "returncode": 0,
+      "runner": {
+        "completed_generations": 4,
+        "next_generation_to_submit": 4,
+        "best_program_id": "c7418b76-f1fd-4ce9-9eb3-16f7bca802ae",
+        "total_proposals_generated": 3,
+        "total_api_cost": 0.0,
+        "completed_proposal_costs": [
+          0.0
+        ],
+        "avg_proposal_cost": 0.0,
+        "_sampling_seconds_ewma": 9.273389339447021,
+        "_evaluation_seconds_ewma": 0.33299946784973145,
+        "_proposal_timing_samples": 1,
+        "prompt_evolution_counter": 0,
+        "prompt_percentile_recompute_counter": 0,
+        "prompt_api_cost": 0.0,
+        "stuck_detection_count": 0,
+        "cost_limit_reached": false
+      }
+    }
+  ],
+  "external_proposal_invocations": 0
+}

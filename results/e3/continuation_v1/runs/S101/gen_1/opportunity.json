@@ -1,0 +1,12 @@
+{
+  "run_id": "S101",
+  "slot": 1,
+  "status": "local_prelaunch_failure",
+  "local_attempts": 3,
+  "external_launches": 0,
+  "generated_policy": null,
+  "fitness": null,
+  "reconciled_utc": "2026-09-08T21:45:38.153193+00:00",
+  "provenance": "Original terminal checkpoint and prelaunch_failure_audit.json; recorded now, no historical reservation claimed",
+  "no_program": true
+}

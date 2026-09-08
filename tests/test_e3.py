@@ -22,7 +22,7 @@ class Accounting(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             try:
                 os.chdir(tmp)
-                with patch.object(run, 'verify_freeze'), patch.object(run, 'read', return_value={
+                with patch.object(run, 'E3', state.ORIGINAL), patch.object(run, 'verify_freeze'), patch.object(run, 'read', return_value={
                         'source_sha256': {'task_prompt.txt': 'checked separately'}, 'artifact_sha256': {}}):
                     self.assertEqual(len(run.verify_committed()), 40)
             finally:
@@ -32,7 +32,8 @@ class Accounting(unittest.TestCase):
         code = '''
 from unittest.mock import patch
 import run_e3
-with patch.object(run_e3, 'verify_freeze'), patch.object(run_e3, 'read', return_value={'source_sha256': {}, 'artifact_sha256': {}}):
+from e3_state import ORIGINAL
+with patch.object(run_e3, 'E3', ORIGINAL), patch.object(run_e3, 'verify_freeze'), patch.object(run_e3, 'read', return_value={'source_sha256': {}, 'artifact_sha256': {}}):
     run_e3.verify_committed()
 from shinka.llm import constants
 assert constants.MAX_RETRIES == 1, constants.MAX_RETRIES
@@ -69,7 +70,7 @@ print('Fresh-process frozen retry settings: one attempt, zero OpenAI retries')
             write_json(root / 'ledger.json', {'invocations': [], 'execution_started': True})
             status = {'account': {'type': 'chatgpt', 'planType': 'pro'},
                       'limits': {'rateLimits': {'primary': {'usedPercent': 11}}},
-                      'models': [{'model': backend.MODEL}]}
+                      'models': [{'model': backend.MODEL, 'supportedReasoningEfforts': [{'reasoningEffort': 'low'}]}]}
             with patch.object(backend, 'E3', root), patch.object(backend, 'verify_freeze'), \
                  patch.object(run, 'verify_committed'), \
                  patch.object(backend, 'read_status', return_value=status), \

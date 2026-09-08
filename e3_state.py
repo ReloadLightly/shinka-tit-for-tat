@@ -9,7 +9,9 @@ import sqlite3
 from e1r_io import write_json
 
 ROOT = Path(__file__).resolve().parent
-E3 = ROOT / 'results/e3'
+ORIGINAL = ROOT / 'results/e3'
+CONTINUATION = ORIGINAL / 'continuation_v1'
+E3 = CONTINUATION if (CONTINUATION / 'ledger.json').exists() else ORIGINAL
 RUNNER_FIELDS = ('completed_generations', 'next_generation_to_submit', 'best_program_id',
     'total_proposals_generated', 'total_api_cost', 'completed_proposal_costs', 'avg_proposal_cost',
     '_sampling_seconds_ewma', '_evaluation_seconds_ewma', '_proposal_timing_samples',
@@ -49,10 +51,55 @@ def verify_freeze(root=E3):
     for name, digest in frozen['historical_sha256'].items():
         if sha(ROOT / name) != digest:
             raise RuntimeError('Historical evidence mismatch: ' + name)
+    for name, digest in frozen.get('preserved_sha256', {}).items():
+        if sha(ROOT / name) != digest:
+            raise RuntimeError('Preserved E3 evidence mismatch: ' + name)
     import importlib.util
     for name, digest in read(root / 'protocol/protocol.json')['upstream_sha256'].items():
         if sha(importlib.util.find_spec(name).origin) != digest:
             raise RuntimeError('Pinned upstream mismatch: ' + name)
+
+
+def opportunities(state):
+    return state.get('opportunities', state['invocations'])
+
+
+def validate_accounting(state):
+    if 'opportunities' not in state:
+        return
+    ops = state['opportunities']
+    expected = [(r, s) for r in ('S101', 'S202', 'S303') for s in range(1, 21)]
+    if len(ops) > 60 or [(r['run_id'], r['slot']) for r in ops] != expected[:len(ops)]:
+        raise RuntimeError('Contradictory opportunity order')
+    calls = state['invocations']
+    if len(calls) > min(60, state['further_external_limit']):
+        raise RuntimeError('External launch ceiling exceeded')
+    keys = [(r['run_id'], r['slot']) for r in calls]
+    if len(keys) != len(set(keys)):
+        raise RuntimeError('Repeated external opportunity')
+    for index, call in enumerate(calls, 1):
+        matching = [o for o in ops if (o['run_id'], o['slot']) == (call['run_id'], call['slot'])]
+        if call['invocation'] != index or len(matching) != 1 or matching[0].get('external_invocation') != index:
+            raise RuntimeError('Opportunity/external invocation disagreement')
+        if matching[0]['status'] != 'assigned' and matching[0]['status'] != call['status']:
+            raise RuntimeError('Contradictory terminal outcomes')
+
+
+def assign_opportunity(state, run_id, slot):
+    validate_accounting(state)
+    records = opportunities(state)
+    expected = [(r, s) for r in ('S101', 'S202', 'S303') for s in range(1, 21)]
+    if state.get('stopped') or state.get('closed') or len(records) >= 60:
+        raise RuntimeError('Opportunity allowance stopped or exhausted')
+    if [(r['run_id'], r['slot']) for r in records] != expected[:len(records)]:
+        raise RuntimeError('Contradictory opportunity history')
+    if (run_id, slot) != expected[len(records)]:
+        raise RuntimeError('Opportunity already consumed or out of order')
+    if any(r['status'] in ('assigned', 'reserved') for r in records):
+        raise RuntimeError('Previous opportunity is not terminal')
+    record = {'run_id': run_id, 'slot': slot, 'status': 'assigned'}
+    state['opportunities'].append(record)
+    return record
 
 
 def rng_state():
@@ -91,8 +138,8 @@ def checkpoint(runner, root, run_id, phase):
     assert_drained(runner)
     folder = root / 'runs' / run_id
     state = read(root / 'ledger.json')
-    records = [r for r in state['invocations'] if r['run_id'] == run_id]
-    if any(r['status'] == 'reserved' for r in records):
+    records = [r for r in opportunities(state) if r['run_id'] == run_id]
+    if any(r['status'] in ('reserved', 'assigned') for r in records):
         raise RuntimeError('Ambiguous reserved invocation')
     parent = folder / 'checkpoints'
     parent.mkdir(exist_ok=True)
@@ -110,6 +157,8 @@ def checkpoint(runner, root, run_id, phase):
         'rng': rng_state(), 'database_digest': database_digest(db_path),
         'database_sha256': sha(target / 'programs.sqlite'), 'ledger_sha256': sha(target / 'ledger.json'),
         'invocations': state['invocations'], 'drained': True,
+        'opportunities': opportunities(state),
+        'external_invocations': sum(r['run_id'] == run_id for r in state['invocations']),
         'configuration_sha256': sha(folder / 'configuration.json')}
     write_json(target / 'state.json', saved)
     write_json(folder / 'checkpoint.json', {'path': str(target.relative_to(root)),
@@ -118,6 +167,7 @@ def checkpoint(runner, root, run_id, phase):
 
 
 def verify_checkpoint(root, run_id):
+    validate_accounting(read(root / 'ledger.json'))
     folder = root / 'runs' / run_id
     pointer = read(folder / 'checkpoint.json')
     target = root / pointer['path']
@@ -134,6 +184,11 @@ def verify_checkpoint(root, run_id):
         or sha(folder / 'configuration.json') != saved['configuration_sha256']
         or read(root / 'ledger.json')['invocations'] != saved['invocations']):
         raise RuntimeError('Checkpoint/database/configuration/ledger disagreement')
+    if saved.get('opportunities', saved['invocations']) != opportunities(read(root / 'ledger.json')):
+        raise RuntimeError('Checkpoint opportunity disagreement')
+    records = [r for r in saved.get('opportunities', saved['invocations']) if r['run_id'] == run_id]
+    if len(records) != saved['consumed'] or any(r['status'] in ('assigned', 'reserved') for r in records):
+        raise RuntimeError('Ambiguous opportunity checkpoint')
     if saved['runner']['next_generation_to_submit'] != saved['consumed'] + 1:
         raise RuntimeError('Ambiguous checkpoint generation boundary')
     return saved

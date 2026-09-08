@@ -34,7 +34,7 @@ def encounters():
 def policies():
     selected = read(E3 / 'training_selections_frozen.json')
     result = {k: {'source': v['source'], 'sha256': v['sha256']} for k, v in selected['selections'].items()}
-    result['seed'] = {'source': 'results/e3/protocol/seed.py', 'sha256': sha(E3 / 'protocol/seed.py')}
+    result['seed'] = {'source': str((E3 / 'protocol/seed.py').relative_to(ROOT)), 'sha256': sha(E3 / 'protocol/seed.py')}
     result['TFT'] = {'reference': 'tit_for_tat'}
     return result
 

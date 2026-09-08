@@ -12,7 +12,7 @@ import os
 from pathlib import Path
 import subprocess
 import sys
-from e3_state import classify_failure
+from e3_state import classify_failure, E3, opportunities, assign_opportunity
 import time
 
 from e1r_process import bounded_run
@@ -20,7 +20,6 @@ from e1r_io import write_json
 from e1r_status import read_status, require_subscription_capacity
 
 ROOT = Path(__file__).resolve().parent
-E3 = ROOT / "results" / "e3"
 MODEL = "gpt-5.6-terra"
 ORDER = ("S101", "S202", "S303")
 TOTAL_LIMIT = 60
@@ -87,12 +86,21 @@ def reserve(ledger, run_id, slot):
         raise RuntimeError("E3 invocation allowance exhausted")
     if any(r["slot"] == slot for r in same_run):
         raise RuntimeError("E3 proposal slot already consumed; retries forbidden")
-    expected_run = ORDER[len(records) // RUN_LIMIT]
-    if run_id != expected_run or slot != len(same_run) + 1:
-        raise RuntimeError("E3 frozen run/slot order violated")
+    if 'opportunities' in ledger:
+        matches = [r for r in ledger['opportunities'] if (r['run_id'], r['slot']) == (run_id, slot)]
+        if len(matches) != 1 or matches[0]['status'] != 'assigned':
+            raise RuntimeError('No unique unused assigned opportunity')
+        if len(records) >= ledger['further_external_limit']:
+            raise RuntimeError('Continuation external allowance exhausted')
+    else:
+        expected_run = ORDER[len(records) // RUN_LIMIT]
+        if run_id != expected_run or slot != len(same_run) + 1:
+            raise RuntimeError("E3 frozen run/slot order violated")
     record = {"invocation": len(records) + 1, "run_id": run_id, "slot": slot,
               "reserved_utc": utc(), "status": "reserved", "model": MODEL}
     records.append(record)
+    if 'opportunities' in ledger:
+        matches[0]['external_invocation'] = record['invocation']
     return record
 
 
@@ -124,7 +132,8 @@ def run_codex(args):
             diagnostics = []
             status = read_status(env["E3_REAL_CODEX"], diagnostics=diagnostics)
             require_subscription_capacity(status)
-            if not any(m.get("model") == MODEL for m in status["models"]):
+            if not any(m.get("model") == MODEL and any(e['reasoningEffort'] == 'low'
+                       for e in m.get('supportedReasoningEfforts', [])) for m in status["models"]):
                 raise RuntimeError("Frozen model unavailable; no substitution")
         except BaseException as exc:
             ledger.update(stopped=True, stop_reason=f"Subscription check: {type(exc).__name__}: {exc}", failure_class="metadata_or_capacity", metadata_failure_diagnostics=diagnostics)

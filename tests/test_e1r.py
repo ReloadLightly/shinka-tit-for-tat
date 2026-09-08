@@ -4,6 +4,7 @@ import io
 import os
 from pathlib import Path
 import subprocess
+import selectors
 import sys
 import tempfile
 import time
@@ -19,12 +20,17 @@ import run_e1r
 
 class MetadataTests(unittest.TestCase):
     def fixture(self, body, timeout=.25, number=1):
-        process = subprocess.Popen(["python3", "-c", body], stdin=subprocess.PIPE,
+        body = "import os,sys; os.write(1,b'READY\\n'); sys.stdin.buffer.readline();\n" + body
+        process = subprocess.Popen([sys.executable, "-c", body], stdin=subprocess.PIPE,
                                    stdout=subprocess.PIPE, bufsize=0)
         rpc = JsonLinesRPC(process, timeout)
         try:
+            self.assertTrue(rpc.selector.select(5), 'Child startup exceeded separate readiness bound')
+            self.assertEqual(os.read(process.stdout.fileno(), 6), b'READY\n')
             return rpc.request(number, "fixture", {})
         finally:
+            if rpc.diagnostics and rpc.diagnostics[-1]['outcome'] == 'TimeoutError':
+                self.assertLess(rpc.diagnostics[-1]['runtime_seconds'], 1)
             rpc.selector.close()
             process.terminate()
             process.wait(timeout=2)
@@ -50,7 +56,7 @@ class MetadataTests(unittest.TestCase):
             start = time.monotonic()
             with self.assertRaisesRegex(TimeoutError, "fixture"):
                 self.fixture(body, timeout=.1)
-            self.assertLess(time.monotonic() - start, 1)
+            self.assertLess(time.monotonic() - start, 6)  # Separate 5 s readiness + timed RPC.
 
     def test_rpc_error_does_not_echo_payload(self):
         with self.assertRaisesRegex(RuntimeError, "Codex metadata RPC error: fixture") as caught:
@@ -186,8 +192,25 @@ class AccountingTests(unittest.TestCase):
 class ProcessTests(unittest.TestCase):
     def test_timeout_returns_failure_and_preserves_output(self):
         from e1r_process import bounded_run
-        rc, stdout, stderr = bounded_run([sys.executable, "-c", 'import time; print("fixture",flush=True); time.sleep(30)'],
-                                         timeout=.1, env=dict(os.environ))
+        # Start the production timeout only after separately bounded fixture
+        # readiness; Popen and communicate still create/kill the real child.
+        real_popen = subprocess.Popen
+        children = []
+        def ready_popen(*args, **kwargs):
+            proc = real_popen(*args, **kwargs)
+            children.append(proc)
+            with selectors.DefaultSelector() as selector:
+                selector.register(proc.stderr, selectors.EVENT_READ)
+                self.assertTrue(selector.select(5), 'Fixture did not become ready')
+                self.assertEqual(proc.stderr.readline(), 'READY\n')
+            return proc
+        with patch('e1r_process.subprocess.Popen', ready_popen):
+            started = time.monotonic()
+            rc, stdout, stderr = bounded_run([sys.executable, "-c",
+                'import time,sys; print("fixture",flush=True); print("READY",file=sys.stderr,flush=True); time.sleep(30)'],
+                timeout=.1, env=dict(os.environ))
+        self.assertIsNotNone(children[0].poll())
+        self.assertLess(time.monotonic() - started, 6)
         self.assertEqual(rc, 124)
         self.assertEqual(stdout, "fixture\n")
         self.assertIn("timeout", stderr)

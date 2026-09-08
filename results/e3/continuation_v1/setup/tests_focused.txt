@@ -1,0 +1,31 @@
+test_at_most_two_read_only_recoveries (test_e3.Accounting.test_at_most_two_read_only_recoveries) ... ok
+test_commit_guard_sets_retry_limits_before_first_shinka_import (test_e3.Accounting.test_commit_guard_sets_retry_limits_before_first_shinka_import) ... ok
+test_commit_guard_works_outside_repository (test_e3.Accounting.test_commit_guard_works_outside_repository) ... ok
+test_failure_classifier_is_narrow_and_auth_wins (test_e3.Accounting.test_failure_classifier_is_narrow_and_auth_wins) ... ok
+test_launch_failure_is_reserved_once_no_fitness (test_e3.Accounting.test_launch_failure_is_reserved_once_no_fitness) ... Connection failed: error sending requestok
+test_no_post_search_before_three_completions (test_e3.Accounting.test_no_post_search_before_three_completions) ... ok
+test_sixty_unique_ordered_slots_and_pause (test_e3.Accounting.test_sixty_unique_ordered_slots_and_pause) ... ok
+test_native_checkpoint_recovers_context_and_entire_archive (test_e3.FaithfulState.test_native_checkpoint_recovers_context_and_entire_archive) ...                              Parent & Context Sampling Summary - Gen 5 | Total C
+┏━━━━━━━━━━━━━┳━━━━━━┳━━━━━━━━━┳━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+┃ Role        ┃ Gen  ┃ Island  ┃  ✓/✗  ┃    Score ┃ Patch Name                  
+┡━━━━━━━━━━━━━╇━━━━━━╇━━━━━━━━━╇━━━━━━━╇━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+│ PARENT      │  3   │   I-0   │   ✓   │    4.000 │ N/A                         
+│ TopK-1      │  4   │   I-0   │   ✓   │    5.000 │ N/A                         
+└─────────────┴──────┴─────────┴───────┴──────────┴─────────────────────────────
+                             Parent & Context Sampling Summary - Gen 5 | Total C
+┏━━━━━━━━━━━━━┳━━━━━━┳━━━━━━━━━┳━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+┃ Role        ┃ Gen  ┃ Island  ┃  ✓/✗  ┃    Score ┃ Patch Name                  
+┡━━━━━━━━━━━━━╇━━━━━━╇━━━━━━━━━╇━━━━━━━╇━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+│ PARENT      │  3   │   I-0   │   ✓   │    4.000 │ N/A                         
+│ TopK-1      │  4   │   I-0   │   ✓   │    5.000 │ N/A                         
+└─────────────┴──────┴─────────┴───────┴──────────┴─────────────────────────────
+ok
+test_python_and_numpy_rng_roundtrip (test_e3.FaithfulState.test_python_and_numpy_rng_roundtrip) ... ok
+test_derived_checkpoint_preserves_native_fields_and_idempotence (test_e3_continuation.ContinuationTests.test_derived_checkpoint_preserves_native_fields_and_idempotence) ... ok
+test_fifty_nine_external_calls_and_sixty_opportunities (test_e3_continuation.ContinuationTests.test_fifty_nine_external_calls_and_sixty_opportunities) ... ok
+test_local_failure_consumes_without_external_reservation (test_e3_continuation.ContinuationTests.test_local_failure_consumes_without_external_reservation) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 71.868s
+
+OK
