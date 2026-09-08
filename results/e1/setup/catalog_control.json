@@ -1,0 +1,11 @@
+{
+  "source_cache_sha256": "d88f351ba3c51d62a5b5f5b2ee03b0acf035fa08cc085d7bb974cc8b1436d20c",
+  "original_model_record_sha256": "83768b5d25e8bede681a7047aa9ac71429dd6bbba2c06cc63d15c85072b235aa",
+  "only_model_metadata_change": {
+    "apply_patch_tool_type": {
+      "before": "freeform",
+      "after": null
+    }
+  },
+  "purpose": "Disable registration of the file-editing tool; model identity, base instructions, reasoning settings, and other metadata unchanged."
+}

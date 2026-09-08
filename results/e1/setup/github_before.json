@@ -1,0 +1,9 @@
+{
+  "reviewed_pilot_commit": "fe5e130a4b2f3428b4b2bc482bd0378214672ea4",
+  "head_and_origin_main_before_edit": "fe5e130a4b2f3428b4b2bc482bd0378214672ea4",
+  "pre_edit_worktree": "clean",
+  "open_pull_requests": 0,
+  "open_issues": 0,
+  "source": "git fetch/rev-parse/status and gh list inspected before editing; recorded during setup",
+  "external_proposals_before_freeze": 0
+}

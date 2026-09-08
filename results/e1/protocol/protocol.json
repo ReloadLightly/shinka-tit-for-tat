@@ -1,0 +1,73 @@
+{
+  "external_proposal_invocations": 0,
+  "initial_prompt_sha256": "0ef06e3edb68357a74627f51fc163e8fd2e6dad9d36de285bfcdfe17c59f820e",
+  "model": "gpt-5.6-terra",
+  "order": [
+    "A101",
+    "B101",
+    "B202",
+    "A202",
+    "A303",
+    "B303"
+  ],
+  "limit": 60,
+  "limit_per_run": 10,
+  "dependency": {
+    "installed": true,
+    "version": "0.0.7",
+    "installed_commit": "9912af12d423504b8d580f4179fd15f5f88b8c50",
+    "pinned_commit_matches": true
+  },
+  "frozen_utc": "2026-09-08T08:49:18.360380+00:00",
+  "versions": {
+    "codex": "codex-cli 0.153.4",
+    "headless": "0.6.1"
+  },
+  "reasoning_effort": "low",
+  "conditions": {
+    "A": "Native Shinka parent selection, accumulated programs, training feedback",
+    "B": "Native common proposal/evaluation harness; parent/context sampler always returns original seed and empty inspirations"
+  },
+  "proposal_format": "Native FULL_SYS_FORMATS[0], fixed for both arms",
+  "selection": "Highest admissible training payoff including seed; exact ties earliest slot",
+  "duplicate_definition": "AST-identical to earlier admissible or invalid parsed source in same run, including seed; formatting/comments ignored. No replacement.",
+  "analysis_gate": "Freeze all six training selections before ANY holdout evaluation or recognition",
+  "primary_outcome": "Development-holdout payoff of training-selected candidate",
+  "secondary_outcomes": [
+    "training payoff",
+    "valid proposal rate",
+    "best training trajectory",
+    "admissible TFT-compatible appearance and slot"
+  ],
+  "timeouts_seconds": {
+    "codex": 180,
+    "headless": 210,
+    "native_provider": 240,
+    "run": 2600
+  },
+  "retry_resample_attempts": 1,
+  "embeddings": false,
+  "auxiliary_models": false,
+  "fallback": false,
+  "max_api_costs": null,
+  "concurrency": 1,
+  "local_seeds": [
+    101,
+    202,
+    303
+  ],
+  "remote_deterministic": false,
+  "order_balance": "A first in two pairs, B first in one; approximate balance",
+  "hypothesis": "At equal proposal opportunities the combined Shinka search procedure improves training-selected development-holdout payoff over independent generation.",
+  "interpretation": "Consistent positive paired differences support; negative weaken; small/inconsistent/invalidity-dominated or incomplete differences leave uncertain. Three pairs exploratory, not sixty independent replicates.",
+  "boundary": "Supported native tool-registration controls; inactive code-mode host. No file/search/MCP/agent integrations; no OS confidentiality container or knowledge-free invention claim.",
+  "restrictions_sha256": "5f318fcb37d47dec829cd593407f93037db4f691536077238185dbc914f6d9b0",
+  "environment_controls": {
+    "SHINKA_LLM_MAX_RETRIES": "1",
+    "SHINKA_OPENAI_MAX_RETRIES": "0",
+    "SHINKA_LLM_BACKOFF_MAX_TRIES": "1",
+    "SHINKA_LLM_TIMEOUT": "240",
+    "SHINKA_HEADLESS_TIMEOUT": "240",
+    "SHINKA_PRICING_MODE": "offline"
+  }
+}

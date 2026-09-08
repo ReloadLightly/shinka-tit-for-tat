@@ -1,0 +1,21 @@
+{
+  "external_proposal_invocations": 0,
+  "initial_prompt_sha256": "0ef06e3edb68357a74627f51fc163e8fd2e6dad9d36de285bfcdfe17c59f820e",
+  "model": "gpt-5.6-terra",
+  "order": [
+    "A101",
+    "B101",
+    "B202",
+    "A202",
+    "A303",
+    "B303"
+  ],
+  "limit": 60,
+  "limit_per_run": 10,
+  "dependency": {
+    "installed": true,
+    "version": "0.0.7",
+    "installed_commit": "9912af12d423504b8d580f4179fd15f5f88b8c50",
+    "pinned_commit_matches": true
+  }
+}

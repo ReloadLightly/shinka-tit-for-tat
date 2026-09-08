@@ -1,0 +1,110 @@
+# E1 frozen setup: ShinkaEvolve versus independent generation
+
+The exploratory hypothesis is that ShinkaEvolve's combined search procedure
+improves the development-holdout payoff of the training-selected candidate over
+independent generation at equal proposal opportunities. Consistently positive
+paired differences support this hypothesis; negative differences weaken it;
+small, inconsistent, invalidity-dominated, or incomplete differences leave it
+unresolved. Three run pairs cannot establish a general advantage.
+
+Run order is **A101, B101, B202, A202, A303, B303**. Each run has ten proposal
+opportunities; the total hard allowance is 60 external proposal invocations.
+Order is approximately balanced: A first in two pairs, B first in one. Local
+search seeds 101, 202, 303 control local sampling, not remote-model randomness.
+The initial *program* is always-defect (`return 1`), distinct from these RNG seeds.
+
+A uses the pinned real ShinkaEvolve loop: training-based parent selection,
+accumulated programs, one top-k inspiration, and training feedback. B uses the
+same native prompt/parser/evaluation/storage harness but overrides its context
+sampler to return the original seed and no inspirations at every opportunity.
+Each B proposal is a new Codex session with the byte-identical initial rendered
+prompt. B's storage never feeds its proposals. A's three first prompts match B's.
+One native full-rewrite format (`FULL_SYS_FORMATS[0]`) is fixed for both arms.
+This compares combined evolutionary search against independent generation;
+it does not isolate numerical feedback alone. No program is manually repaired.
+
+Common backend: pinned Shinka 0.0.7 at
+`9912af12d423504b8d580f4179fd15f5f88b8c50`, native Headless 0.6.1 / Codex 0.153.4,
+explicit `gpt-5.6-terra`, low reasoning, existing ChatGPT Pro authentication.
+Read-only account/model/quota checks verify availability without a model call;
+no substitution is allowed. No paid API, API-key authentication, fallback,
+purchased-credit continuation, embeddings, auxiliary model, or GitHub Actions.
+
+Supported per-process controls disable shell, file editing, image/file reads,
+web search, MCP, plugins, skills, agents, memory, project instructions, and
+environment context. The model catalog preserves the selected model's metadata
+except `apply_patch_tool_type=null`, disabling that tool's registration. The
+residual code-mode entrypoints have no nested tools and the code-mode host is
+disabled, failing closed. Forced localhost tests exercise installed Codex's
+effective request and dispatch. This is a tool-restricted information boundary,
+not an OS confidentiality container. Native generic instructions and pretrained
+knowledge remain. The supervisor can inspect the experiment; fresh mutation
+sessions receive only generic native instructions plus the permitted task,
+parent/inspiration programs, training feedback, and proposal format.
+
+Serial execution, one proposal/evaluation/database worker. Each Codex launch is
+reserved durably before execution under an exclusive lock. Total/per-run caps,
+frozen order, and unique slots are enforced. Invalid proposals and duplicates
+consume their slots; no replacement. Any failed external launch or live smoke
+also counts. No live smoke is planned. Backend failure or insufficient quota
+stops the whole experiment, preserving partial evidence, with no automatic
+continuation or reset. Codex/Headless/native provider time bounds are 180/210/240
+seconds, plus 2,600 seconds per run. Request/stream retries and Shinka resampling
+are disabled. Invocation counts, completed Codex turn events, native model
+response records, tokens, and runtime are recorded separately. Headless does
+not enforce `max_tokens`; equal proposal opportunities are not equal computation.
+
+The original fixed interpreter, payoff matrix, panels, and stopping rule remain
+unchanged. `policy(own_history, opponent_history)` returns integer 0 (cooperate)
+or 1 (defect). Histories are immutable tuples of completed simultaneous rounds;
+each match starts with empty histories. The interpreter permits conditionals,
+returns, comparisons, Boolean expressions, integer + / - / %, history indexing
+and slicing, len/sum/min/max and .count; no assignments, loops, imports, literal
+tuples, arbitrary calls, or external state. Limits: 16,000 bytes / 400 AST nodes.
+Candidate source is interpreted, never imported or exec'd by evaluation.
+
+Own payoff: CC=3, CD=0, DC=5, DD=1; the opponent receives the transposed payoff.
+Independent geometric stopping probability is 0.00346 per round, no announced
+final round. Length is sampled independently before the match and hidden from
+the policy. Training seeds 11/23/47/89/131 produce lengths 174/747/126/25/110;
+holdout seeds 211/307/401/503/601 produce 241/293/199/55/62. Each of six opponents
+plays all five lengths: 30 matches, 7,092 training rounds or 5,100 holdout rounds.
+Per-match stochastic streams are fixed by SHA-256 of split/opponent/seed.
+
+Training opponents: always cooperate; always defect; independent fair random;
+TFT (cooperate first then copy the other's last action); grim (cooperate until
+any defection then defect forever); ordinary win-stay, lose-shift (cooperate
+first, repeat own action after payoff 3 or 5, switch after 0 or 1).
+Holdout: alternator (C first); suspicious TFT (D first then copy); TFT for two
+tats (D only after two consecutive opponent defections, C for first two rounds);
+hard TFT (D if either of the other's last two available actions was D, C first);
+independent random with cooperation probabilities 0.2 and 0.8. Only the random
+rules are stochastic. Candidates never play one another or themselves. This
+is a custom opponent-panel experiment, not a reconstruction of Axelrod's tournaments.
+
+Fitness is total own training payoff divided by all training rounds: opponents
+equally weighted in aggregate, matches weighted by realized length. There is no
+TFT/cooperation/simplicity bonus. Highest admissible training payoff selects the
+best candidate within each run, including the seed; exact ties go to earliest
+appearance. Invalid source receives the unchanged -1 sentinel and is ineligible.
+Duplicates mean identical parsed AST within a run (comments/formatting ignored),
+including comparison with the seed; duplicates are retained, never replaced.
+Generated sources, evaluator results, database membership, and archive membership
+are distinguished. Failed extraction retains the raw response and failure.
+
+All six selections and source hashes are frozen before any holdout or TFT
+recognition. The primary outcome is the selected candidate's development-holdout
+payoff; this existing holdout is not an untouched confirmatory test. Secondary
+outcomes are training payoff, validity rate, best-training trajectory, and
+whether/when admissible TFT-compatible behavior appeared. Recognition uses the
+existing 1,640 finite probes; agreement is not proof of universal equivalence.
+Report six runs, three paired A-minus-B holdout differences, mean/median/range
+and descriptive sample SD. Do not treat sixty proposals as independent replicates.
+
+Live progress reports condition, seed, slot, stage, validity, training score,
+current best, and cumulative invocation count. Preserve all prompts, sources,
+feedback, failures, configurations, usage, and actual archives without credentials.
+The final self-contained E1 report includes complete selected sources, branch
+explanations, scored encounter traces, opponent breakdowns against references,
+every-slot catalogue, limitations, and one bounded follow-up recommendation.
+No additional experiment conditions or model-judge calls are part of E1.
