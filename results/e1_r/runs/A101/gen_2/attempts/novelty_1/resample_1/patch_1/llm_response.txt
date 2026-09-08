@@ -1,0 +1,15 @@
+<NAME>
+probe_then_reciprocate
+</NAME>
+<DESCRIPTION>
+Defect initially to exploit unconditional cooperation, then cooperate twice to recover mutual cooperation with retaliatory opponents. Afterwards, reciprocate the opponent’s latest action.
+</DESCRIPTION>
+<CODE>
+```python
+# EVOLVE-BLOCK-START
+def policy(own_history, opponent_history):
+    if len(opponent_history) < 3:
+        return 0 if len(opponent_history) else 1
+    return opponent_history[-1]
+# EVOLVE-BLOCK-END
+```

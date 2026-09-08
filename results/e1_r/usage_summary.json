@@ -1,0 +1,101 @@
+{
+  "generated_utc": "2026-09-08T14:35:14.557633+00:00",
+  "runs": {
+    "A101": {
+      "external_invocations": 10,
+      "completed_codex_turn_events": 10,
+      "native_model_response_records": 10,
+      "tokens": {
+        "input_tokens": 57590,
+        "cached_input_tokens": 19456,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 9025,
+        "reasoning_output_tokens": 7699,
+        "total_tokens": 66615
+      },
+      "codex_runtime_seconds": 413.01828785188263,
+      "tool_calls_observed": 0,
+      "tool_calls": [],
+      "fresh_unique_threads": 10,
+      "thread_count": 10
+    },
+    "B101": {
+      "external_invocations": 10,
+      "completed_codex_turn_events": 9,
+      "native_model_response_records": 9,
+      "tokens": {
+        "input_tokens": 51093,
+        "cached_input_tokens": 14592,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 6444,
+        "reasoning_output_tokens": 5349,
+        "total_tokens": 57537
+      },
+      "codex_runtime_seconds": 285.01301711285487,
+      "tool_calls_observed": 0,
+      "tool_calls": [],
+      "fresh_unique_threads": 10,
+      "thread_count": 10
+    },
+    "B202": {
+      "external_invocations": 0,
+      "completed_codex_turn_events": 0,
+      "native_model_response_records": 0,
+      "tokens": {},
+      "codex_runtime_seconds": 0,
+      "tool_calls_observed": 0,
+      "tool_calls": [],
+      "fresh_unique_threads": 0,
+      "thread_count": 0
+    },
+    "A202": {
+      "external_invocations": 0,
+      "completed_codex_turn_events": 0,
+      "native_model_response_records": 0,
+      "tokens": {},
+      "codex_runtime_seconds": 0,
+      "tool_calls_observed": 0,
+      "tool_calls": [],
+      "fresh_unique_threads": 0,
+      "thread_count": 0
+    },
+    "A303": {
+      "external_invocations": 0,
+      "completed_codex_turn_events": 0,
+      "native_model_response_records": 0,
+      "tokens": {},
+      "codex_runtime_seconds": 0,
+      "tool_calls_observed": 0,
+      "tool_calls": [],
+      "fresh_unique_threads": 0,
+      "thread_count": 0
+    },
+    "B303": {
+      "external_invocations": 0,
+      "completed_codex_turn_events": 0,
+      "native_model_response_records": 0,
+      "tokens": {},
+      "codex_runtime_seconds": 0,
+      "tool_calls_observed": 0,
+      "tool_calls": [],
+      "fresh_unique_threads": 0,
+      "thread_count": 0
+    }
+  },
+  "tokens": {
+    "input_tokens": 108683,
+    "cached_input_tokens": 34048,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 15469,
+    "reasoning_output_tokens": 13048,
+    "total_tokens": 124152
+  },
+  "unique_native_threads": 20,
+  "native_base_and_permissions_match_local_fixture": true,
+  "native_user_messages_match_recorded_prompts": true,
+  "external_invocations": 20,
+  "native_model_response_records": 19,
+  "completed_codex_turn_events": 19,
+  "codex_runtime_seconds": 698.0313049647375,
+  "semantics": "One invocation may contain multiple model requests. Native response records count available model usage records; completed Codex turns are separate. Cached input and reasoning output are subsets, not additional tokens."
+}

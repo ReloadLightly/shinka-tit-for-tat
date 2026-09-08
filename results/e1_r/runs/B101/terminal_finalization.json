@@ -1,0 +1,9 @@
+{
+  "stop_observed": true,
+  "manual_interruption": false,
+  "proposal_tasks_at_stop": 1,
+  "evaluation_jobs_at_stop": 0,
+  "cancelled_proposals": 0,
+  "runtime_seconds": 0.05114557297201827,
+  "drained": true
+}

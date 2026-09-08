@@ -1,0 +1,5 @@
+{"type":"thread.started","thread_id":"01a08170-43a2-7b13-9a91-e04510d866f3"}
+{"type":"item.completed","item":{"id":"item_0","type":"error","message":"Code Mode is unavailable because code-mode host is disabled. Code mode will fail closed; enable `features.code_mode_host` and install `codex-code-mode-host`."}}
+{"type":"turn.started"}
+{"type":"error","message":"Connection failed: error sending request"}
+{"type":"turn.failed","error":{"message":"Connection failed: error sending request"}}

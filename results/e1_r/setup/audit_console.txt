@@ -1,0 +1,20 @@
+[
+  {
+    "seed": 101,
+    "A": 2.6498039215686275,
+    "B": null,
+    "A_minus_B": null
+  },
+  {
+    "seed": 202,
+    "A": null,
+    "B": null,
+    "A_minus_B": null
+  },
+  {
+    "seed": 303,
+    "A": null,
+    "B": null,
+    "A_minus_B": null
+  }
+]

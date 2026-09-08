@@ -1,0 +1,15 @@
+{
+  "generation": 1,
+  "novelty_attempt": 1,
+  "resample_attempt": 1,
+  "patch_attempt": 1,
+  "success": true,
+  "num_applied": 1,
+  "patch_name": "probe_forgive_exploit",
+  "patch_description": "Cooperates initially to preserve mutual-cooperation opponents, then exploits opponents that never defect. After any observed retaliation it returns to cooperation, while switching to defection only against sustained defection.",
+  "error_msg": null,
+  "timestamp": "2026-09-08T16:18:56.589013",
+  "llm_cost": 0.036842,
+  "llm_model": "headless/codex@gpt-5.6-terra?effort=low",
+  "headless_prompt_path": "/home/roland/actir/shinka-tit-for-tat/results/e1_r/runs/A101/gen_1/attempts/novelty_1/resample_1/patch_1/headless_prompt.md"
+}

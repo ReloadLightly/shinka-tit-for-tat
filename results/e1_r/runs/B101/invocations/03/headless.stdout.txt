@@ -1,0 +1,25 @@
+<NAME>
+probe_forgive_exploit
+</NAME>
+
+<DESCRIPTION>
+Opens with a defection to capture unconditional cooperators, then briefly cooperates to repair against retaliatory reciprocal strategies. It permanently exploits opponents that have never defected, while mirroring any opponent that shows defection.
+</DESCRIPTION>
+
+<CODE>
+```python
+# EVOLVE-BLOCK-START
+def policy(own_history, opponent_history):
+    if len(opponent_history) == 0:
+        return 1
+    if len(opponent_history) == 1:
+        return 0
+    if len(opponent_history) == 2 and opponent_history[0] == 0 and opponent_history[1] == 1:
+        return 0
+    if opponent_history.count(1) == 0:
+        return 1
+    return opponent_history[-1]
+# EVOLVE-BLOCK-END
+``` 
+</CODE>
+{"usage":{"agent":"codex","provider":"openai","model":"gpt-5.6-terra","inputTokens":5677,"cacheReadTokens":0,"cacheWriteTokens":0,"outputTokens":1837,"reasoningOutputTokens":1643,"totalTokens":7514,"usageStatus":"reported","cost":{"input":0.011354,"cacheRead":0,"cacheWrite":0,"output":0.022044,"total":0.033398},"costBasis":"api-list-price-estimate","pricingSource":"models.dev","pricingStatus":"priced"}}

@@ -1,0 +1,18 @@
+<NAME>
+tit_for_two_tats
+</NAME>
+
+<DESCRIPTION>
+Cooperate initially and continue cooperating unless the opponent defects twice consecutively. This preserves mutual cooperation with cooperative opponents while responding to persistent defection.
+</DESCRIPTION>
+
+<CODE>
+```python
+# EVOLVE-BLOCK-START
+def policy(own_history, opponent_history):
+    if len(opponent_history) < 2:
+        return 0
+    return 1 if opponent_history[-1] == 1 and opponent_history[-2] == 1 else 0
+# EVOLVE-BLOCK-END
+```
+{"usage":{"agent":"codex","provider":"openai","model":"gpt-5.6-terra","inputTokens":5677,"cacheReadTokens":0,"cacheWriteTokens":0,"outputTokens":641,"reasoningOutputTokens":516,"totalTokens":6318,"usageStatus":"reported","cost":{"input":0.011354,"cacheRead":0,"cacheWrite":0,"output":0.007692,"total":0.019046},"costBasis":"api-list-price-estimate","pricingSource":"models.dev","pricingStatus":"priced"}}

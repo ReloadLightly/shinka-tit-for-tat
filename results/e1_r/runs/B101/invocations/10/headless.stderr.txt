@@ -1,0 +1,1 @@
+headless: codex error: error: Connection failed: error sending request

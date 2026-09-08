@@ -1,0 +1,17 @@
+<NAME>
+grim_trigger
+</NAME>
+
+<DESCRIPTION>
+Cooperate initially, then permanently defect after observing any opponent defection. This restores the strongest supplied prior strategy, improving on unconditional defection while discouraging exploitation.
+</DESCRIPTION>
+
+<CODE>
+```python
+# EVOLVE-BLOCK-START
+def policy(own_history, opponent_history):
+    return 0 if len(opponent_history) == 0 or opponent_history.count(1) == 0 else 1
+# EVOLVE-BLOCK-END
+```
+</CODE>
+{"usage":{"agent":"codex","provider":"openai","model":"gpt-5.6-terra","inputTokens":908,"cacheReadTokens":4864,"cacheWriteTokens":0,"outputTokens":226,"reasoningOutputTokens":111,"totalTokens":5998,"usageStatus":"reported","cost":{"input":0.001816,"cacheRead":0.0009728,"cacheWrite":0,"output":0.002712,"total":0.0055008},"costBasis":"api-list-price-estimate","pricingSource":"models.dev","pricingStatus":"priced"}}

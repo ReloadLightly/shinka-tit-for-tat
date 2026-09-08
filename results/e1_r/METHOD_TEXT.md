@@ -9,7 +9,7 @@ invalidity-dominated differences would leave the comparison uncertain. There
 were three runs planned per condition, not sixty independent experimental replicates.
 
 The [protocol](protocol/PROTOCOL.md), [machine-readable configuration](protocol/protocol.json),
-and [source hashes](protocol/freeze.json) were frozen in commit `PROTOCOL_COMMIT` before
+and [source hashes](protocol/freeze.json) were frozen in commit `b6647198e07df4eba7f23b0507dda0ea3d6e322a` before
 calls. The predefined order was **A101, B101, B202, A202, A303, B303**: A first
 in two pairs and B first in one, the closest possible balance with three pairs.
 Each run had ten proposal opportunities. Local RNG seeds 101, 202, and 303 seed
@@ -84,7 +84,7 @@ as a big-endian integer. This fixes each scored encounter across policies.
 
 Candidates never play one another or themselves. This is **our custom opponent-panel
 experiment**, not a reconstruction of Axelrod's tournaments. Fitness is total
-own training payoff divided by 7,092 rounds. Opponents have equal aggregate
+own training payoff divided by 7,092 rounds: `F(policy) = sum(own payoff over every training round) / 7092`. Opponents have equal aggregate
 weight; individual matches are weighted by their length. There is no cooperation,
 TFT-similarity, simplicity, or winning-margin bonus. The already-public holdout
 is a **development holdout**, not an untouched confirmatory test.

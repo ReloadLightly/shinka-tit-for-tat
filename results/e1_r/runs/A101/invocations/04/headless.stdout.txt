@@ -1,0 +1,16 @@
+<NAME>
+cooperate_until_defection
+</NAME>
+
+<DESCRIPTION>
+Begins cooperatively to secure sustained mutual-payoff outcomes against reciprocal opponents. Once the opponent defects even once, it switches permanently to action 1, avoiding repeated exploitation by defecting opponents.
+</DESCRIPTION>
+
+<CODE>
+```python
+# EVOLVE-BLOCK-START
+def policy(own_history, opponent_history):
+    return 0 if len(opponent_history) == 0 or opponent_history.count(1) == 0 else 1
+# EVOLVE-BLOCK-END
+```
+{"usage":{"agent":"codex","provider":"openai","model":"gpt-5.6-terra","inputTokens":913,"cacheReadTokens":4864,"cacheWriteTokens":0,"outputTokens":1154,"reasoningOutputTokens":1034,"totalTokens":6931,"usageStatus":"reported","cost":{"input":0.001826,"cacheRead":0.0009728,"cacheWrite":0,"output":0.013848,"total":0.0166468},"costBasis":"api-list-price-estimate","pricingSource":"models.dev","pricingStatus":"priced"}}

@@ -1,0 +1,16 @@
+<NAME>
+tit_for_tat
+</NAME>
+
+<DESCRIPTION>
+Use tit-for-tat: cooperate initially, then copy the opponent’s most recent action. This preserves mutual cooperation with cooperative and reciprocal opponents while responding immediately to exploitation, without the permanent punishment triggered by a single defection in the current policy.
+</DESCRIPTION>
+
+<CODE>
+```python
+# EVOLVE-BLOCK-START
+def policy(own_history, opponent_history):
+    return 0 if len(opponent_history) == 0 else opponent_history[-1]
+# EVOLVE-BLOCK-END
+```
+{"usage":{"agent":"codex","provider":"openai","model":"gpt-5.6-terra","inputTokens":930,"cacheReadTokens":4864,"cacheWriteTokens":0,"outputTokens":421,"reasoningOutputTokens":300,"totalTokens":6215,"usageStatus":"reported","cost":{"input":0.00186,"cacheRead":0.0009728,"cacheWrite":0,"output":0.005052,"total":0.0078848},"costBasis":"api-list-price-estimate","pricingSource":"models.dev","pricingStatus":"priced"}}

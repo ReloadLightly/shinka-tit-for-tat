@@ -55,8 +55,12 @@ def catalogue(audit):
                 continue
             parts.append(f"[Exact rendered prompt](runs/{run_id}/invocations/{slot:02d}/prompt.md) · "
                          f"[native output](runs/{run_id}/invocations/{slot:02d}/codex.jsonl) · "
-                         f"[supplied context](runs/{run_id}/gen_{slot}/supplied_context.json) · "
-                         f"[evaluation records](runs/{run_id}/gen_{slot}/results/).\n")
+                         f"[supplied context](runs/{run_id}/gen_{slot}/supplied_context.json).\n")
+            if (E1 / "runs" / run_id / f"gen_{slot}" / "results").exists():
+                parts.append(f"[Evaluation records](runs/{run_id}/gen_{slot}/results/).\n")
+            if record["opportunity_status"] == "failed_or_unparsed":
+                parts.append(f"[Native failure record](runs/{run_id}/gen_{slot}/failure.json). "
+                             "This external invocation consumed a slot but supplied no canonical policy or measured payoff.\n")
             parts.append(f"Training: **{number(record['training'])}**; validity: **{record['correct']}**; "
                          f"current best: {number(record['best_training_so_far'])}; database rows: {len(record['database_rows'])}.\n")
             if record.get("error"):
@@ -99,16 +103,24 @@ def report_tables(audit, usage):
                      f"{run['valid_proposals']}/{run['invalid_or_unparsed_proposals']}/{run['unevaluated_generated_proposals']}/{run['duplicate_proposals']}",
                      ", ".join(map(str, run["tft_compatible_slots"])) or "none",
                      "yes" if run["improved_after_first"] else "no" if run["status"] != "not_started" else "unavailable"])
-    parts.append(table(["Run", "Training-selected source", "Training", "Development holdout", "Valid/invalid/unevaluated/duplicate", "TFT-probe-compatible slots", "Improved after first?"], rows))
+    parts.append(table(["Run", "Training-selected source", "Training", "Development holdout", "Valid/rejected-or-failed/unevaluated/duplicate", "TFT-probe-compatible slots", "Improved after first?"], rows))
     parts.append("Duplicates overlap validity counts; they are not an additional class. Seed 0 is eligible, but not included in the ten-proposal validity denominator.\n")
     parts.append("Validity means live evaluator acceptance; duplicates overlap validity. Incomplete/unstarted runs have no primary outcome. Missing results are never zero payoff.\n")
-    parts.append("E1 applies the frozen earliest-appearance tie rule. Shinka can record a later tied program as its own best; that pointer does not override E1's predeclared selection. Both records are retained:\n")
-    parts.append(table(["Run", "E1 selected slot", "Shinka recorded best slot", "DB rows including seed", "Archive members including seed"],
+    parts.append(table(["Run", "Generated sources", "Live-valid", "Interpreter rejections", "No-source failed invocation", "Valid / consumed opportunities"],
+        [[run_id, sum(bool(row["source"]) for row in r["slots"][1:]), r["valid_proposals"],
+          sum(row["opportunity_status"] == "rejected" for row in r["slots"][1:]),
+          sum(row["opportunity_status"] == "failed_or_unparsed" for row in r["slots"][1:]),
+          f"{r['valid_proposals']}/{usage['runs'][run_id]['external_invocations']}" if usage["runs"][run_id]["external_invocations"] else "unavailable"]
+         for run_id, r in audit["runs"].items()]))
+    parts.append("E1-R applies the frozen earliest-appearance tie rule. Shinka can record a later tied program as its own best; that pointer does not override E1-R's predeclared selection. Both records are retained:\n")
+    parts.append(table(["Run", "E1-R selected slot", "Shinka recorded best slot", "DB rows including seed", "Archive members including seed"],
                        [[name, r["selected_slot"], r["database_best_slot"], r["database_rows"], len(r["archive_ids"])] for name, r in audit["runs"].items()]))
     parts.append(table(["Paired local seed", "A holdout", "B holdout", "A minus B"],
                        [[r["seed"], number(r["A"]), number(r["B"]), number(r["A_minus_B"])] for r in audit["paired_holdout"]]))
     stats = audit["paired_descriptive_summary"]
-    parts.append("Descriptive paired summary: " + "; ".join(f"{k}={number(v)}" for k, v in stats.items()) + ".\n")
+    parts.append("Descriptive paired summary: " + "; ".join(f"{k}={v if k == 'n' else number(v)}" for k, v in stats.items()) + ".\n")
+    if stats["n"] == 0:
+        parts.append("There are zero available completed pairs. Mean, median, range and sample SD are undefined; no effect estimate can be computed.\n")
     rows = []
     for run_id in ORDER:
         value = usage["runs"][run_id]
@@ -134,12 +146,12 @@ def report_tables(audit, usage):
         parts.append("```python\n" + selected["complete_source"].rstrip() + "\n```\n")
         parts.append(f"Source SHA-256: `{digest}`.\n")
         tests_by_label = {}
-        for trace in run["selected_traces"][:2]:
+        for trace in run["selected_traces"]:
             for row in trace["rows"]:
                 for test in row["branch_tests_in_execution_order"]:
                     tests_by_label.setdefault(test["test"], f"T{len(tests_by_label) + 1}")
         parts.append("Trace test key: " + "; ".join(f"**{label}** = `{test}`" for test, label in tests_by_label.items()) + ".\n")
-        for trace in run["selected_traces"][:2]:
+        for trace in run["selected_traces"]:
             parts.append(f"### Scored encounter trace: {trace['split']} / {trace['opponent']} / seed {trace['seed']}\n")
             parts.append(f"First {len(trace['rows'])} rounds of the actual {trace['match_turns']}-round evaluated encounter; full-match candidate payoff {trace['full_match']['total_payoff']}. "
                          "C=0, D=1. Tests are listed in actual interpreter execution order; true/false identifies the executed branch. "
@@ -181,7 +193,8 @@ def plot_trajectories(audit):
             run = audit["runs"][f"{condition}{seed}"]
             if run["status"] == "not_started":
                 continue
-            observed = [r for r in run["slots"] if r["source"]]
+            observed = [r for r in run["slots"] if r["slot"] == 0 or r["opportunity_status"] in
+                        ("valid", "rejected", "evaluation_missing", "failed_or_unparsed")]
             axis.plot([r["slot"] for r in observed], [r["best_training_so_far"] for r in observed],
                       label=str(seed) + (" partial" if run["status"] == "incomplete" else ""), color=color, linestyle=style, marker=".")
         axis.axhline(audit["references"]["tit_for_tat"]["train"]["mean_payoff"], color="#555555", linewidth=.8, linestyle="--")

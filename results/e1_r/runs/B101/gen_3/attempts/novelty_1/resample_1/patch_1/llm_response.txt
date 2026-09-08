@@ -1,0 +1,22 @@
+<NAME>
+probe_forgive_exploit
+</NAME>
+<DESCRIPTION>
+Opens with a defection to capture unconditional cooperators, then briefly cooperates to repair against retaliatory reciprocal strategies. It permanently exploits opponents that have never defected, while mirroring any opponent that shows defection.
+</DESCRIPTION>
+<CODE>
+```python
+# EVOLVE-BLOCK-START
+def policy(own_history, opponent_history):
+    if len(opponent_history) == 0:
+        return 1
+    if len(opponent_history) == 1:
+        return 0
+    if len(opponent_history) == 2 and opponent_history[0] == 0 and opponent_history[1] == 1:
+        return 0
+    if opponent_history.count(1) == 0:
+        return 1
+    return opponent_history[-1]
+# EVOLVE-BLOCK-END
+``` 
+</CODE>

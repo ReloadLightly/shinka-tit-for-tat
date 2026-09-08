@@ -1,0 +1,15 @@
+{
+  "generation": 7,
+  "novelty_attempt": 1,
+  "resample_attempt": 1,
+  "patch_attempt": 1,
+  "success": true,
+  "num_applied": 1,
+  "patch_name": "adaptive_grim",
+  "patch_description": "Starts cooperatively to earn mutual-cooperation payoff, retaliates after exploitation, and returns to cooperation after sustained opponent cooperation. This should outperform unconditional defection across mixed repeated-game opponents while remaining robust to defectors.",
+  "error_msg": null,
+  "timestamp": "2026-09-08T16:32:01.341245",
+  "llm_cost": 0.0040028,
+  "llm_model": "headless/codex@gpt-5.6-terra?effort=low",
+  "headless_prompt_path": "/home/roland/actir/shinka-tit-for-tat/results/e1_r/runs/B101/gen_7/attempts/novelty_1/resample_1/patch_1/headless_prompt.md"
+}

@@ -1,0 +1,21 @@
+Frozen execution/scientific sources and closed ledgers match.
+Independent interpreter replay reproduces the complete archived audit.
+All 20 native contexts, fresh sessions, serial accounting and usage reproduced.
+Source proofs, supplemental scored traces and SQLite integrity verified.
+{
+  "ledger_sha256_unchanged": "778b3984c298158a28c572065177e7185e1ec48675c4ad0e2d5fda3bae612411",
+  "external_invocations": 20,
+  "frozen_sources_match": true,
+  "archived_audit_reproduced": true,
+  "usage_reproduced": true,
+  "native_contexts_verified": 20,
+  "source_proofs_and_traces_reproduced": true,
+  "sqlite_integrity": {
+    "A101": "ok",
+    "B101": "ok"
+  },
+  "credential_pattern_files_scanned": 4981,
+  "credential_pattern_matches": 0,
+  "report_local_links_resolve": true,
+  "verification_external_proposal_invocations": 0
+}

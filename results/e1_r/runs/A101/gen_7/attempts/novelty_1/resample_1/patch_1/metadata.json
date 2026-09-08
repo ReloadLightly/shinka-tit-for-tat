@@ -1,0 +1,15 @@
+{
+  "generation": 7,
+  "novelty_attempt": 1,
+  "resample_attempt": 1,
+  "patch_attempt": 1,
+  "success": true,
+  "num_applied": 1,
+  "patch_name": "cooperation_probe",
+  "patch_description": "Cooperate initially to preserve reciprocal cooperation, then make a single late probe after twelve uninterrupted cooperative rounds. Continue defecting only against opponents that keep cooperating; otherwise return to cooperation, allowing responsive opponents to recover.",
+  "error_msg": null,
+  "timestamp": "2026-09-08T16:24:14.760917",
+  "llm_cost": 0.019504,
+  "llm_model": "headless/codex@gpt-5.6-terra?effort=low",
+  "headless_prompt_path": "/home/roland/actir/shinka-tit-for-tat/results/e1_r/runs/A101/gen_7/attempts/novelty_1/resample_1/patch_1/headless_prompt.md"
+}

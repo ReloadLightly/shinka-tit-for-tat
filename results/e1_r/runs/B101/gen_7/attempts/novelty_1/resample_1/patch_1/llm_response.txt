@@ -1,0 +1,13 @@
+<NAME>
+adaptive_grim
+</NAME>
+<DESCRIPTION>
+Starts cooperatively to earn mutual-cooperation payoff, retaliates after exploitation, and returns to cooperation after sustained opponent cooperation. This should outperform unconditional defection across mixed repeated-game opponents while remaining robust to defectors.
+</DESCRIPTION>
+<CODE>
+```python
+# EVOLVE-BLOCK-START
+def policy(own_history, opponent_history):
+    return 0 if not opponent_history else (1 if opponent_history[-1] == 1 else 0)
+# EVOLVE-BLOCK-END
+```

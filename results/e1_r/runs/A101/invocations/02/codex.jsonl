@@ -1,0 +1,5 @@
+{"type":"thread.started","thread_id":"01a08162-fbeb-73c2-9c28-0a8ef5cf3150"}
+{"type":"item.completed","item":{"id":"item_0","type":"error","message":"Code Mode is unavailable because code-mode host is disabled. Code mode will fail closed; enable `features.code_mode_host` and install `codex-code-mode-host`."}}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_1","type":"agent_message","text":"<NAME>\nprobe_then_reciprocate\n</NAME>\n\n<DESCRIPTION>\nDefect initially to exploit unconditional cooperation, then cooperate twice to recover mutual cooperation with retaliatory opponents. Afterwards, reciprocate the opponent’s latest action.\n</DESCRIPTION>\n\n<CODE>\n```python\n# EVOLVE-BLOCK-START\ndef policy(own_history, opponent_history):\n    if len(opponent_history) < 3:\n        return 0 if len(opponent_history) else 1\n    return opponent_history[-1]\n# EVOLVE-BLOCK-END\n```"}}
+{"type":"turn.completed","usage":{"input_tokens":5677,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":634,"reasoning_output_tokens":516}}

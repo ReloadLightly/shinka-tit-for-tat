@@ -1,0 +1,16 @@
+<NAME>
+adaptive_probe
+</NAME>
+
+<DESCRIPTION>
+Defects initially to exploit unconditional cooperation, but offers a single cooperative repair after an isolated opponent defection. Persistent defection is recognized and met with defection, limiting losses against unforgiving opponents.
+</DESCRIPTION>
+
+<CODE>
+```python
+# EVOLVE-BLOCK-START
+def policy(own_history, opponent_history):
+    return 1 if len(opponent_history) == 0 or opponent_history[-1] == 0 or (len(opponent_history) > 1 and opponent_history[-2] == 1) else 0
+# EVOLVE-BLOCK-END
+```
+{"usage":{"agent":"codex","provider":"openai","model":"gpt-5.6-terra","inputTokens":5677,"cacheReadTokens":0,"cacheWriteTokens":0,"outputTokens":653,"reasoningOutputTokens":516,"totalTokens":6330,"usageStatus":"reported","cost":{"input":0.011354,"cacheRead":0,"cacheWrite":0,"output":0.007836,"total":0.01919},"costBasis":"api-list-price-estimate","pricingSource":"models.dev","pricingStatus":"priced"}}

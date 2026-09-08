@@ -1,0 +1,4 @@
+# EVOLVE-BLOCK-START
+def policy(own_history, opponent_history):
+    return 1 if opponent_history.count(1) else 0
+# EVOLVE-BLOCK-END

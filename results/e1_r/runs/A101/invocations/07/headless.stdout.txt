@@ -1,0 +1,16 @@
+<NAME>
+cooperation_probe
+</NAME>
+
+<DESCRIPTION>
+Cooperate initially to preserve reciprocal cooperation, then make a single late probe after twelve uninterrupted cooperative rounds. Continue defecting only against opponents that keep cooperating; otherwise return to cooperation, allowing responsive opponents to recover.
+</DESCRIPTION>
+
+<CODE>
+```python
+# EVOLVE-BLOCK-START
+def policy(own_history, opponent_history):
+    return 0 if len(opponent_history) < 12 else (1 if opponent_history.count(1) == 0 else (1 if own_history[-1] == 1 and opponent_history[-1] == 0 else 0))
+# EVOLVE-BLOCK-END
+```
+{"usage":{"agent":"codex","provider":"openai","model":"gpt-5.6-terra","inputTokens":5786,"cacheReadTokens":0,"cacheWriteTokens":0,"outputTokens":661,"reasoningOutputTokens":516,"totalTokens":6447,"usageStatus":"reported","cost":{"input":0.011572,"cacheRead":0,"cacheWrite":0,"output":0.007932,"total":0.019504},"costBasis":"api-list-price-estimate","pricingSource":"models.dev","pricingStatus":"priced"}}

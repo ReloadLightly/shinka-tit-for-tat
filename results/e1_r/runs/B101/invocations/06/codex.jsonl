@@ -1,0 +1,5 @@
+{"type":"thread.started","thread_id":"01a0816e-1699-77f3-8c4a-d1ef4541b2d8"}
+{"type":"item.completed","item":{"id":"item_0","type":"error","message":"Code Mode is unavailable because code-mode host is disabled. Code mode will fail closed; enable `features.code_mode_host` and install `codex-code-mode-host`."}}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_1","type":"agent_message","text":"<NAME>\nadaptive_probe\n</NAME>\n\n<DESCRIPTION>\nDefects initially to exploit unconditional cooperation, but offers a single cooperative repair after an isolated opponent defection. Persistent defection is recognized and met with defection, limiting losses against unforgiving opponents.\n</DESCRIPTION>\n\n<CODE>\n```python\n# EVOLVE-BLOCK-START\ndef policy(own_history, opponent_history):\n    return 1 if len(opponent_history) == 0 or opponent_history[-1] == 0 or (len(opponent_history) > 1 and opponent_history[-2] == 1) else 0\n# EVOLVE-BLOCK-END\n```"}}
+{"type":"turn.completed","usage":{"input_tokens":5677,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":653,"reasoning_output_tokens":516}}

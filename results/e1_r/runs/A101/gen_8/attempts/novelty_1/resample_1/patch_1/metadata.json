@@ -1,0 +1,15 @@
+{
+  "generation": 8,
+  "novelty_attempt": 1,
+  "resample_attempt": 1,
+  "patch_attempt": 1,
+  "success": true,
+  "num_applied": 1,
+  "patch_name": "grim_cooperator",
+  "patch_description": "Cooperate initially and continue cooperating while the opponent has always cooperated. Permanently defect after observing any opponent defection, matching the strongest provided prior result (2.66 versus the current 2.54).",
+  "error_msg": null,
+  "timestamp": "2026-09-08T16:25:31.847672",
+  "llm_cost": 0.0065608,
+  "llm_model": "headless/codex@gpt-5.6-terra?effort=low",
+  "headless_prompt_path": "/home/roland/actir/shinka-tit-for-tat/results/e1_r/runs/A101/gen_8/attempts/novelty_1/resample_1/patch_1/headless_prompt.md"
+}

@@ -1,0 +1,13 @@
+<NAME>
+probe_exploit_repair
+</NAME>
+<DESCRIPTION>
+Cooperates initially, then uses a brief defection probe to identify opponents that never retaliate. It exploits confirmed unconditional cooperators, restores cooperation with reciprocal opponents, and defects in response to persistent defection.
+</DESCRIPTION>
+<CODE>
+```python
+# EVOLVE-BLOCK-START
+def policy(own_history, opponent_history):
+    return 0 if len(opponent_history) < 3 else (1 if len(opponent_history) == 3 else (0 if len(opponent_history) == 4 else (1 if len(opponent_history) == 5 and opponent_history[-1] == 0 else (1 if opponent_history.count(1) == 0 or opponent_history[-1] == 1 else 0))))
+# EVOLVE-BLOCK-END
+```

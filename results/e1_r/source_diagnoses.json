@@ -1,0 +1,161 @@
+{
+  "A101/1": {
+    "source": "results/e1_r/runs/A101/gen_1/main.py",
+    "sha256": "b5fe1670241c4db454fcc4a799237ef21ee900cd465aaec63bda4e4bdb22db1c",
+    "nodes": 48,
+    "bytes": 263,
+    "valid": false,
+    "probe_compatible": null
+  },
+  "A101/2": {
+    "source": "results/e1_r/runs/A101/gen_2/main.py",
+    "sha256": "8b9680c82652c99c9634eaa64954c9f5ab0f3a83e63abeff68d63fdf3609249f",
+    "nodes": 31,
+    "bytes": 198,
+    "valid": true,
+    "probe_compatible": false
+  },
+  "A101/3": {
+    "source": "results/e1_r/runs/A101/gen_3/main.py",
+    "sha256": "fdbec0ba440662ffb8b7f96e05fb61fbc8edb1f56f048d5cb1137c5fa27a0674",
+    "nodes": 29,
+    "bytes": 183,
+    "valid": true,
+    "probe_compatible": false
+  },
+  "A101/4": {
+    "source": "results/e1_r/runs/A101/gen_4/main.py",
+    "sha256": "fc938dea6c869791ffb3d7fbbb03f95b21ea86152fb3414345a9d107323d56a1",
+    "nodes": 28,
+    "bytes": 167,
+    "valid": true,
+    "probe_compatible": false
+  },
+  "A101/5": {
+    "source": "results/e1_r/runs/A101/gen_5/main.py",
+    "sha256": "c5acbfbd7a7733951aa87f840d6c3964c39031cd375e27471078d3183eccbdf2",
+    "nodes": 82,
+    "bytes": 351,
+    "valid": true,
+    "probe_compatible": false
+  },
+  "A101/6": {
+    "source": "results/e1_r/runs/A101/gen_6/main.py",
+    "sha256": "f10d41828a82b0716d21b12e3d60d2102411c4e51c935a7aa9d75a9658be4cb5",
+    "nodes": 23,
+    "bytes": 152,
+    "valid": true,
+    "probe_compatible": true,
+    "source_established_tft_equivalence": "For every finite legal paired binary history: empty opponent history returns integer 0; otherwise returns exactly the last opponent action. In the final conditional form, a binary value equals 1 iff it is 1, otherwise it is 0. No other dependencies or branches."
+  },
+  "A101/7": {
+    "source": "results/e1_r/runs/A101/gen_7/main.py",
+    "sha256": "134383c02ac27f662bdb84c9210a8f7e14f69a85feb5ad09de814d39d70cb974",
+    "nodes": 52,
+    "bytes": 239,
+    "valid": true,
+    "probe_compatible": false
+  },
+  "A101/8": {
+    "source": "results/e1_r/runs/A101/gen_8/main.py",
+    "sha256": "fc938dea6c869791ffb3d7fbbb03f95b21ea86152fb3414345a9d107323d56a1",
+    "nodes": 28,
+    "bytes": 167,
+    "valid": true,
+    "probe_compatible": false
+  },
+  "A101/9": {
+    "source": "results/e1_r/runs/A101/gen_9/main.py",
+    "sha256": "fc938dea6c869791ffb3d7fbbb03f95b21ea86152fb3414345a9d107323d56a1",
+    "nodes": 28,
+    "bytes": 167,
+    "valid": true,
+    "probe_compatible": false
+  },
+  "A101/10": {
+    "source": "results/e1_r/runs/A101/gen_10/main.py",
+    "sha256": "f10d41828a82b0716d21b12e3d60d2102411c4e51c935a7aa9d75a9658be4cb5",
+    "nodes": 23,
+    "bytes": 152,
+    "valid": true,
+    "probe_compatible": true,
+    "source_established_tft_equivalence": "For every finite legal paired binary history: empty opponent history returns integer 0; otherwise returns exactly the last opponent action. In the final conditional form, a binary value equals 1 iff it is 1, otherwise it is 0. No other dependencies or branches."
+  },
+  "B101/1": {
+    "source": "results/e1_r/runs/B101/gen_1/main.py",
+    "sha256": "2ac9eb736108a1e07a0ca4ed9ddfc4135635bcb68e19f040b1e4c80f57fbf38f",
+    "nodes": 19,
+    "bytes": 146,
+    "valid": true,
+    "probe_compatible": true,
+    "source_established_tft_equivalence": "For every finite legal paired binary history: empty opponent history returns integer 0; otherwise returns exactly the last opponent action. In the final conditional form, a binary value equals 1 iff it is 1, otherwise it is 0. No other dependencies or branches."
+  },
+  "B101/2": {
+    "source": "results/e1_r/runs/B101/gen_2/main.py",
+    "sha256": "68b703128085b98c09b5ff66507e9d3e1ba1ff0b49201bfb6b72c0c4b475acf1",
+    "nodes": 15,
+    "bytes": 132,
+    "valid": true,
+    "probe_compatible": false
+  },
+  "B101/3": {
+    "source": "results/e1_r/runs/B101/gen_3/main.py",
+    "sha256": "fef18c88cf34ee29d7f921f034d9b7ee8ea69dc30945d607607b918120ab9f5a",
+    "nodes": 76,
+    "bytes": 385,
+    "valid": true,
+    "probe_compatible": false
+  },
+  "B101/4": {
+    "source": "results/e1_r/runs/B101/gen_4/main.py",
+    "sha256": "098db87b0a0afdb14a8785fe827189cc6da9d913e194307f86c982ba1f2cf004",
+    "nodes": 42,
+    "bytes": 213,
+    "valid": true,
+    "probe_compatible": false
+  },
+  "B101/5": {
+    "source": "results/e1_r/runs/B101/gen_5/main.py",
+    "sha256": "f10d41828a82b0716d21b12e3d60d2102411c4e51c935a7aa9d75a9658be4cb5",
+    "nodes": 23,
+    "bytes": 152,
+    "valid": true,
+    "probe_compatible": true,
+    "source_established_tft_equivalence": "For every finite legal paired binary history: empty opponent history returns integer 0; otherwise returns exactly the last opponent action. In the final conditional form, a binary value equals 1 iff it is 1, otherwise it is 0. No other dependencies or branches."
+  },
+  "B101/6": {
+    "source": "results/e1_r/runs/B101/gen_6/main.py",
+    "sha256": "cf144b8a11aa04b38ef19987cb0d43e43256ee2165306d7340341db7ce16ab04",
+    "nodes": 49,
+    "bytes": 223,
+    "valid": true,
+    "probe_compatible": false
+  },
+  "B101/7": {
+    "source": "results/e1_r/runs/B101/gen_7/main.py",
+    "sha256": "b4044feb966bd10151d21720849772004e074675d1224e8192b007024fd454ad",
+    "nodes": 25,
+    "bytes": 165,
+    "valid": true,
+    "probe_compatible": true,
+    "source_established_tft_equivalence": "For every finite legal paired binary history: empty opponent history returns integer 0; otherwise returns exactly the last opponent action. In the final conditional form, a binary value equals 1 iff it is 1, otherwise it is 0. No other dependencies or branches."
+  },
+  "B101/8": {
+    "source": "results/e1_r/runs/B101/gen_8/main.py",
+    "sha256": "f10d41828a82b0716d21b12e3d60d2102411c4e51c935a7aa9d75a9658be4cb5",
+    "nodes": 23,
+    "bytes": 152,
+    "valid": true,
+    "probe_compatible": true,
+    "source_established_tft_equivalence": "For every finite legal paired binary history: empty opponent history returns integer 0; otherwise returns exactly the last opponent action. In the final conditional form, a binary value equals 1 iff it is 1, otherwise it is 0. No other dependencies or branches."
+  },
+  "B101/9": {
+    "source": "results/e1_r/runs/B101/gen_9/main.py",
+    "sha256": "f10d41828a82b0716d21b12e3d60d2102411c4e51c935a7aa9d75a9658be4cb5",
+    "nodes": 23,
+    "bytes": 152,
+    "valid": true,
+    "probe_compatible": true,
+    "source_established_tft_equivalence": "For every finite legal paired binary history: empty opponent history returns integer 0; otherwise returns exactly the last opponent action. In the final conditional form, a binary value equals 1 iff it is 1, otherwise it is 0. No other dependencies or branches."
+  }
+}

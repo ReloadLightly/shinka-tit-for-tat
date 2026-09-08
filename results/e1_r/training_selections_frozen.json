@@ -1,0 +1,65 @@
+{
+  "frozen_utc": "2026-09-08T14:33:54.707532+00:00",
+  "complete_design": false,
+  "selection_rule": "Highest admissible recorded training payoff including seed; earliest exact tie",
+  "terminal_handling": "Incomplete/unstarted runs have provisional/seed placeholder selections and no primary outcome; no reselection",
+  "statuses": {
+    "A101": "complete",
+    "B101": "incomplete",
+    "B202": "not_started",
+    "A202": "not_started",
+    "A303": "not_started",
+    "B303": "not_started"
+  },
+  "selections": {
+    "A101": {
+      "slot": 4,
+      "source": "results/e1_r/runs/A101/gen_4/main.py",
+      "sha256": "fc938dea6c869791ffb3d7fbbb03f95b21ea86152fb3414345a9d107323d56a1",
+      "correct": true,
+      "error": null,
+      "training": 2.655386350817823
+    },
+    "B101": {
+      "slot": 2,
+      "source": "results/e1_r/runs/B101/gen_2/main.py",
+      "sha256": "68b703128085b98c09b5ff66507e9d3e1ba1ff0b49201bfb6b72c0c4b475acf1",
+      "correct": true,
+      "error": null,
+      "training": 2.655386350817823
+    },
+    "B202": {
+      "slot": 0,
+      "source": "initial.py",
+      "sha256": "f83fb4c8ffc3313079ff6fa09bef89da8b6ed67d8f604a414c3493d97ba9a32b",
+      "correct": true,
+      "error": null,
+      "training": 2.3310772701635645
+    },
+    "A202": {
+      "slot": 0,
+      "source": "initial.py",
+      "sha256": "f83fb4c8ffc3313079ff6fa09bef89da8b6ed67d8f604a414c3493d97ba9a32b",
+      "correct": true,
+      "error": null,
+      "training": 2.3310772701635645
+    },
+    "A303": {
+      "slot": 0,
+      "source": "initial.py",
+      "sha256": "f83fb4c8ffc3313079ff6fa09bef89da8b6ed67d8f604a414c3493d97ba9a32b",
+      "correct": true,
+      "error": null,
+      "training": 2.3310772701635645
+    },
+    "B303": {
+      "slot": 0,
+      "source": "initial.py",
+      "sha256": "f83fb4c8ffc3313079ff6fa09bef89da8b6ed67d8f604a414c3493d97ba9a32b",
+      "correct": true,
+      "error": null,
+      "training": 2.3310772701635645
+    }
+  },
+  "ledger_sha256": "778b3984c298158a28c572065177e7185e1ec48675c4ad0e2d5fda3bae612411"
+}

@@ -1,0 +1,9 @@
+{
+  "reserved_invocations": 16,
+  "completed_invocations": 15,
+  "successive_launch_pairs_checked": 15,
+  "external_proposals_serial": true,
+  "frozen_sources_unchanged": true,
+  "model_turn_analysis": false,
+  "holdout_or_recognition_performed": false
+}

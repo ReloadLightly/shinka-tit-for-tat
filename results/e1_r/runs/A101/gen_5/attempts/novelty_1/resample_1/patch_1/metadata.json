@@ -1,0 +1,15 @@
+{
+  "generation": 5,
+  "novelty_attempt": 1,
+  "resample_attempt": 1,
+  "patch_attempt": 1,
+  "success": true,
+  "num_applied": 1,
+  "patch_name": "probe_exploit_repair",
+  "patch_description": "Cooperates initially, then uses a brief defection probe to identify opponents that never retaliate. It exploits confirmed unconditional cooperators, restores cooperation with reciprocal opponents, and defects in response to persistent defection.",
+  "error_msg": null,
+  "timestamp": "2026-09-08T16:22:28.575913",
+  "llm_cost": 0.040692,
+  "llm_model": "headless/codex@gpt-5.6-terra?effort=low",
+  "headless_prompt_path": "/home/roland/actir/shinka-tit-for-tat/results/e1_r/runs/A101/gen_5/attempts/novelty_1/resample_1/patch_1/headless_prompt.md"
+}

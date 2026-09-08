@@ -1,0 +1,18 @@
+<NAME>
+cautious_cooperator
+</NAME>
+
+<DESCRIPTION>
+Defect initially to retain the strong baseline against unknown or retaliatory opponents. If an opponent has shown only cooperation for several rounds, switch to cooperation to gain the mutual-cooperation payoff; immediately revert to defection after any observed defection.
+</DESCRIPTION>
+
+<CODE>
+```python
+# EVOLVE-BLOCK-START
+def policy(own_history, opponent_history):
+    if len(opponent_history) >= 4 and opponent_history.count(1) == 0:
+        return 0
+    return 1
+# EVOLVE-BLOCK-END
+```
+{"usage":{"agent":"codex","provider":"openai","model":"gpt-5.6-terra","inputTokens":5777,"cacheReadTokens":0,"cacheWriteTokens":0,"outputTokens":650,"reasoningOutputTokens":516,"totalTokens":6427,"usageStatus":"reported","cost":{"input":0.011554,"cacheRead":0,"cacheWrite":0,"output":0.0078,"total":0.019354},"costBasis":"api-list-price-estimate","pricingSource":"models.dev","pricingStatus":"priced"}}

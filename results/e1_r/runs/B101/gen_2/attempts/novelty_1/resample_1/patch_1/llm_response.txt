@@ -1,0 +1,13 @@
+<NAME>
+grim_cooperator
+</NAME>
+<DESCRIPTION>
+Cooperate initially to establish the mutually beneficial (0,0) outcome. If the opponent ever defects, switch permanently to action 1, preventing repeated exploitation while retaining high payoff against cooperative and reciprocal opponents.
+</DESCRIPTION>
+<CODE>
+```python
+# EVOLVE-BLOCK-START
+def policy(own_history, opponent_history):
+    return 1 if opponent_history.count(1) else 0
+# EVOLVE-BLOCK-END
+```

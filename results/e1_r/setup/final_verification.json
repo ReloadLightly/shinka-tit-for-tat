@@ -1,0 +1,19 @@
+{
+  "historical_files_unchanged": 1324,
+  "frozen_operational_sources_match": true,
+  "ledger_closed": true,
+  "external_invocations": 20,
+  "available_completed_codex_turn_events": 19,
+  "native_response_usage_records": 19,
+  "all_twenty_native_contexts_verified": 20,
+  "tool_calls_observed": 0,
+  "serial_external_invocations": true,
+  "selection_before_analysis": true,
+  "sqlite_integrity": {
+    "A101": "ok",
+    "B101": "ok"
+  },
+  "credential_pattern_scanned_files": 3642,
+  "credential_pattern_scan_matches": 0,
+  "no_github_actions": true
+}

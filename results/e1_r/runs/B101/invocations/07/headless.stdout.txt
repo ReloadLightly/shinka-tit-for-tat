@@ -1,0 +1,16 @@
+<NAME>
+adaptive_grim
+</NAME>
+
+<DESCRIPTION>
+Starts cooperatively to earn mutual-cooperation payoff, retaliates after exploitation, and returns to cooperation after sustained opponent cooperation. This should outperform unconditional defection across mixed repeated-game opponents while remaining robust to defectors.
+</DESCRIPTION>
+
+<CODE>
+```python
+# EVOLVE-BLOCK-START
+def policy(own_history, opponent_history):
+    return 0 if not opponent_history else (1 if opponent_history[-1] == 1 else 0)
+# EVOLVE-BLOCK-END
+```
+{"usage":{"agent":"codex","provider":"openai","model":"gpt-5.6-terra","inputTokens":813,"cacheReadTokens":4864,"cacheWriteTokens":0,"outputTokens":117,"reasoningOutputTokens":0,"totalTokens":5794,"usageStatus":"reported","cost":{"input":0.001626,"cacheRead":0.0009728,"cacheWrite":0,"output":0.001404,"total":0.0040028},"costBasis":"api-list-price-estimate","pricingSource":"models.dev","pricingStatus":"priced"}}

@@ -1,0 +1,15 @@
+{
+  "generation": 4,
+  "novelty_attempt": 1,
+  "resample_attempt": 1,
+  "patch_attempt": 1,
+  "success": true,
+  "num_applied": 1,
+  "patch_name": "cooperate_until_defection",
+  "patch_description": "Begins cooperatively to secure sustained mutual-payoff outcomes against reciprocal opponents. Once the opponent defects even once, it switches permanently to action 1, avoiding repeated exploitation by defecting opponents.",
+  "error_msg": null,
+  "timestamp": "2026-09-08T16:21:06.770715",
+  "llm_cost": 0.0166468,
+  "llm_model": "headless/codex@gpt-5.6-terra?effort=low",
+  "headless_prompt_path": "/home/roland/actir/shinka-tit-for-tat/results/e1_r/runs/A101/gen_4/attempts/novelty_1/resample_1/patch_1/headless_prompt.md"
+}

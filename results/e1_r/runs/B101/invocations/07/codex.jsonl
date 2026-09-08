@@ -1,0 +1,5 @@
+{"type":"thread.started","thread_id":"01a0816e-ac85-72f0-9aeb-9a0d99064728"}
+{"type":"item.completed","item":{"id":"item_0","type":"error","message":"Code Mode is unavailable because code-mode host is disabled. Code mode will fail closed; enable `features.code_mode_host` and install `codex-code-mode-host`."}}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_1","type":"agent_message","text":"<NAME>\nadaptive_grim\n</NAME>\n\n<DESCRIPTION>\nStarts cooperatively to earn mutual-cooperation payoff, retaliates after exploitation, and returns to cooperation after sustained opponent cooperation. This should outperform unconditional defection across mixed repeated-game opponents while remaining robust to defectors.\n</DESCRIPTION>\n\n<CODE>\n```python\n# EVOLVE-BLOCK-START\ndef policy(own_history, opponent_history):\n    return 0 if not opponent_history else (1 if opponent_history[-1] == 1 else 0)\n# EVOLVE-BLOCK-END\n```"}}
+{"type":"turn.completed","usage":{"input_tokens":5677,"cached_input_tokens":4864,"cache_write_input_tokens":0,"output_tokens":117,"reasoning_output_tokens":0}}

@@ -1,0 +1,105 @@
+{
+  "run_id": "A101",
+  "records": [
+    {
+      "slot": 0,
+      "source": "results/e1_r/runs/A101/gen_0/main.py",
+      "sha256": "f83fb4c8ffc3313079ff6fa09bef89da8b6ed67d8f604a414c3493d97ba9a32b",
+      "correct": true,
+      "error": null,
+      "training": 2.3310772701635645
+    },
+    {
+      "slot": 1,
+      "source": "results/e1_r/runs/A101/gen_1/main.py",
+      "sha256": "b5fe1670241c4db454fcc4a799237ef21ee900cd465aaec63bda4e4bdb22db1c",
+      "correct": false,
+      "error": "PolicyError: Unsupported syntax or more than 400 AST nodes",
+      "training": -1.0
+    },
+    {
+      "slot": 2,
+      "source": "results/e1_r/runs/A101/gen_2/main.py",
+      "sha256": "8b9680c82652c99c9634eaa64954c9f5ab0f3a83e63abeff68d63fdf3609249f",
+      "correct": true,
+      "error": null,
+      "training": 2.037366046249295
+    },
+    {
+      "slot": 3,
+      "source": "results/e1_r/runs/A101/gen_3/main.py",
+      "sha256": "fdbec0ba440662ffb8b7f96e05fb61fbc8edb1f56f048d5cb1137c5fa27a0674",
+      "correct": true,
+      "error": null,
+      "training": 2.003384094754653
+    },
+    {
+      "slot": 4,
+      "source": "results/e1_r/runs/A101/gen_4/main.py",
+      "sha256": "fc938dea6c869791ffb3d7fbbb03f95b21ea86152fb3414345a9d107323d56a1",
+      "correct": true,
+      "error": null,
+      "training": 2.655386350817823
+    },
+    {
+      "slot": 5,
+      "source": "results/e1_r/runs/A101/gen_5/main.py",
+      "sha256": "c5acbfbd7a7733951aa87f840d6c3964c39031cd375e27471078d3183eccbdf2",
+      "correct": true,
+      "error": null,
+      "training": 2.289481105470953
+    },
+    {
+      "slot": 6,
+      "source": "results/e1_r/runs/A101/gen_6/main.py",
+      "sha256": "f10d41828a82b0716d21b12e3d60d2102411c4e51c935a7aa9d75a9658be4cb5",
+      "correct": true,
+      "error": null,
+      "training": 2.5362380146644106
+    },
+    {
+      "slot": 7,
+      "source": "results/e1_r/runs/A101/gen_7/main.py",
+      "sha256": "134383c02ac27f662bdb84c9210a8f7e14f69a85feb5ad09de814d39d70cb974",
+      "correct": true,
+      "error": null,
+      "training": 2.0875634517766497
+    },
+    {
+      "slot": 8,
+      "source": "results/e1_r/runs/A101/gen_8/main.py",
+      "sha256": "fc938dea6c869791ffb3d7fbbb03f95b21ea86152fb3414345a9d107323d56a1",
+      "correct": true,
+      "error": null,
+      "training": 2.655386350817823
+    },
+    {
+      "slot": 9,
+      "source": "results/e1_r/runs/A101/gen_9/main.py",
+      "sha256": "fc938dea6c869791ffb3d7fbbb03f95b21ea86152fb3414345a9d107323d56a1",
+      "correct": true,
+      "error": null,
+      "training": 2.655386350817823
+    },
+    {
+      "slot": 10,
+      "source": "results/e1_r/runs/A101/gen_10/main.py",
+      "sha256": "f10d41828a82b0716d21b12e3d60d2102411c4e51c935a7aa9d75a9658be4cb5",
+      "correct": true,
+      "error": null,
+      "training": 2.5362380146644106
+    }
+  ],
+  "training_selected": {
+    "slot": 4,
+    "source": "results/e1_r/runs/A101/gen_4/main.py",
+    "sha256": "fc938dea6c869791ffb3d7fbbb03f95b21ea86152fb3414345a9d107323d56a1",
+    "correct": true,
+    "error": null,
+    "training": 2.655386350817823
+  },
+  "runtime_seconds": 562.3574269600213,
+  "finished_utc": "2026-09-08T14:27:03.401945+00:00",
+  "shinka_completed_generations": 11,
+  "headless_list_price_estimate_not_charge": 0.1884592
+}

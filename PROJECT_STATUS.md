@@ -1,56 +1,131 @@
 # Project status — 2026-09-08
 
-## E1-R protocol frozen; execution next
+## E1-R stopped automatically; comparative outcome remains unanswered
 
-The new [E1-R protocol](results/e1_r/protocol/PROTOCOL.md) repeats the same six-run comparison under a separate 60-invocation allowance. Metadata buffering, evaluation-only timing and terminal finalization have been repaired using versioned per-run adapters; installed Shinka and the fixed evaluator remain unchanged. The initial prompt is byte-identical to E1's. Model gpt-5.6-terra / low and ChatGPT Pro access were verified; six forced localhost checks re-established retrieval restrictions.
+The principal deliverable is [E1_R_REPORT.md](results/e1_r/E1_R_REPORT.md), a
+self-contained report of the design, every run, all paired outcomes, original
+selected sources, branches, scored traces, opponent breakdowns, actual parent/
+inspiration context, failures, usage, commands and next bounded step.
 
-The final suite passed 52 tests. The complete [release rehearsal](results/e1_r/setup/rehearsal_release/summary.json) and all metadata/backend/quota stopped paths passed with zero external proposals and no manual interruption. The old native finalization hang was reproduced separately. E1-R has zero external proposals at protocol freeze; the authorized next action is its one serial execution. [Implementation](results/e1_r/setup/IMPLEMENTATION.md) and [commands](results/e1_r/setup/COMMANDS.md) retain local failure history. Prior E1 and pilot ledgers remain closed and unchanged.
+The new protocol and execution fixes were committed as
+`b6647198e07df4eba7f23b0507dda0ea3d6e322a` before external proposals, and that
+commit was pushed and verified on GitHub. E1-R retained
+E1's scientific design: three paired local seeds 101/202/303, ten opportunities
+per run, serial order A101/B101/B202/A202/A303/B303, gpt-5.6-terra with low reasoning,
+original seed/interpreter/evaluator/panels/fitness and exact initial prompt.
+The model and ChatGPT Pro access were verified without substitution. B's ten
+fresh sessions received the identical initial prompt, never earlier outputs or
+feedback. A retained real native Shinka parent selection and accumulated records.
 
-## E1 stopped; the planned experiment remains incomplete
+The separate ledger is **closed at 20/60 external invocations**. B101 slot 10
+failed with **“Connection failed: error sending request”** after 13.471 seconds.
+It consumed its slot, supplied no policy, and recorded no completed model turn
+or native response-usage record. No retry, replacement or restart occurred.
+The remaining **40 invocations cannot be reused**.
 
-The principal deliverable is [E1_REPORT.md](results/e1/E1_REPORT.md): a self-contained account of the design, every run, selected sources, branches, scored traces, opponent breakdowns, failures, usage, commands and next step.
+| Run | Status | Training-selected slot | Training | Development holdout |
+|---|---|---:|---:|---:|
+| A101 | Complete, 10 invocations | 4 | 2.655386 | 2.649804 |
+| B101 | Incomplete, 10 invocations; final launch failed | 2, provisional | 2.655386 | Unavailable |
+| B202 | Unstarted | — | Unavailable | Unavailable |
+| A202 | Unstarted | — | Unavailable | Unavailable |
+| A303 | Unstarted | — | Unavailable | Unavailable |
+| B303 | Unstarted | — | Unavailable | Unavailable |
 
-The protocol and executable controls were frozen at `e0ca3f3` before calls. E1 planned A101, B101, B202, A202, A303, B303, ten opportunities each. A used the real Shinka search loop. B used the same native backend/parser/evaluator with fresh sessions and byte-identical initial task/seed/feedback. Model: `gpt-5.6-terra`, low reasoning, native Headless 0.6.1 / Codex 0.153.4, existing ChatGPT Pro login. No substitution occurred.
+The pre-call completion rule requires all ten consumed opportunities and a
+successful child exit. All six terminal statuses and source hashes were frozen
+at 14:33:54.708 UTC before E1-R holdout or recognition. The four unstarted seed
+identities are placeholders, not evaluations. B101 has no computed primary
+holdout result. Paired differences for 101, 202 and 303 are all unavailable:
+**n=0 completed pairs**, so mean, median, range and sample SD are undefined.
+Do not pool E1 and E1-R or substitute missing outcomes with zero.
 
-Four runs completed. A303 generated four proposals, then its slot-5 subscription metadata check timed out before another proposal launch. B303 never started. The E1 ledger is **closed at 44/60**, preserving all counters and 16 unspent invocations. No retry, replacement, resampling or reset occurred.
+## Scientific evidence
 
-| Run | Training-selected slot | Training | Development holdout |
-|---|---:|---:|---:|
-| A101 | 1 | 2.536238 | 2.544314 |
-| B101 | 1 | 2.536238 | 2.544314 |
-| B202 | 2 | 2.536238 | 2.544314 |
-| A202 | 5 | 2.570925 | 2.434118 |
-| A303, incomplete | 1, provisional | 2.536238 | Unavailable |
-| B303, unstarted | None | Unavailable | Unavailable |
+Nineteen generated sources were evaluated: **18 valid and archived, one rejected**.
+A101 slot 1 has 48 AST nodes but contains a forbidden tuple literal. It was not
+repaired. B101 slot 10 has no generated source, evaluator result, program row or
+archive entry; native Shinka's downstream missing-output label is explained as
+a transport failure. Including two seeds, there are 21 database rows and 20
+archive members. Five AST duplicates consume their slots and overlap validity.
+Each started run has nine valid proposals out of ten consumed opportunities;
+B101 has nine valid programs out of nine actually generated files.
 
-All terminal selection identities/statuses were frozen before holdout or recognition. B303's seed entry is a placeholder, not a run result. Neither unfinished entry contributes a primary outcome. Earliest appearance breaks exact ties, independently of Shinka's later tied best pointer. Paired A-minus-B differences are 0.000000, −0.110196 and unavailable; the two available pairs have descriptive mean −0.055098 and sample SD 0.077920. This partial readout shows no observed search advantage and does not complete the three-pair experiment or establish a general effect.
+Exact TFT appears at A101 slots 6/10 and B101 slots 1/5/7/8/9. All seven pass the
+1,640 frozen probes and have source arguments covering every legal binary
+history. The known E1 periodic-defection counterexample remains a warning that
+probe agreement alone does not prove equivalence.
 
-## Scientific and operational findings
+TFT was not selected. A101's selected slot 4 and B101's provisional slot 2 both
+implement grim trigger: cooperate until the opponent first defects, then defect
+forever. Source inspection establishes their equivalence. Grim improves training
+over TFT solely against fair random. Its measured A101 holdout payoff is higher
+than reference TFT, with gains against alternator/random outweighing a large
+loss against suspicious TFT. Independent generation produced the same behavior
+without accumulated feedback. The incomplete paired experiment cannot estimate
+whether evolutionary search improves expected selected-policy holdout payoff.
 
-All 44 generated sources have Shinka database rows: **40 live-valid/archived, two interpreter rejections and two without evaluator results**. A202 slot 7 exceeded the 400-node limit (438); slot 9 contained a forbidden tuple (394 nodes). Neither was repaired. B101 slot 3 and A303 slot 4 were killed because the pinned scheduler included proposal time in its evaluation timeout. Their database score 0 is a failure placeholder, not measured payoff. Post-stop training diagnoses (2.295967 and 2.117879) did not alter selection or archives.
+The actual A101 slot-6 → slot-8 step changes TFT to grim (+0.119148 training),
+but grim slot 4 was already supplied as an inspiration and the child repeats it.
+It is neither a new best nor a new discovery at slot 8. The report distinguishes
+measured code/context relationships from speculation about model reasoning.
 
-A202 extended TFT with defection after apparent repeating mixed-action blocks of lengths 2–6. Its training gain arose entirely against fair random. On holdout, sustained mutual defection against suspicious TFT outweighed gains elsewhere. It remains below reference grim on training and below TFT, grim and ordinary WSLS on holdout.
+## Operational result and verification
 
-Nineteen live-valid proposals passed the frozen TFT probes. Eighteen have simple source arguments establishing TFT on legal binary histories. B202 slot 5 is not equivalent: its defection every 32 rounds is missed by the finite probes; a scored round-33 counterexample is preserved. Recognition never supplied fitness.
+The publication audit independently reproduced the archived analysis, all 20
+native contexts, usage, source proofs and scored traces. All 52 tests and both
+zero-call preflights passed; the known sandbox test stall and successful rerun
+are recorded in [PUBLICATION_AUDIT.md](results/e1_r/setup/PUBLICATION_AUDIT.md).
+No additional live invocation occurred during publication work.
 
-Forced localhost checks established native tool restrictions before calls: file/search/MCP/plugin/agent retrieval disabled, with inert code-mode entrypoints failing closed. No tool call was observed in 44 fresh sessions; actual base/permission/user contexts matched the audited information. This is a tested native tool boundary, not an OS confidentiality container or knowledge-free invention.
+The fixed evaluator and installed pinned Shinka remain unchanged. Versioned,
+hash-checked per-run adapters repair buffered metadata reading, start evaluation
+timeouts at actual evaluation start, and finalize stopped runners after bounded
+draining. Ledger replacement fsyncs the file and directory; nested subprocesses
+have time bounds and parent-death cleanup. Database and proposal retries are
+disabled. The default launcher remains zero-call.
 
-The stop latch blocked further launches, but cleanup waited on a separate finalization event. A targeted SIGINT to the stopped A303 child let its finally block save the partial summary and the parent close the ledger. Local fixtures reproduce the timer defect and an RPC buffering vulnerability. The exact live cause of the metadata timeout is not proven; a post-stop read-only check succeeded with no evidence of quota exhaustion. The as-executed code is preserved; these defects must be fixed before another run.
+The release suite passed 52 tests, a full six-run mocked rehearsal and metadata/
+backend/quota stop paths before calls. Forced localhost checks re-established
+native retrieval restrictions. Legacy buffering, timer and actual native stop
+failures were reproduced separately. Early local sandbox/fixture failures remain
+preserved and are not scientific proposals.
 
-## Usage, checks and evidence
+In live E1-R, every generated candidate received an evaluator result. The
+terminal drain took 0.051 seconds, and closure needed no manual interruption.
+The new connection error's low-level cause remains unresolved; the logs do not
+establish a DNS, TLS, service or quota cause. A post-stop read-only metadata
+check succeeded. Account-wide rounded usage was 6% before/after; credit balance
+stayed 90.6853810000. No quota exhaustion was observed.
 
-There were 44 external proposal invocations, 44 completed Codex turn events and 44 native model-response usage records; their equality here does not make them equivalent units. Input: 254,296 tokens, including 137,216 cached. Output: 39,039, including 31,394 reasoning. Codex runtime: 1,304.1 seconds; five started Shinka runs: 1,726.0 seconds including checks/evaluation/cleanup. Credit balance stayed 90.6853810000; account-wide rounded use moved 3%→4%, also including supervisor use. The $0.7300712 list-price estimate is not a subscription charge.
+Usage: **20 external invocations, 19 completed Codex turn events, 19 available
+native model-response records**. Input tokens 108,683 (34,048 cached subset);
+output 15,469 (13,048 reasoning subset); total 124,152. Codex runtime 698.031
+seconds; Shinka run runtime 925.373 seconds. The $0.3417076 API-list-price estimate
+is not a subscription charge. Failed-call remote processing cannot be inferred
+from absent usage. All 20 native sessions were fresh; no tool call was observed.
+No paid API, API-key authentication/fallback, purchased-credit continuation,
+auxiliary model, embeddings or GitHub Actions was used.
 
-No paid API calls, API-key authentication, API fallback, purchased-credit continuation, auxiliary models, embeddings or GitHub Actions were used. Default launchers remain zero-call. The pre-call suite passed 31 tests; the final suite passed 36. Prompts, sources, native contexts, scores, failures, archives, configuration and usage are retained after credential review.
+- [Protocol](results/e1_r/protocol/PROTOCOL.md) and [source freeze](results/e1_r/protocol/freeze.json).
+- [Terminal selections](results/e1_r/training_selections_frozen.json), [audit](results/e1_r/audit.json), [source proofs](results/e1_r/source_diagnoses.json).
+- [Every opportunity and original source](results/e1_r/PROPOSALS.md), [closed ledger](results/e1_r/ledger.json), [usage](results/e1_r/usage_summary.json).
+- [Implementation and local failure history](results/e1_r/setup/IMPLEMENTATION.md), [release rehearsal](results/e1_r/setup/rehearsal_release/summary.json), [tests](results/e1_r/setup/tests_release.txt), [commands](results/e1_r/setup/COMMANDS.md).
 
-- [Protocol](results/e1/protocol/PROTOCOL.md) and [source freeze](results/e1/protocol/freeze.json).
-- [Every planned opportunity](results/e1/PROPOSALS.md), including blocked/unattempted slots.
-- [Terminal selection freeze](results/e1/training_selections_frozen.json) and [audit](results/e1/audit.json).
-- [Closed ledger](results/e1/ledger.json), [usage](results/e1/usage_summary.json) and [failure reproductions](results/e1/setup/failure_reproductions.json).
-- [Final tests](results/e1/setup/tests_post_stop.txt) and [commands](results/e1/setup/COMMANDS.md).
+## Preserved findings and proposed next step
 
-## Preserved pilot and next bounded step
+The pilot at reviewed commit `fe5e130a4b2f3428b4b2bc482bd0378214672ea4` remains an
+unblinded five-invocation integration pilot; selected guarded WSLS scored
+2.533136 training / 2.444314 holdout. Its exhausted ledger and evidence remain
+unchanged. E1 at `42b163193e0a0da4030e6c5917a1c17f1cab6e3d` remains closed at 44/60,
+with four complete runs and two available paired differences, 0 and −0.110196.
+Its mean −0.055098 showed no observed advantage in that partial readout. The
+original code, failures and unused 16 slots are preserved; E1-R did not reuse them.
 
-The reviewed pilot commit `fe5e130a4b2f3428b4b2bc482bd0378214672ea4`, its completed five-invocation ledger, candidates, report and audit remain intact. It remains an unblinded integration pilot, with selected guarded-WSLS payoff 2.533136 training / 2.444314 holdout. The original seed, interpreter, evaluator, task, payoffs, panels and stopping rule have not changed.
-
-Next: repair buffered RPC handling, evaluation timing and terminal finalization; prove them and a full six-run rehearsal with zero-call mocks. Then repeat the same A/B design under a **new, separately authorized 60-invocation ledger**, three pairs and ten opportunities each. Change only the execution harness; keep model, effort, order, seeds and scientific conditions fixed. Do not reopen either ledger or reuse E1's remaining 16 invocations. The main report contains the implementation prompt. No follow-up experiment was executed.
+Next propose one transport-reliability diagnostic with **at most three newly
+authorized subscription invocations**, a fixed non-game prompt, the same model,
+restrictions, serial bounds and no retries. Record sanitized transport timing
+and error identifiers; stop on the first failure. First exercise the failure
+locally. This addresses the new execution uncertainty and does not complete the
+scientific comparison. [Full bounded proposal](results/e1_r/FOLLOWUP.md).
+**No follow-up or additional scientific condition was executed.**

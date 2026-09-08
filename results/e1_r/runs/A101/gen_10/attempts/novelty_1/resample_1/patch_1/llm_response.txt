@@ -1,0 +1,13 @@
+<NAME>
+tit_for_tat
+</NAME>
+<DESCRIPTION>
+Use tit-for-tat: cooperate initially, then copy the opponent’s most recent action. This preserves mutual cooperation with cooperative and reciprocal opponents while responding immediately to exploitation, without the permanent punishment triggered by a single defection in the current policy.
+</DESCRIPTION>
+<CODE>
+```python
+# EVOLVE-BLOCK-START
+def policy(own_history, opponent_history):
+    return 0 if len(opponent_history) == 0 else opponent_history[-1]
+# EVOLVE-BLOCK-END
+```

@@ -1,0 +1,15 @@
+{
+  "generation": 3,
+  "novelty_attempt": 1,
+  "resample_attempt": 1,
+  "patch_attempt": 1,
+  "success": true,
+  "num_applied": 1,
+  "patch_name": "probe_forgive_exploit",
+  "patch_description": "Opens with a defection to capture unconditional cooperators, then briefly cooperates to repair against retaliatory reciprocal strategies. It permanently exploits opponents that have never defected, while mirroring any opponent that shows defection.",
+  "error_msg": null,
+  "timestamp": "2026-09-08T16:30:03.183164",
+  "llm_cost": 0.033398,
+  "llm_model": "headless/codex@gpt-5.6-terra?effort=low",
+  "headless_prompt_path": "/home/roland/actir/shinka-tit-for-tat/results/e1_r/runs/B101/gen_3/attempts/novelty_1/resample_1/patch_1/headless_prompt.md"
+}

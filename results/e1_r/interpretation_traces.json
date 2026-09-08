@@ -1,0 +1,674 @@
+{
+  "suspicious_tit_for_tat": {
+    "split": "holdout",
+    "opponent": "suspicious_tit_for_tat",
+    "seed": 211,
+    "match_seed": 4088950684836304266,
+    "match_turns": 241,
+    "scored_encounter": true,
+    "full_match": {
+      "total_payoff": 244,
+      "opponent_total_payoff": 244,
+      "turns": 241,
+      "cooperations": 1,
+      "mean_payoff": 1.012448132780083,
+      "opponent_mean_payoff": 1.012448132780083
+    },
+    "rows": [
+      {
+        "round": 1,
+        "own_history": [],
+        "opponent_history": [],
+        "branch_tests_in_execution_order": [
+          {
+            "test": "len(opponent_history) == 0 or opponent_history.count(1) == 0",
+            "result": true
+          }
+        ],
+        "action": 0,
+        "opponent_action": 1,
+        "payoff": 0,
+        "opponent_payoff": 5,
+        "cumulative_payoff": 0,
+        "opponent_cumulative_payoff": 5
+      },
+      {
+        "round": 2,
+        "own_history": [
+          0
+        ],
+        "opponent_history": [
+          1
+        ],
+        "branch_tests_in_execution_order": [
+          {
+            "test": "len(opponent_history) == 0 or opponent_history.count(1) == 0",
+            "result": false
+          }
+        ],
+        "action": 1,
+        "opponent_action": 0,
+        "payoff": 5,
+        "opponent_payoff": 0,
+        "cumulative_payoff": 5,
+        "opponent_cumulative_payoff": 5
+      },
+      {
+        "round": 3,
+        "own_history": [
+          0,
+          1
+        ],
+        "opponent_history": [
+          1,
+          0
+        ],
+        "branch_tests_in_execution_order": [
+          {
+            "test": "len(opponent_history) == 0 or opponent_history.count(1) == 0",
+            "result": false
+          }
+        ],
+        "action": 1,
+        "opponent_action": 1,
+        "payoff": 1,
+        "opponent_payoff": 1,
+        "cumulative_payoff": 6,
+        "opponent_cumulative_payoff": 6
+      },
+      {
+        "round": 4,
+        "own_history": [
+          0,
+          1,
+          1
+        ],
+        "opponent_history": [
+          1,
+          0,
+          1
+        ],
+        "branch_tests_in_execution_order": [
+          {
+            "test": "len(opponent_history) == 0 or opponent_history.count(1) == 0",
+            "result": false
+          }
+        ],
+        "action": 1,
+        "opponent_action": 1,
+        "payoff": 1,
+        "opponent_payoff": 1,
+        "cumulative_payoff": 7,
+        "opponent_cumulative_payoff": 7
+      },
+      {
+        "round": 5,
+        "own_history": [
+          0,
+          1,
+          1,
+          1
+        ],
+        "opponent_history": [
+          1,
+          0,
+          1,
+          1
+        ],
+        "branch_tests_in_execution_order": [
+          {
+            "test": "len(opponent_history) == 0 or opponent_history.count(1) == 0",
+            "result": false
+          }
+        ],
+        "action": 1,
+        "opponent_action": 1,
+        "payoff": 1,
+        "opponent_payoff": 1,
+        "cumulative_payoff": 8,
+        "opponent_cumulative_payoff": 8
+      },
+      {
+        "round": 6,
+        "own_history": [
+          0,
+          1,
+          1,
+          1,
+          1
+        ],
+        "opponent_history": [
+          1,
+          0,
+          1,
+          1,
+          1
+        ],
+        "branch_tests_in_execution_order": [
+          {
+            "test": "len(opponent_history) == 0 or opponent_history.count(1) == 0",
+            "result": false
+          }
+        ],
+        "action": 1,
+        "opponent_action": 1,
+        "payoff": 1,
+        "opponent_payoff": 1,
+        "cumulative_payoff": 9,
+        "opponent_cumulative_payoff": 9
+      },
+      {
+        "round": 7,
+        "own_history": [
+          0,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "opponent_history": [
+          1,
+          0,
+          1,
+          1,
+          1,
+          1
+        ],
+        "branch_tests_in_execution_order": [
+          {
+            "test": "len(opponent_history) == 0 or opponent_history.count(1) == 0",
+            "result": false
+          }
+        ],
+        "action": 1,
+        "opponent_action": 1,
+        "payoff": 1,
+        "opponent_payoff": 1,
+        "cumulative_payoff": 10,
+        "opponent_cumulative_payoff": 10
+      },
+      {
+        "round": 8,
+        "own_history": [
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "opponent_history": [
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "branch_tests_in_execution_order": [
+          {
+            "test": "len(opponent_history) == 0 or opponent_history.count(1) == 0",
+            "result": false
+          }
+        ],
+        "action": 1,
+        "opponent_action": 1,
+        "payoff": 1,
+        "opponent_payoff": 1,
+        "cumulative_payoff": 11,
+        "opponent_cumulative_payoff": 11
+      }
+    ]
+  },
+  "alternator": {
+    "split": "holdout",
+    "opponent": "alternator",
+    "seed": 211,
+    "match_seed": 835393923854085145,
+    "match_turns": 241,
+    "scored_encounter": true,
+    "full_match": {
+      "total_payoff": 722,
+      "opponent_total_payoff": 127,
+      "turns": 241,
+      "cooperations": 2,
+      "mean_payoff": 2.995850622406639,
+      "opponent_mean_payoff": 0.5269709543568465
+    },
+    "rows": [
+      {
+        "round": 1,
+        "own_history": [],
+        "opponent_history": [],
+        "branch_tests_in_execution_order": [
+          {
+            "test": "len(opponent_history) == 0 or opponent_history.count(1) == 0",
+            "result": true
+          }
+        ],
+        "action": 0,
+        "opponent_action": 0,
+        "payoff": 3,
+        "opponent_payoff": 3,
+        "cumulative_payoff": 3,
+        "opponent_cumulative_payoff": 3
+      },
+      {
+        "round": 2,
+        "own_history": [
+          0
+        ],
+        "opponent_history": [
+          0
+        ],
+        "branch_tests_in_execution_order": [
+          {
+            "test": "len(opponent_history) == 0 or opponent_history.count(1) == 0",
+            "result": true
+          }
+        ],
+        "action": 0,
+        "opponent_action": 1,
+        "payoff": 0,
+        "opponent_payoff": 5,
+        "cumulative_payoff": 3,
+        "opponent_cumulative_payoff": 8
+      },
+      {
+        "round": 3,
+        "own_history": [
+          0,
+          0
+        ],
+        "opponent_history": [
+          0,
+          1
+        ],
+        "branch_tests_in_execution_order": [
+          {
+            "test": "len(opponent_history) == 0 or opponent_history.count(1) == 0",
+            "result": false
+          }
+        ],
+        "action": 1,
+        "opponent_action": 0,
+        "payoff": 5,
+        "opponent_payoff": 0,
+        "cumulative_payoff": 8,
+        "opponent_cumulative_payoff": 8
+      },
+      {
+        "round": 4,
+        "own_history": [
+          0,
+          0,
+          1
+        ],
+        "opponent_history": [
+          0,
+          1,
+          0
+        ],
+        "branch_tests_in_execution_order": [
+          {
+            "test": "len(opponent_history) == 0 or opponent_history.count(1) == 0",
+            "result": false
+          }
+        ],
+        "action": 1,
+        "opponent_action": 1,
+        "payoff": 1,
+        "opponent_payoff": 1,
+        "cumulative_payoff": 9,
+        "opponent_cumulative_payoff": 9
+      },
+      {
+        "round": 5,
+        "own_history": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "opponent_history": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "branch_tests_in_execution_order": [
+          {
+            "test": "len(opponent_history) == 0 or opponent_history.count(1) == 0",
+            "result": false
+          }
+        ],
+        "action": 1,
+        "opponent_action": 0,
+        "payoff": 5,
+        "opponent_payoff": 0,
+        "cumulative_payoff": 14,
+        "opponent_cumulative_payoff": 9
+      },
+      {
+        "round": 6,
+        "own_history": [
+          0,
+          0,
+          1,
+          1,
+          1
+        ],
+        "opponent_history": [
+          0,
+          1,
+          0,
+          1,
+          0
+        ],
+        "branch_tests_in_execution_order": [
+          {
+            "test": "len(opponent_history) == 0 or opponent_history.count(1) == 0",
+            "result": false
+          }
+        ],
+        "action": 1,
+        "opponent_action": 1,
+        "payoff": 1,
+        "opponent_payoff": 1,
+        "cumulative_payoff": 15,
+        "opponent_cumulative_payoff": 10
+      },
+      {
+        "round": 7,
+        "own_history": [
+          0,
+          0,
+          1,
+          1,
+          1,
+          1
+        ],
+        "opponent_history": [
+          0,
+          1,
+          0,
+          1,
+          0,
+          1
+        ],
+        "branch_tests_in_execution_order": [
+          {
+            "test": "len(opponent_history) == 0 or opponent_history.count(1) == 0",
+            "result": false
+          }
+        ],
+        "action": 1,
+        "opponent_action": 0,
+        "payoff": 5,
+        "opponent_payoff": 0,
+        "cumulative_payoff": 20,
+        "opponent_cumulative_payoff": 10
+      },
+      {
+        "round": 8,
+        "own_history": [
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "opponent_history": [
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0
+        ],
+        "branch_tests_in_execution_order": [
+          {
+            "test": "len(opponent_history) == 0 or opponent_history.count(1) == 0",
+            "result": false
+          }
+        ],
+        "action": 1,
+        "opponent_action": 1,
+        "payoff": 1,
+        "opponent_payoff": 1,
+        "cumulative_payoff": 21,
+        "opponent_cumulative_payoff": 11
+      }
+    ]
+  },
+  "random_80": {
+    "split": "holdout",
+    "opponent": "random_80",
+    "seed": 211,
+    "match_seed": 3132252413468112678,
+    "match_turns": 241,
+    "scored_encounter": true,
+    "full_match": {
+      "total_payoff": 978,
+      "opponent_total_payoff": 63,
+      "turns": 241,
+      "cooperations": 2,
+      "mean_payoff": 4.058091286307054,
+      "opponent_mean_payoff": 0.26141078838174275
+    },
+    "rows": [
+      {
+        "round": 1,
+        "own_history": [],
+        "opponent_history": [],
+        "branch_tests_in_execution_order": [
+          {
+            "test": "len(opponent_history) == 0 or opponent_history.count(1) == 0",
+            "result": true
+          }
+        ],
+        "action": 0,
+        "opponent_action": 0,
+        "payoff": 3,
+        "opponent_payoff": 3,
+        "cumulative_payoff": 3,
+        "opponent_cumulative_payoff": 3
+      },
+      {
+        "round": 2,
+        "own_history": [
+          0
+        ],
+        "opponent_history": [
+          0
+        ],
+        "branch_tests_in_execution_order": [
+          {
+            "test": "len(opponent_history) == 0 or opponent_history.count(1) == 0",
+            "result": true
+          }
+        ],
+        "action": 0,
+        "opponent_action": 1,
+        "payoff": 0,
+        "opponent_payoff": 5,
+        "cumulative_payoff": 3,
+        "opponent_cumulative_payoff": 8
+      },
+      {
+        "round": 3,
+        "own_history": [
+          0,
+          0
+        ],
+        "opponent_history": [
+          0,
+          1
+        ],
+        "branch_tests_in_execution_order": [
+          {
+            "test": "len(opponent_history) == 0 or opponent_history.count(1) == 0",
+            "result": false
+          }
+        ],
+        "action": 1,
+        "opponent_action": 0,
+        "payoff": 5,
+        "opponent_payoff": 0,
+        "cumulative_payoff": 8,
+        "opponent_cumulative_payoff": 8
+      },
+      {
+        "round": 4,
+        "own_history": [
+          0,
+          0,
+          1
+        ],
+        "opponent_history": [
+          0,
+          1,
+          0
+        ],
+        "branch_tests_in_execution_order": [
+          {
+            "test": "len(opponent_history) == 0 or opponent_history.count(1) == 0",
+            "result": false
+          }
+        ],
+        "action": 1,
+        "opponent_action": 0,
+        "payoff": 5,
+        "opponent_payoff": 0,
+        "cumulative_payoff": 13,
+        "opponent_cumulative_payoff": 8
+      },
+      {
+        "round": 5,
+        "own_history": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "opponent_history": [
+          0,
+          1,
+          0,
+          0
+        ],
+        "branch_tests_in_execution_order": [
+          {
+            "test": "len(opponent_history) == 0 or opponent_history.count(1) == 0",
+            "result": false
+          }
+        ],
+        "action": 1,
+        "opponent_action": 0,
+        "payoff": 5,
+        "opponent_payoff": 0,
+        "cumulative_payoff": 18,
+        "opponent_cumulative_payoff": 8
+      },
+      {
+        "round": 6,
+        "own_history": [
+          0,
+          0,
+          1,
+          1,
+          1
+        ],
+        "opponent_history": [
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "branch_tests_in_execution_order": [
+          {
+            "test": "len(opponent_history) == 0 or opponent_history.count(1) == 0",
+            "result": false
+          }
+        ],
+        "action": 1,
+        "opponent_action": 1,
+        "payoff": 1,
+        "opponent_payoff": 1,
+        "cumulative_payoff": 19,
+        "opponent_cumulative_payoff": 9
+      },
+      {
+        "round": 7,
+        "own_history": [
+          0,
+          0,
+          1,
+          1,
+          1,
+          1
+        ],
+        "opponent_history": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "branch_tests_in_execution_order": [
+          {
+            "test": "len(opponent_history) == 0 or opponent_history.count(1) == 0",
+            "result": false
+          }
+        ],
+        "action": 1,
+        "opponent_action": 1,
+        "payoff": 1,
+        "opponent_payoff": 1,
+        "cumulative_payoff": 20,
+        "opponent_cumulative_payoff": 10
+      },
+      {
+        "round": 8,
+        "own_history": [
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "opponent_history": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        "branch_tests_in_execution_order": [
+          {
+            "test": "len(opponent_history) == 0 or opponent_history.count(1) == 0",
+            "result": false
+          }
+        ],
+        "action": 1,
+        "opponent_action": 1,
+        "payoff": 1,
+        "opponent_payoff": 1,
+        "cumulative_payoff": 21,
+        "opponent_cumulative_payoff": 11
+      }
+    ]
+  }
+}
