@@ -1,0 +1,23 @@
+LOCAL MOCK ONLY; no external calls
+
+Traceback (most recent call last):
+  File "/home/roland/actir/shinka-tit-for-tat/rehearse_e1r.py", line 117, in <module>
+    raise SystemExit(child(args.root, args.child, args.mode))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/roland/actir/shinka-tit-for-tat/rehearse_e1r.py", line 80, in rehearsal
+    rc = run.execute()
+  File "/home/roland/actir/shinka-tit-for-tat/run_e1r.py", line 301, in execute
+    def execute():
+    
+  File "/home/roland/actir/shinka-tit-for-tat/run_e1r.py", line 346, in _execute_locked
+    timer.cancel()
+    ~~~~~~~~~~~~^^
+  File "/home/roland/actir/shinka-tit-for-tat/run_e1r.py", line 274, in freeze_selections
+    with tempfile.TemporaryDirectory() as tmp:
+               ~~~~~~~~~~~~~~~~~~~~~^^~
+  File "/home/roland/actir/shinka-tit-for-tat/run_e1r.py", line 158, in training_records
+    records.append({"slot": slot, "source": str((folder / "main.py").relative_to(ROOT)),
+                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/roland/.local/share/uv/python/cpython-3.13-linux-x86_64-gnu/lib/python3.13/pathlib/_local.py", line 385, in relative_to
+    raise ValueError(f"{str(self)!r} is not in the subpath of {str(other)!r}")
+ValueError: 'results/e1_r/setup/rehearsal_verified/full/runs/A101/gen_0/main.py' is not in the subpath of '/home/roland/actir/shinka-tit-for-tat'

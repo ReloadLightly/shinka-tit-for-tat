@@ -1,0 +1,41 @@
+{
+  "active_proposals_at_start": 1,
+  "api_costs": 0.0,
+  "archive_inspiration_ids": [],
+  "artifacts": {
+    "generated_code_path": "results/e1_r/setup/rehearsal_verified/full/runs/A101/gen_2/main.py",
+    "generation_dir": "results/e1_r/setup/rehearsal_verified/full/runs/A101/gen_2",
+    "results_dir": "results/e1_r/setup/rehearsal_verified/full/runs/A101/gen_2/results"
+  },
+  "attempts": {
+    "novelty_attempt": null,
+    "patch_attempt": null,
+    "resample_attempt": null
+  },
+  "code_embedding_available": false,
+  "downstream_eval_submitted": false,
+  "embed_cost": 0.0,
+  "error_attempt": null,
+  "failure_class": "proposal_generation_failed",
+  "failure_json_path": "results/e1_r/setup/rehearsal_verified/full/runs/A101/gen_2/failure.json",
+  "failure_reason": "'results/e1_r/setup/rehearsal_verified/full/runs/A101/gen_0/main.py' is not in the subpath of '/home/roland/actir/shinka-tit-for-tat'",
+  "failure_stage": "proposal",
+  "generated_code_available": false,
+  "generation": 2,
+  "language": "python",
+  "last_error_msg": null,
+  "max_similarity": null,
+  "node_kind": "failed_proposal",
+  "novelty_checks_performed": 0,
+  "novelty_cost": 0.0,
+  "novelty_explanation": "",
+  "parent_id": "f3d9b015-ff33-42f9-b25b-676f122669a9",
+  "patch_description": null,
+  "patch_name": null,
+  "patch_type": null,
+  "proposal_started_at": 1788876236.5863113,
+  "sampling_worker_id": null,
+  "system_prompt_id": null,
+  "timestamp": "2026-09-08T16:03:56.627632",
+  "top_k_inspiration_ids": []
+}

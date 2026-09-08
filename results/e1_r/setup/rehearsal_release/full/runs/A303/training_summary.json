@@ -1,0 +1,105 @@
+{
+  "run_id": "A303",
+  "records": [
+    {
+      "slot": 0,
+      "source": "results/e1_r/setup/rehearsal_release/full/runs/A303/gen_0/main.py",
+      "sha256": "f83fb4c8ffc3313079ff6fa09bef89da8b6ed67d8f604a414c3493d97ba9a32b",
+      "correct": true,
+      "error": null,
+      "training": 2.3310772701635645
+    },
+    {
+      "slot": 1,
+      "source": "results/e1_r/setup/rehearsal_release/full/runs/A303/gen_1/main.py",
+      "sha256": "94b96c65498af65241315002083ffc56f971aac2880c1fcf3214ebcc8f569476",
+      "correct": true,
+      "error": null,
+      "training": 2.2436548223350252
+    },
+    {
+      "slot": 2,
+      "source": "results/e1_r/setup/rehearsal_release/full/runs/A303/gen_2/main.py",
+      "sha256": "44e09850c2e768ce3d3731cd7fe0cd5d66d5c34eb5b00fb6139fb6d05c4d632b",
+      "correct": false,
+      "error": "PolicyError: Unsupported syntax or more than 400 AST nodes",
+      "training": -1.0
+    },
+    {
+      "slot": 3,
+      "source": "results/e1_r/setup/rehearsal_release/full/runs/A303/gen_3/main.py",
+      "sha256": "94b96c65498af65241315002083ffc56f971aac2880c1fcf3214ebcc8f569476",
+      "correct": true,
+      "error": null,
+      "training": 2.2436548223350252
+    },
+    {
+      "slot": 4,
+      "source": "results/e1_r/setup/rehearsal_release/full/runs/A303/gen_4/main.py",
+      "sha256": "94b96c65498af65241315002083ffc56f971aac2880c1fcf3214ebcc8f569476",
+      "correct": true,
+      "error": null,
+      "training": 2.2436548223350252
+    },
+    {
+      "slot": 5,
+      "source": "results/e1_r/setup/rehearsal_release/full/runs/A303/gen_5/main.py",
+      "sha256": "94b96c65498af65241315002083ffc56f971aac2880c1fcf3214ebcc8f569476",
+      "correct": true,
+      "error": null,
+      "training": 2.2436548223350252
+    },
+    {
+      "slot": 6,
+      "source": "results/e1_r/setup/rehearsal_release/full/runs/A303/gen_6/main.py",
+      "sha256": "94b96c65498af65241315002083ffc56f971aac2880c1fcf3214ebcc8f569476",
+      "correct": true,
+      "error": null,
+      "training": 2.2436548223350252
+    },
+    {
+      "slot": 7,
+      "source": "results/e1_r/setup/rehearsal_release/full/runs/A303/gen_7/main.py",
+      "sha256": "94b96c65498af65241315002083ffc56f971aac2880c1fcf3214ebcc8f569476",
+      "correct": true,
+      "error": null,
+      "training": 2.2436548223350252
+    },
+    {
+      "slot": 8,
+      "source": "results/e1_r/setup/rehearsal_release/full/runs/A303/gen_8/main.py",
+      "sha256": "94b96c65498af65241315002083ffc56f971aac2880c1fcf3214ebcc8f569476",
+      "correct": true,
+      "error": null,
+      "training": 2.2436548223350252
+    },
+    {
+      "slot": 9,
+      "source": "results/e1_r/setup/rehearsal_release/full/runs/A303/gen_9/main.py",
+      "sha256": "94b96c65498af65241315002083ffc56f971aac2880c1fcf3214ebcc8f569476",
+      "correct": true,
+      "error": null,
+      "training": 2.2436548223350252
+    },
+    {
+      "slot": 10,
+      "source": "results/e1_r/setup/rehearsal_release/full/runs/A303/gen_10/main.py",
+      "sha256": "94b96c65498af65241315002083ffc56f971aac2880c1fcf3214ebcc8f569476",
+      "correct": true,
+      "error": null,
+      "training": 2.2436548223350252
+    }
+  ],
+  "training_selected": {
+    "slot": 0,
+    "source": "results/e1_r/setup/rehearsal_release/full/runs/A303/gen_0/main.py",
+    "sha256": "f83fb4c8ffc3313079ff6fa09bef89da8b6ed67d8f604a414c3493d97ba9a32b",
+    "correct": true,
+    "error": null,
+    "training": 2.3310772701635645
+  },
+  "runtime_seconds": 4.535614893015008,
+  "finished_utc": "2026-09-08T14:14:12.433118+00:00",
+  "shinka_completed_generations": 11,
+  "headless_list_price_estimate_not_charge": 0.0
+}

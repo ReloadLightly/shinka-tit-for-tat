@@ -1,0 +1,65 @@
+{
+  "frozen_utc": "2026-09-08T14:11:31.850303+00:00",
+  "complete_design": true,
+  "selection_rule": "Highest admissible recorded training payoff including seed; earliest exact tie",
+  "terminal_handling": "Incomplete/unstarted runs have provisional/seed placeholder selections and no primary outcome; no reselection",
+  "statuses": {
+    "A101": "complete",
+    "B101": "complete",
+    "B202": "complete",
+    "A202": "complete",
+    "A303": "complete",
+    "B303": "complete"
+  },
+  "selections": {
+    "A101": {
+      "slot": 0,
+      "source": "results/e1_r/setup/rehearsal_frozen/full/runs/A101/gen_0/main.py",
+      "sha256": "f83fb4c8ffc3313079ff6fa09bef89da8b6ed67d8f604a414c3493d97ba9a32b",
+      "correct": true,
+      "error": null,
+      "training": 2.3310772701635645
+    },
+    "B101": {
+      "slot": 0,
+      "source": "results/e1_r/setup/rehearsal_frozen/full/runs/B101/gen_0/main.py",
+      "sha256": "f83fb4c8ffc3313079ff6fa09bef89da8b6ed67d8f604a414c3493d97ba9a32b",
+      "correct": true,
+      "error": null,
+      "training": 2.3310772701635645
+    },
+    "B202": {
+      "slot": 0,
+      "source": "results/e1_r/setup/rehearsal_frozen/full/runs/B202/gen_0/main.py",
+      "sha256": "f83fb4c8ffc3313079ff6fa09bef89da8b6ed67d8f604a414c3493d97ba9a32b",
+      "correct": true,
+      "error": null,
+      "training": 2.3310772701635645
+    },
+    "A202": {
+      "slot": 0,
+      "source": "results/e1_r/setup/rehearsal_frozen/full/runs/A202/gen_0/main.py",
+      "sha256": "f83fb4c8ffc3313079ff6fa09bef89da8b6ed67d8f604a414c3493d97ba9a32b",
+      "correct": true,
+      "error": null,
+      "training": 2.3310772701635645
+    },
+    "A303": {
+      "slot": 0,
+      "source": "results/e1_r/setup/rehearsal_frozen/full/runs/A303/gen_0/main.py",
+      "sha256": "f83fb4c8ffc3313079ff6fa09bef89da8b6ed67d8f604a414c3493d97ba9a32b",
+      "correct": true,
+      "error": null,
+      "training": 2.3310772701635645
+    },
+    "B303": {
+      "slot": 0,
+      "source": "results/e1_r/setup/rehearsal_frozen/full/runs/B303/gen_0/main.py",
+      "sha256": "f83fb4c8ffc3313079ff6fa09bef89da8b6ed67d8f604a414c3493d97ba9a32b",
+      "correct": true,
+      "error": null,
+      "training": 2.3310772701635645
+    }
+  },
+  "ledger_sha256": "53a591f58ce77ecf2eba55b568120ccf62b51178232152e53d8d7b683751968d"
+}

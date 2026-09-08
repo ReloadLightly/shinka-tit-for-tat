@@ -1,0 +1,42 @@
+{
+  "passed": true,
+  "external_proposal_invocations": 0,
+  "records": [
+    {
+      "mode": "full",
+      "passed": true,
+      "mock_proposal_slots": 60,
+      "external_proposal_invocations": 0,
+      "returncode": 0,
+      "runtime_seconds": 80.92525643500267,
+      "manual_interruption": false
+    },
+    {
+      "mode": "metadata_failure",
+      "passed": true,
+      "mock_proposal_slots": 2,
+      "external_proposal_invocations": 0,
+      "returncode": 2,
+      "runtime_seconds": 17.217113494989462,
+      "manual_interruption": false
+    },
+    {
+      "mode": "backend_failure",
+      "passed": true,
+      "mock_proposal_slots": 3,
+      "external_proposal_invocations": 0,
+      "returncode": 2,
+      "runtime_seconds": 7.4449099830235355,
+      "manual_interruption": false
+    },
+    {
+      "mode": "quota_stop",
+      "passed": true,
+      "mock_proposal_slots": 2,
+      "external_proposal_invocations": 0,
+      "returncode": 2,
+      "runtime_seconds": 15.648724249040242,
+      "manual_interruption": false
+    }
+  ]
+}

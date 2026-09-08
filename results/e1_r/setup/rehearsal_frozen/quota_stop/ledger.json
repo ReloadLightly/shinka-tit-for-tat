@@ -1,0 +1,47 @@
+{
+  "invocations": [
+    {
+      "invocation": 1,
+      "run_id": "A101",
+      "slot": 1,
+      "reserved_utc": "2026-09-08T14:12:16.484913+00:00",
+      "status": "completed_mock",
+      "model": "gpt-5.6-terra",
+      "local_mock_only": true,
+      "external_proposal_invocations": 0
+    },
+    {
+      "invocation": 2,
+      "run_id": "A101",
+      "slot": 2,
+      "reserved_utc": "2026-09-08T14:12:16.702651+00:00",
+      "status": "completed_mock",
+      "model": "gpt-5.6-terra",
+      "local_mock_only": true,
+      "external_proposal_invocations": 0
+    }
+  ],
+  "limit": 60,
+  "per_run_limit": 10,
+  "order": [
+    "A101",
+    "B101",
+    "B202",
+    "A202",
+    "A303",
+    "B303"
+  ],
+  "stopped": true,
+  "closed": true,
+  "execution_started": true,
+  "local_mock_only": true,
+  "protocol_commit": "LOCAL_MOCK_COMMIT",
+  "execution_started_utc": "2026-09-08T14:12:02.939888+00:00",
+  "stop_reason": "LOCAL fixture quota_stop before launch",
+  "run_results": {
+    "A101": {
+      "returncode": 2,
+      "finished_utc": "2026-09-08T14:12:18.717091+00:00"
+    }
+  }
+}

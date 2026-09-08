@@ -6,6 +6,8 @@
 
 This project tests operational rediscovery of tit-for-tat (TFT) with LLM-guided program evolution. Starting from unconditional defection, ShinkaEvolve may change a deterministic policy that observes both players' past actions. A fixed evaluator returns average own payoff against a frozen opponent panel. Identification of TFT is a separate post-search analysis and supplies no fitness bonus. The environment, payoff matrix, observations, opponents, stopping rule, and evaluator are outside candidate control.
 
+**E1-R, 2026-09-08:** the repaired execution harness passed 52 local tests, the full six-run mock rehearsal and metadata/backend/quota stop paths. The [E1-R protocol](results/e1_r/protocol/PROTOCOL.md) is frozen before proposals, with a separate 60-invocation ledger and unchanged scientific design. Live execution is authorized; no E1-R scientific result is claimed at this freeze. The original E1 and pilot findings below remain preserved.
+
 **Status, 2026-09-08:** [**E1: ShinkaEvolve versus independent generation — full report**](results/e1/E1_REPORT.md). E1 stopped at **44/60 external proposal invocations** after a subscription metadata timeout. Four runs completed, A303 is incomplete, and B303 never started. The two available paired holdout differences (A minus B) are 0.000000 and −0.110196; the third is unavailable. This partial readout shows no observed search advantage and does not complete the planned three-pair experiment. The earlier five-invocation unblinded pilot remains preserved.
 
 ## Research question and predictions

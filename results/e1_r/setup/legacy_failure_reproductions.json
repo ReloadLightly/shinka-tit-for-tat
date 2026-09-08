@@ -1,0 +1,23 @@
+{
+  "external_proposal_invocations": 0,
+  "metadata_reader": {
+    "legacy": {
+      "outcome": "TimeoutError",
+      "message": "Codex metadata request timed out",
+      "seconds": 0.22621829697163776
+    },
+    "explicit_byte_buffer_control": "Received notification and requested reply without another fd poll",
+    "live_attribution": "Reproduces a concrete vulnerability, but the live check did not log the RPC stage/buffer, so the exact live cause remains unproven"
+  },
+  "evaluation_timer": {
+    "proposal_clock_82s_evaluation_clock_0s": "Killed immediately by pinned scheduler",
+    "evaluation_clock_0s_control": "Kept running",
+    "evaluation_clock_61s_control": "Killed at real evaluation limit",
+    "uses_mock_process_only": true
+  },
+  "stop_finalization": {
+    "source_observation": "Pinned runner waits for finalization_complete; setting should_stop alone exits monitor/coordinator without necessarily setting finalization_complete",
+    "live_observation": "No further launch after stop latch; supervisor sent SIGINT to stopped A303 child; finally block saved summary and parent closed ledger",
+    "required_repair": "Explicit finalization after draining/cancelling in-flight work; test terminal metadata failures without a manual interrupt"
+  }
+}

@@ -1,0 +1,1 @@
+Old native stop hang reproduced with zero calls; fixture bounded at 25 seconds.

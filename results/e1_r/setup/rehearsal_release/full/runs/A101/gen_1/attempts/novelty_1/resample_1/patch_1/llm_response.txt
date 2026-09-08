@@ -1,0 +1,8 @@
+<NAME>local_fixture</NAME>
+<DESCRIPTION>Local fixture</DESCRIPTION>
+```python
+# EVOLVE-BLOCK-START
+def policy(own_history, opponent_history):
+    return 0
+# EVOLVE-BLOCK-END
+```

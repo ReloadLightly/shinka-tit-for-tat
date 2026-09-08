@@ -1,0 +1,17 @@
+test_all_sixty_slots_and_each_duplicate_refused (test_e1r.AccountingTests.test_all_sixty_slots_and_each_duplicate_refused) ... ok
+test_frozen_no_retry_no_auxiliary_configuration (test_e1r.AccountingTests.test_frozen_no_retry_no_auxiliary_configuration) ... ok
+test_complete_status_with_coalesced_notifications (test_e1r.MetadataTests.test_complete_status_with_coalesced_notifications) ... ok
+test_deadline_and_unmatched_notification_flood (test_e1r.MetadataTests.test_deadline_and_unmatched_notification_flood) ... ok
+test_eof_and_partial_eof (test_e1r.MetadataTests.test_eof_and_partial_eof) ... ok
+test_notification_and_response_single_write (test_e1r.MetadataTests.test_notification_and_response_single_write) ... ok
+test_partial_reads_and_utf8 (test_e1r.MetadataTests.test_partial_reads_and_utf8) ... ok
+test_rpc_error_does_not_echo_payload (test_e1r.MetadataTests.test_rpc_error_does_not_echo_payload) ... ok
+test_normal_native_finalization (test_e1r.TerminalTests.test_normal_native_finalization) ... ok
+test_stop_cancels_stalled_task_with_bound (test_e1r.TerminalTests.test_stop_cancels_stalled_task_with_bound) ... ok
+test_stop_drains_outstanding_task_without_manual_signal (test_e1r.TerminalTests.test_stop_drains_outstanding_task_without_manual_signal) ... ok
+test_old_clock_failure_and_fixed_evaluation_timeout (test_e1r.TimerTests.test_old_clock_failure_and_fixed_evaluation_timeout) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 4.027s
+
+OK

@@ -1,0 +1,6 @@
+LOCAL check 1/6: exec refused; no authentication, no canary access
+LOCAL check 2/6: exec_command refused; no authentication, no canary access
+LOCAL check 3/6: apply_patch refused; no authentication, no canary access
+LOCAL check 4/6: read_mcp_resource refused; no authentication, no canary access
+LOCAL check 5/6: spawn_agent refused; no authentication, no canary access
+LOCAL check 6/6: view_image refused; no authentication, no canary access

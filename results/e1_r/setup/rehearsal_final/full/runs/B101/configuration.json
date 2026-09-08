@@ -1,0 +1,116 @@
+{
+  "run_id": "B101",
+  "evolution": {
+    "task_sys_msg": "Improve the Python function policy(own_history, opponent_history) to maximize its own average payoff in a repeated two-action simultaneous game. Each argument is the tuple of that player's previous actions in this match; both are empty initially. Return the integer 0 or 1, never a Boolean. The payoff to you is 3 for (0,0), 0 for (0,1), 5 for (1,0), and 1 for (1,1). The second entry is the other player's action. The other player has the transposed payoff table. A match independently ends after each round with probability 0.00346. You cannot see the ending time, opponent identity, seed, or current opponent action. There is no execution noise. Fitness is your total payoff divided by total rounds across a fixed heterogeneous opponent panel with several independently seeded matches. Each opponent receives the same set of match lengths. Only average payoff is returned as feedback.\n\nEdit only the EVOLVE-BLOCK. The candidate is a deliberately small executable Python subset interpreted by the evaluator. Keep exactly one unannotated function with the specified signature. Its body may contain if/elif/else and return, with no assignments. Expressions may contain integer constants, histories, indexing and slices, len(history), sum(history), min(history), max(history), history.count(0) or history.count(1), integer +, -, %, comparisons, not/and/or, and conditional expressions. No imports, extra functions, loops, comprehensions, globals, random numbers, external calls, files, or state outside the two histories. Handle empty history and do not call min/max on an empty sequence. At most 16000 source bytes and 400 AST nodes. This subset allows dependence on the entire past, not just the previous round. Maximize payoff; no other criterion contributes to fitness.\n\nUse only this task, the supplied programs, and training feedback. Do not read local files or search for additional experiment information. Return the requested proposal as text.\n",
+    "patch_types": [
+      "full"
+    ],
+    "patch_type_probs": [
+      1.0
+    ],
+    "num_generations": 11,
+    "max_patch_resamples": 1,
+    "max_patch_attempts": 1,
+    "job_type": "local",
+    "language": "python",
+    "llm_models": [
+      "headless/codex@gpt-5.6-terra?effort=low"
+    ],
+    "llm_dynamic_selection": null,
+    "llm_dynamic_selection_kwargs": {
+      "cost_aware_coef": 0.5
+    },
+    "llm_kwargs": {
+      "headless_work_dir": "/tmp/e1_mutation_p74_sgqm"
+    },
+    "meta_rec_interval": null,
+    "meta_llm_models": null,
+    "meta_llm_kwargs": {},
+    "meta_max_recommendations": 5,
+    "sample_single_meta_rec": true,
+    "embedding_model": null,
+    "init_program_path": "/home/roland/actir/shinka-tit-for-tat/initial.py",
+    "results_dir": "/home/roland/actir/shinka-tit-for-tat/results/e1_r/setup/rehearsal_final/full/runs/B101",
+    "enable_wandb_logging": false,
+    "wandb_project": "shinka-evolve",
+    "wandb_entity": null,
+    "wandb_group": null,
+    "wandb_name": null,
+    "wandb_mode": null,
+    "wandb_tags": [],
+    "wandb_notes": null,
+    "wandb_dir": null,
+    "wandb_run_id": null,
+    "wandb_resume": "allow",
+    "wandb_config": {},
+    "max_novelty_attempts": 1,
+    "code_embed_sim_threshold": 0.99,
+    "novelty_llm_models": null,
+    "novelty_llm_kwargs": {},
+    "use_text_feedback": true,
+    "max_api_costs": null,
+    "inspiration_sort_order": "ascending",
+    "enable_controlled_oversubscription": false,
+    "proposal_target_mode": "adaptive",
+    "proposal_target_min_samples": 5,
+    "proposal_target_ratio_cap": 2.0,
+    "proposal_buffer_max": 2,
+    "proposal_target_hard_cap": null,
+    "proposal_target_ewma_alpha": 0.3,
+    "evolve_prompts": false,
+    "prompt_patch_types": [
+      "diff",
+      "full"
+    ],
+    "prompt_patch_type_probs": [
+      0.7,
+      0.3
+    ],
+    "prompt_evolution_interval": null,
+    "prompt_archive_size": 10,
+    "prompt_llm_models": null,
+    "prompt_llm_kwargs": {},
+    "prompt_ucb_exploration_constant": 1.0,
+    "prompt_epsilon": 0.1,
+    "prompt_evo_top_k_programs": 3,
+    "prompt_percentile_recompute_interval": 20
+  },
+  "database": {
+    "db_path": null,
+    "num_islands": 1,
+    "archive_size": 16,
+    "max_stdout_log_chars": null,
+    "elite_selection_ratio": 0.3,
+    "num_archive_inspirations": 0,
+    "num_top_k_inspirations": 1,
+    "migration_interval": 10,
+    "migration_rate": 0.0,
+    "island_elitism": true,
+    "enforce_island_separation": true,
+    "island_selection_strategy": "uniform",
+    "enable_dynamic_islands": false,
+    "stagnation_threshold": 100,
+    "island_spawn_strategy": "initial",
+    "island_spawn_subtree_size": 1,
+    "parent_selection_strategy": "weighted",
+    "exploitation_alpha": 1.0,
+    "exploitation_ratio": 0.2,
+    "parent_selection_lambda": 10.0,
+    "num_beams": 5,
+    "archive_selection_strategy": "fitness",
+    "archive_criteria": {
+      "combined_score": 1.0
+    }
+  },
+  "job": {
+    "eval_program_path": "/home/roland/actir/shinka-tit-for-tat/evaluate.py",
+    "extra_cmd_args": {},
+    "eval_verbose": true,
+    "numeric_threads_per_job": null,
+    "time": "00:01:00",
+    "conda_env": null,
+    "activate_script": null,
+    "python_executable": "/home/roland/actir/shinka-tit-for-tat/.venv/bin/python"
+  },
+  "started_utc": "2026-09-08T14:06:24.515267+00:00"
+}

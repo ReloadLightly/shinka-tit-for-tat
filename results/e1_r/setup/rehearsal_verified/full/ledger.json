@@ -1,0 +1,20 @@
+{
+  "invocations": [],
+  "limit": 60,
+  "per_run_limit": 10,
+  "order": [
+    "A101",
+    "B101",
+    "B202",
+    "A202",
+    "A303",
+    "B303"
+  ],
+  "stopped": true,
+  "closed": true,
+  "execution_started": true,
+  "local_mock_only": true,
+  "protocol_commit": "LOCAL_MOCK_COMMIT",
+  "execution_started_utc": "2026-09-08T14:03:35.363199+00:00",
+  "stop_reason": "Run A101 failed (1)"
+}

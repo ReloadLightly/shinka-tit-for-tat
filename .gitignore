@@ -9,3 +9,9 @@ results/subscription_pilot_001_usage/bin/
 results/subscription_pilot_001_usage/invocations.lock
 results/e1/bin/
 results/e1/ledger.lock
+results/e1_r/bin/
+results/e1_r/ledger.lock
+results/e1_r/execution.lock
+results/e1_r/setup/rehearsal*/**/bin/
+results/e1_r/setup/rehearsal*/**/execution.lock
+results/e1_r/setup/legacy_stop/bin/

@@ -1,0 +1,647 @@
+{
+  "invocations": [
+    {
+      "invocation": 1,
+      "run_id": "A101",
+      "slot": 1,
+      "reserved_utc": "2026-09-08T14:09:49.749841+00:00",
+      "status": "completed_mock",
+      "model": "gpt-5.6-terra",
+      "local_mock_only": true,
+      "external_proposal_invocations": 0
+    },
+    {
+      "invocation": 2,
+      "run_id": "A101",
+      "slot": 2,
+      "reserved_utc": "2026-09-08T14:09:49.992651+00:00",
+      "status": "completed_mock",
+      "model": "gpt-5.6-terra",
+      "local_mock_only": true,
+      "external_proposal_invocations": 0
+    },
+    {
+      "invocation": 3,
+      "run_id": "A101",
+      "slot": 3,
+      "reserved_utc": "2026-09-08T14:09:50.242032+00:00",
+      "status": "completed_mock",
+      "model": "gpt-5.6-terra",
+      "local_mock_only": true,
+      "external_proposal_invocations": 0
+    },
+    {
+      "invocation": 4,
+      "run_id": "A101",
+      "slot": 4,
+      "reserved_utc": "2026-09-08T14:09:50.458089+00:00",
+      "status": "completed_mock",
+      "model": "gpt-5.6-terra",
+      "local_mock_only": true,
+      "external_proposal_invocations": 0
+    },
+    {
+      "invocation": 5,
+      "run_id": "A101",
+      "slot": 5,
+      "reserved_utc": "2026-09-08T14:09:50.695959+00:00",
+      "status": "completed_mock",
+      "model": "gpt-5.6-terra",
+      "local_mock_only": true,
+      "external_proposal_invocations": 0
+    },
+    {
+      "invocation": 6,
+      "run_id": "A101",
+      "slot": 6,
+      "reserved_utc": "2026-09-08T14:09:50.922135+00:00",
+      "status": "completed_mock",
+      "model": "gpt-5.6-terra",
+      "local_mock_only": true,
+      "external_proposal_invocations": 0
+    },
+    {
+      "invocation": 7,
+      "run_id": "A101",
+      "slot": 7,
+      "reserved_utc": "2026-09-08T14:09:51.154993+00:00",
+      "status": "completed_mock",
+      "model": "gpt-5.6-terra",
+      "local_mock_only": true,
+      "external_proposal_invocations": 0
+    },
+    {
+      "invocation": 8,
+      "run_id": "A101",
+      "slot": 8,
+      "reserved_utc": "2026-09-08T14:09:51.395299+00:00",
+      "status": "completed_mock",
+      "model": "gpt-5.6-terra",
+      "local_mock_only": true,
+      "external_proposal_invocations": 0
+    },
+    {
+      "invocation": 9,
+      "run_id": "A101",
+      "slot": 9,
+      "reserved_utc": "2026-09-08T14:09:51.661611+00:00",
+      "status": "completed_mock",
+      "model": "gpt-5.6-terra",
+      "local_mock_only": true,
+      "external_proposal_invocations": 0
+    },
+    {
+      "invocation": 10,
+      "run_id": "A101",
+      "slot": 10,
+      "reserved_utc": "2026-09-08T14:09:51.884317+00:00",
+      "status": "completed_mock",
+      "model": "gpt-5.6-terra",
+      "local_mock_only": true,
+      "external_proposal_invocations": 0
+    },
+    {
+      "invocation": 11,
+      "run_id": "B101",
+      "slot": 1,
+      "reserved_utc": "2026-09-08T14:10:07.464117+00:00",
+      "status": "completed_mock",
+      "model": "gpt-5.6-terra",
+      "local_mock_only": true,
+      "external_proposal_invocations": 0
+    },
+    {
+      "invocation": 12,
+      "run_id": "B101",
+      "slot": 2,
+      "reserved_utc": "2026-09-08T14:10:07.700950+00:00",
+      "status": "completed_mock",
+      "model": "gpt-5.6-terra",
+      "local_mock_only": true,
+      "external_proposal_invocations": 0
+    },
+    {
+      "invocation": 13,
+      "run_id": "B101",
+      "slot": 3,
+      "reserved_utc": "2026-09-08T14:10:07.929787+00:00",
+      "status": "completed_mock",
+      "model": "gpt-5.6-terra",
+      "local_mock_only": true,
+      "external_proposal_invocations": 0
+    },
+    {
+      "invocation": 14,
+      "run_id": "B101",
+      "slot": 4,
+      "reserved_utc": "2026-09-08T14:10:08.163567+00:00",
+      "status": "completed_mock",
+      "model": "gpt-5.6-terra",
+      "local_mock_only": true,
+      "external_proposal_invocations": 0
+    },
+    {
+      "invocation": 15,
+      "run_id": "B101",
+      "slot": 5,
+      "reserved_utc": "2026-09-08T14:10:08.395800+00:00",
+      "status": "completed_mock",
+      "model": "gpt-5.6-terra",
+      "local_mock_only": true,
+      "external_proposal_invocations": 0
+    },
+    {
+      "invocation": 16,
+      "run_id": "B101",
+      "slot": 6,
+      "reserved_utc": "2026-09-08T14:10:08.621410+00:00",
+      "status": "completed_mock",
+      "model": "gpt-5.6-terra",
+      "local_mock_only": true,
+      "external_proposal_invocations": 0
+    },
+    {
+      "invocation": 17,
+      "run_id": "B101",
+      "slot": 7,
+      "reserved_utc": "2026-09-08T14:10:08.859186+00:00",
+      "status": "completed_mock",
+      "model": "gpt-5.6-terra",
+      "local_mock_only": true,
+      "external_proposal_invocations": 0
+    },
+    {
+      "invocation": 18,
+      "run_id": "B101",
+      "slot": 8,
+      "reserved_utc": "2026-09-08T14:10:09.093608+00:00",
+      "status": "completed_mock",
+      "model": "gpt-5.6-terra",
+      "local_mock_only": true,
+      "external_proposal_invocations": 0
+    },
+    {
+      "invocation": 19,
+      "run_id": "B101",
+      "slot": 9,
+      "reserved_utc": "2026-09-08T14:10:09.323988+00:00",
+      "status": "completed_mock",
+      "model": "gpt-5.6-terra",
+      "local_mock_only": true,
+      "external_proposal_invocations": 0
+    },
+    {
+      "invocation": 20,
+      "run_id": "B101",
+      "slot": 10,
+      "reserved_utc": "2026-09-08T14:10:09.558696+00:00",
+      "status": "completed_mock",
+      "model": "gpt-5.6-terra",
+      "local_mock_only": true,
+      "external_proposal_invocations": 0
+    },
+    {
+      "invocation": 21,
+      "run_id": "B202",
+      "slot": 1,
+      "reserved_utc": "2026-09-08T14:10:24.802363+00:00",
+      "status": "completed_mock",
+      "model": "gpt-5.6-terra",
+      "local_mock_only": true,
+      "external_proposal_invocations": 0
+    },
+    {
+      "invocation": 22,
+      "run_id": "B202",
+      "slot": 2,
+      "reserved_utc": "2026-09-08T14:10:25.018467+00:00",
+      "status": "completed_mock",
+      "model": "gpt-5.6-terra",
+      "local_mock_only": true,
+      "external_proposal_invocations": 0
+    },
+    {
+      "invocation": 23,
+      "run_id": "B202",
+      "slot": 3,
+      "reserved_utc": "2026-09-08T14:10:25.265445+00:00",
+      "status": "completed_mock",
+      "model": "gpt-5.6-terra",
+      "local_mock_only": true,
+      "external_proposal_invocations": 0
+    },
+    {
+      "invocation": 24,
+      "run_id": "B202",
+      "slot": 4,
+      "reserved_utc": "2026-09-08T14:10:25.496801+00:00",
+      "status": "completed_mock",
+      "model": "gpt-5.6-terra",
+      "local_mock_only": true,
+      "external_proposal_invocations": 0
+    },
+    {
+      "invocation": 25,
+      "run_id": "B202",
+      "slot": 5,
+      "reserved_utc": "2026-09-08T14:10:25.726237+00:00",
+      "status": "completed_mock",
+      "model": "gpt-5.6-terra",
+      "local_mock_only": true,
+      "external_proposal_invocations": 0
+    },
+    {
+      "invocation": 26,
+      "run_id": "B202",
+      "slot": 6,
+      "reserved_utc": "2026-09-08T14:10:25.955699+00:00",
+      "status": "completed_mock",
+      "model": "gpt-5.6-terra",
+      "local_mock_only": true,
+      "external_proposal_invocations": 0
+    },
+    {
+      "invocation": 27,
+      "run_id": "B202",
+      "slot": 7,
+      "reserved_utc": "2026-09-08T14:10:26.196683+00:00",
+      "status": "completed_mock",
+      "model": "gpt-5.6-terra",
+      "local_mock_only": true,
+      "external_proposal_invocations": 0
+    },
+    {
+      "invocation": 28,
+      "run_id": "B202",
+      "slot": 8,
+      "reserved_utc": "2026-09-08T14:10:26.424445+00:00",
+      "status": "completed_mock",
+      "model": "gpt-5.6-terra",
+      "local_mock_only": true,
+      "external_proposal_invocations": 0
+    },
+    {
+      "invocation": 29,
+      "run_id": "B202",
+      "slot": 9,
+      "reserved_utc": "2026-09-08T14:10:27.434107+00:00",
+      "status": "completed_mock",
+      "model": "gpt-5.6-terra",
+      "local_mock_only": true,
+      "external_proposal_invocations": 0
+    },
+    {
+      "invocation": 30,
+      "run_id": "B202",
+      "slot": 10,
+      "reserved_utc": "2026-09-08T14:10:28.218634+00:00",
+      "status": "completed_mock",
+      "model": "gpt-5.6-terra",
+      "local_mock_only": true,
+      "external_proposal_invocations": 0
+    },
+    {
+      "invocation": 31,
+      "run_id": "A202",
+      "slot": 1,
+      "reserved_utc": "2026-09-08T14:10:46.889841+00:00",
+      "status": "completed_mock",
+      "model": "gpt-5.6-terra",
+      "local_mock_only": true,
+      "external_proposal_invocations": 0
+    },
+    {
+      "invocation": 32,
+      "run_id": "A202",
+      "slot": 2,
+      "reserved_utc": "2026-09-08T14:10:47.128977+00:00",
+      "status": "completed_mock",
+      "model": "gpt-5.6-terra",
+      "local_mock_only": true,
+      "external_proposal_invocations": 0
+    },
+    {
+      "invocation": 33,
+      "run_id": "A202",
+      "slot": 3,
+      "reserved_utc": "2026-09-08T14:10:47.398713+00:00",
+      "status": "completed_mock",
+      "model": "gpt-5.6-terra",
+      "local_mock_only": true,
+      "external_proposal_invocations": 0
+    },
+    {
+      "invocation": 34,
+      "run_id": "A202",
+      "slot": 4,
+      "reserved_utc": "2026-09-08T14:10:47.627038+00:00",
+      "status": "completed_mock",
+      "model": "gpt-5.6-terra",
+      "local_mock_only": true,
+      "external_proposal_invocations": 0
+    },
+    {
+      "invocation": 35,
+      "run_id": "A202",
+      "slot": 5,
+      "reserved_utc": "2026-09-08T14:10:47.858851+00:00",
+      "status": "completed_mock",
+      "model": "gpt-5.6-terra",
+      "local_mock_only": true,
+      "external_proposal_invocations": 0
+    },
+    {
+      "invocation": 36,
+      "run_id": "A202",
+      "slot": 6,
+      "reserved_utc": "2026-09-08T14:10:48.088286+00:00",
+      "status": "completed_mock",
+      "model": "gpt-5.6-terra",
+      "local_mock_only": true,
+      "external_proposal_invocations": 0
+    },
+    {
+      "invocation": 37,
+      "run_id": "A202",
+      "slot": 7,
+      "reserved_utc": "2026-09-08T14:10:48.327368+00:00",
+      "status": "completed_mock",
+      "model": "gpt-5.6-terra",
+      "local_mock_only": true,
+      "external_proposal_invocations": 0
+    },
+    {
+      "invocation": 38,
+      "run_id": "A202",
+      "slot": 8,
+      "reserved_utc": "2026-09-08T14:10:48.553350+00:00",
+      "status": "completed_mock",
+      "model": "gpt-5.6-terra",
+      "local_mock_only": true,
+      "external_proposal_invocations": 0
+    },
+    {
+      "invocation": 39,
+      "run_id": "A202",
+      "slot": 9,
+      "reserved_utc": "2026-09-08T14:10:48.786898+00:00",
+      "status": "completed_mock",
+      "model": "gpt-5.6-terra",
+      "local_mock_only": true,
+      "external_proposal_invocations": 0
+    },
+    {
+      "invocation": 40,
+      "run_id": "A202",
+      "slot": 10,
+      "reserved_utc": "2026-09-08T14:10:49.023384+00:00",
+      "status": "completed_mock",
+      "model": "gpt-5.6-terra",
+      "local_mock_only": true,
+      "external_proposal_invocations": 0
+    },
+    {
+      "invocation": 41,
+      "run_id": "A303",
+      "slot": 1,
+      "reserved_utc": "2026-09-08T14:11:06.379140+00:00",
+      "status": "completed_mock",
+      "model": "gpt-5.6-terra",
+      "local_mock_only": true,
+      "external_proposal_invocations": 0
+    },
+    {
+      "invocation": 42,
+      "run_id": "A303",
+      "slot": 2,
+      "reserved_utc": "2026-09-08T14:11:06.605977+00:00",
+      "status": "completed_mock",
+      "model": "gpt-5.6-terra",
+      "local_mock_only": true,
+      "external_proposal_invocations": 0
+    },
+    {
+      "invocation": 43,
+      "run_id": "A303",
+      "slot": 3,
+      "reserved_utc": "2026-09-08T14:11:06.850447+00:00",
+      "status": "completed_mock",
+      "model": "gpt-5.6-terra",
+      "local_mock_only": true,
+      "external_proposal_invocations": 0
+    },
+    {
+      "invocation": 44,
+      "run_id": "A303",
+      "slot": 4,
+      "reserved_utc": "2026-09-08T14:11:07.077900+00:00",
+      "status": "completed_mock",
+      "model": "gpt-5.6-terra",
+      "local_mock_only": true,
+      "external_proposal_invocations": 0
+    },
+    {
+      "invocation": 45,
+      "run_id": "A303",
+      "slot": 5,
+      "reserved_utc": "2026-09-08T14:11:07.315572+00:00",
+      "status": "completed_mock",
+      "model": "gpt-5.6-terra",
+      "local_mock_only": true,
+      "external_proposal_invocations": 0
+    },
+    {
+      "invocation": 46,
+      "run_id": "A303",
+      "slot": 6,
+      "reserved_utc": "2026-09-08T14:11:07.583282+00:00",
+      "status": "completed_mock",
+      "model": "gpt-5.6-terra",
+      "local_mock_only": true,
+      "external_proposal_invocations": 0
+    },
+    {
+      "invocation": 47,
+      "run_id": "A303",
+      "slot": 7,
+      "reserved_utc": "2026-09-08T14:11:07.803980+00:00",
+      "status": "completed_mock",
+      "model": "gpt-5.6-terra",
+      "local_mock_only": true,
+      "external_proposal_invocations": 0
+    },
+    {
+      "invocation": 48,
+      "run_id": "A303",
+      "slot": 8,
+      "reserved_utc": "2026-09-08T14:11:08.044519+00:00",
+      "status": "completed_mock",
+      "model": "gpt-5.6-terra",
+      "local_mock_only": true,
+      "external_proposal_invocations": 0
+    },
+    {
+      "invocation": 49,
+      "run_id": "A303",
+      "slot": 9,
+      "reserved_utc": "2026-09-08T14:11:08.288185+00:00",
+      "status": "completed_mock",
+      "model": "gpt-5.6-terra",
+      "local_mock_only": true,
+      "external_proposal_invocations": 0
+    },
+    {
+      "invocation": 50,
+      "run_id": "A303",
+      "slot": 10,
+      "reserved_utc": "2026-09-08T14:11:08.515474+00:00",
+      "status": "completed_mock",
+      "model": "gpt-5.6-terra",
+      "local_mock_only": true,
+      "external_proposal_invocations": 0
+    },
+    {
+      "invocation": 51,
+      "run_id": "B303",
+      "slot": 1,
+      "reserved_utc": "2026-09-08T14:11:27.256977+00:00",
+      "status": "completed_mock",
+      "model": "gpt-5.6-terra",
+      "local_mock_only": true,
+      "external_proposal_invocations": 0
+    },
+    {
+      "invocation": 52,
+      "run_id": "B303",
+      "slot": 2,
+      "reserved_utc": "2026-09-08T14:11:28.311580+00:00",
+      "status": "completed_mock",
+      "model": "gpt-5.6-terra",
+      "local_mock_only": true,
+      "external_proposal_invocations": 0
+    },
+    {
+      "invocation": 53,
+      "run_id": "B303",
+      "slot": 3,
+      "reserved_utc": "2026-09-08T14:11:28.547939+00:00",
+      "status": "completed_mock",
+      "model": "gpt-5.6-terra",
+      "local_mock_only": true,
+      "external_proposal_invocations": 0
+    },
+    {
+      "invocation": 54,
+      "run_id": "B303",
+      "slot": 4,
+      "reserved_utc": "2026-09-08T14:11:28.770723+00:00",
+      "status": "completed_mock",
+      "model": "gpt-5.6-terra",
+      "local_mock_only": true,
+      "external_proposal_invocations": 0
+    },
+    {
+      "invocation": 55,
+      "run_id": "B303",
+      "slot": 5,
+      "reserved_utc": "2026-09-08T14:11:28.999997+00:00",
+      "status": "completed_mock",
+      "model": "gpt-5.6-terra",
+      "local_mock_only": true,
+      "external_proposal_invocations": 0
+    },
+    {
+      "invocation": 56,
+      "run_id": "B303",
+      "slot": 6,
+      "reserved_utc": "2026-09-08T14:11:29.257708+00:00",
+      "status": "completed_mock",
+      "model": "gpt-5.6-terra",
+      "local_mock_only": true,
+      "external_proposal_invocations": 0
+    },
+    {
+      "invocation": 57,
+      "run_id": "B303",
+      "slot": 7,
+      "reserved_utc": "2026-09-08T14:11:29.512727+00:00",
+      "status": "completed_mock",
+      "model": "gpt-5.6-terra",
+      "local_mock_only": true,
+      "external_proposal_invocations": 0
+    },
+    {
+      "invocation": 58,
+      "run_id": "B303",
+      "slot": 8,
+      "reserved_utc": "2026-09-08T14:11:29.751458+00:00",
+      "status": "completed_mock",
+      "model": "gpt-5.6-terra",
+      "local_mock_only": true,
+      "external_proposal_invocations": 0
+    },
+    {
+      "invocation": 59,
+      "run_id": "B303",
+      "slot": 9,
+      "reserved_utc": "2026-09-08T14:11:29.990593+00:00",
+      "status": "completed_mock",
+      "model": "gpt-5.6-terra",
+      "local_mock_only": true,
+      "external_proposal_invocations": 0
+    },
+    {
+      "invocation": 60,
+      "run_id": "B303",
+      "slot": 10,
+      "reserved_utc": "2026-09-08T14:11:30.231094+00:00",
+      "status": "completed_mock",
+      "model": "gpt-5.6-terra",
+      "local_mock_only": true,
+      "external_proposal_invocations": 0
+    }
+  ],
+  "limit": 60,
+  "per_run_limit": 10,
+  "order": [
+    "A101",
+    "B101",
+    "B202",
+    "A202",
+    "A303",
+    "B303"
+  ],
+  "stopped": false,
+  "closed": true,
+  "execution_started": true,
+  "local_mock_only": true,
+  "protocol_commit": "LOCAL_MOCK_COMMIT",
+  "execution_started_utc": "2026-09-08T14:09:35.775344+00:00",
+  "run_results": {
+    "A101": {
+      "returncode": 0,
+      "finished_utc": "2026-09-08T14:09:53.544186+00:00"
+    },
+    "B101": {
+      "returncode": 0,
+      "finished_utc": "2026-09-08T14:10:11.105484+00:00"
+    },
+    "B202": {
+      "returncode": 0,
+      "finished_utc": "2026-09-08T14:10:29.880192+00:00"
+    },
+    "A202": {
+      "returncode": 0,
+      "finished_utc": "2026-09-08T14:10:50.387115+00:00"
+    },
+    "A303": {
+      "returncode": 0,
+      "finished_utc": "2026-09-08T14:11:10.019703+00:00"
+    },
+    "B303": {
+      "returncode": 0,
+      "finished_utc": "2026-09-08T14:11:31.694677+00:00"
+    }
+  },
+  "completed_utc": "2026-09-08T14:11:31.722033+00:00"
+}

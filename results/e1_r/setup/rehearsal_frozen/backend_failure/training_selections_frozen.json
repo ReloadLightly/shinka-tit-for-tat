@@ -1,0 +1,65 @@
+{
+  "frozen_utc": "2026-09-08T14:12:02.901620+00:00",
+  "complete_design": false,
+  "selection_rule": "Highest admissible recorded training payoff including seed; earliest exact tie",
+  "terminal_handling": "Incomplete/unstarted runs have provisional/seed placeholder selections and no primary outcome; no reselection",
+  "statuses": {
+    "A101": "incomplete",
+    "B101": "not_started",
+    "B202": "not_started",
+    "A202": "not_started",
+    "A303": "not_started",
+    "B303": "not_started"
+  },
+  "selections": {
+    "A101": {
+      "slot": 0,
+      "source": "results/e1_r/setup/rehearsal_frozen/backend_failure/runs/A101/gen_0/main.py",
+      "sha256": "f83fb4c8ffc3313079ff6fa09bef89da8b6ed67d8f604a414c3493d97ba9a32b",
+      "correct": true,
+      "error": null,
+      "training": 2.3310772701635645
+    },
+    "B101": {
+      "slot": 0,
+      "source": "initial.py",
+      "sha256": "f83fb4c8ffc3313079ff6fa09bef89da8b6ed67d8f604a414c3493d97ba9a32b",
+      "correct": true,
+      "error": null,
+      "training": 2.3310772701635645
+    },
+    "B202": {
+      "slot": 0,
+      "source": "initial.py",
+      "sha256": "f83fb4c8ffc3313079ff6fa09bef89da8b6ed67d8f604a414c3493d97ba9a32b",
+      "correct": true,
+      "error": null,
+      "training": 2.3310772701635645
+    },
+    "A202": {
+      "slot": 0,
+      "source": "initial.py",
+      "sha256": "f83fb4c8ffc3313079ff6fa09bef89da8b6ed67d8f604a414c3493d97ba9a32b",
+      "correct": true,
+      "error": null,
+      "training": 2.3310772701635645
+    },
+    "A303": {
+      "slot": 0,
+      "source": "initial.py",
+      "sha256": "f83fb4c8ffc3313079ff6fa09bef89da8b6ed67d8f604a414c3493d97ba9a32b",
+      "correct": true,
+      "error": null,
+      "training": 2.3310772701635645
+    },
+    "B303": {
+      "slot": 0,
+      "source": "initial.py",
+      "sha256": "f83fb4c8ffc3313079ff6fa09bef89da8b6ed67d8f604a414c3493d97ba9a32b",
+      "correct": true,
+      "error": null,
+      "training": 2.3310772701635645
+    }
+  },
+  "ledger_sha256": "c52c93186ac1a0438de7e078921357856f1ccecf39968320de9553fd72082aa7"
+}

@@ -1,0 +1,7 @@
+{
+  "external_proposal_invocations": 0,
+  "legacy_failure_reproduced": true,
+  "returncode": 124,
+  "observation": "Original E1 native runner remained stuck after durable stop until automatic 25-second fixture timeout; no manual signal",
+  "live_e1r": false
+}

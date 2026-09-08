@@ -1,0 +1,182 @@
+LOCAL MOCK ONLY; no external calls
+
+[E1-R] condition=A replicate=101 slot=1/10 stage=proposal valid=None training=None current_best=2.3310772701635645 invocations=0/60
+[E1-R] condition=A replicate=101 slot=1/10 stage=evaluated valid=True training=2.2436548223350252 current_best=2.3310772701635645 invocations=1/60
+[E1-R] condition=A replicate=101 slot=2/10 stage=proposal valid=None training=None current_best=2.3310772701635645 invocations=1/60
+[E1-R] condition=A replicate=101 slot=2/10 stage=evaluated valid=False training=-1.0 current_best=2.3310772701635645 invocations=2/60
+[E1-R] condition=A replicate=101 slot=3/10 stage=proposal valid=None training=None current_best=2.3310772701635645 invocations=2/60
+[E1-R] condition=A replicate=101 slot=3/10 stage=evaluated valid=True training=2.2436548223350252 current_best=2.3310772701635645 invocations=3/60
+[E1-R] condition=A replicate=101 slot=4/10 stage=proposal valid=None training=None current_best=2.3310772701635645 invocations=3/60
+[E1-R] condition=A replicate=101 slot=4/10 stage=evaluated valid=True training=2.2436548223350252 current_best=2.3310772701635645 invocations=4/60
+[E1-R] condition=A replicate=101 slot=5/10 stage=proposal valid=None training=None current_best=2.3310772701635645 invocations=4/60
+[E1-R] condition=A replicate=101 slot=5/10 stage=evaluated valid=True training=2.2436548223350252 current_best=2.3310772701635645 invocations=5/60
+[E1-R] condition=A replicate=101 slot=6/10 stage=proposal valid=None training=None current_best=2.3310772701635645 invocations=5/60
+[E1-R] condition=A replicate=101 slot=6/10 stage=evaluated valid=True training=2.2436548223350252 current_best=2.3310772701635645 invocations=6/60
+[E1-R] condition=A replicate=101 slot=7/10 stage=proposal valid=None training=None current_best=2.3310772701635645 invocations=6/60
+[E1-R] condition=A replicate=101 slot=7/10 stage=evaluated valid=True training=2.2436548223350252 current_best=2.3310772701635645 invocations=7/60
+[E1-R] condition=A replicate=101 slot=8/10 stage=proposal valid=None training=None current_best=2.3310772701635645 invocations=7/60
+[E1-R] condition=A replicate=101 slot=8/10 stage=evaluated valid=True training=2.2436548223350252 current_best=2.3310772701635645 invocations=8/60
+[E1-R] condition=A replicate=101 slot=9/10 stage=proposal valid=None training=None current_best=2.3310772701635645 invocations=8/60
+[E1-R] condition=A replicate=101 slot=9/10 stage=evaluated valid=True training=2.2436548223350252 current_best=2.3310772701635645 invocations=9/60
+[E1-R] condition=A replicate=101 slot=10/10 stage=proposal valid=None training=None current_best=2.3310772701635645 invocations=9/60
+[E1-R] condition=A replicate=101 slot=10/10 stage=evaluated valid=True training=2.2436548223350252 current_best=2.3310772701635645 invocations=10/60
+[E1-R] condition=B replicate=101 slot=1/10 stage=proposal valid=None training=None current_best=2.3310772701635645 invocations=10/60
+[E1-R] condition=B replicate=101 slot=1/10 stage=evaluated valid=True training=2.2436548223350252 current_best=2.3310772701635645 invocations=11/60
+[E1-R] condition=B replicate=101 slot=2/10 stage=proposal valid=None training=None current_best=2.3310772701635645 invocations=11/60
+[E1-R] condition=B replicate=101 slot=2/10 stage=evaluated valid=False training=-1.0 current_best=2.3310772701635645 invocations=12/60
+[E1-R] condition=B replicate=101 slot=3/10 stage=proposal valid=None training=None current_best=2.3310772701635645 invocations=12/60
+[E1-R] condition=B replicate=101 slot=3/10 stage=evaluated valid=True training=2.2436548223350252 current_best=2.3310772701635645 invocations=13/60
+[E1-R] condition=B replicate=101 slot=4/10 stage=proposal valid=None training=None current_best=2.3310772701635645 invocations=13/60
+[E1-R] condition=B replicate=101 slot=4/10 stage=evaluated valid=True training=2.2436548223350252 current_best=2.3310772701635645 invocations=14/60
+[E1-R] condition=B replicate=101 slot=5/10 stage=proposal valid=None training=None current_best=2.3310772701635645 invocations=14/60
+[E1-R] condition=B replicate=101 slot=5/10 stage=evaluated valid=True training=2.2436548223350252 current_best=2.3310772701635645 invocations=15/60
+[E1-R] condition=B replicate=101 slot=6/10 stage=proposal valid=None training=None current_best=2.3310772701635645 invocations=15/60
+[E1-R] condition=B replicate=101 slot=6/10 stage=evaluated valid=True training=2.2436548223350252 current_best=2.3310772701635645 invocations=16/60
+[E1-R] condition=B replicate=101 slot=7/10 stage=proposal valid=None training=None current_best=2.3310772701635645 invocations=16/60
+[E1-R] condition=B replicate=101 slot=7/10 stage=evaluated valid=True training=2.2436548223350252 current_best=2.3310772701635645 invocations=17/60
+[E1-R] condition=B replicate=101 slot=8/10 stage=proposal valid=None training=None current_best=2.3310772701635645 invocations=17/60
+[E1-R] condition=B replicate=101 slot=8/10 stage=evaluated valid=True training=2.2436548223350252 current_best=2.3310772701635645 invocations=18/60
+[E1-R] condition=B replicate=101 slot=9/10 stage=proposal valid=None training=None current_best=2.3310772701635645 invocations=18/60
+[E1-R] condition=B replicate=101 slot=9/10 stage=evaluated valid=True training=2.2436548223350252 current_best=2.3310772701635645 invocations=19/60
+[E1-R] condition=B replicate=101 slot=10/10 stage=proposal valid=None training=None current_best=2.3310772701635645 invocations=19/60
+[E1-R] condition=B replicate=101 slot=10/10 stage=evaluated valid=True training=2.2436548223350252 current_best=2.3310772701635645 invocations=20/60
+[E1-R] condition=B replicate=202 slot=1/10 stage=proposal valid=None training=None current_best=2.3310772701635645 invocations=20/60
+[E1-R] condition=B replicate=202 slot=1/10 stage=evaluated valid=True training=2.2436548223350252 current_best=2.3310772701635645 invocations=21/60
+[E1-R] condition=B replicate=202 slot=2/10 stage=proposal valid=None training=None current_best=2.3310772701635645 invocations=21/60
+[E1-R] condition=B replicate=202 slot=2/10 stage=evaluated valid=False training=-1.0 current_best=2.3310772701635645 invocations=22/60
+[E1-R] condition=B replicate=202 slot=3/10 stage=proposal valid=None training=None current_best=2.3310772701635645 invocations=22/60
+[E1-R] condition=B replicate=202 slot=3/10 stage=evaluated valid=True training=2.2436548223350252 current_best=2.3310772701635645 invocations=23/60
+[E1-R] condition=B replicate=202 slot=4/10 stage=proposal valid=None training=None current_best=2.3310772701635645 invocations=23/60
+[E1-R] condition=B replicate=202 slot=4/10 stage=evaluated valid=True training=2.2436548223350252 current_best=2.3310772701635645 invocations=24/60
+[E1-R] condition=B replicate=202 slot=5/10 stage=proposal valid=None training=None current_best=2.3310772701635645 invocations=24/60
+[E1-R] condition=B replicate=202 slot=5/10 stage=evaluated valid=True training=2.2436548223350252 current_best=2.3310772701635645 invocations=25/60
+[E1-R] condition=B replicate=202 slot=6/10 stage=proposal valid=None training=None current_best=2.3310772701635645 invocations=25/60
+[E1-R] condition=B replicate=202 slot=6/10 stage=evaluated valid=True training=2.2436548223350252 current_best=2.3310772701635645 invocations=26/60
+[E1-R] condition=B replicate=202 slot=7/10 stage=proposal valid=None training=None current_best=2.3310772701635645 invocations=26/60
+[E1-R] condition=B replicate=202 slot=7/10 stage=evaluated valid=True training=2.2436548223350252 current_best=2.3310772701635645 invocations=27/60
+[E1-R] condition=B replicate=202 slot=8/10 stage=proposal valid=None training=None current_best=2.3310772701635645 invocations=27/60
+[E1-R] condition=B replicate=202 slot=8/10 stage=evaluated valid=True training=2.2436548223350252 current_best=2.3310772701635645 invocations=28/60
+[E1-R] condition=B replicate=202 slot=9/10 stage=proposal valid=None training=None current_best=2.3310772701635645 invocations=28/60
+[E1-R] condition=B replicate=202 slot=9/10 stage=evaluated valid=True training=2.2436548223350252 current_best=2.3310772701635645 invocations=29/60
+[E1-R] condition=B replicate=202 slot=10/10 stage=proposal valid=None training=None current_best=2.3310772701635645 invocations=29/60
+[E1-R] condition=B replicate=202 slot=10/10 stage=evaluated valid=True training=2.2436548223350252 current_best=2.3310772701635645 invocations=30/60
+[E1-R] condition=A replicate=202 slot=1/10 stage=proposal valid=None training=None current_best=2.3310772701635645 invocations=30/60
+[E1-R] condition=A replicate=202 slot=1/10 stage=evaluated valid=True training=2.2436548223350252 current_best=2.3310772701635645 invocations=31/60
+[E1-R] condition=A replicate=202 slot=2/10 stage=proposal valid=None training=None current_best=2.3310772701635645 invocations=31/60
+[E1-R] condition=A replicate=202 slot=2/10 stage=evaluated valid=False training=-1.0 current_best=2.3310772701635645 invocations=32/60
+[E1-R] condition=A replicate=202 slot=3/10 stage=proposal valid=None training=None current_best=2.3310772701635645 invocations=32/60
+[E1-R] condition=A replicate=202 slot=3/10 stage=evaluated valid=True training=2.2436548223350252 current_best=2.3310772701635645 invocations=33/60
+[E1-R] condition=A replicate=202 slot=4/10 stage=proposal valid=None training=None current_best=2.3310772701635645 invocations=33/60
+[E1-R] condition=A replicate=202 slot=4/10 stage=evaluated valid=True training=2.2436548223350252 current_best=2.3310772701635645 invocations=34/60
+[E1-R] condition=A replicate=202 slot=5/10 stage=proposal valid=None training=None current_best=2.3310772701635645 invocations=34/60
+[E1-R] condition=A replicate=202 slot=5/10 stage=evaluated valid=True training=2.2436548223350252 current_best=2.3310772701635645 invocations=35/60
+[E1-R] condition=A replicate=202 slot=6/10 stage=proposal valid=None training=None current_best=2.3310772701635645 invocations=35/60
+[E1-R] condition=A replicate=202 slot=6/10 stage=evaluated valid=True training=2.2436548223350252 current_best=2.3310772701635645 invocations=36/60
+[E1-R] condition=A replicate=202 slot=7/10 stage=proposal valid=None training=None current_best=2.3310772701635645 invocations=36/60
+[E1-R] condition=A replicate=202 slot=7/10 stage=evaluated valid=True training=2.2436548223350252 current_best=2.3310772701635645 invocations=37/60
+[E1-R] condition=A replicate=202 slot=8/10 stage=proposal valid=None training=None current_best=2.3310772701635645 invocations=37/60
+[E1-R] condition=A replicate=202 slot=8/10 stage=evaluated valid=True training=2.2436548223350252 current_best=2.3310772701635645 invocations=38/60
+[E1-R] condition=A replicate=202 slot=9/10 stage=proposal valid=None training=None current_best=2.3310772701635645 invocations=38/60
+[E1-R] condition=A replicate=202 slot=9/10 stage=evaluated valid=True training=2.2436548223350252 current_best=2.3310772701635645 invocations=39/60
+[E1-R] condition=A replicate=202 slot=10/10 stage=proposal valid=None training=None current_best=2.3310772701635645 invocations=39/60
+[E1-R] condition=A replicate=202 slot=10/10 stage=evaluated valid=True training=2.2436548223350252 current_best=2.3310772701635645 invocations=40/60
+[E1-R] condition=A replicate=303 slot=1/10 stage=proposal valid=None training=None current_best=2.3310772701635645 invocations=40/60
+[E1-R] condition=A replicate=303 slot=1/10 stage=evaluated valid=True training=2.2436548223350252 current_best=2.3310772701635645 invocations=41/60
+[E1-R] condition=A replicate=303 slot=2/10 stage=proposal valid=None training=None current_best=2.3310772701635645 invocations=41/60
+[E1-R] condition=A replicate=303 slot=2/10 stage=evaluated valid=False training=-1.0 current_best=2.3310772701635645 invocations=42/60
+[E1-R] condition=A replicate=303 slot=3/10 stage=proposal valid=None training=None current_best=2.3310772701635645 invocations=42/60
+[E1-R] condition=A replicate=303 slot=3/10 stage=evaluated valid=True training=2.2436548223350252 current_best=2.3310772701635645 invocations=43/60
+[E1-R] condition=A replicate=303 slot=4/10 stage=proposal valid=None training=None current_best=2.3310772701635645 invocations=43/60
+[E1-R] condition=A replicate=303 slot=4/10 stage=evaluated valid=True training=2.2436548223350252 current_best=2.3310772701635645 invocations=44/60
+[E1-R] condition=A replicate=303 slot=5/10 stage=proposal valid=None training=None current_best=2.3310772701635645 invocations=44/60
+[E1-R] condition=A replicate=303 slot=5/10 stage=evaluated valid=True training=2.2436548223350252 current_best=2.3310772701635645 invocations=45/60
+[E1-R] condition=A replicate=303 slot=6/10 stage=proposal valid=None training=None current_best=2.3310772701635645 invocations=45/60
+[E1-R] condition=A replicate=303 slot=6/10 stage=evaluated valid=True training=2.2436548223350252 current_best=2.3310772701635645 invocations=46/60
+[E1-R] condition=A replicate=303 slot=7/10 stage=proposal valid=None training=None current_best=2.3310772701635645 invocations=46/60
+[E1-R] condition=A replicate=303 slot=7/10 stage=evaluated valid=True training=2.2436548223350252 current_best=2.3310772701635645 invocations=47/60
+[E1-R] condition=A replicate=303 slot=8/10 stage=proposal valid=None training=None current_best=2.3310772701635645 invocations=47/60
+[E1-R] condition=A replicate=303 slot=8/10 stage=evaluated valid=True training=2.2436548223350252 current_best=2.3310772701635645 invocations=48/60
+[E1-R] condition=A replicate=303 slot=9/10 stage=proposal valid=None training=None current_best=2.3310772701635645 invocations=48/60
+[E1-R] condition=A replicate=303 slot=9/10 stage=evaluated valid=True training=2.2436548223350252 current_best=2.3310772701635645 invocations=49/60
+[E1-R] condition=A replicate=303 slot=10/10 stage=proposal valid=None training=None current_best=2.3310772701635645 invocations=49/60
+[E1-R] condition=A replicate=303 slot=10/10 stage=evaluated valid=True training=2.2436548223350252 current_best=2.3310772701635645 invocations=50/60
+[E1-R] condition=B replicate=303 slot=1/10 stage=proposal valid=None training=None current_best=2.3310772701635645 invocations=50/60
+[E1-R] condition=B replicate=303 slot=1/10 stage=evaluated valid=True training=2.2436548223350252 current_best=2.3310772701635645 invocations=51/60
+[E1-R] condition=B replicate=303 slot=2/10 stage=proposal valid=None training=None current_best=2.3310772701635645 invocations=51/60
+[E1-R] condition=B replicate=303 slot=2/10 stage=evaluated valid=False training=-1.0 current_best=2.3310772701635645 invocations=52/60
+[E1-R] condition=B replicate=303 slot=3/10 stage=proposal valid=None training=None current_best=2.3310772701635645 invocations=52/60
+[E1-R] condition=B replicate=303 slot=3/10 stage=evaluated valid=True training=2.2436548223350252 current_best=2.3310772701635645 invocations=53/60
+[E1-R] condition=B replicate=303 slot=4/10 stage=proposal valid=None training=None current_best=2.3310772701635645 invocations=53/60
+[E1-R] condition=B replicate=303 slot=4/10 stage=evaluated valid=True training=2.2436548223350252 current_best=2.3310772701635645 invocations=54/60
+[E1-R] condition=B replicate=303 slot=5/10 stage=proposal valid=None training=None current_best=2.3310772701635645 invocations=54/60
+[E1-R] condition=B replicate=303 slot=5/10 stage=evaluated valid=True training=2.2436548223350252 current_best=2.3310772701635645 invocations=55/60
+[E1-R] condition=B replicate=303 slot=6/10 stage=proposal valid=None training=None current_best=2.3310772701635645 invocations=55/60
+[E1-R] condition=B replicate=303 slot=6/10 stage=evaluated valid=True training=2.2436548223350252 current_best=2.3310772701635645 invocations=56/60
+[E1-R] condition=B replicate=303 slot=7/10 stage=proposal valid=None training=None current_best=2.3310772701635645 invocations=56/60
+[E1-R] condition=B replicate=303 slot=7/10 stage=evaluated valid=True training=2.2436548223350252 current_best=2.3310772701635645 invocations=57/60
+[E1-R] condition=B replicate=303 slot=8/10 stage=proposal valid=None training=None current_best=2.3310772701635645 invocations=57/60
+[E1-R] condition=B replicate=303 slot=8/10 stage=evaluated valid=True training=2.2436548223350252 current_best=2.3310772701635645 invocations=58/60
+[E1-R] condition=B replicate=303 slot=9/10 stage=proposal valid=None training=None current_best=2.3310772701635645 invocations=58/60
+[E1-R] condition=B replicate=303 slot=9/10 stage=evaluated valid=True training=2.2436548223350252 current_best=2.3310772701635645 invocations=59/60
+[E1-R] condition=B replicate=303 slot=10/10 stage=proposal valid=None training=None current_best=2.3310772701635645 invocations=59/60
+[E1-R] condition=B replicate=303 slot=10/10 stage=evaluated valid=True training=2.2436548223350252 current_best=2.3310772701635645 invocations=60/60
+All six training selections frozen. Offline holdout/recognition may now begin.
+LOCAL MOCK ONLY; no external calls
+
+[E1-R] condition=A replicate=101 slot=1/10 stage=proposal valid=None training=None current_best=2.3310772701635645 invocations=0/60
+[E1-R] condition=A replicate=101 slot=1/10 stage=evaluated valid=True training=2.2436548223350252 current_best=2.3310772701635645 invocations=1/60
+[E1-R] condition=A replicate=101 slot=2/10 stage=proposal valid=None training=None current_best=2.3310772701635645 invocations=1/60
+[E1-R] condition=A replicate=101 slot=2/10 stage=evaluated valid=False training=-1.0 current_best=2.3310772701635645 invocations=2/60
+[E1-R] condition=A replicate=101 slot=3/10 stage=proposal valid=None training=None current_best=2.3310772701635645 invocations=2/60
+LOCAL MOCK ONLY; no external calls
+
+[E1-R] condition=A replicate=101 slot=1/10 stage=proposal valid=None training=None current_best=2.3310772701635645 invocations=0/60
+[E1-R] condition=A replicate=101 slot=1/10 stage=evaluated valid=True training=2.2436548223350252 current_best=2.3310772701635645 invocations=1/60
+[E1-R] condition=A replicate=101 slot=2/10 stage=proposal valid=None training=None current_best=2.3310772701635645 invocations=1/60
+[E1-R] condition=A replicate=101 slot=2/10 stage=evaluated valid=False training=-1.0 current_best=2.3310772701635645 invocations=2/60
+[E1-R] condition=A replicate=101 slot=3/10 stage=proposal valid=None training=None current_best=2.3310772701635645 invocations=2/60
+LOCAL MOCK ONLY; no external calls
+
+[E1-R] condition=A replicate=101 slot=1/10 stage=proposal valid=None training=None current_best=2.3310772701635645 invocations=0/60
+[E1-R] condition=A replicate=101 slot=1/10 stage=evaluated valid=True training=2.2436548223350252 current_best=2.3310772701635645 invocations=1/60
+[E1-R] condition=A replicate=101 slot=2/10 stage=proposal valid=None training=None current_best=2.3310772701635645 invocations=1/60
+[E1-R] condition=A replicate=101 slot=2/10 stage=evaluated valid=False training=-1.0 current_best=2.3310772701635645 invocations=2/60
+[E1-R] condition=A replicate=101 slot=3/10 stage=proposal valid=None training=None current_best=2.3310772701635645 invocations=2/60
+[
+  {
+    "mode": "full",
+    "passed": true,
+    "mock_proposal_slots": 60,
+    "external_proposal_invocations": 0,
+    "returncode": 0,
+    "runtime_seconds": 153.737358140992,
+    "manual_interruption": false
+  },
+  {
+    "mode": "metadata_failure",
+    "passed": true,
+    "mock_proposal_slots": 2,
+    "external_proposal_invocations": 0,
+    "returncode": 2,
+    "runtime_seconds": 20.910837848030496,
+    "manual_interruption": false
+  },
+  {
+    "mode": "backend_failure",
+    "passed": true,
+    "mock_proposal_slots": 3,
+    "external_proposal_invocations": 0,
+    "returncode": 2,
+    "runtime_seconds": 19.227020613034256,
+    "manual_interruption": false
+  },
+  {
+    "mode": "quota_stop",
+    "passed": true,
+    "mock_proposal_slots": 2,
+    "external_proposal_invocations": 0,
+    "returncode": 2,
+    "runtime_seconds": 24.046351492987014,
+    "manual_interruption": false
+  }
+]

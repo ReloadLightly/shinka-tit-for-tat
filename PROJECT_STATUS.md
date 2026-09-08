@@ -1,5 +1,11 @@
 # Project status — 2026-09-08
 
+## E1-R protocol frozen; execution next
+
+The new [E1-R protocol](results/e1_r/protocol/PROTOCOL.md) repeats the same six-run comparison under a separate 60-invocation allowance. Metadata buffering, evaluation-only timing and terminal finalization have been repaired using versioned per-run adapters; installed Shinka and the fixed evaluator remain unchanged. The initial prompt is byte-identical to E1's. Model gpt-5.6-terra / low and ChatGPT Pro access were verified; six forced localhost checks re-established retrieval restrictions.
+
+The final suite passed 52 tests. The complete [release rehearsal](results/e1_r/setup/rehearsal_release/summary.json) and all metadata/backend/quota stopped paths passed with zero external proposals and no manual interruption. The old native finalization hang was reproduced separately. E1-R has zero external proposals at protocol freeze; the authorized next action is its one serial execution. [Implementation](results/e1_r/setup/IMPLEMENTATION.md) and [commands](results/e1_r/setup/COMMANDS.md) retain local failure history. Prior E1 and pilot ledgers remain closed and unchanged.
+
 ## E1 stopped; the planned experiment remains incomplete
 
 The principal deliverable is [E1_REPORT.md](results/e1/E1_REPORT.md): a self-contained account of the design, every run, selected sources, branches, scored traces, opponent breakdowns, failures, usage, commands and next step.

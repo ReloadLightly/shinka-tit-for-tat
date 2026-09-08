@@ -1,0 +1,458 @@
+2026-09-08 16:03:50 - shinka.core.async_runner - INFO - Pricing catalog:        
+source=cache fetched_at=2026-09-07T21:43:14.738628+00:00 stale=False            
+sha256=184c9310e490052f391d6eb30d5487281636da1cb49b313f9af024b53fd7899f         
+  @@@@@@@@@@@@@@@@@@@@@      ░██████╗██╗░░██╗██╗███╗░░██╗██╗░░██╗░█████╗░
+  @                   @      ██╔════╝██║░░██║██║████╗░██║██║░██╔╝██╔══██╗
+  @          @        @      ╚█████╗░███████║██║██╔██╗██║█████═╝░███████║
+  @    @@   @@  @@    @      ░╚═══██╗██╔══██║██║██║╚████║██╔═██╗░██╔══██║
+  @   @     @    @@   @      ██████╔╝██║░░██║██║██║░╚███║██║░╚██╗██║░░██║
+  @    @@  @    @     @      ╚═════╝░╚═╝░░╚═╝╚═╝╚═╝░░╚══╝╚═╝░░╚═╝╚═╝░░╚═╝
+  @        @          @      @@@@@@@@@@@@@@@
+  @                   @   @@                 @@@@@
+  @@@@@@@@@@@@@@@@@@@@ @@                       @  @@                 █▀▀
+                      @                          @@  @                ██▄
+                    @      @@                      @  @@
+                   @       @         @              @   @             █░█
+                   @                 @               @  @             ▀▄▀
+                     @@@@@          @     @           @  @
+                      @            @          @       @ @@            █▀█
+                   @@    @@     @@       @@   @        @              █▄█
+                  @@        @@         @     @         @
+                 @@       @@   @@       @@@@@          @        @@    █░░
+              @ @@                @                    @              █▄▄
+             @ @@@@@             @@ @@                 @      @@
+            @                  @       @@              @    @@        █░█
+       @@@@@@@@@@@@@@@@@@@@@@             @@@          @@@@@@@  @@    ▀▄▀
+       @     @         @                      @@         @@@  @@
+        @@               @                      @      @   @  @@      █▀▀
+          @@@@@@@@@@@@@@@@@@                   @    @   @   @@        ██▄
+                                               @  @  @   @
+                                               @  @  @@@@
+                                               @  @@
+
+2026-09-08 16:03:50 - shinka.core.async_runner - INFO - 🖥️  System resources    
+detected:                                                                       
+2026-09-08 16:03:50 - shinka.core.async_runner - INFO -    • CPU cores: 8       
+2026-09-08 16:03:50 - shinka.core.async_runner - INFO -    • Memory: 3.7 GB     
+2026-09-08 16:03:50 - shinka.core.async_runner - INFO - 🔧 Concurrency settings:
+2026-09-08 16:03:50 - shinka.core.async_runner - INFO -    • Evaluation jobs: 1 
+2026-09-08 16:03:50 - shinka.core.async_runner - INFO -    • Proposal jobs: 1   
+2026-09-08 16:03:50 - shinka.core.async_runner - INFO -    • DB workers: 1      
+2026-09-08 16:03:50 - shinka.core.async_runner - INFO -    • Total threads: 3   
+2026-09-08 16:03:50 - shinka.core.async_runner - INFO - Configured local numeric
+thread cap per eval process: 8                                                  
+2026-09-08 16:03:50 - shinka.core.async_runner - INFO -                         
+================================================================================
+2026-09-08 16:03:50 - shinka.core.async_runner - INFO - ASYNC EVOLUTION RUN     
+STARTED                                                                         
+2026-09-08 16:03:50 - shinka.core.async_runner - INFO -                         
+================================================================================
+2026-09-08 16:03:50 - shinka.core.async_runner - INFO - Max evaluation jobs: 1  
+2026-09-08 16:03:50 - shinka.core.async_runner - INFO - Max proposal jobs: 1    
+2026-09-08 16:03:50 - shinka.core.async_runner - INFO - Target generations: 11  
+2026-09-08 16:03:50 - shinka.core.async_runner - INFO - Language: python        
+2026-09-08 16:03:50 - shinka.core.async_runner - INFO - Results directory:      
+results/e1_r/setup/rehearsal_verified/full/runs/A101                            
+2026-09-08 16:03:50 - shinka.core.async_runner - INFO - Log file:               
+results/e1_r/setup/rehearsal_verified/full/runs/A101/evolution_run.log          
+2026-09-08 16:03:50 - shinka.core.async_runner - INFO -                         
+================================================================================
+2026-09-08 16:03:51 - shinka.database.async_dbase - INFO - 🔧 AsyncDB           
+initialized with 1 workers, 1 concurrent DB ops (WAL mode)                      
+2026-09-08 16:03:51 - shinka.core.async_runner - INFO - Copying initial program 
+from /home/roland/actir/shinka-tit-for-tat/initial.py                           
+2026-09-08 16:03:51 - shinka.core.async_runner - INFO - Starting initial program
+evaluation: results/e1_r/setup/rehearsal_verified/full/runs/A101/gen_0/main.py  
+2026-09-08 16:03:51 - shinka.launch.local - INFO - Submitted local process with 
+PID: 1311631                                                                    
+2026-09-08 16:03:51 - shinka.launch.local - INFO - Launched local command:      
+/home/roland/actir/shinka-tit-for-tat/.venv/bin/python                          
+/home/roland/actir/shinka-tit-for-tat/evaluate.py --program_path                
+results/e1_r/setup/rehearsal_verified/full/runs/A101/gen_0/main.py --results_dir
+results/e1_r/setup/rehearsal_verified/full/runs/A101/gen_0/results              
+2026-09-08 16:03:51 - shinka.core.async_runner - INFO - Initial program         
+evaluation completed in 0.50s                                                   
+2026-09-08 16:03:51 - shinka.core.async_runner - INFO - Initial program         
+evaluated - correct: True, combined_score: 2.3310772701635645                   
+2026-09-08 16:03:51 - shinka.database.dbase - WARNING - Program                 
+f3d9b015-ff33-42f9-b25b-676f122669a9 embedding is not a list, defaulting to     
+empty list.                                                                     
+2026-09-08 16:03:51 - shinka.database.dbase - INFO - Program                    
+f3d9b015-ff33-42f9-b25b-676f122669a9 added to DB - score: 2.3310772701635645.   
+2026-09-08 16:03:51 - shinka.database.dbase - INFO - New best program:          
+f3d9b015-ff33-42f9-b25b-676f122669a9 (gen: 0, score: 2.3311, initialized island:
+0).                                                                             
+                                 Program Evaluation Summary - Gen 0 | Total Cost
+╭─────────────┬─────────┬───────────────┬─────────┬─────────────────────────────
+│  GenID: 0   │ Island  │    Status     │   Score │ Patch Name                  
+├─────────────┼─────────┼───────────────┼─────────┼─────────────────────────────
+│ Best: 2.331 │   I-0   │   ✓ Correct   │   2.331 │ initial_program             
+╰─────────────┴─────────┴───────────────┴─────────┴─────────────────────────────
+2026-09-08 16:03:51 - shinka.database.dbase - INFO - Creating copies of initial 
+program f3d9b015-ff33-42f9-b25b-676f122669a9 for all islands                    
+2026-09-08 16:03:51 - shinka.core.async_runner - INFO - Setup initial program:  
+f3d9b015-ff33-42f9-b25b-676f122669a9                                            
+2026-09-08 16:03:51 - shinka.core.async_runner - INFO - Generation 0 completed  
+during setup                                                                    
+2026-09-08 16:03:51 - shinka.core.async_runner - INFO - Verifying database is   
+ready for sampling...                                                           
+2026-09-08 16:03:51 - shinka.core.async_runner - INFO - Database ready - 1      
+program(s) available for sampling                                               
+2026-09-08 16:03:51 - shinka.core.async_runner - INFO - Database verification   
+completed - ready for proposal generation                                       
+2026-09-08 16:03:51 - shinka.core.async_runner - INFO - 🔄 Job monitor task     
+started                                                                         
+2026-09-08 16:03:51 - shinka.core.async_runner - INFO - Proposal target=1       
+(sampling_ewma=0.00s, evaluation_ewma=0.00s, timing_samples=0,                  
+active_proposals=0, running_jobs=0)                                             
+2026-09-08 16:03:51 - shinka.core.async_runner - INFO - Starting 1 new          
+proposals. Pipeline: 0/1 (running_jobs=0, active_proposals=0/1), Remaining      
+completed work: 10 (completed=1/11, next_generation=1)                          
+2026-09-08 16:03:51 - shinka.core.async_runner - INFO - Started proposal task   
+for generation 1 (cost: $0.0000)                                                
+2026-09-08 16:03:51 - shinka.core.async_runner - INFO - Generating proposal for 
+generation 1                                                                    
+2026-09-08 16:03:51 - shinka.database.parents - INFO - Island 0 =>              
+Probabilities: [1.0]                                                            
+2026-09-08 16:03:51 - shinka.database.parents - INFO - Island 0 => Scores:      
+[2.3310772701635645]                                                            
+2026-09-08 16:03:51 - shinka.database.parents - INFO - Sampled parent           
+f3d9b015-ff33-42f9-b25b-676f122669a9 (Gen: 0, Score: 2.3311, Children: 0,       
+Island: 0)                                                                      
+              Parent & Context Sampling Summary - Gen 1 | Total Cost: $0.00 (Nov
+┏━━━━━━━━━━━━━┳━━━━━━┳━━━━━━━━━┳━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+┃ Role        ┃ Gen  ┃ Island  ┃  ✓/✗  ┃    Score ┃ Patch Name                  
+┡━━━━━━━━━━━━━╇━━━━━━╇━━━━━━━━━╇━━━━━━━╇━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+│ PARENT      │  0   │   I-0   │   ✓   │    2.331 │ initial_program             
+└─────────────┴──────┴─────────┴───────┴──────────┴─────────────────────────────
+2026-09-08 16:03:51 - shinka.core.async_runner - WARNING - Error in patch       
+generation attempt 1:                                                           
+'results/e1_r/setup/rehearsal_verified/full/runs/A101/gen_0/main.py' is not in  
+the subpath of '/home/roland/actir/shinka-tit-for-tat'                          
+2026-09-08 16:03:51 - shinka.core.async_runner - WARNING - Failed to generate   
+proposal for generation 1 after all attempts                                    
+2026-09-08 16:03:56 - shinka.core.async_runner - INFO - Starting 1 new          
+proposals. Pipeline: 0/1 (running_jobs=0, active_proposals=0/1), Remaining      
+completed work: 10 (completed=1/11, next_generation=2)                          
+2026-09-08 16:03:56 - shinka.core.async_runner - INFO - Started proposal task   
+for generation 2 (cost: $0.0000)                                                
+2026-09-08 16:03:56 - shinka.core.async_runner - INFO - Generating proposal for 
+generation 2                                                                    
+2026-09-08 16:03:56 - shinka.database.parents - INFO - Island 0 =>              
+Probabilities: [1.0]                                                            
+2026-09-08 16:03:56 - shinka.database.parents - INFO - Island 0 => Scores:      
+[2.3310772701635645]                                                            
+2026-09-08 16:03:56 - shinka.database.parents - INFO - Sampled parent           
+f3d9b015-ff33-42f9-b25b-676f122669a9 (Gen: 0, Score: 2.3311, Children: 0,       
+Island: 0)                                                                      
+              Parent & Context Sampling Summary - Gen 2 | Total Cost: $0.00 (Nov
+┏━━━━━━━━━━━━━┳━━━━━━┳━━━━━━━━━┳━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+┃ Role        ┃ Gen  ┃ Island  ┃  ✓/✗  ┃    Score ┃ Patch Name                  
+┡━━━━━━━━━━━━━╇━━━━━━╇━━━━━━━━━╇━━━━━━━╇━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+│ PARENT      │  0   │   I-0   │   ✓   │    2.331 │ initial_program             
+└─────────────┴──────┴─────────┴───────┴──────────┴─────────────────────────────
+2026-09-08 16:03:56 - shinka.core.async_runner - WARNING - Error in patch       
+generation attempt 1:                                                           
+'results/e1_r/setup/rehearsal_verified/full/runs/A101/gen_0/main.py' is not in  
+the subpath of '/home/roland/actir/shinka-tit-for-tat'                          
+2026-09-08 16:03:56 - shinka.core.async_runner - WARNING - Failed to generate   
+proposal for generation 2 after all attempts                                    
+2026-09-08 16:04:01 - shinka.core.async_runner - INFO - Starting 1 new          
+proposals. Pipeline: 0/1 (running_jobs=0, active_proposals=0/1), Remaining      
+completed work: 10 (completed=1/11, next_generation=3)                          
+2026-09-08 16:04:01 - shinka.core.async_runner - INFO - Started proposal task   
+for generation 3 (cost: $0.0000)                                                
+2026-09-08 16:04:01 - shinka.core.async_runner - INFO - Generating proposal for 
+generation 3                                                                    
+2026-09-08 16:04:01 - shinka.database.parents - INFO - Island 0 =>              
+Probabilities: [1.0]                                                            
+2026-09-08 16:04:01 - shinka.database.parents - INFO - Island 0 => Scores:      
+[2.3310772701635645]                                                            
+2026-09-08 16:04:01 - shinka.database.parents - INFO - Sampled parent           
+f3d9b015-ff33-42f9-b25b-676f122669a9 (Gen: 0, Score: 2.3311, Children: 0,       
+Island: 0)                                                                      
+              Parent & Context Sampling Summary - Gen 3 | Total Cost: $0.00 (Nov
+┏━━━━━━━━━━━━━┳━━━━━━┳━━━━━━━━━┳━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+┃ Role        ┃ Gen  ┃ Island  ┃  ✓/✗  ┃    Score ┃ Patch Name                  
+┡━━━━━━━━━━━━━╇━━━━━━╇━━━━━━━━━╇━━━━━━━╇━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+│ PARENT      │  0   │   I-0   │   ✓   │    2.331 │ initial_program             
+└─────────────┴──────┴─────────┴───────┴──────────┴─────────────────────────────
+2026-09-08 16:04:01 - shinka.core.async_runner - WARNING - Error in patch       
+generation attempt 1:                                                           
+'results/e1_r/setup/rehearsal_verified/full/runs/A101/gen_0/main.py' is not in  
+the subpath of '/home/roland/actir/shinka-tit-for-tat'                          
+2026-09-08 16:04:01 - shinka.core.async_runner - WARNING - Failed to generate   
+proposal for generation 3 after all attempts                                    
+2026-09-08 16:04:06 - shinka.core.async_runner - INFO - Starting 1 new          
+proposals. Pipeline: 0/1 (running_jobs=0, active_proposals=0/1), Remaining      
+completed work: 10 (completed=1/11, next_generation=4)                          
+2026-09-08 16:04:06 - shinka.core.async_runner - INFO - Started proposal task   
+for generation 4 (cost: $0.0000)                                                
+2026-09-08 16:04:06 - shinka.core.async_runner - INFO - Generating proposal for 
+generation 4                                                                    
+2026-09-08 16:04:06 - shinka.database.parents - INFO - Island 0 =>              
+Probabilities: [1.0]                                                            
+2026-09-08 16:04:06 - shinka.database.parents - INFO - Island 0 => Scores:      
+[2.3310772701635645]                                                            
+2026-09-08 16:04:06 - shinka.database.parents - INFO - Sampled parent           
+f3d9b015-ff33-42f9-b25b-676f122669a9 (Gen: 0, Score: 2.3311, Children: 0,       
+Island: 0)                                                                      
+              Parent & Context Sampling Summary - Gen 4 | Total Cost: $0.00 (Nov
+┏━━━━━━━━━━━━━┳━━━━━━┳━━━━━━━━━┳━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+┃ Role        ┃ Gen  ┃ Island  ┃  ✓/✗  ┃    Score ┃ Patch Name                  
+┡━━━━━━━━━━━━━╇━━━━━━╇━━━━━━━━━╇━━━━━━━╇━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+│ PARENT      │  0   │   I-0   │   ✓   │    2.331 │ initial_program             
+└─────────────┴──────┴─────────┴───────┴──────────┴─────────────────────────────
+2026-09-08 16:04:06 - shinka.core.async_runner - WARNING - Error in patch       
+generation attempt 1:                                                           
+'results/e1_r/setup/rehearsal_verified/full/runs/A101/gen_0/main.py' is not in  
+the subpath of '/home/roland/actir/shinka-tit-for-tat'                          
+2026-09-08 16:04:06 - shinka.core.async_runner - WARNING - Failed to generate   
+proposal for generation 4 after all attempts                                    
+2026-09-08 16:04:11 - shinka.core.async_runner - INFO - Starting 1 new          
+proposals. Pipeline: 0/1 (running_jobs=0, active_proposals=0/1), Remaining      
+completed work: 10 (completed=1/11, next_generation=5)                          
+2026-09-08 16:04:11 - shinka.core.async_runner - INFO - Started proposal task   
+for generation 5 (cost: $0.0000)                                                
+2026-09-08 16:04:11 - shinka.core.async_runner - INFO - Generating proposal for 
+generation 5                                                                    
+2026-09-08 16:04:11 - shinka.database.parents - INFO - Island 0 =>              
+Probabilities: [1.0]                                                            
+2026-09-08 16:04:11 - shinka.database.parents - INFO - Island 0 => Scores:      
+[2.3310772701635645]                                                            
+2026-09-08 16:04:11 - shinka.database.parents - INFO - Sampled parent           
+f3d9b015-ff33-42f9-b25b-676f122669a9 (Gen: 0, Score: 2.3311, Children: 0,       
+Island: 0)                                                                      
+              Parent & Context Sampling Summary - Gen 5 | Total Cost: $0.00 (Nov
+┏━━━━━━━━━━━━━┳━━━━━━┳━━━━━━━━━┳━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+┃ Role        ┃ Gen  ┃ Island  ┃  ✓/✗  ┃    Score ┃ Patch Name                  
+┡━━━━━━━━━━━━━╇━━━━━━╇━━━━━━━━━╇━━━━━━━╇━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+│ PARENT      │  0   │   I-0   │   ✓   │    2.331 │ initial_program             
+└─────────────┴──────┴─────────┴───────┴──────────┴─────────────────────────────
+2026-09-08 16:04:11 - shinka.core.async_runner - WARNING - Error in patch       
+generation attempt 1:                                                           
+'results/e1_r/setup/rehearsal_verified/full/runs/A101/gen_0/main.py' is not in  
+the subpath of '/home/roland/actir/shinka-tit-for-tat'                          
+2026-09-08 16:04:11 - shinka.core.async_runner - WARNING - Failed to generate   
+proposal for generation 5 after all attempts                                    
+2026-09-08 16:04:16 - shinka.core.async_runner - INFO - Starting 1 new          
+proposals. Pipeline: 0/1 (running_jobs=0, active_proposals=0/1), Remaining      
+completed work: 10 (completed=1/11, next_generation=6)                          
+2026-09-08 16:04:16 - shinka.core.async_runner - INFO - Started proposal task   
+for generation 6 (cost: $0.0000)                                                
+2026-09-08 16:04:16 - shinka.core.async_runner - INFO - Generating proposal for 
+generation 6                                                                    
+2026-09-08 16:04:16 - shinka.database.parents - INFO - Island 0 =>              
+Probabilities: [1.0]                                                            
+2026-09-08 16:04:16 - shinka.database.parents - INFO - Island 0 => Scores:      
+[2.3310772701635645]                                                            
+2026-09-08 16:04:16 - shinka.database.parents - INFO - Sampled parent           
+f3d9b015-ff33-42f9-b25b-676f122669a9 (Gen: 0, Score: 2.3311, Children: 0,       
+Island: 0)                                                                      
+              Parent & Context Sampling Summary - Gen 6 | Total Cost: $0.00 (Nov
+┏━━━━━━━━━━━━━┳━━━━━━┳━━━━━━━━━┳━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+┃ Role        ┃ Gen  ┃ Island  ┃  ✓/✗  ┃    Score ┃ Patch Name                  
+┡━━━━━━━━━━━━━╇━━━━━━╇━━━━━━━━━╇━━━━━━━╇━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+│ PARENT      │  0   │   I-0   │   ✓   │    2.331 │ initial_program             
+└─────────────┴──────┴─────────┴───────┴──────────┴─────────────────────────────
+2026-09-08 16:04:16 - shinka.core.async_runner - WARNING - Error in patch       
+generation attempt 1:                                                           
+'results/e1_r/setup/rehearsal_verified/full/runs/A101/gen_0/main.py' is not in  
+the subpath of '/home/roland/actir/shinka-tit-for-tat'                          
+2026-09-08 16:04:16 - shinka.core.async_runner - WARNING - Failed to generate   
+proposal for generation 6 after all attempts                                    
+2026-09-08 16:04:21 - shinka.core.async_runner - INFO - Starting 1 new          
+proposals. Pipeline: 0/1 (running_jobs=0, active_proposals=0/1), Remaining      
+completed work: 10 (completed=1/11, next_generation=7)                          
+2026-09-08 16:04:21 - shinka.core.async_runner - INFO - Started proposal task   
+for generation 7 (cost: $0.0000)                                                
+2026-09-08 16:04:21 - shinka.core.async_runner - INFO - Generating proposal for 
+generation 7                                                                    
+2026-09-08 16:04:21 - shinka.database.parents - INFO - Island 0 =>              
+Probabilities: [1.0]                                                            
+2026-09-08 16:04:21 - shinka.database.parents - INFO - Island 0 => Scores:      
+[2.3310772701635645]                                                            
+2026-09-08 16:04:21 - shinka.database.parents - INFO - Sampled parent           
+f3d9b015-ff33-42f9-b25b-676f122669a9 (Gen: 0, Score: 2.3311, Children: 0,       
+Island: 0)                                                                      
+              Parent & Context Sampling Summary - Gen 7 | Total Cost: $0.00 (Nov
+┏━━━━━━━━━━━━━┳━━━━━━┳━━━━━━━━━┳━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+┃ Role        ┃ Gen  ┃ Island  ┃  ✓/✗  ┃    Score ┃ Patch Name                  
+┡━━━━━━━━━━━━━╇━━━━━━╇━━━━━━━━━╇━━━━━━━╇━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+│ PARENT      │  0   │   I-0   │   ✓   │    2.331 │ initial_program             
+└─────────────┴──────┴─────────┴───────┴──────────┴─────────────────────────────
+2026-09-08 16:04:21 - shinka.core.async_runner - WARNING - Error in patch       
+generation attempt 1:                                                           
+'results/e1_r/setup/rehearsal_verified/full/runs/A101/gen_0/main.py' is not in  
+the subpath of '/home/roland/actir/shinka-tit-for-tat'                          
+2026-09-08 16:04:21 - shinka.core.async_runner - WARNING - Failed to generate   
+proposal for generation 7 after all attempts                                    
+2026-09-08 16:04:26 - shinka.core.async_runner - INFO - Starting 1 new          
+proposals. Pipeline: 0/1 (running_jobs=0, active_proposals=0/1), Remaining      
+completed work: 10 (completed=1/11, next_generation=8)                          
+2026-09-08 16:04:26 - shinka.core.async_runner - INFO - Started proposal task   
+for generation 8 (cost: $0.0000)                                                
+2026-09-08 16:04:26 - shinka.core.async_runner - INFO - Generating proposal for 
+generation 8                                                                    
+2026-09-08 16:04:26 - shinka.database.parents - INFO - Island 0 =>              
+Probabilities: [1.0]                                                            
+2026-09-08 16:04:26 - shinka.database.parents - INFO - Island 0 => Scores:      
+[2.3310772701635645]                                                            
+2026-09-08 16:04:26 - shinka.database.parents - INFO - Sampled parent           
+f3d9b015-ff33-42f9-b25b-676f122669a9 (Gen: 0, Score: 2.3311, Children: 0,       
+Island: 0)                                                                      
+              Parent & Context Sampling Summary - Gen 8 | Total Cost: $0.00 (Nov
+┏━━━━━━━━━━━━━┳━━━━━━┳━━━━━━━━━┳━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+┃ Role        ┃ Gen  ┃ Island  ┃  ✓/✗  ┃    Score ┃ Patch Name                  
+┡━━━━━━━━━━━━━╇━━━━━━╇━━━━━━━━━╇━━━━━━━╇━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+│ PARENT      │  0   │   I-0   │   ✓   │    2.331 │ initial_program             
+└─────────────┴──────┴─────────┴───────┴──────────┴─────────────────────────────
+2026-09-08 16:04:27 - shinka.core.async_runner - WARNING - Error in patch       
+generation attempt 1:                                                           
+'results/e1_r/setup/rehearsal_verified/full/runs/A101/gen_0/main.py' is not in  
+the subpath of '/home/roland/actir/shinka-tit-for-tat'                          
+2026-09-08 16:04:27 - shinka.core.async_runner - WARNING - Failed to generate   
+proposal for generation 8 after all attempts                                    
+2026-09-08 16:04:31 - shinka.core.async_runner - INFO - Starting 1 new          
+proposals. Pipeline: 0/1 (running_jobs=0, active_proposals=0/1), Remaining      
+completed work: 10 (completed=1/11, next_generation=9)                          
+2026-09-08 16:04:31 - shinka.core.async_runner - INFO - Started proposal task   
+for generation 9 (cost: $0.0000)                                                
+2026-09-08 16:04:31 - shinka.core.async_runner - INFO - Generating proposal for 
+generation 9                                                                    
+2026-09-08 16:04:31 - shinka.database.parents - INFO - Island 0 =>              
+Probabilities: [1.0]                                                            
+2026-09-08 16:04:31 - shinka.database.parents - INFO - Island 0 => Scores:      
+[2.3310772701635645]                                                            
+2026-09-08 16:04:31 - shinka.database.parents - INFO - Sampled parent           
+f3d9b015-ff33-42f9-b25b-676f122669a9 (Gen: 0, Score: 2.3311, Children: 0,       
+Island: 0)                                                                      
+              Parent & Context Sampling Summary - Gen 9 | Total Cost: $0.00 (Nov
+┏━━━━━━━━━━━━━┳━━━━━━┳━━━━━━━━━┳━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+┃ Role        ┃ Gen  ┃ Island  ┃  ✓/✗  ┃    Score ┃ Patch Name                  
+┡━━━━━━━━━━━━━╇━━━━━━╇━━━━━━━━━╇━━━━━━━╇━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+│ PARENT      │  0   │   I-0   │   ✓   │    2.331 │ initial_program             
+└─────────────┴──────┴─────────┴───────┴──────────┴─────────────────────────────
+2026-09-08 16:04:31 - shinka.core.async_runner - WARNING - Error in patch       
+generation attempt 1:                                                           
+'results/e1_r/setup/rehearsal_verified/full/runs/A101/gen_0/main.py' is not in  
+the subpath of '/home/roland/actir/shinka-tit-for-tat'                          
+2026-09-08 16:04:31 - shinka.core.async_runner - WARNING - Failed to generate   
+proposal for generation 9 after all attempts                                    
+2026-09-08 16:04:36 - shinka.core.async_runner - INFO - Starting 1 new          
+proposals. Pipeline: 0/1 (running_jobs=0, active_proposals=0/1), Remaining      
+completed work: 10 (completed=1/11, next_generation=10)                         
+2026-09-08 16:04:36 - shinka.core.async_runner - INFO - Started proposal task   
+for generation 10 (cost: $0.0000)                                               
+2026-09-08 16:04:36 - shinka.core.async_runner - INFO - Generating proposal for 
+generation 10                                                                   
+2026-09-08 16:04:36 - shinka.database.parents - INFO - Island 0 =>              
+Probabilities: [1.0]                                                            
+2026-09-08 16:04:36 - shinka.database.parents - INFO - Island 0 => Scores:      
+[2.3310772701635645]                                                            
+2026-09-08 16:04:36 - shinka.database.parents - INFO - Sampled parent           
+f3d9b015-ff33-42f9-b25b-676f122669a9 (Gen: 0, Score: 2.3311, Children: 0,       
+Island: 0)                                                                      
+              Parent & Context Sampling Summary - Gen 10 | Total Cost: $0.00 (No
+┏━━━━━━━━━━━━━┳━━━━━━┳━━━━━━━━━┳━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+┃ Role        ┃ Gen  ┃ Island  ┃  ✓/✗  ┃    Score ┃ Patch Name                  
+┡━━━━━━━━━━━━━╇━━━━━━╇━━━━━━━━━╇━━━━━━━╇━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+│ PARENT      │  0   │   I-0   │   ✓   │    2.331 │ initial_program             
+└─────────────┴──────┴─────────┴───────┴──────────┴─────────────────────────────
+2026-09-08 16:04:36 - shinka.core.async_runner - WARNING - Error in patch       
+generation attempt 1:                                                           
+'results/e1_r/setup/rehearsal_verified/full/runs/A101/gen_0/main.py' is not in  
+the subpath of '/home/roland/actir/shinka-tit-for-tat'                          
+2026-09-08 16:04:36 - shinka.core.async_runner - WARNING - Failed to generate   
+proposal for generation 10 after all attempts                                   
+2026-09-08 16:04:41 - shinka.core.async_runner - WARNING - Generation budget    
+exhausted before reaching target completed generations: completed=1, target=11, 
+next_generation=11, missing_generations=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].        
+Stopping without oversampling additional generations.                           
+2026-09-08 16:04:41 - shinka.core.async_runner - INFO - Job monitor task exited 
+2026-09-08 16:04:41 - shinka.core.async_runner - INFO - 🔄 Performing final     
+embedding recomputation and meta summary...                                     
+2026-09-08 16:04:42 - shinka.core.async_runner - INFO - 🏁 All final operations 
+completed, proceeding to cleanup...                                             
+2026-09-08 16:04:42 - shinka.database.async_dbase - INFO - 🔧 Closing async     
+database with monitoring...                                                     
+2026-09-08 16:04:42 - shinka.database.async_dbase - INFO - Async database closed
+2026-09-08 16:04:42 - shinka.core.async_runner - INFO -                         
+================================================================================
+2026-09-08 16:04:42 - shinka.core.async_runner - INFO - ASYNC EVOLUTION         
+COMPLETED                                                                       
+2026-09-08 16:04:42 - shinka.core.async_runner - INFO -                         
+================================================================================
+2026-09-08 16:04:42 - shinka.core.async_runner - INFO - Target generations: 11  
+2026-09-08 16:04:42 - shinka.core.async_runner - INFO - Stored programs: 1      
+2026-09-08 16:04:42 - shinka.core.async_runner - INFO - Generations without     
+program (proposal generation exhausted retries): 10                             
+2026-09-08 16:04:42 - shinka.core.async_runner - INFO - Generation IDs without  
+program after proposal retries: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]                 
+2026-09-08 16:04:42 - shinka.core.async_runner - INFO - Total proposals         
+generated: 10                                                                   
+2026-09-08 16:04:42 - shinka.core.async_runner - INFO - Total API cost: $0.0000 
+2026-09-08 16:04:42 - shinka.core.async_runner - INFO - Total runtime: 51.25    
+seconds                                                                         
+2026-09-08 16:04:42 - shinka.core.async_runner - INFO - Average time per        
+proposal: 5.12 seconds                                                          
+2026-09-08 16:04:42 - shinka.core.async_runner - INFO -                         
+----------------------------------------                                        
+2026-09-08 16:04:42 - shinka.core.async_runner - INFO - FINAL OPERATIONS STATUS:
+2026-09-08 16:04:42 - shinka.core.async_runner - INFO - PCA/Embedding           
+recomputation: SKIPPED (no embedding client)                                    
+2026-09-08 16:04:42 - shinka.core.async_runner - INFO - Meta summary generation:
+SKIPPED (no meta summarizer)                                                    
+2026-09-08 16:04:42 - shinka.core.async_runner - INFO -                         
+----------------------------------------                                        
+        Program Database Summary        
+╭──────────────────────┬───────────────╮
+│ Metric               │ Value         │
+├──────────────────────┼───────────────┤
+│ Overall Best Score   │ 2.33          │
+│ Total Programs       │ 1 / 11        │
+│ Correct Programs     │ 1 / 1 (100%)  │
+│ Archived Programs    │ 1 / 16 (6%)   │
+│ Island Populations   │ I0: 1         │
+│ Migration Policy     │ 10G, 0%(E)    │
+╰──────────────────────┴───────────────╯
+              Best Program              
+╭────────────────┬─────────────────────╮
+│ Attribute      │ Value               │
+├────────────────┼─────────────────────┤
+│ ID             │ f3d9b015...         │
+│ Generation     │ 0                   │
+│ Complexity     │ 0.08                │
+│ Embedding[0]   │ N/A                 │
+│ Metric: Score  │ 2.33                │
+│ Timestamp      │ 2026-09-08 16:03:51 │
+╰────────────────┴─────────────────────╯
+          Cost & Stats Summary          
+╭───────────────────────┬──────────────╮
+│ Metric                │ Value        │
+├───────────────────────┼──────────────┤
+│ Total Compute         │ 0h 0m 0s     │
+╰───────────────────────┴──────────────╯
+                                            Top 10 Best Performing Programs     
+╭──────┬──────┬────┬────────┬──────────┬────────────────────────────────┬───────
+│ Rank │ Gen  │ ✓… │  Score │ Complex… │ Patch Name                     │ Type  
+├──────┼──────┼────┼────────┼──────────┼────────────────────────────────┼───────
+│  #1  │  0   │ ✓  │  2.331 │      0.1 │ initial_program                │ init  
+│      │      │    │        │          │                                │       
+╰──────┴──────┴────┴────────┴──────────┴────────────────────────────────┴───────
+Traceback (most recent call last):
+  File "/home/roland/actir/shinka-tit-for-tat/rehearse_e1r.py", line 116, in <module>
+    if args.child:
+    
+  File "/home/roland/actir/shinka-tit-for-tat/rehearse_e1r.py", line 54, in child
+    return run.run_one(run_id)
+           ~~~~~~~~~~~^^^^^^^^
+  File "/home/roland/actir/shinka-tit-for-tat/run_e1r.py", line 251, in run_one
+    try:
+    
+  File "/home/roland/actir/shinka-tit-for-tat/run_e1r.py", line 158, in training_records
+    records.append({"slot": slot, "source": str((folder / "main.py").relative_to(ROOT)),
+                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/roland/.local/share/uv/python/cpython-3.13-linux-x86_64-gnu/lib/python3.13/pathlib/_local.py", line 385, in relative_to
+    raise ValueError(f"{str(self)!r} is not in the subpath of {str(other)!r}")
+ValueError: 'results/e1_r/setup/rehearsal_verified/full/runs/A101/gen_0/main.py' is not in the subpath of '/home/roland/actir/shinka-tit-for-tat'
