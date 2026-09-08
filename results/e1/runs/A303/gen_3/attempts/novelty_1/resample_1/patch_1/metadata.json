@@ -1,0 +1,15 @@
+{
+  "generation": 3,
+  "novelty_attempt": 1,
+  "resample_attempt": 1,
+  "patch_attempt": 1,
+  "success": true,
+  "num_applied": 1,
+  "patch_name": "win_stay_lose_shift",
+  "patch_description": "Uses win-stay, lose-shift behavior: cooperate after mutually cooperative rounds or successful defections, and switch after receiving a poor payoff. This preserves cooperation with reciprocal opponents while quickly adapting to persistent defection.",
+  "error_msg": null,
+  "timestamp": "2026-09-08T11:14:57.589638",
+  "llm_cost": 0.01912,
+  "llm_model": "headless/codex@gpt-5.6-terra?effort=low",
+  "headless_prompt_path": "/home/roland/actir/shinka-tit-for-tat/results/e1/runs/A303/gen_3/attempts/novelty_1/resample_1/patch_1/headless_prompt.md"
+}

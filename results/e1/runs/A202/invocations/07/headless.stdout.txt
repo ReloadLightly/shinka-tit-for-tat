@@ -1,0 +1,16 @@
+<NAME>
+periodic_exploiter
+</NAME>
+
+<DESCRIPTION>
+Extends the existing tit-for-tat policy with exploitation of mixed repeating cycles through length 8. It preserves cooperation with consistently cooperative opponents and retaliation against defectors, while defecting against predictable periodic patterns.
+</DESCRIPTION>
+
+<CODE>
+```python
+# EVOLVE-BLOCK-START
+def policy(own_history, opponent_history):
+    return 0 if len(opponent_history) == 0 else 1 if len(opponent_history) >= 4 and opponent_history[-4:-2] == opponent_history[-2:] and opponent_history[-1] != opponent_history[-2] else 1 if len(opponent_history) >= 6 and opponent_history[-6:-3] == opponent_history[-3:] and sum(opponent_history[-3:]) > 0 and sum(opponent_history[-3:]) < 3 else 1 if len(opponent_history) >= 8 and opponent_history[-8:-4] == opponent_history[-4:] and sum(opponent_history[-4:]) > 0 and sum(opponent_history[-4:]) < 4 else 1 if len(opponent_history) >= 10 and opponent_history[-10:-5] == opponent_history[-5:] and sum(opponent_history[-5:]) > 0 and sum(opponent_history[-5:]) < 5 else 1 if len(opponent_history) >= 12 and opponent_history[-12:-6] == opponent_history[-6:] and sum(opponent_history[-6:]) > 0 and sum(opponent_history[-6:]) < 6 else 1 if len(opponent_history) >= 14 and opponent_history[-14:-7] == opponent_history[-7:] and sum(opponent_history[-7:]) > 0 and sum(opponent_history[-7:]) < 7 else 1 if len(opponent_history) >= 16 and opponent_history[-16:-8] == opponent_history[-8:] and sum(opponent_history[-8:]) > 0 and sum(opponent_history[-8:]) < 8 else opponent_history[-1]
+# EVOLVE-BLOCK-END
+```
+{"usage":{"agent":"codex","provider":"openai","model":"gpt-5.6-terra","inputTokens":1290,"cacheReadTokens":4864,"cacheWriteTokens":0,"outputTokens":1266,"reasoningOutputTokens":813,"totalTokens":7420,"usageStatus":"reported","cost":{"input":0.00258,"cacheRead":0.0009728,"cacheWrite":0,"output":0.015192,"total":0.0187448},"costBasis":"api-list-price-estimate","pricingSource":"models.dev","pricingStatus":"priced"}}

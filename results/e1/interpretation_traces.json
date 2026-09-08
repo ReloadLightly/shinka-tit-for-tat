@@ -1,0 +1,3558 @@
+{
+  "selection_freeze_sha256": "b5e74484bd4bd805dceec479275726db024623541f29a7d662d1c66177a80797",
+  "additional_experiment_conditions": 0,
+  "scored_encounter_replays_only": true,
+  "A202": {
+    "alternator": {
+      "split": "holdout",
+      "opponent": "alternator",
+      "seed": 211,
+      "match_seed": 835393923854085145,
+      "match_turns": 241,
+      "scored_encounter": true,
+      "full_match": {
+        "total_payoff": 721,
+        "opponent_total_payoff": 131,
+        "turns": 241,
+        "cooperations": 3,
+        "mean_payoff": 2.991701244813278,
+        "opponent_mean_payoff": 0.5435684647302904
+      },
+      "rows": [
+        {
+          "round": 1,
+          "own_history": [],
+          "opponent_history": [],
+          "branch_tests_in_execution_order": [
+            {
+              "test": "len(opponent_history) == 0",
+              "result": true
+            }
+          ],
+          "action": 0,
+          "opponent_action": 0,
+          "payoff": 3,
+          "opponent_payoff": 3,
+          "cumulative_payoff": 3,
+          "opponent_cumulative_payoff": 3
+        },
+        {
+          "round": 2,
+          "own_history": [
+            0
+          ],
+          "opponent_history": [
+            0
+          ],
+          "branch_tests_in_execution_order": [
+            {
+              "test": "len(opponent_history) == 0",
+              "result": false
+            },
+            {
+              "test": "len(opponent_history) >= 4 and opponent_history[-4:-2] == opponent_history[-2:] and (opponent_history[-1] != opponent_history[-2])",
+              "result": false
+            },
+            {
+              "test": "len(opponent_history) >= 6 and opponent_history[-6:-3] == opponent_history[-3:] and (sum(opponent_history[-3:]) > 0) and (sum(opponent_history[-3:]) < 3)",
+              "result": false
+            },
+            {
+              "test": "len(opponent_history) >= 8 and opponent_history[-8:-4] == opponent_history[-4:] and (sum(opponent_history[-4:]) > 0) and (sum(opponent_history[-4:]) < 4)",
+              "result": false
+            },
+            {
+              "test": "len(opponent_history) >= 10 and opponent_history[-10:-5] == opponent_history[-5:] and (sum(opponent_history[-5:]) > 0) and (sum(opponent_history[-5:]) < 5)",
+              "result": false
+            },
+            {
+              "test": "len(opponent_history) >= 12 and opponent_history[-12:-6] == opponent_history[-6:] and (sum(opponent_history[-6:]) > 0) and (sum(opponent_history[-6:]) < 6)",
+              "result": false
+            }
+          ],
+          "action": 0,
+          "opponent_action": 1,
+          "payoff": 0,
+          "opponent_payoff": 5,
+          "cumulative_payoff": 3,
+          "opponent_cumulative_payoff": 8
+        },
+        {
+          "round": 3,
+          "own_history": [
+            0,
+            0
+          ],
+          "opponent_history": [
+            0,
+            1
+          ],
+          "branch_tests_in_execution_order": [
+            {
+              "test": "len(opponent_history) == 0",
+              "result": false
+            },
+            {
+              "test": "len(opponent_history) >= 4 and opponent_history[-4:-2] == opponent_history[-2:] and (opponent_history[-1] != opponent_history[-2])",
+              "result": false
+            },
+            {
+              "test": "len(opponent_history) >= 6 and opponent_history[-6:-3] == opponent_history[-3:] and (sum(opponent_history[-3:]) > 0) and (sum(opponent_history[-3:]) < 3)",
+              "result": false
+            },
+            {
+              "test": "len(opponent_history) >= 8 and opponent_history[-8:-4] == opponent_history[-4:] and (sum(opponent_history[-4:]) > 0) and (sum(opponent_history[-4:]) < 4)",
+              "result": false
+            },
+            {
+              "test": "len(opponent_history) >= 10 and opponent_history[-10:-5] == opponent_history[-5:] and (sum(opponent_history[-5:]) > 0) and (sum(opponent_history[-5:]) < 5)",
+              "result": false
+            },
+            {
+              "test": "len(opponent_history) >= 12 and opponent_history[-12:-6] == opponent_history[-6:] and (sum(opponent_history[-6:]) > 0) and (sum(opponent_history[-6:]) < 6)",
+              "result": false
+            }
+          ],
+          "action": 1,
+          "opponent_action": 0,
+          "payoff": 5,
+          "opponent_payoff": 0,
+          "cumulative_payoff": 8,
+          "opponent_cumulative_payoff": 8
+        },
+        {
+          "round": 4,
+          "own_history": [
+            0,
+            0,
+            1
+          ],
+          "opponent_history": [
+            0,
+            1,
+            0
+          ],
+          "branch_tests_in_execution_order": [
+            {
+              "test": "len(opponent_history) == 0",
+              "result": false
+            },
+            {
+              "test": "len(opponent_history) >= 4 and opponent_history[-4:-2] == opponent_history[-2:] and (opponent_history[-1] != opponent_history[-2])",
+              "result": false
+            },
+            {
+              "test": "len(opponent_history) >= 6 and opponent_history[-6:-3] == opponent_history[-3:] and (sum(opponent_history[-3:]) > 0) and (sum(opponent_history[-3:]) < 3)",
+              "result": false
+            },
+            {
+              "test": "len(opponent_history) >= 8 and opponent_history[-8:-4] == opponent_history[-4:] and (sum(opponent_history[-4:]) > 0) and (sum(opponent_history[-4:]) < 4)",
+              "result": false
+            },
+            {
+              "test": "len(opponent_history) >= 10 and opponent_history[-10:-5] == opponent_history[-5:] and (sum(opponent_history[-5:]) > 0) and (sum(opponent_history[-5:]) < 5)",
+              "result": false
+            },
+            {
+              "test": "len(opponent_history) >= 12 and opponent_history[-12:-6] == opponent_history[-6:] and (sum(opponent_history[-6:]) > 0) and (sum(opponent_history[-6:]) < 6)",
+              "result": false
+            }
+          ],
+          "action": 0,
+          "opponent_action": 1,
+          "payoff": 0,
+          "opponent_payoff": 5,
+          "cumulative_payoff": 8,
+          "opponent_cumulative_payoff": 13
+        },
+        {
+          "round": 5,
+          "own_history": [
+            0,
+            0,
+            1,
+            0
+          ],
+          "opponent_history": [
+            0,
+            1,
+            0,
+            1
+          ],
+          "branch_tests_in_execution_order": [
+            {
+              "test": "len(opponent_history) == 0",
+              "result": false
+            },
+            {
+              "test": "len(opponent_history) >= 4 and opponent_history[-4:-2] == opponent_history[-2:] and (opponent_history[-1] != opponent_history[-2])",
+              "result": true
+            }
+          ],
+          "action": 1,
+          "opponent_action": 0,
+          "payoff": 5,
+          "opponent_payoff": 0,
+          "cumulative_payoff": 13,
+          "opponent_cumulative_payoff": 13
+        },
+        {
+          "round": 6,
+          "own_history": [
+            0,
+            0,
+            1,
+            0,
+            1
+          ],
+          "opponent_history": [
+            0,
+            1,
+            0,
+            1,
+            0
+          ],
+          "branch_tests_in_execution_order": [
+            {
+              "test": "len(opponent_history) == 0",
+              "result": false
+            },
+            {
+              "test": "len(opponent_history) >= 4 and opponent_history[-4:-2] == opponent_history[-2:] and (opponent_history[-1] != opponent_history[-2])",
+              "result": true
+            }
+          ],
+          "action": 1,
+          "opponent_action": 1,
+          "payoff": 1,
+          "opponent_payoff": 1,
+          "cumulative_payoff": 14,
+          "opponent_cumulative_payoff": 14
+        },
+        {
+          "round": 7,
+          "own_history": [
+            0,
+            0,
+            1,
+            0,
+            1,
+            1
+          ],
+          "opponent_history": [
+            0,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          "branch_tests_in_execution_order": [
+            {
+              "test": "len(opponent_history) == 0",
+              "result": false
+            },
+            {
+              "test": "len(opponent_history) >= 4 and opponent_history[-4:-2] == opponent_history[-2:] and (opponent_history[-1] != opponent_history[-2])",
+              "result": true
+            }
+          ],
+          "action": 1,
+          "opponent_action": 0,
+          "payoff": 5,
+          "opponent_payoff": 0,
+          "cumulative_payoff": 19,
+          "opponent_cumulative_payoff": 14
+        },
+        {
+          "round": 8,
+          "own_history": [
+            0,
+            0,
+            1,
+            0,
+            1,
+            1,
+            1
+          ],
+          "opponent_history": [
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0
+          ],
+          "branch_tests_in_execution_order": [
+            {
+              "test": "len(opponent_history) == 0",
+              "result": false
+            },
+            {
+              "test": "len(opponent_history) >= 4 and opponent_history[-4:-2] == opponent_history[-2:] and (opponent_history[-1] != opponent_history[-2])",
+              "result": true
+            }
+          ],
+          "action": 1,
+          "opponent_action": 1,
+          "payoff": 1,
+          "opponent_payoff": 1,
+          "cumulative_payoff": 20,
+          "opponent_cumulative_payoff": 15
+        }
+      ]
+    },
+    "suspicious_tit_for_tat": {
+      "split": "holdout",
+      "opponent": "suspicious_tit_for_tat",
+      "seed": 211,
+      "match_seed": 4088950684836304266,
+      "match_turns": 241,
+      "scored_encounter": true,
+      "full_match": {
+        "total_payoff": 247,
+        "opponent_total_payoff": 247,
+        "turns": 241,
+        "cooperations": 2,
+        "mean_payoff": 1.0248962655601659,
+        "opponent_mean_payoff": 1.0248962655601659
+      },
+      "rows": [
+        {
+          "round": 1,
+          "own_history": [],
+          "opponent_history": [],
+          "branch_tests_in_execution_order": [
+            {
+              "test": "len(opponent_history) == 0",
+              "result": true
+            }
+          ],
+          "action": 0,
+          "opponent_action": 1,
+          "payoff": 0,
+          "opponent_payoff": 5,
+          "cumulative_payoff": 0,
+          "opponent_cumulative_payoff": 5
+        },
+        {
+          "round": 2,
+          "own_history": [
+            0
+          ],
+          "opponent_history": [
+            1
+          ],
+          "branch_tests_in_execution_order": [
+            {
+              "test": "len(opponent_history) == 0",
+              "result": false
+            },
+            {
+              "test": "len(opponent_history) >= 4 and opponent_history[-4:-2] == opponent_history[-2:] and (opponent_history[-1] != opponent_history[-2])",
+              "result": false
+            },
+            {
+              "test": "len(opponent_history) >= 6 and opponent_history[-6:-3] == opponent_history[-3:] and (sum(opponent_history[-3:]) > 0) and (sum(opponent_history[-3:]) < 3)",
+              "result": false
+            },
+            {
+              "test": "len(opponent_history) >= 8 and opponent_history[-8:-4] == opponent_history[-4:] and (sum(opponent_history[-4:]) > 0) and (sum(opponent_history[-4:]) < 4)",
+              "result": false
+            },
+            {
+              "test": "len(opponent_history) >= 10 and opponent_history[-10:-5] == opponent_history[-5:] and (sum(opponent_history[-5:]) > 0) and (sum(opponent_history[-5:]) < 5)",
+              "result": false
+            },
+            {
+              "test": "len(opponent_history) >= 12 and opponent_history[-12:-6] == opponent_history[-6:] and (sum(opponent_history[-6:]) > 0) and (sum(opponent_history[-6:]) < 6)",
+              "result": false
+            }
+          ],
+          "action": 1,
+          "opponent_action": 0,
+          "payoff": 5,
+          "opponent_payoff": 0,
+          "cumulative_payoff": 5,
+          "opponent_cumulative_payoff": 5
+        },
+        {
+          "round": 3,
+          "own_history": [
+            0,
+            1
+          ],
+          "opponent_history": [
+            1,
+            0
+          ],
+          "branch_tests_in_execution_order": [
+            {
+              "test": "len(opponent_history) == 0",
+              "result": false
+            },
+            {
+              "test": "len(opponent_history) >= 4 and opponent_history[-4:-2] == opponent_history[-2:] and (opponent_history[-1] != opponent_history[-2])",
+              "result": false
+            },
+            {
+              "test": "len(opponent_history) >= 6 and opponent_history[-6:-3] == opponent_history[-3:] and (sum(opponent_history[-3:]) > 0) and (sum(opponent_history[-3:]) < 3)",
+              "result": false
+            },
+            {
+              "test": "len(opponent_history) >= 8 and opponent_history[-8:-4] == opponent_history[-4:] and (sum(opponent_history[-4:]) > 0) and (sum(opponent_history[-4:]) < 4)",
+              "result": false
+            },
+            {
+              "test": "len(opponent_history) >= 10 and opponent_history[-10:-5] == opponent_history[-5:] and (sum(opponent_history[-5:]) > 0) and (sum(opponent_history[-5:]) < 5)",
+              "result": false
+            },
+            {
+              "test": "len(opponent_history) >= 12 and opponent_history[-12:-6] == opponent_history[-6:] and (sum(opponent_history[-6:]) > 0) and (sum(opponent_history[-6:]) < 6)",
+              "result": false
+            }
+          ],
+          "action": 0,
+          "opponent_action": 1,
+          "payoff": 0,
+          "opponent_payoff": 5,
+          "cumulative_payoff": 5,
+          "opponent_cumulative_payoff": 10
+        },
+        {
+          "round": 4,
+          "own_history": [
+            0,
+            1,
+            0
+          ],
+          "opponent_history": [
+            1,
+            0,
+            1
+          ],
+          "branch_tests_in_execution_order": [
+            {
+              "test": "len(opponent_history) == 0",
+              "result": false
+            },
+            {
+              "test": "len(opponent_history) >= 4 and opponent_history[-4:-2] == opponent_history[-2:] and (opponent_history[-1] != opponent_history[-2])",
+              "result": false
+            },
+            {
+              "test": "len(opponent_history) >= 6 and opponent_history[-6:-3] == opponent_history[-3:] and (sum(opponent_history[-3:]) > 0) and (sum(opponent_history[-3:]) < 3)",
+              "result": false
+            },
+            {
+              "test": "len(opponent_history) >= 8 and opponent_history[-8:-4] == opponent_history[-4:] and (sum(opponent_history[-4:]) > 0) and (sum(opponent_history[-4:]) < 4)",
+              "result": false
+            },
+            {
+              "test": "len(opponent_history) >= 10 and opponent_history[-10:-5] == opponent_history[-5:] and (sum(opponent_history[-5:]) > 0) and (sum(opponent_history[-5:]) < 5)",
+              "result": false
+            },
+            {
+              "test": "len(opponent_history) >= 12 and opponent_history[-12:-6] == opponent_history[-6:] and (sum(opponent_history[-6:]) > 0) and (sum(opponent_history[-6:]) < 6)",
+              "result": false
+            }
+          ],
+          "action": 1,
+          "opponent_action": 0,
+          "payoff": 5,
+          "opponent_payoff": 0,
+          "cumulative_payoff": 10,
+          "opponent_cumulative_payoff": 10
+        },
+        {
+          "round": 5,
+          "own_history": [
+            0,
+            1,
+            0,
+            1
+          ],
+          "opponent_history": [
+            1,
+            0,
+            1,
+            0
+          ],
+          "branch_tests_in_execution_order": [
+            {
+              "test": "len(opponent_history) == 0",
+              "result": false
+            },
+            {
+              "test": "len(opponent_history) >= 4 and opponent_history[-4:-2] == opponent_history[-2:] and (opponent_history[-1] != opponent_history[-2])",
+              "result": true
+            }
+          ],
+          "action": 1,
+          "opponent_action": 1,
+          "payoff": 1,
+          "opponent_payoff": 1,
+          "cumulative_payoff": 11,
+          "opponent_cumulative_payoff": 11
+        },
+        {
+          "round": 6,
+          "own_history": [
+            0,
+            1,
+            0,
+            1,
+            1
+          ],
+          "opponent_history": [
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          "branch_tests_in_execution_order": [
+            {
+              "test": "len(opponent_history) == 0",
+              "result": false
+            },
+            {
+              "test": "len(opponent_history) >= 4 and opponent_history[-4:-2] == opponent_history[-2:] and (opponent_history[-1] != opponent_history[-2])",
+              "result": true
+            }
+          ],
+          "action": 1,
+          "opponent_action": 1,
+          "payoff": 1,
+          "opponent_payoff": 1,
+          "cumulative_payoff": 12,
+          "opponent_cumulative_payoff": 12
+        },
+        {
+          "round": 7,
+          "own_history": [
+            0,
+            1,
+            0,
+            1,
+            1,
+            1
+          ],
+          "opponent_history": [
+            1,
+            0,
+            1,
+            0,
+            1,
+            1
+          ],
+          "branch_tests_in_execution_order": [
+            {
+              "test": "len(opponent_history) == 0",
+              "result": false
+            },
+            {
+              "test": "len(opponent_history) >= 4 and opponent_history[-4:-2] == opponent_history[-2:] and (opponent_history[-1] != opponent_history[-2])",
+              "result": false
+            },
+            {
+              "test": "len(opponent_history) >= 6 and opponent_history[-6:-3] == opponent_history[-3:] and (sum(opponent_history[-3:]) > 0) and (sum(opponent_history[-3:]) < 3)",
+              "result": false
+            },
+            {
+              "test": "len(opponent_history) >= 8 and opponent_history[-8:-4] == opponent_history[-4:] and (sum(opponent_history[-4:]) > 0) and (sum(opponent_history[-4:]) < 4)",
+              "result": false
+            },
+            {
+              "test": "len(opponent_history) >= 10 and opponent_history[-10:-5] == opponent_history[-5:] and (sum(opponent_history[-5:]) > 0) and (sum(opponent_history[-5:]) < 5)",
+              "result": false
+            },
+            {
+              "test": "len(opponent_history) >= 12 and opponent_history[-12:-6] == opponent_history[-6:] and (sum(opponent_history[-6:]) > 0) and (sum(opponent_history[-6:]) < 6)",
+              "result": false
+            }
+          ],
+          "action": 1,
+          "opponent_action": 1,
+          "payoff": 1,
+          "opponent_payoff": 1,
+          "cumulative_payoff": 13,
+          "opponent_cumulative_payoff": 13
+        },
+        {
+          "round": 8,
+          "own_history": [
+            0,
+            1,
+            0,
+            1,
+            1,
+            1,
+            1
+          ],
+          "opponent_history": [
+            1,
+            0,
+            1,
+            0,
+            1,
+            1,
+            1
+          ],
+          "branch_tests_in_execution_order": [
+            {
+              "test": "len(opponent_history) == 0",
+              "result": false
+            },
+            {
+              "test": "len(opponent_history) >= 4 and opponent_history[-4:-2] == opponent_history[-2:] and (opponent_history[-1] != opponent_history[-2])",
+              "result": false
+            },
+            {
+              "test": "len(opponent_history) >= 6 and opponent_history[-6:-3] == opponent_history[-3:] and (sum(opponent_history[-3:]) > 0) and (sum(opponent_history[-3:]) < 3)",
+              "result": false
+            },
+            {
+              "test": "len(opponent_history) >= 8 and opponent_history[-8:-4] == opponent_history[-4:] and (sum(opponent_history[-4:]) > 0) and (sum(opponent_history[-4:]) < 4)",
+              "result": false
+            },
+            {
+              "test": "len(opponent_history) >= 10 and opponent_history[-10:-5] == opponent_history[-5:] and (sum(opponent_history[-5:]) > 0) and (sum(opponent_history[-5:]) < 5)",
+              "result": false
+            },
+            {
+              "test": "len(opponent_history) >= 12 and opponent_history[-12:-6] == opponent_history[-6:] and (sum(opponent_history[-6:]) > 0) and (sum(opponent_history[-6:]) < 6)",
+              "result": false
+            }
+          ],
+          "action": 1,
+          "opponent_action": 1,
+          "payoff": 1,
+          "opponent_payoff": 1,
+          "cumulative_payoff": 14,
+          "opponent_cumulative_payoff": 14
+        }
+      ]
+    }
+  },
+  "finite_probe_counterexample": {
+    "split": "train",
+    "opponent": "always_cooperate",
+    "seed": 11,
+    "match_seed": 2311026858381931140,
+    "match_turns": 174,
+    "scored_encounter": true,
+    "full_match": {
+      "total_payoff": 532,
+      "opponent_total_payoff": 507,
+      "turns": 174,
+      "cooperations": 169,
+      "mean_payoff": 3.057471264367816,
+      "opponent_mean_payoff": 2.913793103448276
+    },
+    "rows": [
+      {
+        "round": 1,
+        "own_history": [],
+        "opponent_history": [],
+        "branch_tests_in_execution_order": [
+          {
+            "test": "len(opponent_history) == 0",
+            "result": true
+          }
+        ],
+        "action": 0,
+        "opponent_action": 0,
+        "payoff": 3,
+        "opponent_payoff": 3,
+        "cumulative_payoff": 3,
+        "opponent_cumulative_payoff": 3
+      },
+      {
+        "round": 2,
+        "own_history": [
+          0
+        ],
+        "opponent_history": [
+          0
+        ],
+        "branch_tests_in_execution_order": [
+          {
+            "test": "len(opponent_history) == 0",
+            "result": false
+          },
+          {
+            "test": "opponent_history[-1] == 1",
+            "result": false
+          },
+          {
+            "test": "len(opponent_history) % 32 == 0",
+            "result": false
+          }
+        ],
+        "action": 0,
+        "opponent_action": 0,
+        "payoff": 3,
+        "opponent_payoff": 3,
+        "cumulative_payoff": 6,
+        "opponent_cumulative_payoff": 6
+      },
+      {
+        "round": 3,
+        "own_history": [
+          0,
+          0
+        ],
+        "opponent_history": [
+          0,
+          0
+        ],
+        "branch_tests_in_execution_order": [
+          {
+            "test": "len(opponent_history) == 0",
+            "result": false
+          },
+          {
+            "test": "opponent_history[-1] == 1",
+            "result": false
+          },
+          {
+            "test": "len(opponent_history) % 32 == 0",
+            "result": false
+          }
+        ],
+        "action": 0,
+        "opponent_action": 0,
+        "payoff": 3,
+        "opponent_payoff": 3,
+        "cumulative_payoff": 9,
+        "opponent_cumulative_payoff": 9
+      },
+      {
+        "round": 4,
+        "own_history": [
+          0,
+          0,
+          0
+        ],
+        "opponent_history": [
+          0,
+          0,
+          0
+        ],
+        "branch_tests_in_execution_order": [
+          {
+            "test": "len(opponent_history) == 0",
+            "result": false
+          },
+          {
+            "test": "opponent_history[-1] == 1",
+            "result": false
+          },
+          {
+            "test": "len(opponent_history) % 32 == 0",
+            "result": false
+          }
+        ],
+        "action": 0,
+        "opponent_action": 0,
+        "payoff": 3,
+        "opponent_payoff": 3,
+        "cumulative_payoff": 12,
+        "opponent_cumulative_payoff": 12
+      },
+      {
+        "round": 5,
+        "own_history": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "opponent_history": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "branch_tests_in_execution_order": [
+          {
+            "test": "len(opponent_history) == 0",
+            "result": false
+          },
+          {
+            "test": "opponent_history[-1] == 1",
+            "result": false
+          },
+          {
+            "test": "len(opponent_history) % 32 == 0",
+            "result": false
+          }
+        ],
+        "action": 0,
+        "opponent_action": 0,
+        "payoff": 3,
+        "opponent_payoff": 3,
+        "cumulative_payoff": 15,
+        "opponent_cumulative_payoff": 15
+      },
+      {
+        "round": 6,
+        "own_history": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "opponent_history": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branch_tests_in_execution_order": [
+          {
+            "test": "len(opponent_history) == 0",
+            "result": false
+          },
+          {
+            "test": "opponent_history[-1] == 1",
+            "result": false
+          },
+          {
+            "test": "len(opponent_history) % 32 == 0",
+            "result": false
+          }
+        ],
+        "action": 0,
+        "opponent_action": 0,
+        "payoff": 3,
+        "opponent_payoff": 3,
+        "cumulative_payoff": 18,
+        "opponent_cumulative_payoff": 18
+      },
+      {
+        "round": 7,
+        "own_history": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "opponent_history": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branch_tests_in_execution_order": [
+          {
+            "test": "len(opponent_history) == 0",
+            "result": false
+          },
+          {
+            "test": "opponent_history[-1] == 1",
+            "result": false
+          },
+          {
+            "test": "len(opponent_history) % 32 == 0",
+            "result": false
+          }
+        ],
+        "action": 0,
+        "opponent_action": 0,
+        "payoff": 3,
+        "opponent_payoff": 3,
+        "cumulative_payoff": 21,
+        "opponent_cumulative_payoff": 21
+      },
+      {
+        "round": 8,
+        "own_history": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "opponent_history": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branch_tests_in_execution_order": [
+          {
+            "test": "len(opponent_history) == 0",
+            "result": false
+          },
+          {
+            "test": "opponent_history[-1] == 1",
+            "result": false
+          },
+          {
+            "test": "len(opponent_history) % 32 == 0",
+            "result": false
+          }
+        ],
+        "action": 0,
+        "opponent_action": 0,
+        "payoff": 3,
+        "opponent_payoff": 3,
+        "cumulative_payoff": 24,
+        "opponent_cumulative_payoff": 24
+      },
+      {
+        "round": 9,
+        "own_history": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "opponent_history": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branch_tests_in_execution_order": [
+          {
+            "test": "len(opponent_history) == 0",
+            "result": false
+          },
+          {
+            "test": "opponent_history[-1] == 1",
+            "result": false
+          },
+          {
+            "test": "len(opponent_history) % 32 == 0",
+            "result": false
+          }
+        ],
+        "action": 0,
+        "opponent_action": 0,
+        "payoff": 3,
+        "opponent_payoff": 3,
+        "cumulative_payoff": 27,
+        "opponent_cumulative_payoff": 27
+      },
+      {
+        "round": 10,
+        "own_history": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "opponent_history": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branch_tests_in_execution_order": [
+          {
+            "test": "len(opponent_history) == 0",
+            "result": false
+          },
+          {
+            "test": "opponent_history[-1] == 1",
+            "result": false
+          },
+          {
+            "test": "len(opponent_history) % 32 == 0",
+            "result": false
+          }
+        ],
+        "action": 0,
+        "opponent_action": 0,
+        "payoff": 3,
+        "opponent_payoff": 3,
+        "cumulative_payoff": 30,
+        "opponent_cumulative_payoff": 30
+      },
+      {
+        "round": 11,
+        "own_history": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "opponent_history": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branch_tests_in_execution_order": [
+          {
+            "test": "len(opponent_history) == 0",
+            "result": false
+          },
+          {
+            "test": "opponent_history[-1] == 1",
+            "result": false
+          },
+          {
+            "test": "len(opponent_history) % 32 == 0",
+            "result": false
+          }
+        ],
+        "action": 0,
+        "opponent_action": 0,
+        "payoff": 3,
+        "opponent_payoff": 3,
+        "cumulative_payoff": 33,
+        "opponent_cumulative_payoff": 33
+      },
+      {
+        "round": 12,
+        "own_history": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "opponent_history": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branch_tests_in_execution_order": [
+          {
+            "test": "len(opponent_history) == 0",
+            "result": false
+          },
+          {
+            "test": "opponent_history[-1] == 1",
+            "result": false
+          },
+          {
+            "test": "len(opponent_history) % 32 == 0",
+            "result": false
+          }
+        ],
+        "action": 0,
+        "opponent_action": 0,
+        "payoff": 3,
+        "opponent_payoff": 3,
+        "cumulative_payoff": 36,
+        "opponent_cumulative_payoff": 36
+      },
+      {
+        "round": 13,
+        "own_history": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "opponent_history": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branch_tests_in_execution_order": [
+          {
+            "test": "len(opponent_history) == 0",
+            "result": false
+          },
+          {
+            "test": "opponent_history[-1] == 1",
+            "result": false
+          },
+          {
+            "test": "len(opponent_history) % 32 == 0",
+            "result": false
+          }
+        ],
+        "action": 0,
+        "opponent_action": 0,
+        "payoff": 3,
+        "opponent_payoff": 3,
+        "cumulative_payoff": 39,
+        "opponent_cumulative_payoff": 39
+      },
+      {
+        "round": 14,
+        "own_history": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "opponent_history": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branch_tests_in_execution_order": [
+          {
+            "test": "len(opponent_history) == 0",
+            "result": false
+          },
+          {
+            "test": "opponent_history[-1] == 1",
+            "result": false
+          },
+          {
+            "test": "len(opponent_history) % 32 == 0",
+            "result": false
+          }
+        ],
+        "action": 0,
+        "opponent_action": 0,
+        "payoff": 3,
+        "opponent_payoff": 3,
+        "cumulative_payoff": 42,
+        "opponent_cumulative_payoff": 42
+      },
+      {
+        "round": 15,
+        "own_history": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "opponent_history": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branch_tests_in_execution_order": [
+          {
+            "test": "len(opponent_history) == 0",
+            "result": false
+          },
+          {
+            "test": "opponent_history[-1] == 1",
+            "result": false
+          },
+          {
+            "test": "len(opponent_history) % 32 == 0",
+            "result": false
+          }
+        ],
+        "action": 0,
+        "opponent_action": 0,
+        "payoff": 3,
+        "opponent_payoff": 3,
+        "cumulative_payoff": 45,
+        "opponent_cumulative_payoff": 45
+      },
+      {
+        "round": 16,
+        "own_history": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "opponent_history": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branch_tests_in_execution_order": [
+          {
+            "test": "len(opponent_history) == 0",
+            "result": false
+          },
+          {
+            "test": "opponent_history[-1] == 1",
+            "result": false
+          },
+          {
+            "test": "len(opponent_history) % 32 == 0",
+            "result": false
+          }
+        ],
+        "action": 0,
+        "opponent_action": 0,
+        "payoff": 3,
+        "opponent_payoff": 3,
+        "cumulative_payoff": 48,
+        "opponent_cumulative_payoff": 48
+      },
+      {
+        "round": 17,
+        "own_history": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "opponent_history": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branch_tests_in_execution_order": [
+          {
+            "test": "len(opponent_history) == 0",
+            "result": false
+          },
+          {
+            "test": "opponent_history[-1] == 1",
+            "result": false
+          },
+          {
+            "test": "len(opponent_history) % 32 == 0",
+            "result": false
+          }
+        ],
+        "action": 0,
+        "opponent_action": 0,
+        "payoff": 3,
+        "opponent_payoff": 3,
+        "cumulative_payoff": 51,
+        "opponent_cumulative_payoff": 51
+      },
+      {
+        "round": 18,
+        "own_history": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "opponent_history": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branch_tests_in_execution_order": [
+          {
+            "test": "len(opponent_history) == 0",
+            "result": false
+          },
+          {
+            "test": "opponent_history[-1] == 1",
+            "result": false
+          },
+          {
+            "test": "len(opponent_history) % 32 == 0",
+            "result": false
+          }
+        ],
+        "action": 0,
+        "opponent_action": 0,
+        "payoff": 3,
+        "opponent_payoff": 3,
+        "cumulative_payoff": 54,
+        "opponent_cumulative_payoff": 54
+      },
+      {
+        "round": 19,
+        "own_history": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "opponent_history": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branch_tests_in_execution_order": [
+          {
+            "test": "len(opponent_history) == 0",
+            "result": false
+          },
+          {
+            "test": "opponent_history[-1] == 1",
+            "result": false
+          },
+          {
+            "test": "len(opponent_history) % 32 == 0",
+            "result": false
+          }
+        ],
+        "action": 0,
+        "opponent_action": 0,
+        "payoff": 3,
+        "opponent_payoff": 3,
+        "cumulative_payoff": 57,
+        "opponent_cumulative_payoff": 57
+      },
+      {
+        "round": 20,
+        "own_history": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "opponent_history": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branch_tests_in_execution_order": [
+          {
+            "test": "len(opponent_history) == 0",
+            "result": false
+          },
+          {
+            "test": "opponent_history[-1] == 1",
+            "result": false
+          },
+          {
+            "test": "len(opponent_history) % 32 == 0",
+            "result": false
+          }
+        ],
+        "action": 0,
+        "opponent_action": 0,
+        "payoff": 3,
+        "opponent_payoff": 3,
+        "cumulative_payoff": 60,
+        "opponent_cumulative_payoff": 60
+      },
+      {
+        "round": 21,
+        "own_history": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "opponent_history": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branch_tests_in_execution_order": [
+          {
+            "test": "len(opponent_history) == 0",
+            "result": false
+          },
+          {
+            "test": "opponent_history[-1] == 1",
+            "result": false
+          },
+          {
+            "test": "len(opponent_history) % 32 == 0",
+            "result": false
+          }
+        ],
+        "action": 0,
+        "opponent_action": 0,
+        "payoff": 3,
+        "opponent_payoff": 3,
+        "cumulative_payoff": 63,
+        "opponent_cumulative_payoff": 63
+      },
+      {
+        "round": 22,
+        "own_history": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "opponent_history": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branch_tests_in_execution_order": [
+          {
+            "test": "len(opponent_history) == 0",
+            "result": false
+          },
+          {
+            "test": "opponent_history[-1] == 1",
+            "result": false
+          },
+          {
+            "test": "len(opponent_history) % 32 == 0",
+            "result": false
+          }
+        ],
+        "action": 0,
+        "opponent_action": 0,
+        "payoff": 3,
+        "opponent_payoff": 3,
+        "cumulative_payoff": 66,
+        "opponent_cumulative_payoff": 66
+      },
+      {
+        "round": 23,
+        "own_history": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "opponent_history": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branch_tests_in_execution_order": [
+          {
+            "test": "len(opponent_history) == 0",
+            "result": false
+          },
+          {
+            "test": "opponent_history[-1] == 1",
+            "result": false
+          },
+          {
+            "test": "len(opponent_history) % 32 == 0",
+            "result": false
+          }
+        ],
+        "action": 0,
+        "opponent_action": 0,
+        "payoff": 3,
+        "opponent_payoff": 3,
+        "cumulative_payoff": 69,
+        "opponent_cumulative_payoff": 69
+      },
+      {
+        "round": 24,
+        "own_history": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "opponent_history": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branch_tests_in_execution_order": [
+          {
+            "test": "len(opponent_history) == 0",
+            "result": false
+          },
+          {
+            "test": "opponent_history[-1] == 1",
+            "result": false
+          },
+          {
+            "test": "len(opponent_history) % 32 == 0",
+            "result": false
+          }
+        ],
+        "action": 0,
+        "opponent_action": 0,
+        "payoff": 3,
+        "opponent_payoff": 3,
+        "cumulative_payoff": 72,
+        "opponent_cumulative_payoff": 72
+      },
+      {
+        "round": 25,
+        "own_history": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "opponent_history": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branch_tests_in_execution_order": [
+          {
+            "test": "len(opponent_history) == 0",
+            "result": false
+          },
+          {
+            "test": "opponent_history[-1] == 1",
+            "result": false
+          },
+          {
+            "test": "len(opponent_history) % 32 == 0",
+            "result": false
+          }
+        ],
+        "action": 0,
+        "opponent_action": 0,
+        "payoff": 3,
+        "opponent_payoff": 3,
+        "cumulative_payoff": 75,
+        "opponent_cumulative_payoff": 75
+      },
+      {
+        "round": 26,
+        "own_history": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "opponent_history": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branch_tests_in_execution_order": [
+          {
+            "test": "len(opponent_history) == 0",
+            "result": false
+          },
+          {
+            "test": "opponent_history[-1] == 1",
+            "result": false
+          },
+          {
+            "test": "len(opponent_history) % 32 == 0",
+            "result": false
+          }
+        ],
+        "action": 0,
+        "opponent_action": 0,
+        "payoff": 3,
+        "opponent_payoff": 3,
+        "cumulative_payoff": 78,
+        "opponent_cumulative_payoff": 78
+      },
+      {
+        "round": 27,
+        "own_history": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "opponent_history": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branch_tests_in_execution_order": [
+          {
+            "test": "len(opponent_history) == 0",
+            "result": false
+          },
+          {
+            "test": "opponent_history[-1] == 1",
+            "result": false
+          },
+          {
+            "test": "len(opponent_history) % 32 == 0",
+            "result": false
+          }
+        ],
+        "action": 0,
+        "opponent_action": 0,
+        "payoff": 3,
+        "opponent_payoff": 3,
+        "cumulative_payoff": 81,
+        "opponent_cumulative_payoff": 81
+      },
+      {
+        "round": 28,
+        "own_history": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "opponent_history": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branch_tests_in_execution_order": [
+          {
+            "test": "len(opponent_history) == 0",
+            "result": false
+          },
+          {
+            "test": "opponent_history[-1] == 1",
+            "result": false
+          },
+          {
+            "test": "len(opponent_history) % 32 == 0",
+            "result": false
+          }
+        ],
+        "action": 0,
+        "opponent_action": 0,
+        "payoff": 3,
+        "opponent_payoff": 3,
+        "cumulative_payoff": 84,
+        "opponent_cumulative_payoff": 84
+      },
+      {
+        "round": 29,
+        "own_history": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "opponent_history": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branch_tests_in_execution_order": [
+          {
+            "test": "len(opponent_history) == 0",
+            "result": false
+          },
+          {
+            "test": "opponent_history[-1] == 1",
+            "result": false
+          },
+          {
+            "test": "len(opponent_history) % 32 == 0",
+            "result": false
+          }
+        ],
+        "action": 0,
+        "opponent_action": 0,
+        "payoff": 3,
+        "opponent_payoff": 3,
+        "cumulative_payoff": 87,
+        "opponent_cumulative_payoff": 87
+      },
+      {
+        "round": 30,
+        "own_history": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "opponent_history": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branch_tests_in_execution_order": [
+          {
+            "test": "len(opponent_history) == 0",
+            "result": false
+          },
+          {
+            "test": "opponent_history[-1] == 1",
+            "result": false
+          },
+          {
+            "test": "len(opponent_history) % 32 == 0",
+            "result": false
+          }
+        ],
+        "action": 0,
+        "opponent_action": 0,
+        "payoff": 3,
+        "opponent_payoff": 3,
+        "cumulative_payoff": 90,
+        "opponent_cumulative_payoff": 90
+      },
+      {
+        "round": 31,
+        "own_history": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "opponent_history": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branch_tests_in_execution_order": [
+          {
+            "test": "len(opponent_history) == 0",
+            "result": false
+          },
+          {
+            "test": "opponent_history[-1] == 1",
+            "result": false
+          },
+          {
+            "test": "len(opponent_history) % 32 == 0",
+            "result": false
+          }
+        ],
+        "action": 0,
+        "opponent_action": 0,
+        "payoff": 3,
+        "opponent_payoff": 3,
+        "cumulative_payoff": 93,
+        "opponent_cumulative_payoff": 93
+      },
+      {
+        "round": 32,
+        "own_history": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "opponent_history": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branch_tests_in_execution_order": [
+          {
+            "test": "len(opponent_history) == 0",
+            "result": false
+          },
+          {
+            "test": "opponent_history[-1] == 1",
+            "result": false
+          },
+          {
+            "test": "len(opponent_history) % 32 == 0",
+            "result": false
+          }
+        ],
+        "action": 0,
+        "opponent_action": 0,
+        "payoff": 3,
+        "opponent_payoff": 3,
+        "cumulative_payoff": 96,
+        "opponent_cumulative_payoff": 96
+      },
+      {
+        "round": 33,
+        "own_history": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "opponent_history": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branch_tests_in_execution_order": [
+          {
+            "test": "len(opponent_history) == 0",
+            "result": false
+          },
+          {
+            "test": "opponent_history[-1] == 1",
+            "result": false
+          },
+          {
+            "test": "len(opponent_history) % 32 == 0",
+            "result": true
+          }
+        ],
+        "action": 1,
+        "opponent_action": 0,
+        "payoff": 5,
+        "opponent_payoff": 0,
+        "cumulative_payoff": 101,
+        "opponent_cumulative_payoff": 96
+      },
+      {
+        "round": 34,
+        "own_history": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "opponent_history": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branch_tests_in_execution_order": [
+          {
+            "test": "len(opponent_history) == 0",
+            "result": false
+          },
+          {
+            "test": "opponent_history[-1] == 1",
+            "result": false
+          },
+          {
+            "test": "len(opponent_history) % 32 == 0",
+            "result": false
+          }
+        ],
+        "action": 0,
+        "opponent_action": 0,
+        "payoff": 3,
+        "opponent_payoff": 3,
+        "cumulative_payoff": 104,
+        "opponent_cumulative_payoff": 99
+      }
+    ]
+  },
+  "A202_train_random_override": {
+    "split": "train",
+    "opponent": "random",
+    "seed": 11,
+    "match_seed": 5681436119964697144,
+    "match_turns": 174,
+    "scored_encounter": true,
+    "full_match": {
+      "total_payoff": 433,
+      "opponent_total_payoff": 313,
+      "turns": 174,
+      "cooperations": 64,
+      "mean_payoff": 2.4885057471264367,
+      "opponent_mean_payoff": 1.7988505747126438
+    },
+    "rows": [
+      {
+        "round": 33,
+        "own_history": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        "opponent_history": [
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1
+        ],
+        "branch_tests_in_execution_order": [
+          {
+            "test": "len(opponent_history) == 0",
+            "result": false
+          },
+          {
+            "test": "len(opponent_history) >= 4 and opponent_history[-4:-2] == opponent_history[-2:] and (opponent_history[-1] != opponent_history[-2])",
+            "result": false
+          },
+          {
+            "test": "len(opponent_history) >= 6 and opponent_history[-6:-3] == opponent_history[-3:] and (sum(opponent_history[-3:]) > 0) and (sum(opponent_history[-3:]) < 3)",
+            "result": false
+          },
+          {
+            "test": "len(opponent_history) >= 8 and opponent_history[-8:-4] == opponent_history[-4:] and (sum(opponent_history[-4:]) > 0) and (sum(opponent_history[-4:]) < 4)",
+            "result": false
+          },
+          {
+            "test": "len(opponent_history) >= 10 and opponent_history[-10:-5] == opponent_history[-5:] and (sum(opponent_history[-5:]) > 0) and (sum(opponent_history[-5:]) < 5)",
+            "result": false
+          },
+          {
+            "test": "len(opponent_history) >= 12 and opponent_history[-12:-6] == opponent_history[-6:] and (sum(opponent_history[-6:]) > 0) and (sum(opponent_history[-6:]) < 6)",
+            "result": false
+          }
+        ],
+        "action": 1,
+        "opponent_action": 0,
+        "payoff": 5,
+        "opponent_payoff": 0,
+        "cumulative_payoff": 69,
+        "opponent_cumulative_payoff": 69
+      },
+      {
+        "round": 34,
+        "own_history": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1
+        ],
+        "opponent_history": [
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0
+        ],
+        "branch_tests_in_execution_order": [
+          {
+            "test": "len(opponent_history) == 0",
+            "result": false
+          },
+          {
+            "test": "len(opponent_history) >= 4 and opponent_history[-4:-2] == opponent_history[-2:] and (opponent_history[-1] != opponent_history[-2])",
+            "result": false
+          },
+          {
+            "test": "len(opponent_history) >= 6 and opponent_history[-6:-3] == opponent_history[-3:] and (sum(opponent_history[-3:]) > 0) and (sum(opponent_history[-3:]) < 3)",
+            "result": false
+          },
+          {
+            "test": "len(opponent_history) >= 8 and opponent_history[-8:-4] == opponent_history[-4:] and (sum(opponent_history[-4:]) > 0) and (sum(opponent_history[-4:]) < 4)",
+            "result": false
+          },
+          {
+            "test": "len(opponent_history) >= 10 and opponent_history[-10:-5] == opponent_history[-5:] and (sum(opponent_history[-5:]) > 0) and (sum(opponent_history[-5:]) < 5)",
+            "result": false
+          },
+          {
+            "test": "len(opponent_history) >= 12 and opponent_history[-12:-6] == opponent_history[-6:] and (sum(opponent_history[-6:]) > 0) and (sum(opponent_history[-6:]) < 6)",
+            "result": false
+          }
+        ],
+        "action": 0,
+        "opponent_action": 1,
+        "payoff": 0,
+        "opponent_payoff": 5,
+        "cumulative_payoff": 69,
+        "opponent_cumulative_payoff": 74
+      },
+      {
+        "round": 35,
+        "own_history": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0
+        ],
+        "opponent_history": [
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1
+        ],
+        "branch_tests_in_execution_order": [
+          {
+            "test": "len(opponent_history) == 0",
+            "result": false
+          },
+          {
+            "test": "len(opponent_history) >= 4 and opponent_history[-4:-2] == opponent_history[-2:] and (opponent_history[-1] != opponent_history[-2])",
+            "result": false
+          },
+          {
+            "test": "len(opponent_history) >= 6 and opponent_history[-6:-3] == opponent_history[-3:] and (sum(opponent_history[-3:]) > 0) and (sum(opponent_history[-3:]) < 3)",
+            "result": true
+          }
+        ],
+        "action": 1,
+        "opponent_action": 0,
+        "payoff": 5,
+        "opponent_payoff": 0,
+        "cumulative_payoff": 74,
+        "opponent_cumulative_payoff": 74
+      },
+      {
+        "round": 36,
+        "own_history": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1
+        ],
+        "opponent_history": [
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          0
+        ],
+        "branch_tests_in_execution_order": [
+          {
+            "test": "len(opponent_history) == 0",
+            "result": false
+          },
+          {
+            "test": "len(opponent_history) >= 4 and opponent_history[-4:-2] == opponent_history[-2:] and (opponent_history[-1] != opponent_history[-2])",
+            "result": true
+          }
+        ],
+        "action": 1,
+        "opponent_action": 0,
+        "payoff": 5,
+        "opponent_payoff": 0,
+        "cumulative_payoff": 79,
+        "opponent_cumulative_payoff": 74
+      },
+      {
+        "round": 37,
+        "own_history": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1
+        ],
+        "opponent_history": [
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        "branch_tests_in_execution_order": [
+          {
+            "test": "len(opponent_history) == 0",
+            "result": false
+          },
+          {
+            "test": "len(opponent_history) >= 4 and opponent_history[-4:-2] == opponent_history[-2:] and (opponent_history[-1] != opponent_history[-2])",
+            "result": false
+          },
+          {
+            "test": "len(opponent_history) >= 6 and opponent_history[-6:-3] == opponent_history[-3:] and (sum(opponent_history[-3:]) > 0) and (sum(opponent_history[-3:]) < 3)",
+            "result": false
+          },
+          {
+            "test": "len(opponent_history) >= 8 and opponent_history[-8:-4] == opponent_history[-4:] and (sum(opponent_history[-4:]) > 0) and (sum(opponent_history[-4:]) < 4)",
+            "result": false
+          },
+          {
+            "test": "len(opponent_history) >= 10 and opponent_history[-10:-5] == opponent_history[-5:] and (sum(opponent_history[-5:]) > 0) and (sum(opponent_history[-5:]) < 5)",
+            "result": false
+          },
+          {
+            "test": "len(opponent_history) >= 12 and opponent_history[-12:-6] == opponent_history[-6:] and (sum(opponent_history[-6:]) > 0) and (sum(opponent_history[-6:]) < 6)",
+            "result": false
+          }
+        ],
+        "action": 0,
+        "opponent_action": 0,
+        "payoff": 3,
+        "opponent_payoff": 3,
+        "cumulative_payoff": 82,
+        "opponent_cumulative_payoff": 77
+      },
+      {
+        "round": 38,
+        "own_history": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0
+        ],
+        "opponent_history": [
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "branch_tests_in_execution_order": [
+          {
+            "test": "len(opponent_history) == 0",
+            "result": false
+          },
+          {
+            "test": "len(opponent_history) >= 4 and opponent_history[-4:-2] == opponent_history[-2:] and (opponent_history[-1] != opponent_history[-2])",
+            "result": false
+          },
+          {
+            "test": "len(opponent_history) >= 6 and opponent_history[-6:-3] == opponent_history[-3:] and (sum(opponent_history[-3:]) > 0) and (sum(opponent_history[-3:]) < 3)",
+            "result": false
+          },
+          {
+            "test": "len(opponent_history) >= 8 and opponent_history[-8:-4] == opponent_history[-4:] and (sum(opponent_history[-4:]) > 0) and (sum(opponent_history[-4:]) < 4)",
+            "result": false
+          },
+          {
+            "test": "len(opponent_history) >= 10 and opponent_history[-10:-5] == opponent_history[-5:] and (sum(opponent_history[-5:]) > 0) and (sum(opponent_history[-5:]) < 5)",
+            "result": false
+          },
+          {
+            "test": "len(opponent_history) >= 12 and opponent_history[-12:-6] == opponent_history[-6:] and (sum(opponent_history[-6:]) > 0) and (sum(opponent_history[-6:]) < 6)",
+            "result": false
+          }
+        ],
+        "action": 0,
+        "opponent_action": 0,
+        "payoff": 3,
+        "opponent_payoff": 3,
+        "cumulative_payoff": 85,
+        "opponent_cumulative_payoff": 80
+      },
+      {
+        "round": 39,
+        "own_history": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        "opponent_history": [
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branch_tests_in_execution_order": [
+          {
+            "test": "len(opponent_history) == 0",
+            "result": false
+          },
+          {
+            "test": "len(opponent_history) >= 4 and opponent_history[-4:-2] == opponent_history[-2:] and (opponent_history[-1] != opponent_history[-2])",
+            "result": false
+          },
+          {
+            "test": "len(opponent_history) >= 6 and opponent_history[-6:-3] == opponent_history[-3:] and (sum(opponent_history[-3:]) > 0) and (sum(opponent_history[-3:]) < 3)",
+            "result": false
+          },
+          {
+            "test": "len(opponent_history) >= 8 and opponent_history[-8:-4] == opponent_history[-4:] and (sum(opponent_history[-4:]) > 0) and (sum(opponent_history[-4:]) < 4)",
+            "result": false
+          },
+          {
+            "test": "len(opponent_history) >= 10 and opponent_history[-10:-5] == opponent_history[-5:] and (sum(opponent_history[-5:]) > 0) and (sum(opponent_history[-5:]) < 5)",
+            "result": false
+          },
+          {
+            "test": "len(opponent_history) >= 12 and opponent_history[-12:-6] == opponent_history[-6:] and (sum(opponent_history[-6:]) > 0) and (sum(opponent_history[-6:]) < 6)",
+            "result": false
+          }
+        ],
+        "action": 0,
+        "opponent_action": 1,
+        "payoff": 0,
+        "opponent_payoff": 5,
+        "cumulative_payoff": 85,
+        "opponent_cumulative_payoff": 85
+      },
+      {
+        "round": 40,
+        "own_history": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        "opponent_history": [
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "branch_tests_in_execution_order": [
+          {
+            "test": "len(opponent_history) == 0",
+            "result": false
+          },
+          {
+            "test": "len(opponent_history) >= 4 and opponent_history[-4:-2] == opponent_history[-2:] and (opponent_history[-1] != opponent_history[-2])",
+            "result": false
+          },
+          {
+            "test": "len(opponent_history) >= 6 and opponent_history[-6:-3] == opponent_history[-3:] and (sum(opponent_history[-3:]) > 0) and (sum(opponent_history[-3:]) < 3)",
+            "result": false
+          },
+          {
+            "test": "len(opponent_history) >= 8 and opponent_history[-8:-4] == opponent_history[-4:] and (sum(opponent_history[-4:]) > 0) and (sum(opponent_history[-4:]) < 4)",
+            "result": false
+          },
+          {
+            "test": "len(opponent_history) >= 10 and opponent_history[-10:-5] == opponent_history[-5:] and (sum(opponent_history[-5:]) > 0) and (sum(opponent_history[-5:]) < 5)",
+            "result": false
+          },
+          {
+            "test": "len(opponent_history) >= 12 and opponent_history[-12:-6] == opponent_history[-6:] and (sum(opponent_history[-6:]) > 0) and (sum(opponent_history[-6:]) < 6)",
+            "result": false
+          }
+        ],
+        "action": 1,
+        "opponent_action": 0,
+        "payoff": 5,
+        "opponent_payoff": 0,
+        "cumulative_payoff": 90,
+        "opponent_cumulative_payoff": 85
+      }
+    ],
+    "focus": "First actual action departing from TFT on the selected policy own evaluated encounter history"
+  }
+}

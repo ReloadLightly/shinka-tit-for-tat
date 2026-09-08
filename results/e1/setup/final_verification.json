@@ -1,0 +1,18 @@
+{
+  "verified_utc": "2026-09-08T09:45:35.592891+00:00",
+  "external_proposals": 44,
+  "ledger_closed": true,
+  "ledger_stopped": true,
+  "frozen_source_hashes_match": true,
+  "scientific_sources_match_reviewed_pilot_commit": true,
+  "pilot_ledger_unchanged": true,
+  "local_report_links_resolve": true,
+  "sqlite_integrity": "ok for all five databases",
+  "database_rows_including_seeds": 49,
+  "archive_members_including_seeds": 45,
+  "credential_review": "Explicit account-field allowlists; native context limited to instructions/prompts/usage; text and SQLite credential-pattern scans passed. No credentials intentionally preserved.",
+  "native_contexts_verified": 44,
+  "tests": 36,
+  "test_result": "pass",
+  "remote_verification": "Performed after commit/push; commit cannot contain its own hash."
+}

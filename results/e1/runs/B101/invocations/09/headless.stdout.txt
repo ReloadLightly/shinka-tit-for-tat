@@ -1,0 +1,16 @@
+<NAME>
+tit_for_tat
+</NAME>
+
+<DESCRIPTION>
+Opens cooperatively to establish the mutually beneficial (0,0) outcome, then mirrors the opponent’s prior action. This preserves cooperation with cooperative strategies while immediately responding to defection.
+</DESCRIPTION>
+
+<CODE>
+```python
+# EVOLVE-BLOCK-START
+def policy(own_history, opponent_history):
+    return 0 if len(opponent_history) == 0 else opponent_history[-1]
+# EVOLVE-BLOCK-END
+```
+{"usage":{"agent":"codex","provider":"openai","model":"gpt-5.6-terra","inputTokens":813,"cacheReadTokens":4864,"cacheWriteTokens":0,"outputTokens":388,"reasoningOutputTokens":278,"totalTokens":6065,"usageStatus":"reported","cost":{"input":0.001626,"cacheRead":0.0009728,"cacheWrite":0,"output":0.004656,"total":0.0072548},"costBasis":"api-list-price-estimate","pricingSource":"models.dev","pricingStatus":"priced"}}

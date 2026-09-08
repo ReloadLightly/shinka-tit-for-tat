@@ -1,0 +1,6 @@
+{
+  "/tmp/shinka-upstream/examples/sine_approx_headless/run_evo.py": "ea550532f48daf5d465ac78f2e8aa3adf93f61e564bf0ff7bb41a8e5e74ec80c",
+  ".venv/lib/python3.13/site-packages/shinka/llm/providers/headless.py": "c9a5295c615eb9dd2b6dfc353b1f6ca08dcbfb3536582f39dcad048ee6a8693f",
+  ".venv/lib/python3.13/site-packages/shinka/core/async_runner.py": "153a6e1b9a7bdb673767bd3109de085c2f4e60cae07a0107858c5318f7557fed",
+  ".venv/lib/python3.13/site-packages/shinka/core/sampler.py": "cdfa7fcbe0d3be09a0901f972ca579628074b87df34224d4549bb03bd758e29d"
+}

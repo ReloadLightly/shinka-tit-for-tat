@@ -1,0 +1,13 @@
+<NAME>
+forgiving_opening_tft
+</NAME>
+<DESCRIPTION>
+Cooperate on the first two turns, then mirror the opponent’s previous action. This preserves mutual cooperation with cooperative opponents while repairing interactions with opponents that begin with a single defensive defection; the one additional opening cooperation has negligible cost against persistent defectors in long matches.
+</DESCRIPTION>
+<CODE>
+```python
+# EVOLVE-BLOCK-START
+def policy(own_history, opponent_history):
+    return 0 if len(opponent_history) < 2 else opponent_history[-1]
+# EVOLVE-BLOCK-END
+```

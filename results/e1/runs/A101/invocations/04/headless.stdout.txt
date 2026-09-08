@@ -1,0 +1,17 @@
+<NAME>
+win_stay_lose_shift
+</NAME>
+
+<DESCRIPTION>
+Uses Pavlov / win-stay-lose-shift: repeat after mutually cooperating or successfully exploiting, and switch after being exploited or mutual defection. It preserves cooperation with reciprocal opponents while exploiting unconditional cooperators more effectively.
+</DESCRIPTION>
+
+<CODE>
+```python
+# EVOLVE-BLOCK-START
+def policy(own_history, opponent_history):
+    return 0 if len(own_history) == 0 else (0 if own_history[-1] == opponent_history[-1] else 1)
+# EVOLVE-BLOCK-END
+```
+</CODE>
+{"usage":{"agent":"codex","provider":"openai","model":"gpt-5.6-terra","inputTokens":979,"cacheReadTokens":4864,"cacheWriteTokens":0,"outputTokens":480,"reasoningOutputTokens":344,"totalTokens":6323,"usageStatus":"reported","cost":{"input":0.001958,"cacheRead":0.0009728,"cacheWrite":0,"output":0.00576,"total":0.0086908},"costBasis":"api-list-price-estimate","pricingSource":"models.dev","pricingStatus":"priced"}}

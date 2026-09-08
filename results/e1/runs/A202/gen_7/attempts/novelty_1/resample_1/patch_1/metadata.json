@@ -1,0 +1,15 @@
+{
+  "generation": 7,
+  "novelty_attempt": 1,
+  "resample_attempt": 1,
+  "patch_attempt": 1,
+  "success": true,
+  "num_applied": 1,
+  "patch_name": "periodic_exploiter",
+  "patch_description": "Extends the existing tit-for-tat policy with exploitation of mixed repeating cycles through length 8. It preserves cooperation with consistently cooperative opponents and retaliation against defectors, while defecting against predictable periodic patterns.",
+  "error_msg": null,
+  "timestamp": "2026-09-08T11:11:05.120160",
+  "llm_cost": 0.0187448,
+  "llm_model": "headless/codex@gpt-5.6-terra?effort=low",
+  "headless_prompt_path": "/home/roland/actir/shinka-tit-for-tat/results/e1/runs/A202/gen_7/attempts/novelty_1/resample_1/patch_1/headless_prompt.md"
+}

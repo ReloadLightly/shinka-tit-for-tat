@@ -1,0 +1,5 @@
+{"type":"thread.started","thread_id":"01a08044-70cc-77f1-91b0-5633d575cd14"}
+{"type":"item.completed","item":{"id":"item_0","type":"error","message":"Code Mode is unavailable because code-mode host is disabled. Code mode will fail closed; enable `features.code_mode_host` and install `codex-code-mode-host`."}}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_1","type":"agent_message","text":"<NAME>\ntit_for_tat\n</NAME>\n\n<DESCRIPTION>\nCooperate initially to establish mutual cooperation, then mirror the opponent’s most recent move. This maintains the 3-point cooperative outcome with cooperative opponents while promptly responding to defection.\n</DESCRIPTION>\n\n<CODE>\n```python\n# EVOLVE-BLOCK-START\ndef policy(own_history, opponent_history):\n    return 0 if len(opponent_history) == 0 else opponent_history[-1]\n# EVOLVE-BLOCK-END\n```"}}
+{"type":"turn.completed","usage":{"input_tokens":5677,"cached_input_tokens":4864,"cache_write_input_tokens":0,"output_tokens":309,"reasoning_output_tokens":201}}

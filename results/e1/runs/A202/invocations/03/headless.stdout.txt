@@ -1,0 +1,16 @@
+<NAME>
+periodic_breaker
+</NAME>
+
+<DESCRIPTION>
+Extends the existing alternating-pattern response to also exploit non-constant three-round periodic opponents, while retaining cooperation initially and last-action matching for responsive opponents.
+</DESCRIPTION>
+
+<CODE>
+```python
+# EVOLVE-BLOCK-START
+def policy(own_history, opponent_history):
+    return 0 if len(opponent_history) == 0 else 1 if len(opponent_history) >= 4 and opponent_history[-4:-2] == opponent_history[-2:] and opponent_history[-1] != opponent_history[-2] else 1 if len(opponent_history) >= 6 and opponent_history[-6:-3] == opponent_history[-3:] and sum(opponent_history[-3:]) > 0 and sum(opponent_history[-3:]) < 3 else opponent_history[-1]
+# EVOLVE-BLOCK-END
+```
+{"usage":{"agent":"codex","provider":"openai","model":"gpt-5.6-terra","inputTokens":952,"cacheReadTokens":4864,"cacheWriteTokens":0,"outputTokens":1577,"reasoningOutputTokens":1386,"totalTokens":7393,"usageStatus":"reported","cost":{"input":0.001904,"cacheRead":0.0009728,"cacheWrite":0,"output":0.018924,"total":0.0218008},"costBasis":"api-list-price-estimate","pricingSource":"models.dev","pricingStatus":"priced"}}

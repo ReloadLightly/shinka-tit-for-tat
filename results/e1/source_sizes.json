@@ -1,0 +1,198 @@
+{
+  "results/e1/runs/A202/gen_3/main.py": {
+    "source_bytes": 451,
+    "ast_nodes": 133
+  },
+  "results/e1/runs/A202/gen_2/main.py": {
+    "source_bytes": 291,
+    "ast_nodes": 72
+  },
+  "results/e1/runs/A202/gen_8/main.py": {
+    "source_bytes": 935,
+    "ast_nodes": 316
+  },
+  "results/e1/runs/A202/gen_5/main.py": {
+    "source_bytes": 935,
+    "ast_nodes": 316
+  },
+  "results/e1/runs/A202/gen_1/main.py": {
+    "source_bytes": 152,
+    "ast_nodes": 23
+  },
+  "results/e1/runs/A202/gen_0/main.py": {
+    "source_bytes": 96,
+    "ast_nodes": 7
+  },
+  "results/e1/runs/A202/gen_7/main.py": {
+    "source_bytes": 1259,
+    "ast_nodes": 438
+  },
+  "results/e1/runs/A202/gen_4/main.py": {
+    "source_bytes": 611,
+    "ast_nodes": 194
+  },
+  "results/e1/runs/A202/gen_6/main.py": {
+    "source_bytes": 1033,
+    "ast_nodes": 350
+  },
+  "results/e1/runs/A202/gen_9/main.py": {
+    "source_bytes": 1158,
+    "ast_nodes": 394
+  },
+  "results/e1/runs/A202/gen_10/main.py": {
+    "source_bytes": 852,
+    "ast_nodes": 280
+  },
+  "results/e1/runs/A101/gen_3/main.py": {
+    "source_bytes": 374,
+    "ast_nodes": 94
+  },
+  "results/e1/runs/A101/gen_2/main.py": {
+    "source_bytes": 427,
+    "ast_nodes": 122
+  },
+  "results/e1/runs/A101/gen_8/main.py": {
+    "source_bytes": 200,
+    "ast_nodes": 41
+  },
+  "results/e1/runs/A101/gen_5/main.py": {
+    "source_bytes": 152,
+    "ast_nodes": 23
+  },
+  "results/e1/runs/A101/gen_1/main.py": {
+    "source_bytes": 152,
+    "ast_nodes": 23
+  },
+  "results/e1/runs/A101/gen_0/main.py": {
+    "source_bytes": 96,
+    "ast_nodes": 7
+  },
+  "results/e1/runs/A101/gen_7/main.py": {
+    "source_bytes": 212,
+    "ast_nodes": 50
+  },
+  "results/e1/runs/A101/gen_4/main.py": {
+    "source_bytes": 180,
+    "ast_nodes": 35
+  },
+  "results/e1/runs/A101/gen_6/main.py": {
+    "source_bytes": 287,
+    "ast_nodes": 46
+  },
+  "results/e1/runs/A101/gen_9/main.py": {
+    "source_bytes": 151,
+    "ast_nodes": 23
+  },
+  "results/e1/runs/A101/gen_10/main.py": {
+    "source_bytes": 310,
+    "ast_nodes": 73
+  },
+  "results/e1/runs/B202/gen_3/main.py": {
+    "source_bytes": 152,
+    "ast_nodes": 23
+  },
+  "results/e1/runs/B202/gen_2/main.py": {
+    "source_bytes": 167,
+    "ast_nodes": 24
+  },
+  "results/e1/runs/B202/gen_8/main.py": {
+    "source_bytes": 152,
+    "ast_nodes": 23
+  },
+  "results/e1/runs/B202/gen_5/main.py": {
+    "source_bytes": 215,
+    "ast_nodes": 42
+  },
+  "results/e1/runs/B202/gen_1/main.py": {
+    "source_bytes": 317,
+    "ast_nodes": 75
+  },
+  "results/e1/runs/B202/gen_0/main.py": {
+    "source_bytes": 96,
+    "ast_nodes": 7
+  },
+  "results/e1/runs/B202/gen_7/main.py": {
+    "source_bytes": 219,
+    "ast_nodes": 35
+  },
+  "results/e1/runs/B202/gen_4/main.py": {
+    "source_bytes": 255,
+    "ast_nodes": 43
+  },
+  "results/e1/runs/B202/gen_6/main.py": {
+    "source_bytes": 152,
+    "ast_nodes": 23
+  },
+  "results/e1/runs/B202/gen_9/main.py": {
+    "source_bytes": 259,
+    "ast_nodes": 57
+  },
+  "results/e1/runs/B202/gen_10/main.py": {
+    "source_bytes": 152,
+    "ast_nodes": 23
+  },
+  "results/e1/runs/B101/gen_3/main.py": {
+    "source_bytes": 375,
+    "ast_nodes": 67
+  },
+  "results/e1/runs/B101/gen_2/main.py": {
+    "source_bytes": 167,
+    "ast_nodes": 24
+  },
+  "results/e1/runs/B101/gen_8/main.py": {
+    "source_bytes": 167,
+    "ast_nodes": 24
+  },
+  "results/e1/runs/B101/gen_5/main.py": {
+    "source_bytes": 167,
+    "ast_nodes": 24
+  },
+  "results/e1/runs/B101/gen_1/main.py": {
+    "source_bytes": 152,
+    "ast_nodes": 23
+  },
+  "results/e1/runs/B101/gen_0/main.py": {
+    "source_bytes": 96,
+    "ast_nodes": 7
+  },
+  "results/e1/runs/B101/gen_7/main.py": {
+    "source_bytes": 152,
+    "ast_nodes": 23
+  },
+  "results/e1/runs/B101/gen_4/main.py": {
+    "source_bytes": 152,
+    "ast_nodes": 23
+  },
+  "results/e1/runs/B101/gen_6/main.py": {
+    "source_bytes": 152,
+    "ast_nodes": 23
+  },
+  "results/e1/runs/B101/gen_9/main.py": {
+    "source_bytes": 152,
+    "ast_nodes": 23
+  },
+  "results/e1/runs/B101/gen_10/main.py": {
+    "source_bytes": 232,
+    "ast_nodes": 51
+  },
+  "results/e1/runs/A303/gen_3/main.py": {
+    "source_bytes": 231,
+    "ast_nodes": 46
+  },
+  "results/e1/runs/A303/gen_2/main.py": {
+    "source_bytes": 375,
+    "ast_nodes": 79
+  },
+  "results/e1/runs/A303/gen_1/main.py": {
+    "source_bytes": 167,
+    "ast_nodes": 24
+  },
+  "results/e1/runs/A303/gen_0/main.py": {
+    "source_bytes": 96,
+    "ast_nodes": 7
+  },
+  "results/e1/runs/A303/gen_4/main.py": {
+    "source_bytes": 517,
+    "ast_nodes": 134
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "status": "blocked_before_external_launch",
+  "external_proposal_invocation": false,
+  "reason": "Subscription metadata request timed out",
+  "actual_native_prompt_copy_source": "results/e1/runs/A303/headless_prompts/prompt_46e9e7cc80354684a82dd93de52a3703.md",
+  "prompt_verified_against_recorded_context": true
+}

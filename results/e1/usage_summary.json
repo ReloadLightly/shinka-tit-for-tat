@@ -1,0 +1,122 @@
+{
+  "generated_utc": "2026-09-08T09:24:04.848455+00:00",
+  "runs": {
+    "A101": {
+      "external_invocations": 10,
+      "completed_codex_turn_events": 10,
+      "native_model_response_records": 10,
+      "tokens": {
+        "input_tokens": 57751,
+        "cached_input_tokens": 14592,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 8283,
+        "reasoning_output_tokens": 6774,
+        "total_tokens": 66034
+      },
+      "codex_runtime_seconds": 285.53879609593423,
+      "tool_calls_observed": 0,
+      "tool_calls": [],
+      "fresh_unique_threads": 10,
+      "thread_count": 10
+    },
+    "B101": {
+      "external_invocations": 10,
+      "completed_codex_turn_events": 10,
+      "native_model_response_records": 10,
+      "tokens": {
+        "input_tokens": 56770,
+        "cached_input_tokens": 29184,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7196,
+        "reasoning_output_tokens": 6016,
+        "total_tokens": 63966
+      },
+      "codex_runtime_seconds": 268.44750275899423,
+      "tool_calls_observed": 0,
+      "tool_calls": [],
+      "fresh_unique_threads": 10,
+      "thread_count": 10
+    },
+    "B202": {
+      "external_invocations": 10,
+      "completed_codex_turn_events": 10,
+      "native_model_response_records": 10,
+      "tokens": {
+        "input_tokens": 56770,
+        "cached_input_tokens": 29184,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 6447,
+        "reasoning_output_tokens": 5193,
+        "total_tokens": 63217
+      },
+      "codex_runtime_seconds": 253.34333687199978,
+      "tool_calls_observed": 0,
+      "tool_calls": [],
+      "fresh_unique_threads": 10,
+      "thread_count": 10
+    },
+    "A202": {
+      "external_invocations": 10,
+      "completed_codex_turn_events": 10,
+      "native_model_response_records": 10,
+      "tokens": {
+        "input_tokens": 59985,
+        "cached_input_tokens": 49664,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 11866,
+        "reasoning_output_tokens": 8842,
+        "total_tokens": 71851
+      },
+      "codex_runtime_seconds": 336.6478012908483,
+      "tool_calls_observed": 0,
+      "tool_calls": [],
+      "fresh_unique_threads": 10,
+      "thread_count": 10
+    },
+    "A303": {
+      "external_invocations": 4,
+      "completed_codex_turn_events": 4,
+      "native_model_response_records": 4,
+      "tokens": {
+        "input_tokens": 23020,
+        "cached_input_tokens": 14592,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 5247,
+        "reasoning_output_tokens": 4569,
+        "total_tokens": 28267
+      },
+      "codex_runtime_seconds": 160.10034264391288,
+      "tool_calls_observed": 0,
+      "tool_calls": [],
+      "fresh_unique_threads": 4,
+      "thread_count": 4
+    },
+    "B303": {
+      "external_invocations": 0,
+      "completed_codex_turn_events": 0,
+      "native_model_response_records": 0,
+      "tokens": {},
+      "codex_runtime_seconds": 0,
+      "tool_calls_observed": 0,
+      "tool_calls": [],
+      "fresh_unique_threads": 0,
+      "thread_count": 0
+    }
+  },
+  "tokens": {
+    "input_tokens": 254296,
+    "cached_input_tokens": 137216,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 39039,
+    "reasoning_output_tokens": 31394,
+    "total_tokens": 293335
+  },
+  "unique_native_threads": 44,
+  "native_base_and_permissions_match_local_fixture": true,
+  "native_user_messages_match_recorded_prompts": true,
+  "external_invocations": 44,
+  "native_model_response_records": 44,
+  "completed_codex_turn_events": 44,
+  "codex_runtime_seconds": 1304.0777796616894,
+  "semantics": "One invocation may contain multiple model requests. Native response records count available model usage records; completed Codex turns are separate. Cached input and reasoning output are subsets, not additional tokens."
+}

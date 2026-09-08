@@ -1,0 +1,15 @@
+<NAME>
+probe_forgive</NAME>
+
+<DESCRIPTION>
+Cooperate initially, then make a single probe against opponents that have never defected. If they retaliate once, forgive to restore cooperation; if they defect repeatedly, switch to defection. This preserves mutual cooperation with reciprocal opponents while exploiting unconditional cooperators.
+</DESCRIPTION>
+
+<CODE>
+```python
+# EVOLVE-BLOCK-START
+def policy(own_history, opponent_history):
+    return 0 if len(opponent_history) == 0 else (1 if opponent_history.count(1) == 0 and len(opponent_history) % 20 == 0 else (1 if len(opponent_history) > 1 and opponent_history[-1] == 1 and opponent_history[-2] == 1 else 0))
+# EVOLVE-BLOCK-END
+```
+{"usage":{"agent":"codex","provider":"openai","model":"gpt-5.6-terra","inputTokens":5778,"cacheReadTokens":0,"cacheWriteTokens":0,"outputTokens":1210,"reasoningOutputTokens":1034,"totalTokens":6988,"usageStatus":"reported","cost":{"input":0.011556,"cacheRead":0,"cacheWrite":0,"output":0.01452,"total":0.026076},"costBasis":"api-list-price-estimate","pricingSource":"models.dev","pricingStatus":"priced"}}

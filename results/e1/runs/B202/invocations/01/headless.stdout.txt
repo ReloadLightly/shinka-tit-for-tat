@@ -1,0 +1,16 @@
+<NAME>
+cautious_exploiter
+</NAME>
+
+<DESCRIPTION>
+Cooperates initially to preserve mutual-cooperation payoffs, mirrors recent defection, and occasionally tests long-standing cooperation. If the opponent continues cooperating after a test, it exploits them; if they retaliate, it returns to cooperation.
+</DESCRIPTION>
+
+<CODE>
+```python
+# EVOLVE-BLOCK-START
+def policy(own_history, opponent_history):
+    return 0 if len(opponent_history) == 0 else (0 if opponent_history[-1] == 1 else (1 if (len(opponent_history) % 31 == 0 and opponent_history.count(1) == 0) or (own_history.count(1) > 0 and opponent_history.count(1) == 0) else 0))
+# EVOLVE-BLOCK-END
+```
+{"usage":{"agent":"codex","provider":"openai","model":"gpt-5.6-terra","inputTokens":813,"cacheReadTokens":4864,"cacheWriteTokens":0,"outputTokens":697,"reasoningOutputTokens":516,"totalTokens":6374,"usageStatus":"reported","cost":{"input":0.001626,"cacheRead":0.0009728,"cacheWrite":0,"output":0.008364,"total":0.0109628},"costBasis":"api-list-price-estimate","pricingSource":"models.dev","pricingStatus":"priced"}}

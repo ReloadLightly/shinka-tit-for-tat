@@ -1,0 +1,15 @@
+{
+  "generation": 2,
+  "novelty_attempt": 1,
+  "resample_attempt": 1,
+  "patch_attempt": 1,
+  "success": true,
+  "num_applied": 1,
+  "patch_name": "alternator_exploiter",
+  "patch_description": "Keeps tit-for-tat behavior by default, preserving cooperation with reciprocal opponents. When the opponent\u2019s last four actions are strictly alternating, it defects to exploit predictable alternators rather than continuing the lower-payoff lagged cycle.",
+  "error_msg": null,
+  "timestamp": "2026-09-08T11:07:57.184686",
+  "llm_cost": 0.0228368,
+  "llm_model": "headless/codex@gpt-5.6-terra?effort=low",
+  "headless_prompt_path": "/home/roland/actir/shinka-tit-for-tat/results/e1/runs/A202/gen_2/attempts/novelty_1/resample_1/patch_1/headless_prompt.md"
+}

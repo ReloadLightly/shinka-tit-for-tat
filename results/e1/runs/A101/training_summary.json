@@ -1,0 +1,105 @@
+{
+  "run_id": "A101",
+  "records": [
+    {
+      "slot": 0,
+      "source": "results/e1/runs/A101/gen_0/main.py",
+      "sha256": "f83fb4c8ffc3313079ff6fa09bef89da8b6ed67d8f604a414c3493d97ba9a32b",
+      "correct": true,
+      "error": null,
+      "training": 2.3310772701635645
+    },
+    {
+      "slot": 1,
+      "source": "results/e1/runs/A101/gen_1/main.py",
+      "sha256": "f10d41828a82b0716d21b12e3d60d2102411c4e51c935a7aa9d75a9658be4cb5",
+      "correct": true,
+      "error": null,
+      "training": 2.5362380146644106
+    },
+    {
+      "slot": 2,
+      "source": "results/e1/runs/A101/gen_2/main.py",
+      "sha256": "cc226868a22cb4d6ca64d5bc7960ae0b5e236896b898f30834b135637e2bdf31",
+      "correct": true,
+      "error": null,
+      "training": 2.095600676818951
+    },
+    {
+      "slot": 3,
+      "source": "results/e1/runs/A101/gen_3/main.py",
+      "sha256": "2b5716de09dae25ab362f034fbcfe5ee807a646c7725d8ce24ca50e4595e27fb",
+      "correct": true,
+      "error": null,
+      "training": 2.459249858996052
+    },
+    {
+      "slot": 4,
+      "source": "results/e1/runs/A101/gen_4/main.py",
+      "sha256": "211a749f7569233a092409be74971d4b07b63197b47b5fda3bfc9ab9a5f4ebd9",
+      "correct": true,
+      "error": null,
+      "training": 2.4510716300056403
+    },
+    {
+      "slot": 5,
+      "source": "results/e1/runs/A101/gen_5/main.py",
+      "sha256": "f10d41828a82b0716d21b12e3d60d2102411c4e51c935a7aa9d75a9658be4cb5",
+      "correct": true,
+      "error": null,
+      "training": 2.5362380146644106
+    },
+    {
+      "slot": 6,
+      "source": "results/e1/runs/A101/gen_6/main.py",
+      "sha256": "02bcb8966d48406af9862aa43739431efa507485ba1f21cf24bed763a5d77382",
+      "correct": true,
+      "error": null,
+      "training": 2.3195149464185
+    },
+    {
+      "slot": 7,
+      "source": "results/e1/runs/A101/gen_7/main.py",
+      "sha256": "6c32efba7080ada4734092c000d5eedbd49ca2f7954137dc21c9c4217566c17a",
+      "correct": true,
+      "error": null,
+      "training": 2.5362380146644106
+    },
+    {
+      "slot": 8,
+      "source": "results/e1/runs/A101/gen_8/main.py",
+      "sha256": "2c4289ee70df2a6f8eac682ebc8313d21f1a61482a08e20b8d2722674046f42c",
+      "correct": true,
+      "error": null,
+      "training": 2.4740552735476595
+    },
+    {
+      "slot": 9,
+      "source": "results/e1/runs/A101/gen_9/main.py",
+      "sha256": "ed0611ce7dbef9eb29f49a60b8290fe402a8e81023452e15395f7cdf26a48b63",
+      "correct": true,
+      "error": null,
+      "training": 2.535109983079526
+    },
+    {
+      "slot": 10,
+      "source": "results/e1/runs/A101/gen_10/main.py",
+      "sha256": "9dff65bb486399c5e18836df2cf5a2b51bcfc0cc69a443fae2623bbbefcad490",
+      "correct": true,
+      "error": null,
+      "training": 1.958262831359278
+    }
+  ],
+  "training_selected": {
+    "slot": 1,
+    "source": "results/e1/runs/A101/gen_1/main.py",
+    "sha256": "f10d41828a82b0716d21b12e3d60d2102411c4e51c935a7aa9d75a9658be4cb5",
+    "correct": true,
+    "error": null,
+    "training": 2.5362380146644106
+  },
+  "runtime_seconds": 328.21016496402444,
+  "finished_utc": "2026-09-08T08:55:35.789117+00:00",
+  "shinka_completed_generations": 11,
+  "headless_list_price_estimate_not_charge": 0.18863239999999998
+}

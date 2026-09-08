@@ -1,0 +1,15 @@
+{
+  "generation": 4,
+  "novelty_attempt": 1,
+  "resample_attempt": 1,
+  "patch_attempt": 1,
+  "success": true,
+  "num_applied": 1,
+  "patch_name": "cycle_aware_tft",
+  "patch_description": "Keeps the cooperative mirror baseline while extending exploitation of stable mixed opponent cycles to period four. This can improve payoff against predictable cyclic policies without changing behavior against ordinary non-cyclic opponents.",
+  "error_msg": null,
+  "timestamp": "2026-09-08T11:09:19.374721",
+  "llm_cost": 0.0122208,
+  "llm_model": "headless/codex@gpt-5.6-terra?effort=low",
+  "headless_prompt_path": "/home/roland/actir/shinka-tit-for-tat/results/e1/runs/A202/gen_4/attempts/novelty_1/resample_1/patch_1/headless_prompt.md"
+}

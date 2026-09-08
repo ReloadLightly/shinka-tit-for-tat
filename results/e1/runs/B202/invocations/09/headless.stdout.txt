@@ -1,0 +1,16 @@
+<NAME>
+probe_reconcile
+</NAME>
+
+<DESCRIPTION>
+Defect initially to exploit unconditional cooperation. If the opponent retaliates exactly once, cooperate once to restore mutual cooperation with reciprocal opponents, then mirror thereafter.
+</DESCRIPTION>
+
+<CODE>
+```python
+# EVOLVE-BLOCK-START
+def policy(own_history, opponent_history):
+    return 1 if len(opponent_history) == 0 or opponent_history.count(1) == 0 else (0 if opponent_history[-1] == 1 and opponent_history.count(1) == 1 else opponent_history[-1])
+# EVOLVE-BLOCK-END
+```
+{"usage":{"agent":"codex","provider":"openai","model":"gpt-5.6-terra","inputTokens":813,"cacheReadTokens":4864,"cacheWriteTokens":0,"outputTokens":1029,"reasoningOutputTokens":895,"totalTokens":6706,"usageStatus":"reported","cost":{"input":0.001626,"cacheRead":0.0009728,"cacheWrite":0,"output":0.012348,"total":0.0149468},"costBasis":"api-list-price-estimate","pricingSource":"models.dev","pricingStatus":"priced"}}

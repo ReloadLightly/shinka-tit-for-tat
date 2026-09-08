@@ -1,0 +1,23 @@
+<NAME>
+cooperator_probe
+</NAME>
+
+<DESCRIPTION>
+Cooperates initially and uses tit-for-tat by default. After three cooperative opponent moves, it probes once with defection: it exploits unconditional cooperators thereafter, while immediately repairing cooperation if the opponent retaliates.
+</DESCRIPTION>
+
+<CODE>
+```python
+# EVOLVE-BLOCK-START
+def policy(own_history, opponent_history):
+    if len(opponent_history) == 0:
+        return 0
+    if opponent_history.count(1) == 0:
+        return 0 if len(opponent_history) < 3 else 1
+    if opponent_history.count(1) == 1 and own_history.count(1) == 1 and opponent_history[-1] == 1:
+        return 0
+    return opponent_history[-1]
+# EVOLVE-BLOCK-END
+```
+</CODE>
+{"usage":{"agent":"codex","provider":"openai","model":"gpt-5.6-terra","inputTokens":904,"cacheReadTokens":4864,"cacheWriteTokens":0,"outputTokens":1073,"reasoningOutputTokens":885,"totalTokens":6841,"usageStatus":"reported","cost":{"input":0.001808,"cacheRead":0.0009728,"cacheWrite":0,"output":0.012876,"total":0.0156568},"costBasis":"api-list-price-estimate","pricingSource":"models.dev","pricingStatus":"priced"}}

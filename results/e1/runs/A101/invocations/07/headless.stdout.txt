@@ -1,0 +1,16 @@
+<NAME>
+win_stay_lose_shift
+</NAME>
+
+<DESCRIPTION>
+Uses a win-stay, lose-shift strategy: begin cooperatively, retain the previous action after matching actions, and switch after mismatches. This preserves mutual cooperation while responding more effectively to exploitable or alternating opponents than simple tit-for-tat.
+</DESCRIPTION>
+
+<CODE>
+```python
+# EVOLVE-BLOCK-START
+def policy(own_history, opponent_history):
+    return 0 if len(own_history) == 0 else (own_history[-1] if own_history[-1] == opponent_history[-1] else 1 - own_history[-1])
+# EVOLVE-BLOCK-END
+```
+{"usage":{"agent":"codex","provider":"openai","model":"gpt-5.6-terra","inputTokens":5778,"cacheReadTokens":0,"cacheWriteTokens":0,"outputTokens":474,"reasoningOutputTokens":327,"totalTokens":6252,"usageStatus":"reported","cost":{"input":0.011556,"cacheRead":0,"cacheWrite":0,"output":0.005688,"total":0.017244},"costBasis":"api-list-price-estimate","pricingSource":"models.dev","pricingStatus":"priced"}}

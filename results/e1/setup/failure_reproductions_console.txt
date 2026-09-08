@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/home/roland/actir/shinka-tit-for-tat/diagnose_e1_failures.py", line 100, in <module>
+    result = checks()
+  File "/home/roland/actir/shinka-tit-for-tat/diagnose_e1_failures.py", line 90, in checks
+    "metadata_reader": check_buffered_metadata(), "evaluation_timer": check_evaluation_clock(),
+                                                                      ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/roland/actir/shinka-tit-for-tat/diagnose_e1_failures.py", line 69, in check_evaluation_clock
+    process.poll.return_value = None
+    ^^^^^^^^^^^^
+  File "/home/roland/.local/share/uv/python/cpython-3.13-linux-x86_64-gnu/lib/python3.13/unittest/mock.py", line 690, in __getattr__
+    raise AttributeError("Mock object has no attribute %r" % name)
+AttributeError: Mock object has no attribute 'poll'

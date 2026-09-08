@@ -1,0 +1,13 @@
+<NAME>
+tit_for_tat
+</NAME>
+<DESCRIPTION>
+Cooperate initially to establish mutual cooperation, then mirror the opponent’s most recent move. This maintains the 3-point cooperative outcome with cooperative opponents while promptly responding to defection.
+</DESCRIPTION>
+<CODE>
+```python
+# EVOLVE-BLOCK-START
+def policy(own_history, opponent_history):
+    return 0 if len(opponent_history) == 0 else opponent_history[-1]
+# EVOLVE-BLOCK-END
+```

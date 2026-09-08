@@ -1,0 +1,13 @@
+<NAME>
+forgiving_reciprocal
+</NAME>
+<DESCRIPTION>
+Defect initially to exploit unconditional cooperation, then cooperate when the opponent has cooperated in either of the two most recent rounds. This restores mutual cooperation quickly after a single retaliatory response while defecting against persistent defectors.
+</DESCRIPTION>
+<CODE>
+```python
+# EVOLVE-BLOCK-START
+def policy(own_history, opponent_history):
+    return 1 if len(opponent_history) == 0 else (0 if opponent_history[-1] == 0 or (len(opponent_history) > 1 and opponent_history[-2] == 0) else 1)
+# EVOLVE-BLOCK-END
+```

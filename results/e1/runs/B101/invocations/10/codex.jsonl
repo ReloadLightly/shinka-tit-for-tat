@@ -1,0 +1,5 @@
+{"type":"thread.started","thread_id":"01a0803f-8a62-7d01-8de6-0c83356e88eb"}
+{"type":"item.completed","item":{"id":"item_0","type":"error","message":"Code Mode is unavailable because code-mode host is disabled. Code mode will fail closed; enable `features.code_mode_host` and install `codex-code-mode-host`."}}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_1","type":"agent_message","text":"<NAME>\nforgiving_reciprocal\n</NAME>\n\n<DESCRIPTION>\nDefect initially to exploit unconditional cooperation, then cooperate when the opponent has cooperated in either of the two most recent rounds. This restores mutual cooperation quickly after a single retaliatory response while defecting against persistent defectors.\n</DESCRIPTION>\n\n<CODE>\n```python\n# EVOLVE-BLOCK-START\ndef policy(own_history, opponent_history):\n    return 1 if len(opponent_history) == 0 else (0 if opponent_history[-1] == 0 or (len(opponent_history) > 1 and opponent_history[-2] == 0) else 1)\n# EVOLVE-BLOCK-END\n```"}}
+{"type":"turn.completed","usage":{"input_tokens":5677,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":665,"reasoning_output_tokens":516}}

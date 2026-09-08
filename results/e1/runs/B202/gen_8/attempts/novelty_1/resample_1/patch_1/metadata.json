@@ -1,0 +1,15 @@
+{
+  "generation": 8,
+  "novelty_attempt": 1,
+  "resample_attempt": 1,
+  "patch_attempt": 1,
+  "success": true,
+  "num_applied": 1,
+  "patch_name": "tit_for_tat",
+  "patch_description": "Cooperate initially to enable mutual-cooperation payoff, then mirror the opponent\u2019s most recent action. This is robust against persistent defection while rewarding cooperative and reciprocal opponents.",
+  "error_msg": null,
+  "timestamp": "2026-09-08T11:05:17.466305",
+  "llm_cost": 0.020654,
+  "llm_model": "headless/codex@gpt-5.6-terra?effort=low",
+  "headless_prompt_path": "/home/roland/actir/shinka-tit-for-tat/results/e1/runs/B202/gen_8/attempts/novelty_1/resample_1/patch_1/headless_prompt.md"
+}

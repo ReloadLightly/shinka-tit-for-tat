@@ -1,0 +1,15 @@
+{
+  "generation": 8,
+  "novelty_attempt": 1,
+  "resample_attempt": 1,
+  "patch_attempt": 1,
+  "success": true,
+  "num_applied": 1,
+  "patch_name": "periodic_exploiter",
+  "patch_description": "Extends the current periodic-pattern detection to cycles up to length six, matching the stronger prior candidate. It cooperates initially and mirrors otherwise, while defecting against detectable non-uniform repeating opponent patterns.",
+  "error_msg": null,
+  "timestamp": "2026-09-08T11:11:22.790764",
+  "llm_cost": 0.0085048,
+  "llm_model": "headless/codex@gpt-5.6-terra?effort=low",
+  "headless_prompt_path": "/home/roland/actir/shinka-tit-for-tat/results/e1/runs/A202/gen_8/attempts/novelty_1/resample_1/patch_1/headless_prompt.md"
+}

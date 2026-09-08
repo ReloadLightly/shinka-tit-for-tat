@@ -1,0 +1,15 @@
+{
+  "generation": 4,
+  "novelty_attempt": 1,
+  "resample_attempt": 1,
+  "patch_attempt": 1,
+  "success": true,
+  "num_applied": 1,
+  "patch_name": "win_stay_lose_shift",
+  "patch_description": "Uses Pavlov / win-stay-lose-shift: repeat after mutually cooperating or successfully exploiting, and switch after being exploited or mutual defection. It preserves cooperation with reciprocal opponents while exploiting unconditional cooperators more effectively.",
+  "error_msg": null,
+  "timestamp": "2026-09-08T10:52:09.882054",
+  "llm_cost": 0.0086908,
+  "llm_model": "headless/codex@gpt-5.6-terra?effort=low",
+  "headless_prompt_path": "/home/roland/actir/shinka-tit-for-tat/results/e1/runs/A101/gen_4/attempts/novelty_1/resample_1/patch_1/headless_prompt.md"
+}

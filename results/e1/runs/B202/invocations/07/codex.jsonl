@@ -1,0 +1,5 @@
+{"type":"thread.started","thread_id":"01a08042-f7c9-7333-a8d8-d7c434edd9c1"}
+{"type":"item.completed","item":{"id":"item_0","type":"error","message":"Code Mode is unavailable because code-mode host is disabled. Code mode will fail closed; enable `features.code_mode_host` and install `codex-code-mode-host`."}}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_1","type":"agent_message","text":"<NAME>\nprobe_exploit_tft\n</NAME>\n\n<DESCRIPTION>\nCooperates initially to preserve mutual-cooperation outcomes, exploits opponents that have never defected, and otherwise mirrors the opponent’s latest action to discourage sustained defection.\n</DESCRIPTION>\n\n<CODE>\n```python\n# EVOLVE-BLOCK-START\ndef policy(own_history, opponent_history):\n    if len(opponent_history) == 0:\n        return 0\n    if sum(opponent_history) == 0:\n        return 1\n    return opponent_history[-1]\n# EVOLVE-BLOCK-END\n```"}}
+{"type":"turn.completed","usage":{"input_tokens":5677,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":464,"reasoning_output_tokens":337}}

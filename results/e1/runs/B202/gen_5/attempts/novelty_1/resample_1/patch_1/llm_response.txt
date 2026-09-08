@@ -1,0 +1,13 @@
+<NAME>
+probe_and_reciprocate
+</NAME>
+<DESCRIPTION>
+Opens cooperatively to establish mutual cooperation, reciprocates defections, and periodically tests consistently cooperative opponents. If a test is not punished, it exploits that opponent; if punished, it immediately returns to cooperation.
+</DESCRIPTION>
+<CODE>
+```python
+# EVOLVE-BLOCK-START
+def policy(own_history, opponent_history):
+    return 0 if len(opponent_history) == 0 else (1 if opponent_history[-1] == 1 else (1 if len(opponent_history) % 32 == 0 else 0))
+# EVOLVE-BLOCK-END
+```

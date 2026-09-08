@@ -1,0 +1,16 @@
+<NAME>
+cooperator_probe_tft
+</NAME>
+
+<DESCRIPTION>
+Adds a short cooperation probe: after three opponent cooperations, defect once, then forgive immediately. Persistent cooperators are exploited thereafter; retaliatory opponents recover to cooperative TFT behavior. Retains the prior periodic-pattern exploitation logic.
+</DESCRIPTION>
+
+<CODE>
+```python
+# EVOLVE-BLOCK-START
+def policy(own_history, opponent_history):
+    return 0 if len(opponent_history) == 0 else 0 if len(own_history) >= 2 and own_history[-2:] == (1, 0) and opponent_history[-1] == 1 else 0 if own_history[-1] == 1 and sum(opponent_history) == 0 else 1 if len(opponent_history) >= 3 and sum(opponent_history) == 0 else 1 if len(opponent_history) >= 4 and opponent_history[-4:-2] == opponent_history[-2:] and opponent_history[-1] != opponent_history[-2] else 1 if len(opponent_history) >= 6 and opponent_history[-6:-3] == opponent_history[-3:] and sum(opponent_history[-3:]) > 0 and sum(opponent_history[-3:]) < 3 else 1 if len(opponent_history) >= 8 and opponent_history[-8:-4] == opponent_history[-4:] and sum(opponent_history[-4:]) > 0 and sum(opponent_history[-4:]) < 4 else 1 if len(opponent_history) >= 10 and opponent_history[-10:-5] == opponent_history[-5:] and sum(opponent_history[-5:]) > 0 and sum(opponent_history[-5:]) < 5 else 1 if len(opponent_history) >= 12 and opponent_history[-12:-6] == opponent_history[-6:] and sum(opponent_history[-6:]) > 0 and sum(opponent_history[-6:]) < 6 else opponent_history[-1]
+# EVOLVE-BLOCK-END
+```
+{"usage":{"agent":"codex","provider":"openai","model":"gpt-5.6-terra","inputTokens":366,"cacheReadTokens":5888,"cacheWriteTokens":0,"outputTokens":2284,"reasoningOutputTokens":1852,"totalTokens":8538,"usageStatus":"reported","cost":{"input":0.000732,"cacheRead":0.0011776,"cacheWrite":0,"output":0.027408,"total":0.0293176},"costBasis":"api-list-price-estimate","pricingSource":"models.dev","pricingStatus":"priced"}}

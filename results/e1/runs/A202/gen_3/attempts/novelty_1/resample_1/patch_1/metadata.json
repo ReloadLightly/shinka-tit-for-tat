@@ -1,0 +1,15 @@
+{
+  "generation": 3,
+  "novelty_attempt": 1,
+  "resample_attempt": 1,
+  "patch_attempt": 1,
+  "success": true,
+  "num_applied": 1,
+  "patch_name": "periodic_breaker",
+  "patch_description": "Extends the existing alternating-pattern response to also exploit non-constant three-round periodic opponents, while retaining cooperation initially and last-action matching for responsive opponents.",
+  "error_msg": null,
+  "timestamp": "2026-09-08T11:08:44.655984",
+  "llm_cost": 0.0218008,
+  "llm_model": "headless/codex@gpt-5.6-terra?effort=low",
+  "headless_prompt_path": "/home/roland/actir/shinka-tit-for-tat/results/e1/runs/A202/gen_3/attempts/novelty_1/resample_1/patch_1/headless_prompt.md"
+}

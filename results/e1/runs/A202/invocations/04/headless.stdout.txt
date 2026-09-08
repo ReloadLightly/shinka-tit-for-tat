@@ -1,0 +1,16 @@
+<NAME>
+cycle_aware_tft
+</NAME>
+
+<DESCRIPTION>
+Keeps the cooperative mirror baseline while extending exploitation of stable mixed opponent cycles to period four. This can improve payoff against predictable cyclic policies without changing behavior against ordinary non-cyclic opponents.
+</DESCRIPTION>
+
+<CODE>
+```python
+# EVOLVE-BLOCK-START
+def policy(own_history, opponent_history):
+    return 0 if len(opponent_history) == 0 else 1 if len(opponent_history) >= 4 and opponent_history[-4:-2] == opponent_history[-2:] and opponent_history[-1] != opponent_history[-2] else 1 if len(opponent_history) >= 6 and opponent_history[-6:-3] == opponent_history[-3:] and sum(opponent_history[-3:]) > 0 and sum(opponent_history[-3:]) < 3 else 1 if len(opponent_history) >= 8 and opponent_history[-8:-4] == opponent_history[-4:] and sum(opponent_history[-4:]) > 0 and sum(opponent_history[-4:]) < 4 else opponent_history[-1]
+# EVOLVE-BLOCK-END
+```
+{"usage":{"agent":"codex","provider":"openai","model":"gpt-5.6-terra","inputTokens":1040,"cacheReadTokens":4864,"cacheWriteTokens":0,"outputTokens":764,"reasoningOutputTokens":516,"totalTokens":6668,"usageStatus":"reported","cost":{"input":0.00208,"cacheRead":0.0009728,"cacheWrite":0,"output":0.009168,"total":0.0122208},"costBasis":"api-list-price-estimate","pricingSource":"models.dev","pricingStatus":"priced"}}

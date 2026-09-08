@@ -1,0 +1,16 @@
+<NAME>
+forgiving_opening_tft
+</NAME>
+
+<DESCRIPTION>
+Cooperate on the first two turns, then mirror the opponent’s previous action. This preserves mutual cooperation with cooperative opponents while repairing interactions with opponents that begin with a single defensive defection; the one additional opening cooperation has negligible cost against persistent defectors in long matches.
+</DESCRIPTION>
+
+<CODE>
+```python
+# EVOLVE-BLOCK-START
+def policy(own_history, opponent_history):
+    return 0 if len(opponent_history) < 2 else opponent_history[-1]
+# EVOLVE-BLOCK-END
+```
+{"usage":{"agent":"codex","provider":"openai","model":"gpt-5.6-terra","inputTokens":5778,"cacheReadTokens":0,"cacheWriteTokens":0,"outputTokens":1142,"reasoningOutputTokens":1014,"totalTokens":6920,"usageStatus":"reported","cost":{"input":0.011556,"cacheRead":0,"cacheWrite":0,"output":0.013704,"total":0.02526},"costBasis":"api-list-price-estimate","pricingSource":"models.dev","pricingStatus":"priced"}}

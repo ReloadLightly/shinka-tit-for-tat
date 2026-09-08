@@ -1,0 +1,14 @@
+<NAME>
+win_stay_lose_shift
+</NAME>
+<DESCRIPTION>
+Uses Pavlov / win-stay-lose-shift: repeat after mutually cooperating or successfully exploiting, and switch after being exploited or mutual defection. It preserves cooperation with reciprocal opponents while exploiting unconditional cooperators more effectively.
+</DESCRIPTION>
+<CODE>
+```python
+# EVOLVE-BLOCK-START
+def policy(own_history, opponent_history):
+    return 0 if len(own_history) == 0 else (0 if own_history[-1] == opponent_history[-1] else 1)
+# EVOLVE-BLOCK-END
+```
+</CODE>

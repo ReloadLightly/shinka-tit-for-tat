@@ -1,0 +1,19 @@
+<NAME>
+conditional_cooperator
+</NAME>
+<DESCRIPTION>
+Begin cooperatively to enable mutual-payoff outcomes against reciprocal opponents, then exploit opponents that have consistently cooperated. Against persistent defection, defect as well to avoid repeated zero payoffs.
+</DESCRIPTION>
+<CODE>
+```python
+# EVOLVE-BLOCK-START
+def policy(own_history, opponent_history):
+    if len(opponent_history) == 0:
+        return 0
+    if opponent_history.count(1) == 0:
+        return 1
+    if opponent_history[-1] == 1:
+        return 1
+    return 0
+# EVOLVE-BLOCK-END
+```

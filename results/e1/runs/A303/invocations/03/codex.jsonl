@@ -1,0 +1,5 @@
+{"type":"thread.started","thread_id":"01a0804c-440e-7103-a101-1ac9b63c322c"}
+{"type":"item.completed","item":{"id":"item_0","type":"error","message":"Code Mode is unavailable because code-mode host is disabled. Code mode will fail closed; enable `features.code_mode_host` and install `codex-code-mode-host`."}}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_1","type":"agent_message","text":"<NAME>\nwin_stay_lose_shift\n</NAME>\n\n<DESCRIPTION>\nUses win-stay, lose-shift behavior: cooperate after mutually cooperative rounds or successful defections, and switch after receiving a poor payoff. This preserves cooperation with reciprocal opponents while quickly adapting to persistent defection.\n</DESCRIPTION>\n\n<CODE>\n```python\n# EVOLVE-BLOCK-START\ndef policy(own_history, opponent_history):\n    if len(opponent_history) == 0:\n        return 0\n    if opponent_history[-1] == 0:\n        return own_history[-1]\n    return 1 - own_history[-1]\n# EVOLVE-BLOCK-END\n```\n</CODE>"}}
+{"type":"turn.completed","usage":{"input_tokens":5768,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":632,"reasoning_output_tokens":486}}

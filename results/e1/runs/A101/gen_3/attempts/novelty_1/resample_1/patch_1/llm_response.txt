@@ -1,0 +1,13 @@
+<NAME>
+cooperator_probe
+</NAME>
+<DESCRIPTION>
+Cooperate initially and mirror normally. After a sustained run of opponent cooperation, probe with defection to exploit unconditional cooperators. If that probe is immediately mirrored, cooperate once to restore mutual cooperation with retaliatory opponents such as tit-for-tat.
+</DESCRIPTION>
+<CODE>
+```python
+# EVOLVE-BLOCK-START
+def policy(own_history, opponent_history):
+    return 0 if len(opponent_history) == 0 else (1 if len(opponent_history) >= 12 and opponent_history.count(0) == len(opponent_history) else (0 if opponent_history[-1] == 1 and own_history[-1] == 1 and opponent_history[:-1].count(0) == len(opponent_history) - 1 else opponent_history[-1]))
+# EVOLVE-BLOCK-END
+```

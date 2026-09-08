@@ -1,0 +1,15 @@
+{
+  "generation": 6,
+  "novelty_attempt": 1,
+  "resample_attempt": 1,
+  "patch_attempt": 1,
+  "success": true,
+  "num_applied": 1,
+  "patch_name": "probe_and_exploit",
+  "patch_description": "Uses a single early defection probe. If an opponent remains cooperative after our defection, it exploits that behavior; otherwise it returns to reciprocal play. It retains the prior periodic-pattern exploitation rules.",
+  "error_msg": null,
+  "timestamp": "2026-09-08T11:10:28.111606",
+  "llm_cost": 0.0205568,
+  "llm_model": "headless/codex@gpt-5.6-terra?effort=low",
+  "headless_prompt_path": "/home/roland/actir/shinka-tit-for-tat/results/e1/runs/A202/gen_6/attempts/novelty_1/resample_1/patch_1/headless_prompt.md"
+}

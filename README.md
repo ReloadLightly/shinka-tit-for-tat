@@ -6,13 +6,13 @@
 
 This project tests operational rediscovery of tit-for-tat (TFT) with LLM-guided program evolution. Starting from unconditional defection, ShinkaEvolve may change a deterministic policy that observes both players' past actions. A fixed evaluator returns average own payoff against a frozen opponent panel. Identification of TFT is a separate post-search analysis and supplies no fitness bonus. The environment, payoff matrix, observations, opponents, stopping rule, and evaluator are outside candidate control.
 
-**Status, 2026-09-08:** the first real native ShinkaEvolve/Headless/Codex pilot completed through the existing ChatGPT Pro login. Five external invocation slots yielded one pre-model configuration failure and four generated files: three valid archived policies and one rejected TFT expression. The best valid policy scored 2.533136 on training and 2.444314 on holdout. No valid mutation passed the TFT probes. This is an **unblinded integration pilot**, not discovery under enforced hidden information or a historical tournament reconstruction.
+**Status, 2026-09-08:** [**E1: ShinkaEvolve versus independent generation — full report**](results/e1/E1_REPORT.md). E1 stopped at **44/60 external proposal invocations** after a subscription metadata timeout. Four runs completed, A303 is incomplete, and B303 never started. The two available paired holdout differences (A minus B) are 0.000000 and −0.110196; the third is unavailable. This partial readout shows no observed search advantage and does not complete the planned three-pair experiment. The earlier five-invocation unblinded pilot remains preserved.
 
 ## Research question and predictions
 
 Record three distinct outcomes: whether TFT-compatible behavior appears in any generated valid candidate; whether it is the best candidate under training payoff; and how the payoff-selected candidate performs on held-out encounters. A non-TFT winner is an informative outcome, not grounds to change opponents until TFT wins.
 
-An LLM may already know TFT. Recovering its behavior demonstrates operational rediscovery under this interface, not invention from an uninformed prior. This first five-invocation pilot cannot attribute success specifically to evolutionary feedback. That claim needs multiple independent runs and a same-model, equal-budget control receiving no evolutionary feedback. Exhaustive enumeration below is a comparator, not that control.
+An LLM may already know TFT. Recovering its behavior demonstrates operational rediscovery under this interface, not invention from an uninformed prior. E1 compares the combined Shinka search procedure with independent same-model generation at equal proposal opportunities; it does not isolate numerical feedback alone. Its unfinished third pair and infrastructure failures prevent a completed three-pair comparison. Exhaustive enumeration below is a separate comparator.
 
 ## Method
 
@@ -47,6 +47,9 @@ Fitness is **total own payoff / total rounds** across the 30 training matches. A
 | `task_prompt.txt` | Exact task-specific model instruction; contains no target strategy or opponent names |
 | `run_evo.py` | Zero-call preflight and real upstream ShinkaEvolve subscription launcher |
 | `subscription_guard.py` / `subscription_status.py` | Invocation ledger, native Codex process controls, and read-only account/quota checks |
+| `run_e1.py` / `e1_backend.py` | Frozen A/B harness, restricted native Codex sessions, separate closed 60-call ledger |
+| `audit_e1.py` / `render_e1.py` / `write_e1_report.py` | Terminal selection freeze, offline audit, catalogue, trajectories and self-contained E1 report |
+| `check_e1_restrictions.py` / `diagnose_e1_failures.py` | Zero-external-call native tool checks and infrastructure failure reproductions |
 | `audit_pilot.py` | Post-search comparison of candidate files, live database/archive records, and usage |
 | `recognize.py` | Offline behavioral probes and holdout evaluation for one candidate |
 | `analyze_archive.py` | Offline report across generated candidate files |
@@ -74,36 +77,34 @@ The exhaustive memory-one comparison places TFT **2nd of 32**, with `00111` firs
 
 Evidence: [`results/baseline.json`](results/baseline.json), [`results/preflight.json`](results/preflight.json), and [`results/tests.txt`](results/tests.txt). The baseline records source hashes, individual matches, and all 32 comparator scores. These baseline/preflight artifacts made zero model calls; live evolution evidence is reported separately below.
 
-## Measured subscription pilot
+## E1: evolutionary search versus independent generation
 
-The pinned native search used `headless/codex@gpt-5.6-terra?effort=low`, Headless 0.6.1, Codex 0.153.4, and ChatGPT Pro authentication. One initial launch failed before a model turn because Codex disallows overriding a reserved provider ID. After a local configuration repair, the remaining four invocation slots ran through Shinka's real parent sampling, mutation, evaluation, and archive loop. Both run directories and all failures are retained; this is one integration milestone, not two independent replicates.
+The protocol was frozen in commit `e0ca3f3`, before calls. It planned ten opportunities in each of A101, B101, B202, A202, A303, B303. A uses real Shinka parent selection, accumulated programs and training feedback. B uses the same native backend, parser, limits and evaluator, with a fresh session and the byte-identical initial task/seed/feedback prompt each time. Both use `gpt-5.6-terra`, low reasoning effort, through the existing ChatGPT Pro login. Local seeds do not control remote-model randomness.
 
-| Repaired-run generation | Policy | Training | Holdout | Shinka outcome |
-|---|---|---:|---:|---|
-| 0 | Original defection seed | 2.331077 | 2.001569 | Archived |
-| 1 | Guarded win-stay, lose-shift | **2.533136** | **2.444314** | **Payoff-selected best**, archived |
-| 2 | Periodic probing and forgiving retaliation | 1.966159 | 2.187647 | Archived |
-| 3 | Echo detection and defection probing | 2.226029 | 2.255098 | Archived |
-| 4 | TFT expression with redundant branch | -1 validity sentinel | Not run | Invalid; DB row, no archive membership |
+| Run | Training-selected slot | Training | Development holdout | Status |
+|---|---:|---:|---:|---|
+| A101 | 1 | 2.536238 | 2.544314 | Complete |
+| B101 | 1 | 2.536238 | 2.544314 | Complete; one opportunity lost to evaluator timing |
+| B202 | 2 | 2.536238 | 2.544314 | Complete |
+| A202 | 5 | **2.570925** | 2.434118 | Complete |
+| A303 | 1, provisional | 2.536238 | Unavailable | Incomplete, four proposals |
+| B303 | None | Unavailable | Unavailable | Unstarted |
 
-All three valid mutations failed the 1,640 TFT probes. Generation 4 contains a forbidden tuple literal, so the fixed interpreter rejected it before simulation. Static inspection shows its ordinary Python rule is TFT: start with 0, otherwise copy the last opponent action; its additional branch returns 1 only when that last action is already 1. This source observation is separate from finite probing and **does not constitute a valid evolved TFT policy**. The model's accompanying claim of permanent defection does not match its code.
+All terminal selection identities/statuses were frozen before holdout or recognition; incomplete entries contribute no primary outcome. Exact ties use earliest appearance, which can differ from Shinka's later tied best-program pointer. The paired holdout differences are **0.000000**, **−0.110196**, and **unavailable**. The two-pair descriptive mean is −0.055098 (sample SD 0.077920). These are run-level comparisons, not 44 independent replicates.
 
-The complete executable source of the payoff-selected generation 1 is:
+The first three completed selections implement TFT. A202's selected policy copies the last opponent action except that it defects after apparent repeating mixed-action blocks of lengths 2–6. Its training gain arose entirely against fair random; on holdout, sustained mutual defection against suspicious TFT outweighed gains elsewhere. It remains below reference grim on training and below TFT, grim and ordinary WSLS on holdout. The [main report](results/e1/E1_REPORT.md) gives every selected source, branch explanations, scored traces and opponent breakdowns.
 
-```python
-# EVOLVE-BLOCK-START
-def policy(own_history, opponent_history):
-    return 0 if len(opponent_history) == 0 else 1 if len(opponent_history) > 2 and opponent_history.count(0) == 0 else own_history[-1] if opponent_history[-1] == 0 else 1 - own_history[-1]
-# EVOLVE-BLOCK-END
-```
+Forty-four files were generated and stored in Shinka: 40 live-valid/archived, two interpreter rejections, and two without evaluator results because upstream incorrectly included proposal time in the evaluation timeout. Nineteen valid programs passed the fixed TFT probes; eighteen have source-based TFT equivalence arguments. B202 slot 5 passes those probes but defects every 32 rounds, illustrating finite agreement without universal equivalence. The [proposal catalogue](results/e1/PROPOSALS.md) preserves all 60 planned opportunities, marking unattempted slots explicitly.
 
-It uses win-stay, lose-shift except that it defects after at least three opponent actions if the opponent has never cooperated. It improves on the seed but remains below the TFT reference on training. The [database/offline audit](results/pilot_001_audit.json) verifies source hashes, live evaluations, archive membership, and Shinka's best-program record. Four generated files were evaluated, three were valid/archived, and one was invalid; `best/` copies are not additional proposals. Holdout results did not select the winner.
+Supported per-process controls removed file, search, MCP, plugin and agent retrieval capabilities. Forced localhost tests verified tool refusal, and all 44 live native contexts matched the expected information with no tool calls observed. This is a tested native tool boundary, not an OS confidentiality container or knowledge-free invention. The original evaluator and scientific protocol are unchanged.
 
-The native read-only wrapper allows broad file reads; it also normally enables web search. This run disabled search and automatic project instructions and requested use of only supplied task/programs/training feedback. Generic native skill/plugin instructions still appeared and are preserved. No file/search/tool call was observed in the successful traces, but confidentiality was not enforced. Accordingly, this is an **unblinded integration pilot**. It neither establishes discovery under hidden information nor separates evolutionary-feedback benefits from LLM prior knowledge.
+The terminal subscription metadata timeout prevented a 45th launch. Launch stopping worked, but cleanup needed a targeted interrupt; all partial evidence is saved and the ledger is closed with 16 unspent invocations. Local checks reproduce an RPC buffering vulnerability and the upstream timer defect. No retry, resampling, replacement, API-key authentication, paid API fallback, purchased credits, or GitHub Actions was used.
 
-The [usage records](results/subscription_pilot_001_usage/usage_summary.json) distinguish **five invocations**, **four successful Codex turns**, and **four native model-response usage records**. An invocation can contain multiple model requests. Reported tokens were 50,334 input (15,872 cached) and 4,783 output (3,998 reasoning); cached/reasoning counts are subsets. Headless's $0.1294944 API list-price estimate is not a charge. The account credit balance was unchanged at 90.6853810000, while account-wide subscription usage moved from 1% to 2%; concurrent supervisor use and rounding prevent exclusive attribution. No API-key authentication, paid API fallback, credit purchase, or GitHub Actions was used.
+Usage records distinguish 44 external invocations, 44 completed Codex turn events and 44 native model-response records; those counts coincide here but are different concepts. Input tokens were 254,296 (137,216 cached); output 39,039 (31,394 reasoning). Credit balance remained 90.6853810000; account-wide rounded subscription use moved from 3% to 4%, also including supervisor use. The $0.7300712 list-price estimate is not a charge. [Audit](results/e1/audit.json), [usage](results/e1/usage_summary.json), [failure reproductions](results/e1/setup/failure_reproductions.json), and [36 passing final tests](results/e1/setup/tests_post_stop.txt) support this partial result.
 
-See [the full pilot report](results/PILOT_001.md) for every candidate's diagnosis, the rejected source, commands, failure provenance, access limits, and evidence links.
+## Preserved subscription pilot
+
+The earlier [five-invocation integration pilot](results/PILOT_001.md), reviewed at `fe5e130a4b2f3428b4b2bc482bd0378214672ea4`, remains intact with its exhausted ledger. It produced three valid archived policies and one invalid tuple-based TFT expression after a pre-model configuration failure. Its selected guarded-WSLS policy scored 2.533136 training / 2.444314 holdout. That pilot allowed broad file reads and remains explicitly **unblinded**; E1 does not retroactively change that characterization.
 
 ## Run locally
 
@@ -113,6 +114,8 @@ The reference experiment and tests require only Python 3.10 or later:
 python3 -m unittest discover -s tests -v
 python3 baseline.py --output results/baseline_local.json
 python3 run_evo.py --preflight
+# E1 preflight needs the pinned optional dependency; it makes no proposal calls.
+.venv/bin/python run_e1.py --preflight
 ```
 
 Each baseline/report command refuses to overwrite its existing evidence file. Choose a new output name for another run.
@@ -134,7 +137,7 @@ The default remains zero-call. `--execute` requires existing ChatGPT Pro authent
 
 Proposals/evaluations are serial. Each Codex process has a 180-second timeout; Headless has 210 seconds and the native provider 240 seconds. Request/stream retries, patch resampling, embeddings, novelty/meta calls, prompt evolution, and provider fallback are disabled. Quota checks before each proposal refuse unknown/exhausted quota or at least 90% window usage, with backend failures stopping further external calls. Native Headless ignores `max_tokens`, so no token cap is claimed. Shinka is Git-pinned; installed transitive dependency versions are recorded per run. Remote outputs are not bit-for-bit reproducible from the local search seed.
 
-All 26 local unit tests and both zero-call preflights passed. Prompts, source snapshots, candidate sources, feedback, failed attempts, usage, configurations, logs, and databases are retained after credential review. The original `initial.py` and evaluator remain unchanged. No GitHub Actions workflows are installed.
+The pilot passed its 26 tests; the final E1 suite passes 36, including mocked native A/B runs, terminal-state handling, and failure reproductions. Both default launchers are zero-call. E1's historical execution command was `.venv/bin/python run_e1.py --execute`; its existing closed ledger prevents reuse. Prompts, candidate sources, feedback, failures, usage, configuration, logs and databases are retained after credential review. The original scientific source files remain unchanged. No GitHub Actions workflows are installed.
 
 ## Sources and deviations
 
@@ -144,4 +147,4 @@ All 26 local unit tests and both zero-call preflights passed. Prompts, source sn
 
 ## Next bounded milestone
 
-Establish and locally verify an enforced mutation information boundary, then run one five-invocation blinded replication using the same model, seed program, interpreter, panels, and payoff-only fitness. Keep the invalid tuple proposal as evidence and do not relax the evaluator in response. Independent replicated seeds and an equal-budget feedback-free control remain later work; neither was added to this first pilot.
+Repair RPC buffering, measure evaluator time from actual evaluation start, and finalize stopped runners after draining work. First prove those fixes and a full six-run rehearsal with local mocks and zero external calls. Then repeat the same E1 design under a new, separately authorized 60-invocation ledger: three pairs, ten opportunities per run, the same model/effort, order, seed program, interpreter, panels and payoff-only selection. The intended change is the execution harness. Do not reopen either existing ledger or reuse E1's remaining 16 slots. The [E1 report](results/e1/E1_REPORT.md) provides the concrete implementation prompt; this follow-up has not been executed.

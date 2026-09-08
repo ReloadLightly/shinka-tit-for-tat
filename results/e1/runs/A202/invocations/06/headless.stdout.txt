@@ -1,0 +1,16 @@
+<NAME>
+probe_and_exploit
+</NAME>
+
+<DESCRIPTION>
+Uses a single early defection probe. If an opponent remains cooperative after our defection, it exploits that behavior; otherwise it returns to reciprocal play. It retains the prior periodic-pattern exploitation rules.
+</DESCRIPTION>
+
+<CODE>
+```python
+# EVOLVE-BLOCK-START
+def policy(own_history, opponent_history):
+    return 0 if len(opponent_history) == 0 else 1 if len(opponent_history) == 1 else 1 if own_history[-1] == 1 and opponent_history[-1] == 0 else 1 if len(opponent_history) >= 4 and opponent_history[-4:-2] == opponent_history[-2:] and opponent_history[-1] != opponent_history[-2] else 1 if len(opponent_history) >= 6 and opponent_history[-6:-3] == opponent_history[-3:] and sum(opponent_history[-3:]) > 0 and sum(opponent_history[-3:]) < 3 else 1 if len(opponent_history) >= 8 and opponent_history[-8:-4] == opponent_history[-4:] and sum(opponent_history[-4:]) > 0 and sum(opponent_history[-4:]) < 4 else 1 if len(opponent_history) >= 10 and opponent_history[-10:-5] == opponent_history[-5:] and sum(opponent_history[-5:]) > 0 and sum(opponent_history[-5:]) < 5 else 1 if len(opponent_history) >= 12 and opponent_history[-12:-6] == opponent_history[-6:] and sum(opponent_history[-6:]) > 0 and sum(opponent_history[-6:]) < 6 else opponent_history[-1]
+# EVOLVE-BLOCK-END
+```
+{"usage":{"agent":"codex","provider":"openai","model":"gpt-5.6-terra","inputTokens":1290,"cacheReadTokens":4864,"cacheWriteTokens":0,"outputTokens":1417,"reasoningOutputTokens":1034,"totalTokens":7571,"usageStatus":"reported","cost":{"input":0.00258,"cacheRead":0.0009728,"cacheWrite":0,"output":0.017004,"total":0.0205568},"costBasis":"api-list-price-estimate","pricingSource":"models.dev","pricingStatus":"priced"}}

@@ -1,0 +1,15 @@
+{
+  "generation": 9,
+  "novelty_attempt": 1,
+  "resample_attempt": 1,
+  "patch_attempt": 1,
+  "success": true,
+  "num_applied": 1,
+  "patch_name": "probe_reconcile",
+  "patch_description": "Defect initially to exploit unconditional cooperation. If the opponent retaliates exactly once, cooperate once to restore mutual cooperation with reciprocal opponents, then mirror thereafter.",
+  "error_msg": null,
+  "timestamp": "2026-09-08T11:05:58.955458",
+  "llm_cost": 0.0149468,
+  "llm_model": "headless/codex@gpt-5.6-terra?effort=low",
+  "headless_prompt_path": "/home/roland/actir/shinka-tit-for-tat/results/e1/runs/B202/gen_9/attempts/novelty_1/resample_1/patch_1/headless_prompt.md"
+}

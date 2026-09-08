@@ -1,0 +1,5 @@
+{"type":"thread.started","thread_id":"01a08041-7e20-79e3-a65e-0fbe66ba9481"}
+{"type":"item.completed","item":{"id":"item_0","type":"error","message":"Code Mode is unavailable because code-mode host is disabled. Code mode will fail closed; enable `features.code_mode_host` and install `codex-code-mode-host`."}}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_1","type":"agent_message","text":"<NAME>\nconditional_cooperator\n</NAME>\n\n<DESCRIPTION>\nBegin cooperatively to enable mutual-payoff outcomes against reciprocal opponents, then exploit opponents that have consistently cooperated. Against persistent defection, defect as well to avoid repeated zero payoffs.\n</DESCRIPTION>\n\n<CODE>\n```python\n# EVOLVE-BLOCK-START\ndef policy(own_history, opponent_history):\n    if len(opponent_history) == 0:\n        return 0\n    if opponent_history.count(1) == 0:\n        return 1\n    if opponent_history[-1] == 1:\n        return 1\n    return 0\n# EVOLVE-BLOCK-END\n```"}}
+{"type":"turn.completed","usage":{"input_tokens":5677,"cached_input_tokens":4864,"cache_write_input_tokens":0,"output_tokens":660,"reasoning_output_tokens":516}}

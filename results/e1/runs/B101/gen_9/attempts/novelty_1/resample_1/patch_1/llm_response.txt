@@ -1,0 +1,13 @@
+<NAME>
+tit_for_tat
+</NAME>
+<DESCRIPTION>
+Opens cooperatively to establish the mutually beneficial (0,0) outcome, then mirrors the opponent’s prior action. This preserves cooperation with cooperative strategies while immediately responding to defection.
+</DESCRIPTION>
+<CODE>
+```python
+# EVOLVE-BLOCK-START
+def policy(own_history, opponent_history):
+    return 0 if len(opponent_history) == 0 else opponent_history[-1]
+# EVOLVE-BLOCK-END
+```

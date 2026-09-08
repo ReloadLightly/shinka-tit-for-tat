@@ -1,0 +1,57 @@
+{
+  "run_id": "A303",
+  "records": [
+    {
+      "slot": 0,
+      "source": "results/e1/runs/A303/gen_0/main.py",
+      "sha256": "f83fb4c8ffc3313079ff6fa09bef89da8b6ed67d8f604a414c3493d97ba9a32b",
+      "correct": true,
+      "error": null,
+      "training": 2.3310772701635645
+    },
+    {
+      "slot": 1,
+      "source": "results/e1/runs/A303/gen_1/main.py",
+      "sha256": "d18b36ca67036b2c2b081a349b9d963558d80e38a3df8334d63484cb7ffff22a",
+      "correct": true,
+      "error": null,
+      "training": 2.5362380146644106
+    },
+    {
+      "slot": 2,
+      "source": "results/e1/runs/A303/gen_2/main.py",
+      "sha256": "891e66d54de4512d63a0df973a3b0ecd7519a6d3c781aace75ff65d57a14044e",
+      "correct": true,
+      "error": null,
+      "training": 2.0510434292160182
+    },
+    {
+      "slot": 3,
+      "source": "results/e1/runs/A303/gen_3/main.py",
+      "sha256": "c1cff88ce6eefbca8fad8752d6bc1f48c99d4d3be6cef46db0f20fb7fc10e5ed",
+      "correct": true,
+      "error": null,
+      "training": 2.4510716300056403
+    },
+    {
+      "slot": 4,
+      "source": "results/e1/runs/A303/gen_4/main.py",
+      "sha256": "39fe9336b5f08dbac35519d28f3e36cb51eab9897b30b39331c6f2a0f35b819e",
+      "correct": false,
+      "error": "No evaluator result",
+      "training": null
+    }
+  ],
+  "training_selected": {
+    "slot": 1,
+    "source": "results/e1/runs/A303/gen_1/main.py",
+    "sha256": "d18b36ca67036b2c2b081a349b9d963558d80e38a3df8334d63484cb7ffff22a",
+    "correct": true,
+    "error": null,
+    "training": 2.5362380146644106
+  },
+  "runtime_seconds": 396.805393467017,
+  "finished_utc": "2026-09-08T09:20:03.611481+00:00",
+  "shinka_completed_generations": 5,
+  "headless_list_price_estimate_not_charge": 0.08273839999999999
+}

@@ -1,0 +1,105 @@
+{
+  "run_id": "A202",
+  "records": [
+    {
+      "slot": 0,
+      "source": "results/e1/runs/A202/gen_0/main.py",
+      "sha256": "f83fb4c8ffc3313079ff6fa09bef89da8b6ed67d8f604a414c3493d97ba9a32b",
+      "correct": true,
+      "error": null,
+      "training": 2.3310772701635645
+    },
+    {
+      "slot": 1,
+      "source": "results/e1/runs/A202/gen_1/main.py",
+      "sha256": "f10d41828a82b0716d21b12e3d60d2102411c4e51c935a7aa9d75a9658be4cb5",
+      "correct": true,
+      "error": null,
+      "training": 2.5362380146644106
+    },
+    {
+      "slot": 2,
+      "source": "results/e1/runs/A202/gen_2/main.py",
+      "sha256": "3fc0574a9daa8e467461198b56c1dd47d2d4469e2d771aeac9657b48d6ac0b42",
+      "correct": true,
+      "error": null,
+      "training": 2.550761421319797
+    },
+    {
+      "slot": 3,
+      "source": "results/e1/runs/A202/gen_3/main.py",
+      "sha256": "5f5b9f8f9946fcd8bc17a8269d3c6a30cf39eb0001c709d13672fa9b2cc21c58",
+      "correct": true,
+      "error": null,
+      "training": 2.5616187253243092
+    },
+    {
+      "slot": 4,
+      "source": "results/e1/runs/A202/gen_4/main.py",
+      "sha256": "50d32fc4801d1a5bd70ed17c7dd0c56d031099299c80baf6e0521f1379cdb160",
+      "correct": true,
+      "error": null,
+      "training": 2.5689509306260576
+    },
+    {
+      "slot": 5,
+      "source": "results/e1/runs/A202/gen_5/main.py",
+      "sha256": "4da8a4169fe411c2f6ae83273be421f74757d9992acf8a340423b8e4a4832393",
+      "correct": true,
+      "error": null,
+      "training": 2.5709249858996053
+    },
+    {
+      "slot": 6,
+      "source": "results/e1/runs/A202/gen_6/main.py",
+      "sha256": "3175721eaf12c2bb3f8db666d1e82fd27cf259fb66e2c6e179238498983428bd",
+      "correct": true,
+      "error": null,
+      "training": 2.330936266215454
+    },
+    {
+      "slot": 7,
+      "source": "results/e1/runs/A202/gen_7/main.py",
+      "sha256": "99b87bcb1543e838fa98d07b499846135b62e4af5881280791f08cbd5528b47a",
+      "correct": false,
+      "error": "PolicyError: Unsupported syntax or more than 400 AST nodes",
+      "training": -1.0
+    },
+    {
+      "slot": 8,
+      "source": "results/e1/runs/A202/gen_8/main.py",
+      "sha256": "4da8a4169fe411c2f6ae83273be421f74757d9992acf8a340423b8e4a4832393",
+      "correct": true,
+      "error": null,
+      "training": 2.5709249858996053
+    },
+    {
+      "slot": 9,
+      "source": "results/e1/runs/A202/gen_9/main.py",
+      "sha256": "5e16d59310d3349f24ec2542a90669709d0d5c23072c99a70cced034dc4c7c71",
+      "correct": false,
+      "error": "PolicyError: Unsupported syntax or more than 400 AST nodes",
+      "training": -1.0
+    },
+    {
+      "slot": 10,
+      "source": "results/e1/runs/A202/gen_10/main.py",
+      "sha256": "9a04510b1a30b2a82cc73ad6eeb0d411807da6e214eff706a520a6118828477b",
+      "correct": true,
+      "error": null,
+      "training": 2.1209813874788495
+    }
+  ],
+  "training_selected": {
+    "slot": 5,
+    "source": "results/e1/runs/A202/gen_5/main.py",
+    "sha256": "4da8a4169fe411c2f6ae83273be421f74757d9992acf8a340423b8e4a4832393",
+    "correct": true,
+    "error": null,
+    "training": 2.5709249858996053
+  },
+  "runtime_seconds": 385.9625643180334,
+  "finished_utc": "2026-09-08T09:13:07.595524+00:00",
+  "shinka_completed_generations": 11,
+  "headless_list_price_estimate_not_charge": 0.1729668
+}

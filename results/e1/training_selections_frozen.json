@@ -1,0 +1,65 @@
+{
+  "frozen_utc": "2026-09-08T09:23:55.642913+00:00",
+  "complete_design": false,
+  "selection_rule": "Highest admissible recorded training payoff; earliest tie; seed eligible",
+  "terminal_handling": "Four complete selections, partial best-so-far for A303, original seed placeholder for unstarted B303. Incomplete/unstarted entries have no primary holdout result and are excluded from paired summaries. No further proposals or reselection.",
+  "statuses": {
+    "A101": "complete",
+    "B101": "complete",
+    "B202": "complete",
+    "A202": "complete",
+    "A303": "incomplete",
+    "B303": "not_started"
+  },
+  "selections": {
+    "A101": {
+      "slot": 1,
+      "source": "results/e1/runs/A101/gen_1/main.py",
+      "sha256": "f10d41828a82b0716d21b12e3d60d2102411c4e51c935a7aa9d75a9658be4cb5",
+      "correct": true,
+      "error": null,
+      "training": 2.5362380146644106
+    },
+    "B101": {
+      "slot": 1,
+      "source": "results/e1/runs/B101/gen_1/main.py",
+      "sha256": "f10d41828a82b0716d21b12e3d60d2102411c4e51c935a7aa9d75a9658be4cb5",
+      "correct": true,
+      "error": null,
+      "training": 2.5362380146644106
+    },
+    "B202": {
+      "slot": 2,
+      "source": "results/e1/runs/B202/gen_2/main.py",
+      "sha256": "d18b36ca67036b2c2b081a349b9d963558d80e38a3df8334d63484cb7ffff22a",
+      "correct": true,
+      "error": null,
+      "training": 2.5362380146644106
+    },
+    "A202": {
+      "slot": 5,
+      "source": "results/e1/runs/A202/gen_5/main.py",
+      "sha256": "4da8a4169fe411c2f6ae83273be421f74757d9992acf8a340423b8e4a4832393",
+      "correct": true,
+      "error": null,
+      "training": 2.5709249858996053
+    },
+    "A303": {
+      "slot": 1,
+      "source": "results/e1/runs/A303/gen_1/main.py",
+      "sha256": "d18b36ca67036b2c2b081a349b9d963558d80e38a3df8334d63484cb7ffff22a",
+      "correct": true,
+      "error": null,
+      "training": 2.5362380146644106
+    },
+    "B303": {
+      "slot": 0,
+      "source": "initial.py",
+      "sha256": "f83fb4c8ffc3313079ff6fa09bef89da8b6ed67d8f604a414c3493d97ba9a32b",
+      "correct": true,
+      "error": null,
+      "training": 2.3310772701635645
+    }
+  },
+  "ledger_sha256": "c445d93d221dabd64c2ea281f2c396b965ca7b3f5e578ec3994f5bf863847b97"
+}

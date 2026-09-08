@@ -1,0 +1,15 @@
+{
+  "generation": 5,
+  "novelty_attempt": 1,
+  "resample_attempt": 1,
+  "patch_attempt": 1,
+  "success": true,
+  "num_applied": 1,
+  "patch_name": "probe_and_reciprocate",
+  "patch_description": "Opens cooperatively to establish mutual cooperation, reciprocates defections, and periodically tests consistently cooperative opponents. If a test is not punished, it exploits that opponent; if punished, it immediately returns to cooperation.",
+  "error_msg": null,
+  "timestamp": "2026-09-08T11:03:46.501180",
+  "llm_cost": 0.0104948,
+  "llm_model": "headless/codex@gpt-5.6-terra?effort=low",
+  "headless_prompt_path": "/home/roland/actir/shinka-tit-for-tat/results/e1/runs/B202/gen_5/attempts/novelty_1/resample_1/patch_1/headless_prompt.md"
+}

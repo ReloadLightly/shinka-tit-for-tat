@@ -1,0 +1,13 @@
+<NAME>
+forgiving_tft
+</NAME>
+<DESCRIPTION>
+A forgiving tit-for-tat policy: cooperate initially, mirror the opponent normally, but forgive isolated defections. It only defects after two consecutive opponent defections, improving cooperation with noisy or occasionally probing opponents while still responding to sustained exploitation.
+</DESCRIPTION>
+<CODE>
+```python
+# EVOLVE-BLOCK-START
+def policy(own_history, opponent_history):
+    return 0 if len(opponent_history) < 2 else (1 if opponent_history[-1] == 1 and opponent_history[-2] == 1 else 0)
+# EVOLVE-BLOCK-END
+```

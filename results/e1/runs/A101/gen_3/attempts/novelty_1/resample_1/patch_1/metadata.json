@@ -1,0 +1,15 @@
+{
+  "generation": 3,
+  "novelty_attempt": 1,
+  "resample_attempt": 1,
+  "patch_attempt": 1,
+  "success": true,
+  "num_applied": 1,
+  "patch_name": "cooperator_probe",
+  "patch_description": "Cooperate initially and mirror normally. After a sustained run of opponent cooperation, probe with defection to exploit unconditional cooperators. If that probe is immediately mirrored, cooperate once to restore mutual cooperation with retaliatory opponents such as tit-for-tat.",
+  "error_msg": null,
+  "timestamp": "2026-09-08T10:51:51.374522",
+  "llm_cost": 0.024476,
+  "llm_model": "headless/codex@gpt-5.6-terra?effort=low",
+  "headless_prompt_path": "/home/roland/actir/shinka-tit-for-tat/results/e1/runs/A101/gen_3/attempts/novelty_1/resample_1/patch_1/headless_prompt.md"
+}

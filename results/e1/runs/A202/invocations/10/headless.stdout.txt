@@ -1,0 +1,17 @@
+<NAME>
+cooperator_probe
+</NAME>
+
+<DESCRIPTION>
+Copies the opponent as before, while adding a delayed probe against an apparently unconditional cooperator. After one defection it immediately returns to cooperation, allowing reciprocal opponents to re-establish mutual cooperation while gaining substantially more against opponents that always play 0.
+</DESCRIPTION>
+
+<CODE>
+```python
+# EVOLVE-BLOCK-START
+def policy(own_history, opponent_history):
+    return 0 if len(opponent_history) == 0 else 0 if own_history[-1] == 1 and opponent_history[-1] == 0 else 0 if len(own_history) >= 2 and own_history[-2] == 1 and own_history[-1] == 0 and opponent_history[-1] == 1 else 1 if len(opponent_history) >= 6 and sum(opponent_history) == 0 else 1 if len(opponent_history) >= 4 and opponent_history[-4:-2] == opponent_history[-2:] and opponent_history[-1] != opponent_history[-2] else 1 if len(opponent_history) >= 6 and opponent_history[-6:-3] == opponent_history[-3:] and sum(opponent_history[-3:]) > 0 and sum(opponent_history[-3:]) < 3 else 1 if len(opponent_history) >= 8 and opponent_history[-8:-4] == opponent_history[-4:] and sum(opponent_history[-4:]) > 0 and sum(opponent_history[-4:]) < 4 else opponent_history[-1]
+# EVOLVE-BLOCK-END
+```
+</CODE>
+{"usage":{"agent":"codex","provider":"openai","model":"gpt-5.6-terra","inputTokens":1290,"cacheReadTokens":4864,"cacheWriteTokens":0,"outputTokens":1378,"reasoningOutputTokens":1034,"totalTokens":7532,"usageStatus":"reported","cost":{"input":0.00258,"cacheRead":0.0009728,"cacheWrite":0,"output":0.016536,"total":0.0200888},"costBasis":"api-list-price-estimate","pricingSource":"models.dev","pricingStatus":"priced"}}

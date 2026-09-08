@@ -1,0 +1,15 @@
+{
+  "generation": 10,
+  "novelty_attempt": 1,
+  "resample_attempt": 1,
+  "patch_attempt": 1,
+  "success": true,
+  "num_applied": 1,
+  "patch_name": "cooperator_probe",
+  "patch_description": "Copies the opponent as before, while adding a delayed probe against an apparently unconditional cooperator. After one defection it immediately returns to cooperation, allowing reciprocal opponents to re-establish mutual cooperation while gaining substantially more against opponents that always play 0.",
+  "error_msg": null,
+  "timestamp": "2026-09-08T11:13:06.310478",
+  "llm_cost": 0.0200888,
+  "llm_model": "headless/codex@gpt-5.6-terra?effort=low",
+  "headless_prompt_path": "/home/roland/actir/shinka-tit-for-tat/results/e1/runs/A202/gen_10/attempts/novelty_1/resample_1/patch_1/headless_prompt.md"
+}
