@@ -1,0 +1,11 @@
+{
+  "metrics": {
+    "combined_score": 2.596587704455725,
+    "public": {
+      "mean_payoff": 2.596587704455725
+    },
+    "private": {}
+  },
+  "correct": true,
+  "error": null
+}

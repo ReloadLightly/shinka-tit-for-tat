@@ -1,0 +1,13 @@
+<NAME>
+win_stay_shift
+</NAME>
+<DESCRIPTION>
+Uses a win-stay, lose-shift strategy: repeat the previous action after a successful payoff, and switch after a poor outcome. It cooperates initially, sustains mutual cooperation, exploits persistent cooperation when possible, and avoids permanent retaliation cycles.
+</DESCRIPTION>
+<CODE>
+```python
+# EVOLVE-BLOCK-START
+def policy(own_history, opponent_history):
+    return 0 if len(own_history) == 0 else (own_history[-1] if own_history[-1] == opponent_history[-1] else (1 - own_history[-1]))
+# EVOLVE-BLOCK-END
+```

@@ -1,0 +1,16 @@
+<NAME>
+cautious_tft
+</NAME>
+
+<DESCRIPTION>
+Cooperates initially and mirrors the opponent’s latest action thereafter. This preserves mutual cooperation with cooperative and retaliatory strategies while avoiding prolonged exploitation by persistent defectors.
+</DESCRIPTION>
+
+<CODE>
+```python
+# EVOLVE-BLOCK-START
+def policy(own_history, opponent_history):
+    return 0 if len(opponent_history) == 0 else opponent_history[-1]
+# EVOLVE-BLOCK-END
+```
+{"usage":{"agent":"codex","provider":"openai","model":"gpt-5.6-terra","inputTokens":930,"cacheReadTokens":4864,"cacheWriteTokens":0,"outputTokens":622,"reasoningOutputTokens":516,"totalTokens":6416,"usageStatus":"reported","cost":{"input":0.00186,"cacheRead":0.0009728,"cacheWrite":0,"output":0.007464,"total":0.0102968},"costBasis":"api-list-price-estimate","pricingSource":"models.dev","pricingStatus":"priced"}}

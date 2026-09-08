@@ -1,0 +1,16 @@
+<NAME>
+probe_cooperators
+</NAME>
+
+<DESCRIPTION>
+Cooperates initially to preserve mutual-cooperation outcomes, then performs a delayed probe. It exploits opponents that continue cooperating after the probe, while returning to cooperation when the opponent appears to forgive the probe.
+</DESCRIPTION>
+
+<CODE>
+```python
+# EVOLVE-BLOCK-START
+def policy(own_history, opponent_history):
+    return 0 if len(opponent_history) == 0 else (1 if opponent_history.count(1) == 0 and len(opponent_history) >= 8 else (0 if opponent_history[-1] == 1 else 1 if own_history[-1] == 1 else 0))
+# EVOLVE-BLOCK-END
+```
+{"usage":{"agent":"codex","provider":"openai","model":"gpt-5.6-terra","inputTokens":930,"cacheReadTokens":4864,"cacheWriteTokens":0,"outputTokens":672,"reasoningOutputTokens":516,"totalTokens":6466,"usageStatus":"reported","cost":{"input":0.00186,"cacheRead":0.0009728,"cacheWrite":0,"output":0.008064,"total":0.0108968},"costBasis":"api-list-price-estimate","pricingSource":"models.dev","pricingStatus":"priced"}}

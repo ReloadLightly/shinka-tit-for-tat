@@ -1,0 +1,14 @@
+<NAME>
+grim_trigger
+</NAME>
+<DESCRIPTION>
+Restore the stronger one-defection trigger from the prior results. It cooperates until the opponent has defected once, then defects thereafter, improving the reported mean payoff from 2.65 to 2.66.
+</DESCRIPTION>
+<CODE>
+```python
+# EVOLVE-BLOCK-START
+def policy(own_history, opponent_history):
+    return 0 if len(opponent_history) == 0 or opponent_history.count(1) == 0 else 1
+# EVOLVE-BLOCK-END
+```
+</CODE>

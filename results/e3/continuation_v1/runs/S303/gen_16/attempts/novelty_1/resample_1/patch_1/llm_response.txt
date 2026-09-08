@@ -1,0 +1,13 @@
+<NAME>
+grim_defector_guard
+</NAME>
+<DESCRIPTION>
+Cooperate initially and while the opponent has never defected; permanently defect after their first defection. This preserves mutual cooperation against cooperative strategies while preventing repeated exploitation by defectors. It matches the strongest prior observed approach.
+</DESCRIPTION>
+<CODE>
+```python
+# EVOLVE-BLOCK-START
+def policy(own_history, opponent_history):
+    return 0 if len(opponent_history) == 0 or opponent_history.count(1) == 0 else 1
+# EVOLVE-BLOCK-END
+```

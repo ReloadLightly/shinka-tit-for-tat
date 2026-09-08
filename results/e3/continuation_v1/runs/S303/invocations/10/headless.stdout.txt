@@ -1,0 +1,16 @@
+<NAME>
+compact_grudger
+</NAME>
+
+<DESCRIPTION>
+Equivalent compact implementation of the existing grim-trigger policy: cooperate until the opponent has defected at least once, then defect permanently.
+</DESCRIPTION>
+
+<CODE>
+```python
+# EVOLVE-BLOCK-START
+def policy(own_history, opponent_history):
+    return 1 if len(opponent_history) > 0 and opponent_history.count(1) > 0 else 0
+# EVOLVE-BLOCK-END
+```
+{"usage":{"agent":"codex","provider":"openai","model":"gpt-5.6-terra","inputTokens":930,"cacheReadTokens":4864,"cacheWriteTokens":0,"outputTokens":2631,"reasoningOutputTokens":2525,"totalTokens":8425,"usageStatus":"reported","cost":{"input":0.00186,"cacheRead":0.0009728,"cacheWrite":0,"output":0.031572,"total":0.0344048},"costBasis":"api-list-price-estimate","pricingSource":"models.dev","pricingStatus":"priced"}}

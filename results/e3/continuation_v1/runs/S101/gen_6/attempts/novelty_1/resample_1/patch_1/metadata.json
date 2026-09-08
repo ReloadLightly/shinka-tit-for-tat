@@ -1,0 +1,15 @@
+{
+  "generation": 6,
+  "novelty_attempt": 1,
+  "resample_attempt": 1,
+  "patch_attempt": 1,
+  "success": true,
+  "num_applied": 1,
+  "patch_name": "tit_for_tat",
+  "patch_description": "Cooperate initially, then mirror the opponent\u2019s most recent action. This preserves mutual cooperation with cooperative opponents while immediately retaliating against defection, avoiding the permanent overreaction of the current history-wide trigger.",
+  "error_msg": null,
+  "timestamp": "2026-09-08T23:58:29.140430",
+  "llm_cost": 0.021688,
+  "llm_model": "headless/codex@gpt-5.6-terra?effort=low",
+  "headless_prompt_path": "/home/roland/actir/shinka-tit-for-tat/results/e3/continuation_v1/runs/S101/gen_6/attempts/novelty_1/resample_1/patch_1/headless_prompt.md"
+}

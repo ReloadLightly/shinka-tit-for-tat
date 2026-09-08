@@ -1,0 +1,13 @@
+<NAME>
+first_defection_grim
+</NAME>
+<DESCRIPTION>
+Cooperate while the opponent has always cooperated, then defect permanently after their first defection. This restores the higher-performing prior policy (2.66 versus 2.65), while exploiting unconditional cooperators and avoiding continued cooperation after detected defection.
+</DESCRIPTION>
+<CODE>
+```python
+# EVOLVE-BLOCK-START
+def policy(own_history, opponent_history):
+    return 0 if len(opponent_history) == 0 or opponent_history.count(1) == 0 else 1
+# EVOLVE-BLOCK-END
+```

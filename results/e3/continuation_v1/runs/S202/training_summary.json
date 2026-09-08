@@ -1,0 +1,185 @@
+{
+  "run_id": "S202",
+  "records": [
+    {
+      "slot": 0,
+      "source": "results/e3/continuation_v1/runs/S202/gen_0/main.py",
+      "sha256": "fc938dea6c869791ffb3d7fbbb03f95b21ea86152fb3414345a9d107323d56a1",
+      "correct": true,
+      "error": null,
+      "training": 2.655386350817823
+    },
+    {
+      "slot": 1,
+      "source": "results/e3/continuation_v1/runs/S202/gen_1/main.py",
+      "sha256": "2ab741fec7547c757b9c7836b2be61350e06427a5aea12c847739fff1bb832d0",
+      "correct": true,
+      "error": null,
+      "training": 2.330936266215454
+    },
+    {
+      "slot": 2,
+      "source": "results/e3/continuation_v1/runs/S202/gen_2/main.py",
+      "sha256": "7509a8317f7009e4634e3bbf2322edbb59c97f7f8c4a89b187c0277f29a43e67",
+      "correct": true,
+      "error": null,
+      "training": 2.5362380146644106
+    },
+    {
+      "slot": 3,
+      "source": "results/e3/continuation_v1/runs/S202/gen_3/main.py",
+      "sha256": "f75616963be773f87e1f763e19da530af6529cecb2f9c28fab0fc1c8d15bd67a",
+      "correct": true,
+      "error": null,
+      "training": 2.651720248166949
+    },
+    {
+      "slot": 4,
+      "source": "results/e3/continuation_v1/runs/S202/gen_4/main.py",
+      "sha256": "fc938dea6c869791ffb3d7fbbb03f95b21ea86152fb3414345a9d107323d56a1",
+      "correct": true,
+      "error": null,
+      "training": 2.655386350817823
+    },
+    {
+      "slot": 5,
+      "source": "results/e3/continuation_v1/runs/S202/gen_5/main.py",
+      "sha256": "f10d41828a82b0716d21b12e3d60d2102411c4e51c935a7aa9d75a9658be4cb5",
+      "correct": true,
+      "error": null,
+      "training": 2.5362380146644106
+    },
+    {
+      "slot": 6,
+      "source": "results/e3/continuation_v1/runs/S202/gen_6/main.py",
+      "sha256": "ab7b755dbacfea291382276db6f0cc47f4c7b25c797be51ed91709d1dab13234",
+      "correct": true,
+      "error": null,
+      "training": 2.6402989283699942
+    },
+    {
+      "slot": 7,
+      "source": "results/e3/continuation_v1/runs/S202/gen_7/main.py",
+      "sha256": "f10d41828a82b0716d21b12e3d60d2102411c4e51c935a7aa9d75a9658be4cb5",
+      "correct": true,
+      "error": null,
+      "training": 2.5362380146644106
+    },
+    {
+      "slot": 8,
+      "source": "results/e3/continuation_v1/runs/S202/gen_8/main.py",
+      "sha256": "f10d41828a82b0716d21b12e3d60d2102411c4e51c935a7aa9d75a9658be4cb5",
+      "correct": true,
+      "error": null,
+      "training": 2.5362380146644106
+    },
+    {
+      "slot": 9,
+      "source": "results/e3/continuation_v1/runs/S202/gen_9/main.py",
+      "sha256": "fc938dea6c869791ffb3d7fbbb03f95b21ea86152fb3414345a9d107323d56a1",
+      "correct": true,
+      "error": null,
+      "training": 2.655386350817823
+    },
+    {
+      "slot": 10,
+      "source": "results/e3/continuation_v1/runs/S202/gen_10/main.py",
+      "sha256": "fc938dea6c869791ffb3d7fbbb03f95b21ea86152fb3414345a9d107323d56a1",
+      "correct": true,
+      "error": null,
+      "training": 2.655386350817823
+    },
+    {
+      "slot": 11,
+      "source": "results/e3/continuation_v1/runs/S202/gen_11/main.py",
+      "sha256": "f10d41828a82b0716d21b12e3d60d2102411c4e51c935a7aa9d75a9658be4cb5",
+      "correct": true,
+      "error": null,
+      "training": 2.5362380146644106
+    },
+    {
+      "slot": 12,
+      "source": "results/e3/continuation_v1/runs/S202/gen_12/main.py",
+      "sha256": "f75616963be773f87e1f763e19da530af6529cecb2f9c28fab0fc1c8d15bd67a",
+      "correct": true,
+      "error": null,
+      "training": 2.651720248166949
+    },
+    {
+      "slot": 13,
+      "source": "results/e3/continuation_v1/runs/S202/gen_13/main.py",
+      "sha256": "f10d41828a82b0716d21b12e3d60d2102411c4e51c935a7aa9d75a9658be4cb5",
+      "correct": true,
+      "error": null,
+      "training": 2.5362380146644106
+    },
+    {
+      "slot": 14,
+      "source": "results/e3/continuation_v1/runs/S202/gen_14/main.py",
+      "sha256": "f10d41828a82b0716d21b12e3d60d2102411c4e51c935a7aa9d75a9658be4cb5",
+      "correct": true,
+      "error": null,
+      "training": 2.5362380146644106
+    },
+    {
+      "slot": 15,
+      "source": "results/e3/continuation_v1/runs/S202/gen_15/main.py",
+      "sha256": "7e8d1f3b0bbe4f5bce2db5bb7e234d5b6153a8646a20ca257812515ae694f32a",
+      "correct": true,
+      "error": null,
+      "training": 2.596587704455725
+    },
+    {
+      "slot": 16,
+      "source": "results/e3/continuation_v1/runs/S202/gen_16/main.py",
+      "sha256": "f10d41828a82b0716d21b12e3d60d2102411c4e51c935a7aa9d75a9658be4cb5",
+      "correct": true,
+      "error": null,
+      "training": 2.5362380146644106
+    },
+    {
+      "slot": 17,
+      "source": "results/e3/continuation_v1/runs/S202/gen_17/main.py",
+      "sha256": "cf4f2ba132accc8d045654f68e70b620b648020580dae517a8be829a873ea314",
+      "correct": true,
+      "error": null,
+      "training": 2.6259165256627184
+    },
+    {
+      "slot": 18,
+      "source": "results/e3/continuation_v1/runs/S202/gen_18/main.py",
+      "sha256": "d381a190e7d53948c5ccabe5e633828f810871b0e2632685b912add4ad75792a",
+      "correct": true,
+      "error": null,
+      "training": 2.3367174280879865
+    },
+    {
+      "slot": 19,
+      "source": "results/e3/continuation_v1/runs/S202/gen_19/main.py",
+      "sha256": "fc938dea6c869791ffb3d7fbbb03f95b21ea86152fb3414345a9d107323d56a1",
+      "correct": true,
+      "error": null,
+      "training": 2.655386350817823
+    },
+    {
+      "slot": 20,
+      "source": "results/e3/continuation_v1/runs/S202/gen_20/main.py",
+      "sha256": "2ef6bb2476bdc911bd7bfa7d685092a524da2b17e7b4f3414f4c8ce7ae6136f3",
+      "correct": false,
+      "error": "PolicyError: Unsupported syntax or more than 400 AST nodes",
+      "training": -1.0
+    }
+  ],
+  "training_selected": {
+    "slot": 0,
+    "source": "results/e3/continuation_v1/runs/S202/gen_0/main.py",
+    "sha256": "fc938dea6c869791ffb3d7fbbb03f95b21ea86152fb3414345a9d107323d56a1",
+    "correct": true,
+    "error": null,
+    "training": 2.655386350817823
+  },
+  "runtime_seconds": 510.8839530549594,
+  "finished_utc": "2026-09-08T22:13:16.496713+00:00",
+  "shinka_completed_generations": 21,
+  "headless_list_price_estimate_not_charge": 0.27802639999999995
+}

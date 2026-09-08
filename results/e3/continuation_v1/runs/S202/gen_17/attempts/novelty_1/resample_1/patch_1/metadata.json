@@ -1,0 +1,15 @@
+{
+  "generation": 17,
+  "novelty_attempt": 1,
+  "resample_attempt": 1,
+  "patch_attempt": 1,
+  "success": true,
+  "num_applied": 1,
+  "patch_name": "three_round_forgiveness",
+  "patch_description": "Keeps the successful cooperative opening and immediate defensive response to defection, while restoring cooperation after three consecutive opponent cooperations. This preserves resistance to persistent defectors but improves outcomes against opponents that make isolated defections or return to cooperation.",
+  "error_msg": null,
+  "timestamp": "2026-09-09T00:12:12.308472",
+  "llm_cost": 0.0259448,
+  "llm_model": "headless/codex@gpt-5.6-terra?effort=low",
+  "headless_prompt_path": "/home/roland/actir/shinka-tit-for-tat/results/e3/continuation_v1/runs/S202/gen_17/attempts/novelty_1/resample_1/patch_1/headless_prompt.md"
+}

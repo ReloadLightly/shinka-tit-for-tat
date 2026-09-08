@@ -1,0 +1,75 @@
+{
+  "generated_utc": "2026-09-08T22:30:42.164210+00:00",
+  "runs": {
+    "S101": {
+      "external_invocations": 19,
+      "completed_codex_turn_events": 19,
+      "native_model_response_records": 19,
+      "tokens": {
+        "input_tokens": 110107,
+        "cached_input_tokens": 63232,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 13368,
+        "reasoning_output_tokens": 11066,
+        "total_tokens": 123475
+      },
+      "codex_runtime_seconds": 325.3359941779636,
+      "tool_calls_observed": 0,
+      "tool_calls": [],
+      "fresh_unique_threads": 19,
+      "thread_count": 19
+    },
+    "S202": {
+      "external_invocations": 20,
+      "completed_codex_turn_events": 20,
+      "native_model_response_records": 20,
+      "tokens": {
+        "input_tokens": 115786,
+        "cached_input_tokens": 87552,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 17004,
+        "reasoning_output_tokens": 14452,
+        "total_tokens": 132790
+      },
+      "codex_runtime_seconds": 388.96372936008265,
+      "tool_calls_observed": 0,
+      "tool_calls": [],
+      "fresh_unique_threads": 20,
+      "thread_count": 20
+    },
+    "S303": {
+      "external_invocations": 20,
+      "completed_codex_turn_events": 20,
+      "native_model_response_records": 20,
+      "tokens": {
+        "input_tokens": 115751,
+        "cached_input_tokens": 82688,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 12362,
+        "reasoning_output_tokens": 9834,
+        "total_tokens": 128113
+      },
+      "codex_runtime_seconds": 302.55421645910246,
+      "tool_calls_observed": 0,
+      "tool_calls": [],
+      "fresh_unique_threads": 20,
+      "thread_count": 20
+    }
+  },
+  "tokens": {
+    "input_tokens": 341644,
+    "cached_input_tokens": 233472,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 42734,
+    "reasoning_output_tokens": 35352,
+    "total_tokens": 384378
+  },
+  "unique_native_threads": 59,
+  "native_base_and_permissions_match_local_fixture": true,
+  "native_user_messages_match_recorded_prompts": true,
+  "external_invocations": 59,
+  "native_model_response_records": 59,
+  "completed_codex_turn_events": 59,
+  "codex_runtime_seconds": 1016.8539399971487,
+  "semantics": "One invocation may contain multiple model requests. Native response records count available model usage records; completed Codex turns are separate. Cached input and reasoning output are subsets, not additional tokens."
+}

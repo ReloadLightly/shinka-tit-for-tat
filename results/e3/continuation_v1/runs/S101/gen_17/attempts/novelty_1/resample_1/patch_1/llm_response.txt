@@ -1,0 +1,13 @@
+<NAME>
+tit_for_tat
+</NAME>
+<DESCRIPTION>
+Uses a cooperative opening, then mirrors the opponent’s most recent action. This preserves mutual cooperation with cooperative opponents while immediately discouraging repeated defection, avoiding the permanent retaliation of the prior strategy.
+</DESCRIPTION>
+<CODE>
+```python
+# EVOLVE-BLOCK-START
+def policy(own_history, opponent_history):
+    return 0 if len(opponent_history) == 0 else opponent_history[-1]
+# EVOLVE-BLOCK-END
+```

@@ -1,0 +1,15 @@
+{
+  "generation": 18,
+  "novelty_attempt": 1,
+  "resample_attempt": 1,
+  "patch_attempt": 1,
+  "success": true,
+  "num_applied": 1,
+  "patch_name": "win_stay_shift",
+  "patch_description": "Uses a win-stay, lose-shift strategy: repeat the previous action after a successful payoff, and switch after a poor outcome. It cooperates initially, sustains mutual cooperation, exploits persistent cooperation when possible, and avoids permanent retaliation cycles.",
+  "error_msg": null,
+  "timestamp": "2026-09-09T00:21:39.937892",
+  "llm_cost": 0.0107528,
+  "llm_model": "headless/codex@gpt-5.6-terra?effort=low",
+  "headless_prompt_path": "/home/roland/actir/shinka-tit-for-tat/results/e3/continuation_v1/runs/S303/gen_18/attempts/novelty_1/resample_1/patch_1/headless_prompt.md"
+}

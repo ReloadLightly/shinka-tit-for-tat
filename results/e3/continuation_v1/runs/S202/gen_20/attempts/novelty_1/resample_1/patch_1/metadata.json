@@ -1,0 +1,15 @@
+{
+  "generation": 20,
+  "novelty_attempt": 1,
+  "resample_attempt": 1,
+  "patch_attempt": 1,
+  "success": true,
+  "num_applied": 1,
+  "patch_name": "forgiving_trigger",
+  "patch_description": "Cooperate initially and while the opponent cooperates. Retaliate after defection, but restore cooperation once the opponent has shown three consecutive cooperative moves, allowing recovery from isolated defections while retaining protection against persistent defectors.",
+  "error_msg": null,
+  "timestamp": "2026-09-09T00:13:15.416290",
+  "llm_cost": 0.01958,
+  "llm_model": "headless/codex@gpt-5.6-terra?effort=low",
+  "headless_prompt_path": "/home/roland/actir/shinka-tit-for-tat/results/e3/continuation_v1/runs/S202/gen_20/attempts/novelty_1/resample_1/patch_1/headless_prompt.md"
+}

@@ -1,0 +1,16 @@
+<NAME>
+one_defection_grace
+</NAME>
+
+<DESCRIPTION>
+Cooperate initially and forgive a single opponent defection, allowing recovery against opponents that make an early test move. Switch permanently to defection after repeated evidence of exploitation.
+</DESCRIPTION>
+
+<CODE>
+```python
+# EVOLVE-BLOCK-START
+def policy(own_history, opponent_history):
+    return 0 if opponent_history.count(1) < 2 else 1
+# EVOLVE-BLOCK-END
+```
+{"usage":{"agent":"codex","provider":"openai","model":"gpt-5.6-terra","inputTokens":942,"cacheReadTokens":4864,"cacheWriteTokens":0,"outputTokens":446,"reasoningOutputTokens":340,"totalTokens":6252,"usageStatus":"reported","cost":{"input":0.001884,"cacheRead":0.0009728,"cacheWrite":0,"output":0.005352,"total":0.0082088},"costBasis":"api-list-price-estimate","pricingSource":"models.dev","pricingStatus":"priced"}}

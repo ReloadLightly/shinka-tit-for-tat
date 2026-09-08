@@ -1,0 +1,15 @@
+{
+  "generation": 19,
+  "novelty_attempt": 1,
+  "resample_attempt": 1,
+  "patch_attempt": 1,
+  "success": true,
+  "num_applied": 1,
+  "patch_name": "grim_trigger",
+  "patch_description": "Cooperate initially and continue cooperating while the opponent has never defected. Permanently defect after the first observed defection. This restores the best previously measured score (2.66), improving on the current two-defection threshold (2.65).",
+  "error_msg": null,
+  "timestamp": "2026-09-09T00:12:50.653193",
+  "llm_cost": 0.0086708,
+  "llm_model": "headless/codex@gpt-5.6-terra?effort=low",
+  "headless_prompt_path": "/home/roland/actir/shinka-tit-for-tat/results/e3/continuation_v1/runs/S202/gen_19/attempts/novelty_1/resample_1/patch_1/headless_prompt.md"
+}

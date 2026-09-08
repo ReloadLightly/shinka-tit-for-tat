@@ -1,0 +1,16 @@
+<NAME>
+tit_for_tat
+</NAME>
+
+<DESCRIPTION>
+Cooperate initially, then mirror the opponent’s most recent action. This preserves mutual cooperation with cooperative opponents while responding immediately to defections and allowing cooperation to resume after an opponent returns to action 0.
+</DESCRIPTION>
+
+<CODE>
+```python
+# EVOLVE-BLOCK-START
+def policy(own_history, opponent_history):
+    return 0 if len(opponent_history) == 0 else opponent_history[-1]
+# EVOLVE-BLOCK-END
+```
+{"usage":{"agent":"codex","provider":"openai","model":"gpt-5.6-terra","inputTokens":921,"cacheReadTokens":4864,"cacheWriteTokens":0,"outputTokens":838,"reasoningOutputTokens":725,"totalTokens":6623,"usageStatus":"reported","cost":{"input":0.001842,"cacheRead":0.0009728,"cacheWrite":0,"output":0.010056,"total":0.0128708},"costBasis":"api-list-price-estimate","pricingSource":"models.dev","pricingStatus":"priced"}}

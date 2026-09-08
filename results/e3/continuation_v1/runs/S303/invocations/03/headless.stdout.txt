@@ -1,0 +1,16 @@
+<NAME>
+grim_trigger
+</NAME>
+
+<DESCRIPTION>
+Cooperate initially and continue cooperating while the opponent has never defected; permanently defect after their first defection. This prior candidate outperformed the current last-action mimic strategy (2.66 vs. 2.54).
+</DESCRIPTION>
+
+<CODE>
+```python
+# EVOLVE-BLOCK-START
+def policy(own_history, opponent_history):
+    return 0 if len(opponent_history) == 0 or opponent_history.count(1) == 0 else 1
+# EVOLVE-BLOCK-END
+```
+{"usage":{"agent":"codex","provider":"openai","model":"gpt-5.6-terra","inputTokens":922,"cacheReadTokens":4864,"cacheWriteTokens":0,"outputTokens":218,"reasoningOutputTokens":95,"totalTokens":6004,"usageStatus":"reported","cost":{"input":0.001844,"cacheRead":0.0009728,"cacheWrite":0,"output":0.002616,"total":0.0054328},"costBasis":"api-list-price-estimate","pricingSource":"models.dev","pricingStatus":"priced"}}

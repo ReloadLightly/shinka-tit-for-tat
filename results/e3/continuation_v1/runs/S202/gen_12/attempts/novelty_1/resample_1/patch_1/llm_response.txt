@@ -1,0 +1,13 @@
+<NAME>
+one_defection_grace
+</NAME>
+<DESCRIPTION>
+Cooperate initially and forgive a single opponent defection, allowing recovery against opponents that make an early test move. Switch permanently to defection after repeated evidence of exploitation.
+</DESCRIPTION>
+<CODE>
+```python
+# EVOLVE-BLOCK-START
+def policy(own_history, opponent_history):
+    return 0 if opponent_history.count(1) < 2 else 1
+# EVOLVE-BLOCK-END
+```

@@ -1,0 +1,16 @@
+<NAME>
+grim_trigger
+</NAME>
+
+<DESCRIPTION>
+Restores the stronger prior strategy (2.66 vs. 2.65): cooperate until the opponent has ever played action 1, then permanently play action 1.
+</DESCRIPTION>
+
+<CODE>
+```python
+# EVOLVE-BLOCK-START
+def policy(own_history, opponent_history):
+    return 0 if len(opponent_history) == 0 or opponent_history.count(1) == 0 else 1
+# EVOLVE-BLOCK-END
+```
+{"usage":{"agent":"codex","provider":"openai","model":"gpt-5.6-terra","inputTokens":5816,"cacheReadTokens":0,"cacheWriteTokens":0,"outputTokens":314,"reasoningOutputTokens":200,"totalTokens":6130,"usageStatus":"reported","cost":{"input":0.011632,"cacheRead":0,"cacheWrite":0,"output":0.003768,"total":0.0154},"costBasis":"api-list-price-estimate","pricingSource":"models.dev","pricingStatus":"priced"}}

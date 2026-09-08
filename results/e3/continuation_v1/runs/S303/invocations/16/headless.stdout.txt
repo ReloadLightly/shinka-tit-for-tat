@@ -1,0 +1,16 @@
+<NAME>
+grim_defector_guard
+</NAME>
+
+<DESCRIPTION>
+Cooperate initially and while the opponent has never defected; permanently defect after their first defection. This preserves mutual cooperation against cooperative strategies while preventing repeated exploitation by defectors. It matches the strongest prior observed approach.
+</DESCRIPTION>
+
+<CODE>
+```python
+# EVOLVE-BLOCK-START
+def policy(own_history, opponent_history):
+    return 0 if len(opponent_history) == 0 or opponent_history.count(1) == 0 else 1
+# EVOLVE-BLOCK-END
+```
+{"usage":{"agent":"codex","provider":"openai","model":"gpt-5.6-terra","inputTokens":929,"cacheReadTokens":4864,"cacheWriteTokens":0,"outputTokens":640,"reasoningOutputTokens":516,"totalTokens":6433,"usageStatus":"reported","cost":{"input":0.001858,"cacheRead":0.0009728,"cacheWrite":0,"output":0.00768,"total":0.0105108},"costBasis":"api-list-price-estimate","pricingSource":"models.dev","pricingStatus":"priced"}}

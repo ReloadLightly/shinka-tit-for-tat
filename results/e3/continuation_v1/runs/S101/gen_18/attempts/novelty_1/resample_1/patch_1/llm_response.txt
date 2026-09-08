@@ -1,0 +1,13 @@
+<NAME>
+cooperate_until_defection
+</NAME>
+<DESCRIPTION>
+Cooperate while the opponent has always cooperated, then defect permanently after observing any defection. This matches the strongest provided prior result (2.66), improving on the current tit-for-tat score of 2.54.
+</DESCRIPTION>
+<CODE>
+```python
+# EVOLVE-BLOCK-START
+def policy(own_history, opponent_history):
+    return 0 if len(opponent_history) == 0 or opponent_history.count(1) == 0 else 1
+# EVOLVE-BLOCK-END
+```

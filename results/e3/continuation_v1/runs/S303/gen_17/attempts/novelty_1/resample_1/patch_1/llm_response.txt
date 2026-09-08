@@ -1,0 +1,13 @@
+<NAME>
+probe_then_exploit
+</NAME>
+<DESCRIPTION>
+Cooperate initially to preserve mutual-cooperation outcomes. On round 8, make a single probe against an opponent that has never defected. If it continues cooperating, exploit thereafter; if it retaliates, immediately return to cooperation. This improves payoff against unconditional cooperators while retaining cooperation with responsive opponents.
+</DESCRIPTION>
+<CODE>
+```python
+# EVOLVE-BLOCK-START
+def policy(own_history, opponent_history):
+    return 1 if len(opponent_history) == 8 and opponent_history.count(1) == 0 else (1 if len(opponent_history) > 8 and opponent_history.count(1) == 0 else 0)
+# EVOLVE-BLOCK-END
+```

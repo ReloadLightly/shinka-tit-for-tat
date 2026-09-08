@@ -1,0 +1,16 @@
+<NAME>
+forgiving_grim
+</NAME>
+
+<DESCRIPTION>
+Cooperate initially and with consistently cooperative opponents. After a single isolated defection, retaliate once; if the opponent returns to cooperation immediately, restore cooperation. Escalate to persistent defection after repeated defections, preserving protection against consistently exploitative opponents while improving outcomes with opponents that use limited testing or forgiveness.
+</DESCRIPTION>
+
+<CODE>
+```python
+# EVOLVE-BLOCK-START
+def policy(own_history, opponent_history):
+    return 0 if len(opponent_history) == 0 or opponent_history.count(1) == 0 or (opponent_history.count(1) == 1 and opponent_history[-1] == 0) else 1
+# EVOLVE-BLOCK-END
+```
+{"usage":{"agent":"codex","provider":"openai","model":"gpt-5.6-terra","inputTokens":952,"cacheReadTokens":4864,"cacheWriteTokens":0,"outputTokens":681,"reasoningOutputTokens":516,"totalTokens":6497,"usageStatus":"reported","cost":{"input":0.001904,"cacheRead":0.0009728,"cacheWrite":0,"output":0.008172,"total":0.0110488},"costBasis":"api-list-price-estimate","pricingSource":"models.dev","pricingStatus":"priced"}}

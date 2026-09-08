@@ -1,0 +1,15 @@
+{
+  "generation": 10,
+  "novelty_attempt": 1,
+  "resample_attempt": 1,
+  "patch_attempt": 1,
+  "success": true,
+  "num_applied": 1,
+  "patch_name": "compact_grudger",
+  "patch_description": "Equivalent compact implementation of the existing grim-trigger policy: cooperate until the opponent has defected at least once, then defect permanently.",
+  "error_msg": null,
+  "timestamp": "2026-09-09T00:18:22.381070",
+  "llm_cost": 0.0344048,
+  "llm_model": "headless/codex@gpt-5.6-terra?effort=low",
+  "headless_prompt_path": "/home/roland/actir/shinka-tit-for-tat/results/e3/continuation_v1/runs/S303/gen_10/attempts/novelty_1/resample_1/patch_1/headless_prompt.md"
+}

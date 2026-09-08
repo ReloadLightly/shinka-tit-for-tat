@@ -1,0 +1,16 @@
+<NAME>
+probe_then_exploit
+</NAME>
+
+<DESCRIPTION>
+Cooperate initially to preserve mutual-cooperation outcomes. On round 8, make a single probe against an opponent that has never defected. If it continues cooperating, exploit thereafter; if it retaliates, immediately return to cooperation. This improves payoff against unconditional cooperators while retaining cooperation with responsive opponents.
+</DESCRIPTION>
+
+<CODE>
+```python
+# EVOLVE-BLOCK-START
+def policy(own_history, opponent_history):
+    return 1 if len(opponent_history) == 8 and opponent_history.count(1) == 0 else (1 if len(opponent_history) > 8 and opponent_history.count(1) == 0 else 0)
+# EVOLVE-BLOCK-END
+```
+{"usage":{"agent":"codex","provider":"openai","model":"gpt-5.6-terra","inputTokens":930,"cacheReadTokens":4864,"cacheWriteTokens":0,"outputTokens":679,"reasoningOutputTokens":516,"totalTokens":6473,"usageStatus":"reported","cost":{"input":0.00186,"cacheRead":0.0009728,"cacheWrite":0,"output":0.008148,"total":0.0109808},"costBasis":"api-list-price-estimate","pricingSource":"models.dev","pricingStatus":"priced"}}

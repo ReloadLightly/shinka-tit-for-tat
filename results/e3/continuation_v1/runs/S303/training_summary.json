@@ -1,0 +1,185 @@
+{
+  "run_id": "S303",
+  "records": [
+    {
+      "slot": 0,
+      "source": "results/e3/continuation_v1/runs/S303/gen_0/main.py",
+      "sha256": "fc938dea6c869791ffb3d7fbbb03f95b21ea86152fb3414345a9d107323d56a1",
+      "correct": true,
+      "error": null,
+      "training": 2.655386350817823
+    },
+    {
+      "slot": 1,
+      "source": "results/e3/continuation_v1/runs/S303/gen_1/main.py",
+      "sha256": "f10d41828a82b0716d21b12e3d60d2102411c4e51c935a7aa9d75a9658be4cb5",
+      "correct": true,
+      "error": null,
+      "training": 2.5362380146644106
+    },
+    {
+      "slot": 2,
+      "source": "results/e3/continuation_v1/runs/S303/gen_2/main.py",
+      "sha256": "f6d1e447fb48167251b26f699102abc502b6e36a7d6ab2e47d76336b8e0a731a",
+      "correct": true,
+      "error": null,
+      "training": 2.4740552735476595
+    },
+    {
+      "slot": 3,
+      "source": "results/e3/continuation_v1/runs/S303/gen_3/main.py",
+      "sha256": "fc938dea6c869791ffb3d7fbbb03f95b21ea86152fb3414345a9d107323d56a1",
+      "correct": true,
+      "error": null,
+      "training": 2.655386350817823
+    },
+    {
+      "slot": 4,
+      "source": "results/e3/continuation_v1/runs/S303/gen_4/main.py",
+      "sha256": "e3e547f798beadeb83b2bf93e999d69b685ea91eecf92ba65eec61b797f3f354",
+      "correct": true,
+      "error": null,
+      "training": 2.084743372814439
+    },
+    {
+      "slot": 5,
+      "source": "results/e3/continuation_v1/runs/S303/gen_5/main.py",
+      "sha256": "fc938dea6c869791ffb3d7fbbb03f95b21ea86152fb3414345a9d107323d56a1",
+      "correct": true,
+      "error": null,
+      "training": 2.655386350817823
+    },
+    {
+      "slot": 6,
+      "source": "results/e3/continuation_v1/runs/S303/gen_6/main.py",
+      "sha256": "7509a8317f7009e4634e3bbf2322edbb59c97f7f8c4a89b187c0277f29a43e67",
+      "correct": true,
+      "error": null,
+      "training": 2.5362380146644106
+    },
+    {
+      "slot": 7,
+      "source": "results/e3/continuation_v1/runs/S303/gen_7/main.py",
+      "sha256": "f10d41828a82b0716d21b12e3d60d2102411c4e51c935a7aa9d75a9658be4cb5",
+      "correct": true,
+      "error": null,
+      "training": 2.5362380146644106
+    },
+    {
+      "slot": 8,
+      "source": "results/e3/continuation_v1/runs/S303/gen_8/main.py",
+      "sha256": "fc938dea6c869791ffb3d7fbbb03f95b21ea86152fb3414345a9d107323d56a1",
+      "correct": true,
+      "error": null,
+      "training": 2.655386350817823
+    },
+    {
+      "slot": 9,
+      "source": "results/e3/continuation_v1/runs/S303/gen_9/main.py",
+      "sha256": "5e2435f26659ecd839a1ddb3d5d8696625158ba6040ec89d13a8521072e065e1",
+      "correct": true,
+      "error": null,
+      "training": 2.067540891144952
+    },
+    {
+      "slot": 10,
+      "source": "results/e3/continuation_v1/runs/S303/gen_10/main.py",
+      "sha256": "d3dfd85d89b59cb346276d4913e3fc3af812a3cf56fc4eeabfb09d461f27eb7a",
+      "correct": true,
+      "error": null,
+      "training": 2.655386350817823
+    },
+    {
+      "slot": 11,
+      "source": "results/e3/continuation_v1/runs/S303/gen_11/main.py",
+      "sha256": "fc938dea6c869791ffb3d7fbbb03f95b21ea86152fb3414345a9d107323d56a1",
+      "correct": true,
+      "error": null,
+      "training": 2.655386350817823
+    },
+    {
+      "slot": 12,
+      "source": "results/e3/continuation_v1/runs/S303/gen_12/main.py",
+      "sha256": "f10d41828a82b0716d21b12e3d60d2102411c4e51c935a7aa9d75a9658be4cb5",
+      "correct": true,
+      "error": null,
+      "training": 2.5362380146644106
+    },
+    {
+      "slot": 13,
+      "source": "results/e3/continuation_v1/runs/S303/gen_13/main.py",
+      "sha256": "f6d1e447fb48167251b26f699102abc502b6e36a7d6ab2e47d76336b8e0a731a",
+      "correct": true,
+      "error": null,
+      "training": 2.4740552735476595
+    },
+    {
+      "slot": 14,
+      "source": "results/e3/continuation_v1/runs/S303/gen_14/main.py",
+      "sha256": "f10d41828a82b0716d21b12e3d60d2102411c4e51c935a7aa9d75a9658be4cb5",
+      "correct": true,
+      "error": null,
+      "training": 2.5362380146644106
+    },
+    {
+      "slot": 15,
+      "source": "results/e3/continuation_v1/runs/S303/gen_15/main.py",
+      "sha256": "fc938dea6c869791ffb3d7fbbb03f95b21ea86152fb3414345a9d107323d56a1",
+      "correct": true,
+      "error": null,
+      "training": 2.655386350817823
+    },
+    {
+      "slot": 16,
+      "source": "results/e3/continuation_v1/runs/S303/gen_16/main.py",
+      "sha256": "fc938dea6c869791ffb3d7fbbb03f95b21ea86152fb3414345a9d107323d56a1",
+      "correct": true,
+      "error": null,
+      "training": 2.655386350817823
+    },
+    {
+      "slot": 17,
+      "source": "results/e3/continuation_v1/runs/S303/gen_17/main.py",
+      "sha256": "9126992e4c91e4830228675374b36e58ee00c3c4c66e4700eb35bc7048ddcac6",
+      "correct": true,
+      "error": null,
+      "training": 2.084743372814439
+    },
+    {
+      "slot": 18,
+      "source": "results/e3/continuation_v1/runs/S303/gen_18/main.py",
+      "sha256": "9831bfc751805300bf341d2bb9c649e5e30916c3114e4d39ac7af8115c91078f",
+      "correct": true,
+      "error": null,
+      "training": 2.5362380146644106
+    },
+    {
+      "slot": 19,
+      "source": "results/e3/continuation_v1/runs/S303/gen_19/main.py",
+      "sha256": "7509a8317f7009e4634e3bbf2322edbb59c97f7f8c4a89b187c0277f29a43e67",
+      "correct": true,
+      "error": null,
+      "training": 2.5362380146644106
+    },
+    {
+      "slot": 20,
+      "source": "results/e3/continuation_v1/runs/S303/gen_20/main.py",
+      "sha256": "f10d41828a82b0716d21b12e3d60d2102411c4e51c935a7aa9d75a9658be4cb5",
+      "correct": true,
+      "error": null,
+      "training": 2.5362380146644106
+    }
+  ],
+  "training_selected": {
+    "slot": 0,
+    "source": "results/e3/continuation_v1/runs/S303/gen_0/main.py",
+    "sha256": "fc938dea6c869791ffb3d7fbbb03f95b21ea86152fb3414345a9d107323d56a1",
+    "correct": true,
+    "error": null,
+    "training": 2.655386350817823
+  },
+  "runtime_seconds": 483.7636145110009,
+  "finished_utc": "2026-09-08T22:22:20.497338+00:00",
+  "shinka_completed_generations": 21,
+  "headless_list_price_estimate_not_charge": 0.23100760000000004
+}

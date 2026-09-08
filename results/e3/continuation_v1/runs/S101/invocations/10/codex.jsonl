@@ -1,0 +1,5 @@
+{"type":"thread.started","thread_id":"01a08308-f100-79e2-a317-6c6b58567f6b"}
+{"type":"item.completed","item":{"id":"item_0","type":"error","message":"Code Mode is unavailable because code-mode host is disabled. Code mode will fail closed; enable `features.code_mode_host` and install `codex-code-mode-host`."}}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_1","type":"agent_message","text":"<NAME>\nfirst_defection_grim\n</NAME>\n\n<DESCRIPTION>\nCooperate while the opponent has always cooperated, then defect permanently after their first defection. This restores the higher-performing prior policy (2.66 versus 2.65), while exploiting unconditional cooperators and avoiding continued cooperation after detected defection.\n</DESCRIPTION>\n\n<CODE>\n```python\n# EVOLVE-BLOCK-START\ndef policy(own_history, opponent_history):\n    return 0 if len(opponent_history) == 0 or opponent_history.count(1) == 0 else 1\n# EVOLVE-BLOCK-END\n```"}}
+{"type":"turn.completed","usage":{"input_tokens":5816,"cached_input_tokens":4864,"cache_write_input_tokens":0,"output_tokens":253,"reasoning_output_tokens":121}}

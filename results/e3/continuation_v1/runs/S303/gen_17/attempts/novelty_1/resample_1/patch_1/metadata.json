@@ -1,0 +1,15 @@
+{
+  "generation": 17,
+  "novelty_attempt": 1,
+  "resample_attempt": 1,
+  "patch_attempt": 1,
+  "success": true,
+  "num_applied": 1,
+  "patch_name": "probe_then_exploit",
+  "patch_description": "Cooperate initially to preserve mutual-cooperation outcomes. On round 8, make a single probe against an opponent that has never defected. If it continues cooperating, exploit thereafter; if it retaliates, immediately return to cooperation. This improves payoff against unconditional cooperators while retaining cooperation with responsive opponents.",
+  "error_msg": null,
+  "timestamp": "2026-09-09T00:21:11.096537",
+  "llm_cost": 0.0109808,
+  "llm_model": "headless/codex@gpt-5.6-terra?effort=low",
+  "headless_prompt_path": "/home/roland/actir/shinka-tit-for-tat/results/e3/continuation_v1/runs/S303/gen_17/attempts/novelty_1/resample_1/patch_1/headless_prompt.md"
+}

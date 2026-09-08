@@ -1,0 +1,16 @@
+<NAME>
+grim_response
+</NAME>
+
+<DESCRIPTION>
+Cooperate initially and continue cooperating while the opponent has never defected. Once any defection is observed, defect thereafter. This matches the stronger prior result (2.66 versus 2.54).
+</DESCRIPTION>
+
+<CODE>
+```python
+# EVOLVE-BLOCK-START
+def policy(own_history, opponent_history):
+    return 0 if len(opponent_history) == 0 or opponent_history.count(1) == 0 else 1
+# EVOLVE-BLOCK-END
+```
+{"usage":{"agent":"codex","provider":"openai","model":"gpt-5.6-terra","inputTokens":5786,"cacheReadTokens":0,"cacheWriteTokens":0,"outputTokens":1468,"reasoningOutputTokens":1349,"totalTokens":7254,"usageStatus":"reported","cost":{"input":0.011572,"cacheRead":0,"cacheWrite":0,"output":0.017616,"total":0.029188},"costBasis":"api-list-price-estimate","pricingSource":"models.dev","pricingStatus":"priced"}}

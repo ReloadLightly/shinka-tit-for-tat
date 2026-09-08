@@ -1,0 +1,1082 @@
+{
+  "S101": {
+    "train": {
+      "total_payoff": 467574,
+      "opponent_total_payoff": 395649,
+      "turns": 175392,
+      "cooperations": 117221,
+      "completed_matches": 600,
+      "recorded_matches": 600,
+      "expected_matches": 600,
+      "statuses": {
+        "ok": 600
+      },
+      "complete": true,
+      "mean_payoff": 2.6658798576902023,
+      "cooperation_rate": 0.6683372103630725,
+      "opponents": {
+        "always_cooperate": {
+          "total_payoff": 87696,
+          "opponent_total_payoff": 87696,
+          "turns": 29232,
+          "cooperations": 29232,
+          "completed_matches": 100,
+          "recorded_matches": 100,
+          "expected_matches": 100,
+          "statuses": {
+            "ok": 100
+          },
+          "complete": true,
+          "mean_payoff": 3.0,
+          "cooperation_rate": 1.0
+        },
+        "always_defect": {
+          "total_payoff": 29132,
+          "opponent_total_payoff": 29632,
+          "turns": 29232,
+          "cooperations": 100,
+          "completed_matches": 100,
+          "recorded_matches": 100,
+          "expected_matches": 100,
+          "statuses": {
+            "ok": 100
+          },
+          "complete": true,
+          "mean_payoff": 0.9965790914066777,
+          "cooperation_rate": 0.0034209085933223863
+        },
+        "grim": {
+          "total_payoff": 87696,
+          "opponent_total_payoff": 87696,
+          "turns": 29232,
+          "cooperations": 29232,
+          "completed_matches": 100,
+          "recorded_matches": 100,
+          "expected_matches": 100,
+          "statuses": {
+            "ok": 100
+          },
+          "complete": true,
+          "mean_payoff": 3.0,
+          "cooperation_rate": 1.0
+        },
+        "random": {
+          "total_payoff": 87658,
+          "opponent_total_payoff": 15233,
+          "turns": 29232,
+          "cooperations": 193,
+          "completed_matches": 100,
+          "recorded_matches": 100,
+          "expected_matches": 100,
+          "statuses": {
+            "ok": 100
+          },
+          "complete": true,
+          "mean_payoff": 2.9987000547345377,
+          "cooperation_rate": 0.006602353585112206
+        },
+        "tit_for_tat": {
+          "total_payoff": 87696,
+          "opponent_total_payoff": 87696,
+          "turns": 29232,
+          "cooperations": 29232,
+          "completed_matches": 100,
+          "recorded_matches": 100,
+          "expected_matches": 100,
+          "statuses": {
+            "ok": 100
+          },
+          "complete": true,
+          "mean_payoff": 3.0,
+          "cooperation_rate": 1.0
+        },
+        "win_stay_lose_shift": {
+          "total_payoff": 87696,
+          "opponent_total_payoff": 87696,
+          "turns": 29232,
+          "cooperations": 29232,
+          "completed_matches": 100,
+          "recorded_matches": 100,
+          "expected_matches": 100,
+          "statuses": {
+            "ok": 100
+          },
+          "complete": true,
+          "mean_payoff": 3.0,
+          "cooperation_rate": 1.0
+        }
+      }
+    },
+    "holdout": {
+      "total_payoff": 476957,
+      "opponent_total_payoff": 256362,
+      "turns": 179052,
+      "cooperations": 60515,
+      "completed_matches": 600,
+      "recorded_matches": 600,
+      "expected_matches": 600,
+      "statuses": {
+        "ok": 600
+      },
+      "complete": true,
+      "mean_payoff": 2.6637904072559926,
+      "cooperation_rate": 0.337974443178518,
+      "opponents": {
+        "alternator": {
+          "total_payoff": 89342,
+          "opponent_total_payoff": 15592,
+          "turns": 29842,
+          "cooperations": 200,
+          "completed_matches": 100,
+          "recorded_matches": 100,
+          "expected_matches": 100,
+          "statuses": {
+            "ok": 100
+          },
+          "complete": true,
+          "mean_payoff": 2.993834193418672,
+          "cooperation_rate": 0.00670196367535688
+        },
+        "hard_tit_for_tat": {
+          "total_payoff": 89526,
+          "opponent_total_payoff": 89526,
+          "turns": 29842,
+          "cooperations": 29842,
+          "completed_matches": 100,
+          "recorded_matches": 100,
+          "expected_matches": 100,
+          "statuses": {
+            "ok": 100
+          },
+          "complete": true,
+          "mean_payoff": 3.0,
+          "cooperation_rate": 1.0
+        },
+        "random_20": {
+          "total_payoff": 53442,
+          "opponent_total_payoff": 24397,
+          "turns": 29842,
+          "cooperations": 132,
+          "completed_matches": 100,
+          "recorded_matches": 100,
+          "expected_matches": 100,
+          "statuses": {
+            "ok": 100
+          },
+          "complete": true,
+          "mean_payoff": 1.7908317136921117,
+          "cooperation_rate": 0.004423296025735541
+        },
+        "random_80": {
+          "total_payoff": 124979,
+          "opponent_total_payoff": 7179,
+          "turns": 29842,
+          "cooperations": 399,
+          "completed_matches": 100,
+          "recorded_matches": 100,
+          "expected_matches": 100,
+          "statuses": {
+            "ok": 100
+          },
+          "complete": true,
+          "mean_payoff": 4.188023590912137,
+          "cooperation_rate": 0.013370417532336974
+        },
+        "suspicious_tit_for_tat": {
+          "total_payoff": 30142,
+          "opponent_total_payoff": 30142,
+          "turns": 29842,
+          "cooperations": 100,
+          "completed_matches": 100,
+          "recorded_matches": 100,
+          "expected_matches": 100,
+          "statuses": {
+            "ok": 100
+          },
+          "complete": true,
+          "mean_payoff": 1.0100529455130354,
+          "cooperation_rate": 0.00335098183767844
+        },
+        "tit_for_two_tats": {
+          "total_payoff": 89526,
+          "opponent_total_payoff": 89526,
+          "turns": 29842,
+          "cooperations": 29842,
+          "completed_matches": 100,
+          "recorded_matches": 100,
+          "expected_matches": 100,
+          "statuses": {
+            "ok": 100
+          },
+          "complete": true,
+          "mean_payoff": 3.0,
+          "cooperation_rate": 1.0
+        }
+      }
+    }
+  },
+  "S202": {
+    "train": {
+      "total_payoff": 467574,
+      "opponent_total_payoff": 395649,
+      "turns": 175392,
+      "cooperations": 117221,
+      "completed_matches": 600,
+      "recorded_matches": 600,
+      "expected_matches": 600,
+      "statuses": {
+        "ok": 600
+      },
+      "complete": true,
+      "mean_payoff": 2.6658798576902023,
+      "cooperation_rate": 0.6683372103630725,
+      "opponents": {
+        "always_cooperate": {
+          "total_payoff": 87696,
+          "opponent_total_payoff": 87696,
+          "turns": 29232,
+          "cooperations": 29232,
+          "completed_matches": 100,
+          "recorded_matches": 100,
+          "expected_matches": 100,
+          "statuses": {
+            "ok": 100
+          },
+          "complete": true,
+          "mean_payoff": 3.0,
+          "cooperation_rate": 1.0
+        },
+        "always_defect": {
+          "total_payoff": 29132,
+          "opponent_total_payoff": 29632,
+          "turns": 29232,
+          "cooperations": 100,
+          "completed_matches": 100,
+          "recorded_matches": 100,
+          "expected_matches": 100,
+          "statuses": {
+            "ok": 100
+          },
+          "complete": true,
+          "mean_payoff": 0.9965790914066777,
+          "cooperation_rate": 0.0034209085933223863
+        },
+        "grim": {
+          "total_payoff": 87696,
+          "opponent_total_payoff": 87696,
+          "turns": 29232,
+          "cooperations": 29232,
+          "completed_matches": 100,
+          "recorded_matches": 100,
+          "expected_matches": 100,
+          "statuses": {
+            "ok": 100
+          },
+          "complete": true,
+          "mean_payoff": 3.0,
+          "cooperation_rate": 1.0
+        },
+        "random": {
+          "total_payoff": 87658,
+          "opponent_total_payoff": 15233,
+          "turns": 29232,
+          "cooperations": 193,
+          "completed_matches": 100,
+          "recorded_matches": 100,
+          "expected_matches": 100,
+          "statuses": {
+            "ok": 100
+          },
+          "complete": true,
+          "mean_payoff": 2.9987000547345377,
+          "cooperation_rate": 0.006602353585112206
+        },
+        "tit_for_tat": {
+          "total_payoff": 87696,
+          "opponent_total_payoff": 87696,
+          "turns": 29232,
+          "cooperations": 29232,
+          "completed_matches": 100,
+          "recorded_matches": 100,
+          "expected_matches": 100,
+          "statuses": {
+            "ok": 100
+          },
+          "complete": true,
+          "mean_payoff": 3.0,
+          "cooperation_rate": 1.0
+        },
+        "win_stay_lose_shift": {
+          "total_payoff": 87696,
+          "opponent_total_payoff": 87696,
+          "turns": 29232,
+          "cooperations": 29232,
+          "completed_matches": 100,
+          "recorded_matches": 100,
+          "expected_matches": 100,
+          "statuses": {
+            "ok": 100
+          },
+          "complete": true,
+          "mean_payoff": 3.0,
+          "cooperation_rate": 1.0
+        }
+      }
+    },
+    "holdout": {
+      "total_payoff": 476957,
+      "opponent_total_payoff": 256362,
+      "turns": 179052,
+      "cooperations": 60515,
+      "completed_matches": 600,
+      "recorded_matches": 600,
+      "expected_matches": 600,
+      "statuses": {
+        "ok": 600
+      },
+      "complete": true,
+      "mean_payoff": 2.6637904072559926,
+      "cooperation_rate": 0.337974443178518,
+      "opponents": {
+        "alternator": {
+          "total_payoff": 89342,
+          "opponent_total_payoff": 15592,
+          "turns": 29842,
+          "cooperations": 200,
+          "completed_matches": 100,
+          "recorded_matches": 100,
+          "expected_matches": 100,
+          "statuses": {
+            "ok": 100
+          },
+          "complete": true,
+          "mean_payoff": 2.993834193418672,
+          "cooperation_rate": 0.00670196367535688
+        },
+        "hard_tit_for_tat": {
+          "total_payoff": 89526,
+          "opponent_total_payoff": 89526,
+          "turns": 29842,
+          "cooperations": 29842,
+          "completed_matches": 100,
+          "recorded_matches": 100,
+          "expected_matches": 100,
+          "statuses": {
+            "ok": 100
+          },
+          "complete": true,
+          "mean_payoff": 3.0,
+          "cooperation_rate": 1.0
+        },
+        "random_20": {
+          "total_payoff": 53442,
+          "opponent_total_payoff": 24397,
+          "turns": 29842,
+          "cooperations": 132,
+          "completed_matches": 100,
+          "recorded_matches": 100,
+          "expected_matches": 100,
+          "statuses": {
+            "ok": 100
+          },
+          "complete": true,
+          "mean_payoff": 1.7908317136921117,
+          "cooperation_rate": 0.004423296025735541
+        },
+        "random_80": {
+          "total_payoff": 124979,
+          "opponent_total_payoff": 7179,
+          "turns": 29842,
+          "cooperations": 399,
+          "completed_matches": 100,
+          "recorded_matches": 100,
+          "expected_matches": 100,
+          "statuses": {
+            "ok": 100
+          },
+          "complete": true,
+          "mean_payoff": 4.188023590912137,
+          "cooperation_rate": 0.013370417532336974
+        },
+        "suspicious_tit_for_tat": {
+          "total_payoff": 30142,
+          "opponent_total_payoff": 30142,
+          "turns": 29842,
+          "cooperations": 100,
+          "completed_matches": 100,
+          "recorded_matches": 100,
+          "expected_matches": 100,
+          "statuses": {
+            "ok": 100
+          },
+          "complete": true,
+          "mean_payoff": 1.0100529455130354,
+          "cooperation_rate": 0.00335098183767844
+        },
+        "tit_for_two_tats": {
+          "total_payoff": 89526,
+          "opponent_total_payoff": 89526,
+          "turns": 29842,
+          "cooperations": 29842,
+          "completed_matches": 100,
+          "recorded_matches": 100,
+          "expected_matches": 100,
+          "statuses": {
+            "ok": 100
+          },
+          "complete": true,
+          "mean_payoff": 3.0,
+          "cooperation_rate": 1.0
+        }
+      }
+    }
+  },
+  "S303": {
+    "train": {
+      "total_payoff": 467574,
+      "opponent_total_payoff": 395649,
+      "turns": 175392,
+      "cooperations": 117221,
+      "completed_matches": 600,
+      "recorded_matches": 600,
+      "expected_matches": 600,
+      "statuses": {
+        "ok": 600
+      },
+      "complete": true,
+      "mean_payoff": 2.6658798576902023,
+      "cooperation_rate": 0.6683372103630725,
+      "opponents": {
+        "always_cooperate": {
+          "total_payoff": 87696,
+          "opponent_total_payoff": 87696,
+          "turns": 29232,
+          "cooperations": 29232,
+          "completed_matches": 100,
+          "recorded_matches": 100,
+          "expected_matches": 100,
+          "statuses": {
+            "ok": 100
+          },
+          "complete": true,
+          "mean_payoff": 3.0,
+          "cooperation_rate": 1.0
+        },
+        "always_defect": {
+          "total_payoff": 29132,
+          "opponent_total_payoff": 29632,
+          "turns": 29232,
+          "cooperations": 100,
+          "completed_matches": 100,
+          "recorded_matches": 100,
+          "expected_matches": 100,
+          "statuses": {
+            "ok": 100
+          },
+          "complete": true,
+          "mean_payoff": 0.9965790914066777,
+          "cooperation_rate": 0.0034209085933223863
+        },
+        "grim": {
+          "total_payoff": 87696,
+          "opponent_total_payoff": 87696,
+          "turns": 29232,
+          "cooperations": 29232,
+          "completed_matches": 100,
+          "recorded_matches": 100,
+          "expected_matches": 100,
+          "statuses": {
+            "ok": 100
+          },
+          "complete": true,
+          "mean_payoff": 3.0,
+          "cooperation_rate": 1.0
+        },
+        "random": {
+          "total_payoff": 87658,
+          "opponent_total_payoff": 15233,
+          "turns": 29232,
+          "cooperations": 193,
+          "completed_matches": 100,
+          "recorded_matches": 100,
+          "expected_matches": 100,
+          "statuses": {
+            "ok": 100
+          },
+          "complete": true,
+          "mean_payoff": 2.9987000547345377,
+          "cooperation_rate": 0.006602353585112206
+        },
+        "tit_for_tat": {
+          "total_payoff": 87696,
+          "opponent_total_payoff": 87696,
+          "turns": 29232,
+          "cooperations": 29232,
+          "completed_matches": 100,
+          "recorded_matches": 100,
+          "expected_matches": 100,
+          "statuses": {
+            "ok": 100
+          },
+          "complete": true,
+          "mean_payoff": 3.0,
+          "cooperation_rate": 1.0
+        },
+        "win_stay_lose_shift": {
+          "total_payoff": 87696,
+          "opponent_total_payoff": 87696,
+          "turns": 29232,
+          "cooperations": 29232,
+          "completed_matches": 100,
+          "recorded_matches": 100,
+          "expected_matches": 100,
+          "statuses": {
+            "ok": 100
+          },
+          "complete": true,
+          "mean_payoff": 3.0,
+          "cooperation_rate": 1.0
+        }
+      }
+    },
+    "holdout": {
+      "total_payoff": 476957,
+      "opponent_total_payoff": 256362,
+      "turns": 179052,
+      "cooperations": 60515,
+      "completed_matches": 600,
+      "recorded_matches": 600,
+      "expected_matches": 600,
+      "statuses": {
+        "ok": 600
+      },
+      "complete": true,
+      "mean_payoff": 2.6637904072559926,
+      "cooperation_rate": 0.337974443178518,
+      "opponents": {
+        "alternator": {
+          "total_payoff": 89342,
+          "opponent_total_payoff": 15592,
+          "turns": 29842,
+          "cooperations": 200,
+          "completed_matches": 100,
+          "recorded_matches": 100,
+          "expected_matches": 100,
+          "statuses": {
+            "ok": 100
+          },
+          "complete": true,
+          "mean_payoff": 2.993834193418672,
+          "cooperation_rate": 0.00670196367535688
+        },
+        "hard_tit_for_tat": {
+          "total_payoff": 89526,
+          "opponent_total_payoff": 89526,
+          "turns": 29842,
+          "cooperations": 29842,
+          "completed_matches": 100,
+          "recorded_matches": 100,
+          "expected_matches": 100,
+          "statuses": {
+            "ok": 100
+          },
+          "complete": true,
+          "mean_payoff": 3.0,
+          "cooperation_rate": 1.0
+        },
+        "random_20": {
+          "total_payoff": 53442,
+          "opponent_total_payoff": 24397,
+          "turns": 29842,
+          "cooperations": 132,
+          "completed_matches": 100,
+          "recorded_matches": 100,
+          "expected_matches": 100,
+          "statuses": {
+            "ok": 100
+          },
+          "complete": true,
+          "mean_payoff": 1.7908317136921117,
+          "cooperation_rate": 0.004423296025735541
+        },
+        "random_80": {
+          "total_payoff": 124979,
+          "opponent_total_payoff": 7179,
+          "turns": 29842,
+          "cooperations": 399,
+          "completed_matches": 100,
+          "recorded_matches": 100,
+          "expected_matches": 100,
+          "statuses": {
+            "ok": 100
+          },
+          "complete": true,
+          "mean_payoff": 4.188023590912137,
+          "cooperation_rate": 0.013370417532336974
+        },
+        "suspicious_tit_for_tat": {
+          "total_payoff": 30142,
+          "opponent_total_payoff": 30142,
+          "turns": 29842,
+          "cooperations": 100,
+          "completed_matches": 100,
+          "recorded_matches": 100,
+          "expected_matches": 100,
+          "statuses": {
+            "ok": 100
+          },
+          "complete": true,
+          "mean_payoff": 1.0100529455130354,
+          "cooperation_rate": 0.00335098183767844
+        },
+        "tit_for_two_tats": {
+          "total_payoff": 89526,
+          "opponent_total_payoff": 89526,
+          "turns": 29842,
+          "cooperations": 29842,
+          "completed_matches": 100,
+          "recorded_matches": 100,
+          "expected_matches": 100,
+          "statuses": {
+            "ok": 100
+          },
+          "complete": true,
+          "mean_payoff": 3.0,
+          "cooperation_rate": 1.0
+        }
+      }
+    }
+  },
+  "seed": {
+    "train": {
+      "total_payoff": 467574,
+      "opponent_total_payoff": 395649,
+      "turns": 175392,
+      "cooperations": 117221,
+      "completed_matches": 600,
+      "recorded_matches": 600,
+      "expected_matches": 600,
+      "statuses": {
+        "ok": 600
+      },
+      "complete": true,
+      "mean_payoff": 2.6658798576902023,
+      "cooperation_rate": 0.6683372103630725,
+      "opponents": {
+        "always_cooperate": {
+          "total_payoff": 87696,
+          "opponent_total_payoff": 87696,
+          "turns": 29232,
+          "cooperations": 29232,
+          "completed_matches": 100,
+          "recorded_matches": 100,
+          "expected_matches": 100,
+          "statuses": {
+            "ok": 100
+          },
+          "complete": true,
+          "mean_payoff": 3.0,
+          "cooperation_rate": 1.0
+        },
+        "always_defect": {
+          "total_payoff": 29132,
+          "opponent_total_payoff": 29632,
+          "turns": 29232,
+          "cooperations": 100,
+          "completed_matches": 100,
+          "recorded_matches": 100,
+          "expected_matches": 100,
+          "statuses": {
+            "ok": 100
+          },
+          "complete": true,
+          "mean_payoff": 0.9965790914066777,
+          "cooperation_rate": 0.0034209085933223863
+        },
+        "grim": {
+          "total_payoff": 87696,
+          "opponent_total_payoff": 87696,
+          "turns": 29232,
+          "cooperations": 29232,
+          "completed_matches": 100,
+          "recorded_matches": 100,
+          "expected_matches": 100,
+          "statuses": {
+            "ok": 100
+          },
+          "complete": true,
+          "mean_payoff": 3.0,
+          "cooperation_rate": 1.0
+        },
+        "random": {
+          "total_payoff": 87658,
+          "opponent_total_payoff": 15233,
+          "turns": 29232,
+          "cooperations": 193,
+          "completed_matches": 100,
+          "recorded_matches": 100,
+          "expected_matches": 100,
+          "statuses": {
+            "ok": 100
+          },
+          "complete": true,
+          "mean_payoff": 2.9987000547345377,
+          "cooperation_rate": 0.006602353585112206
+        },
+        "tit_for_tat": {
+          "total_payoff": 87696,
+          "opponent_total_payoff": 87696,
+          "turns": 29232,
+          "cooperations": 29232,
+          "completed_matches": 100,
+          "recorded_matches": 100,
+          "expected_matches": 100,
+          "statuses": {
+            "ok": 100
+          },
+          "complete": true,
+          "mean_payoff": 3.0,
+          "cooperation_rate": 1.0
+        },
+        "win_stay_lose_shift": {
+          "total_payoff": 87696,
+          "opponent_total_payoff": 87696,
+          "turns": 29232,
+          "cooperations": 29232,
+          "completed_matches": 100,
+          "recorded_matches": 100,
+          "expected_matches": 100,
+          "statuses": {
+            "ok": 100
+          },
+          "complete": true,
+          "mean_payoff": 3.0,
+          "cooperation_rate": 1.0
+        }
+      }
+    },
+    "holdout": {
+      "total_payoff": 476957,
+      "opponent_total_payoff": 256362,
+      "turns": 179052,
+      "cooperations": 60515,
+      "completed_matches": 600,
+      "recorded_matches": 600,
+      "expected_matches": 600,
+      "statuses": {
+        "ok": 600
+      },
+      "complete": true,
+      "mean_payoff": 2.6637904072559926,
+      "cooperation_rate": 0.337974443178518,
+      "opponents": {
+        "alternator": {
+          "total_payoff": 89342,
+          "opponent_total_payoff": 15592,
+          "turns": 29842,
+          "cooperations": 200,
+          "completed_matches": 100,
+          "recorded_matches": 100,
+          "expected_matches": 100,
+          "statuses": {
+            "ok": 100
+          },
+          "complete": true,
+          "mean_payoff": 2.993834193418672,
+          "cooperation_rate": 0.00670196367535688
+        },
+        "hard_tit_for_tat": {
+          "total_payoff": 89526,
+          "opponent_total_payoff": 89526,
+          "turns": 29842,
+          "cooperations": 29842,
+          "completed_matches": 100,
+          "recorded_matches": 100,
+          "expected_matches": 100,
+          "statuses": {
+            "ok": 100
+          },
+          "complete": true,
+          "mean_payoff": 3.0,
+          "cooperation_rate": 1.0
+        },
+        "random_20": {
+          "total_payoff": 53442,
+          "opponent_total_payoff": 24397,
+          "turns": 29842,
+          "cooperations": 132,
+          "completed_matches": 100,
+          "recorded_matches": 100,
+          "expected_matches": 100,
+          "statuses": {
+            "ok": 100
+          },
+          "complete": true,
+          "mean_payoff": 1.7908317136921117,
+          "cooperation_rate": 0.004423296025735541
+        },
+        "random_80": {
+          "total_payoff": 124979,
+          "opponent_total_payoff": 7179,
+          "turns": 29842,
+          "cooperations": 399,
+          "completed_matches": 100,
+          "recorded_matches": 100,
+          "expected_matches": 100,
+          "statuses": {
+            "ok": 100
+          },
+          "complete": true,
+          "mean_payoff": 4.188023590912137,
+          "cooperation_rate": 0.013370417532336974
+        },
+        "suspicious_tit_for_tat": {
+          "total_payoff": 30142,
+          "opponent_total_payoff": 30142,
+          "turns": 29842,
+          "cooperations": 100,
+          "completed_matches": 100,
+          "recorded_matches": 100,
+          "expected_matches": 100,
+          "statuses": {
+            "ok": 100
+          },
+          "complete": true,
+          "mean_payoff": 1.0100529455130354,
+          "cooperation_rate": 0.00335098183767844
+        },
+        "tit_for_two_tats": {
+          "total_payoff": 89526,
+          "opponent_total_payoff": 89526,
+          "turns": 29842,
+          "cooperations": 29842,
+          "completed_matches": 100,
+          "recorded_matches": 100,
+          "expected_matches": 100,
+          "statuses": {
+            "ok": 100
+          },
+          "complete": true,
+          "mean_payoff": 3.0,
+          "cooperation_rate": 1.0
+        }
+      }
+    }
+  },
+  "TFT": {
+    "train": {
+      "total_payoff": 445766,
+      "opponent_total_payoff": 446506,
+      "turns": 175392,
+      "cooperations": 131754,
+      "completed_matches": 600,
+      "recorded_matches": 600,
+      "expected_matches": 600,
+      "statuses": {
+        "ok": 600
+      },
+      "complete": true,
+      "mean_payoff": 2.541541233351578,
+      "cooperation_rate": 0.7511973180076629,
+      "opponents": {
+        "always_cooperate": {
+          "total_payoff": 87696,
+          "opponent_total_payoff": 87696,
+          "turns": 29232,
+          "cooperations": 29232,
+          "completed_matches": 100,
+          "recorded_matches": 100,
+          "expected_matches": 100,
+          "statuses": {
+            "ok": 100
+          },
+          "complete": true,
+          "mean_payoff": 3.0,
+          "cooperation_rate": 1.0
+        },
+        "always_defect": {
+          "total_payoff": 29132,
+          "opponent_total_payoff": 29632,
+          "turns": 29232,
+          "cooperations": 100,
+          "completed_matches": 100,
+          "recorded_matches": 100,
+          "expected_matches": 100,
+          "statuses": {
+            "ok": 100
+          },
+          "complete": true,
+          "mean_payoff": 0.9965790914066777,
+          "cooperation_rate": 0.0034209085933223863
+        },
+        "grim": {
+          "total_payoff": 87696,
+          "opponent_total_payoff": 87696,
+          "turns": 29232,
+          "cooperations": 29232,
+          "completed_matches": 100,
+          "recorded_matches": 100,
+          "expected_matches": 100,
+          "statuses": {
+            "ok": 100
+          },
+          "complete": true,
+          "mean_payoff": 3.0,
+          "cooperation_rate": 1.0
+        },
+        "random": {
+          "total_payoff": 65850,
+          "opponent_total_payoff": 66090,
+          "turns": 29232,
+          "cooperations": 14726,
+          "completed_matches": 100,
+          "recorded_matches": 100,
+          "expected_matches": 100,
+          "statuses": {
+            "ok": 100
+          },
+          "complete": true,
+          "mean_payoff": 2.2526683087027917,
+          "cooperation_rate": 0.5037629994526546
+        },
+        "tit_for_tat": {
+          "total_payoff": 87696,
+          "opponent_total_payoff": 87696,
+          "turns": 29232,
+          "cooperations": 29232,
+          "completed_matches": 100,
+          "recorded_matches": 100,
+          "expected_matches": 100,
+          "statuses": {
+            "ok": 100
+          },
+          "complete": true,
+          "mean_payoff": 3.0,
+          "cooperation_rate": 1.0
+        },
+        "win_stay_lose_shift": {
+          "total_payoff": 87696,
+          "opponent_total_payoff": 87696,
+          "turns": 29232,
+          "cooperations": 29232,
+          "completed_matches": 100,
+          "recorded_matches": 100,
+          "expected_matches": 100,
+          "statuses": {
+            "ok": 100
+          },
+          "complete": true,
+          "mean_payoff": 3.0,
+          "cooperation_rate": 1.0
+        }
+      }
+    },
+    "holdout": {
+      "total_payoff": 456831,
+      "opponent_total_payoff": 457841,
+      "turns": 179052,
+      "cooperations": 119628,
+      "completed_matches": 600,
+      "recorded_matches": 600,
+      "expected_matches": 600,
+      "statuses": {
+        "ok": 600
+      },
+      "complete": true,
+      "mean_payoff": 2.551387306480799,
+      "cooperation_rate": 0.6681187587963273,
+      "opponents": {
+        "alternator": {
+          "total_payoff": 74550,
+          "opponent_total_payoff": 74760,
+          "turns": 29842,
+          "cooperations": 14992,
+          "completed_matches": 100,
+          "recorded_matches": 100,
+          "expected_matches": 100,
+          "statuses": {
+            "ok": 100
+          },
+          "complete": true,
+          "mean_payoff": 2.498156959989277,
+          "cooperation_rate": 0.5023791971047517
+        },
+        "hard_tit_for_tat": {
+          "total_payoff": 89526,
+          "opponent_total_payoff": 89526,
+          "turns": 29842,
+          "cooperations": 29842,
+          "completed_matches": 100,
+          "recorded_matches": 100,
+          "expected_matches": 100,
+          "statuses": {
+            "ok": 100
+          },
+          "complete": true,
+          "mean_payoff": 3.0,
+          "cooperation_rate": 1.0
+        },
+        "random_20": {
+          "total_payoff": 46361,
+          "opponent_total_payoff": 46756,
+          "turns": 29842,
+          "cooperations": 6020,
+          "completed_matches": 100,
+          "recorded_matches": 100,
+          "expected_matches": 100,
+          "statuses": {
+            "ok": 100
+          },
+          "complete": true,
+          "mean_payoff": 1.5535486897661015,
+          "cooperation_rate": 0.2017291066282421
+        },
+        "random_80": {
+          "total_payoff": 82408,
+          "opponent_total_payoff": 82523,
+          "turns": 29842,
+          "cooperations": 23982,
+          "completed_matches": 100,
+          "recorded_matches": 100,
+          "expected_matches": 100,
+          "statuses": {
+            "ok": 100
+          },
+          "complete": true,
+          "mean_payoff": 2.7614771127940485,
+          "cooperation_rate": 0.8036324643120434
+        },
+        "suspicious_tit_for_tat": {
+          "total_payoff": 74460,
+          "opponent_total_payoff": 74750,
+          "turns": 29842,
+          "cooperations": 14950,
+          "completed_matches": 100,
+          "recorded_matches": 100,
+          "expected_matches": 100,
+          "statuses": {
+            "ok": 100
+          },
+          "complete": true,
+          "mean_payoff": 2.4951410763353663,
+          "cooperation_rate": 0.5009717847329267
+        },
+        "tit_for_two_tats": {
+          "total_payoff": 89526,
+          "opponent_total_payoff": 89526,
+          "turns": 29842,
+          "cooperations": 29842,
+          "completed_matches": 100,
+          "recorded_matches": 100,
+          "expected_matches": 100,
+          "statuses": {
+            "ok": 100
+          },
+          "complete": true,
+          "mean_payoff": 3.0,
+          "cooperation_rate": 1.0
+        }
+      }
+    }
+  }
+}

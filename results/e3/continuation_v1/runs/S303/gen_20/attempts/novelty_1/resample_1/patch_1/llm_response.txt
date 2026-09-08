@@ -1,0 +1,14 @@
+<NAME>
+tit_for_tat
+</NAME>
+<DESCRIPTION>
+Cooperate initially, then mirror the opponent’s most recent action. This preserves mutual cooperation with cooperative opponents while responding immediately to defection instead of permanently locking into mutual defection after a single adverse round.
+</DESCRIPTION>
+<CODE>
+```python
+# EVOLVE-BLOCK-START
+def policy(own_history, opponent_history):
+    return 0 if len(opponent_history) == 0 else opponent_history[-1]
+# EVOLVE-BLOCK-END
+``` 
+</CODE>

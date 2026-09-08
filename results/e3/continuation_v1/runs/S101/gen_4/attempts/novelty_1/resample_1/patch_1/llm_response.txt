@@ -1,0 +1,13 @@
+<NAME>
+two_strike_guard
+</NAME>
+<DESCRIPTION>
+Cooperate initially and after a single isolated opponent defection, but switch to defection once the opponent demonstrates persistent defection. This can retain cooperation with forgiving/reactive opponents while protecting against reliably defecting ones.
+</DESCRIPTION>
+<CODE>
+```python
+# EVOLVE-BLOCK-START
+def policy(own_history, opponent_history):
+    return 0 if len(opponent_history) == 0 or opponent_history.count(1) < 2 else 1
+# EVOLVE-BLOCK-END
+```

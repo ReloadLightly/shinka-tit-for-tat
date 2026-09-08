@@ -1,0 +1,13 @@
+<NAME>
+grim_trigger
+</NAME>
+<DESCRIPTION>
+Restores the stronger prior strategy (2.66 vs. 2.65): cooperate until the opponent has ever played action 1, then permanently play action 1.
+</DESCRIPTION>
+<CODE>
+```python
+# EVOLVE-BLOCK-START
+def policy(own_history, opponent_history):
+    return 0 if len(opponent_history) == 0 or opponent_history.count(1) == 0 else 1
+# EVOLVE-BLOCK-END
+```

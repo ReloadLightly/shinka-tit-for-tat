@@ -1,0 +1,13 @@
+<NAME>
+compact_grudger
+</NAME>
+<DESCRIPTION>
+Equivalent compact implementation of the existing grim-trigger policy: cooperate until the opponent has defected at least once, then defect permanently.
+</DESCRIPTION>
+<CODE>
+```python
+# EVOLVE-BLOCK-START
+def policy(own_history, opponent_history):
+    return 1 if len(opponent_history) > 0 and opponent_history.count(1) > 0 else 0
+# EVOLVE-BLOCK-END
+```

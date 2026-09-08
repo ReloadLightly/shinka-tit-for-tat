@@ -1,0 +1,5 @@
+{"type":"thread.started","thread_id":"01a0830b-8cd4-79c3-9cd4-4adc11d1c137"}
+{"type":"item.completed","item":{"id":"item_0","type":"error","message":"Code Mode is unavailable because code-mode host is disabled. Code mode will fail closed; enable `features.code_mode_host` and install `codex-code-mode-host`."}}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_1","type":"agent_message","text":"<NAME>\ncooperate_until_defection\n</NAME>\n\n<DESCRIPTION>\nCooperate while the opponent has always cooperated, then defect permanently after observing any defection. This matches the strongest provided prior result (2.66), improving on the current tit-for-tat score of 2.54.\n</DESCRIPTION>\n\n<CODE>\n```python\n# EVOLVE-BLOCK-START\ndef policy(own_history, opponent_history):\n    return 0 if len(opponent_history) == 0 or opponent_history.count(1) == 0 else 1\n# EVOLVE-BLOCK-END\n```"}}
+{"type":"turn.completed","usage":{"input_tokens":5786,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":208,"reasoning_output_tokens":80}}

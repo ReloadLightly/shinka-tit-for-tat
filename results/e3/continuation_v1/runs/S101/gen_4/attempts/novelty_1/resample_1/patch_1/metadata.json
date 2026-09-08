@@ -1,0 +1,15 @@
+{
+  "generation": 4,
+  "novelty_attempt": 1,
+  "resample_attempt": 1,
+  "patch_attempt": 1,
+  "success": true,
+  "num_applied": 1,
+  "patch_name": "two_strike_guard",
+  "patch_description": "Cooperate initially and after a single isolated opponent defection, but switch to defection once the opponent demonstrates persistent defection. This can retain cooperation with forgiving/reactive opponents while protecting against reliably defecting ones.",
+  "error_msg": null,
+  "timestamp": "2026-09-08T23:57:20.114361",
+  "llm_cost": 0.0193,
+  "llm_model": "headless/codex@gpt-5.6-terra?effort=low",
+  "headless_prompt_path": "/home/roland/actir/shinka-tit-for-tat/results/e3/continuation_v1/runs/S101/gen_4/attempts/novelty_1/resample_1/patch_1/headless_prompt.md"
+}

@@ -1,0 +1,146 @@
+{
+  "workers": [
+    {
+      "policy": "S101",
+      "split": "train",
+      "command": [
+        "/home/roland/actir/shinka-tit-for-tat/.venv/bin/python",
+        "/home/roland/actir/shinka-tit-for-tat/analyze_e3.py",
+        "--worker",
+        "S101",
+        "--split",
+        "train"
+      ],
+      "returncode": 0,
+      "runtime_seconds": 8.118528795952443
+    },
+    {
+      "policy": "S101",
+      "split": "holdout",
+      "command": [
+        "/home/roland/actir/shinka-tit-for-tat/.venv/bin/python",
+        "/home/roland/actir/shinka-tit-for-tat/analyze_e3.py",
+        "--worker",
+        "S101",
+        "--split",
+        "holdout"
+      ],
+      "returncode": 0,
+      "runtime_seconds": 4.937807054957375
+    },
+    {
+      "policy": "S202",
+      "split": "train",
+      "command": [
+        "/home/roland/actir/shinka-tit-for-tat/.venv/bin/python",
+        "/home/roland/actir/shinka-tit-for-tat/analyze_e3.py",
+        "--worker",
+        "S202",
+        "--split",
+        "train"
+      ],
+      "returncode": 0,
+      "runtime_seconds": 4.875856094993651
+    },
+    {
+      "policy": "S202",
+      "split": "holdout",
+      "command": [
+        "/home/roland/actir/shinka-tit-for-tat/.venv/bin/python",
+        "/home/roland/actir/shinka-tit-for-tat/analyze_e3.py",
+        "--worker",
+        "S202",
+        "--split",
+        "holdout"
+      ],
+      "returncode": 0,
+      "runtime_seconds": 4.80010112101445
+    },
+    {
+      "policy": "S303",
+      "split": "train",
+      "command": [
+        "/home/roland/actir/shinka-tit-for-tat/.venv/bin/python",
+        "/home/roland/actir/shinka-tit-for-tat/analyze_e3.py",
+        "--worker",
+        "S303",
+        "--split",
+        "train"
+      ],
+      "returncode": 0,
+      "runtime_seconds": 5.385274565021973
+    },
+    {
+      "policy": "S303",
+      "split": "holdout",
+      "command": [
+        "/home/roland/actir/shinka-tit-for-tat/.venv/bin/python",
+        "/home/roland/actir/shinka-tit-for-tat/analyze_e3.py",
+        "--worker",
+        "S303",
+        "--split",
+        "holdout"
+      ],
+      "returncode": 0,
+      "runtime_seconds": 5.748925704043359
+    },
+    {
+      "policy": "seed",
+      "split": "train",
+      "command": [
+        "/home/roland/actir/shinka-tit-for-tat/.venv/bin/python",
+        "/home/roland/actir/shinka-tit-for-tat/analyze_e3.py",
+        "--worker",
+        "seed",
+        "--split",
+        "train"
+      ],
+      "returncode": 0,
+      "runtime_seconds": 4.821102830988821
+    },
+    {
+      "policy": "seed",
+      "split": "holdout",
+      "command": [
+        "/home/roland/actir/shinka-tit-for-tat/.venv/bin/python",
+        "/home/roland/actir/shinka-tit-for-tat/analyze_e3.py",
+        "--worker",
+        "seed",
+        "--split",
+        "holdout"
+      ],
+      "returncode": 0,
+      "runtime_seconds": 5.238687178003602
+    },
+    {
+      "policy": "TFT",
+      "split": "train",
+      "command": [
+        "/home/roland/actir/shinka-tit-for-tat/.venv/bin/python",
+        "/home/roland/actir/shinka-tit-for-tat/analyze_e3.py",
+        "--worker",
+        "TFT",
+        "--split",
+        "train"
+      ],
+      "returncode": 0,
+      "runtime_seconds": 3.3334171330207027
+    },
+    {
+      "policy": "TFT",
+      "split": "holdout",
+      "command": [
+        "/home/roland/actir/shinka-tit-for-tat/.venv/bin/python",
+        "/home/roland/actir/shinka-tit-for-tat/analyze_e3.py",
+        "--worker",
+        "TFT",
+        "--split",
+        "holdout"
+      ],
+      "returncode": 0,
+      "runtime_seconds": 3.1375060610007495
+    }
+  ],
+  "runtime_seconds": 51.63506346900249,
+  "external_proposal_invocations": 0
+}

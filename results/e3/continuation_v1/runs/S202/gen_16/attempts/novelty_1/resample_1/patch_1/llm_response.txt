@@ -1,0 +1,13 @@
+<NAME>
+cautious_tft
+</NAME>
+<DESCRIPTION>
+Cooperates initially and mirrors the opponent’s latest action thereafter. This preserves mutual cooperation with cooperative and retaliatory strategies while avoiding prolonged exploitation by persistent defectors.
+</DESCRIPTION>
+<CODE>
+```python
+# EVOLVE-BLOCK-START
+def policy(own_history, opponent_history):
+    return 0 if len(opponent_history) == 0 else opponent_history[-1]
+# EVOLVE-BLOCK-END
+```

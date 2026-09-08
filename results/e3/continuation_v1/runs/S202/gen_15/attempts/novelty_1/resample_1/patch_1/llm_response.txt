@@ -1,0 +1,13 @@
+<NAME>
+forgiving_grim
+</NAME>
+<DESCRIPTION>
+Cooperate initially and while the opponent remains cooperative. After a defection, retaliate, but resume cooperation after two consecutive cooperative opponent moves. This retains the strong deterrence of the best prior “grim” policy while allowing recovery from isolated defections and cooperative opponents that forgive.
+</DESCRIPTION>
+<CODE>
+```python
+# EVOLVE-BLOCK-START
+def policy(own_history, opponent_history):
+    return 0 if len(opponent_history) == 0 or opponent_history.count(1) == 0 or (len(opponent_history) > 1 and opponent_history[-1] == 0 and opponent_history[-2] == 0) else 1
+# EVOLVE-BLOCK-END
+```

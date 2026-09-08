@@ -1,0 +1,5 @@
+{"type":"thread.started","thread_id":"01a0830d-79d9-78c3-93df-f318658b1936"}
+{"type":"item.completed","item":{"id":"item_0","type":"error","message":"Code Mode is unavailable because code-mode host is disabled. Code mode will fail closed; enable `features.code_mode_host` and install `codex-code-mode-host`."}}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_1","type":"agent_message","text":"<NAME>\ntit_for_tat\n</NAME>\n\n<DESCRIPTION>\nCooperate initially, then mirror the opponent’s immediately preceding action. This preserves mutual cooperation with cooperative opponents while retaliating only as long as defection continues, avoiding the permanent punishment triggered by a single opponent defection in the current policy.\n</DESCRIPTION>\n\n<CODE>\n```python\n# EVOLVE-BLOCK-START\ndef policy(own_history, opponent_history):\n    return 0 if len(opponent_history) == 0 or opponent_history[-1] == 0 else 1\n# EVOLVE-BLOCK-END\n```</CODE>"}}
+{"type":"turn.completed","usage":{"input_tokens":5845,"cached_input_tokens":4864,"cache_write_input_tokens":0,"output_tokens":1836,"reasoning_output_tokens":1706}}

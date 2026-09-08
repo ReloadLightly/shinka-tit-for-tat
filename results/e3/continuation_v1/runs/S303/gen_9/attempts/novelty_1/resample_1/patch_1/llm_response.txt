@@ -1,0 +1,13 @@
+<NAME>
+contrite_probe
+</NAME>
+<DESCRIPTION>
+Cooperates by default, retaliates against unprovoked defections, and makes rare probes during perfectly cooperative histories to gain against unconditional cooperators. It immediately cooperates after its own probe-induced retaliation, preserving cooperation with reciprocal opponents.
+</DESCRIPTION>
+<CODE>
+```python
+# EVOLVE-BLOCK-START
+def policy(own_history, opponent_history):
+    return 0 if len(opponent_history) == 0 else (1 if opponent_history[-1] == 0 and opponent_history.count(1) == 0 and len(opponent_history) % 83 == 0 else (0 if opponent_history[-1] == 1 and own_history[-1] == 1 else opponent_history[-1]))
+# EVOLVE-BLOCK-END
+```

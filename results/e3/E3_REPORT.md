@@ -1,75 +1,61 @@
-# E3 — continuation beyond generated grim: paused before model calls
+# E3 — continuation beyond generated grim
 
-**The research question is unanswered. E3 produced no new strategy.** S101
-paused during its first proposal's local launcher setup; S202 and S303 are
-unstarted. There were **0 external model invocations, 3 failed local wrapper
-attempts, 0 generated policies and 0/3 completed runs**. No transfer evaluation
-or recognition was performed. This is failed preparation/execution-boundary
-evidence, not an evolutionary result or evidence that grim cannot be improved.
+**3/3 completed searches; 59 external proposal launches; 59 generated policies, 57 valid.** All training-selected sources were frozen before recognition and fresh transfer.
 
-The user required configuration mismatches and ambiguous checkpoint integrity
-to pause execution. Both occurred. Native generation state advanced to 2 after
-assigning slot 1, but the external-invocation ledger contains zero reservations.
-The actual database and saved database agree; the slot/ledger relationship does
-not. It would be misleading to repair this by pretending a reservation preceded
-the failed launches, relabeling retries as new opportunities, resetting the
-ledger, or resuming from the best source alone. No such action was taken.
+This continues the E3 experiment from an earlier LLM-generated grim policy. It tests whether native Shinka search can improve its own original-training payoff and retain that gain on fresh encounters. It does not complete the interrupted independent-generation comparisons in E1 or E1-R, demonstrate knowledge-free invention, or estimate a general advantage of evolutionary search.
 
-## Intended scientific design
+## Setup and continuation amendment
 
-Question: starting from the strongest previously generated policy, can the
-genuine pinned ShinkaEvolve loop generate a higher-original-training-payoff
-policy whose advantage survives fresh encounters? This is continuation from
-evolved grim, not discovery from unconditional defection or an uninformed prior.
-Three exploratory searches cannot establish Shinka's advantage over independent
-generation because E3 has no such comparison condition. E3 is not pooled with
-E1 or E1-R and does not execute E2's proposed evaluation-only follow-up.
+The simultaneous iterated Prisoner’s Dilemma uses 0=cooperate and 1=defect, with own payoffs CC=3, CD=0, DC=5, DD=1. Both players act on pre-round histories. Independent geometric termination has probability 0.00346 after each round; no fixed endpoint, noise, extra state, opponent identity or seed is supplied to the candidate. Fitness is total own payoff / total rounds on the original 30 training matches (7,092 rounds). Selection rewards no cooperation, TFT resemblance, complexity or novelty.
 
-The fixed game is the simultaneous iterated Prisoner's Dilemma. Actions are
-0=cooperate and 1=defect; own payoffs are CC=3, CD=0, DC=5 and DD=1. Both decisions
-use histories before the current round. Policies receive only own/opponent
-histories, with no opponent identity, source, current action, encounter seed or
-endpoint. Independent geometric stopping probability is 0.00346, without a fixed
-cutoff. There is no noise, new opponent, cooperation reward or extra state.
+Training opponents are always cooperate, always defect, fair random, TFT, grim and win-stay/lose-shift, with seeds 11,23,47,89,131 and lengths 174,747,126,25,110. The unchanged policy.py interpreter checks restricted single-function syntax (16,000 bytes, 400 AST nodes); evaluator tools never import or exec candidate source. Invalid candidates receive -1 without repair.
 
-Original training uses always-cooperate, always-defect, fair random, TFT, grim
-and win-stay/lose-shift with seeds 11,23,47,89,131, yielding match lengths
-174,747,126,25,110. Fitness is total own payoff / total rounds over 30 matches
-(7,092 rounds). Candidate validity is determined by unchanged policy.py, which
-interprets the restricted one-function source rather than importing or exec'ing
-it. Limits remain 16,000 bytes and 400 AST nodes; invalid candidates score -1.
+Three independent local contexts S101/S202/S303 use Python/NumPy seeds 101/202/303. The exact E1-R A101 generation-4 grim seed has SHA-256 fc938dea6c869791ffb3d7fbbb03f95b21ea86152fb3414345a9d107323d56a1 and original-training payoff 2.655386350817823. initial.py remains the original unconditional-defection seed.
 
-| Setting | Frozen value |
-| --- | --- |
-| Run order | S101, S202, S303 |
-| Local Python/NumPy seeds | 101, 202, 303 |
-| Opportunities | 20 per run; hard 60 total including failed launches |
-| Model/backend | gpt-5.6-terra, low effort; ChatGPT Pro subscription, Codex 0.153.4 / Headless 0.6.1 |
-| Shinka | 0.0.7, commit 9912af12d423504b8d580f4179fd15f5f88b8c50 |
-| Search | Native weighted parent sampling, accumulated programs, archive size 16, one island, fitness-only archive |
-| Inspirations | Zero random archive inspirations; one native top-k inspiration |
-| Proposal | Native FULL_SYS_FORMATS[0], full rewrite, intended one attempt with no retry/resample |
-| Disabled | Dynamic models, embeddings, novelty judge, meta recommendations, prompt evolution, migration/dynamic islands |
-| Bounds | Codex 180 s; Headless wrapper 210 s; native provider 240 s; evaluator 60 s; drain 350 s; cumulative child runtime 9,000 s/run |
-| Intended recovery | At most two classified send failures, each followed by full checkpoint and one bounded read-only availability check |
+Pinned Shinka 0.0.7 (9912af12d423504b8d580f4179fd15f5f88b8c50) supplies native weighted parent selection, accumulated programs, archive and top-k inspiration sampling. Configuration: one island, archive size 16, fitness-only archive, zero random archive inspirations and one top-k inspiration, full rewrite, one proposal attempt, no resampling, dynamic model, embedding, novelty judge, meta recommendation, prompt evolution or migration. The model is gpt-5.6-terra at low effort through Codex 0.153.4 / Headless 0.6.1 and the existing ChatGPT Pro login. Remote outputs are not deterministic from local seeds.
 
-Local seeds do not make remote outputs deterministic. The native parent sampler
-retains its existing child-count weighting; this is not an additional fitness
-reward. E3 does not claim to exercise every Shinka paper mechanism. The effective
-local retry count differed from the intended configuration, as documented below.
+The [original freeze](protocol/freeze.json) at 3288b90e625daf0f02e684eb32d791c4f3f261a1 is preserved. Its S101 opportunity 1 failed in three local wrapper attempts before any external call or reservation. The [versioned amendment](continuation_v1/AMENDMENT.md) records that one consumed local_prelaunch_failure now, with provenance and timestamp, rather than pretending a historical reservation existed. The [reconciliation](continuation_v1/reconciliation.json) preserves the full terminal database, ancestry, child counts, attempt records, DB runtime fields, Python/NumPy RNG states and native counters. next_generation_to_submit remains 2. Only opportunity accounting changed from zero to one; no source-only restart or fabricated program was used.
 
-The [full protocol](protocol/PROTOCOL.md), [configuration](protocol/protocol.json),
-[exact initial prompt](protocol/initial_prompt.md), [source freeze](protocol/freeze.json)
-and [fresh encounter manifest](protocol/encounters.json) were committed and
-remotely verified at **3288b90e625daf0f02e684eb32d791c4f3f261a1** before launch.
-The reviewed starting main was 9564d2125d5b818e24df1aa2b958938dc2f843f6.
+The continuation ceiling is **59 further external launches**: S101 opportunities 2–20 (19), S202 1–20 (20), S303 1–20 (20). Thus available model opportunities are unequal. Every failed launch, invalid source and duplicate consumes its opportunity. No retries, replacements or live smoke calls are allowed. Historical plus future calls remain within the original 60-call cap. The continuation implementation, reconciliation and hashes were committed and remotely verified before its first call at **58e9733ff0a177cb48a4c7bdfacc3e11e7ee1713**.
 
-## Original seed and the actual attempted sequence
+## Actual run outcomes and trajectory
 
-The exact earlier generated source at `results/e1_r/runs/A101/gen_4/main.py` was
-copied byte-for-byte into [protocol/seed.py](protocol/seed.py). The SHA-256 is
-`fc938dea6c869791ffb3d7fbbb03f95b21ea86152fb3414345a9d107323d56a1` and matches the
-earlier frozen E1-R selection. `initial.py` remains unconditional defection.
+| Run | Status | Consumed opportunities | External launches | Generated / valid | AST duplicates | Best training | Final selected slot |
+| --- | --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| S101 | completed | 20 | 19 | 19 / 18 | 14 | 2.655386 | 0 |
+| S202 | completed | 20 | 20 | 20 / 19 | 11 | 2.655386 | 0 |
+| S303 | completed | 20 | 20 | 20 / 20 | 12 | 2.655386 | 0 |
+
+Duplicates are parsed-AST matches to an earlier source within the same run, including its seed. They overlap validity and consume an opportunity. The seed is included in training-only selection; exact payoff ties choose the earliest slot. Best-measured values for incomplete runs are provisional, not final selections.
+
+The [complete opportunity catalogue](continuation_v1/PROPOSALS.md) contains every actual original generated source and its validity, payoff, duplicate status, parent/inspirations and branch explanation. The [audit](continuation_v1/audit.json) retains the complete measured trajectory. Local synthetic fixture programs under setup are excluded from scientific counts.
+
+### S101
+
+| Opportunity | Outcome | Training | Best so far | Parent slot / score | Inspiration slots |
+| ---: | --- | ---: | ---: | --- | --- |
+| 1 | local_prelaunch_failure | Unavailable | Unavailable | 0 / 2.655386 | none |
+| 2 | completed | 2.654258 | 2.655386 | 0 / 2.655386 | none |
+| 3 | completed | 2.536238 | 2.655386 | 0 / 2.655386 | 2 |
+| 4 | completed | 2.651720 | 2.655386 | 0 / 2.655386 | 2 |
+| 5 | completed | 2.653553 | 2.655386 | 2 / 2.654258 | 0 |
+| 6 | completed | 2.536238 | 2.655386 | 2 / 2.654258 | 0 |
+| 7 | completed | 2.655386 | 2.655386 | 2 / 2.654258 | 0 |
+| 8 | completed | 2.536238 | 2.655386 | 7 / 2.655386 | 0 |
+| 9 | completed | 2.536238 | 2.655386 | 0 / 2.655386 | 7 |
+| 10 | completed | 2.655386 | 2.655386 | 5 / 2.653553 | 0 |
+| 11 | completed | 2.536238 | 2.655386 | 10 / 2.655386 | 0 |
+| 12 | completed | 2.536238 | 2.655386 | 0 / 2.655386 | 7 |
+| 13 | completed | 2.536238 | 2.655386 | 4 / 2.651720 | 0 |
+| 14 | completed | 2.655386 | 2.655386 | 8 / 2.536238 | 0 |
+| 15 | completed | 2.536238 | 2.655386 | 14 / 2.655386 | 0 |
+| 16 | completed | 2.536238 | 2.655386 | 14 / 2.655386 | 0 |
+| 17 | completed | 2.536238 | 2.655386 | 7 / 2.655386 | 0 |
+| 18 | completed | 2.655386 | 2.655386 | 17 / 2.536238 | 0 |
+| 19 | completed | -1.000000 | 2.655386 | 18 / 2.655386 | 0 |
+| 20 | completed | 2.536238 | 2.655386 | 7 / 2.655386 | 0 |
+
+Complete training-selected original source (slot 0, SHA-256 `fc938dea6c869791ffb3d7fbbb03f95b21ea86152fb3414345a9d107323d56a1`):
 
 ```python
 # EVOLVE-BLOCK-START
@@ -78,191 +64,228 @@ def policy(own_history, opponent_history):
 # EVOLVE-BLOCK-END
 ```
 
-This is grim by direct source logic: cooperate while the opponent has never
-defected; after its first defection, the count of recorded defections can never
-return to zero, so defect forever. Own history is unused. It is a familiar
-strategy recovered in E1-R and reused here, not a new E3 discovery.
+cooperate when `len(opponent_history) == 0 or opponent_history.count(1) == 0`, otherwise defect.
 
-S101's native archive contains exactly one program, the seed. Its new training
-evaluation reproduced **2.655386350817823**. Slot 1 sampled that program as its
-parent and supplied no inspirations, because there were no other programs.
-The [actual supplied context](runs/S101/gen_1/supplied_context.json) contains that
-source and scalar mean payoff, with empty private metrics and text feedback.
-Three preserved [Headless prompt files](runs/S101/headless_prompts) record the
-local attempts; none was delivered to an external model. No proposal response,
-changed source, measured child policy or evolutionary improvement exists.
+### S202
 
-| Run/slot | Actual outcome | Measured proposal payoff | Best training payoff |
-| --- | --- | --- | --- |
-| S101 seed, slot 0 | Valid seed evaluated and archived | 2.655386350817823 | 2.655386350817823 |
-| S101 slot 1 | Assigned; three local wrapper failures before external launch/reservation | Unavailable | 2.655386350817823 |
-| S101 slots 2–20 | Not reached; no generated source or evaluation | Unavailable | No subsequent trajectory |
-| S202 slots 1–20 | Run unstarted | Unavailable | Not measured in this run |
-| S303 slots 1–20 | Run unstarted | Unavailable | Not measured in this run |
+| Opportunity | Outcome | Training | Best so far | Parent slot / score | Inspiration slots |
+| ---: | --- | ---: | ---: | --- | --- |
+| 1 | completed | 2.330936 | 2.655386 | 0 / 2.655386 | none |
+| 2 | completed | 2.536238 | 2.655386 | 0 / 2.655386 | 1 |
+| 3 | completed | 2.651720 | 2.655386 | 2 / 2.536238 | 0 |
+| 4 | completed | 2.655386 | 2.655386 | 3 / 2.651720 | 0 |
+| 5 | completed | 2.536238 | 2.655386 | 4 / 2.655386 | 0 |
+| 6 | completed | 2.640299 | 2.655386 | 4 / 2.655386 | 0 |
+| 7 | completed | 2.536238 | 2.655386 | 3 / 2.651720 | 0 |
+| 8 | completed | 2.536238 | 2.655386 | 4 / 2.655386 | 0 |
+| 9 | completed | 2.655386 | 2.655386 | 5 / 2.536238 | 0 |
+| 10 | completed | 2.655386 | 2.655386 | 3 / 2.651720 | 0 |
+| 11 | completed | 2.536238 | 2.655386 | 9 / 2.655386 | 0 |
+| 12 | completed | 2.651720 | 2.655386 | 6 / 2.640299 | 0 |
+| 13 | completed | 2.536238 | 2.655386 | 10 / 2.655386 | 0 |
+| 14 | completed | 2.536238 | 2.655386 | 12 / 2.651720 | 0 |
+| 15 | completed | 2.596588 | 2.655386 | 14 / 2.536238 | 0 |
+| 16 | completed | 2.536238 | 2.655386 | 9 / 2.655386 | 0 |
+| 17 | completed | 2.625917 | 2.655386 | 4 / 2.655386 | 0 |
+| 18 | completed | 2.336717 | 2.655386 | 0 / 2.655386 | 4 |
+| 19 | completed | 2.655386 | 2.655386 | 3 / 2.651720 | 0 |
+| 20 | completed | -1.000000 | 2.655386 | 9 / 2.655386 | 0 |
 
-There are zero valid or invalid generated proposals and zero generated
-duplicates. A valid-proposal rate is undefined because no external proposal was
-made, rather than evidence of a 0% model validity rate. The seed-only interim
-`training_summary.json` is not a final selection. No three-selection freeze file
-exists. There are no selected new original sources to explain or publish.
+Complete training-selected original source (slot 0, SHA-256 `fc938dea6c869791ffb3d7fbbb03f95b21ea86152fb3414345a9d107323d56a1`):
 
-## Failure diagnosis and checkpoints
-
-The supervising launcher entered native S101. Its isolated mutation working
-directory was `/tmp/e3_mutation_ljrjcww4`. The newly added committed-source guard
-called `git rev-parse HEAD` without `cwd=ROOT`. Git therefore failed outside the
-checkout, before subscription metadata, durable reservation or external Codex
-launch. The [raw final wrapper stderr](runs/S101/invocations/01/headless.stderr.txt)
-retains `fatal: not a git repository` and the complete traceback.
-
-A second implementation defect loaded Shinka while checking upstream source
-hashes, before setting its retry environment. Shinka captured the default
-`MAX_RETRIES=3`; setting the environment later did not change that imported
-constant. The [console](runs/S101/console.log) records `1/3`, `2/3` and `3/3` local
-query failures with the same Git error. All three failed before invoking the
-real external Codex process. The native downstream `LLM response content was
-None` / `llm_output_invalid` label is a consequence of those local failures,
-not a model-generated invalid policy.
-
-All three prompt files survive and match the frozen initial prompt byte-for-byte.
-The per-slot wrapper stdout/stderr paths were reused by the three failed local
-attempts, so those files retain only the last attempt; the unmodified console
-retains all three tracebacks. No missing earlier raw file is reconstructed.
-
-The [read-only audit](prelaunch_failure_audit.json) reproduces the original import
-order as `3 0` (Shinka attempts / OpenAI retries) and the repaired order as `1 0`.
-It verifies one actual program row, one archive member, one failed generation
-attempt record and zero invocation reservations. Its original and saved database
-digests agree. The terminal checkpoint has `consumed=0` but
-`next_generation_to_submit=2`; the launcher rejected that disagreement and
-preserved **stopped=true, closed=false** in the [ledger](ledger.json).
-
-Both [pre-proposal](runs/S101/checkpoints/000_boundary_00/state.json) and
-[terminal](runs/S101/checkpoints/001_terminal_00/state.json) checkpoints retain
-full SQLite backups, RNGs, native generation/accounting fields, DB runtime
-metadata, ledger snapshots and configuration hashes. The [terminal drain](runs/S101/terminal_finalization.json)
-completed in 0.083334 seconds without cancellation or manual interruption.
-A host process check after exit found no surviving E3 proposal/evaluator worker.
-No automatic transient recovery was used: this was a configuration/integrity
-failure, not the specifically permitted send failure.
-
-The zero-reservation ledger must **not** be interpreted as a fresh unrestricted
-60-call allowance. The three failed local launches expose an accounting defect
-at the boundary. Their relationship to the assigned opportunity must be resolved
-explicitly before any continuation; this report does not retroactively assign
-new slot numbers, invent reservations or rerun slot 1.
-
-## Verification and post-pause repairs
-
-Before launch, six localhost forced-tool checks passed with no authentication
-header and no canary access. The restricted model catalog matches locally cached
-model metadata except intentional removal of apply_patch registration. Fresh
-mutation tools cannot retrieve repository, opponent/evaluator/reference code,
-reports, development/recognition information or outside experiment material.
-This is a supported native tool boundary, not an OS confidentiality container.
-No supervising conversation or report was given to a mutation model.
-
-The pre-launch native-loop rehearsals passed normal, first-slot, middle-slot
-and final-slot failures; first/middle cases resumed the same full archive and
-RNG checkpoint to 20 synthetic opportunities. Seven focused checks and the
-70-test full unittest suite passed. **Those tests mocked the proposal interface
-and bypassed the new commit guard, so they missed both live-entrypoint defects.**
-Test success did not establish end-to-end readiness. Earlier sandbox/local
-fixture failures are preserved in [preparation evidence](setup/IMPLEMENTATION.md)
-and the compressed byte-preserving rehearsal archives.
-
-Post-pause repairs set retry controls before the first Shinka import and run
-both Git guard commands with `cwd=ROOT`. Two new regression tests exercise the
-guard from outside the checkout and its retry constants in a fresh process.
-All nine focused checks pass. [Repair hashes](setup/repair_source_hashes.json)
-distinguish these edits from the as-executed implementation. The original
-protocol freeze, raw execution evidence and checkpoints are unchanged; the
-original freeze deliberately rejects these subsequently repaired source bytes.
-No new live protocol or experiment was started. Original and E3 zero-call
-preflights pass after repair.
-
-The first post-repair full suite reached 72 tests but failed the preserved
-E1-R 0.1-second subprocess fixture: the child timed out before printing `fixture`.
-That [failure log](setup/tests_full_repairs.txt) remains intact, and no historical
-test or subprocess bound was changed. The [16-test focused recheck](setup/tests_process_recheck.txt)
-also failed that check and timed out the existing 0.25-second partial-UTF-8
-fixture. The planned subsequent full rerun was therefore not launched. These
-results are consistent with timing-sensitive fixture startup under current host
-conditions; the precise scheduling cause is unestablished. The post-repair full
-suite is **not green**. Nine E3-focused checks and both zero-call preflights pass;
-the earlier pre-launch 70-test pass remains a separate result.
-
-## Transfer, traces and scientific interpretation
-
-The frozen future panels are original training types × seeds 300001–300100 and
-original development types × seeds 400001–400100. The latter types are alternator,
-suspicious TFT, TFT for two consecutive defections, hard TFT, random p(C)=0.2 and
-random p(C)=0.8. Ranges are disjoint from original encounter seeds and E2's
-100001–100100/200001–200100. Horizon and SHA-256 match-stream derivation are
-unchanged. Three selected policies, seed/grim and TFT were intended to receive
-identical encounters: 6,000 matches total, panels scored separately.
-
-**Actual fresh matches: 0/6,000.** All three primary selected-minus-seed
-development outcomes, fresh-training improvements and per-opponent transfer
-results are unavailable. There are no scored E3 transfer traces to replay.
-No recognition or interim transfer was exposed to a future mutation session.
-
-The planned distinctions—no training improvement, training gain failing to
-transfer, and gain retained on both fresh panels—cannot yet be applied. This
-execution produced no child policy to compare. Source and behavior both remain
-the earlier grim seed; there is no E3 novelty claim and no finite-probe claim of
-universal equivalence. Earlier E2 transfer findings remain historical evidence,
-not substitute E3 outcomes.
-
-## Computation and reproducible evidence
-
-| Quantity | Actual E3 result |
-| --- | ---: |
-| External proposal/model invocations | 0 |
-| Failed local wrapper attempts before external launch | 3 |
-| Durable invocation reservations | 0 — integrity discrepancy, not reset allowance |
-| Completed external model turns / native response usage records | 0 / 0 |
-| External proposal tokens / subscription charges | 0 / 0 |
-| Generated sources / successful generations | 0 / 0 |
-| Completed runs | 0/3 |
-| S101 child-segment runtime, outer measurement | 67.566262 s |
-| Native runner runtime, inner measurement | 44.260495 s |
-| Seed evaluator recorded compute time | 0.505195 s |
-| Headless API-list-price estimate | $0.00; not a subscription charge |
-| Automatic recovery checks used | 0/2 |
-
-Outer and inner times measure different scopes; neither is substituted for the
-other. The pre-call read-only account check reported ChatGPT Pro, the requested
-model/low effort, 11% rounded account usage and credit balance 90.6853810000.
-No paid API, API-key fallback, purchased-credit continuation, auxiliary model,
-embedding, judge call or GitHub Actions was used.
-
-Safe exact commands from the repository (no external proposals):
-
-```bash
-source .venv/bin/activate
-python diagnose_e3_prelaunch.py
-python -m unittest discover -s tests -p test_e3.py -v
-python run_e3.py --preflight
-python run_evo.py --preflight
-python - <<'PY'
-from policy import load_policy
-p = load_policy('results/e3/protocol/seed.py')
-for own, other in [((), ()), ((0,), (0,)), ((0,), (1,)), ((0,1), (1,0))]:
-    print(own, other, '->', p(own, other))
-PY
+```python
+# EVOLVE-BLOCK-START
+def policy(own_history, opponent_history):
+    return 0 if len(opponent_history) == 0 or opponent_history.count(1) == 0 else 1
+# EVOLVE-BLOCK-END
 ```
 
-The last command reproduces the seed's choices `0, 0, 1, 1` through policy.py.
-These are explicit history examples, **not scored E3 encounter traces**. The
-as-executed source can be inspected with
-`git show 3288b90e625daf0f02e684eb32d791c4f3f261a1:run_e3.py`.
-[COMMANDS.md](COMMANDS.md) preserves the actual preparation/launch commands and
-clearly gates the currently unexecuted transfer commands.
+cooperate when `len(opponent_history) == 0 or opponent_history.count(1) == 0`, otherwise defect.
 
-One bounded follow-up proposal, **not executed**: a zero-call reconciliation
-review of this same E3 archive, both checkpoints and all three local wrapper
-attempts. Exercise the real isolated backend entrypoint with a localhost-only
-failure fixture and decide the failed-launch/slot accounting before a reviewed
-continuation freeze. Do not grant new calls, reset a ledger, repeat a consumed
-opportunity or start a new experiment as part of that review.
+### S303
+
+| Opportunity | Outcome | Training | Best so far | Parent slot / score | Inspiration slots |
+| ---: | --- | ---: | ---: | --- | --- |
+| 1 | completed | 2.536238 | 2.655386 | 0 / 2.655386 | none |
+| 2 | completed | 2.474055 | 2.655386 | 0 / 2.655386 | 1 |
+| 3 | completed | 2.655386 | 2.655386 | 1 / 2.536238 | 0 |
+| 4 | completed | 2.084743 | 2.655386 | 0 / 2.655386 | 3 |
+| 5 | completed | 2.655386 | 2.655386 | 1 / 2.536238 | 0 |
+| 6 | completed | 2.536238 | 2.655386 | 5 / 2.655386 | 0 |
+| 7 | completed | 2.536238 | 2.655386 | 0 / 2.655386 | 3 |
+| 8 | completed | 2.655386 | 2.655386 | 6 / 2.536238 | 0 |
+| 9 | completed | 2.067541 | 2.655386 | 0 / 2.655386 | 3 |
+| 10 | completed | 2.655386 | 2.655386 | 8 / 2.655386 | 0 |
+| 11 | completed | 2.655386 | 2.655386 | 2 / 2.474055 | 0 |
+| 12 | completed | 2.536238 | 2.655386 | 0 / 2.655386 | 3 |
+| 13 | completed | 2.474055 | 2.655386 | 12 / 2.536238 | 0 |
+| 14 | completed | 2.536238 | 2.655386 | 11 / 2.655386 | 0 |
+| 15 | completed | 2.655386 | 2.655386 | 7 / 2.536238 | 0 |
+| 16 | completed | 2.655386 | 2.655386 | 6 / 2.536238 | 0 |
+| 17 | completed | 2.084743 | 2.655386 | 10 / 2.655386 | 0 |
+| 18 | completed | 2.536238 | 2.655386 | 3 / 2.655386 | 0 |
+| 19 | completed | 2.536238 | 2.655386 | 10 / 2.655386 | 0 |
+| 20 | completed | 2.536238 | 2.655386 | 8 / 2.655386 | 0 |
+
+Complete training-selected original source (slot 0, SHA-256 `fc938dea6c869791ffb3d7fbbb03f95b21ea86152fb3414345a9d107323d56a1`):
+
+```python
+# EVOLVE-BLOCK-START
+def policy(own_history, opponent_history):
+    return 0 if len(opponent_history) == 0 or opponent_history.count(1) == 0 else 1
+# EVOLVE-BLOCK-END
+```
+
+cooperate when `len(opponent_history) == 0 or opponent_history.count(1) == 0`, otherwise defect.
+
+## What the generated policies do
+
+The 59 generated sources contain **20 parsed ASTs, 18 valid**. Within-run AST
+duplicates, including comparison to each seed, total 37 (S101 14, S202 11,
+S303 12); global AST deduplication is a different count (39 repeated occurrences).
+All generated candidates received an evaluation. There are 62 native program
+rows including the three seeds, and 48 final archive members (16 per run).
+
+**27 generated occurrences implement familiar TFT**, in three source forms.
+The direct `opponent_history[-1]` form and its equivalent Boolean conditional
+cooperate initially and copy the opponent thereafter. S303/18 has a redundant
+own-history expression: if the previous actions agree, returning own equals
+returning opponent; if they differ, `1-own` equals opponent for binary actions.
+All 27 pass the frozen 1,640 probes. These source arguments establish TFT for
+these particular programs on equal-length binary histories, independently of
+finite-probe agreement. **15 occurrences implement familiar grim**, in two source
+forms. The seed and both generated grim forms cooperate precisely while the
+opponent's defection count is zero; that count cannot decrease, so retaliation
+is permanent. These are recovered implementations of known strategies, not
+novel discoveries.
+
+The table groups every remaining source by its actual decision rule. Full code,
+all duplicate origins and per-opportunity branch expressions are in the complete
+source catalogue. C means cooperation and D defection; round numbers start at 1.
+
+| Source occurrence(s) | Actual behavior | Original training |
+| --- | --- | ---: |
+| S101/2 | Grim with an exception: cooperate when there have been exactly two opponent defections and the last opponent action was C. At three total defections, retaliation is permanent. | 2.654258 |
+| S101/4; S202/3,12 | Cooperate until the opponent's second **total** defection, then defect forever. This differs from counting consecutive defections. | 2.651720 |
+| S101/5 | Grim with an exception after exactly one opponent defection when its latest action is C; a second total defection removes forgiveness. | 2.653553 |
+| S202/1 | Open C,D. Thereafter, only opponents whose first two actions were C,C can receive cooperation, and only while their total defection count is exactly one. All other cases defect. | 2.330936 |
+| S202/6 | Grim, but cooperate whenever history length modulo 50 is 0 or 1: rounds 1–2, 51–52, 101–102, etc. | 2.640299 |
+| S202/15 | Grim, with cooperation restored whenever the opponent's last two actions were both C. | 2.596588 |
+| S202/17 | Grim, with cooperation restored whenever the opponent's last three actions were all C. | 2.625917 |
+| S202/18 | Cooperate only through round 6 while the opponent has never defected; defect from round 7 onward, or earlier after any defection. | 2.336717 |
+| S303/2,13 | Familiar tit-for-two-tats: cooperate initially; defect exactly after two consecutive opponent defections. | 2.474055 |
+| S303/4 | From its own reachable histories, cooperate through round 8, then defect against a never-defecting opponent; once the opponent defects, cooperate permanently. Its redundant own-action branch differs on some unreachable input histories. | 2.084743 |
+| S303/9 | Open C; normally copy the opponent. Override with D after an entirely cooperative history of length divisible by 83; override with C after mutual D. This is a periodic-defection/forgiveness hybrid, not exact TFT. | 2.067541 |
+| S303/17 | Cooperate through round 8; thereafter defect only if the opponent has never defected. Cooperate permanently after its first defection. Same reachable behavior as S303/4 by the preceding branch argument, despite a different AST. | 2.084743 |
+| S101/19 | Rejected: a tuple literal `(1, 1, 1)` in a history comparison is outside the interpreter grammar. 62 AST nodes, below the size limit; no repaired version was evaluated. | −1 (invalid) |
+| S202/20 | Rejected: a tuple literal `(0, 0, 0)` is outside the interpreter grammar. 53 AST nodes, below the size limit; no repaired version was evaluated. | −1 (invalid) |
+
+The ten other valid variant occurrences combine delayed retaliation, limited
+forgiveness or history-length triggers. Changed code and behavior are established;
+worldwide novelty is not. Their measured training scores all fall below grim.
+Only the three selected sources and fixed references received fresh transfer:
+there is no fresh-development claim for an unselected variant.
+
+## Actual evolutionary changes and stagnation
+
+The incumbent trajectory is flat in all three runs: 2.655386350817823 from seed
+to completion. Native parent selection still explored lower-scoring programs.
+For example, S202/2 (TFT, 2.536238) → S202/3 (second-total-defection trigger,
+2.651720) → S202/4 (grim, 2.655386) improves the sampled parent's score twice.
+However, the exact grim seed was supplied as top-k inspiration in both steps.
+This is recovery of an already available incumbent, not a new best or new
+strategy. Likewise S101/7 returns from S101/2's limited-forgiveness variant to
+the original grim source, with seed slot 0 supplied as inspiration. The full
+parent/inspiration record supports these concrete relationships; no hidden
+model reasoning is inferred.
+
+The closest new variant was S101/2, **−0.001128** below the seed on original
+training. The 27 TFT occurrences scored 2.536238, **−0.119148** below the seed.
+Selection retained slot 0 in every run under the frozen earliest-tie rule.
+The result is **no training improvement**, followed by zero selected-minus-seed
+transfer differences. It does not establish global optimality of grim, prove
+that a larger or differently configured search cannot improve it, or show that
+all unselected variants would transfer poorly.
+
+Three exploratory searches with 19/20/20 available model opportunities cannot
+repair the unfinished independent-generation comparison. Public development
+opponent types, fixed training samples, deterministic noiseless play, restricted
+program syntax, small budgets and the LLM's prior knowledge limit the claim.
+Native retrieval restrictions isolate the supplied mutation information; they
+are not an OS confidentiality container or a knowledge-free starting point.
+
+## Fresh transfer and interpretation
+
+All five policies (three frozen selections, seed/grim and reference TFT) received the same 600 matches per panel: training types × seeds 300001–300100 and development types × seeds 400001–400100. All 6,000 matches use the original horizon and SHA-256 match RNG derivation. Development types are alternator, suspicious TFT, TFT for two consecutive defections, hard TFT, random p(C)=0.2 and random p(C)=0.8. These public types are a development holdout, not an untouched confirmatory opponent population. Panels are scored separately; there is no post-transfer reselection.
+
+| Policy | Fresh training | Fresh development | Training minus seed | Development minus seed |
+| --- | ---: | ---: | ---: | ---: |
+| S101 | 2.665880 | 2.663790 | 0.000000 | 0.000000 |
+| S202 | 2.665880 | 2.663790 | 0.000000 | 0.000000 |
+| S303 | 2.665880 | 2.663790 | 0.000000 | 0.000000 |
+| seed | 2.665880 | 2.663790 | 0.000000 | 0.000000 |
+| TFT | 2.541541 | 2.551387 | -0.124339 | -0.112403 |
+
+Per-opponent results are retained in [transfer/summary.json](continuation_v1/transfer/summary.json), and every scored match in the adjacent JSONL files. [Verified traces](continuation_v1/traces.json) show actual actions and payoffs from selected scored encounters. Recognition is reported only after the gate: passing 1,640 TFT probes is finite-probe compatibility, not universal equivalence.
+
+### Per-opponent fresh results
+
+All selected sources are byte-identical to seed/grim, so their opponent-specific results equal its results. Each cell aggregates 100 fresh matches.
+
+| Panel / opponent | Seed / all selections | TFT | Grim minus TFT |
+| --- | ---: | ---: | ---: |
+| train / always_cooperate | 3.000000 | 3.000000 | 0.000000 |
+| train / always_defect | 0.996579 | 0.996579 | 0.000000 |
+| train / grim | 3.000000 | 3.000000 | 0.000000 |
+| train / random | 2.998700 | 2.252668 | 0.746032 |
+| train / tit_for_tat | 3.000000 | 3.000000 | 0.000000 |
+| train / win_stay_lose_shift | 3.000000 | 3.000000 | 0.000000 |
+| holdout / alternator | 2.993834 | 2.498157 | 0.495677 |
+| holdout / hard_tit_for_tat | 3.000000 | 3.000000 | 0.000000 |
+| holdout / random_20 | 1.790832 | 1.553549 | 0.237283 |
+| holdout / random_80 | 4.188024 | 2.761477 | 1.426546 |
+| holdout / suspicious_tit_for_tat | 1.010053 | 2.495141 | -1.485088 |
+| holdout / tit_for_two_tats | 3.000000 | 3.000000 | 0.000000 |
+
+### Replayed scored encounters
+
+These are the first 16 actual rounds; payoffs and match length are full-encounter totals. C=0 and D=1. Full pre-action histories and per-round payoffs are retained in traces.json. All six traces reproduce their existing scored records exactly.
+
+| Policy / encounter | Own first 16 | Opponent first 16 | Full own payoff / rounds |
+| --- | --- | --- | ---: |
+| S101 / train/random/300001 | `CDDDDDDDDDDDDDDD` | `DCCCDDCDCDCDCCDD` | 2467 / 824 |
+| S101 / holdout/suspicious_tit_for_tat/400001 | `CDDDDDDDDDDDDDDD` | `DCDDDDDDDDDDDDDD` | 40 / 37 |
+| seed / train/random/300001 | `CDDDDDDDDDDDDDDD` | `DCCCDDCDCDCDCCDD` | 2467 / 824 |
+| seed / holdout/suspicious_tit_for_tat/400001 | `CDDDDDDDDDDDDDDD` | `DCDDDDDDDDDDDDDD` | 40 / 37 |
+| TFT / train/random/300001 | `CDCCCDDCDCDCDCCD` | `DCCCDDCDCDCDCCDD` | 1862 / 824 |
+| TFT / holdout/suspicious_tit_for_tat/400001 | `CDCDCDCDCDCDCDCD` | `DCDCDCDCDCDCDCDC` | 90 / 37 |
+
+Grim retaliates permanently after the first random defection, while TFT continues responding to the latest action. Against suspicious TFT, grim settles into mutual defection after the opening; TFT alternates C/D out of phase. These traces explain encounter-specific behavior, not a universal ranking.
+
+## Usage, failures and verification
+
+External launches: 59; completed Codex turn events: 59; available native model-response usage records: 59. Native response tokens: `{"cache_write_input_tokens": 0, "cached_input_tokens": 233472, "input_tokens": 341644, "output_tokens": 42734, "reasoning_output_tokens": 35352, "total_tokens": 384378}`. Cached input and reasoning output are subsets. Codex runtime: 1016.854 seconds. Native sessions are fresh, and their user messages/base instructions/permissions were checked against recorded prompts and the localhost restriction fixture. No tool call was observed.
+
+| Run | Cumulative outer runtime (s) |
+| --- | ---: |
+| S101 | 576.982 |
+| S202 | 522.942 |
+| S303 | 501.455 |
+
+Total cumulative outer search runtime: 1601.378 seconds. Headless API-list-price estimate: $0.7758464, not a subscription charge. Read-only account usage changed from 13% to 15%; credit balance remained 90.6853810000. The transfer ledger records 51.635 seconds for the 6,000 matches. These are the preserved runtime-clock measurements.
+
+S101 cumulative runtime includes the original 67.56626177899307-second segment. Codex/Headless/native provider/evaluator limits remain 180/210/240/60 seconds, native drain 350 seconds, cumulative outer bound 9,000 seconds per run. At most two specifically classified send failures permit a full-state recovery and one reserved read-only availability check each. Ambiguous transport, quota/auth, configuration and integrity failures pause. No consumed opportunity is repeated.
+
+Automatic recovery checks used: 0/2. Terminal stop reason: `None`; failure class: `None`. Full failure output, call records, runtime segments and checkpoint snapshots are preserved under [continuation_v1](continuation_v1). Absent model-response usage does not establish whether a failed request was processed remotely.
+
+The continuation passed 12 focused E3 checks, 16 repaired timing-fixture checks, the full 75-test unittest suite, both zero-call preflights, and six localhost forced retrieval refusals. The native Shinka → Headless → wrapper → final executable rehearsal exercised real temporary mutation cwd and actual Git/freeze/import checks, reproduced one prelaunch failure with exactly one local attempt, then restored its full checkpoint and successfully evaluated the next opportunity. Only the final external executable was synthetic. Original failed test logs and initial rehearsal evidence remain available; no production deadline was relaxed.
+
+Final verification independently checked all three terminal database/checkpoint digests, exact training-only selections, 6,000 manifest-matched scored rows and six full scored-trace replays. A post-search trace command initially used the nonexistent identifier suspicious_tft; it was corrected to the frozen suspicious_tit_for_tat identifier. The lookup error and dependent missing-trace verification failure are preserved under setup, and no match or source changed.
+
+The supervisor’s actual process command confirmed approval_policy="never". Mutation sessions retained read-only sandbox and approval never with explicit retrieval restrictions. No paid API, API-key fallback, purchased credits, auxiliary model or GitHub Actions was used. Headless API-list-price estimates are not subscription charges; exact usage is in [usage_summary.json](continuation_v1/usage_summary.json).
+
+## Commands and bounded follow-up
+
+Exact preparation, freeze, launch and gated evaluation commands are in [continuation_v1/COMMANDS.md](continuation_v1/COMMANDS.md). The authorized launch was `PATH="$PWD/.venv/bin:$PATH" .venv/bin/python run_e3.py --resume`. Defaults remain zero-call and stopped/closed ledgers refuse automatic restart. Read-only verification and scored-trace replay: `.venv/bin/python verify_e3.py`; audit regeneration: `.venv/bin/python audit_e3.py`; report replay: `.venv/bin/python write_e3_report.py`. Trace replay uses `.venv/bin/python analyze_e3.py --trace S101 --split train --opponent random --seed 300001 --rounds 16` when the gated transfer exists.
+
+One bounded evidence-motivated follow-up is recorded in [FOLLOWUP.md](continuation_v1/FOLLOWUP.md). It is proposed only and has not been executed.

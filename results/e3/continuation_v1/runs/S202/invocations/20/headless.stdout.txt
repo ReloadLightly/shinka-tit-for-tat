@@ -1,0 +1,16 @@
+<NAME>
+forgiving_trigger
+</NAME>
+
+<DESCRIPTION>
+Cooperate initially and while the opponent cooperates. Retaliate after defection, but restore cooperation once the opponent has shown three consecutive cooperative moves, allowing recovery from isolated defections while retaining protection against persistent defectors.
+</DESCRIPTION>
+
+<CODE>
+```python
+# EVOLVE-BLOCK-START
+def policy(own_history, opponent_history):
+    return 0 if len(opponent_history) == 0 or opponent_history.count(1) == 0 or (len(opponent_history) >= 3 and opponent_history[-3:] == (0, 0, 0)) else 1
+# EVOLVE-BLOCK-END
+```
+{"usage":{"agent":"codex","provider":"openai","model":"gpt-5.6-terra","inputTokens":5794,"cacheReadTokens":0,"cacheWriteTokens":0,"outputTokens":666,"reasoningOutputTokens":516,"totalTokens":6460,"usageStatus":"reported","cost":{"input":0.011588,"cacheRead":0,"cacheWrite":0,"output":0.007992,"total":0.01958},"costBasis":"api-list-price-estimate","pricingSource":"models.dev","pricingStatus":"priced"}}

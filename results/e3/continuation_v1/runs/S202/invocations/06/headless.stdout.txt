@@ -1,0 +1,16 @@
+<NAME>
+periodic_forgiveness
+</NAME>
+
+<DESCRIPTION>
+Keeps cooperation against consistently cooperative opponents, defects after observed defection, and periodically offers two cooperative rounds to restore cooperation with retaliatory opponents instead of remaining in permanent mutual defection.
+</DESCRIPTION>
+
+<CODE>
+```python
+# EVOLVE-BLOCK-START
+def policy(own_history, opponent_history):
+    return 0 if len(opponent_history) == 0 or opponent_history.count(1) == 0 or len(opponent_history) % 50 < 2 else 1
+# EVOLVE-BLOCK-END
+```
+{"usage":{"agent":"codex","provider":"openai","model":"gpt-5.6-terra","inputTokens":930,"cacheReadTokens":4864,"cacheWriteTokens":0,"outputTokens":563,"reasoningOutputTokens":433,"totalTokens":6357,"usageStatus":"reported","cost":{"input":0.00186,"cacheRead":0.0009728,"cacheWrite":0,"output":0.006756,"total":0.0095888},"costBasis":"api-list-price-estimate","pricingSource":"models.dev","pricingStatus":"priced"}}

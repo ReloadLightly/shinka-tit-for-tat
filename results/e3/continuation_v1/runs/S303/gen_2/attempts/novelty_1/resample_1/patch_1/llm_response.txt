@@ -1,0 +1,13 @@
+<NAME>
+forgiving_trigger
+</NAME>
+<DESCRIPTION>
+Cooperate initially and continue cooperating unless the opponent defects twice consecutively. This preserves mutual cooperation with cooperative and retaliatory opponents while avoiding permanent retaliation after a single probing or accidental-looking defection.
+</DESCRIPTION>
+<CODE>
+```python
+# EVOLVE-BLOCK-START
+def policy(own_history, opponent_history):
+    return 1 if len(opponent_history) > 1 and opponent_history[-1] == 1 and opponent_history[-2] == 1 else 0
+# EVOLVE-BLOCK-END
+```

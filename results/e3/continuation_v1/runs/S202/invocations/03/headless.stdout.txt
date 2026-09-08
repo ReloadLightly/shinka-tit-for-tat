@@ -1,0 +1,16 @@
+<NAME>
+two_strike_grim
+</NAME>
+
+<DESCRIPTION>
+Cooperate initially and forgive one opponent defection, then defect permanently after a second defection. This preserves mutual cooperation with mostly cooperative strategies while retaining near-full protection against persistent defectors.
+</DESCRIPTION>
+
+<CODE>
+```python
+# EVOLVE-BLOCK-START
+def policy(own_history, opponent_history):
+    return 0 if opponent_history.count(1) < 2 else 1
+# EVOLVE-BLOCK-END
+```
+{"usage":{"agent":"codex","provider":"openai","model":"gpt-5.6-terra","inputTokens":929,"cacheReadTokens":4864,"cacheWriteTokens":0,"outputTokens":874,"reasoningOutputTokens":764,"totalTokens":6667,"usageStatus":"reported","cost":{"input":0.001858,"cacheRead":0.0009728,"cacheWrite":0,"output":0.010488,"total":0.0133188},"costBasis":"api-list-price-estimate","pricingSource":"models.dev","pricingStatus":"priced"}}

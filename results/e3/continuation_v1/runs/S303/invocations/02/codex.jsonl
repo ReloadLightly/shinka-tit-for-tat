@@ -1,0 +1,5 @@
+{"type":"thread.started","thread_id":"01a08315-fc01-7c72-9c69-8abbf60a02a8"}
+{"type":"item.completed","item":{"id":"item_0","type":"error","message":"Code Mode is unavailable because code-mode host is disabled. Code mode will fail closed; enable `features.code_mode_host` and install `codex-code-mode-host`."}}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_1","type":"agent_message","text":"<NAME>\nforgiving_trigger\n</NAME>\n\n<DESCRIPTION>\nCooperate initially and continue cooperating unless the opponent defects twice consecutively. This preserves mutual cooperation with cooperative and retaliatory opponents while avoiding permanent retaliation after a single probing or accidental-looking defection.\n</DESCRIPTION>\n\n<CODE>\n```python\n# EVOLVE-BLOCK-START\ndef policy(own_history, opponent_history):\n    return 1 if len(opponent_history) > 1 and opponent_history[-1] == 1 and opponent_history[-2] == 1 else 0\n# EVOLVE-BLOCK-END\n```"}}
+{"type":"turn.completed","usage":{"input_tokens":5786,"cached_input_tokens":4864,"cache_write_input_tokens":0,"output_tokens":642,"reasoning_output_tokens":516}}

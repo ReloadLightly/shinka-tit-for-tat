@@ -1,0 +1,15 @@
+{
+  "generation": 10,
+  "novelty_attempt": 1,
+  "resample_attempt": 1,
+  "patch_attempt": 1,
+  "success": true,
+  "num_applied": 1,
+  "patch_name": "grim_trigger",
+  "patch_description": "Restore the stronger one-defection trigger from the prior results. It cooperates until the opponent has defected once, then defects thereafter, improving the reported mean payoff from 2.65 to 2.66.",
+  "error_msg": null,
+  "timestamp": "2026-09-09T00:09:18.206144",
+  "llm_cost": 0.0064988,
+  "llm_model": "headless/codex@gpt-5.6-terra?effort=low",
+  "headless_prompt_path": "/home/roland/actir/shinka-tit-for-tat/results/e3/continuation_v1/runs/S202/gen_10/attempts/novelty_1/resample_1/patch_1/headless_prompt.md"
+}

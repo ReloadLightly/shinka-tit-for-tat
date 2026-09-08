@@ -1,0 +1,182 @@
+[E3] run=S101 slot=2/20 stage=proposal valid=None training=None current_best=2.655386350817823 invocations=0/60
+[E3 heartbeat] stage=search run=S101 opportunity=2/20 external=1/59 generated=0 evaluated=0 best_training=2.655386350817823 elapsed=90.1s last_progress=2026-09-08T21:54:55.542135+00:00 worker_pid=1569135 active=True
+[E3 heartbeat] stage=search run=S101 opportunity=2/20 external=1/59 generated=0 evaluated=0 best_training=2.655386350817823 elapsed=112.5s last_progress=2026-09-08T21:54:55.542135+00:00 worker_pid=1569135 active=True
+[E3 heartbeat] stage=search run=S101 opportunity=2/20 external=1/59 generated=0 evaluated=0 best_training=2.655386350817823 elapsed=137.5s last_progress=2026-09-08T21:54:55.542135+00:00 worker_pid=1569135 active=True
+[E3] run=S101 slot=2/20 stage=evaluated valid=True training=2.6542583192329383 current_best=2.655386350817823 invocations=1/60
+[E3] run=S101 slot=3/20 stage=proposal valid=None training=None current_best=2.655386350817823 invocations=1/60
+[E3 heartbeat] stage=search run=S101 opportunity=3/20 external=1/59 generated=1 evaluated=1 best_training=2.655386350817823 elapsed=159.9s last_progress=2026-09-08T21:56:12.104808+00:00 worker_pid=1569135 active=True
+[E3] run=S101 slot=3/20 stage=evaluated valid=True training=2.5362380146644106 current_best=2.655386350817823 invocations=2/60
+[E3] run=S101 slot=4/20 stage=proposal valid=None training=None current_best=2.655386350817823 invocations=2/60
+[E3 heartbeat] stage=search run=S101 opportunity=4/20 external=2/59 generated=2 evaluated=2 best_training=2.655386350817823 elapsed=182.4s last_progress=2026-09-08T21:56:45.991992+00:00 worker_pid=1569135 active=True
+[E3 heartbeat] stage=search run=S101 opportunity=4/20 external=3/59 generated=2 evaluated=2 best_training=2.655386350817823 elapsed=204.8s last_progress=2026-09-08T21:56:45.991992+00:00 worker_pid=1569135 active=True
+[E3] run=S101 slot=4/20 stage=evaluated valid=True training=2.651720248166949 current_best=2.655386350817823 invocations=3/60
+[E3] run=S101 slot=5/20 stage=proposal valid=None training=None current_best=2.655386350817823 invocations=3/60
+[E3 heartbeat] stage=search run=S101 opportunity=5/20 external=4/59 generated=3 evaluated=3 best_training=2.655386350817823 elapsed=229.8s last_progress=2026-09-08T21:57:21.053506+00:00 worker_pid=1569135 active=True
+[E3] run=S101 slot=5/20 stage=evaluated valid=True training=2.6535532994923856 current_best=2.655386350817823 invocations=4/60
+[E3] run=S101 slot=6/20 stage=proposal valid=None training=None current_best=2.655386350817823 invocations=4/60
+[E3 heartbeat] stage=search run=S101 opportunity=6/20 external=4/59 generated=4 evaluated=4 best_training=2.655386350817823 elapsed=252.4s last_progress=2026-09-08T21:57:57.466453+00:00 worker_pid=1569135 active=True
+[E3 heartbeat] stage=search run=S101 opportunity=6/20 external=5/59 generated=4 evaluated=4 best_training=2.655386350817823 elapsed=274.8s last_progress=2026-09-08T21:57:57.466453+00:00 worker_pid=1569135 active=True
+[E3] run=S101 slot=6/20 stage=evaluated valid=True training=2.5362380146644106 current_best=2.655386350817823 invocations=5/60
+[E3] run=S101 slot=7/20 stage=proposal valid=None training=None current_best=2.655386350817823 invocations=5/60
+[E3 heartbeat] stage=search run=S101 opportunity=7/20 external=6/59 generated=5 evaluated=5 best_training=2.655386350817823 elapsed=299.3s last_progress=2026-09-08T21:58:35.853048+00:00 worker_pid=1569135 active=True
+[E3] run=S101 slot=7/20 stage=evaluated valid=True training=2.655386350817823 current_best=2.655386350817823 invocations=6/60
+[E3] run=S101 slot=8/20 stage=proposal valid=None training=None current_best=2.655386350817823 invocations=6/60
+[E3 heartbeat] stage=search run=S101 opportunity=8/20 external=7/59 generated=6 evaluated=6 best_training=2.655386350817823 elapsed=324.3s last_progress=2026-09-08T21:58:58.022913+00:00 worker_pid=1569135 active=True
+[E3] run=S101 slot=8/20 stage=evaluated valid=True training=2.5362380146644106 current_best=2.655386350817823 invocations=7/60
+[E3] run=S101 slot=9/20 stage=proposal valid=None training=None current_best=2.655386350817823 invocations=7/60
+[E3 heartbeat] stage=search run=S101 opportunity=9/20 external=8/59 generated=7 evaluated=7 best_training=2.655386350817823 elapsed=346.7s last_progress=2026-09-08T21:59:27.064211+00:00 worker_pid=1569135 active=True
+[E3] run=S101 slot=9/20 stage=evaluated valid=True training=2.5362380146644106 current_best=2.655386350817823 invocations=8/60
+[E3] run=S101 slot=10/20 stage=proposal valid=None training=None current_best=2.655386350817823 invocations=8/60
+[E3] run=S101 slot=10/20 stage=evaluated valid=True training=2.655386350817823 current_best=2.655386350817823 invocations=9/60
+[E3] run=S101 slot=11/20 stage=proposal valid=None training=None current_best=2.655386350817823 invocations=9/60
+[E3 heartbeat] stage=search run=S101 opportunity=11/20 external=9/59 generated=9 evaluated=9 best_training=2.655386350817823 elapsed=369.2s last_progress=2026-09-08T22:00:06.966701+00:00 worker_pid=1569135 active=True
+[E3] run=S101 slot=11/20 stage=evaluated valid=True training=2.5362380146644106 current_best=2.655386350817823 invocations=10/60
+[E3] run=S101 slot=12/20 stage=proposal valid=None training=None current_best=2.655386350817823 invocations=10/60
+[E3 heartbeat] stage=search run=S101 opportunity=12/20 external=11/59 generated=10 evaluated=10 best_training=2.655386350817823 elapsed=394.2s last_progress=2026-09-08T22:00:20.679399+00:00 worker_pid=1569135 active=True
+[E3] run=S101 slot=12/20 stage=evaluated valid=True training=2.5362380146644106 current_best=2.655386350817823 invocations=11/60
+[E3] run=S101 slot=13/20 stage=proposal valid=None training=None current_best=2.655386350817823 invocations=11/60
+[E3 heartbeat] stage=search run=S101 opportunity=13/20 external=12/59 generated=11 evaluated=11 best_training=2.655386350817823 elapsed=416.6s last_progress=2026-09-08T22:00:45.693202+00:00 worker_pid=1569135 active=True
+[E3] run=S101 slot=13/20 stage=evaluated valid=True training=2.5362380146644106 current_best=2.655386350817823 invocations=12/60
+[E3] run=S101 slot=14/20 stage=proposal valid=None training=None current_best=2.655386350817823 invocations=12/60
+[E3] run=S101 slot=14/20 stage=evaluated valid=True training=2.655386350817823 current_best=2.655386350817823 invocations=13/60
+[E3] run=S101 slot=15/20 stage=proposal valid=None training=None current_best=2.655386350817823 invocations=13/60
+[E3 heartbeat] stage=search run=S101 opportunity=15/20 external=14/59 generated=13 evaluated=13 best_training=2.655386350817823 elapsed=438.9s last_progress=2026-09-08T22:01:20.950508+00:00 worker_pid=1569135 active=True
+[E3 heartbeat] stage=search run=S101 opportunity=15/20 external=14/59 generated=13 evaluated=13 best_training=2.655386350817823 elapsed=461.2s last_progress=2026-09-08T22:01:20.950508+00:00 worker_pid=1569135 active=True
+[E3] run=S101 slot=15/20 stage=evaluated valid=True training=2.5362380146644106 current_best=2.655386350817823 invocations=14/60
+[E3] run=S101 slot=16/20 stage=proposal valid=None training=None current_best=2.655386350817823 invocations=14/60
+[E3 heartbeat] stage=search run=S101 opportunity=16/20 external=15/59 generated=14 evaluated=14 best_training=2.655386350817823 elapsed=486.2s last_progress=2026-09-08T22:02:00.770305+00:00 worker_pid=1569135 active=True
+[E3] run=S101 slot=16/20 stage=evaluated valid=True training=2.5362380146644106 current_best=2.655386350817823 invocations=15/60
+[E3] run=S101 slot=17/20 stage=proposal valid=None training=None current_best=2.655386350817823 invocations=15/60
+[E3 heartbeat] stage=search run=S101 opportunity=17/20 external=16/59 generated=15 evaluated=15 best_training=2.655386350817823 elapsed=508.5s last_progress=2026-09-08T22:02:25.497108+00:00 worker_pid=1569135 active=True
+[E3] run=S101 slot=17/20 stage=evaluated valid=True training=2.5362380146644106 current_best=2.655386350817823 invocations=16/60
+[E3] run=S101 slot=18/20 stage=proposal valid=None training=None current_best=2.655386350817823 invocations=16/60
+[E3] run=S101 slot=18/20 stage=evaluated valid=True training=2.655386350817823 current_best=2.655386350817823 invocations=17/60
+[E3] run=S101 slot=19/20 stage=proposal valid=None training=None current_best=2.655386350817823 invocations=17/60
+[E3 heartbeat] stage=search run=S101 opportunity=19/20 external=18/59 generated=17 evaluated=17 best_training=2.655386350817823 elapsed=530.8s last_progress=2026-09-08T22:02:54.724298+00:00 worker_pid=1569135 active=True
+[E3] run=S101 slot=19/20 stage=evaluated valid=False training=-1.0 current_best=2.655386350817823 invocations=18/60
+[E3] run=S101 slot=20/20 stage=proposal valid=None training=None current_best=2.655386350817823 invocations=18/60
+[E3 heartbeat] stage=search run=S101 opportunity=20/20 external=18/59 generated=18 evaluated=18 best_training=2.655386350817823 elapsed=555.9s last_progress=2026-09-08T22:03:26.567739+00:00 worker_pid=1569135 active=True
+[E3] run=S101 slot=20/20 stage=evaluated valid=True training=2.5362380146644106 current_best=2.655386350817823 invocations=19/60
+[E3] run=S202 slot=1/20 stage=proposal valid=None training=None current_best=2.655386350817823 invocations=19/60
+[E3 heartbeat] stage=search run=S202 opportunity=1/20 external=20/59 generated=0 evaluated=0 best_training=2.655386350817823 elapsed=22.3s last_progress=2026-09-08T22:04:02.775943+00:00 worker_pid=1603708 active=True
+[E3 heartbeat] stage=search run=S202 opportunity=1/20 external=20/59 generated=0 evaluated=0 best_training=2.655386350817823 elapsed=44.6s last_progress=2026-09-08T22:04:02.775943+00:00 worker_pid=1603708 active=True
+[E3] run=S202 slot=1/20 stage=evaluated valid=True training=2.330936266215454 current_best=2.655386350817823 invocations=20/60
+[E3] run=S202 slot=2/20 stage=proposal valid=None training=None current_best=2.655386350817823 invocations=20/60
+[E3 heartbeat] stage=search run=S202 opportunity=2/20 external=21/59 generated=1 evaluated=1 best_training=2.655386350817823 elapsed=69.6s last_progress=2026-09-08T22:04:48.137527+00:00 worker_pid=1603708 active=True
+[E3 heartbeat] stage=search run=S202 opportunity=2/20 external=21/59 generated=1 evaluated=1 best_training=2.655386350817823 elapsed=91.8s last_progress=2026-09-08T22:04:48.137527+00:00 worker_pid=1603708 active=True
+[E3] run=S202 slot=2/20 stage=evaluated valid=True training=2.5362380146644106 current_best=2.655386350817823 invocations=21/60
+[E3] run=S202 slot=3/20 stage=proposal valid=None training=None current_best=2.655386350817823 invocations=21/60
+[E3 heartbeat] stage=search run=S202 opportunity=3/20 external=22/59 generated=2 evaluated=2 best_training=2.655386350817823 elapsed=113.9s last_progress=2026-09-08T22:05:38.234603+00:00 worker_pid=1603708 active=True
+[E3] run=S202 slot=3/20 stage=evaluated valid=True training=2.651720248166949 current_best=2.655386350817823 invocations=22/60
+[E3] run=S202 slot=4/20 stage=proposal valid=None training=None current_best=2.655386350817823 invocations=22/60
+[E3 heartbeat] stage=search run=S202 opportunity=4/20 external=23/59 generated=3 evaluated=3 best_training=2.655386350817823 elapsed=138.9s last_progress=2026-09-08T22:06:10.698162+00:00 worker_pid=1603708 active=True
+[E3] run=S202 slot=4/20 stage=evaluated valid=True training=2.655386350817823 current_best=2.655386350817823 invocations=23/60
+[E3] run=S202 slot=5/20 stage=proposal valid=None training=None current_best=2.655386350817823 invocations=23/60
+[E3 heartbeat] stage=search run=S202 opportunity=5/20 external=24/59 generated=4 evaluated=4 best_training=2.655386350817823 elapsed=161.0s last_progress=2026-09-08T22:06:42.770423+00:00 worker_pid=1603708 active=True
+[E3 heartbeat] stage=search run=S202 opportunity=5/20 external=24/59 generated=4 evaluated=4 best_training=2.655386350817823 elapsed=183.4s last_progress=2026-09-08T22:06:42.770423+00:00 worker_pid=1603708 active=True
+[E3] run=S202 slot=5/20 stage=evaluated valid=True training=2.5362380146644106 current_best=2.655386350817823 invocations=24/60
+[E3] run=S202 slot=6/20 stage=proposal valid=None training=None current_best=2.655386350817823 invocations=24/60
+[E3 heartbeat] stage=search run=S202 opportunity=6/20 external=25/59 generated=5 evaluated=5 best_training=2.655386350817823 elapsed=205.5s last_progress=2026-09-08T22:07:18.301403+00:00 worker_pid=1603708 active=True
+[E3] run=S202 slot=6/20 stage=evaluated valid=True training=2.6402989283699942 current_best=2.655386350817823 invocations=25/60
+[E3] run=S202 slot=7/20 stage=proposal valid=None training=None current_best=2.655386350817823 invocations=25/60
+[E3 heartbeat] stage=search run=S202 opportunity=7/20 external=26/59 generated=6 evaluated=6 best_training=2.655386350817823 elapsed=230.5s last_progress=2026-09-08T22:07:41.111340+00:00 worker_pid=1603708 active=True
+[E3] run=S202 slot=7/20 stage=evaluated valid=True training=2.5362380146644106 current_best=2.655386350817823 invocations=26/60
+[E3] run=S202 slot=8/20 stage=proposal valid=None training=None current_best=2.655386350817823 invocations=26/60
+[E3] run=S202 slot=8/20 stage=evaluated valid=True training=2.5362380146644106 current_best=2.655386350817823 invocations=27/60
+[E3] run=S202 slot=9/20 stage=proposal valid=None training=None current_best=2.655386350817823 invocations=27/60
+[E3 heartbeat] stage=search run=S202 opportunity=9/20 external=28/59 generated=8 evaluated=8 best_training=2.655386350817823 elapsed=252.6s last_progress=2026-09-08T22:08:23.242933+00:00 worker_pid=1603708 active=True
+[E3 heartbeat] stage=search run=S202 opportunity=9/20 external=28/59 generated=8 evaluated=8 best_training=2.655386350817823 elapsed=274.8s last_progress=2026-09-08T22:08:23.242933+00:00 worker_pid=1603708 active=True
+[E3] run=S202 slot=9/20 stage=evaluated valid=True training=2.655386350817823 current_best=2.655386350817823 invocations=28/60
+[E3] run=S202 slot=10/20 stage=proposal valid=None training=None current_best=2.655386350817823 invocations=28/60
+[E3] run=S202 slot=10/20 stage=evaluated valid=True training=2.655386350817823 current_best=2.655386350817823 invocations=29/60
+[E3] run=S202 slot=11/20 stage=proposal valid=None training=None current_best=2.655386350817823 invocations=29/60
+[E3 heartbeat] stage=search run=S202 opportunity=11/20 external=29/59 generated=10 evaluated=10 best_training=2.655386350817823 elapsed=299.8s last_progress=2026-09-08T22:09:18.626047+00:00 worker_pid=1603708 active=True
+[E3] run=S202 slot=11/20 stage=evaluated valid=True training=2.5362380146644106 current_best=2.655386350817823 invocations=30/60
+[E3] run=S202 slot=12/20 stage=proposal valid=None training=None current_best=2.655386350817823 invocations=30/60
+[E3 heartbeat] stage=search run=S202 opportunity=12/20 external=31/59 generated=11 evaluated=11 best_training=2.655386350817823 elapsed=322.1s last_progress=2026-09-08T22:09:40.604398+00:00 worker_pid=1603708 active=True
+[E3] run=S202 slot=12/20 stage=evaluated valid=True training=2.651720248166949 current_best=2.655386350817823 invocations=31/60
+[E3] run=S202 slot=13/20 stage=proposal valid=None training=None current_best=2.655386350817823 invocations=31/60
+[E3 heartbeat] stage=search run=S202 opportunity=13/20 external=32/59 generated=12 evaluated=12 best_training=2.655386350817823 elapsed=344.4s last_progress=2026-09-08T22:10:00.424492+00:00 worker_pid=1603708 active=True
+[E3] run=S202 slot=13/20 stage=evaluated valid=True training=2.5362380146644106 current_best=2.655386350817823 invocations=32/60
+[E3] run=S202 slot=14/20 stage=proposal valid=None training=None current_best=2.655386350817823 invocations=32/60
+[E3 heartbeat] stage=search run=S202 opportunity=14/20 external=33/59 generated=13 evaluated=13 best_training=2.655386350817823 elapsed=366.7s last_progress=2026-09-08T22:10:16.689185+00:00 worker_pid=1603708 active=True
+[E3] run=S202 slot=14/20 stage=evaluated valid=True training=2.5362380146644106 current_best=2.655386350817823 invocations=33/60
+[E3] run=S202 slot=15/20 stage=proposal valid=None training=None current_best=2.655386350817823 invocations=33/60
+[E3 heartbeat] stage=search run=S202 opportunity=15/20 external=34/59 generated=14 evaluated=14 best_training=2.655386350817823 elapsed=391.7s last_progress=2026-09-08T22:10:43.873405+00:00 worker_pid=1603708 active=True
+[E3] run=S202 slot=15/20 stage=evaluated valid=True training=2.596587704455725 current_best=2.655386350817823 invocations=34/60
+[E3] run=S202 slot=16/20 stage=proposal valid=None training=None current_best=2.655386350817823 invocations=34/60
+[E3 heartbeat] stage=search run=S202 opportunity=16/20 external=35/59 generated=15 evaluated=15 best_training=2.655386350817823 elapsed=414.2s last_progress=2026-09-08T22:11:04.316215+00:00 worker_pid=1603708 active=True
+[E3] run=S202 slot=16/20 stage=evaluated valid=True training=2.5362380146644106 current_best=2.655386350817823 invocations=35/60
+[E3] run=S202 slot=17/20 stage=proposal valid=None training=None current_best=2.655386350817823 invocations=35/60
+[E3 heartbeat] stage=search run=S202 opportunity=17/20 external=36/59 generated=16 evaluated=16 best_training=2.655386350817823 elapsed=436.7s last_progress=2026-09-08T22:11:26.833435+00:00 worker_pid=1603708 active=True
+[E3] run=S202 slot=17/20 stage=evaluated valid=True training=2.6259165256627184 current_best=2.655386350817823 invocations=36/60
+[E3] run=S202 slot=18/20 stage=proposal valid=None training=None current_best=2.655386350817823 invocations=36/60
+[E3 heartbeat] stage=search run=S202 opportunity=18/20 external=36/59 generated=17 evaluated=17 best_training=2.655386350817823 elapsed=461.7s last_progress=2026-09-08T22:12:12.672081+00:00 worker_pid=1603708 active=True
+[E3] run=S202 slot=18/20 stage=evaluated valid=True training=2.3367174280879865 current_best=2.655386350817823 invocations=37/60
+[E3] run=S202 slot=19/20 stage=proposal valid=None training=None current_best=2.655386350817823 invocations=37/60
+[E3 heartbeat] stage=search run=S202 opportunity=19/20 external=38/59 generated=18 evaluated=18 best_training=2.655386350817823 elapsed=484.1s last_progress=2026-09-08T22:12:33.380947+00:00 worker_pid=1603708 active=True
+[E3] run=S202 slot=19/20 stage=evaluated valid=True training=2.655386350817823 current_best=2.655386350817823 invocations=38/60
+[E3] run=S202 slot=20/20 stage=proposal valid=None training=None current_best=2.655386350817823 invocations=38/60
+[E3 heartbeat] stage=search run=S202 opportunity=20/20 external=39/59 generated=19 evaluated=19 best_training=2.655386350817823 elapsed=506.6s last_progress=2026-09-08T22:12:51.384458+00:00 worker_pid=1603708 active=True
+[E3] run=S202 slot=20/20 stage=evaluated valid=False training=-1.0 current_best=2.655386350817823 invocations=39/60
+[E3] run=S303 slot=1/20 stage=proposal valid=None training=None current_best=2.655386350817823 invocations=39/60
+[E3 heartbeat] stage=search run=S303 opportunity=1/20 external=39/59 generated=0 evaluated=0 best_training=2.655386350817823 elapsed=22.5s last_progress=2026-09-08T22:13:38.643240+00:00 worker_pid=1614930 active=True
+[E3] run=S303 slot=1/20 stage=evaluated valid=True training=2.5362380146644106 current_best=2.655386350817823 invocations=40/60
+[E3] run=S303 slot=2/20 stage=proposal valid=None training=None current_best=2.655386350817823 invocations=40/60
+[E3 heartbeat] stage=search run=S303 opportunity=2/20 external=41/59 generated=1 evaluated=1 best_training=2.655386350817823 elapsed=44.9s last_progress=2026-09-08T22:14:04.177012+00:00 worker_pid=1614930 active=True
+[E3] run=S303 slot=2/20 stage=evaluated valid=True training=2.4740552735476595 current_best=2.655386350817823 invocations=41/60
+[E3] run=S303 slot=3/20 stage=proposal valid=None training=None current_best=2.655386350817823 invocations=41/60
+[E3 heartbeat] stage=search run=S303 opportunity=3/20 external=41/59 generated=2 evaluated=2 best_training=2.655386350817823 elapsed=69.1s last_progress=2026-09-08T22:14:31.990511+00:00 worker_pid=1614930 active=True
+[E3] run=S303 slot=3/20 stage=evaluated valid=True training=2.655386350817823 current_best=2.655386350817823 invocations=42/60
+[E3] run=S303 slot=4/20 stage=proposal valid=None training=None current_best=2.655386350817823 invocations=42/60
+[E3 heartbeat] stage=search run=S303 opportunity=4/20 external=43/59 generated=3 evaluated=3 best_training=2.655386350817823 elapsed=94.1s last_progress=2026-09-08T22:14:49.544788+00:00 worker_pid=1614930 active=True
+[E3] run=S303 slot=4/20 stage=evaluated valid=True training=2.084743372814439 current_best=2.655386350817823 invocations=43/60
+[E3] run=S303 slot=5/20 stage=proposal valid=None training=None current_best=2.655386350817823 invocations=43/60
+[E3 heartbeat] stage=search run=S303 opportunity=5/20 external=44/59 generated=4 evaluated=4 best_training=2.655386350817823 elapsed=116.5s last_progress=2026-09-08T22:15:18.157974+00:00 worker_pid=1614930 active=True
+[E3] run=S303 slot=5/20 stage=evaluated valid=True training=2.655386350817823 current_best=2.655386350817823 invocations=44/60
+[E3] run=S303 slot=6/20 stage=proposal valid=None training=None current_best=2.655386350817823 invocations=44/60
+[E3 heartbeat] stage=search run=S303 opportunity=6/20 external=45/59 generated=5 evaluated=5 best_training=2.655386350817823 elapsed=138.9s last_progress=2026-09-08T22:15:36.785590+00:00 worker_pid=1614930 active=True
+[E3] run=S303 slot=6/20 stage=evaluated valid=True training=2.5362380146644106 current_best=2.655386350817823 invocations=45/60
+[E3] run=S303 slot=7/20 stage=proposal valid=None training=None current_best=2.655386350817823 invocations=45/60
+[E3] run=S303 slot=7/20 stage=evaluated valid=True training=2.5362380146644106 current_best=2.655386350817823 invocations=46/60
+[E3] run=S303 slot=8/20 stage=proposal valid=None training=None current_best=2.655386350817823 invocations=46/60
+[E3 heartbeat] stage=search run=S303 opportunity=8/20 external=46/59 generated=7 evaluated=7 best_training=2.655386350817823 elapsed=164.0s last_progress=2026-09-08T22:16:18.067890+00:00 worker_pid=1614930 active=True
+[E3 heartbeat] stage=search run=S303 opportunity=8/20 external=47/59 generated=7 evaluated=7 best_training=2.655386350817823 elapsed=186.4s last_progress=2026-09-08T22:16:18.067890+00:00 worker_pid=1614930 active=True
+[E3] run=S303 slot=8/20 stage=evaluated valid=True training=2.655386350817823 current_best=2.655386350817823 invocations=47/60
+[E3] run=S303 slot=9/20 stage=proposal valid=None training=None current_best=2.655386350817823 invocations=47/60
+[E3 heartbeat] stage=search run=S303 opportunity=9/20 external=48/59 generated=8 evaluated=8 best_training=2.655386350817823 elapsed=208.8s last_progress=2026-09-08T22:16:52.798225+00:00 worker_pid=1614930 active=True
+[E3] run=S303 slot=9/20 stage=evaluated valid=True training=2.067540891144952 current_best=2.655386350817823 invocations=48/60
+[E3] run=S303 slot=10/20 stage=proposal valid=None training=None current_best=2.655386350817823 invocations=48/60
+[E3 heartbeat] stage=search run=S303 opportunity=10/20 external=49/59 generated=9 evaluated=9 best_training=2.655386350817823 elapsed=231.4s last_progress=2026-09-08T22:17:20.412140+00:00 worker_pid=1614930 active=True
+[E3 heartbeat] stage=search run=S303 opportunity=10/20 external=49/59 generated=9 evaluated=9 best_training=2.655386350817823 elapsed=256.4s last_progress=2026-09-08T22:17:20.412140+00:00 worker_pid=1614930 active=True
+[E3] run=S303 slot=10/20 stage=evaluated valid=True training=2.655386350817823 current_best=2.655386350817823 invocations=49/60
+[E3] run=S303 slot=11/20 stage=proposal valid=None training=None current_best=2.655386350817823 invocations=49/60
+[E3 heartbeat] stage=search run=S303 opportunity=11/20 external=49/59 generated=10 evaluated=10 best_training=2.655386350817823 elapsed=278.9s last_progress=2026-09-08T22:18:22.945870+00:00 worker_pid=1614930 active=True
+[E3] run=S303 slot=11/20 stage=evaluated valid=True training=2.655386350817823 current_best=2.655386350817823 invocations=50/60
+[E3] run=S303 slot=12/20 stage=proposal valid=None training=None current_best=2.655386350817823 invocations=50/60
+[E3 heartbeat] stage=search run=S303 opportunity=12/20 external=50/59 generated=11 evaluated=11 best_training=2.655386350817823 elapsed=301.3s last_progress=2026-09-08T22:18:45.848471+00:00 worker_pid=1614930 active=True
+[E3] run=S303 slot=12/20 stage=evaluated valid=True training=2.5362380146644106 current_best=2.655386350817823 invocations=51/60
+[E3] run=S303 slot=13/20 stage=proposal valid=None training=None current_best=2.655386350817823 invocations=51/60
+[E3 heartbeat] stage=search run=S303 opportunity=13/20 external=51/59 generated=12 evaluated=12 best_training=2.655386350817823 elapsed=326.3s last_progress=2026-09-08T22:19:13.725553+00:00 worker_pid=1614930 active=True
+[E3 heartbeat] stage=search run=S303 opportunity=13/20 external=52/59 generated=12 evaluated=12 best_training=2.655386350817823 elapsed=348.7s last_progress=2026-09-08T22:19:13.725553+00:00 worker_pid=1614930 active=True
+[E3] run=S303 slot=13/20 stage=evaluated valid=True training=2.4740552735476595 current_best=2.655386350817823 invocations=52/60
+[E3] run=S303 slot=14/20 stage=proposal valid=None training=None current_best=2.655386350817823 invocations=52/60
+[E3] run=S303 slot=14/20 stage=evaluated valid=True training=2.5362380146644106 current_best=2.655386350817823 invocations=53/60
+[E3 heartbeat] stage=search run=S303 opportunity=14/20 external=53/59 generated=14 evaluated=14 best_training=2.655386350817823 elapsed=371.1s last_progress=2026-09-08T22:20:03.660820+00:00 worker_pid=1614930 active=True
+[E3] run=S303 slot=15/20 stage=proposal valid=None training=None current_best=2.655386350817823 invocations=53/60
+[E3] run=S303 slot=15/20 stage=evaluated valid=True training=2.655386350817823 current_best=2.655386350817823 invocations=54/60
+[E3] run=S303 slot=16/20 stage=proposal valid=None training=None current_best=2.655386350817823 invocations=54/60
+[E3 heartbeat] stage=search run=S303 opportunity=16/20 external=55/59 generated=15 evaluated=15 best_training=2.655386350817823 elapsed=393.4s last_progress=2026-09-08T22:20:19.151804+00:00 worker_pid=1614930 active=True
+[E3] run=S303 slot=16/20 stage=evaluated valid=True training=2.655386350817823 current_best=2.655386350817823 invocations=55/60
+[E3] run=S303 slot=17/20 stage=proposal valid=None training=None current_best=2.655386350817823 invocations=55/60
+[E3 heartbeat] stage=search run=S303 opportunity=17/20 external=56/59 generated=16 evaluated=16 best_training=2.655386350817823 elapsed=418.4s last_progress=2026-09-08T22:20:45.641251+00:00 worker_pid=1614930 active=True
+[E3] run=S303 slot=17/20 stage=evaluated valid=True training=2.084743372814439 current_best=2.655386350817823 invocations=56/60
+[E3] run=S303 slot=18/20 stage=proposal valid=None training=None current_best=2.655386350817823 invocations=56/60
+[E3 heartbeat] stage=search run=S303 opportunity=18/20 external=56/59 generated=17 evaluated=17 best_training=2.655386350817823 elapsed=440.7s last_progress=2026-09-08T22:21:11.703851+00:00 worker_pid=1614930 active=True
+[E3] run=S303 slot=18/20 stage=evaluated valid=True training=2.5362380146644106 current_best=2.655386350817823 invocations=57/60
+[E3] run=S303 slot=19/20 stage=proposal valid=None training=None current_best=2.655386350817823 invocations=57/60
+[E3 heartbeat] stage=search run=S303 opportunity=19/20 external=57/59 generated=18 evaluated=18 best_training=2.655386350817823 elapsed=463.1s last_progress=2026-09-08T22:21:40.438323+00:00 worker_pid=1614930 active=True
+[E3] run=S303 slot=19/20 stage=evaluated valid=True training=2.5362380146644106 current_best=2.655386350817823 invocations=58/60
+[E3] run=S303 slot=20/20 stage=proposal valid=None training=None current_best=2.655386350817823 invocations=58/60
+[E3 heartbeat] stage=search run=S303 opportunity=20/20 external=59/59 generated=19 evaluated=19 best_training=2.655386350817823 elapsed=488.1s last_progress=2026-09-08T22:21:56.812647+00:00 worker_pid=1614930 active=True
+[E3] run=S303 slot=20/20 stage=evaluated valid=True training=2.5362380146644106 current_best=2.655386350817823 invocations=59/60

@@ -1,0 +1,13 @@
+<NAME>
+grim_trigger
+</NAME>
+<DESCRIPTION>
+Cooperate initially and continue cooperating while the opponent has always cooperated; permanently switch to action 1 after any observed action 1. This directly restores the best reported prior result (2.66 versus 2.54).
+</DESCRIPTION>
+<CODE>
+```python
+# EVOLVE-BLOCK-START
+def policy(own_history, opponent_history):
+    return 0 if len(opponent_history) == 0 or opponent_history.count(1) == 0 else 1
+# EVOLVE-BLOCK-END
+```

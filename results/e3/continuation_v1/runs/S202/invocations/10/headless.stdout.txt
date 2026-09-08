@@ -1,0 +1,17 @@
+<NAME>
+grim_trigger
+</NAME>
+
+<DESCRIPTION>
+Restore the stronger one-defection trigger from the prior results. It cooperates until the opponent has defected once, then defects thereafter, improving the reported mean payoff from 2.65 to 2.66.
+</DESCRIPTION>
+
+<CODE>
+```python
+# EVOLVE-BLOCK-START
+def policy(own_history, opponent_history):
+    return 0 if len(opponent_history) == 0 or opponent_history.count(1) == 0 else 1
+# EVOLVE-BLOCK-END
+```
+</CODE>
+{"usage":{"agent":"codex","provider":"openai","model":"gpt-5.6-terra","inputTokens":921,"cacheReadTokens":4864,"cacheWriteTokens":0,"outputTokens":307,"reasoningOutputTokens":181,"totalTokens":6092,"usageStatus":"reported","cost":{"input":0.001842,"cacheRead":0.0009728,"cacheWrite":0,"output":0.003684,"total":0.0064988},"costBasis":"api-list-price-estimate","pricingSource":"models.dev","pricingStatus":"priced"}}

@@ -1,0 +1,14 @@
+<NAME>
+grim_trigger
+</NAME>
+<DESCRIPTION>
+Cooperate initially and continue cooperating while the opponent has never defected. Permanently defect after observing any defection, preventing repeated exploitation. This previously outperformed the current tit-for-tat policy (2.66 vs. 2.54).
+</DESCRIPTION>
+<CODE>
+```python
+# EVOLVE-BLOCK-START
+def policy(own_history, opponent_history):
+    return 0 if len(opponent_history) == 0 or opponent_history.count(1) == 0 else 1
+# EVOLVE-BLOCK-END
+```
+</CODE>

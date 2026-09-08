@@ -1,0 +1,13 @@
+<NAME>
+grim_trigger
+</NAME>
+<DESCRIPTION>
+Cooperate initially and continue cooperating while the opponent has never defected. Permanently defect after the first observed defection. This restores the best previously measured score (2.66), improving on the current two-defection threshold (2.65).
+</DESCRIPTION>
+<CODE>
+```python
+# EVOLVE-BLOCK-START
+def policy(own_history, opponent_history):
+    return 0 if len(opponent_history) == 0 or opponent_history.count(1) == 0 else 1
+# EVOLVE-BLOCK-END
+```

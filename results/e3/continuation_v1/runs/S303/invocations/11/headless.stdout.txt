@@ -1,0 +1,16 @@
+<NAME>
+grim_response
+</NAME>
+
+<DESCRIPTION>
+Uses the best-performing provided strategy: cooperate until the opponent has ever chosen action 1, then choose action 1 thereafter. Its reported mean payoff (2.66) exceeds the current program’s 2.47.
+</DESCRIPTION>
+
+<CODE>
+```python
+# EVOLVE-BLOCK-START
+def policy(own_history, opponent_history):
+    return 0 if len(opponent_history) == 0 or opponent_history.count(1) == 0 else 1
+# EVOLVE-BLOCK-END
+```
+{"usage":{"agent":"codex","provider":"openai","model":"gpt-5.6-terra","inputTokens":938,"cacheReadTokens":4864,"cacheWriteTokens":0,"outputTokens":194,"reasoningOutputTokens":71,"totalTokens":5996,"usageStatus":"reported","cost":{"input":0.001876,"cacheRead":0.0009728,"cacheWrite":0,"output":0.002328,"total":0.0051768},"costBasis":"api-list-price-estimate","pricingSource":"models.dev","pricingStatus":"priced"}}

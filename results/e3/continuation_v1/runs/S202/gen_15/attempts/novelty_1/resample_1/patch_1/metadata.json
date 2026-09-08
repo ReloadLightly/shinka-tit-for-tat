@@ -1,0 +1,15 @@
+{
+  "generation": 15,
+  "novelty_attempt": 1,
+  "resample_attempt": 1,
+  "patch_attempt": 1,
+  "success": true,
+  "num_applied": 1,
+  "patch_name": "forgiving_grim",
+  "patch_description": "Cooperate initially and while the opponent remains cooperative. After a defection, retaliate, but resume cooperation after two consecutive cooperative opponent moves. This retains the strong deterrence of the best prior \u201cgrim\u201d policy while allowing recovery from isolated defections and cooperative opponents that forgive.",
+  "error_msg": null,
+  "timestamp": "2026-09-09T00:11:03.965127",
+  "llm_cost": 0.0109888,
+  "llm_model": "headless/codex@gpt-5.6-terra?effort=low",
+  "headless_prompt_path": "/home/roland/actir/shinka-tit-for-tat/results/e3/continuation_v1/runs/S202/gen_15/attempts/novelty_1/resample_1/patch_1/headless_prompt.md"
+}

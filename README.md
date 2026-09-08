@@ -6,7 +6,7 @@
 
 This project tests operational rediscovery of tit-for-tat (TFT) with LLM-guided program evolution. Starting from unconditional defection, ShinkaEvolve may change a deterministic policy that observes both players' past actions. A fixed evaluator returns average own payoff against a frozen opponent panel. Identification of TFT is a separate post-search analysis and supplies no fitness bonus. The environment, payoff matrix, observations, opponents, stopping rule, and evaluator are outside candidate control.
 
-**Status, 2026-09-08: [E3 paused before model calls](results/e3/E3_REPORT.md).** The continuation search from previously generated grim produced **no new strategies: 0 external invocations, 3 failed local wrapper attempts, 0/3 completed runs**. A commit guard used the isolated mutation directory, and retry controls loaded after Shinka imports. Generation state then disagreed with the zero-reservation ledger, so execution paused under the frozen integrity rule. The defects are repaired and regression-tested; original checkpoints and accounting remain unchanged. No E3 transfer or recognition was run.
+**Status, 2026-09-09: [E3 complete — continuation beyond grim](results/e3/E3_REPORT.md).** All three native searches completed **59 external proposals** after one reconciled local prelaunch failure. They generated **59 policies, 57 valid**, and all retained the exact grim seed: no original-training improvement. All **6,000 fresh-transfer matches** completed; each selected-minus-seed difference was **0** on both panels. Grim scored **2.665880 fresh training / 2.663790 development**, versus TFT's **2.541541 / 2.551387**. This is bounded search stagnation, not proof of grim's global optimality. The original failed boundary evidence and freeze remain unchanged.
 
 **Previous status, 2026-09-08:** [**E2: strategy transfer — full report**](results/e2/E2_REPORT.md) completed all **86,400 fresh matches with zero experimental model calls**. Grim retained its advantage over TFT on both original panels. The selected period detector retained a training advantage but remained worse on development holdout. E2 is separate post-search screening; the preserved [E1](results/e1/E1_REPORT.md) and [E1-R](results/e1_r/E1_R_REPORT.md) comparisons remain incomplete with closed ledgers.
 
@@ -60,8 +60,9 @@ Fitness is **total own payoff / total rounds** across the 30 training matches. A
 | `analyze_archive.py` | Offline report across generated candidate files |
 | `baseline.py` | Hand-written references and exhaustive memory-one comparator |
 | `run_e2.py` / `e2_common.py` / `analyze_e2.py` / `write_e2_report.py` | Separate frozen zero-call transfer evaluation, checkpoints, verified traces and report |
-| `run_e3.py` / `e3_backend.py` / `e3_state.py` | Paused E3 continuation launcher, separate ledger and full-state checkpoints |
-| `prepare_e3.py` / `analyze_e3.py` / `diagnose_e3_prelaunch.py` | E3 protocol freeze, gated transfer evaluator and zero-call launch-failure diagnosis |
+| `run_e3.py` / `e3_backend.py` / `e3_state.py` | Completed E3 launcher, separate opportunity/invocation accounting and full-state checkpoints |
+| `reconcile_e3.py` / `check_e3_boundary.py` | Versioned E3 continuation and native zero-call launch/resume verification |
+| `prepare_e3.py` / `analyze_e3.py` / `audit_e3.py` / `verify_e3.py` | E3 freeze, gated transfer, source/usage audit and read-only scored replay |
 
 The candidate is ordinary runnable Python restricted to one `policy(own_history, opponent_history)` function. The evaluator interprets its syntax: `if/elif/else`, `return`, integer actions, comparisons, Boolean expressions, integer `+`, `-`, `%`, history indexes/slices, `len`, `sum`, `min`, `max`, and `.count`. There are no assignments, loops, imports, file access, functions created by the candidate, or external calls. Histories permit rules based on the whole past; the search is not restricted to memory one. Limits are 16,000 source bytes and 400 syntax-tree nodes. Invalid actions, including Boolean returns, invalidate the candidate and receive score -1.
 
@@ -84,6 +85,16 @@ These are recorded reference measurements, **not evolved discoveries**. Each str
 The exhaustive memory-one comparison places TFT **2nd of 32**, with `00111` first. In this panel, grim earns more against the random opponent while preserving cooperation against cooperative references. A higher-payoff policy need not be TFT. Scores describe these specified encounters, with no uncertainty estimate or claim of universal optimality.
 
 Evidence: [`results/baseline.json`](results/baseline.json), [`results/preflight.json`](results/preflight.json), and [`results/tests.txt`](results/tests.txt). The baseline records source hashes, individual matches, and all 32 comparator scores. These baseline/preflight artifacts made zero model calls; live evolution evidence is reported separately below.
+
+## E3: continuation from generated grim
+
+The [continuation amendment](results/e3/continuation_v1/AMENDMENT.md) consumed S101 opportunity 1 as the original three-attempt local failure, with zero external calls and no policy. It retained the full native database, ancestry, child counts, attempt records, runtime fields and RNGs; next generation remained 2. The new implementation and hashes were remotely verified at `58e9733ff0a177cb48a4c7bdfacc3e11e7ee1713` before any continuation proposal. Remaining model opportunities were unequal: **19 / 20 / 20**, with no replacements or retries.
+
+The 59 generated occurrences contain 20 ASTs (18 valid), including **27 implementations of TFT** and **15 of grim**. Other valid sources use delayed retaliation, forgiveness or round-count triggers. Two tuple-literal sources were rejected without repair. Native sampling made some improvements over weaker parents, but never surpassed the already available grim seed. Training-only selection retained slot 0 in every run before recognition or transfer.
+
+Fresh transfer used the unchanged panels and horizon, training seeds 300001–300100 and development seeds 400001–400100. All three selections were byte-identical to seed/grim, so their measured transfer gains were exactly zero. Grim's fresh advantage over TFT was **+0.124339 training / +0.112403 development**; the [report](results/e3/E3_REPORT.md) includes opponent-specific results and scored traces. No fresh-transfer result is claimed for an unselected variant. E3 does not complete the interrupted independent-generation comparison or establish worldwide novelty.
+
+All 59 model turns completed in fresh restricted sessions with no native tool use. Usage was **384,378 tokens** (cached input and reasoning are subsets); recorded cumulative search runtime was **1,601.378 seconds**, including the original S101 segment. No transient recovery was needed. The full **75-test** suite, native local failure/resume checks, six retrieval refusals, both preflights, all 6,000 match-record checks and six exact trace replays passed. Read-only replay: `.venv/bin/python verify_e3.py`. [Exact commands](results/e3/continuation_v1/COMMANDS.md); [every original generated source](results/e3/continuation_v1/PROPOSALS.md); [closed ledger](results/e3/continuation_v1/ledger.json).
 
 ## E2: transfer of fixed generated strategies
 
@@ -178,4 +189,4 @@ The pilot passed 26 tests; E1 passed 36; E1-R's pre-call and final suites pass 5
 
 ## Next bounded milestone
 
-Propose a separate **zero-call, 960-match, 10-minute** robustness study of the two focal policies, TFT and E1 A101 slot 9. Against the six training opponents on 20 new seeds, compare ordinary play with one forced opponent-action error at round 10, only if the independent horizon reaches it. Measure payoff loss and recovery of cooperation; no evolution or reselection. Grim's permanent retaliation and the two-opening-cooperation variant's suspicious-TFT recovery motivate the question. **Not executed.** The earlier [E1-R transport diagnostic proposal](results/e1_r/FOLLOWUP.md) is preserved historically and was not executed or authorized by E2.
+Propose a separate **zero-call, 960-match, 10-minute** robustness study of the exact grim seed and E3 S101/5, whose one-defection forgiveness branch loses only 0.001833 on original training. On six training opponents × 20 new seeds, compare ordinary play with one forced opponent-action flip at round 10 when the independent horizon reaches it. Measure payoff change and recovery of mutual cooperation, without evolution or reselection. **Not executed.** [Bounded proposal](results/e3/continuation_v1/FOLLOWUP.md). Earlier E2 and transport follow-up proposals remain historical and unexecuted.

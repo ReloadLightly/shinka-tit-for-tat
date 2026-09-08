@@ -1,0 +1,17 @@
+<NAME>
+grim_trigger
+</NAME>
+
+<DESCRIPTION>
+Cooperate until the opponent has ever defected, then defect permanently. This matches the best reported prior result (2.66), improving on the current last-action response (2.54).
+</DESCRIPTION>
+
+<CODE>
+```python
+# EVOLVE-BLOCK-START
+def policy(own_history, opponent_history):
+    return 0 if len(opponent_history) == 0 or opponent_history.count(1) == 0 else 1
+# EVOLVE-BLOCK-END
+``` 
+</CODE>
+{"usage":{"agent":"codex","provider":"openai","model":"gpt-5.6-terra","inputTokens":929,"cacheReadTokens":4864,"cacheWriteTokens":0,"outputTokens":1012,"reasoningOutputTokens":891,"totalTokens":6805,"usageStatus":"reported","cost":{"input":0.001858,"cacheRead":0.0009728,"cacheWrite":0,"output":0.012144,"total":0.0149748},"costBasis":"api-list-price-estimate","pricingSource":"models.dev","pricingStatus":"priced"}}

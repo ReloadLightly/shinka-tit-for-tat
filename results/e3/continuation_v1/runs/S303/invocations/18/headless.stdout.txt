@@ -1,0 +1,16 @@
+<NAME>
+win_stay_shift
+</NAME>
+
+<DESCRIPTION>
+Uses a win-stay, lose-shift strategy: repeat the previous action after a successful payoff, and switch after a poor outcome. It cooperates initially, sustains mutual cooperation, exploits persistent cooperation when possible, and avoids permanent retaliation cycles.
+</DESCRIPTION>
+
+<CODE>
+```python
+# EVOLVE-BLOCK-START
+def policy(own_history, opponent_history):
+    return 0 if len(own_history) == 0 else (own_history[-1] if own_history[-1] == opponent_history[-1] else (1 - own_history[-1]))
+# EVOLVE-BLOCK-END
+```
+{"usage":{"agent":"codex","provider":"openai","model":"gpt-5.6-terra","inputTokens":930,"cacheReadTokens":4864,"cacheWriteTokens":0,"outputTokens":660,"reasoningOutputTokens":516,"totalTokens":6454,"usageStatus":"reported","cost":{"input":0.00186,"cacheRead":0.0009728,"cacheWrite":0,"output":0.00792,"total":0.0107528},"costBasis":"api-list-price-estimate","pricingSource":"models.dev","pricingStatus":"priced"}}

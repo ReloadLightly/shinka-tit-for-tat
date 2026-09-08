@@ -1,0 +1,9 @@
+{
+  "credential_pattern_matches": [],
+  "files_scanned_including_databases": 1923,
+  "surviving_workers": [],
+  "original_preserved_hashes_verified": true,
+  "broken_report_links": [],
+  "native_context_review": "59 fresh sessions match recorded prompts and verified restricted base/permissions; no native tool calls",
+  "raw_console_whitespace": "Preserved exactly; code/document whitespace checks exclude raw logs."
+}

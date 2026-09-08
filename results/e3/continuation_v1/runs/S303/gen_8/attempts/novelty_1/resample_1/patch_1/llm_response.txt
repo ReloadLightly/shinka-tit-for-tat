@@ -1,0 +1,14 @@
+<NAME>
+grim_trigger
+</NAME>
+<DESCRIPTION>
+Cooperate until the opponent has ever defected, then defect permanently. This matches the best reported prior result (2.66), improving on the current last-action response (2.54).
+</DESCRIPTION>
+<CODE>
+```python
+# EVOLVE-BLOCK-START
+def policy(own_history, opponent_history):
+    return 0 if len(opponent_history) == 0 or opponent_history.count(1) == 0 else 1
+# EVOLVE-BLOCK-END
+``` 
+</CODE>

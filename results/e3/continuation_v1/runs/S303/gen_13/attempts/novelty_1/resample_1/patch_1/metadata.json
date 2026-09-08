@@ -1,0 +1,15 @@
+{
+  "generation": 13,
+  "novelty_attempt": 1,
+  "resample_attempt": 1,
+  "patch_attempt": 1,
+  "success": true,
+  "num_applied": 1,
+  "patch_name": "two_strike_retaliation",
+  "patch_description": "Cooperates initially and after isolated defections, while switching to defection when the opponent defects twice consecutively. This preserves mutual cooperation with cooperative and tit-for-tat-like opponents while still responding firmly to persistent defectors.",
+  "error_msg": null,
+  "timestamp": "2026-09-09T00:19:45.053405",
+  "llm_cost": 0.0106408,
+  "llm_model": "headless/codex@gpt-5.6-terra?effort=low",
+  "headless_prompt_path": "/home/roland/actir/shinka-tit-for-tat/results/e3/continuation_v1/runs/S303/gen_13/attempts/novelty_1/resample_1/patch_1/headless_prompt.md"
+}

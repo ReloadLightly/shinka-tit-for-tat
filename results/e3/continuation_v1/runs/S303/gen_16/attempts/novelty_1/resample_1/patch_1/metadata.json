@@ -1,0 +1,15 @@
+{
+  "generation": 16,
+  "novelty_attempt": 1,
+  "resample_attempt": 1,
+  "patch_attempt": 1,
+  "success": true,
+  "num_applied": 1,
+  "patch_name": "grim_defector_guard",
+  "patch_description": "Cooperate initially and while the opponent has never defected; permanently defect after their first defection. This preserves mutual cooperation against cooperative strategies while preventing repeated exploitation by defectors. It matches the strongest prior observed approach.",
+  "error_msg": null,
+  "timestamp": "2026-09-09T00:20:45.163057",
+  "llm_cost": 0.0105108,
+  "llm_model": "headless/codex@gpt-5.6-terra?effort=low",
+  "headless_prompt_path": "/home/roland/actir/shinka-tit-for-tat/results/e3/continuation_v1/runs/S303/gen_16/attempts/novelty_1/resample_1/patch_1/headless_prompt.md"
+}

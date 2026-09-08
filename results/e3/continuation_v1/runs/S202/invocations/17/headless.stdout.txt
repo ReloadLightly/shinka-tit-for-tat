@@ -1,0 +1,16 @@
+<NAME>
+three_round_forgiveness
+</NAME>
+
+<DESCRIPTION>
+Keeps the successful cooperative opening and immediate defensive response to defection, while restoring cooperation after three consecutive opponent cooperations. This preserves resistance to persistent defectors but improves outcomes against opponents that make isolated defections or return to cooperation.
+</DESCRIPTION>
+
+<CODE>
+```python
+# EVOLVE-BLOCK-START
+def policy(own_history, opponent_history):
+    return 0 if len(opponent_history) == 0 or opponent_history.count(1) == 0 or (len(opponent_history) >= 3 and opponent_history[-1] == 0 and opponent_history[-2] == 0 and opponent_history[-3] == 0) else 1
+# EVOLVE-BLOCK-END
+```
+{"usage":{"agent":"codex","provider":"openai","model":"gpt-5.6-terra","inputTokens":930,"cacheReadTokens":4864,"cacheWriteTokens":0,"outputTokens":1926,"reasoningOutputTokens":1760,"totalTokens":7720,"usageStatus":"reported","cost":{"input":0.00186,"cacheRead":0.0009728,"cacheWrite":0,"output":0.023112,"total":0.0259448},"costBasis":"api-list-price-estimate","pricingSource":"models.dev","pricingStatus":"priced"}}

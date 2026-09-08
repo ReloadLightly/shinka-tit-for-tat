@@ -1,0 +1,16 @@
+<NAME>
+forgiving_wsls
+</NAME>
+
+<DESCRIPTION>
+Uses win-stay/lose-shift to restore cooperation after short conflicts, while switching to persistent defection when the opponent has defected for three consecutive rounds. This retains protection against always-defect opponents while avoiding permanent retaliation after isolated defections.
+</DESCRIPTION>
+
+<CODE>
+```python
+# EVOLVE-BLOCK-START
+def policy(own_history, opponent_history):
+    return 0 if len(opponent_history) == 0 else 1 if len(opponent_history) >= 3 and opponent_history[-3:] == (1, 1, 1) else 0 if own_history[-1] == opponent_history[-1] else 1
+# EVOLVE-BLOCK-END
+```
+{"usage":{"agent":"codex","provider":"openai","model":"gpt-5.6-terra","inputTokens":930,"cacheReadTokens":4864,"cacheWriteTokens":0,"outputTokens":1035,"reasoningOutputTokens":872,"totalTokens":6829,"usageStatus":"reported","cost":{"input":0.00186,"cacheRead":0.0009728,"cacheWrite":0,"output":0.01242,"total":0.0152528},"costBasis":"api-list-price-estimate","pricingSource":"models.dev","pricingStatus":"priced"}}

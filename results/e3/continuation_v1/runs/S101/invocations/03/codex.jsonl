@@ -1,0 +1,5 @@
+{"type":"thread.started","thread_id":"01a08305-b743-77c2-8352-ed091c07df8f"}
+{"type":"item.completed","item":{"id":"item_0","type":"error","message":"Code Mode is unavailable because code-mode host is disabled. Code mode will fail closed; enable `features.code_mode_host` and install `codex-code-mode-host`."}}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_1","type":"agent_message","text":"<NAME>\nforgiving_tft</NAME>\n\n<DESCRIPTION>\nUses tit-for-tat after the opening cooperation. This preserves mutual cooperation with reciprocal opponents while recovering from occasional defections instead of permanently locking into mutual defection.</DESCRIPTION>\n\n<CODE>\n```python\n# EVOLVE-BLOCK-START\ndef policy(own_history, opponent_history):\n    return 0 if len(opponent_history) == 0 else opponent_history[-1]\n# EVOLVE-BLOCK-END\n```"}}
+{"type":"turn.completed","usage":{"input_tokens":5816,"cached_input_tokens":4864,"cache_write_input_tokens":0,"output_tokens":619,"reasoning_output_tokens":516}}

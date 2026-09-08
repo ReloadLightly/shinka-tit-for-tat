@@ -1,0 +1,13 @@
+<NAME>
+forgiving_trigger
+</NAME>
+<DESCRIPTION>
+Cooperate initially and while the opponent cooperates. Retaliate after defection, but restore cooperation once the opponent has shown three consecutive cooperative moves, allowing recovery from isolated defections while retaining protection against persistent defectors.
+</DESCRIPTION>
+<CODE>
+```python
+# EVOLVE-BLOCK-START
+def policy(own_history, opponent_history):
+    return 0 if len(opponent_history) == 0 or opponent_history.count(1) == 0 or (len(opponent_history) >= 3 and opponent_history[-3:] == (0, 0, 0)) else 1
+# EVOLVE-BLOCK-END
+```

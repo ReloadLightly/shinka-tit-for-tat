@@ -1,0 +1,15 @@
+{
+  "generation": 10,
+  "novelty_attempt": 1,
+  "resample_attempt": 1,
+  "patch_attempt": 1,
+  "success": true,
+  "num_applied": 1,
+  "patch_name": "first_defection_grim",
+  "patch_description": "Cooperate while the opponent has always cooperated, then defect permanently after their first defection. This restores the higher-performing prior policy (2.66 versus 2.65), while exploiting unconditional cooperators and avoiding continued cooperation after detected defection.",
+  "error_msg": null,
+  "timestamp": "2026-09-09T00:00:06.653066",
+  "llm_cost": 0.0059128,
+  "llm_model": "headless/codex@gpt-5.6-terra?effort=low",
+  "headless_prompt_path": "/home/roland/actir/shinka-tit-for-tat/results/e3/continuation_v1/runs/S101/gen_10/attempts/novelty_1/resample_1/patch_1/headless_prompt.md"
+}

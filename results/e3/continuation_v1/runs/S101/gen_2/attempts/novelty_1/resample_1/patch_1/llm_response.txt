@@ -1,0 +1,13 @@
+<NAME>
+forgiving_trigger
+</NAME>
+<DESCRIPTION>
+Keeps cooperative play against never-defecting opponents and punishment after defection, while forgiving an apparent two-round retaliation once the opponent resumes cooperation. This can recover mutual cooperation with opponents that briefly defect in response to conflict.
+</DESCRIPTION>
+<CODE>
+```python
+# EVOLVE-BLOCK-START
+def policy(own_history, opponent_history):
+    return 0 if len(opponent_history) == 0 or opponent_history.count(1) == 0 or (opponent_history.count(1) == 2 and opponent_history[-1] == 0) else 1
+# EVOLVE-BLOCK-END
+```

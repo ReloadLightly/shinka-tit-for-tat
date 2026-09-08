@@ -1,0 +1,5 @@
+{"type":"thread.started","thread_id":"01a08318-13cf-7440-9b4c-f24f6d9a89f2"}
+{"type":"item.completed","item":{"id":"item_0","type":"error","message":"Code Mode is unavailable because code-mode host is disabled. Code mode will fail closed; enable `features.code_mode_host` and install `codex-code-mode-host`."}}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_1","type":"agent_message","text":"<NAME>\ngrim_trigger\n</NAME>\n\n<DESCRIPTION>\nCooperate until the opponent has ever defected, then defect permanently. This matches the best reported prior result (2.66), improving on the current last-action response (2.54).\n</DESCRIPTION>\n\n<CODE>\n```python\n# EVOLVE-BLOCK-START\ndef policy(own_history, opponent_history):\n    return 0 if len(opponent_history) == 0 or opponent_history.count(1) == 0 else 1\n# EVOLVE-BLOCK-END\n``` \n</CODE>"}}
+{"type":"turn.completed","usage":{"input_tokens":5793,"cached_input_tokens":4864,"cache_write_input_tokens":0,"output_tokens":1012,"reasoning_output_tokens":891}}

@@ -1,0 +1,16 @@
+<NAME>
+grim_guard
+</NAME>
+
+<DESCRIPTION>
+Cooperate initially and continue cooperating only while the opponent has never defected. This restores the stronger prior behavior (2.66 versus the current 2.65) and prevents repeated exploitation after a detected defection.
+</DESCRIPTION>
+
+<CODE>
+```python
+# EVOLVE-BLOCK-START
+def policy(own_history, opponent_history):
+    return 0 if len(opponent_history) == 0 or opponent_history.count(1) == 0 else 1
+# EVOLVE-BLOCK-END
+```
+{"usage":{"agent":"codex","provider":"openai","model":"gpt-5.6-terra","inputTokens":921,"cacheReadTokens":4864,"cacheWriteTokens":0,"outputTokens":1113,"reasoningOutputTokens":991,"totalTokens":6898,"usageStatus":"reported","cost":{"input":0.001842,"cacheRead":0.0009728,"cacheWrite":0,"output":0.013356,"total":0.0161708},"costBasis":"api-list-price-estimate","pricingSource":"models.dev","pricingStatus":"priced"}}

@@ -1,0 +1,15 @@
+{
+  "generation": 1,
+  "novelty_attempt": 1,
+  "resample_attempt": 1,
+  "patch_attempt": 1,
+  "success": true,
+  "num_applied": 1,
+  "patch_name": "probe_reconcile",
+  "patch_description": "Cooperate initially, then make one probe defection against early cooperation. If the opponent retaliates once and returns to cooperation, reconcile and cooperate; otherwise exploit persistent cooperators or defect against persistent defection.",
+  "error_msg": null,
+  "timestamp": "2026-09-09T00:04:47.731296",
+  "llm_cost": 0.0220948,
+  "llm_model": "headless/codex@gpt-5.6-terra?effort=low",
+  "headless_prompt_path": "/home/roland/actir/shinka-tit-for-tat/results/e3/continuation_v1/runs/S202/gen_1/attempts/novelty_1/resample_1/patch_1/headless_prompt.md"
+}
