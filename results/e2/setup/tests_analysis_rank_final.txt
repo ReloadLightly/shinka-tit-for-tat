@@ -1,0 +1,7 @@
+test_competition_ranks_keep_missing_and_ties (test_e2_analysis.E2AnalysisChecks) ... ok
+test_partial_coverage_and_duplicate_rejection (test_e2_analysis.E2AnalysisChecks) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.095s
+
+OK

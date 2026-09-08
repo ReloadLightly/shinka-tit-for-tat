@@ -1,0 +1,8 @@
+{
+  "allowance_seconds": 2700,
+  "boot_id": "63a22045-f6ab-4292-a95b-2da600c81b12",
+  "boot_seconds": 296864.345535784,
+  "deadline_rule": "CLOCK_BOOTTIME, cumulative including downtime, same boot required",
+  "freeze_commit": "6adb42eb2e924a8b54c843d89cdcd28cb2412100",
+  "unix_seconds": 1788891834.4588559
+}

@@ -1,0 +1,6 @@
+test_nested_child_dies_when_guard_dies (test_e1r.ProcessTests.test_nested_child_dies_when_guard_dies) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.101s
+
+OK

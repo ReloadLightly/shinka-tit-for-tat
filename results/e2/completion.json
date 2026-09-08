@@ -1,0 +1,10 @@
+{
+  "budget_exhausted": false,
+  "clock": {
+    "boot_id": "63a22045-f6ab-4292-a95b-2da600c81b12",
+    "boot_seconds": 299362.164556202,
+    "unix_seconds": 1788894479.213527
+  },
+  "elapsed_seconds": 2497.819052066945,
+  "experimental_model_calls": 0
+}

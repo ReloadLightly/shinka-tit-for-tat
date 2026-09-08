@@ -1,0 +1,16 @@
+test_adapter_identical_historical_encounters (test_e2.E2Checks) ... ok
+test_counterexample_and_infrastructure (test_e2.E2Checks) ... ok
+test_cumulative_runtime_not_reset (test_e2.E2Checks) ... ok
+test_existing_frozen_source_integrity (test_e2.E2Checks) ... ok
+test_inventory_provenance_live_validity (test_e2.E2Checks) ... ok
+test_manifest_and_seed_separation (test_e2.E2Checks) ... ok
+test_source_integrity (test_e2.E2Checks) ... ok
+test_weighted_scoring_and_failure_not_omitted (test_e2.E2Checks) ... ok
+test_competition_ranks_keep_missing_and_ties (test_e2_analysis.E2AnalysisChecks) ... ok
+test_partial_coverage_and_duplicate_rejection (test_e2_analysis.E2AnalysisChecks) ... ok
+test_unstarted_panel_does_not_acquire_fresh_rank (test_e2_analysis.E2AnalysisChecks) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.499s
+
+OK

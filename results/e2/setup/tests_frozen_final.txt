@@ -1,0 +1,13 @@
+test_adapter_identical_historical_encounters (test_e2.E2Checks) ... ok
+test_counterexample_and_infrastructure (test_e2.E2Checks) ... ok
+test_cumulative_runtime_not_reset (test_e2.E2Checks) ... ok
+test_existing_frozen_source_integrity (test_e2.E2Checks) ... ok
+test_inventory_provenance_live_validity (test_e2.E2Checks) ... ok
+test_manifest_and_seed_separation (test_e2.E2Checks) ... ok
+test_source_integrity (test_e2.E2Checks) ... ok
+test_weighted_scoring_and_failure_not_omitted (test_e2.E2Checks) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.386s
+
+OK

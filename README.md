@@ -6,7 +6,7 @@
 
 This project tests operational rediscovery of tit-for-tat (TFT) with LLM-guided program evolution. Starting from unconditional defection, ShinkaEvolve may change a deterministic policy that observes both players' past actions. A fixed evaluator returns average own payoff against a frozen opponent panel. Identification of TFT is a separate post-search analysis and supplies no fitness bonus. The environment, payoff matrix, observations, opponents, stopping rule, and evaluator are outside candidate control.
 
-**Status, 2026-09-08:** [**E1-R: repaired comparison — full report**](results/e1_r/E1_R_REPORT.md). E1-R stopped automatically at **20/60 external invocations** after a Codex connection failure. A101 completed; B101 is incomplete; four runs never started. **No completed pair is available**, so the comparative effect remains unanswered. Seven admissible programs implement exact TFT; the completed run selected grim trigger. The earlier [E1 partial result](results/e1/E1_REPORT.md) and [unblinded pilot](results/PILOT_001.md) remain preserved with closed ledgers.
+**Status, 2026-09-08:** [**E2: strategy transfer — full report**](results/e2/E2_REPORT.md) completed all **86,400 fresh matches with zero experimental model calls**. Grim retained its advantage over TFT on both original panels. The selected period detector retained a training advantage but remained worse on development holdout. E2 is separate post-search screening; the preserved [E1](results/e1/E1_REPORT.md) and [E1-R](results/e1_r/E1_R_REPORT.md) comparisons remain incomplete with closed ledgers.
 
 ## Research question and predictions
 
@@ -57,6 +57,7 @@ Fitness is **total own payoff / total rounds** across the 30 training matches. A
 | `recognize.py` | Offline behavioral probes and holdout evaluation for one candidate |
 | `analyze_archive.py` | Offline report across generated candidate files |
 | `baseline.py` | Hand-written references and exhaustive memory-one comparator |
+| `run_e2.py` / `e2_common.py` / `analyze_e2.py` / `write_e2_report.py` | Separate frozen zero-call transfer evaluation, checkpoints, verified traces and report |
 
 The candidate is ordinary runnable Python restricted to one `policy(own_history, opponent_history)` function. The evaluator interprets its syntax: `if/elif/else`, `return`, integer actions, comparisons, Boolean expressions, integer `+`, `-`, `%`, history indexes/slices, `len`, `sum`, `min`, `max`, and `.count`. There are no assignments, loops, imports, file access, functions created by the candidate, or external calls. Histories permit rules based on the whole past; the search is not restricted to memory one. Limits are 16,000 source bytes and 400 syntax-tree nodes. Invalid actions, including Boolean returns, invalidate the candidate and receive score -1.
 
@@ -79,6 +80,23 @@ These are recorded reference measurements, **not evolved discoveries**. Each str
 The exhaustive memory-one comparison places TFT **2nd of 32**, with `00111` first. In this panel, grim earns more against the random opponent while preserving cooperation against cooperative references. A higher-payoff policy need not be TFT. Scores describe these specified encounters, with no uncertainty estimate or claim of universal optimality.
 
 Evidence: [`results/baseline.json`](results/baseline.json), [`results/preflight.json`](results/preflight.json), and [`results/tests.txt`](results/tests.txt). The baseline records source hashes, individual matches, and all 32 comparator scores. These baseline/preflight artifacts made zero model calls; live evolution evidence is reported separately below.
+
+## E2: transfer of fixed generated strategies
+
+E2 froze its protocol, implementation, source inventory and encounters at `6adb42eb2e924a8b54c843d89cdcd28cb2412100` before evaluation. All **40 E1 + 18 E1-R live-valid occurrences** map to 35 parsed ASTs, retaining every origin, including incomplete runs. Five named references (including the seed) and all 32 memory-one policies bring the total to 72 entries. Rejected, missing and originally unevaluated sources remain excluded without repair.
+
+Every entry played 600 matches on each unchanged panel: training seeds 100001–100100 and development seeds 200001–200100. The original horizon/RNG derivation and interpreter were unchanged. All 86,400 matches succeeded without model calls or retries. Frozen CLOCK_BOOTTIME accounting is **41.63 minutes**; recorded UTC timestamps span **44.08 minutes**. Their 146.936-second discrepancy has an unestablished host-clock cause; both recorded spans are below the 45-minute limit. [Clock audit](results/e2/runtime_clock_audit.json).
+
+| Fixed policy | Fresh training | Δ TFT | Fresh development | Δ TFT |
+|---|---:|---:|---:|---:|
+| TFT reference | 2.538957 | 0 | 2.549153 | 0 |
+| E1-R A101 selected grim | 2.660859 | +0.121902 | 2.655990 | +0.106837 |
+| E1 A202 selected period detector | 2.575313 | +0.036356 | 2.440402 | −0.108751 |
+| E1 A101 slot 9: two initial cooperations, then TFT | 2.538001 | −0.000957 | 2.630670 | +0.081517 |
+
+Six generated ASTs exceed TFT on fresh training and three on development; none exceeds grim. Training gains for grim and the four period-detector variants persist. The focal detector's development loss is concentrated against suspicious TFT: extra defection ends in mutual defection. Two initial cooperations instead restore cooperation against that opponent; this newly measured development result is exploratory, not a historical selection. Only four ASTs have archived development scores; missing historical outcomes stay unavailable. Equal scores or finite probes are not universal equivalence proofs.
+
+The [self-contained report](results/e2/E2_REPORT.md) includes original focal sources, branches and six scored traces with exact reproduction commands. The [catalogue](results/e2/CATALOGUE.md), [per-match records](results/e2/per_match.jsonl), [summary](results/e2/summary.json) and [commands](results/e2/COMMANDS.md) retain provenance, panel-specific ranks, cooperation, opponent breakdowns and failures. E2 does not complete either historical A/B comparison or establish transfer beyond these panels.
 
 ## E1-R: repaired comparison, stopped at 20/60
 
@@ -119,6 +137,7 @@ The reference experiment and tests require only Python 3.10 or later:
 
 ```bash
 python3 -m unittest discover -s tests -v
+python3 analyze_e2.py --verify  # Read-only E2 verification, including six scored trace replays
 python3 baseline.py --output results/baseline_local.json
 python3 run_evo.py --preflight
 # E1 preflight needs the pinned optional dependency; it makes no proposal calls.
@@ -155,4 +174,4 @@ The pilot passed 26 tests; E1 passed 36; E1-R's pre-call and final suites pass 5
 
 ## Next bounded milestone
 
-Propose one **transport-reliability diagnostic with at most three newly authorized subscription invocations**, using a fixed non-game prompt and the same model, restrictions, serial limits and no retries. First exercise the failure path locally; then record sanitized transport timing and error identifiers, stopping on the first failure. This addresses the new connection error, not the scientific comparison. Three successes would be an integration check, not reliability proof. Do not reopen any ledger. [Bounded follow-up](results/e1_r/FOLLOWUP.md); **not executed**.
+Propose a separate **zero-call, 960-match, 10-minute** robustness study of the two focal policies, TFT and E1 A101 slot 9. Against the six training opponents on 20 new seeds, compare ordinary play with one forced opponent-action error at round 10, only if the independent horizon reaches it. Measure payoff loss and recovery of cooperation; no evolution or reselection. Grim's permanent retaliation and the two-opening-cooperation variant's suspicious-TFT recovery motivate the question. **Not executed.** The earlier [E1-R transport diagnostic proposal](results/e1_r/FOLLOWUP.md) is preserved historically and was not executed or authorized by E2.

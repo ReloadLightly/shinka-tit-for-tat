@@ -1,0 +1,17 @@
+test_competition_ranks_keep_missing_and_ties (test_e2_analysis.E2AnalysisChecks) ... ok
+test_partial_coverage_and_duplicate_rejection (test_e2_analysis.E2AnalysisChecks) ... ERROR
+
+======================================================================
+ERROR: test_partial_coverage_and_duplicate_rejection (test_e2_analysis.E2AnalysisChecks)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/roland/actir/shinka-tit-for-tat/tests/test_e2_analysis.py", line 26, in test_partial_coverage_and_duplicate_rejection
+    _, rows = analyze_e2.collect()
+  File "/home/roland/actir/shinka-tit-for-tat/analyze_e2.py", line 41, in collect
+    rows.append(dict(policy_id=spec['id'], **enc, **result))
+TypeError: dict() got multiple values for keyword argument 'turns'
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.166s
+
+FAILED (errors=1)

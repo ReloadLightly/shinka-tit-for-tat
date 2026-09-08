@@ -1,0 +1,144 @@
+Starting ast_88f3a4f11dba1800; cumulative remaining 2700.0s
+Finished ast_88f3a4f11dba1800: exited, code=0
+Starting ast_57dad27c89beb4e1; cumulative remaining 2650.4s
+Finished ast_57dad27c89beb4e1: exited, code=0
+Starting initial; cumulative remaining 2568.5s
+Finished initial: exited, code=0
+Starting always_cooperate; cumulative remaining 2538.3s
+Finished always_cooperate: exited, code=0
+Starting tit_for_tat; cumulative remaining 2513.6s
+Finished tit_for_tat: exited, code=0
+Starting grim; cumulative remaining 2484.4s
+Finished grim: exited, code=0
+Starting win_stay_lose_shift; cumulative remaining 2451.0s
+Finished win_stay_lose_shift: exited, code=0
+Starting ast_053d3bbc46b14968; cumulative remaining 2410.7s
+Finished ast_053d3bbc46b14968: exited, code=0
+Starting ast_07280d92788db5e6; cumulative remaining 2365.4s
+Finished ast_07280d92788db5e6: exited, code=0
+Starting ast_0765ea6f48c18c31; cumulative remaining 2340.4s
+Finished ast_0765ea6f48c18c31: exited, code=0
+Starting ast_0a7f73300deed75b; cumulative remaining 2311.5s
+Finished ast_0a7f73300deed75b: exited, code=0
+Starting ast_1084a9332d633ead; cumulative remaining 2263.5s
+Finished ast_1084a9332d633ead: exited, code=0
+Starting ast_2d4e5ed443078dbe; cumulative remaining 2217.5s
+Finished ast_2d4e5ed443078dbe: exited, code=0
+Starting ast_5efdd46e882bdb10; cumulative remaining 2165.3s
+Finished ast_5efdd46e882bdb10: exited, code=0
+Starting ast_6562e0078b280c05; cumulative remaining 2085.3s
+Finished ast_6562e0078b280c05: exited, code=0
+Starting ast_6a4a2832f0b753dc; cumulative remaining 2051.1s
+Finished ast_6a4a2832f0b753dc: exited, code=0
+Starting ast_7aba26aa67ac88b3; cumulative remaining 2011.4s
+Finished ast_7aba26aa67ac88b3: exited, code=0
+Starting ast_7afd88a49045d0d8; cumulative remaining 1973.6s
+Finished ast_7afd88a49045d0d8: exited, code=0
+Starting ast_7b58a9469ec7d592; cumulative remaining 1925.1s
+Finished ast_7b58a9469ec7d592: exited, code=0
+Starting ast_7cfa13bdccd52114; cumulative remaining 1879.0s
+Finished ast_7cfa13bdccd52114: exited, code=0
+Starting ast_7dfee0bcfa0571ff; cumulative remaining 1836.7s
+Finished ast_7dfee0bcfa0571ff: exited, code=0
+Starting ast_837229573ef617bf; cumulative remaining 1807.0s
+Finished ast_837229573ef617bf: exited, code=0
+Starting ast_8f214c2a88e18a3c; cumulative remaining 1776.7s
+Finished ast_8f214c2a88e18a3c: exited, code=0
+Starting ast_90ec9948836e016f; cumulative remaining 1741.1s
+Finished ast_90ec9948836e016f: exited, code=0
+Starting ast_93a72c9ef739791e; cumulative remaining 1653.4s
+Finished ast_93a72c9ef739791e: exited, code=0
+Starting ast_9c7ff2ed2e0a47b5; cumulative remaining 1536.3s
+Finished ast_9c7ff2ed2e0a47b5: exited, code=0
+Starting ast_a331c41451206436; cumulative remaining 1494.5s
+Finished ast_a331c41451206436: exited, code=0
+Starting ast_a5b32ccfdadbc4f6; cumulative remaining 1441.2s
+Finished ast_a5b32ccfdadbc4f6: exited, code=0
+Starting ast_aaaccc2bd7f8cca7; cumulative remaining 1403.2s
+Finished ast_aaaccc2bd7f8cca7: exited, code=0
+Starting ast_ab54ac8d86e7e3d8; cumulative remaining 1367.9s
+Finished ast_ab54ac8d86e7e3d8: exited, code=0
+Starting ast_abc69c4d9e2976b9; cumulative remaining 1319.3s
+Finished ast_abc69c4d9e2976b9: exited, code=0
+Starting ast_b643451f8c11268c; cumulative remaining 1286.2s
+Finished ast_b643451f8c11268c: exited, code=0
+Starting ast_ba64cb62505ae224; cumulative remaining 1248.4s
+Finished ast_ba64cb62505ae224: exited, code=0
+Starting ast_bfd1a72679137130; cumulative remaining 1215.3s
+Finished ast_bfd1a72679137130: exited, code=0
+Starting ast_c578287b060e5eb9; cumulative remaining 1189.2s
+Finished ast_c578287b060e5eb9: exited, code=0
+Starting ast_c709262ff1881ec8; cumulative remaining 1156.5s
+Finished ast_c709262ff1881ec8: exited, code=0
+Starting ast_d8035a7cf72f69d1; cumulative remaining 1125.2s
+Finished ast_d8035a7cf72f69d1: exited, code=0
+Starting ast_de865566907143d2; cumulative remaining 1099.2s
+Finished ast_de865566907143d2: exited, code=0
+Starting ast_f6ea12a578219732; cumulative remaining 1072.2s
+Finished ast_f6ea12a578219732: exited, code=0
+Starting ast_f7402192010083a7; cumulative remaining 1048.9s
+Finished ast_f7402192010083a7: exited, code=0
+Starting m1_00000; cumulative remaining 1023.2s
+Finished m1_00000: exited, code=0
+Starting m1_00001; cumulative remaining 1002.3s
+Finished m1_00001: exited, code=0
+Starting m1_00010; cumulative remaining 975.6s
+Finished m1_00010: exited, code=0
+Starting m1_00011; cumulative remaining 952.2s
+Finished m1_00011: exited, code=0
+Starting m1_00100; cumulative remaining 929.7s
+Finished m1_00100: exited, code=0
+Starting m1_00101; cumulative remaining 904.5s
+Finished m1_00101: exited, code=0
+Starting m1_00110; cumulative remaining 875.6s
+Finished m1_00110: exited, code=0
+Starting m1_00111; cumulative remaining 848.7s
+Finished m1_00111: exited, code=0
+Starting m1_01000; cumulative remaining 821.5s
+Finished m1_01000: exited, code=0
+Starting m1_01001; cumulative remaining 795.5s
+Finished m1_01001: exited, code=0
+Starting m1_01010; cumulative remaining 766.7s
+Finished m1_01010: exited, code=0
+Starting m1_01011; cumulative remaining 741.3s
+Finished m1_01011: exited, code=0
+Starting m1_01100; cumulative remaining 715.8s
+Finished m1_01100: exited, code=0
+Starting m1_01101; cumulative remaining 690.9s
+Finished m1_01101: exited, code=0
+Starting m1_01110; cumulative remaining 668.2s
+Finished m1_01110: exited, code=0
+Starting m1_01111; cumulative remaining 642.8s
+Finished m1_01111: exited, code=0
+Starting m1_10000; cumulative remaining 618.9s
+Finished m1_10000: exited, code=0
+Starting m1_10001; cumulative remaining 590.3s
+Finished m1_10001: exited, code=0
+Starting m1_10010; cumulative remaining 565.2s
+Finished m1_10010: exited, code=0
+Starting m1_10011; cumulative remaining 538.6s
+Finished m1_10011: exited, code=0
+Starting m1_10100; cumulative remaining 514.1s
+Finished m1_10100: exited, code=0
+Starting m1_10101; cumulative remaining 490.7s
+Finished m1_10101: exited, code=0
+Starting m1_10110; cumulative remaining 467.4s
+Finished m1_10110: exited, code=0
+Starting m1_10111; cumulative remaining 438.5s
+Finished m1_10111: exited, code=0
+Starting m1_11000; cumulative remaining 414.2s
+Finished m1_11000: exited, code=0
+Starting m1_11001; cumulative remaining 389.0s
+Finished m1_11001: exited, code=0
+Starting m1_11010; cumulative remaining 361.4s
+Finished m1_11010: exited, code=0
+Starting m1_11011; cumulative remaining 334.8s
+Finished m1_11011: exited, code=0
+Starting m1_11100; cumulative remaining 310.7s
+Finished m1_11100: exited, code=0
+Starting m1_11101; cumulative remaining 283.6s
+Finished m1_11101: exited, code=0
+Starting m1_11110; cumulative remaining 251.3s
+Finished m1_11110: exited, code=0
+Starting m1_11111; cumulative remaining 224.5s
+Finished m1_11111: exited, code=0

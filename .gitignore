@@ -15,3 +15,4 @@ results/e1_r/execution.lock
 results/e1_r/setup/rehearsal*/**/bin/
 results/e1_r/setup/rehearsal*/**/execution.lock
 results/e1_r/setup/legacy_stop/bin/
+results/e2/execution.lock

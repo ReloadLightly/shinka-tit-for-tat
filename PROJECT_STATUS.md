@@ -1,8 +1,28 @@
 # Project status — 2026-09-08
 
+## Current milestone: E2 strategy transfer complete
+
+[E2_REPORT.md](results/e2/E2_REPORT.md) is the current principal deliverable. It contains the setup, original focal sources, branch explanations, six scored traces and exact reproduction commands. [CATALOGUE.md](results/e2/CATALOGUE.md) covers every source/origin, exclusion and per-opponent result; [summary.json](results/e2/summary.json) and [per_match.jsonl](results/e2/per_match.jsonl) provide machine-readable evidence.
+
+Recovery found a clean tree and GitHub at `fd19af5dd0f168f14b82dd5e2f5b1e68b210fe33`, no E2 files/runtime/checkpoints and no host-visible E2 process. The implementation, protocol, all source hashes and encounter manifest were frozen and remotely verified at `6adb42eb2e924a8b54c843d89cdcd28cb2412100` before fresh evaluation.
+
+The inventory verifies 40 E1 and 18 E1-R live-valid occurrences, deduplicated into 35 ASTs while retaining all provenance and original incomplete-run statuses. It excludes three rejected sources, two originally unevaluated generated sources and all absent slots. Adding the original always-defect seed, four other named references and 32 memory-one policies gives 72 entries. No generated source was repaired or executed outside policy.py.
+
+All **86,400/86,400 matches succeeded**, with no policy or infrastructure failures in main evaluation, no retries and **zero experimental model calls**. Each entry faced all six opponents × 100 seeds per panel: training 100001–100100 and development 200001–200100. Frozen CLOCK_BOOTTIME accounting is **2497.819 seconds (41.63 minutes)**; UTC timestamps span **2644.755 seconds (44.08 minutes)**. Their 146.936-second discrepancy has an unestablished host-clock cause; both recorded spans are below 45 minutes. [Clock audit](results/e2/runtime_clock_audit.json) retains all 76 detected discontinuities without altering the original runtime. Serial 300-second worker bounds were retained. The single runtime ledger and append-only match starts/results are preserved; execution is closed.
+
+Grim scored **2.660859 training / 2.655990 development**, beating TFT by **+0.121902 / +0.106837**. The period detector scored **2.575313 / 2.440402**, **+0.036356 / −0.108751** vs TFT and below grim on both. Six generated ASTs beat TFT on training; three on development; none exceeds grim. Grim's training gain is entirely against fair random. The detector's development loss is concentrated against suspicious TFT. E1 A101 slot 9's two initial cooperations yield a new exploratory development score of **2.630670**, rank 3 of 35; it was not the historical winner. Original development scores exist for only four ASTs and are not backfilled for other sources.
+
+Verification: eight focused frozen checks and 14 exact historical panel replays passed before fresh evaluation; zero-call preflight validated the seed. The dependency-enabled full suite passed 60 tests, and three subsequent analysis checks passed. A sandbox mock-harness stall, one non-reproducing host child-death test failure and a caught/fixed report-merge bug are preserved separately from scientific results. Final export/trace/source checks are recorded in [VERIFICATION.md](results/e2/setup/VERIFICATION.md), with exact commands in [COMMANDS.md](results/e2/COMMANDS.md).
+
+E2 is post-search descriptive screening on the same public panels. Historical winners, original scientific implementations, pilot/E1/E1-R evidence and closed ledgers remain intact. E2 does not complete missing A/B outcomes, establish universal policy equivalence from probes, or demonstrate knowledge-free invention or transfer beyond the panels.
+
+One proposed follow-up, **not executed**: a separate zero-call robustness protocol with the two focal sources, TFT and E1 A101 slot 9; six training opponents × 20 new seeds × ordinary/one-error conditions = 960 matches, a 10-minute cap, no evolution or reselection. Test whether cooperation recovers after one opponent-action error at round 10 when the independent horizon reaches it. This is motivated by the observed retaliation/recovery contrast. The prior E1-R transport proposal remains historical and unexecuted.
+
+## Preserved E1-R status
+
 ## E1-R stopped automatically; comparative outcome remains unanswered
 
-The principal deliverable is [E1_R_REPORT.md](results/e1_r/E1_R_REPORT.md), a
+The E1-R principal deliverable is [E1_R_REPORT.md](results/e1_r/E1_R_REPORT.md), a
 self-contained report of the design, every run, all paired outcomes, original
 selected sources, branches, scored traces, opponent breakdowns, actual parent/
 inspiration context, failures, usage, commands and next bounded step.
@@ -122,7 +142,7 @@ with four complete runs and two available paired differences, 0 and −0.110196.
 Its mean −0.055098 showed no observed advantage in that partial readout. The
 original code, failures and unused 16 slots are preserved; E1-R did not reuse them.
 
-Next propose one transport-reliability diagnostic with **at most three newly
+At E1-R closure, the proposed next step was one transport-reliability diagnostic with **at most three newly
 authorized subscription invocations**, a fixed non-game prompt, the same model,
 restrictions, serial bounds and no retries. Record sanitized transport timing
 and error identifiers; stop on the first failure. First exercise the failure

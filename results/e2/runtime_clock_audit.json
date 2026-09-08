@@ -1,0 +1,544 @@
+{
+  "boot_elapsed_seconds": 2497.8190204179846,
+  "cause": "UTC/boottime divergence observed; host clock adjustment cause unestablished; original accounting untouched",
+  "clock_observations": 86402,
+  "detected_discontinuities": [
+    {
+      "boot_elapsed": 0.07716961903497577,
+      "discrepancy_seconds": 1.9538789172656834,
+      "from_label": "ast_88f3a4f11dba1800/train/win_stay_lose_shift/100052",
+      "to_label": "ast_88f3a4f11dba1800/train/win_stay_lose_shift/100053",
+      "unix_elapsed": 2.031048536300659
+    },
+    {
+      "boot_elapsed": 0.1616750360117294,
+      "discrepancy_seconds": 1.8083485960378312,
+      "from_label": "ast_57dad27c89beb4e1/train/always_cooperate/100005",
+      "to_label": "ast_57dad27c89beb4e1/train/always_cooperate/100006",
+      "unix_elapsed": 1.9700236320495605
+    },
+    {
+      "boot_elapsed": 0.06770162301836535,
+      "discrepancy_seconds": 2.041674092237372,
+      "from_label": "ast_57dad27c89beb4e1/train/tit_for_tat/100079",
+      "to_label": "ast_57dad27c89beb4e1/train/tit_for_tat/100080",
+      "unix_elapsed": 2.1093757152557373
+    },
+    {
+      "boot_elapsed": 0.03302429098403081,
+      "discrepancy_seconds": 1.981149455124978,
+      "from_label": "ast_57dad27c89beb4e1/holdout/hard_tit_for_tat/200030",
+      "to_label": "ast_57dad27c89beb4e1/holdout/hard_tit_for_tat/200031",
+      "unix_elapsed": 2.014173746109009
+    },
+    {
+      "boot_elapsed": 0.031630502024199814,
+      "discrepancy_seconds": 1.8964853427023627,
+      "from_label": "initial/holdout/alternator/200049",
+      "to_label": "initial/holdout/alternator/200050",
+      "unix_elapsed": 1.9281158447265625
+    },
+    {
+      "boot_elapsed": 0.01635036600055173,
+      "discrepancy_seconds": 1.6804470049100928,
+      "from_label": "always_cooperate/holdout/hard_tit_for_tat/200041",
+      "to_label": "always_cooperate/holdout/hard_tit_for_tat/200042",
+      "unix_elapsed": 1.6967973709106445
+    },
+    {
+      "boot_elapsed": 0.02701019000960514,
+      "discrepancy_seconds": 1.753552210808266,
+      "from_label": "tit_for_tat/holdout/random_80/200030",
+      "to_label": "tit_for_tat/holdout/random_80/200031",
+      "unix_elapsed": 1.780562400817871
+    },
+    {
+      "boot_elapsed": 0.029083459987305105,
+      "discrepancy_seconds": 1.6386924093822017,
+      "from_label": "grim/holdout/random_20/200100",
+      "to_label": "grim/holdout/random_80/200001",
+      "unix_elapsed": 1.6677758693695068
+    },
+    {
+      "boot_elapsed": 0.02373157802503556,
+      "discrepancy_seconds": 1.8931275719078258,
+      "from_label": "win_stay_lose_shift/holdout/tit_for_two_tats/200029",
+      "to_label": "win_stay_lose_shift/holdout/tit_for_two_tats/200030",
+      "unix_elapsed": 1.9168591499328613
+    },
+    {
+      "boot_elapsed": 0.07052676199236885,
+      "discrepancy_seconds": 1.7886989879771136,
+      "from_label": "ast_053d3bbc46b14968/train/win_stay_lose_shift/100022",
+      "to_label": "ast_053d3bbc46b14968/train/win_stay_lose_shift/100023",
+      "unix_elapsed": 1.8592257499694824
+    },
+    {
+      "boot_elapsed": 0.02628064400050789,
+      "discrepancy_seconds": 1.794135091244243,
+      "from_label": "ast_07280d92788db5e6/train/tit_for_tat/100080",
+      "to_label": "ast_07280d92788db5e6/train/tit_for_tat/100081",
+      "unix_elapsed": 1.820415735244751
+    },
+    {
+      "boot_elapsed": 0.024231843999587,
+      "discrepancy_seconds": 1.7934511374915019,
+      "from_label": "ast_0765ea6f48c18c31/holdout/alternator/200054",
+      "to_label": "ast_0765ea6f48c18c31/holdout/alternator/200055",
+      "unix_elapsed": 1.8176829814910889
+    },
+    {
+      "boot_elapsed": 0.02903924195561558,
+      "discrepancy_seconds": 1.826008222415112,
+      "from_label": "ast_0a7f73300deed75b/train/win_stay_lose_shift/100055",
+      "to_label": "ast_0a7f73300deed75b/train/win_stay_lose_shift/100056",
+      "unix_elapsed": 1.8550474643707275
+    },
+    {
+      "boot_elapsed": 0.030515081016346812,
+      "discrepancy_seconds": 1.8009012874681503,
+      "from_label": "ast_1084a9332d633ead/train/always_cooperate/100013",
+      "to_label": "ast_1084a9332d633ead/train/always_cooperate/100014",
+      "unix_elapsed": 1.831416368484497
+    },
+    {
+      "boot_elapsed": 0.03659784101182595,
+      "discrepancy_seconds": 1.837035543692764,
+      "from_label": "ast_1084a9332d633ead/holdout/hard_tit_for_tat/200015",
+      "to_label": "ast_1084a9332d633ead/holdout/hard_tit_for_tat/200016",
+      "unix_elapsed": 1.8736333847045898
+    },
+    {
+      "boot_elapsed": 0.284798838023562,
+      "discrepancy_seconds": 1.8182137237745337,
+      "from_label": "ast_2d4e5ed443078dbe/train/win_stay_lose_shift/100049",
+      "to_label": "ast_2d4e5ed443078dbe/train/win_stay_lose_shift/100050",
+      "unix_elapsed": 2.1030125617980957
+    },
+    {
+      "boot_elapsed": 0.029796424962114543,
+      "discrepancy_seconds": 1.836666759394575,
+      "from_label": "ast_5efdd46e882bdb10/train/always_cooperate/100021",
+      "to_label": "ast_5efdd46e882bdb10/train/always_cooperate/100022",
+      "unix_elapsed": 1.8664631843566895
+    },
+    {
+      "boot_elapsed": 0.507554737967439,
+      "discrepancy_seconds": 1.9638028460321948,
+      "from_label": "ast_5efdd46e882bdb10/train/tit_for_tat/100038",
+      "to_label": "ast_5efdd46e882bdb10/train/tit_for_tat/100039",
+      "unix_elapsed": 2.471357583999634
+    },
+    {
+      "boot_elapsed": 0.04989044100511819,
+      "discrepancy_seconds": 2.2733932313276455,
+      "from_label": "ast_5efdd46e882bdb10/holdout/hard_tit_for_tat/200005",
+      "to_label": "ast_5efdd46e882bdb10/holdout/hard_tit_for_tat/200006",
+      "unix_elapsed": 2.3232836723327637
+    },
+    {
+      "boot_elapsed": 0.02514917799271643,
+      "discrepancy_seconds": 1.856504846131429,
+      "from_label": "ast_6562e0078b280c05/holdout/suspicious_tit_for_tat/200030",
+      "to_label": "ast_6562e0078b280c05/holdout/suspicious_tit_for_tat/200031",
+      "unix_elapsed": 1.8816540241241455
+    },
+    {
+      "boot_elapsed": 0.03373270505107939,
+      "discrepancy_seconds": 1.9450802279170603,
+      "from_label": "ast_6a4a2832f0b753dc/train/win_stay_lose_shift/100008",
+      "to_label": "ast_6a4a2832f0b753dc/train/win_stay_lose_shift/100009",
+      "unix_elapsed": 1.9788129329681396
+    },
+    {
+      "boot_elapsed": 0.0612019210238941,
+      "discrepancy_seconds": 1.9058920235256664,
+      "from_label": "ast_7aba26aa67ac88b3/train/random/100074",
+      "to_label": "ast_7aba26aa67ac88b3/train/random/100075",
+      "unix_elapsed": 1.9670939445495605
+    },
+    {
+      "boot_elapsed": 0.05666571302572265,
+      "discrepancy_seconds": 1.9856090004905127,
+      "from_label": "ast_7afd88a49045d0d8/train/always_cooperate/100057",
+      "to_label": "ast_7afd88a49045d0d8/train/always_cooperate/100058",
+      "unix_elapsed": 2.0422747135162354
+    },
+    {
+      "boot_elapsed": 0.11624963994836435,
+      "discrepancy_seconds": 2.277503411809448,
+      "from_label": "ast_7afd88a49045d0d8/holdout/hard_tit_for_tat/200001",
+      "to_label": "ast_7afd88a49045d0d8/holdout/hard_tit_for_tat/200002",
+      "unix_elapsed": 2.3937530517578125
+    },
+    {
+      "boot_elapsed": 0.04939158202614635,
+      "discrepancy_seconds": 2.0015870785573497,
+      "from_label": "ast_7b58a9469ec7d592/train/grim/100090",
+      "to_label": "ast_7b58a9469ec7d592/train/grim/100091",
+      "unix_elapsed": 2.050978660583496
+    },
+    {
+      "boot_elapsed": 0.07189109199680388,
+      "discrepancy_seconds": 2.117958284681663,
+      "from_label": "ast_7cfa13bdccd52114/train/always_defect/100049",
+      "to_label": "ast_7cfa13bdccd52114/train/always_defect/100050",
+      "unix_elapsed": 2.189849376678467
+    },
+    {
+      "boot_elapsed": 0.022001596982590854,
+      "discrepancy_seconds": 2.2717191252158955,
+      "from_label": "ast_7cfa13bdccd52114/holdout/random_20/200074",
+      "to_label": "ast_7cfa13bdccd52114/holdout/random_20/200075",
+      "unix_elapsed": 2.2937207221984863
+    },
+    {
+      "boot_elapsed": 0.027218233968596905,
+      "discrepancy_seconds": 2.106549847696442,
+      "from_label": "ast_7dfee0bcfa0571ff/holdout/random_80/200019",
+      "to_label": "ast_7dfee0bcfa0571ff/holdout/random_80/200020",
+      "unix_elapsed": 2.133768081665039
+    },
+    {
+      "boot_elapsed": 0.27448985597584397,
+      "discrepancy_seconds": 2.1962001560023054,
+      "from_label": "ast_837229573ef617bf/holdout/random_80/200100",
+      "to_label": "ast_8f214c2a88e18a3c/train/always_cooperate/100001",
+      "unix_elapsed": 2.4706900119781494
+    },
+    {
+      "boot_elapsed": 0.03497049305588007,
+      "discrepancy_seconds": 2.163380174897611,
+      "from_label": "ast_8f214c2a88e18a3c/holdout/random_80/200001",
+      "to_label": "ast_8f214c2a88e18a3c/holdout/random_80/200002",
+      "unix_elapsed": 2.198350667953491
+    },
+    {
+      "boot_elapsed": 0.5302178639685735,
+      "discrepancy_seconds": 2.2107415419304743,
+      "from_label": "ast_90ec9948836e016f/train/grim/100006",
+      "to_label": "ast_90ec9948836e016f/train/grim/100007",
+      "unix_elapsed": 2.740959405899048
+    },
+    {
+      "boot_elapsed": 0.08069201500620693,
+      "discrepancy_seconds": 2.1911178013542667,
+      "from_label": "ast_90ec9948836e016f/holdout/tit_for_two_tats/200036",
+      "to_label": "ast_90ec9948836e016f/holdout/tit_for_two_tats/200037",
+      "unix_elapsed": 2.2718098163604736
+    },
+    {
+      "boot_elapsed": 0.03471153503051028,
+      "discrepancy_seconds": 2.2060056375921704,
+      "from_label": "ast_93a72c9ef739791e/train/always_cooperate/100081",
+      "to_label": "ast_93a72c9ef739791e/train/always_cooperate/100082",
+      "unix_elapsed": 2.2407171726226807
+    },
+    {
+      "boot_elapsed": 0.3754889169940725,
+      "discrepancy_seconds": 2.207916577695869,
+      "from_label": "ast_93a72c9ef739791e/train/grim/100004",
+      "to_label": "ast_93a72c9ef739791e/train/grim/100005",
+      "unix_elapsed": 2.5834054946899414
+    },
+    {
+      "boot_elapsed": 0.03032255597645417,
+      "discrepancy_seconds": 2.1903138118213974,
+      "from_label": "ast_93a72c9ef739791e/holdout/alternator/200091",
+      "to_label": "ast_93a72c9ef739791e/holdout/alternator/200092",
+      "unix_elapsed": 2.2206363677978516
+    },
+    {
+      "boot_elapsed": 0.0907916379510425,
+      "discrepancy_seconds": 2.2029140638769604,
+      "from_label": "ast_93a72c9ef739791e/holdout/random_20/200030",
+      "to_label": "ast_93a72c9ef739791e/holdout/random_20/200031",
+      "unix_elapsed": 2.293705701828003
+    },
+    {
+      "boot_elapsed": 0.04497099696891382,
+      "discrepancy_seconds": 2.083618156320881,
+      "from_label": "ast_9c7ff2ed2e0a47b5/train/grim/100056",
+      "to_label": "ast_9c7ff2ed2e0a47b5/train/grim/100057",
+      "unix_elapsed": 2.128589153289795
+    },
+    {
+      "boot_elapsed": 0.04537612700369209,
+      "discrepancy_seconds": 2.3290776560315862,
+      "from_label": "ast_a331c41451206436/train/always_defect/100024",
+      "to_label": "ast_a331c41451206436/train/always_defect/100025",
+      "unix_elapsed": 2.3744537830352783
+    },
+    {
+      "boot_elapsed": 0.03955732600297779,
+      "discrepancy_seconds": 2.185306918458082,
+      "from_label": "ast_a331c41451206436/holdout/tit_for_two_tats/200026",
+      "to_label": "ast_a331c41451206436/holdout/tit_for_two_tats/200027",
+      "unix_elapsed": 2.2248642444610596
+    },
+    {
+      "boot_elapsed": 0.02402852097293362,
+      "discrepancy_seconds": 2.2126126476214267,
+      "from_label": "ast_a5b32ccfdadbc4f6/train/win_stay_lose_shift/100084",
+      "to_label": "ast_a5b32ccfdadbc4f6/train/win_stay_lose_shift/100085",
+      "unix_elapsed": 2.2366411685943604
+    },
+    {
+      "boot_elapsed": 0.023609920986928046,
+      "discrepancy_seconds": 2.2479137930786237,
+      "from_label": "ast_aaaccc2bd7f8cca7/train/grim/100041",
+      "to_label": "ast_aaaccc2bd7f8cca7/train/grim/100042",
+      "unix_elapsed": 2.2715237140655518
+    },
+    {
+      "boot_elapsed": 0.022322613978758454,
+      "discrepancy_seconds": 2.239984076237306,
+      "from_label": "ast_ab54ac8d86e7e3d8/train/random/100068",
+      "to_label": "ast_ab54ac8d86e7e3d8/train/random/100069",
+      "unix_elapsed": 2.2623066902160645
+    },
+    {
+      "boot_elapsed": 0.05070419399999082,
+      "discrepancy_seconds": 2.2678244581911713,
+      "from_label": "ast_ab54ac8d86e7e3d8/holdout/random_20/200080",
+      "to_label": "ast_ab54ac8d86e7e3d8/holdout/random_20/200081",
+      "unix_elapsed": 2.318528652191162
+    },
+    {
+      "boot_elapsed": 0.033684335998259485,
+      "discrepancy_seconds": 2.2406102787936106,
+      "from_label": "ast_abc69c4d9e2976b9/holdout/hard_tit_for_tat/200046",
+      "to_label": "ast_abc69c4d9e2976b9/holdout/hard_tit_for_tat/200047",
+      "unix_elapsed": 2.27429461479187
+    },
+    {
+      "boot_elapsed": 0.03960401099175215,
+      "discrepancy_seconds": 2.4856469007208943,
+      "from_label": "ast_b643451f8c11268c/holdout/tit_for_two_tats/200001",
+      "to_label": "ast_b643451f8c11268c/holdout/tit_for_two_tats/200002",
+      "unix_elapsed": 2.5252509117126465
+    },
+    {
+      "boot_elapsed": 0.025394249008968472,
+      "discrepancy_seconds": 2.422283601714298,
+      "from_label": "ast_ba64cb62505ae224/holdout/suspicious_tit_for_tat/200047",
+      "to_label": "ast_ba64cb62505ae224/holdout/suspicious_tit_for_tat/200048",
+      "unix_elapsed": 2.4476778507232666
+    },
+    {
+      "boot_elapsed": 0.02244063396938145,
+      "discrepancy_seconds": 2.5601487539242953,
+      "from_label": "ast_bfd1a72679137130/holdout/hard_tit_for_tat/200001",
+      "to_label": "ast_bfd1a72679137130/holdout/hard_tit_for_tat/200002",
+      "unix_elapsed": 2.5825893878936768
+    },
+    {
+      "boot_elapsed": 0.022423412010539323,
+      "discrepancy_seconds": 2.471363161399495,
+      "from_label": "ast_c578287b060e5eb9/holdout/hard_tit_for_tat/200038",
+      "to_label": "ast_c578287b060e5eb9/holdout/hard_tit_for_tat/200039",
+      "unix_elapsed": 2.493786573410034
+    },
+    {
+      "boot_elapsed": 0.028757856984157115,
+      "discrepancy_seconds": 2.5612310899305157,
+      "from_label": "ast_c709262ff1881ec8/holdout/hard_tit_for_tat/200056",
+      "to_label": "ast_c709262ff1881ec8/holdout/hard_tit_for_tat/200057",
+      "unix_elapsed": 2.589988946914673
+    },
+    {
+      "boot_elapsed": 0.031155298987869173,
+      "discrepancy_seconds": 2.37510018463945,
+      "from_label": "ast_de865566907143d2/train/always_cooperate/100004",
+      "to_label": "ast_de865566907143d2/train/always_cooperate/100005",
+      "unix_elapsed": 2.4062554836273193
+    },
+    {
+      "boot_elapsed": 0.01800858596106991,
+      "discrepancy_seconds": 2.433127764670644,
+      "from_label": "ast_f6ea12a578219732/holdout/random_20/200081",
+      "to_label": "ast_f6ea12a578219732/holdout/random_20/200082",
+      "unix_elapsed": 2.451136350631714
+    },
+    {
+      "boot_elapsed": 0.01498173997970298,
+      "discrepancy_seconds": 1.5240049429121427,
+      "from_label": "m1_00000/train/random/100013",
+      "to_label": "m1_00000/train/random/100014",
+      "unix_elapsed": 1.5389866828918457
+    },
+    {
+      "boot_elapsed": 0.022933552972972393,
+      "discrepancy_seconds": 1.7780215041711926,
+      "from_label": "m1_00001/holdout/suspicious_tit_for_tat/200008",
+      "to_label": "m1_00001/holdout/suspicious_tit_for_tat/200009",
+      "unix_elapsed": 1.800955057144165
+    },
+    {
+      "boot_elapsed": 0.024257512006442994,
+      "discrepancy_seconds": 1.8996907759574242,
+      "from_label": "m1_00010/holdout/random_20/200063",
+      "to_label": "m1_00010/holdout/random_20/200064",
+      "unix_elapsed": 1.9239482879638672
+    },
+    {
+      "boot_elapsed": 0.019195245986338705,
+      "discrepancy_seconds": 1.906888318771962,
+      "from_label": "m1_00100/train/tit_for_tat/100032",
+      "to_label": "m1_00100/train/tit_for_tat/100033",
+      "unix_elapsed": 1.9260835647583008
+    },
+    {
+      "boot_elapsed": 0.018313792010303587,
+      "discrepancy_seconds": 1.9402335617342032,
+      "from_label": "m1_00101/train/win_stay_lose_shift/100043",
+      "to_label": "m1_00101/train/win_stay_lose_shift/100044",
+      "unix_elapsed": 1.9585473537445068
+    },
+    {
+      "boot_elapsed": 0.022179259976837784,
+      "discrepancy_seconds": 1.6669615366845392,
+      "from_label": "m1_00110/holdout/suspicious_tit_for_tat/200042",
+      "to_label": "m1_00110/holdout/suspicious_tit_for_tat/200043",
+      "unix_elapsed": 1.689140796661377
+    },
+    {
+      "boot_elapsed": 0.029628828982822597,
+      "discrepancy_seconds": 1.9808243951993063,
+      "from_label": "m1_00111/holdout/random_20/200050",
+      "to_label": "m1_00111/holdout/random_20/200051",
+      "unix_elapsed": 2.010453224182129
+    },
+    {
+      "boot_elapsed": 0.02427460002945736,
+      "discrepancy_seconds": 1.8484575624461286,
+      "from_label": "m1_01001/train/always_cooperate/100085",
+      "to_label": "m1_01001/train/always_cooperate/100086",
+      "unix_elapsed": 1.872732162475586
+    },
+    {
+      "boot_elapsed": 0.01887055899715051,
+      "discrepancy_seconds": 1.8671634528436698,
+      "from_label": "m1_01010/train/random/100066",
+      "to_label": "m1_01010/train/random/100067",
+      "unix_elapsed": 1.8860340118408203
+    },
+    {
+      "boot_elapsed": 0.022165167960338295,
+      "discrepancy_seconds": -0.46069728198926896,
+      "from_label": "m1_01011/train/win_stay_lose_shift/100064",
+      "to_label": "m1_01011/train/win_stay_lose_shift/100065",
+      "unix_elapsed": -0.43853211402893066
+    },
+    {
+      "boot_elapsed": 0.02289757295511663,
+      "discrepancy_seconds": 1.8976317925844342,
+      "from_label": "m1_01100/holdout/hard_tit_for_tat/200058",
+      "to_label": "m1_01100/holdout/hard_tit_for_tat/200059",
+      "unix_elapsed": 1.9205293655395508
+    },
+    {
+      "boot_elapsed": 0.02597356599289924,
+      "discrepancy_seconds": 1.7755660935072228,
+      "from_label": "m1_01110/train/always_defect/100087",
+      "to_label": "m1_01110/train/always_defect/100088",
+      "unix_elapsed": 1.801539659500122
+    },
+    {
+      "boot_elapsed": 0.07708123902557418,
+      "discrepancy_seconds": 0.8092751147341914,
+      "from_label": "m1_01111/train/win_stay_lose_shift/100042",
+      "to_label": "m1_01111/train/win_stay_lose_shift/100043",
+      "unix_elapsed": 0.8863563537597656
+    },
+    {
+      "boot_elapsed": 0.024000105040613562,
+      "discrepancy_seconds": 1.8022328051156364,
+      "from_label": "m1_10000/holdout/suspicious_tit_for_tat/200098",
+      "to_label": "m1_10000/holdout/suspicious_tit_for_tat/200099",
+      "unix_elapsed": 1.82623291015625
+    },
+    {
+      "boot_elapsed": 0.021586255985312164,
+      "discrepancy_seconds": 1.775770111125894,
+      "from_label": "m1_10010/train/win_stay_lose_shift/100083",
+      "to_label": "m1_10010/train/win_stay_lose_shift/100084",
+      "unix_elapsed": 1.797356367111206
+    },
+    {
+      "boot_elapsed": 0.022110704972874373,
+      "discrepancy_seconds": 1.8841083006118424,
+      "from_label": "m1_10011/holdout/tit_for_two_tats/200098",
+      "to_label": "m1_10011/holdout/tit_for_two_tats/200099",
+      "unix_elapsed": 1.9062190055847168
+    },
+    {
+      "boot_elapsed": 0.023395461030304432,
+      "discrepancy_seconds": 1.3820370016619563,
+      "from_label": "m1_10101/train/always_defect/100054",
+      "to_label": "m1_10101/train/always_defect/100055",
+      "unix_elapsed": 1.4054324626922607
+    },
+    {
+      "boot_elapsed": 0.024088438949547708,
+      "discrepancy_seconds": 1.5597345266724005,
+      "from_label": "m1_10110/train/grim/100075",
+      "to_label": "m1_10110/train/grim/100076",
+      "unix_elapsed": 1.5838229656219482
+    },
+    {
+      "boot_elapsed": 0.017300293024163693,
+      "discrepancy_seconds": 1.6009257583064027,
+      "from_label": "m1_10111/holdout/suspicious_tit_for_tat/200029",
+      "to_label": "m1_10111/holdout/suspicious_tit_for_tat/200030",
+      "unix_elapsed": 1.6182260513305664
+    },
+    {
+      "boot_elapsed": 0.020366136042866856,
+      "discrepancy_seconds": 1.6166561208083294,
+      "from_label": "m1_11000/holdout/random_80/200006",
+      "to_label": "m1_11000/holdout/random_80/200007",
+      "unix_elapsed": 1.6370222568511963
+    },
+    {
+      "boot_elapsed": 0.023863510985393077,
+      "discrepancy_seconds": 1.7462578249978833,
+      "from_label": "m1_11010/train/always_defect/100008",
+      "to_label": "m1_11010/train/always_defect/100009",
+      "unix_elapsed": 1.7701213359832764
+    },
+    {
+      "boot_elapsed": 0.024910490959882736,
+      "discrepancy_seconds": 1.557002741843462,
+      "from_label": "m1_11011/train/grim/100004",
+      "to_label": "m1_11011/train/grim/100005",
+      "unix_elapsed": 1.5819132328033447
+    },
+    {
+      "boot_elapsed": 0.025731639005243778,
+      "discrepancy_seconds": 1.6532835206016898,
+      "from_label": "m1_11100/holdout/suspicious_tit_for_tat/200018",
+      "to_label": "m1_11100/holdout/suspicious_tit_for_tat/200019",
+      "unix_elapsed": 1.6790151596069336
+    },
+    {
+      "boot_elapsed": 0.022805402986705303,
+      "discrepancy_seconds": 1.685447265394032,
+      "from_label": "m1_11101/holdout/suspicious_tit_for_tat/200070",
+      "to_label": "m1_11101/holdout/suspicious_tit_for_tat/200071",
+      "unix_elapsed": 1.7082526683807373
+    },
+    {
+      "boot_elapsed": 0.02417063998291269,
+      "discrepancy_seconds": 1.7056779832928441,
+      "from_label": "m1_11110/holdout/hard_tit_for_tat/200046",
+      "to_label": "m1_11110/holdout/hard_tit_for_tat/200047",
+      "unix_elapsed": 1.7298486232757568
+    }
+  ],
+  "difference_seconds": 146.93565067881718,
+  "monotonic_starts": true,
+  "primary_clock": "CLOCK_BOOTTIME (frozen)",
+  "same_boot": true,
+  "utc_timestamp_interval_seconds": 2644.7546710968018
+}

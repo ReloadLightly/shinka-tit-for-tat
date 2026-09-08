@@ -1,0 +1,29 @@
+# E2 verification and publication audit
+
+E2 completed 72 entries × 1,200 identical frozen encounters = **86,400 successful matches**, with **zero main-evaluation failures, retries or experimental model calls**. The per-match export contains 24,684,048 successful policy-rounds. All 72 bounded workers exited 0. The main controller was invoked once; no recovery restart or allowance reset occurred. Original match starts/results, runtime, completion, execution log and worker records are retained unchanged.
+
+## Runtime qualification
+
+Frozen CLOCK_BOOTTIME accounting is **2,497.819 seconds (41.63 minutes)**. The recorded UTC start/end interval is **2,644.755 seconds (44.08 minutes)**, a **146.936-second difference**. Both recorded intervals are below 2,700 seconds; no timeout occurred. Across 86,402 start/end observations, the boot ID stayed fixed and the execution-ordered boottime readings are monotonic. There are 76 adjacent UTC/boottime discrepancies greater than 0.1 seconds, including forward and backward UTC changes. The host-clock cause is not established, so the UTC interval and frozen elapsed clock are not interchangeable estimates of precise physical wall time. Neither original accounting nor timestamps was changed to reconcile them.
+
+[`runtime_clock_audit.json`](../runtime_clock_audit.json) retains these observations. `analyze_e2.clock_audit()` recomputes the audit from the original events, including monotonicity in execution order, and `python3 analyze_e2.py --verify` checks it. The main evaluation remains governed by its previously committed clock rule; both recorded spans independently fit the user’s 45-minute cap.
+
+## Required checks and preserved local failures
+
+- Eight frozen E2 checks passed before the freeze; they cover identical encounters, historical RNG/scoring, seed separation, AST/provenance counts, source integrity, weighted aggregation, policy counterexamples, infrastructure distinction and cumulative accounting.
+- Fourteen complete historical policy/panel records (420 matches) replayed exactly before fresh evaluation. No archived score was overwritten.
+- The zero-call `run_evo.py --preflight` validated the seed score. It performed local login/version reads, not subscription quota/model catalog/connectivity calls. System Python lacks optional Shinka; E2 uses only stdlib Python.
+- The first dependency-enabled suite stalled in the previously documented outer-sandbox mocked E1 seed-copy step. Only the confirmed test PID 1421944 was stopped; its [console](tests_full_sandbox_stall.txt) and [fixture](e1_unit_ovrxu4tt/) are preserved. E2 continued untouched.
+- The first host suite had one failure in the unchanged child-death test: [console](tests_full_first_host_failure.txt). Its exact timing/system cause remains unestablished. The [isolated retry](test_child_cleanup_retry.txt) passed (0.101 s), and the subsequent [complete 60-test suite](tests_full.txt) passed (56.388 s). No historical implementation was changed.
+- A new analysis check caught duplicate `turns` keywords while merging metadata/results. It was fixed before export; [failure](tests_analysis_first_failure.txt) and passing checks remain. Initial renderer string-literal syntax errors were corrected before any report output; the session tool transcript retains those authoring errors.
+- The final [11 E2 tests](tests_e2_release.txt) passed after analysis changes, including missing/unknown coverage, duplicate rejection, unavailable fresh ranks and the five-reference ranking population. The earlier full 60 includes eight of these; the three added analysis tests bring coverage to 63 distinct tests across the successful runs, not a claimed single 63-test run.
+
+## Evidence and interpretation verification
+
+The [release verification](analysis_verification_release.txt) passed. It reads the frozen source/configuration hashes and checks exactly one started/result pair for every successful policy/encounter, all horizons, integer totals, means, cooperation bounds, complete coverage, per-panel/per-opponent reaggregation, exported rows and failures. It replays all six predeclared featured traces through unchanged `environment.play`/`policy.py`, checking the full result against the original E2 record; these are separate verification replays and never additional main evaluation rows. It also reproduces the discrepant clock accounting.
+
+The human report and catalogue are deterministically rendered from the measured summary, frozen sources and verified traces. Presentation was revised after review to clarify the clock discrepancy, memory-one rankings and aggregate cooperation rates; no frozen protocol, source or measured output was rewritten. The renderer still refuses existing output paths. Publication checks compare its in-memory output with the final documents without writing them.
+
+Grim is tied for first among generated ASTs on each fresh panel. All six original training advantages over TFT persist. Only the two grim ASTs and the two-initial-cooperation variant beat TFT on fresh development. The focal period detector remains below TFT on development; its loss is concentrated against suspicious TFT, as the actual round-5 branch trace shows. Memory-one `00111` also ranks first on both panels; this is bounded to the tested panels and the enumerated comparator class. All original selections and incomplete A/B outcomes remain historical, unchanged.
+
+`publication_checks.json` records the final source/evidence scope, link, render and credential-pattern checks. Pattern scanning supplements review and is not a universal secret detector. Credentials, books, environments, execution locks and unrelated changes are excluded. No GitHub Actions or other governance workflow was created. The final remote commit is verified after push and reported in the session response; a committed report cannot contain its own final SHA without changing it.
