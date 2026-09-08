@@ -1,0 +1,21 @@
+{
+  "budget_semantics": "At most five external Codex proposal invocations, not model turns",
+  "chatgpt_authenticated": true,
+  "codex_version": "codex-cli 0.153.4\nWARNING: proceeding, even though we could not create PATH aliases: Read-only file system (os error 30)",
+  "dependency": {
+    "installed": false,
+    "pinned_commit_matches": false
+  },
+  "external_proposal_invocations": 0,
+  "headless_version": "0.6.1",
+  "live_ready": false,
+  "mode": "preflight",
+  "model": "headless/codex@gpt-5.6-terra?effort=low",
+  "model_turns": 0,
+  "mutation_budget": 5,
+  "provider_connectivity_tested": false,
+  "seed_combined_score": 2.3310772701635645,
+  "seed_valid": true,
+  "shinka_num_generations_including_seed": 6,
+  "subscription_quota_and_live_model_checked": false
+}

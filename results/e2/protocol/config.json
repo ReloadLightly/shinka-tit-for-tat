@@ -1,0 +1,10 @@
+{
+  "allowance_seconds": 2700,
+  "experimental_model_calls": 0,
+  "matches_per_policy": 1200,
+  "original_commit": "fd19af5dd0f168f14b82dd5e2f5b1e68b210fe33",
+  "platform": "linux",
+  "python": "3.10.12 (main, Jun 22 2026, 18:55:27) [GCC 11.4.0]",
+  "worker_seconds": 300,
+  "workers": 1
+}

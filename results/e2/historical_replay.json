@@ -1,0 +1,122 @@
+{
+  "clock": {
+    "boot_id": "63a22045-f6ab-4292-a95b-2da600c81b12",
+    "boot_seconds": 296842.813355056,
+    "unix_seconds": 1788891810.9505966
+  },
+  "passed": true,
+  "records": [
+    {
+      "matches": 30,
+      "passed": true,
+      "policy_id": "ast_88f3a4f11dba1800",
+      "split": "train",
+      "total_payoff": 18832,
+      "turns": 7092
+    },
+    {
+      "matches": 30,
+      "passed": true,
+      "policy_id": "ast_88f3a4f11dba1800",
+      "split": "holdout",
+      "total_payoff": 13514,
+      "turns": 5100
+    },
+    {
+      "matches": 30,
+      "passed": true,
+      "policy_id": "ast_57dad27c89beb4e1",
+      "split": "train",
+      "total_payoff": 18233,
+      "turns": 7092
+    },
+    {
+      "matches": 30,
+      "passed": true,
+      "policy_id": "ast_57dad27c89beb4e1",
+      "split": "holdout",
+      "total_payoff": 12414,
+      "turns": 5100
+    },
+    {
+      "matches": 30,
+      "passed": true,
+      "policy_id": "initial",
+      "split": "train",
+      "total_payoff": 16532,
+      "turns": 7092
+    },
+    {
+      "matches": 30,
+      "passed": true,
+      "policy_id": "initial",
+      "split": "holdout",
+      "total_payoff": 10208,
+      "turns": 5100
+    },
+    {
+      "matches": 30,
+      "passed": true,
+      "policy_id": "always_cooperate",
+      "split": "train",
+      "total_payoff": 15912,
+      "turns": 7092
+    },
+    {
+      "matches": 30,
+      "passed": true,
+      "policy_id": "always_cooperate",
+      "split": "holdout",
+      "total_payoff": 11421,
+      "turns": 5100
+    },
+    {
+      "matches": 30,
+      "passed": true,
+      "policy_id": "tit_for_tat",
+      "split": "train",
+      "total_payoff": 17987,
+      "turns": 7092
+    },
+    {
+      "matches": 30,
+      "passed": true,
+      "policy_id": "tit_for_tat",
+      "split": "holdout",
+      "total_payoff": 12976,
+      "turns": 5100
+    },
+    {
+      "matches": 30,
+      "passed": true,
+      "policy_id": "grim",
+      "split": "train",
+      "total_payoff": 18832,
+      "turns": 7092
+    },
+    {
+      "matches": 30,
+      "passed": true,
+      "policy_id": "grim",
+      "split": "holdout",
+      "total_payoff": 13514,
+      "turns": 5100
+    },
+    {
+      "matches": 30,
+      "passed": true,
+      "policy_id": "win_stay_lose_shift",
+      "split": "train",
+      "total_payoff": 17383,
+      "turns": 7092
+    },
+    {
+      "matches": 30,
+      "passed": true,
+      "policy_id": "win_stay_lose_shift",
+      "split": "holdout",
+      "total_payoff": 12466,
+      "turns": 5100
+    }
+  ]
+}

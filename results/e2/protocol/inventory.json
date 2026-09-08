@@ -1,0 +1,2199 @@
+{
+  "counts": {
+    "e1": 40,
+    "e1_r": 18
+  },
+  "deduplication": "ast.dump(include_attributes=False); docstrings retained; no behavioral merging",
+  "exclusions": [
+    {
+      "condition": "B",
+      "experiment": "e1",
+      "historical_selected": false,
+      "original_status": "evaluation_missing",
+      "reason": "No evaluator result",
+      "run": "B101",
+      "run_status": "complete",
+      "slot": 3,
+      "source": "results/e1/runs/B101/gen_3/main.py",
+      "source_sha256": "780068a8719a88ad37214deeadaaadeb298f110ffbf6e9af305f04d6b039c15a"
+    },
+    {
+      "condition": "A",
+      "experiment": "e1",
+      "historical_selected": false,
+      "original_status": "rejected",
+      "reason": "PolicyError: Unsupported syntax or more than 400 AST nodes",
+      "run": "A202",
+      "run_status": "complete",
+      "slot": 7,
+      "source": "results/e1/runs/A202/gen_7/main.py",
+      "source_sha256": "99b87bcb1543e838fa98d07b499846135b62e4af5881280791f08cbd5528b47a"
+    },
+    {
+      "condition": "A",
+      "experiment": "e1",
+      "historical_selected": false,
+      "original_status": "rejected",
+      "reason": "PolicyError: Unsupported syntax or more than 400 AST nodes",
+      "run": "A202",
+      "run_status": "complete",
+      "slot": 9,
+      "source": "results/e1/runs/A202/gen_9/main.py",
+      "source_sha256": "5e16d59310d3349f24ec2542a90669709d0d5c23072c99a70cced034dc4c7c71"
+    },
+    {
+      "condition": "A",
+      "experiment": "e1",
+      "historical_selected": false,
+      "original_status": "evaluation_missing",
+      "reason": "No evaluator result",
+      "run": "A303",
+      "run_status": "incomplete",
+      "slot": 4,
+      "source": "results/e1/runs/A303/gen_4/main.py",
+      "source_sha256": "39fe9336b5f08dbac35519d28f3e36cb51eab9897b30b39331c6f2a0f35b819e"
+    },
+    {
+      "condition": "A",
+      "experiment": "e1",
+      "historical_selected": false,
+      "original_status": "blocked_before_external_launch",
+      "reason": "No canonical generated source; inspect raw response/failure",
+      "run": "A303",
+      "run_status": "incomplete",
+      "slot": 5,
+      "source": null,
+      "source_sha256": null
+    },
+    {
+      "condition": "A",
+      "experiment": "e1",
+      "historical_selected": false,
+      "original_status": "not_attempted",
+      "reason": "No canonical generated source; inspect raw response/failure",
+      "run": "A303",
+      "run_status": "incomplete",
+      "slot": 6,
+      "source": null,
+      "source_sha256": null
+    },
+    {
+      "condition": "A",
+      "experiment": "e1",
+      "historical_selected": false,
+      "original_status": "not_attempted",
+      "reason": "No canonical generated source; inspect raw response/failure",
+      "run": "A303",
+      "run_status": "incomplete",
+      "slot": 7,
+      "source": null,
+      "source_sha256": null
+    },
+    {
+      "condition": "A",
+      "experiment": "e1",
+      "historical_selected": false,
+      "original_status": "not_attempted",
+      "reason": "No canonical generated source; inspect raw response/failure",
+      "run": "A303",
+      "run_status": "incomplete",
+      "slot": 8,
+      "source": null,
+      "source_sha256": null
+    },
+    {
+      "condition": "A",
+      "experiment": "e1",
+      "historical_selected": false,
+      "original_status": "not_attempted",
+      "reason": "No canonical generated source; inspect raw response/failure",
+      "run": "A303",
+      "run_status": "incomplete",
+      "slot": 9,
+      "source": null,
+      "source_sha256": null
+    },
+    {
+      "condition": "A",
+      "experiment": "e1",
+      "historical_selected": false,
+      "original_status": "not_attempted",
+      "reason": "No canonical generated source; inspect raw response/failure",
+      "run": "A303",
+      "run_status": "incomplete",
+      "slot": 10,
+      "source": null,
+      "source_sha256": null
+    },
+    {
+      "condition": "B",
+      "experiment": "e1",
+      "historical_selected": false,
+      "original_status": "not_attempted",
+      "reason": "No canonical generated source; inspect raw response/failure",
+      "run": "B303",
+      "run_status": "not_started",
+      "slot": 1,
+      "source": null,
+      "source_sha256": null
+    },
+    {
+      "condition": "B",
+      "experiment": "e1",
+      "historical_selected": false,
+      "original_status": "not_attempted",
+      "reason": "No canonical generated source; inspect raw response/failure",
+      "run": "B303",
+      "run_status": "not_started",
+      "slot": 2,
+      "source": null,
+      "source_sha256": null
+    },
+    {
+      "condition": "B",
+      "experiment": "e1",
+      "historical_selected": false,
+      "original_status": "not_attempted",
+      "reason": "No canonical generated source; inspect raw response/failure",
+      "run": "B303",
+      "run_status": "not_started",
+      "slot": 3,
+      "source": null,
+      "source_sha256": null
+    },
+    {
+      "condition": "B",
+      "experiment": "e1",
+      "historical_selected": false,
+      "original_status": "not_attempted",
+      "reason": "No canonical generated source; inspect raw response/failure",
+      "run": "B303",
+      "run_status": "not_started",
+      "slot": 4,
+      "source": null,
+      "source_sha256": null
+    },
+    {
+      "condition": "B",
+      "experiment": "e1",
+      "historical_selected": false,
+      "original_status": "not_attempted",
+      "reason": "No canonical generated source; inspect raw response/failure",
+      "run": "B303",
+      "run_status": "not_started",
+      "slot": 5,
+      "source": null,
+      "source_sha256": null
+    },
+    {
+      "condition": "B",
+      "experiment": "e1",
+      "historical_selected": false,
+      "original_status": "not_attempted",
+      "reason": "No canonical generated source; inspect raw response/failure",
+      "run": "B303",
+      "run_status": "not_started",
+      "slot": 6,
+      "source": null,
+      "source_sha256": null
+    },
+    {
+      "condition": "B",
+      "experiment": "e1",
+      "historical_selected": false,
+      "original_status": "not_attempted",
+      "reason": "No canonical generated source; inspect raw response/failure",
+      "run": "B303",
+      "run_status": "not_started",
+      "slot": 7,
+      "source": null,
+      "source_sha256": null
+    },
+    {
+      "condition": "B",
+      "experiment": "e1",
+      "historical_selected": false,
+      "original_status": "not_attempted",
+      "reason": "No canonical generated source; inspect raw response/failure",
+      "run": "B303",
+      "run_status": "not_started",
+      "slot": 8,
+      "source": null,
+      "source_sha256": null
+    },
+    {
+      "condition": "B",
+      "experiment": "e1",
+      "historical_selected": false,
+      "original_status": "not_attempted",
+      "reason": "No canonical generated source; inspect raw response/failure",
+      "run": "B303",
+      "run_status": "not_started",
+      "slot": 9,
+      "source": null,
+      "source_sha256": null
+    },
+    {
+      "condition": "B",
+      "experiment": "e1",
+      "historical_selected": false,
+      "original_status": "not_attempted",
+      "reason": "No canonical generated source; inspect raw response/failure",
+      "run": "B303",
+      "run_status": "not_started",
+      "slot": 10,
+      "source": null,
+      "source_sha256": null
+    },
+    {
+      "condition": "A",
+      "experiment": "e1_r",
+      "historical_selected": false,
+      "original_status": "rejected",
+      "reason": "PolicyError: Unsupported syntax or more than 400 AST nodes",
+      "run": "A101",
+      "run_status": "complete",
+      "slot": 1,
+      "source": "results/e1_r/runs/A101/gen_1/main.py",
+      "source_sha256": "b5fe1670241c4db454fcc4a799237ef21ee900cd465aaec63bda4e4bdb22db1c"
+    },
+    {
+      "condition": "B",
+      "experiment": "e1_r",
+      "historical_selected": false,
+      "original_status": "failed_or_unparsed",
+      "reason": "No canonical generated source; inspect raw response/failure",
+      "run": "B101",
+      "run_status": "incomplete",
+      "slot": 10,
+      "source": null,
+      "source_sha256": null
+    },
+    {
+      "condition": "B",
+      "experiment": "e1_r",
+      "historical_selected": false,
+      "original_status": "not_attempted",
+      "reason": "No canonical generated source; inspect raw response/failure",
+      "run": "B202",
+      "run_status": "not_started",
+      "slot": 1,
+      "source": null,
+      "source_sha256": null
+    },
+    {
+      "condition": "B",
+      "experiment": "e1_r",
+      "historical_selected": false,
+      "original_status": "not_attempted",
+      "reason": "No canonical generated source; inspect raw response/failure",
+      "run": "B202",
+      "run_status": "not_started",
+      "slot": 2,
+      "source": null,
+      "source_sha256": null
+    },
+    {
+      "condition": "B",
+      "experiment": "e1_r",
+      "historical_selected": false,
+      "original_status": "not_attempted",
+      "reason": "No canonical generated source; inspect raw response/failure",
+      "run": "B202",
+      "run_status": "not_started",
+      "slot": 3,
+      "source": null,
+      "source_sha256": null
+    },
+    {
+      "condition": "B",
+      "experiment": "e1_r",
+      "historical_selected": false,
+      "original_status": "not_attempted",
+      "reason": "No canonical generated source; inspect raw response/failure",
+      "run": "B202",
+      "run_status": "not_started",
+      "slot": 4,
+      "source": null,
+      "source_sha256": null
+    },
+    {
+      "condition": "B",
+      "experiment": "e1_r",
+      "historical_selected": false,
+      "original_status": "not_attempted",
+      "reason": "No canonical generated source; inspect raw response/failure",
+      "run": "B202",
+      "run_status": "not_started",
+      "slot": 5,
+      "source": null,
+      "source_sha256": null
+    },
+    {
+      "condition": "B",
+      "experiment": "e1_r",
+      "historical_selected": false,
+      "original_status": "not_attempted",
+      "reason": "No canonical generated source; inspect raw response/failure",
+      "run": "B202",
+      "run_status": "not_started",
+      "slot": 6,
+      "source": null,
+      "source_sha256": null
+    },
+    {
+      "condition": "B",
+      "experiment": "e1_r",
+      "historical_selected": false,
+      "original_status": "not_attempted",
+      "reason": "No canonical generated source; inspect raw response/failure",
+      "run": "B202",
+      "run_status": "not_started",
+      "slot": 7,
+      "source": null,
+      "source_sha256": null
+    },
+    {
+      "condition": "B",
+      "experiment": "e1_r",
+      "historical_selected": false,
+      "original_status": "not_attempted",
+      "reason": "No canonical generated source; inspect raw response/failure",
+      "run": "B202",
+      "run_status": "not_started",
+      "slot": 8,
+      "source": null,
+      "source_sha256": null
+    },
+    {
+      "condition": "B",
+      "experiment": "e1_r",
+      "historical_selected": false,
+      "original_status": "not_attempted",
+      "reason": "No canonical generated source; inspect raw response/failure",
+      "run": "B202",
+      "run_status": "not_started",
+      "slot": 9,
+      "source": null,
+      "source_sha256": null
+    },
+    {
+      "condition": "B",
+      "experiment": "e1_r",
+      "historical_selected": false,
+      "original_status": "not_attempted",
+      "reason": "No canonical generated source; inspect raw response/failure",
+      "run": "B202",
+      "run_status": "not_started",
+      "slot": 10,
+      "source": null,
+      "source_sha256": null
+    },
+    {
+      "condition": "A",
+      "experiment": "e1_r",
+      "historical_selected": false,
+      "original_status": "not_attempted",
+      "reason": "No canonical generated source; inspect raw response/failure",
+      "run": "A202",
+      "run_status": "not_started",
+      "slot": 1,
+      "source": null,
+      "source_sha256": null
+    },
+    {
+      "condition": "A",
+      "experiment": "e1_r",
+      "historical_selected": false,
+      "original_status": "not_attempted",
+      "reason": "No canonical generated source; inspect raw response/failure",
+      "run": "A202",
+      "run_status": "not_started",
+      "slot": 2,
+      "source": null,
+      "source_sha256": null
+    },
+    {
+      "condition": "A",
+      "experiment": "e1_r",
+      "historical_selected": false,
+      "original_status": "not_attempted",
+      "reason": "No canonical generated source; inspect raw response/failure",
+      "run": "A202",
+      "run_status": "not_started",
+      "slot": 3,
+      "source": null,
+      "source_sha256": null
+    },
+    {
+      "condition": "A",
+      "experiment": "e1_r",
+      "historical_selected": false,
+      "original_status": "not_attempted",
+      "reason": "No canonical generated source; inspect raw response/failure",
+      "run": "A202",
+      "run_status": "not_started",
+      "slot": 4,
+      "source": null,
+      "source_sha256": null
+    },
+    {
+      "condition": "A",
+      "experiment": "e1_r",
+      "historical_selected": false,
+      "original_status": "not_attempted",
+      "reason": "No canonical generated source; inspect raw response/failure",
+      "run": "A202",
+      "run_status": "not_started",
+      "slot": 5,
+      "source": null,
+      "source_sha256": null
+    },
+    {
+      "condition": "A",
+      "experiment": "e1_r",
+      "historical_selected": false,
+      "original_status": "not_attempted",
+      "reason": "No canonical generated source; inspect raw response/failure",
+      "run": "A202",
+      "run_status": "not_started",
+      "slot": 6,
+      "source": null,
+      "source_sha256": null
+    },
+    {
+      "condition": "A",
+      "experiment": "e1_r",
+      "historical_selected": false,
+      "original_status": "not_attempted",
+      "reason": "No canonical generated source; inspect raw response/failure",
+      "run": "A202",
+      "run_status": "not_started",
+      "slot": 7,
+      "source": null,
+      "source_sha256": null
+    },
+    {
+      "condition": "A",
+      "experiment": "e1_r",
+      "historical_selected": false,
+      "original_status": "not_attempted",
+      "reason": "No canonical generated source; inspect raw response/failure",
+      "run": "A202",
+      "run_status": "not_started",
+      "slot": 8,
+      "source": null,
+      "source_sha256": null
+    },
+    {
+      "condition": "A",
+      "experiment": "e1_r",
+      "historical_selected": false,
+      "original_status": "not_attempted",
+      "reason": "No canonical generated source; inspect raw response/failure",
+      "run": "A202",
+      "run_status": "not_started",
+      "slot": 9,
+      "source": null,
+      "source_sha256": null
+    },
+    {
+      "condition": "A",
+      "experiment": "e1_r",
+      "historical_selected": false,
+      "original_status": "not_attempted",
+      "reason": "No canonical generated source; inspect raw response/failure",
+      "run": "A202",
+      "run_status": "not_started",
+      "slot": 10,
+      "source": null,
+      "source_sha256": null
+    },
+    {
+      "condition": "A",
+      "experiment": "e1_r",
+      "historical_selected": false,
+      "original_status": "not_attempted",
+      "reason": "No canonical generated source; inspect raw response/failure",
+      "run": "A303",
+      "run_status": "not_started",
+      "slot": 1,
+      "source": null,
+      "source_sha256": null
+    },
+    {
+      "condition": "A",
+      "experiment": "e1_r",
+      "historical_selected": false,
+      "original_status": "not_attempted",
+      "reason": "No canonical generated source; inspect raw response/failure",
+      "run": "A303",
+      "run_status": "not_started",
+      "slot": 2,
+      "source": null,
+      "source_sha256": null
+    },
+    {
+      "condition": "A",
+      "experiment": "e1_r",
+      "historical_selected": false,
+      "original_status": "not_attempted",
+      "reason": "No canonical generated source; inspect raw response/failure",
+      "run": "A303",
+      "run_status": "not_started",
+      "slot": 3,
+      "source": null,
+      "source_sha256": null
+    },
+    {
+      "condition": "A",
+      "experiment": "e1_r",
+      "historical_selected": false,
+      "original_status": "not_attempted",
+      "reason": "No canonical generated source; inspect raw response/failure",
+      "run": "A303",
+      "run_status": "not_started",
+      "slot": 4,
+      "source": null,
+      "source_sha256": null
+    },
+    {
+      "condition": "A",
+      "experiment": "e1_r",
+      "historical_selected": false,
+      "original_status": "not_attempted",
+      "reason": "No canonical generated source; inspect raw response/failure",
+      "run": "A303",
+      "run_status": "not_started",
+      "slot": 5,
+      "source": null,
+      "source_sha256": null
+    },
+    {
+      "condition": "A",
+      "experiment": "e1_r",
+      "historical_selected": false,
+      "original_status": "not_attempted",
+      "reason": "No canonical generated source; inspect raw response/failure",
+      "run": "A303",
+      "run_status": "not_started",
+      "slot": 6,
+      "source": null,
+      "source_sha256": null
+    },
+    {
+      "condition": "A",
+      "experiment": "e1_r",
+      "historical_selected": false,
+      "original_status": "not_attempted",
+      "reason": "No canonical generated source; inspect raw response/failure",
+      "run": "A303",
+      "run_status": "not_started",
+      "slot": 7,
+      "source": null,
+      "source_sha256": null
+    },
+    {
+      "condition": "A",
+      "experiment": "e1_r",
+      "historical_selected": false,
+      "original_status": "not_attempted",
+      "reason": "No canonical generated source; inspect raw response/failure",
+      "run": "A303",
+      "run_status": "not_started",
+      "slot": 8,
+      "source": null,
+      "source_sha256": null
+    },
+    {
+      "condition": "A",
+      "experiment": "e1_r",
+      "historical_selected": false,
+      "original_status": "not_attempted",
+      "reason": "No canonical generated source; inspect raw response/failure",
+      "run": "A303",
+      "run_status": "not_started",
+      "slot": 9,
+      "source": null,
+      "source_sha256": null
+    },
+    {
+      "condition": "A",
+      "experiment": "e1_r",
+      "historical_selected": false,
+      "original_status": "not_attempted",
+      "reason": "No canonical generated source; inspect raw response/failure",
+      "run": "A303",
+      "run_status": "not_started",
+      "slot": 10,
+      "source": null,
+      "source_sha256": null
+    },
+    {
+      "condition": "B",
+      "experiment": "e1_r",
+      "historical_selected": false,
+      "original_status": "not_attempted",
+      "reason": "No canonical generated source; inspect raw response/failure",
+      "run": "B303",
+      "run_status": "not_started",
+      "slot": 1,
+      "source": null,
+      "source_sha256": null
+    },
+    {
+      "condition": "B",
+      "experiment": "e1_r",
+      "historical_selected": false,
+      "original_status": "not_attempted",
+      "reason": "No canonical generated source; inspect raw response/failure",
+      "run": "B303",
+      "run_status": "not_started",
+      "slot": 2,
+      "source": null,
+      "source_sha256": null
+    },
+    {
+      "condition": "B",
+      "experiment": "e1_r",
+      "historical_selected": false,
+      "original_status": "not_attempted",
+      "reason": "No canonical generated source; inspect raw response/failure",
+      "run": "B303",
+      "run_status": "not_started",
+      "slot": 3,
+      "source": null,
+      "source_sha256": null
+    },
+    {
+      "condition": "B",
+      "experiment": "e1_r",
+      "historical_selected": false,
+      "original_status": "not_attempted",
+      "reason": "No canonical generated source; inspect raw response/failure",
+      "run": "B303",
+      "run_status": "not_started",
+      "slot": 4,
+      "source": null,
+      "source_sha256": null
+    },
+    {
+      "condition": "B",
+      "experiment": "e1_r",
+      "historical_selected": false,
+      "original_status": "not_attempted",
+      "reason": "No canonical generated source; inspect raw response/failure",
+      "run": "B303",
+      "run_status": "not_started",
+      "slot": 5,
+      "source": null,
+      "source_sha256": null
+    },
+    {
+      "condition": "B",
+      "experiment": "e1_r",
+      "historical_selected": false,
+      "original_status": "not_attempted",
+      "reason": "No canonical generated source; inspect raw response/failure",
+      "run": "B303",
+      "run_status": "not_started",
+      "slot": 6,
+      "source": null,
+      "source_sha256": null
+    },
+    {
+      "condition": "B",
+      "experiment": "e1_r",
+      "historical_selected": false,
+      "original_status": "not_attempted",
+      "reason": "No canonical generated source; inspect raw response/failure",
+      "run": "B303",
+      "run_status": "not_started",
+      "slot": 7,
+      "source": null,
+      "source_sha256": null
+    },
+    {
+      "condition": "B",
+      "experiment": "e1_r",
+      "historical_selected": false,
+      "original_status": "not_attempted",
+      "reason": "No canonical generated source; inspect raw response/failure",
+      "run": "B303",
+      "run_status": "not_started",
+      "slot": 8,
+      "source": null,
+      "source_sha256": null
+    },
+    {
+      "condition": "B",
+      "experiment": "e1_r",
+      "historical_selected": false,
+      "original_status": "not_attempted",
+      "reason": "No canonical generated source; inspect raw response/failure",
+      "run": "B303",
+      "run_status": "not_started",
+      "slot": 9,
+      "source": null,
+      "source_sha256": null
+    },
+    {
+      "condition": "B",
+      "experiment": "e1_r",
+      "historical_selected": false,
+      "original_status": "not_attempted",
+      "reason": "No canonical generated source; inspect raw response/failure",
+      "run": "B303",
+      "run_status": "not_started",
+      "slot": 10,
+      "source": null,
+      "source_sha256": null
+    }
+  ],
+  "generated_ast_count": 35,
+  "policies": [
+    {
+      "ast_sha256": "88f3a4f11dba18008a7fbd85ba602535f447faf4e29b60c9745a6e063de5e659",
+      "id": "ast_88f3a4f11dba1800",
+      "kind": "generated",
+      "origins": [
+        {
+          "condition": "A",
+          "experiment": "e1_r",
+          "historical_selected": true,
+          "original_holdout": 2.6498039215686275,
+          "original_status": "valid",
+          "original_train": 2.655386350817823,
+          "run": "A101",
+          "run_status": "complete",
+          "slot": 4,
+          "source": "results/e1_r/runs/A101/gen_4/main.py",
+          "source_sha256": "fc938dea6c869791ffb3d7fbbb03f95b21ea86152fb3414345a9d107323d56a1"
+        },
+        {
+          "condition": "A",
+          "experiment": "e1_r",
+          "historical_selected": false,
+          "original_holdout": null,
+          "original_status": "valid",
+          "original_train": 2.655386350817823,
+          "run": "A101",
+          "run_status": "complete",
+          "slot": 8,
+          "source": "results/e1_r/runs/A101/gen_8/main.py",
+          "source_sha256": "fc938dea6c869791ffb3d7fbbb03f95b21ea86152fb3414345a9d107323d56a1"
+        },
+        {
+          "condition": "A",
+          "experiment": "e1_r",
+          "historical_selected": false,
+          "original_holdout": null,
+          "original_status": "valid",
+          "original_train": 2.655386350817823,
+          "run": "A101",
+          "run_status": "complete",
+          "slot": 9,
+          "source": "results/e1_r/runs/A101/gen_9/main.py",
+          "source_sha256": "fc938dea6c869791ffb3d7fbbb03f95b21ea86152fb3414345a9d107323d56a1"
+        }
+      ],
+      "source": "results/e1_r/runs/A101/gen_4/main.py",
+      "source_sha256": "fc938dea6c869791ffb3d7fbbb03f95b21ea86152fb3414345a9d107323d56a1"
+    },
+    {
+      "ast_sha256": "57dad27c89beb4e188dc8b18d5696bc1df1266476ec96ff6d652212bb834d0b6",
+      "id": "ast_57dad27c89beb4e1",
+      "kind": "generated",
+      "origins": [
+        {
+          "condition": "A",
+          "experiment": "e1",
+          "historical_selected": true,
+          "original_holdout": 2.4341176470588235,
+          "original_status": "valid",
+          "original_train": 2.5709249858996053,
+          "run": "A202",
+          "run_status": "complete",
+          "slot": 5,
+          "source": "results/e1/runs/A202/gen_5/main.py",
+          "source_sha256": "4da8a4169fe411c2f6ae83273be421f74757d9992acf8a340423b8e4a4832393"
+        },
+        {
+          "condition": "A",
+          "experiment": "e1",
+          "historical_selected": false,
+          "original_holdout": null,
+          "original_status": "valid",
+          "original_train": 2.5709249858996053,
+          "run": "A202",
+          "run_status": "complete",
+          "slot": 8,
+          "source": "results/e1/runs/A202/gen_8/main.py",
+          "source_sha256": "4da8a4169fe411c2f6ae83273be421f74757d9992acf8a340423b8e4a4832393"
+        }
+      ],
+      "source": "results/e1/runs/A202/gen_5/main.py",
+      "source_sha256": "4da8a4169fe411c2f6ae83273be421f74757d9992acf8a340423b8e4a4832393"
+    },
+    {
+      "id": "initial",
+      "kind": "seed",
+      "source": "initial.py",
+      "source_sha256": "f83fb4c8ffc3313079ff6fa09bef89da8b6ed67d8f604a414c3493d97ba9a32b"
+    },
+    {
+      "id": "always_cooperate",
+      "kind": "reference"
+    },
+    {
+      "id": "tit_for_tat",
+      "kind": "reference"
+    },
+    {
+      "id": "grim",
+      "kind": "reference"
+    },
+    {
+      "id": "win_stay_lose_shift",
+      "kind": "reference"
+    },
+    {
+      "ast_sha256": "053d3bbc46b149680bde3e511425fd193ff16430c7652d00844a6ba5c5c89aad",
+      "id": "ast_053d3bbc46b14968",
+      "kind": "generated",
+      "origins": [
+        {
+          "condition": "A",
+          "experiment": "e1",
+          "historical_selected": false,
+          "original_holdout": null,
+          "original_status": "valid",
+          "original_train": 2.5689509306260576,
+          "run": "A202",
+          "run_status": "complete",
+          "slot": 4,
+          "source": "results/e1/runs/A202/gen_4/main.py",
+          "source_sha256": "50d32fc4801d1a5bd70ed17c7dd0c56d031099299c80baf6e0521f1379cdb160"
+        }
+      ],
+      "source": "results/e1/runs/A202/gen_4/main.py",
+      "source_sha256": "50d32fc4801d1a5bd70ed17c7dd0c56d031099299c80baf6e0521f1379cdb160"
+    },
+    {
+      "ast_sha256": "07280d92788db5e6de340b106ecbd712663e677d34f9a569ba52862537f75c0f",
+      "id": "ast_07280d92788db5e6",
+      "kind": "generated",
+      "origins": [
+        {
+          "condition": "A",
+          "experiment": "e1",
+          "historical_selected": false,
+          "original_holdout": null,
+          "original_status": "valid",
+          "original_train": 2.4740552735476595,
+          "run": "A101",
+          "run_status": "complete",
+          "slot": 8,
+          "source": "results/e1/runs/A101/gen_8/main.py",
+          "source_sha256": "2c4289ee70df2a6f8eac682ebc8313d21f1a61482a08e20b8d2722674046f42c"
+        }
+      ],
+      "source": "results/e1/runs/A101/gen_8/main.py",
+      "source_sha256": "2c4289ee70df2a6f8eac682ebc8313d21f1a61482a08e20b8d2722674046f42c"
+    },
+    {
+      "ast_sha256": "0765ea6f48c18c31a211a73f66d48283ef5bf758d5ad29d0157a220be7d57b99",
+      "id": "ast_0765ea6f48c18c31",
+      "kind": "generated",
+      "origins": [
+        {
+          "condition": "A",
+          "experiment": "e1",
+          "historical_selected": false,
+          "original_holdout": null,
+          "original_status": "valid",
+          "original_train": 2.535109983079526,
+          "run": "A101",
+          "run_status": "complete",
+          "slot": 9,
+          "source": "results/e1/runs/A101/gen_9/main.py",
+          "source_sha256": "ed0611ce7dbef9eb29f49a60b8290fe402a8e81023452e15395f7cdf26a48b63"
+        }
+      ],
+      "source": "results/e1/runs/A101/gen_9/main.py",
+      "source_sha256": "ed0611ce7dbef9eb29f49a60b8290fe402a8e81023452e15395f7cdf26a48b63"
+    },
+    {
+      "ast_sha256": "0a7f73300deed75b2b756932551ec04f956d21ffd9789368b557c51e27113822",
+      "id": "ast_0a7f73300deed75b",
+      "kind": "generated",
+      "origins": [
+        {
+          "condition": "B",
+          "experiment": "e1",
+          "historical_selected": false,
+          "original_holdout": null,
+          "original_status": "valid",
+          "original_train": 2.0521714608009023,
+          "run": "B202",
+          "run_status": "complete",
+          "slot": 5,
+          "source": "results/e1/runs/B202/gen_5/main.py",
+          "source_sha256": "fc147b8d1784fa4b0cc4688bcfe23630fc6817aed5d8140bdc109ccaf0b97e39"
+        }
+      ],
+      "source": "results/e1/runs/B202/gen_5/main.py",
+      "source_sha256": "fc147b8d1784fa4b0cc4688bcfe23630fc6817aed5d8140bdc109ccaf0b97e39"
+    },
+    {
+      "ast_sha256": "1084a9332d633ead6a1979e8e65c46218bef9d14cc927d4588ab5ab7054e98c9",
+      "id": "ast_1084a9332d633ead",
+      "kind": "generated",
+      "origins": [
+        {
+          "condition": "B",
+          "experiment": "e1",
+          "historical_selected": false,
+          "original_holdout": null,
+          "original_status": "valid",
+          "original_train": 2.046954314720812,
+          "run": "B202",
+          "run_status": "complete",
+          "slot": 7,
+          "source": "results/e1/runs/B202/gen_7/main.py",
+          "source_sha256": "5e6cdb5125a4aa7858664950b97ae67cdf4bf1f82f36a1aaa04779d628ac700f"
+        }
+      ],
+      "source": "results/e1/runs/B202/gen_7/main.py",
+      "source_sha256": "5e6cdb5125a4aa7858664950b97ae67cdf4bf1f82f36a1aaa04779d628ac700f"
+    },
+    {
+      "ast_sha256": "2d4e5ed443078dbe5b9a2daa562a6f865793bbf2f02cf02c1de94d5eeacf1b74",
+      "id": "ast_2d4e5ed443078dbe",
+      "kind": "generated",
+      "origins": [
+        {
+          "condition": "A",
+          "experiment": "e1_r",
+          "historical_selected": false,
+          "original_holdout": null,
+          "original_status": "valid",
+          "original_train": 2.003384094754653,
+          "run": "A101",
+          "run_status": "complete",
+          "slot": 3,
+          "source": "results/e1_r/runs/A101/gen_3/main.py",
+          "source_sha256": "fdbec0ba440662ffb8b7f96e05fb61fbc8edb1f56f048d5cb1137c5fa27a0674"
+        }
+      ],
+      "source": "results/e1_r/runs/A101/gen_3/main.py",
+      "source_sha256": "fdbec0ba440662ffb8b7f96e05fb61fbc8edb1f56f048d5cb1137c5fa27a0674"
+    },
+    {
+      "ast_sha256": "5efdd46e882bdb102a1757e2f454dd0dee68ad83043eae9ccc55a637a386e7bd",
+      "id": "ast_5efdd46e882bdb10",
+      "kind": "generated",
+      "origins": [
+        {
+          "condition": "A",
+          "experiment": "e1",
+          "historical_selected": false,
+          "original_holdout": null,
+          "original_status": "valid",
+          "original_train": 2.1209813874788495,
+          "run": "A202",
+          "run_status": "complete",
+          "slot": 10,
+          "source": "results/e1/runs/A202/gen_10/main.py",
+          "source_sha256": "9a04510b1a30b2a82cc73ad6eeb0d411807da6e214eff706a520a6118828477b"
+        }
+      ],
+      "source": "results/e1/runs/A202/gen_10/main.py",
+      "source_sha256": "9a04510b1a30b2a82cc73ad6eeb0d411807da6e214eff706a520a6118828477b"
+    },
+    {
+      "ast_sha256": "6562e0078b280c05054d93503257fa99adaf9a148b23e799d1a621823eb4da17",
+      "id": "ast_6562e0078b280c05",
+      "kind": "generated",
+      "origins": [
+        {
+          "condition": "B",
+          "experiment": "e1_r",
+          "historical_selected": false,
+          "original_holdout": null,
+          "original_status": "valid",
+          "original_train": 2.432459108855048,
+          "run": "B101",
+          "run_status": "incomplete",
+          "slot": 6,
+          "source": "results/e1_r/runs/B101/gen_6/main.py",
+          "source_sha256": "cf144b8a11aa04b38ef19987cb0d43e43256ee2165306d7340341db7ce16ab04"
+        }
+      ],
+      "source": "results/e1_r/runs/B101/gen_6/main.py",
+      "source_sha256": "cf144b8a11aa04b38ef19987cb0d43e43256ee2165306d7340341db7ce16ab04"
+    },
+    {
+      "ast_sha256": "6a4a2832f0b753dcf1ddb2f5c7cc0ac791b6003a295148f4cc791f96db8b625c",
+      "id": "ast_6a4a2832f0b753dc",
+      "kind": "generated",
+      "origins": [
+        {
+          "condition": "B",
+          "experiment": "e1",
+          "historical_selected": false,
+          "original_holdout": null,
+          "original_status": "valid",
+          "original_train": 2.046954314720812,
+          "run": "B202",
+          "run_status": "complete",
+          "slot": 4,
+          "source": "results/e1/runs/B202/gen_4/main.py",
+          "source_sha256": "916a58c5dc0d48abb2441f43c820d36ba7e844f999cffa7638f8254ad03217c2"
+        }
+      ],
+      "source": "results/e1/runs/B202/gen_4/main.py",
+      "source_sha256": "916a58c5dc0d48abb2441f43c820d36ba7e844f999cffa7638f8254ad03217c2"
+    },
+    {
+      "ast_sha256": "7aba26aa67ac88b3fa5cc695dbae7d121ad62015a479eddeedf707387c7f5331",
+      "id": "ast_7aba26aa67ac88b3",
+      "kind": "generated",
+      "origins": [
+        {
+          "condition": "A",
+          "experiment": "e1",
+          "historical_selected": false,
+          "original_holdout": null,
+          "original_status": "valid",
+          "original_train": 2.3195149464185,
+          "run": "A101",
+          "run_status": "complete",
+          "slot": 6,
+          "source": "results/e1/runs/A101/gen_6/main.py",
+          "source_sha256": "02bcb8966d48406af9862aa43739431efa507485ba1f21cf24bed763a5d77382"
+        }
+      ],
+      "source": "results/e1/runs/A101/gen_6/main.py",
+      "source_sha256": "02bcb8966d48406af9862aa43739431efa507485ba1f21cf24bed763a5d77382"
+    },
+    {
+      "ast_sha256": "7afd88a49045d0d8c25b9c06f6422875cadf0c17e410d6d0b1811666ae5a466e",
+      "id": "ast_7afd88a49045d0d8",
+      "kind": "generated",
+      "origins": [
+        {
+          "condition": "B",
+          "experiment": "e1",
+          "historical_selected": false,
+          "original_holdout": null,
+          "original_status": "valid",
+          "original_train": 2.099689791314157,
+          "run": "B202",
+          "run_status": "complete",
+          "slot": 1,
+          "source": "results/e1/runs/B202/gen_1/main.py",
+          "source_sha256": "7c311933655b60b4febfa28cf8ad27ebd47eb225ff072bb6fc80b4ad8689b972"
+        }
+      ],
+      "source": "results/e1/runs/B202/gen_1/main.py",
+      "source_sha256": "7c311933655b60b4febfa28cf8ad27ebd47eb225ff072bb6fc80b4ad8689b972"
+    },
+    {
+      "ast_sha256": "7b58a9469ec7d5921396dd237d200594f7ba52954e1b711f70a566a7251f0865",
+      "id": "ast_7b58a9469ec7d592",
+      "kind": "generated",
+      "origins": [
+        {
+          "condition": "A",
+          "experiment": "e1_r",
+          "historical_selected": false,
+          "original_holdout": null,
+          "original_status": "valid",
+          "original_train": 2.0875634517766497,
+          "run": "A101",
+          "run_status": "complete",
+          "slot": 7,
+          "source": "results/e1_r/runs/A101/gen_7/main.py",
+          "source_sha256": "134383c02ac27f662bdb84c9210a8f7e14f69a85feb5ad09de814d39d70cb974"
+        }
+      ],
+      "source": "results/e1_r/runs/A101/gen_7/main.py",
+      "source_sha256": "134383c02ac27f662bdb84c9210a8f7e14f69a85feb5ad09de814d39d70cb974"
+    },
+    {
+      "ast_sha256": "7cfa13bdccd521147d1b8e57c49c3c6606249eacf08fa2ba230024c470980328",
+      "id": "ast_7cfa13bdccd52114",
+      "kind": "generated",
+      "origins": [
+        {
+          "condition": "A",
+          "experiment": "e1",
+          "historical_selected": false,
+          "original_holdout": null,
+          "original_status": "valid",
+          "original_train": 2.550761421319797,
+          "run": "A202",
+          "run_status": "complete",
+          "slot": 2,
+          "source": "results/e1/runs/A202/gen_2/main.py",
+          "source_sha256": "3fc0574a9daa8e467461198b56c1dd47d2d4469e2d771aeac9657b48d6ac0b42"
+        }
+      ],
+      "source": "results/e1/runs/A202/gen_2/main.py",
+      "source_sha256": "3fc0574a9daa8e467461198b56c1dd47d2d4469e2d771aeac9657b48d6ac0b42"
+    },
+    {
+      "ast_sha256": "7dfee0bcfa0571ffacc0cb93f64405df5f1952830362d1628b87071435eaa456",
+      "id": "ast_7dfee0bcfa0571ff",
+      "kind": "generated",
+      "origins": [
+        {
+          "condition": "B",
+          "experiment": "e1_r",
+          "historical_selected": false,
+          "original_holdout": null,
+          "original_status": "valid",
+          "original_train": 2.5362380146644106,
+          "run": "B101",
+          "run_status": "incomplete",
+          "slot": 7,
+          "source": "results/e1_r/runs/B101/gen_7/main.py",
+          "source_sha256": "b4044feb966bd10151d21720849772004e074675d1224e8192b007024fd454ad"
+        }
+      ],
+      "source": "results/e1_r/runs/B101/gen_7/main.py",
+      "source_sha256": "b4044feb966bd10151d21720849772004e074675d1224e8192b007024fd454ad"
+    },
+    {
+      "ast_sha256": "837229573ef617bf39a373f27080e2ef71bcaa3e8b2037d76fa5a1f211e4e870",
+      "id": "ast_837229573ef617bf",
+      "kind": "generated",
+      "origins": [
+        {
+          "condition": "B",
+          "experiment": "e1_r",
+          "historical_selected": false,
+          "original_holdout": null,
+          "original_status": "valid",
+          "original_train": 2.4740552735476595,
+          "run": "B101",
+          "run_status": "incomplete",
+          "slot": 4,
+          "source": "results/e1_r/runs/B101/gen_4/main.py",
+          "source_sha256": "098db87b0a0afdb14a8785fe827189cc6da9d913e194307f86c982ba1f2cf004"
+        }
+      ],
+      "source": "results/e1_r/runs/B101/gen_4/main.py",
+      "source_sha256": "098db87b0a0afdb14a8785fe827189cc6da9d913e194307f86c982ba1f2cf004"
+    },
+    {
+      "ast_sha256": "8f214c2a88e18a3c5e9249c71704fd11b802765ad2874086bd55d0d2d6f03e8b",
+      "id": "ast_8f214c2a88e18a3c",
+      "kind": "generated",
+      "origins": [
+        {
+          "condition": "B",
+          "experiment": "e1_r",
+          "historical_selected": false,
+          "original_holdout": null,
+          "original_status": "valid",
+          "original_train": 2.369007332205302,
+          "run": "B101",
+          "run_status": "incomplete",
+          "slot": 3,
+          "source": "results/e1_r/runs/B101/gen_3/main.py",
+          "source_sha256": "fef18c88cf34ee29d7f921f034d9b7ee8ea69dc30945d607607b918120ab9f5a"
+        }
+      ],
+      "source": "results/e1_r/runs/B101/gen_3/main.py",
+      "source_sha256": "fef18c88cf34ee29d7f921f034d9b7ee8ea69dc30945d607607b918120ab9f5a"
+    },
+    {
+      "ast_sha256": "90ec9948836e016fb9da333f61cc0dcb8aa60949bd0dc4fa02e688b0334e838c",
+      "id": "ast_90ec9948836e016f",
+      "kind": "generated",
+      "origins": [
+        {
+          "condition": "A",
+          "experiment": "e1",
+          "historical_selected": false,
+          "original_holdout": null,
+          "original_status": "valid",
+          "original_train": 2.5616187253243092,
+          "run": "A202",
+          "run_status": "complete",
+          "slot": 3,
+          "source": "results/e1/runs/A202/gen_3/main.py",
+          "source_sha256": "5f5b9f8f9946fcd8bc17a8269d3c6a30cf39eb0001c709d13672fa9b2cc21c58"
+        }
+      ],
+      "source": "results/e1/runs/A202/gen_3/main.py",
+      "source_sha256": "5f5b9f8f9946fcd8bc17a8269d3c6a30cf39eb0001c709d13672fa9b2cc21c58"
+    },
+    {
+      "ast_sha256": "93a72c9ef739791e8861118a1e489ca18dff2c153bfd81f653d32825d7f1c47b",
+      "id": "ast_93a72c9ef739791e",
+      "kind": "generated",
+      "origins": [
+        {
+          "condition": "A",
+          "experiment": "e1",
+          "historical_selected": false,
+          "original_holdout": null,
+          "original_status": "valid",
+          "original_train": 2.330936266215454,
+          "run": "A202",
+          "run_status": "complete",
+          "slot": 6,
+          "source": "results/e1/runs/A202/gen_6/main.py",
+          "source_sha256": "3175721eaf12c2bb3f8db666d1e82fd27cf259fb66e2c6e179238498983428bd"
+        }
+      ],
+      "source": "results/e1/runs/A202/gen_6/main.py",
+      "source_sha256": "3175721eaf12c2bb3f8db666d1e82fd27cf259fb66e2c6e179238498983428bd"
+    },
+    {
+      "ast_sha256": "9c7ff2ed2e0a47b5548df4705b5abc86a0b79fcced364a184282ee879fe1af30",
+      "id": "ast_9c7ff2ed2e0a47b5",
+      "kind": "generated",
+      "origins": [
+        {
+          "condition": "B",
+          "experiment": "e1_r",
+          "historical_selected": true,
+          "original_holdout": null,
+          "original_status": "valid",
+          "original_train": 2.655386350817823,
+          "run": "B101",
+          "run_status": "incomplete",
+          "slot": 2,
+          "source": "results/e1_r/runs/B101/gen_2/main.py",
+          "source_sha256": "68b703128085b98c09b5ff66507e9d3e1ba1ff0b49201bfb6b72c0c4b475acf1"
+        }
+      ],
+      "source": "results/e1_r/runs/B101/gen_2/main.py",
+      "source_sha256": "68b703128085b98c09b5ff66507e9d3e1ba1ff0b49201bfb6b72c0c4b475acf1"
+    },
+    {
+      "ast_sha256": "a331c41451206436cab4e40fd55758b9f8b22fa125ac7999edfd1853a1cef452",
+      "id": "ast_a331c41451206436",
+      "kind": "generated",
+      "origins": [
+        {
+          "condition": "A",
+          "experiment": "e1_r",
+          "historical_selected": false,
+          "original_holdout": null,
+          "original_status": "valid",
+          "original_train": 2.289481105470953,
+          "run": "A101",
+          "run_status": "complete",
+          "slot": 5,
+          "source": "results/e1_r/runs/A101/gen_5/main.py",
+          "source_sha256": "c5acbfbd7a7733951aa87f840d6c3964c39031cd375e27471078d3183eccbdf2"
+        }
+      ],
+      "source": "results/e1_r/runs/A101/gen_5/main.py",
+      "source_sha256": "c5acbfbd7a7733951aa87f840d6c3964c39031cd375e27471078d3183eccbdf2"
+    },
+    {
+      "ast_sha256": "a5b32ccfdadbc4f6e70aeef32ccf8e16adeb4b842771f9774069c1ef84f753ac",
+      "id": "ast_a5b32ccfdadbc4f6",
+      "kind": "generated",
+      "origins": [
+        {
+          "condition": "A",
+          "experiment": "e1",
+          "historical_selected": false,
+          "original_holdout": null,
+          "original_status": "valid",
+          "original_train": 2.0510434292160182,
+          "run": "A303",
+          "run_status": "incomplete",
+          "slot": 2,
+          "source": "results/e1/runs/A303/gen_2/main.py",
+          "source_sha256": "891e66d54de4512d63a0df973a3b0ecd7519a6d3c781aace75ff65d57a14044e"
+        }
+      ],
+      "source": "results/e1/runs/A303/gen_2/main.py",
+      "source_sha256": "891e66d54de4512d63a0df973a3b0ecd7519a6d3c781aace75ff65d57a14044e"
+    },
+    {
+      "ast_sha256": "aaaccc2bd7f8cca77611b98ec68f8b4ee1806f05b9ed44fb7f957b534527deb6",
+      "id": "ast_aaaccc2bd7f8cca7",
+      "kind": "generated",
+      "origins": [
+        {
+          "condition": "A",
+          "experiment": "e1_r",
+          "historical_selected": false,
+          "original_holdout": null,
+          "original_status": "valid",
+          "original_train": 2.037366046249295,
+          "run": "A101",
+          "run_status": "complete",
+          "slot": 2,
+          "source": "results/e1_r/runs/A101/gen_2/main.py",
+          "source_sha256": "8b9680c82652c99c9634eaa64954c9f5ab0f3a83e63abeff68d63fdf3609249f"
+        }
+      ],
+      "source": "results/e1_r/runs/A101/gen_2/main.py",
+      "source_sha256": "8b9680c82652c99c9634eaa64954c9f5ab0f3a83e63abeff68d63fdf3609249f"
+    },
+    {
+      "ast_sha256": "ab54ac8d86e7e3d8caa8e9084958b8aed82dcea360a94f0304a7e0146288fcd0",
+      "id": "ast_ab54ac8d86e7e3d8",
+      "kind": "generated",
+      "origins": [
+        {
+          "condition": "A",
+          "experiment": "e1",
+          "historical_selected": false,
+          "original_holdout": null,
+          "original_status": "valid",
+          "original_train": 2.5362380146644106,
+          "run": "A101",
+          "run_status": "complete",
+          "slot": 7,
+          "source": "results/e1/runs/A101/gen_7/main.py",
+          "source_sha256": "6c32efba7080ada4734092c000d5eedbd49ca2f7954137dc21c9c4217566c17a"
+        }
+      ],
+      "source": "results/e1/runs/A101/gen_7/main.py",
+      "source_sha256": "6c32efba7080ada4734092c000d5eedbd49ca2f7954137dc21c9c4217566c17a"
+    },
+    {
+      "ast_sha256": "abc69c4d9e2976b9748400d1b2de19607c50c5afe43e716ac47b648e8eb62e3a",
+      "id": "ast_abc69c4d9e2976b9",
+      "kind": "generated",
+      "origins": [
+        {
+          "condition": "A",
+          "experiment": "e1",
+          "historical_selected": true,
+          "original_holdout": 2.544313725490196,
+          "original_status": "valid",
+          "original_train": 2.5362380146644106,
+          "run": "A101",
+          "run_status": "complete",
+          "slot": 1,
+          "source": "results/e1/runs/A101/gen_1/main.py",
+          "source_sha256": "f10d41828a82b0716d21b12e3d60d2102411c4e51c935a7aa9d75a9658be4cb5"
+        },
+        {
+          "condition": "A",
+          "experiment": "e1",
+          "historical_selected": false,
+          "original_holdout": null,
+          "original_status": "valid",
+          "original_train": 2.5362380146644106,
+          "run": "A101",
+          "run_status": "complete",
+          "slot": 5,
+          "source": "results/e1/runs/A101/gen_5/main.py",
+          "source_sha256": "f10d41828a82b0716d21b12e3d60d2102411c4e51c935a7aa9d75a9658be4cb5"
+        },
+        {
+          "condition": "B",
+          "experiment": "e1",
+          "historical_selected": true,
+          "original_holdout": 2.544313725490196,
+          "original_status": "valid",
+          "original_train": 2.5362380146644106,
+          "run": "B101",
+          "run_status": "complete",
+          "slot": 1,
+          "source": "results/e1/runs/B101/gen_1/main.py",
+          "source_sha256": "f10d41828a82b0716d21b12e3d60d2102411c4e51c935a7aa9d75a9658be4cb5"
+        },
+        {
+          "condition": "B",
+          "experiment": "e1",
+          "historical_selected": false,
+          "original_holdout": null,
+          "original_status": "valid",
+          "original_train": 2.5362380146644106,
+          "run": "B101",
+          "run_status": "complete",
+          "slot": 4,
+          "source": "results/e1/runs/B101/gen_4/main.py",
+          "source_sha256": "f10d41828a82b0716d21b12e3d60d2102411c4e51c935a7aa9d75a9658be4cb5"
+        },
+        {
+          "condition": "B",
+          "experiment": "e1",
+          "historical_selected": false,
+          "original_holdout": null,
+          "original_status": "valid",
+          "original_train": 2.5362380146644106,
+          "run": "B101",
+          "run_status": "complete",
+          "slot": 6,
+          "source": "results/e1/runs/B101/gen_6/main.py",
+          "source_sha256": "f10d41828a82b0716d21b12e3d60d2102411c4e51c935a7aa9d75a9658be4cb5"
+        },
+        {
+          "condition": "B",
+          "experiment": "e1",
+          "historical_selected": false,
+          "original_holdout": null,
+          "original_status": "valid",
+          "original_train": 2.5362380146644106,
+          "run": "B101",
+          "run_status": "complete",
+          "slot": 7,
+          "source": "results/e1/runs/B101/gen_7/main.py",
+          "source_sha256": "f10d41828a82b0716d21b12e3d60d2102411c4e51c935a7aa9d75a9658be4cb5"
+        },
+        {
+          "condition": "B",
+          "experiment": "e1",
+          "historical_selected": false,
+          "original_holdout": null,
+          "original_status": "valid",
+          "original_train": 2.5362380146644106,
+          "run": "B101",
+          "run_status": "complete",
+          "slot": 9,
+          "source": "results/e1/runs/B101/gen_9/main.py",
+          "source_sha256": "f10d41828a82b0716d21b12e3d60d2102411c4e51c935a7aa9d75a9658be4cb5"
+        },
+        {
+          "condition": "B",
+          "experiment": "e1",
+          "historical_selected": false,
+          "original_holdout": null,
+          "original_status": "valid",
+          "original_train": 2.5362380146644106,
+          "run": "B202",
+          "run_status": "complete",
+          "slot": 3,
+          "source": "results/e1/runs/B202/gen_3/main.py",
+          "source_sha256": "f10d41828a82b0716d21b12e3d60d2102411c4e51c935a7aa9d75a9658be4cb5"
+        },
+        {
+          "condition": "B",
+          "experiment": "e1",
+          "historical_selected": false,
+          "original_holdout": null,
+          "original_status": "valid",
+          "original_train": 2.5362380146644106,
+          "run": "B202",
+          "run_status": "complete",
+          "slot": 6,
+          "source": "results/e1/runs/B202/gen_6/main.py",
+          "source_sha256": "f10d41828a82b0716d21b12e3d60d2102411c4e51c935a7aa9d75a9658be4cb5"
+        },
+        {
+          "condition": "B",
+          "experiment": "e1",
+          "historical_selected": false,
+          "original_holdout": null,
+          "original_status": "valid",
+          "original_train": 2.5362380146644106,
+          "run": "B202",
+          "run_status": "complete",
+          "slot": 8,
+          "source": "results/e1/runs/B202/gen_8/main.py",
+          "source_sha256": "f10d41828a82b0716d21b12e3d60d2102411c4e51c935a7aa9d75a9658be4cb5"
+        },
+        {
+          "condition": "B",
+          "experiment": "e1",
+          "historical_selected": false,
+          "original_holdout": null,
+          "original_status": "valid",
+          "original_train": 2.5362380146644106,
+          "run": "B202",
+          "run_status": "complete",
+          "slot": 10,
+          "source": "results/e1/runs/B202/gen_10/main.py",
+          "source_sha256": "f10d41828a82b0716d21b12e3d60d2102411c4e51c935a7aa9d75a9658be4cb5"
+        },
+        {
+          "condition": "A",
+          "experiment": "e1",
+          "historical_selected": false,
+          "original_holdout": null,
+          "original_status": "valid",
+          "original_train": 2.5362380146644106,
+          "run": "A202",
+          "run_status": "complete",
+          "slot": 1,
+          "source": "results/e1/runs/A202/gen_1/main.py",
+          "source_sha256": "f10d41828a82b0716d21b12e3d60d2102411c4e51c935a7aa9d75a9658be4cb5"
+        },
+        {
+          "condition": "A",
+          "experiment": "e1_r",
+          "historical_selected": false,
+          "original_holdout": null,
+          "original_status": "valid",
+          "original_train": 2.5362380146644106,
+          "run": "A101",
+          "run_status": "complete",
+          "slot": 6,
+          "source": "results/e1_r/runs/A101/gen_6/main.py",
+          "source_sha256": "f10d41828a82b0716d21b12e3d60d2102411c4e51c935a7aa9d75a9658be4cb5"
+        },
+        {
+          "condition": "A",
+          "experiment": "e1_r",
+          "historical_selected": false,
+          "original_holdout": null,
+          "original_status": "valid",
+          "original_train": 2.5362380146644106,
+          "run": "A101",
+          "run_status": "complete",
+          "slot": 10,
+          "source": "results/e1_r/runs/A101/gen_10/main.py",
+          "source_sha256": "f10d41828a82b0716d21b12e3d60d2102411c4e51c935a7aa9d75a9658be4cb5"
+        },
+        {
+          "condition": "B",
+          "experiment": "e1_r",
+          "historical_selected": false,
+          "original_holdout": null,
+          "original_status": "valid",
+          "original_train": 2.5362380146644106,
+          "run": "B101",
+          "run_status": "incomplete",
+          "slot": 5,
+          "source": "results/e1_r/runs/B101/gen_5/main.py",
+          "source_sha256": "f10d41828a82b0716d21b12e3d60d2102411c4e51c935a7aa9d75a9658be4cb5"
+        },
+        {
+          "condition": "B",
+          "experiment": "e1_r",
+          "historical_selected": false,
+          "original_holdout": null,
+          "original_status": "valid",
+          "original_train": 2.5362380146644106,
+          "run": "B101",
+          "run_status": "incomplete",
+          "slot": 8,
+          "source": "results/e1_r/runs/B101/gen_8/main.py",
+          "source_sha256": "f10d41828a82b0716d21b12e3d60d2102411c4e51c935a7aa9d75a9658be4cb5"
+        },
+        {
+          "condition": "B",
+          "experiment": "e1_r",
+          "historical_selected": false,
+          "original_holdout": null,
+          "original_status": "valid",
+          "original_train": 2.5362380146644106,
+          "run": "B101",
+          "run_status": "incomplete",
+          "slot": 9,
+          "source": "results/e1_r/runs/B101/gen_9/main.py",
+          "source_sha256": "f10d41828a82b0716d21b12e3d60d2102411c4e51c935a7aa9d75a9658be4cb5"
+        }
+      ],
+      "source": "results/e1/runs/A101/gen_1/main.py",
+      "source_sha256": "f10d41828a82b0716d21b12e3d60d2102411c4e51c935a7aa9d75a9658be4cb5"
+    },
+    {
+      "ast_sha256": "b643451f8c11268c80ce1006ef9e57345fcba47da78fd8459271cf509cc375dd",
+      "id": "ast_b643451f8c11268c",
+      "kind": "generated",
+      "origins": [
+        {
+          "condition": "A",
+          "experiment": "e1",
+          "historical_selected": false,
+          "original_holdout": null,
+          "original_status": "valid",
+          "original_train": 1.958262831359278,
+          "run": "A101",
+          "run_status": "complete",
+          "slot": 10,
+          "source": "results/e1/runs/A101/gen_10/main.py",
+          "source_sha256": "9dff65bb486399c5e18836df2cf5a2b51bcfc0cc69a443fae2623bbbefcad490"
+        }
+      ],
+      "source": "results/e1/runs/A101/gen_10/main.py",
+      "source_sha256": "9dff65bb486399c5e18836df2cf5a2b51bcfc0cc69a443fae2623bbbefcad490"
+    },
+    {
+      "ast_sha256": "ba64cb62505ae2242d9d9b0025ad12fa468c3eadf88f611e808c8c7defdccbdc",
+      "id": "ast_ba64cb62505ae224",
+      "kind": "generated",
+      "origins": [
+        {
+          "condition": "A",
+          "experiment": "e1",
+          "historical_selected": false,
+          "original_holdout": null,
+          "original_status": "valid",
+          "original_train": 2.459249858996052,
+          "run": "A101",
+          "run_status": "complete",
+          "slot": 3,
+          "source": "results/e1/runs/A101/gen_3/main.py",
+          "source_sha256": "2b5716de09dae25ab362f034fbcfe5ee807a646c7725d8ce24ca50e4595e27fb"
+        }
+      ],
+      "source": "results/e1/runs/A101/gen_3/main.py",
+      "source_sha256": "2b5716de09dae25ab362f034fbcfe5ee807a646c7725d8ce24ca50e4595e27fb"
+    },
+    {
+      "ast_sha256": "bfd1a726791371306fc2e21bed4ceead87dddb2ab86e90010be472e2fb250ccd",
+      "id": "ast_bfd1a72679137130",
+      "kind": "generated",
+      "origins": [
+        {
+          "condition": "A",
+          "experiment": "e1",
+          "historical_selected": false,
+          "original_holdout": null,
+          "original_status": "valid",
+          "original_train": 2.4510716300056403,
+          "run": "A303",
+          "run_status": "incomplete",
+          "slot": 3,
+          "source": "results/e1/runs/A303/gen_3/main.py",
+          "source_sha256": "c1cff88ce6eefbca8fad8752d6bc1f48c99d4d3be6cef46db0f20fb7fc10e5ed"
+        }
+      ],
+      "source": "results/e1/runs/A303/gen_3/main.py",
+      "source_sha256": "c1cff88ce6eefbca8fad8752d6bc1f48c99d4d3be6cef46db0f20fb7fc10e5ed"
+    },
+    {
+      "ast_sha256": "c578287b060e5eb9e87eb68b6b33fc0509f0ab9aea01f538e4b278d0a1f1280e",
+      "id": "ast_c578287b060e5eb9",
+      "kind": "generated",
+      "origins": [
+        {
+          "condition": "A",
+          "experiment": "e1",
+          "historical_selected": false,
+          "original_holdout": null,
+          "original_status": "valid",
+          "original_train": 2.095600676818951,
+          "run": "A101",
+          "run_status": "complete",
+          "slot": 2,
+          "source": "results/e1/runs/A101/gen_2/main.py",
+          "source_sha256": "cc226868a22cb4d6ca64d5bc7960ae0b5e236896b898f30834b135637e2bdf31"
+        }
+      ],
+      "source": "results/e1/runs/A101/gen_2/main.py",
+      "source_sha256": "cc226868a22cb4d6ca64d5bc7960ae0b5e236896b898f30834b135637e2bdf31"
+    },
+    {
+      "ast_sha256": "c709262ff1881ec8d6428fcbfe001318b36ea5547104357c03d45601880c85f0",
+      "id": "ast_c709262ff1881ec8",
+      "kind": "generated",
+      "origins": [
+        {
+          "condition": "B",
+          "experiment": "e1",
+          "historical_selected": false,
+          "original_holdout": null,
+          "original_status": "valid",
+          "original_train": 2.4560067681895092,
+          "run": "B202",
+          "run_status": "complete",
+          "slot": 9,
+          "source": "results/e1/runs/B202/gen_9/main.py",
+          "source_sha256": "6b813a0c0fb0cebfab5e0e5d3d5780de4b95b0b574f3b2833f10807d1fbef8b1"
+        }
+      ],
+      "source": "results/e1/runs/B202/gen_9/main.py",
+      "source_sha256": "6b813a0c0fb0cebfab5e0e5d3d5780de4b95b0b574f3b2833f10807d1fbef8b1"
+    },
+    {
+      "ast_sha256": "d8035a7cf72f69d1f47db1be5f7c8ed400c35ca4401b9861899622155b7c4b71",
+      "id": "ast_d8035a7cf72f69d1",
+      "kind": "generated",
+      "origins": [
+        {
+          "condition": "A",
+          "experiment": "e1",
+          "historical_selected": false,
+          "original_holdout": null,
+          "original_status": "valid",
+          "original_train": 2.4510716300056403,
+          "run": "A101",
+          "run_status": "complete",
+          "slot": 4,
+          "source": "results/e1/runs/A101/gen_4/main.py",
+          "source_sha256": "211a749f7569233a092409be74971d4b07b63197b47b5fda3bfc9ab9a5f4ebd9"
+        }
+      ],
+      "source": "results/e1/runs/A101/gen_4/main.py",
+      "source_sha256": "211a749f7569233a092409be74971d4b07b63197b47b5fda3bfc9ab9a5f4ebd9"
+    },
+    {
+      "ast_sha256": "de865566907143d2db20de7687c4a5ef93ae3a3651a3560ad3825e4bd5e62d9c",
+      "id": "ast_de865566907143d2",
+      "kind": "generated",
+      "origins": [
+        {
+          "condition": "B",
+          "experiment": "e1",
+          "historical_selected": false,
+          "original_holdout": null,
+          "original_status": "valid",
+          "original_train": 1.8972081218274113,
+          "run": "B101",
+          "run_status": "complete",
+          "slot": 10,
+          "source": "results/e1/runs/B101/gen_10/main.py",
+          "source_sha256": "978000ae96bcf29ac3e11578529da38086432c985d00bf115892a91accf2c692"
+        }
+      ],
+      "source": "results/e1/runs/B101/gen_10/main.py",
+      "source_sha256": "978000ae96bcf29ac3e11578529da38086432c985d00bf115892a91accf2c692"
+    },
+    {
+      "ast_sha256": "f6ea12a5782197320e3b7e765b3cb6b3bcd96abc3afedc66f1660adecdd4b4a1",
+      "id": "ast_f6ea12a578219732",
+      "kind": "generated",
+      "origins": [
+        {
+          "condition": "B",
+          "experiment": "e1_r",
+          "historical_selected": false,
+          "original_holdout": null,
+          "original_status": "valid",
+          "original_train": 2.5362380146644106,
+          "run": "B101",
+          "run_status": "incomplete",
+          "slot": 1,
+          "source": "results/e1_r/runs/B101/gen_1/main.py",
+          "source_sha256": "2ac9eb736108a1e07a0ca4ed9ddfc4135635bcb68e19f040b1e4c80f57fbf38f"
+        }
+      ],
+      "source": "results/e1_r/runs/B101/gen_1/main.py",
+      "source_sha256": "2ac9eb736108a1e07a0ca4ed9ddfc4135635bcb68e19f040b1e4c80f57fbf38f"
+    },
+    {
+      "ast_sha256": "f7402192010083a7823320b0b6e5af2c63a8d5c839ae10fc6acdbb62e3f3ebec",
+      "id": "ast_f7402192010083a7",
+      "kind": "generated",
+      "origins": [
+        {
+          "condition": "B",
+          "experiment": "e1",
+          "historical_selected": false,
+          "original_holdout": null,
+          "original_status": "valid",
+          "original_train": 2.5362380146644106,
+          "run": "B101",
+          "run_status": "complete",
+          "slot": 2,
+          "source": "results/e1/runs/B101/gen_2/main.py",
+          "source_sha256": "d18b36ca67036b2c2b081a349b9d963558d80e38a3df8334d63484cb7ffff22a"
+        },
+        {
+          "condition": "B",
+          "experiment": "e1",
+          "historical_selected": false,
+          "original_holdout": null,
+          "original_status": "valid",
+          "original_train": 2.5362380146644106,
+          "run": "B101",
+          "run_status": "complete",
+          "slot": 5,
+          "source": "results/e1/runs/B101/gen_5/main.py",
+          "source_sha256": "d18b36ca67036b2c2b081a349b9d963558d80e38a3df8334d63484cb7ffff22a"
+        },
+        {
+          "condition": "B",
+          "experiment": "e1",
+          "historical_selected": false,
+          "original_holdout": null,
+          "original_status": "valid",
+          "original_train": 2.5362380146644106,
+          "run": "B101",
+          "run_status": "complete",
+          "slot": 8,
+          "source": "results/e1/runs/B101/gen_8/main.py",
+          "source_sha256": "d18b36ca67036b2c2b081a349b9d963558d80e38a3df8334d63484cb7ffff22a"
+        },
+        {
+          "condition": "B",
+          "experiment": "e1",
+          "historical_selected": true,
+          "original_holdout": 2.544313725490196,
+          "original_status": "valid",
+          "original_train": 2.5362380146644106,
+          "run": "B202",
+          "run_status": "complete",
+          "slot": 2,
+          "source": "results/e1/runs/B202/gen_2/main.py",
+          "source_sha256": "d18b36ca67036b2c2b081a349b9d963558d80e38a3df8334d63484cb7ffff22a"
+        },
+        {
+          "condition": "A",
+          "experiment": "e1",
+          "historical_selected": true,
+          "original_holdout": null,
+          "original_status": "valid",
+          "original_train": 2.5362380146644106,
+          "run": "A303",
+          "run_status": "incomplete",
+          "slot": 1,
+          "source": "results/e1/runs/A303/gen_1/main.py",
+          "source_sha256": "d18b36ca67036b2c2b081a349b9d963558d80e38a3df8334d63484cb7ffff22a"
+        }
+      ],
+      "source": "results/e1/runs/B101/gen_2/main.py",
+      "source_sha256": "d18b36ca67036b2c2b081a349b9d963558d80e38a3df8334d63484cb7ffff22a"
+    },
+    {
+      "bits": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "id": "m1_00000",
+      "kind": "memory_one"
+    },
+    {
+      "bits": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "id": "m1_00001",
+      "kind": "memory_one"
+    },
+    {
+      "bits": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "id": "m1_00010",
+      "kind": "memory_one"
+    },
+    {
+      "bits": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "id": "m1_00011",
+      "kind": "memory_one"
+    },
+    {
+      "bits": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "id": "m1_00100",
+      "kind": "memory_one"
+    },
+    {
+      "bits": [
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "id": "m1_00101",
+      "kind": "memory_one"
+    },
+    {
+      "bits": [
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "id": "m1_00110",
+      "kind": "memory_one"
+    },
+    {
+      "bits": [
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "id": "m1_00111",
+      "kind": "memory_one"
+    },
+    {
+      "bits": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "id": "m1_01000",
+      "kind": "memory_one"
+    },
+    {
+      "bits": [
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "id": "m1_01001",
+      "kind": "memory_one"
+    },
+    {
+      "bits": [
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "id": "m1_01010",
+      "kind": "memory_one"
+    },
+    {
+      "bits": [
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "id": "m1_01011",
+      "kind": "memory_one"
+    },
+    {
+      "bits": [
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "id": "m1_01100",
+      "kind": "memory_one"
+    },
+    {
+      "bits": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "id": "m1_01101",
+      "kind": "memory_one"
+    },
+    {
+      "bits": [
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "id": "m1_01110",
+      "kind": "memory_one"
+    },
+    {
+      "bits": [
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "id": "m1_01111",
+      "kind": "memory_one"
+    },
+    {
+      "bits": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "id": "m1_10000",
+      "kind": "memory_one"
+    },
+    {
+      "bits": [
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "id": "m1_10001",
+      "kind": "memory_one"
+    },
+    {
+      "bits": [
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "id": "m1_10010",
+      "kind": "memory_one"
+    },
+    {
+      "bits": [
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "id": "m1_10011",
+      "kind": "memory_one"
+    },
+    {
+      "bits": [
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "id": "m1_10100",
+      "kind": "memory_one"
+    },
+    {
+      "bits": [
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "id": "m1_10101",
+      "kind": "memory_one"
+    },
+    {
+      "bits": [
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "id": "m1_10110",
+      "kind": "memory_one"
+    },
+    {
+      "bits": [
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "id": "m1_10111",
+      "kind": "memory_one"
+    },
+    {
+      "bits": [
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "id": "m1_11000",
+      "kind": "memory_one"
+    },
+    {
+      "bits": [
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "id": "m1_11001",
+      "kind": "memory_one"
+    },
+    {
+      "bits": [
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "id": "m1_11010",
+      "kind": "memory_one"
+    },
+    {
+      "bits": [
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "id": "m1_11011",
+      "kind": "memory_one"
+    },
+    {
+      "bits": [
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "id": "m1_11100",
+      "kind": "memory_one"
+    },
+    {
+      "bits": [
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "id": "m1_11101",
+      "kind": "memory_one"
+    },
+    {
+      "bits": [
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "id": "m1_11110",
+      "kind": "memory_one"
+    },
+    {
+      "bits": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "id": "m1_11111",
+      "kind": "memory_one"
+    }
+  ]
+}
