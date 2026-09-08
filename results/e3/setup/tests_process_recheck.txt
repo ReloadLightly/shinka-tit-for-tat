@@ -1,0 +1,46 @@
+test_all_sixty_slots_and_each_duplicate_refused (test_e1r.AccountingTests.test_all_sixty_slots_and_each_duplicate_refused) ... ok
+test_failed_external_launch_reserved_once_then_latched (test_e1r.AccountingTests.test_failed_external_launch_reserved_once_then_latched) ... LOCAL failed launchok
+test_frozen_no_retry_no_auxiliary_configuration (test_e1r.AccountingTests.test_frozen_no_retry_no_auxiliary_configuration) ... ok
+test_complete_status_with_coalesced_notifications (test_e1r.MetadataTests.test_complete_status_with_coalesced_notifications) ... ok
+test_deadline_and_unmatched_notification_flood (test_e1r.MetadataTests.test_deadline_and_unmatched_notification_flood) ... ok
+test_eof_and_partial_eof (test_e1r.MetadataTests.test_eof_and_partial_eof) ... ok
+test_notification_and_response_single_write (test_e1r.MetadataTests.test_notification_and_response_single_write) ... ok
+test_partial_reads_and_utf8 (test_e1r.MetadataTests.test_partial_reads_and_utf8) ... ERROR
+test_rpc_error_does_not_echo_payload (test_e1r.MetadataTests.test_rpc_error_does_not_echo_payload) ... ok
+test_nested_child_dies_when_guard_dies (test_e1r.ProcessTests.test_nested_child_dies_when_guard_dies) ... ok
+test_timeout_returns_failure_and_preserves_output (test_e1r.ProcessTests.test_timeout_returns_failure_and_preserves_output) ... FAIL
+test_normal_native_finalization (test_e1r.TerminalTests.test_normal_native_finalization) ... ok
+test_stop_cancels_stalled_task_with_bound (test_e1r.TerminalTests.test_stop_cancels_stalled_task_with_bound) ... ok
+test_stop_drains_outstanding_task_without_manual_signal (test_e1r.TerminalTests.test_stop_drains_outstanding_task_without_manual_signal) ... ok
+test_stopped_evaluation_drains_through_native_finalizer (test_e1r.TerminalTests.test_stopped_evaluation_drains_through_native_finalizer) ... ok
+test_old_clock_failure_and_fixed_evaluation_timeout (test_e1r.TimerTests.test_old_clock_failure_and_fixed_evaluation_timeout) ... ok
+
+======================================================================
+ERROR: test_partial_reads_and_utf8 (test_e1r.MetadataTests.test_partial_reads_and_utf8)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/roland/actir/shinka-tit-for-tat/tests/test_e1r.py", line 40, in test_partial_reads_and_utf8
+    self.assertEqual(self.fixture(body), "é")
+                     ~~~~~~~~~~~~^^^^^^
+  File "/home/roland/actir/shinka-tit-for-tat/tests/test_e1r.py", line 26, in fixture
+    return rpc.request(number, "fixture", {})
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/roland/actir/shinka-tit-for-tat/e1r_status.py", line 35, in request
+    raise TimeoutError(f"Codex metadata deadline: {method}; buffered_bytes={len(self.buffer)}")
+TimeoutError: Codex metadata deadline: fixture; buffered_bytes=23
+
+======================================================================
+FAIL: test_timeout_returns_failure_and_preserves_output (test_e1r.ProcessTests.test_timeout_returns_failure_and_preserves_output)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/roland/actir/shinka-tit-for-tat/tests/test_e1r.py", line 192, in test_timeout_returns_failure_and_preserves_output
+    self.assertEqual(stdout, "fixture\n")
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+AssertionError: '' != 'fixture\n'
++ fixture
+
+
+----------------------------------------------------------------------
+Ran 16 tests in 11.297s
+
+FAILED (failures=1, errors=1)

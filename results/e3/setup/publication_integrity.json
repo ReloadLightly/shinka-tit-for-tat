@@ -1,0 +1,9 @@
+{
+  "historical_files_and_closed_ledgers_unchanged": true,
+  "original_freeze_unchanged": true,
+  "three_preserved_prompts_match_frozen_initial_prompt": true,
+  "report_links_exist": true,
+  "external_invocations": 0,
+  "fresh_transfer_matches": 0,
+  "post_search_gate_preserved": true
+}

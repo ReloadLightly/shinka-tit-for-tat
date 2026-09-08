@@ -13,10 +13,12 @@
   "recoveries": [],
   "runs": {
     "S101": {
-      "status": "paused",
-      "returncode": 2,
-      "runtime_seconds": 67.56626177899307,
-      "finished_utc": "2026-09-08T20:44:34.993946+00:00"
+      "status": "running",
+      "open_segment": {
+        "monotonic": 304696.684117149,
+        "boot_id": "63a22045-f6ab-4292-a95b-2da600c81b12",
+        "utc": "2026-09-08T20:43:22.339190+00:00"
+      }
     },
     "S202": {
       "status": "unstarted"
@@ -26,6 +28,6 @@
     }
   },
   "protocol_commit": "3288b90e625daf0f02e684eb32d791c4f3f261a1",
-  "stop_reason": "Ambiguous checkpoint generation boundary",
-  "failure_class": "checkpoint_integrity"
+  "stop_reason": "No terminal invocation for assigned generation",
+  "failure_class": "ambiguous"
 }

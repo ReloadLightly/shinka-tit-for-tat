@@ -1,0 +1,18 @@
+{
+  "as_executed_commit": "3288b90e625daf0f02e684eb32d791c4f3f261a1",
+  "changes": {
+    "run_e3.py": {
+      "as_executed_sha256": "3e4c194fd918544bffdb3cbfb252d56587200682c46391d5f0d1ced2501fb19a",
+      "repaired_sha256": "58e9b00a320c158098532e7b1d791d212c173788a037642964851d0f055f4ca9"
+    },
+    "e3_backend.py": {
+      "as_executed_sha256": "fb21176b5cef6cdad19e974c0bf921f7e975d22b10439acc958d7ea59ecceb6d",
+      "repaired_sha256": "d10c414f6e433fe30cdd8aa988a1c8988e42763d17d90505fa54e95e5048945e"
+    },
+    "tests/test_e3.py": {
+      "as_executed_sha256": "6fba557090cea81d9e572309ed799e5f85dabf535be8ab6d37ce30f984c731f3",
+      "repaired_sha256": "0339f04fada33e69b0a76727dbb9b06165af12e1470ef8aee097fdbba17215d7"
+    }
+  },
+  "status": "Post-pause repairs only; original protocol freeze and checkpoints remain unchanged. Existing freeze rejects repaired code; no live continuation performed."
+}

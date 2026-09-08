@@ -4,6 +4,8 @@ import os
 from pathlib import Path
 import random
 import shutil
+import subprocess
+import sys
 import tempfile
 import unittest
 from unittest.mock import patch
@@ -15,6 +17,31 @@ from e1r_io import write_json
 
 
 class Accounting(unittest.TestCase):
+    def test_commit_guard_works_outside_repository(self):
+        previous = Path.cwd()
+        with tempfile.TemporaryDirectory() as tmp:
+            try:
+                os.chdir(tmp)
+                with patch.object(run, 'verify_freeze'), patch.object(run, 'read', return_value={
+                        'source_sha256': {'task_prompt.txt': 'checked separately'}, 'artifact_sha256': {}}):
+                    self.assertEqual(len(run.verify_committed()), 40)
+            finally:
+                os.chdir(previous)
+
+    def test_commit_guard_sets_retry_limits_before_first_shinka_import(self):
+        code = '''
+from unittest.mock import patch
+import run_e3
+with patch.object(run_e3, 'verify_freeze'), patch.object(run_e3, 'read', return_value={'source_sha256': {}, 'artifact_sha256': {}}):
+    run_e3.verify_committed()
+from shinka.llm import constants
+assert constants.MAX_RETRIES == 1, constants.MAX_RETRIES
+assert constants.OPENAI_MAX_RETRIES == 0, constants.OPENAI_MAX_RETRIES
+print('Fresh-process frozen retry settings: one attempt, zero OpenAI retries')
+'''
+        proc = subprocess.run([sys.executable, '-c', code], cwd=run.ROOT, capture_output=True, text=True, timeout=45)
+        self.assertEqual(proc.returncode, 0, proc.stdout + proc.stderr)
+
     def test_sixty_unique_ordered_slots_and_pause(self):
         value = {'invocations': []}
         for name in backend.ORDER:

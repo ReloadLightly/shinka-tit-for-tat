@@ -1,0 +1,7 @@
+{
+  "remote": "origin",
+  "ref": "refs/heads/main",
+  "sha": "3288b90e625daf0f02e684eb32d791c4f3f261a1",
+  "verification": "git push origin main followed by git ls-remote origin refs/heads/main before --execute",
+  "external_invocations_at_verification": 0
+}

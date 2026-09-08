@@ -6,7 +6,7 @@
 
 This project tests operational rediscovery of tit-for-tat (TFT) with LLM-guided program evolution. Starting from unconditional defection, ShinkaEvolve may change a deterministic policy that observes both players' past actions. A fixed evaluator returns average own payoff against a frozen opponent panel. Identification of TFT is a separate post-search analysis and supplies no fitness bonus. The environment, payoff matrix, observations, opponents, stopping rule, and evaluator are outside candidate control.
 
-**E3 in preparation:** Three serial 20-opportunity Shinka searches will start from the exact E1-R generated grim source, with faithful failure recovery and fresh transfer manifests. [Frozen design](results/e3/protocol/PROTOCOL.md). No E3 proposal has been invoked yet.
+**Status, 2026-09-08: [E3 paused before model calls](results/e3/E3_REPORT.md).** The continuation search from previously generated grim produced **no new strategies: 0 external invocations, 3 failed local wrapper attempts, 0/3 completed runs**. A commit guard used the isolated mutation directory, and retry controls loaded after Shinka imports. Generation state then disagreed with the zero-reservation ledger, so execution paused under the frozen integrity rule. The defects are repaired and regression-tested; original checkpoints and accounting remain unchanged. No E3 transfer or recognition was run.
 
 **Previous status, 2026-09-08:** [**E2: strategy transfer — full report**](results/e2/E2_REPORT.md) completed all **86,400 fresh matches with zero experimental model calls**. Grim retained its advantage over TFT on both original panels. The selected period detector retained a training advantage but remained worse on development holdout. E2 is separate post-search screening; the preserved [E1](results/e1/E1_REPORT.md) and [E1-R](results/e1_r/E1_R_REPORT.md) comparisons remain incomplete with closed ledgers.
 
@@ -60,6 +60,8 @@ Fitness is **total own payoff / total rounds** across the 30 training matches. A
 | `analyze_archive.py` | Offline report across generated candidate files |
 | `baseline.py` | Hand-written references and exhaustive memory-one comparator |
 | `run_e2.py` / `e2_common.py` / `analyze_e2.py` / `write_e2_report.py` | Separate frozen zero-call transfer evaluation, checkpoints, verified traces and report |
+| `run_e3.py` / `e3_backend.py` / `e3_state.py` | Paused E3 continuation launcher, separate ledger and full-state checkpoints |
+| `prepare_e3.py` / `analyze_e3.py` / `diagnose_e3_prelaunch.py` | E3 protocol freeze, gated transfer evaluator and zero-call launch-failure diagnosis |
 
 The candidate is ordinary runnable Python restricted to one `policy(own_history, opponent_history)` function. The evaluator interprets its syntax: `if/elif/else`, `return`, integer actions, comparisons, Boolean expressions, integer `+`, `-`, `%`, history indexes/slices, `len`, `sum`, `min`, `max`, and `.count`. There are no assignments, loops, imports, file access, functions created by the candidate, or external calls. Histories permit rules based on the whole past; the search is not restricted to memory one. Limits are 16,000 source bytes and 400 syntax-tree nodes. Invalid actions, including Boolean returns, invalidate the candidate and receive score -1.
 

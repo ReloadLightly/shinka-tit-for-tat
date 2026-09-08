@@ -109,7 +109,6 @@ def run_codex(args):
         raise RuntimeError("Only fresh Codex exec invocations are permitted")
     if "--model" not in args or args[args.index("--model") + 1] != MODEL:
         raise RuntimeError("E3 model mismatch")
-    verify_freeze()
     from run_e3 import verify_committed
     verify_committed()
     run_id, slot = env["E3_RUN_ID"], int(env["E3_SLOT"])

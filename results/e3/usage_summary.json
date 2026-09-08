@@ -1,0 +1,18 @@
+{
+  "external_invocations": 0,
+  "local_failed_wrapper_attempts": 3,
+  "reserved_invocations": 0,
+  "completed_model_turns": 0,
+  "native_model_response_usage_records": 0,
+  "available_proposal_tokens": 0,
+  "automatic_recoveries": 0,
+  "run_statuses": {
+    "S101": "paused",
+    "S202": "unstarted",
+    "S303": "unstarted"
+  },
+  "outer_runtime_seconds": 67.56626177899307,
+  "inner_runtime_seconds": 44.26049510599114,
+  "api_list_price_estimate_not_subscription_charge": 0.0,
+  "accounting_integrity": "paused; do not interpret an empty reservation list as a reset allowance"
+}

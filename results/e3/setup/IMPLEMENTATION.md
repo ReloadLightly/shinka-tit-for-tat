@@ -54,3 +54,22 @@ zero-call preflight validates unchanged initial.py independently of the E3 seed.
 Protocol and source freeze is committed before any live invocation. A read-only
 GitHub SHA check is recorded before execution. Runtime and final publication
 evidence are added after the freeze without modifying its scientific code.
+
+## Actual E3 launch: paused before model calls
+
+The as-executed commit is 3288b90e625daf0f02e684eb32d791c4f3f261a1. Its new
+commit guard failed outside the repository because Git lacked cwd=ROOT.
+Upstream hash checks also imported Shinka before environment controls, capturing
+three default query attempts. The native-loop mocks bypassed that commit guard
+and therefore missed both defects. Three local wrapper attempts failed before
+external model launch or reservation; no candidate was produced. The terminal
+archive is intact, but next_generation_to_submit=2 and zero reservations disagree.
+The launcher correctly refused that resume boundary and paused the same E3.
+
+Post-pause repairs set controls before imports and set Git's cwd explicitly.
+Two new focused regression tests exercise the isolated-directory guard and
+fresh-process retry constants. They are repairs for review, not a live
+continuation: the preserved original freeze intentionally rejects the changed
+bytes. repair_source_hashes.json records both versions. No ledger reservation,
+checkpoint, earlier protocol file or as-executed result was retroactively edited.
+See ../E3_REPORT.md and ../prelaunch_failure_audit.json for complete actual counts.

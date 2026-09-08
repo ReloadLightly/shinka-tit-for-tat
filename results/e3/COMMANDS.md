@@ -1,5 +1,7 @@
 # E3 exact commands
 
+**Current status: paused before external model calls.** The preparation and live-launch commands below are historical, not instructions to restart the paused ledger. Source repairs now differ from the preserved original freeze; no continuation freeze or transfer has been executed. Use `python diagnose_e3_prelaunch.py`, zero-call preflights and unittest for read-only reproduction.
+
 From `/home/roland/actir/shinka-tit-for-tat`:
 
 ```bash

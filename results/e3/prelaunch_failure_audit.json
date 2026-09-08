@@ -1,0 +1,65 @@
+{
+  "external_model_invocations": 0,
+  "reserved_ledger_invocations": 0,
+  "failed_local_wrapper_attempts": 3,
+  "assigned_generation": 1,
+  "new_generated_sources": 0,
+  "completed_runs": 0,
+  "program_rows": [
+    [
+      "c7418b76-f1fd-4ce9-9eb3-16f7bca802ae",
+      0,
+      1,
+      2.655386350817823
+    ]
+  ],
+  "archive_rows": [
+    [
+      "c7418b76-f1fd-4ce9-9eb3-16f7bca802ae"
+    ]
+  ],
+  "attempt_records": [
+    [
+      1,
+      "proposal",
+      "failed",
+      "{\"api_costs\": 0.0, \"archive_inspiration_ids\": [], \"code_diff_available\": false, \"downstream_eval_submitted\": false, \"embed_cost\": 0.0, \"evaluation_finished_at\": 1788900271.8212268, \"evaluation_started_at\": 1788900271.8212268, \"evaluation_worker_capacity\": 1, \"evaluation_worker_id\": null, \"failure_class\": \"llm_output_invalid\", \"failure_json_path\": \"/home/roland/actir/shinka-tit-for-tat/results/e3/runs/S101/gen_1/failure.json\", \"failure_reason\": \"LLM response content was None.\", \"failure_stage\": \"proposal\", \"generated_code_available\": false, \"language\": \"python\", \"max_similarity\": null, \"model_name\": \"headless/codex@gpt-5.6-terra?effort=low\", \"node_kind\": \"failed_proposal\", \"novelty_attempt\": 1, \"novelty_cost\": 0.0, \"parent_id\": \"c7418b76-f1fd-4ce9-9eb3-16f7bca802ae\", \"patch_attempt\": 1, \"patch_description\": null, \"patch_name\": null, \"patch_type\": \"full\", \"pipeline_started_at\": 1788900224.0989592, \"postprocess_finished_at\": 1788900271.8212268, \"postprocess_started_at\": 1788900271.8212268, \"postprocess_worker_capacity\": 1, \"postprocess_worker_id\": null, \"resample_attempt\": 1, \"sampling_finished_at\": 1788900271.8212268, \"sampling_started_at\": 1788900224.0989592, \"sampling_worker_capacity\": 1, \"sampling_worker_id\": null, \"system_prompt_id\": null, \"timeline_lane_mode\": \"pool_slots\", \"top_k_inspiration_ids\": []}"
+    ]
+  ],
+  "checkpoint": {
+    "path": "runs/S101/checkpoints/001_terminal_00",
+    "sha256": "4f64e5520cfadbdb77c479e396e00d4f38b162b2e0f8f3127bf293e12b07e85c"
+  },
+  "checkpoint_consumed": 0,
+  "checkpoint_next_generation": 2,
+  "checkpoint_database_digest": "2288e1e4544775e328fa58a2a5b7e03ebb9b003e41980041b2c9f8e40ea6dec1",
+  "actual_database_digest": "2288e1e4544775e328fa58a2a5b7e03ebb9b003e41980041b2c9f8e40ea6dec1",
+  "console_sha256": "4b44ac768f317a99156ea0c1140ed7adb81652f56388fe8392eca29cb04a0fff",
+  "original_freeze_sha256": "19cf15d7ddd3d7e0c4a8cb35966cb94d951659ab8c9521d6207cc7c9a649cb3d",
+  "import_order_reproductions": [
+    {
+      "case": "original_order",
+      "command": [
+        "/home/roland/actir/shinka-tit-for-tat/.venv/bin/python",
+        "-c",
+        "from e1r_runtime import verify_upstream; verify_upstream(); from run_e1r import configure_imports; configure_imports(); from shinka.llm.constants import MAX_RETRIES, OPENAI_MAX_RETRIES; print(MAX_RETRIES, OPENAI_MAX_RETRIES)"
+      ],
+      "returncode": 0,
+      "stdout": "3 0\n",
+      "stderr": ""
+    },
+    {
+      "case": "repaired_order",
+      "command": [
+        "/home/roland/actir/shinka-tit-for-tat/.venv/bin/python",
+        "-c",
+        "from run_e1r import configure_imports; configure_imports(); from e1r_runtime import verify_upstream; verify_upstream(); from shinka.llm.constants import MAX_RETRIES, OPENAI_MAX_RETRIES; print(MAX_RETRIES, OPENAI_MAX_RETRIES)"
+      ],
+      "returncode": 0,
+      "stdout": "1 0\n",
+      "stderr": ""
+    }
+  ],
+  "accounting": "Failed local wrapper attempts reached no external Codex launch. Slot assignment and zero reservations disagree. No retrospective reservation, slot reuse, ledger reset or resume was performed.",
+  "analysis": "No final selections, recognition or transfer. Seed-only interim training summary is not a final selection."
+}

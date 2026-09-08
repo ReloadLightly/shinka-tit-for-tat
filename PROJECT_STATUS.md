@@ -1,8 +1,18 @@
 # Project status — 2026-09-08
 
-## Current milestone: E3 continuation search preparation
+## Current milestone: E3 paused before external model calls
 
-E3 is authorized for 60 subscription proposal invocations: S101/S202/S303, 20 each. The exact previously generated grim source is copied and verified; initial.py and all prior evidence remain unchanged. Zero-call restrictions, native normal/failure/resume rehearsals, seven focused tests and the 70-test full suite passed. The scientific protocol, source hashes and fresh encounter manifest are being committed before the first call. [Protocol](results/e3/protocol/PROTOCOL.md); [implementation and preparation failures](results/e3/setup/IMPLEMENTATION.md).
+[E3_REPORT.md](results/e3/E3_REPORT.md) is the principal current record. E3 generated **no new strategy**: 0 external proposal invocations, 3 failed local wrapper attempts, zero reservations, 0/3 completed runs. S101's only measured/archive program is the byte-identical earlier grim seed (2.655386350817823 original training); S202 and S303 are unstarted. The scientific question is unanswered, and all fresh-transfer outcomes are unavailable. No final selections, recognition or transfer evaluation were performed.
+
+The protocol, exact seed, fresh manifests, implementation and hashes were committed and remotely verified at `3288b90e625daf0f02e684eb32d791c4f3f261a1` before `python run_e3.py --execute`. Local/remote recovery started at the reviewed `9564d2125d5b818e24df1aa2b958938dc2f843f6` with a clean tree and no active experiment. Six native retrieval checks, four real-loop mock failure/resume scenarios, seven focused tests and 70 full-suite tests passed before launch, but the mocks bypassed the actual commit guard and missed its working-directory/import-order defects.
+
+S101 slot 1 was sampled from the seed. The commit guard ran Git from the isolated mutation directory and failed before metadata, reservation or external Codex. Shinka had already captured its default three query attempts because upstream hash validation imported it before environment controls. Three local attempts therefore failed with the same Git error. The terminal database checkpoint is intact, but native next_generation_to_submit=2 disagrees with consumed=0. The launcher paused the same experiment automatically; no workers remain and no transient recovery allowance was used. [Audit and zero-call reproduction](results/e3/prelaunch_failure_audit.json); [ledger](results/e3/ledger.json); [checkpoint](results/e3/runs/S101/checkpoint.json).
+
+Post-pause repairs set retry controls before imports and pass cwd=ROOT to Git. Nine focused regression checks pass. The original freeze/checkpoints remain unchanged, and [repair source hashes](results/e3/setup/repair_source_hashes.json) distinguish current repairs from as-executed code. The original freeze rejects those repaired bytes, so no accidental live restart is possible. Zero reservations must not be treated as a reset 60-call allowance; failed local launch/slot accounting requires explicit reconciliation before a continuation freeze. Do not rerun slot 1, relabel retries, reset the ledger or restart from the best policy alone.
+
+Final verification is qualified: the post-repair 72-test suite failed an unchanged 0.1-second subprocess-startup fixture. The 16-test recheck repeated that failure and also timed out the unchanged 0.25-second partial-UTF-8 fixture. No historical test/bound was modified; logs are preserved. Nine E3-focused tests, both zero-call preflights and publication source/prompt/ledger checks pass. The post-repair full suite is not green.
+
+The bounded proposed next step is a zero-call reconciliation review and isolated-backend failure fixture for this same E3, with no new call authorization or other experiment. E2's evaluation-only follow-up remains unexecuted. All initial.py, earlier scientific sources, historical results and closed ledgers remain unchanged.
 
 ## Preserved E2 strategy transfer complete
 

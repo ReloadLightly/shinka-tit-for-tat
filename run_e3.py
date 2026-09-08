@@ -77,12 +77,13 @@ def preflight():
 
 
 def verify_committed():
+    configure_imports()
     verify_freeze()
-    commit = subprocess.check_output(['git', 'rev-parse', 'HEAD'], text=True).strip()
+    commit = subprocess.check_output(['git', 'rev-parse', 'HEAD'], text=True, cwd=ROOT).strip()
     frozen = read(E3 / 'protocol/freeze.json')
     names = list(frozen['source_sha256']) + ['results/e3/' + n for n in frozen['artifact_sha256']] + ['results/e3/protocol/freeze.json']
     for name in names:
-        if subprocess.check_output(['git', 'show', f'{commit}:{name}']) != (ROOT / name).read_bytes():
+        if subprocess.check_output(['git', 'show', f'{commit}:{name}'], cwd=ROOT) != (ROOT / name).read_bytes():
             raise RuntimeError('Uncommitted freeze: ' + name)
     return commit
 
@@ -211,8 +212,8 @@ def execute(resume=False):
 
 
 def run_one(run_id):
-    verify_freeze()
     configure_imports()
+    verify_freeze()
     from shinka.core import EvolutionConfig, ShinkaEvolveRunner
     from shinka.database import DatabaseConfig, Program
     from shinka.launch import LocalJobConfig
