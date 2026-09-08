@@ -6,7 +6,9 @@
 
 This project tests operational rediscovery of tit-for-tat (TFT) with LLM-guided program evolution. Starting from unconditional defection, ShinkaEvolve may change a deterministic policy that observes both players' past actions. A fixed evaluator returns average own payoff against a frozen opponent panel. Identification of TFT is a separate post-search analysis and supplies no fitness bonus. The environment, payoff matrix, observations, opponents, stopping rule, and evaluator are outside candidate control.
 
-**Status, 2026-09-08:** [**E2: strategy transfer — full report**](results/e2/E2_REPORT.md) completed all **86,400 fresh matches with zero experimental model calls**. Grim retained its advantage over TFT on both original panels. The selected period detector retained a training advantage but remained worse on development holdout. E2 is separate post-search screening; the preserved [E1](results/e1/E1_REPORT.md) and [E1-R](results/e1_r/E1_R_REPORT.md) comparisons remain incomplete with closed ledgers.
+**E3 in preparation:** Three serial 20-opportunity Shinka searches will start from the exact E1-R generated grim source, with faithful failure recovery and fresh transfer manifests. [Frozen design](results/e3/protocol/PROTOCOL.md). No E3 proposal has been invoked yet.
+
+**Previous status, 2026-09-08:** [**E2: strategy transfer — full report**](results/e2/E2_REPORT.md) completed all **86,400 fresh matches with zero experimental model calls**. Grim retained its advantage over TFT on both original panels. The selected period detector retained a training advantage but remained worse on development holdout. E2 is separate post-search screening; the preserved [E1](results/e1/E1_REPORT.md) and [E1-R](results/e1_r/E1_R_REPORT.md) comparisons remain incomplete with closed ledgers.
 
 ## Research question and predictions
 

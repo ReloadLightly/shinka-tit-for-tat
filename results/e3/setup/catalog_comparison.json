@@ -1,0 +1,9 @@
+{
+  "cache_sha256": "2654fe5c52d83b9480285991280ade5769993765aefe66c45a772a3c871f21d3",
+  "differences": {
+    "apply_patch_tool_type": {
+      "cached": "freeform",
+      "restricted": null
+    }
+  }
+}

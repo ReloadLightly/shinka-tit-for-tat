@@ -16,3 +16,10 @@ results/e1_r/setup/rehearsal*/**/bin/
 results/e1_r/setup/rehearsal*/**/execution.lock
 results/e1_r/setup/legacy_stop/bin/
 results/e2/execution.lock
+results/e3/bin/
+results/e3/ledger.lock
+results/e3/execution.lock
+results/e3/setup/rehearsal*/**/bin/
+results/e3/setup/rehearsal*/**/execution.lock
+results/e3/setup/rehearsal*/**
+!results/e3/setup/rehearsal*/summary.json

@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "records": [
+    {
+      "mode": "normal",
+      "passed": true,
+      "mock_slots": 20,
+      "external_proposal_invocations": 0
+    },
+    {
+      "mode": "middle",
+      "passed": true,
+      "mock_slots": 20,
+      "external_proposal_invocations": 0
+    },
+    {
+      "mode": "final",
+      "passed": true,
+      "mock_slots": 20,
+      "external_proposal_invocations": 0
+    },
+    {
+      "mode": "first",
+      "passed": true,
+      "mock_slots": 20,
+      "external_proposal_invocations": 0
+    }
+  ],
+  "external_proposal_invocations": 0
+}

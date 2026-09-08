@@ -1,0 +1,31 @@
+test_at_most_two_read_only_recoveries (test_e3.Accounting.test_at_most_two_read_only_recoveries) ... ok
+test_failure_classifier_is_narrow_and_auth_wins (test_e3.Accounting.test_failure_classifier_is_narrow_and_auth_wins) ... ok
+test_launch_failure_is_reserved_once_no_fitness (test_e3.Accounting.test_launch_failure_is_reserved_once_no_fitness) ... Connection failed: error sending requestok
+test_no_post_search_before_three_completions (test_e3.Accounting.test_no_post_search_before_three_completions) ... ok
+test_sixty_unique_ordered_slots_and_pause (test_e3.Accounting.test_sixty_unique_ordered_slots_and_pause) ... ok
+test_native_checkpoint_recovers_context_and_entire_archive (test_e3.FaithfulState.test_native_checkpoint_recovers_context_and_entire_archive) ...                              Parent & Context Sampling Summary - Gen 5 | Total C
+┏━━━━━━━━━━━━━┳━━━━━━┳━━━━━━━━━┳━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+┃ Role        ┃ Gen  ┃ Island  ┃  ✓/✗  ┃    Score ┃ Patch Name                  
+┡━━━━━━━━━━━━━╇━━━━━━╇━━━━━━━━━╇━━━━━━━╇━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+│ PARENT      │  3   │   I-0   │   ✓   │    4.000 │ N/A                         
+│ TopK-1      │  4   │   I-0   │   ✓   │    5.000 │ N/A                         
+└─────────────┴──────┴─────────┴───────┴──────────┴─────────────────────────────
+FAIL
+test_python_and_numpy_rng_roundtrip (test_e3.FaithfulState.test_python_and_numpy_rng_roundtrip) ... ok
+
+======================================================================
+FAIL: test_native_checkpoint_recovers_context_and_entire_archive (test_e3.FaithfulState.test_native_checkpoint_recovers_context_and_entire_archive)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/roland/actir/shinka-tit-for-tat/tests/test_e3.py", line 115, in test_native_checkpoint_recovers_context_and_entire_archive
+    self.assertEqual(state.database_digest(path), digest)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'cb793f9f823a0dc4f8d2af491aec7b0f1bb296a65047922df0bcd90d24ee697a' != '53f54bcbe03f5e0ae009b28ad23c18d27a410949aa98e67986b67a67ebd93674'
+- cb793f9f823a0dc4f8d2af491aec7b0f1bb296a65047922df0bcd90d24ee697a
++ 53f54bcbe03f5e0ae009b28ad23c18d27a410949aa98e67986b67a67ebd93674
+
+
+----------------------------------------------------------------------
+Ran 7 tests in 2.176s
+
+FAILED (failures=1)

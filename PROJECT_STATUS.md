@@ -1,6 +1,10 @@
 # Project status — 2026-09-08
 
-## Current milestone: E2 strategy transfer complete
+## Current milestone: E3 continuation search preparation
+
+E3 is authorized for 60 subscription proposal invocations: S101/S202/S303, 20 each. The exact previously generated grim source is copied and verified; initial.py and all prior evidence remain unchanged. Zero-call restrictions, native normal/failure/resume rehearsals, seven focused tests and the 70-test full suite passed. The scientific protocol, source hashes and fresh encounter manifest are being committed before the first call. [Protocol](results/e3/protocol/PROTOCOL.md); [implementation and preparation failures](results/e3/setup/IMPLEMENTATION.md).
+
+## Preserved E2 strategy transfer complete
 
 [E2_REPORT.md](results/e2/E2_REPORT.md) is the current principal deliverable. It contains the setup, original focal sources, branch explanations, six scored traces and exact reproduction commands. [CATALOGUE.md](results/e2/CATALOGUE.md) covers every source/origin, exclusion and per-opponent result; [summary.json](results/e2/summary.json) and [per_match.jsonl](results/e2/per_match.jsonl) provide machine-readable evidence.
 

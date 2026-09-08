@@ -1,0 +1,24 @@
+Traceback (most recent call last):
+  File "/home/roland/actir/shinka-tit-for-tat/rehearse_e3.py", line 115, in <module>
+    rehearse(root)
+    ~~~~~~~~^^^^^^
+  File "/home/roland/actir/shinka-tit-for-tat/rehearse_e3.py", line 85, in rehearse
+    rc, saved = launch(folder, failures)
+                ~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/home/roland/actir/shinka-tit-for-tat/rehearse_e3.py", line 75, in launch
+    result = subprocess.run(command, stdout=log, stderr=subprocess.STDOUT, timeout=240)
+  File "/home/roland/.local/share/uv/python/cpython-3.13-linux-x86_64-gnu/lib/python3.13/subprocess.py", line 556, in run
+    stdout, stderr = process.communicate(input, timeout=timeout)
+                     ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/roland/.local/share/uv/python/cpython-3.13-linux-x86_64-gnu/lib/python3.13/subprocess.py", line 1222, in communicate
+    stdout, stderr = self._communicate(input, endtime, timeout)
+                     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/roland/.local/share/uv/python/cpython-3.13-linux-x86_64-gnu/lib/python3.13/subprocess.py", line 2154, in _communicate
+    self.wait(timeout=self._remaining_time(endtime))
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/roland/.local/share/uv/python/cpython-3.13-linux-x86_64-gnu/lib/python3.13/subprocess.py", line 1280, in wait
+    return self._wait(timeout=timeout)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/roland/.local/share/uv/python/cpython-3.13-linux-x86_64-gnu/lib/python3.13/subprocess.py", line 2058, in _wait
+    raise TimeoutExpired(self.args, timeout)
+subprocess.TimeoutExpired: Command '['/home/roland/actir/shinka-tit-for-tat/.venv/bin/python', '/home/roland/actir/shinka-tit-for-tat/rehearse_e3.py', '--child', '--root', '/home/roland/actir/shinka-tit-for-tat/results/e3/setup/rehearsal_initial/normal', '--failures', '']' timed out after 240 seconds

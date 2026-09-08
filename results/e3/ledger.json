@@ -1,0 +1,25 @@
+{
+  "limit": 60,
+  "per_run_limit": 20,
+  "order": [
+    "S101",
+    "S202",
+    "S303"
+  ],
+  "invocations": [],
+  "stopped": false,
+  "closed": false,
+  "execution_started": false,
+  "recoveries": [],
+  "runs": {
+    "S101": {
+      "status": "unstarted"
+    },
+    "S202": {
+      "status": "unstarted"
+    },
+    "S303": {
+      "status": "unstarted"
+    }
+  }
+}
