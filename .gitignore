@@ -5,3 +5,5 @@ __pycache__/
 .env.*
 results/live-*/
 results/preflight-*/
+results/subscription_pilot_001_usage/bin/
+results/subscription_pilot_001_usage/invocations.lock

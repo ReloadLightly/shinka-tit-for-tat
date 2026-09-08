@@ -1,0 +1,231 @@
+{
+  "best_by_run": [
+    {
+      "id": "913bd7b3-4624-41da-a554-a55b16cb1154",
+      "generation": 0,
+      "training_payoff": 2.3310772701635645,
+      "complete_executable_source": "# EVOLVE-BLOCK-START\ndef policy(own_history, opponent_history):\n    return 1\n# EVOLVE-BLOCK-END\n",
+      "source_sha256": "f83fb4c8ffc3313079ff6fa09bef89da8b6ed67d8f604a414c3493d97ba9a32b",
+      "retained_in_archive": true,
+      "holdout_payoff": 2.0015686274509803,
+      "recognition": {
+        "matches_tft_probes": false,
+        "probe_count": 1640,
+        "first_mismatches": [
+          {
+            "length": 0,
+            "own_tail": [],
+            "other_tail": [],
+            "expected": 0,
+            "actual": 1
+          },
+          {
+            "length": 1,
+            "own_tail": [
+              0
+            ],
+            "other_tail": [
+              0
+            ],
+            "expected": 0,
+            "actual": 1
+          },
+          {
+            "length": 1,
+            "own_tail": [
+              1
+            ],
+            "other_tail": [
+              0
+            ],
+            "expected": 0,
+            "actual": 1
+          },
+          {
+            "length": 2,
+            "own_tail": [
+              0,
+              0
+            ],
+            "other_tail": [
+              0,
+              0
+            ],
+            "expected": 0,
+            "actual": 1
+          },
+          {
+            "length": 2,
+            "own_tail": [
+              0,
+              0
+            ],
+            "other_tail": [
+              1,
+              0
+            ],
+            "expected": 0,
+            "actual": 1
+          },
+          {
+            "length": 2,
+            "own_tail": [
+              0,
+              1
+            ],
+            "other_tail": [
+              0,
+              0
+            ],
+            "expected": 0,
+            "actual": 1
+          },
+          {
+            "length": 2,
+            "own_tail": [
+              0,
+              1
+            ],
+            "other_tail": [
+              1,
+              0
+            ],
+            "expected": 0,
+            "actual": 1
+          },
+          {
+            "length": 2,
+            "own_tail": [
+              1,
+              0
+            ],
+            "other_tail": [
+              0,
+              0
+            ],
+            "expected": 0,
+            "actual": 1
+          }
+        ],
+        "claim": "Agreement on finite probes is not proof of equivalence on every possible history."
+      }
+    },
+    {
+      "id": "da4c43bd-228f-4da9-b5ab-7e756c217185",
+      "generation": 1,
+      "training_payoff": 2.5331359278059784,
+      "complete_executable_source": "# EVOLVE-BLOCK-START\ndef policy(own_history, opponent_history):\n    return 0 if len(opponent_history) == 0 else 1 if len(opponent_history) > 2 and opponent_history.count(0) == 0 else own_history[-1] if opponent_history[-1] == 0 else 1 - own_history[-1]\n# EVOLVE-BLOCK-END\n",
+      "source_sha256": "6f8f8b32a1fcd9c6507551f57d2c847d66fe5e029e173ecd59e86c6d1d9a751b",
+      "retained_in_archive": true,
+      "holdout_payoff": 2.444313725490196,
+      "recognition": {
+        "matches_tft_probes": false,
+        "probe_count": 1640,
+        "first_mismatches": [
+          {
+            "length": 1,
+            "own_tail": [
+              1
+            ],
+            "other_tail": [
+              0
+            ],
+            "expected": 0,
+            "actual": 1
+          },
+          {
+            "length": 1,
+            "own_tail": [
+              1
+            ],
+            "other_tail": [
+              1
+            ],
+            "expected": 1,
+            "actual": 0
+          },
+          {
+            "length": 2,
+            "own_tail": [
+              0,
+              1
+            ],
+            "other_tail": [
+              0,
+              0
+            ],
+            "expected": 0,
+            "actual": 1
+          },
+          {
+            "length": 2,
+            "own_tail": [
+              0,
+              1
+            ],
+            "other_tail": [
+              0,
+              1
+            ],
+            "expected": 1,
+            "actual": 0
+          },
+          {
+            "length": 2,
+            "own_tail": [
+              0,
+              1
+            ],
+            "other_tail": [
+              1,
+              0
+            ],
+            "expected": 0,
+            "actual": 1
+          },
+          {
+            "length": 2,
+            "own_tail": [
+              0,
+              1
+            ],
+            "other_tail": [
+              1,
+              1
+            ],
+            "expected": 1,
+            "actual": 0
+          },
+          {
+            "length": 2,
+            "own_tail": [
+              1,
+              1
+            ],
+            "other_tail": [
+              0,
+              0
+            ],
+            "expected": 0,
+            "actual": 1
+          },
+          {
+            "length": 2,
+            "own_tail": [
+              1,
+              1
+            ],
+            "other_tail": [
+              0,
+              1
+            ],
+            "expected": 1,
+            "actual": 0
+          }
+        ],
+        "claim": "Agreement on finite probes is not proof of equivalence on every possible history."
+      }
+    }
+  ],
+  "invocations": 5
+}

@@ -6,13 +6,13 @@
 
 This project tests operational rediscovery of tit-for-tat (TFT) with LLM-guided program evolution. Starting from unconditional defection, ShinkaEvolve may change a deterministic policy that observes both players' past actions. A fixed evaluator returns average own payoff against a frozen opponent panel. Identification of TFT is a separate post-search analysis and supplies no fitness bonus. The environment, payoff matrix, observations, opponents, stopping rule, and evaluator are outside candidate control.
 
-**Status, 2026-09-08:** reference experiments, exhaustive comparison of 32 deterministic memory-one policies, and zero-call preflight have run. No ShinkaEvolve mutation has run in this environment: the dependency and API credential are absent. The live launcher uses the inspected, pinned upstream API, but its live integration remains untested here. This is a small prospective pilot, not a reconstruction of either historical Axelrod tournament.
+**Status, 2026-09-08:** the first real native ShinkaEvolve/Headless/Codex pilot completed through the existing ChatGPT Pro login. Five external invocation slots yielded one pre-model configuration failure and four generated files: three valid archived policies and one rejected TFT expression. The best valid policy scored 2.533136 on training and 2.444314 on holdout. No valid mutation passed the TFT probes. This is an **unblinded integration pilot**, not discovery under enforced hidden information or a historical tournament reconstruction.
 
 ## Research question and predictions
 
 Record three distinct outcomes: whether TFT-compatible behavior appears in any generated valid candidate; whether it is the best candidate under training payoff; and how the payoff-selected candidate performs on held-out encounters. A non-TFT winner is an informative outcome, not grounds to change opponents until TFT wins.
 
-An LLM may already know TFT. Recovering its behavior demonstrates operational rediscovery under this interface, not invention from an uninformed prior. This first five-proposal pilot cannot attribute success specifically to evolutionary feedback. That claim needs multiple independent runs and a same-model, equal-budget control receiving no evolutionary feedback. Exhaustive enumeration below is a comparator, not that control.
+An LLM may already know TFT. Recovering its behavior demonstrates operational rediscovery under this interface, not invention from an uninformed prior. This first five-invocation pilot cannot attribute success specifically to evolutionary feedback. That claim needs multiple independent runs and a same-model, equal-budget control receiving no evolutionary feedback. Exhaustive enumeration below is a comparator, not that control.
 
 ## Method
 
@@ -40,12 +40,14 @@ Fitness is **total own payoff / total rounds** across the 30 training matches. A
 
 | File | Role |
 |---|---|
-| `initial.py` | Evolved program; initially always defects |
+| `initial.py` | Preserved original unconditional-defection seed |
 | `environment.py` | Fixed game, opponents, seeds, horizons, and payoff measurement |
 | `policy.py` | Validates and interprets candidate decision code without executing arbitrary Python |
 | `evaluate.py` | Shinka adapter; writes payoff-only `metrics.json` and validity `correct.json` |
 | `task_prompt.txt` | Exact task-specific model instruction; contains no target strategy or opponent names |
-| `run_evo.py` | Zero-call preflight and real upstream ShinkaEvolve launcher |
+| `run_evo.py` | Zero-call preflight and real upstream ShinkaEvolve subscription launcher |
+| `subscription_guard.py` / `subscription_status.py` | Invocation ledger, native Codex process controls, and read-only account/quota checks |
+| `audit_pilot.py` | Post-search comparison of candidate files, live database/archive records, and usage |
 | `recognize.py` | Offline behavioral probes and holdout evaluation for one candidate |
 | `analyze_archive.py` | Offline report across generated candidate files |
 | `baseline.py` | Hand-written references and exhaustive memory-one comparator |
@@ -70,7 +72,38 @@ These are recorded reference measurements, **not evolved discoveries**. Each str
 
 The exhaustive memory-one comparison places TFT **2nd of 32**, with `00111` first. In this panel, grim earns more against the random opponent while preserving cooperation against cooperative references. A higher-payoff policy need not be TFT. Scores describe these specified encounters, with no uncertainty estimate or claim of universal optimality.
 
-Evidence: [`results/baseline.json`](results/baseline.json), [`results/preflight.json`](results/preflight.json), and [`results/tests.txt`](results/tests.txt). The baseline records source hashes, individual matches, and all 32 comparator scores. Zero API calls were made; there is no evolved policy or live archive yet.
+Evidence: [`results/baseline.json`](results/baseline.json), [`results/preflight.json`](results/preflight.json), and [`results/tests.txt`](results/tests.txt). The baseline records source hashes, individual matches, and all 32 comparator scores. These baseline/preflight artifacts made zero model calls; live evolution evidence is reported separately below.
+
+## Measured subscription pilot
+
+The pinned native search used `headless/codex@gpt-5.6-terra?effort=low`, Headless 0.6.1, Codex 0.153.4, and ChatGPT Pro authentication. One initial launch failed before a model turn because Codex disallows overriding a reserved provider ID. After a local configuration repair, the remaining four invocation slots ran through Shinka's real parent sampling, mutation, evaluation, and archive loop. Both run directories and all failures are retained; this is one integration milestone, not two independent replicates.
+
+| Repaired-run generation | Policy | Training | Holdout | Shinka outcome |
+|---|---|---:|---:|---|
+| 0 | Original defection seed | 2.331077 | 2.001569 | Archived |
+| 1 | Guarded win-stay, lose-shift | **2.533136** | **2.444314** | **Payoff-selected best**, archived |
+| 2 | Periodic probing and forgiving retaliation | 1.966159 | 2.187647 | Archived |
+| 3 | Echo detection and defection probing | 2.226029 | 2.255098 | Archived |
+| 4 | TFT expression with redundant branch | -1 validity sentinel | Not run | Invalid; DB row, no archive membership |
+
+All three valid mutations failed the 1,640 TFT probes. Generation 4 contains a forbidden tuple literal, so the fixed interpreter rejected it before simulation. Static inspection shows its ordinary Python rule is TFT: start with 0, otherwise copy the last opponent action; its additional branch returns 1 only when that last action is already 1. This source observation is separate from finite probing and **does not constitute a valid evolved TFT policy**. The model's accompanying claim of permanent defection does not match its code.
+
+The complete executable source of the payoff-selected generation 1 is:
+
+```python
+# EVOLVE-BLOCK-START
+def policy(own_history, opponent_history):
+    return 0 if len(opponent_history) == 0 else 1 if len(opponent_history) > 2 and opponent_history.count(0) == 0 else own_history[-1] if opponent_history[-1] == 0 else 1 - own_history[-1]
+# EVOLVE-BLOCK-END
+```
+
+It uses win-stay, lose-shift except that it defects after at least three opponent actions if the opponent has never cooperated. It improves on the seed but remains below the TFT reference on training. The [database/offline audit](results/pilot_001_audit.json) verifies source hashes, live evaluations, archive membership, and Shinka's best-program record. Four generated files were evaluated, three were valid/archived, and one was invalid; `best/` copies are not additional proposals. Holdout results did not select the winner.
+
+The native read-only wrapper allows broad file reads; it also normally enables web search. This run disabled search and automatic project instructions and requested use of only supplied task/programs/training feedback. Generic native skill/plugin instructions still appeared and are preserved. No file/search/tool call was observed in the successful traces, but confidentiality was not enforced. Accordingly, this is an **unblinded integration pilot**. It neither establishes discovery under hidden information nor separates evolutionary-feedback benefits from LLM prior knowledge.
+
+The [usage records](results/subscription_pilot_001_usage/usage_summary.json) distinguish **five invocations**, **four successful Codex turns**, and **four native model-response usage records**. An invocation can contain multiple model requests. Reported tokens were 50,334 input (15,872 cached) and 4,783 output (3,998 reasoning); cached/reasoning counts are subsets. Headless's $0.1294944 API list-price estimate is not a charge. The account credit balance was unchanged at 90.6853810000, while account-wide subscription usage moved from 1% to 2%; concurrent supervisor use and rounding prevent exclusive attribution. No API-key authentication, paid API fallback, credit purchase, or GitHub Actions was used.
+
+See [the full pilot report](results/PILOT_001.md) for every candidate's diagnosis, the rejected source, commands, failure provenance, access limits, and evidence links.
 
 ## Run locally
 
@@ -84,20 +117,24 @@ python3 run_evo.py --preflight
 
 Each baseline/report command refuses to overwrite its existing evidence file. Choose a new output name for another run.
 
-For the actual ShinkaEvolve pilot, create a local environment and install the pinned dependency. `OPENAI_API_KEY` must be exported in your local shell; never commit the credential.
+The subscription workflow uses the pinned dependency in a local environment:
 
 ```bash
-python3 -m venv .venv
-source .venv/bin/activate
-python -m pip install -r requirements-shinka.txt
-python run_evo.py --preflight
-python run_evo.py --execute --mutations 5 --max-api-cost 0.50 --results-dir results/pilot_001
-python analyze_archive.py --results-dir results/pilot_001 --output results/pilot_001/diagnostics.json
+uv venv .venv
+uv pip install --python .venv/bin/python -r requirements-shinka.txt
+.venv/bin/python run_evo.py --preflight
+# The completed first milestone used these commands; its ledger prevents reruns.
+.venv/bin/python run_evo.py --execute --mutations 5 --results-dir results/pilot_001
+# After the recorded pre-model configuration repair, only four slots remained:
+.venv/bin/python run_evo.py --execute --mutations 4 --continue-after-config-failure --results-dir results/pilot_001_repaired
+.venv/bin/python audit_pilot.py --run results/pilot_001 --run results/pilot_001_repaired --usage-dir results/subscription_pilot_001_usage --output results/pilot_001_audit.json
 ```
 
-The pilot uses `gpt-5-mini`, five mutation proposals plus the initial seed (six Shinka generations), one concurrent proposal/evaluation, and 4,096 maximum output tokens per request. Provider retry controls are bounded; embeddings, novelty calls, meta calls, and prompt evolution are disabled. The **$0.50 setting is a soft scheduling threshold, not a hard spending cap**: an in-flight call can exceed it. The default command makes zero model calls; `--execute` launches paid calls. Shinka is pinned by Git commit, while transitive dependencies are recorded with `pip freeze` for each launch rather than fully locked.
+The default remains zero-call. `--execute` requires existing ChatGPT Pro authentication and checks the explicitly configured model and subscription quota. It does not require `OPENAI_API_KEY` or a dollar threshold. The local guard forces native ChatGPT authentication, fixes the subscription endpoint, strips API-key/endpoint environment overrides, and changes no global credentials or permissions. A durable first-milestone ledger limits external proposal invocations to five and refuses automatic restarts; the explicit configuration-repair route retained the failed invocation. A later milestone needs a separately reviewed allowance.
 
-Inspect rejected candidates and logs as well as successful outputs. A completed runner does not prove rediscovery. Archive diagnostics are a separate rescore of generated files; they must not be mistaken for proof of what the live database evaluated or retained. The launcher records source hashes, search seed, environment, and status. Remote model outputs need not reproduce bit-for-bit even with identical seeds. Before sharing live results, review logs and preserve prompts, generated sources, validity, scores, and costs. No GitHub Actions workflows are installed.
+Proposals/evaluations are serial. Each Codex process has a 180-second timeout; Headless has 210 seconds and the native provider 240 seconds. Request/stream retries, patch resampling, embeddings, novelty/meta calls, prompt evolution, and provider fallback are disabled. Quota checks before each proposal refuse unknown/exhausted quota or at least 90% window usage, with backend failures stopping further external calls. Native Headless ignores `max_tokens`, so no token cap is claimed. Shinka is Git-pinned; installed transitive dependency versions are recorded per run. Remote outputs are not bit-for-bit reproducible from the local search seed.
+
+All 26 local unit tests and both zero-call preflights passed. Prompts, source snapshots, candidate sources, feedback, failed attempts, usage, configurations, logs, and databases are retained after credential review. The original `initial.py` and evaluator remain unchanged. No GitHub Actions workflows are installed.
 
 ## Sources and deviations
 
@@ -107,4 +144,4 @@ Inspect rejected candidates and logs as well as successful outputs. A completed 
 
 ## Next bounded milestone
 
-Run the five-proposal live pilot in a configured environment, preserve the archive, and inspect every valid candidate. Report whether TFT-compatible behavior appeared, its training payoff and generation, the payoff-selected winner, and holdout performance. Only after that decide whether the experiment warrants replicated search and no-feedback controls. The result may be TFT, a TFT variant, another strategy, or no useful mutation.
+Establish and locally verify an enforced mutation information boundary, then run one five-invocation blinded replication using the same model, seed program, interpreter, panels, and payoff-only fitness. Keep the invalid tuple proposal as evidence and do not relax the evaluator in response. Independent replicated seeds and an equal-budget feedback-free control remain later work; neither was added to this first pilot.

@@ -1,0 +1,308 @@
+{
+  "codex_version": {
+    "command": [
+      "codex",
+      "--version"
+    ],
+    "returncode": 0,
+    "stdout": "codex-cli 0.153.4\n",
+    "stderr": "WARNING: proceeding, even though we could not create PATH aliases: Read-only file system (os error 30)\n"
+  },
+  "headless_version": {
+    "command": [
+      "headless",
+      "--version"
+    ],
+    "returncode": 0,
+    "stdout": "0.6.1\n",
+    "stderr": ""
+  },
+  "authentication": {
+    "command": [
+      "codex",
+      "login",
+      "status"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "WARNING: proceeding, even though we could not create PATH aliases: Read-only file system (os error 30)\nLogged in using ChatGPT\n"
+  },
+  "headless_check": {
+    "command": [
+      "headless",
+      "codex",
+      "--check"
+    ],
+    "returncode": 0,
+    "stdout": "+-------------+---+-------+---------+------------------------+--------+\n| Agent       | S | Auth  | Version | Model                  | Effort |\n+-------------+---+-------+---------+------------------------+--------+\n| acp         | \u2717 | -     | -       | -                      | -      |\n| antigravity | \u2717 | -     | -       | -                      | -      |\n| claude      | \u2713 | -     | unknown | claude-opus-4-6        | -      |\n| codex       | \u2713 | oauth | 0.153.4 | gpt-5.5                | -      |\n| cursor      | \u2717 | -     | -       | gpt-5.5                | medium |\n| gemini      | \u2717 | -     | -       | gemini-3.1-pro-preview | -      |\n| opencode    | \u2717 | -     | -       | openai/gpt-5.4         | -      |\n| pi          | \u2717 | -     | -       | openai-codex/gpt-5.5   | -      |\n+-------------+---+-------+---------+------------------------+--------+\n+--------+--------+---------+--------------------------------------+\n| Docker | Status | Version | Default image                        |\n+--------+--------+---------+--------------------------------------+\n| docker | \u2717      | -       | ghcr.io/roberttlange/headless:latest |\n+--------+--------+---------+--------------------------------------+\n",
+    "stderr": ""
+  },
+  "git_head": {
+    "command": [
+      "git",
+      "rev-parse",
+      "HEAD"
+    ],
+    "returncode": 0,
+    "stdout": "a4c0817021300aa7b151b60f80544ed46d4c9ba5\n",
+    "stderr": ""
+  },
+  "git_remote_tracking": {
+    "command": [
+      "git",
+      "rev-parse",
+      "origin/main"
+    ],
+    "returncode": 0,
+    "stdout": "a4c0817021300aa7b151b60f80544ed46d4c9ba5\n",
+    "stderr": ""
+  },
+  "model_cache": {
+    "sha256": "43970ca3c642530edb56d8b52ba221725c1c13923f4f788368c62846a86ba2c4",
+    "models": [
+      {
+        "slug": "gpt-6-astra",
+        "visibility": "list",
+        "supported_in_api": true,
+        "supported_reasoning_levels": [
+          {
+            "effort": "low",
+            "description": "Fast responses with lighter reasoning"
+          },
+          {
+            "effort": "medium",
+            "description": "Balances speed and reasoning depth for everyday tasks"
+          },
+          {
+            "effort": "high",
+            "description": "Greater reasoning depth for complex problems"
+          },
+          {
+            "effort": "xhigh",
+            "description": "Extra high reasoning depth for complex problems"
+          },
+          {
+            "effort": "max",
+            "description": "Maximum reasoning depth for the hardest problems"
+          },
+          {
+            "effort": "ultra",
+            "description": "Maximum reasoning with automatic task delegation"
+          }
+        ]
+      },
+      {
+        "slug": "gpt-reserve",
+        "visibility": "hide",
+        "supported_in_api": true,
+        "supported_reasoning_levels": [
+          {
+            "effort": "low",
+            "description": "Fast responses with lighter reasoning"
+          },
+          {
+            "effort": "medium",
+            "description": "Balances speed and reasoning depth for everyday tasks"
+          },
+          {
+            "effort": "high",
+            "description": "Greater reasoning depth for complex problems"
+          },
+          {
+            "effort": "xhigh",
+            "description": "Extra high reasoning depth for complex problems"
+          },
+          {
+            "effort": "max",
+            "description": "Maximum reasoning depth for the hardest problems"
+          }
+        ]
+      },
+      {
+        "slug": "gpt-5.6-sol",
+        "visibility": "list",
+        "supported_in_api": true,
+        "supported_reasoning_levels": [
+          {
+            "effort": "low",
+            "description": "Fast responses with lighter reasoning"
+          },
+          {
+            "effort": "medium",
+            "description": "Balances speed and reasoning depth for everyday tasks"
+          },
+          {
+            "effort": "high",
+            "description": "Greater reasoning depth for complex problems"
+          },
+          {
+            "effort": "xhigh",
+            "description": "Extra high reasoning depth for complex problems"
+          },
+          {
+            "effort": "max",
+            "description": "Maximum reasoning depth for the hardest problems"
+          },
+          {
+            "effort": "ultra",
+            "description": "Maximum reasoning with automatic task delegation"
+          }
+        ]
+      },
+      {
+        "slug": "gpt-5.6-terra",
+        "visibility": "list",
+        "supported_in_api": true,
+        "supported_reasoning_levels": [
+          {
+            "effort": "low",
+            "description": "Fast responses with lighter reasoning"
+          },
+          {
+            "effort": "medium",
+            "description": "Balances speed and reasoning depth for everyday tasks"
+          },
+          {
+            "effort": "high",
+            "description": "Greater reasoning depth for complex problems"
+          },
+          {
+            "effort": "xhigh",
+            "description": "Extra high reasoning depth for complex problems"
+          },
+          {
+            "effort": "max",
+            "description": "Maximum reasoning depth for the hardest problems"
+          },
+          {
+            "effort": "ultra",
+            "description": "Maximum reasoning with automatic task delegation"
+          }
+        ]
+      },
+      {
+        "slug": "gpt-5.6-luna",
+        "visibility": "list",
+        "supported_in_api": true,
+        "supported_reasoning_levels": [
+          {
+            "effort": "low",
+            "description": "Fast responses with lighter reasoning"
+          },
+          {
+            "effort": "medium",
+            "description": "Balances speed and reasoning depth for everyday tasks"
+          },
+          {
+            "effort": "high",
+            "description": "Greater reasoning depth for complex problems"
+          },
+          {
+            "effort": "xhigh",
+            "description": "Extra high reasoning depth for complex problems"
+          },
+          {
+            "effort": "max",
+            "description": "Maximum reasoning depth for the hardest problems"
+          }
+        ]
+      },
+      {
+        "slug": "gpt-5.5",
+        "visibility": "list",
+        "supported_in_api": true,
+        "supported_reasoning_levels": [
+          {
+            "effort": "low",
+            "description": "Fast responses with lighter reasoning"
+          },
+          {
+            "effort": "medium",
+            "description": "Balances speed and reasoning depth for everyday tasks"
+          },
+          {
+            "effort": "high",
+            "description": "Greater reasoning depth for complex problems"
+          },
+          {
+            "effort": "xhigh",
+            "description": "Extra high reasoning depth for complex problems"
+          }
+        ]
+      },
+      {
+        "slug": "gpt-5.4-mini",
+        "visibility": "list",
+        "supported_in_api": true,
+        "supported_reasoning_levels": [
+          {
+            "effort": "low",
+            "description": "Fast responses with lighter reasoning"
+          },
+          {
+            "effort": "medium",
+            "description": "Balances speed and reasoning depth for everyday tasks"
+          },
+          {
+            "effort": "high",
+            "description": "Greater reasoning depth for complex problems"
+          },
+          {
+            "effort": "xhigh",
+            "description": "Extra high reasoning depth for complex problems"
+          }
+        ]
+      },
+      {
+        "slug": "gpt-5.3-codex-spark",
+        "visibility": "list",
+        "supported_in_api": false,
+        "supported_reasoning_levels": [
+          {
+            "effort": "low",
+            "description": "Fast responses with lighter reasoning"
+          },
+          {
+            "effort": "medium",
+            "description": "Balances speed and reasoning depth for everyday tasks"
+          },
+          {
+            "effort": "high",
+            "description": "Greater reasoning depth for complex problems"
+          },
+          {
+            "effort": "xhigh",
+            "description": "Extra high reasoning depth for complex problems"
+          }
+        ]
+      },
+      {
+        "slug": "codex-auto-review",
+        "visibility": "hide",
+        "supported_in_api": true,
+        "supported_reasoning_levels": [
+          {
+            "effort": "low",
+            "description": "Fast responses with lighter reasoning"
+          },
+          {
+            "effort": "medium",
+            "description": "Balances speed and reasoning depth for everyday tasks"
+          },
+          {
+            "effort": "high",
+            "description": "Greater reasoning depth for complex problems"
+          },
+          {
+            "effort": "xhigh",
+            "description": "Extra high reasoning depth for complex problems"
+          },
+          {
+            "effort": "max",
+            "description": "Maximum reasoning depth for the hardest problems"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "files_reviewed": 203,
+  "credential_value_matches": 0,
+  "credential_pattern_matches": 0,
+  "method": "Exact comparison against current local token/key values plus API-key/JWT/GitHub-token patterns; credential values never logged. Read native context and model outputs; excluded account/reset-credit IDs from usage exports.",
+  "excluded_runtime_files": [
+    ".venv/",
+    "results/subscription_pilot_001_usage/bin/",
+    "results/subscription_pilot_001_usage/invocations.lock"
+  ],
+  "fixed_experiment_files_unchanged": true
+}

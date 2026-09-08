@@ -1,0 +1,52 @@
+{
+  "invocations": [
+    {
+      "invocation": 1,
+      "reserved_utc": "2026-09-08T02:52:17.984144+00:00",
+      "status": "failed",
+      "model": "gpt-5.6-terra",
+      "command": [
+        "/home/roland/.nvm/versions/node/v24.20.0/bin/codex",
+        "--sandbox",
+        "read-only",
+        "--ask-for-approval",
+        "never",
+        "exec",
+        "--ignore-user-config",
+        "-c",
+        "forced_login_method=\"chatgpt\"",
+        "-c",
+        "model_provider=\"openai\"",
+        "-c",
+        "web_search=\"disabled\"",
+        "-c",
+        "model_providers.openai.request_max_retries=0",
+        "-c",
+        "model_providers.openai.stream_max_retries=0",
+        "-c",
+        "model_providers.openai.stream_idle_timeout_ms=60000",
+        "-c",
+        "project_doc_max_bytes=0",
+        "--model",
+        "gpt-5.6-terra",
+        "-c",
+        "service_tier=\"default\"",
+        "-c",
+        "model_reasoning_effort=\"low\"",
+        "--json",
+        "--skip-git-repo-check",
+        "-"
+      ],
+      "cwd": "/tmp/shinka_mutation_s0lnwsdc",
+      "started_utc": "2026-09-08T02:52:17.997415+00:00",
+      "returncode": 1,
+      "completed_codex_turn_events": 0,
+      "internal_model_requests": null,
+      "turn_usage": [],
+      "thread_ids": [],
+      "finished_utc": "2026-09-08T02:52:18.093697+00:00"
+    }
+  ],
+  "limit": 5,
+  "stopped": true
+}

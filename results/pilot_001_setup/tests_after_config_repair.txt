@@ -1,0 +1,31 @@
+test_fitness_is_raw_training_payoff_without_recognition_bonus (test_experiment.EvaluationContractTests.test_fitness_is_raw_training_payoff_without_recognition_bonus) ... ok
+test_geometric_lengths_are_positive_and_equal_across_opponents (test_experiment.EvaluationContractTests.test_geometric_lengths_are_positive_and_equal_across_opponents) ... ok
+test_invalid_evaluation_cli_writes_invalid_record (test_experiment.EvaluationContractTests.test_invalid_evaluation_cli_writes_invalid_record) ... ok
+test_train_and_holdout_replay_use_disjoint_opponents_and_seeds (test_experiment.EvaluationContractTests.test_train_and_holdout_replay_use_disjoint_opponents_and_seeds) ... ok
+test_invalid_match_action_and_turn_count_rejected (test_experiment.MatchRulesTests.test_invalid_match_action_and_turn_count_rejected) ... ok
+test_payoff_matrix_and_simultaneous_histories (test_experiment.MatchRulesTests.test_payoff_matrix_and_simultaneous_histories) ... ok
+test_random_opponent_replay_and_history_reset (test_experiment.MatchRulesTests.test_random_opponent_replay_and_history_reset) ... ok
+test_tft_against_alternator (test_experiment.MatchRulesTests.test_tft_against_alternator) ... ok
+test_tft_against_cooperator_and_itself (test_experiment.MatchRulesTests.test_tft_against_cooperator_and_itself) ... ok
+test_tft_against_defector (test_experiment.MatchRulesTests.test_tft_against_defector) ... ok
+test_win_stay_lose_shift_covers_four_outcomes (test_experiment.MatchRulesTests.test_win_stay_lose_shift_covers_four_outcomes) ... ok
+test_boolean_and_non_action_returns_rejected (test_experiment.PolicyBoundaryTests.test_boolean_and_non_action_returns_rejected) ... ok
+test_import_filesystem_and_introspection_forbidden (test_experiment.PolicyBoundaryTests.test_import_filesystem_and_introspection_forbidden) ... ok
+test_load_policy_and_history_dependent_program (test_experiment.PolicyBoundaryTests.test_load_policy_and_history_dependent_program) ... ok
+test_runtime_errors_become_policy_errors (test_experiment.PolicyBoundaryTests.test_runtime_errors_become_policy_errors) ... ok
+test_source_and_ast_size_limits (test_experiment.PolicyBoundaryTests.test_source_and_ast_size_limits) ... ok
+test_unbounded_or_stateful_language_features_forbidden (test_experiment.PolicyBoundaryTests.test_unbounded_or_stateful_language_features_forbidden) ... ok
+test_canonical_and_alternative_tft_expressions_match (test_experiment.RecognitionTests.test_canonical_and_alternative_tft_expressions_match) ... ok
+test_defection_grim_and_endgame_variants_are_distinguished (test_experiment.RecognitionTests.test_defection_grim_and_endgame_variants_are_distinguished) ... ok
+test_unprobed_history_difference_is_not_claimed_as_proof (test_experiment.RecognitionTests.test_unprobed_history_difference_is_not_claimed_as_proof) ... ok
+test_account_identifiers_not_saved (test_subscription.SubscriptionBoundaryTests.test_account_identifiers_not_saved) ... ok
+test_environment_drops_keys_endpoints_and_parent_context (test_subscription.SubscriptionBoundaryTests.test_environment_drops_keys_endpoints_and_parent_context) ... ok
+test_native_command_keeps_read_only_and_forces_subscription (test_subscription.SubscriptionBoundaryTests.test_native_command_keeps_read_only_and_forces_subscription) ... ok
+test_quota_exhaustion_or_unknown_quota_never_uses_credits (test_subscription.SubscriptionBoundaryTests.test_quota_exhaustion_or_unknown_quota_never_uses_credits) ... ok
+test_sixth_invocation_and_restart_after_failure_are_refused (test_subscription.SubscriptionBoundaryTests.test_sixth_invocation_and_restart_after_failure_are_refused) ... ok
+test_subprocess_timeout_returns_failure (test_subscription.SubscriptionBoundaryTests.test_subprocess_timeout_returns_failure) ... ok
+
+----------------------------------------------------------------------
+Ran 26 tests in 0.377s
+
+OK

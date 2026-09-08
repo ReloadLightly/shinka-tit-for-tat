@@ -1,0 +1,43 @@
+{
+  "active_proposals_at_start": 1,
+  "api_costs": 0.0,
+  "archive_inspiration_ids": [],
+  "artifacts": {
+    "attempt_dir": "/home/roland/actir/shinka-tit-for-tat/results/pilot_001/gen_2/attempts/novelty_1/resample_1/patch_1",
+    "attempt_metadata_path": "/home/roland/actir/shinka-tit-for-tat/results/pilot_001/gen_2/attempts/novelty_1/resample_1/patch_1/metadata.json",
+    "generated_code_path": "/home/roland/actir/shinka-tit-for-tat/results/pilot_001/gen_2/main.py",
+    "generation_dir": "/home/roland/actir/shinka-tit-for-tat/results/pilot_001/gen_2",
+    "results_dir": "/home/roland/actir/shinka-tit-for-tat/results/pilot_001/gen_2/results"
+  },
+  "attempts": {
+    "novelty_attempt": 1,
+    "patch_attempt": 1,
+    "resample_attempt": 1
+  },
+  "code_embedding_available": false,
+  "downstream_eval_submitted": false,
+  "embed_cost": 0.0,
+  "error_attempt": "Max attempts reached without successful patch",
+  "failure_class": "llm_output_invalid",
+  "failure_json_path": "/home/roland/actir/shinka-tit-for-tat/results/pilot_001/gen_2/failure.json",
+  "failure_reason": "LLM response content was None.",
+  "failure_stage": "proposal",
+  "generated_code_available": false,
+  "generation": 2,
+  "language": "python",
+  "last_error_msg": "LLM response content was None.",
+  "max_similarity": null,
+  "node_kind": "failed_proposal",
+  "novelty_checks_performed": 0,
+  "novelty_cost": 0.0,
+  "novelty_explanation": "",
+  "parent_id": "913bd7b3-4624-41da-a554-a55b16cb1154",
+  "patch_description": null,
+  "patch_name": null,
+  "patch_type": "full",
+  "proposal_started_at": 1788835940.147545,
+  "sampling_worker_id": null,
+  "system_prompt_id": null,
+  "timestamp": "2026-09-08T04:52:22.174090",
+  "top_k_inspiration_ids": []
+}

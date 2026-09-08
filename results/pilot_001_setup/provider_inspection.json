@@ -1,0 +1,16 @@
+{
+  "shinka_commit": "9912af12d423504b8d580f4179fd15f5f88b8c50",
+  "inspected_files_sha256": {
+    "examples/sine_approx_headless/run_evo.py": "ea550532f48daf5d465ac78f2e8aa3adf93f61e564bf0ff7bb41a8e5e74ec80c",
+    "examples/sine_approx_headless/README.md": "fa4a027aa2fa7cbcb4f249d5c0c1d49d9717b976fed4adfb47da0dcf12dc1d9f",
+    "shinka/llm/providers/headless.py": "c9a5295c615eb9dd2b6dfc353b1f6ca08dcbfb3536582f39dcad048ee6a8693f",
+    "shinka/llm/llm.py": "92d115a53d1381414c095592e5afaaca3af3b83df65b161970a9f451ec6e84cf",
+    "shinka/llm/kwargs.py": "85ca0a0a914eef38aa1688e5e51c652acf7f81b2d281a8faa9bb51fc40241fc5",
+    "shinka/core/config.py": "c1ef2fab4b9707b5e2d6d280ec4bcf383d0fb99ad4b570501f6333bc411bf39e",
+    "shinka/core/async_runner.py": "153a6e1b9a7bdb673767bd3109de085c2f4e60cae07a0107858c5318f7557fed"
+  },
+  "headless_agents_js_sha256": "d2263ed457068dd8170c4d193333216e855b22991fed3fba8f6b13150eb9c75f",
+  "codex_guard_syntax_check": "Exact command plus --help returned 0; zero model calls",
+  "git_state_before_editing": "main and origin/main at a4c0817; clean checkout; no open PRs or issues",
+  "isolation": "No Docker or bwrap executable available. Native read-only Codex allows filesystem reads and Headless adds --search. Local guard removes --search and disables web search; broad reads remain. Unblinded integration pilot."
+}

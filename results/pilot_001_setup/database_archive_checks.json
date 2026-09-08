@@ -1,0 +1,32 @@
+[
+  {
+    "run": "pilot_001",
+    "logical_tables_sha256_before": "effce2e101c5f91d8cb6027ccb57767aaf0f681982543fdd65407760d9e9a05c",
+    "logical_tables_sha256_after": "effce2e101c5f91d8cb6027ccb57767aaf0f681982543fdd65407760d9e9a05c",
+    "checkpoint": [
+      [
+        0,
+        0,
+        0
+      ]
+    ],
+    "archive_journal_mode": "delete",
+    "integrity_check": "ok",
+    "database_sha256": "9ea0ac1c26236dd9e24b2353e020ab2eb363c6dd8a7e6c633c24c486e3029e94"
+  },
+  {
+    "run": "pilot_001_repaired",
+    "logical_tables_sha256_before": "34cc27ba253bac009e9a791b6fd59eb16bace90a75df6248e7d90d4c9a136273",
+    "logical_tables_sha256_after": "34cc27ba253bac009e9a791b6fd59eb16bace90a75df6248e7d90d4c9a136273",
+    "checkpoint": [
+      [
+        0,
+        0,
+        0
+      ]
+    ],
+    "archive_journal_mode": "delete",
+    "integrity_check": "ok",
+    "database_sha256": "e46f18c4e9c97f144f0aab5d153b726ab4fa2d5b95484684f43881164663bfe8"
+  }
+]

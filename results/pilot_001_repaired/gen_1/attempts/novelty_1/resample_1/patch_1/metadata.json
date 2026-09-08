@@ -1,0 +1,15 @@
+{
+  "generation": 1,
+  "novelty_attempt": 1,
+  "resample_attempt": 1,
+  "patch_attempt": 1,
+  "success": true,
+  "num_applied": 1,
+  "patch_name": "guarded_win_stay",
+  "patch_description": "This uses a guarded win-stay/lose-shift core: it preserves mutually beneficial cooperation and repeats successful exploitation, while switching after poor outcomes. Inspired by history-responsive strategies, it adds a distinct early defector guard: if the opponent has never cooperated after several rounds, it permanently defects instead of falling into an unprofitable alternating pattern against unconditional defectors.",
+  "error_msg": null,
+  "timestamp": "2026-09-08T04:56:54.345853",
+  "llm_cost": 0.033722,
+  "llm_model": "headless/codex@gpt-5.6-terra?effort=low",
+  "headless_prompt_path": "/home/roland/actir/shinka-tit-for-tat/results/pilot_001_repaired/gen_1/attempts/novelty_1/resample_1/patch_1/headless_prompt.md"
+}

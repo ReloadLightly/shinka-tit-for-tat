@@ -1,0 +1,39 @@
+{
+  "external_proposal_invocations": 5,
+  "failed_before_model_turn": 1,
+  "successful_proposal_sessions": 4,
+  "completed_codex_turn_events": 4,
+  "native_model_response_usage_records": 4,
+  "usage_count_semantics": "Five invocations are not five model requests: one config failure, four sessions with one recorded model-response usage record each. In general a Codex invocation can contain multiple model requests.",
+  "codex_tokens": {
+    "input_tokens": 50334,
+    "cached_input_tokens": 15872,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 4783,
+    "reasoning_output_tokens": 3998
+  },
+  "reasoning_tokens_are_subset_of_output": true,
+  "cached_input_tokens_are_subset_of_input": true,
+  "headless_and_shinka_api_list_price_estimate_usd": 0.1294944,
+  "estimate_is_not_billing": true,
+  "credits_before": {
+    "balance": "90.6853810000",
+    "hasCredits": true,
+    "unlimited": false
+  },
+  "credits_after": {
+    "hasCredits": true,
+    "unlimited": false,
+    "balance": "90.6853810000"
+  },
+  "credit_balance_unchanged": true,
+  "subscription_used_percent_before": 1,
+  "subscription_used_percent_after": 2,
+  "quota_percent_not_exclusively_attributable_to_pilot": "Account-wide snapshots include concurrent supervisor usage and integer rounding.",
+  "tool_calls_observed": 0,
+  "blinding": "unblinded integration pilot; no enforced filesystem confidentiality",
+  "generated_candidate_files": 4,
+  "live_evaluated_generated_files": 4,
+  "valid_retained_generated_policies": 3,
+  "invalid_not_archived_generated_files": 1
+}

@@ -1,0 +1,15 @@
+{
+  "generation": 2,
+  "novelty_attempt": 1,
+  "resample_attempt": 1,
+  "patch_attempt": 1,
+  "success": true,
+  "num_applied": 1,
+  "patch_name": "adaptive_probe_tft",
+  "patch_description": "Uses an initial cooperation phase, detects persistently cooperative opponents for exploitation, and otherwise follows a forgiving retaliation pattern based on the latest actions. This separates probing, classification, and response into clear conditional branches.",
+  "error_msg": null,
+  "timestamp": "2026-09-08T04:57:20.720027",
+  "llm_cost": 0.0190872,
+  "llm_model": "headless/codex@gpt-5.6-terra?effort=low",
+  "headless_prompt_path": "/home/roland/actir/shinka-tit-for-tat/results/pilot_001_repaired/gen_2/attempts/novelty_1/resample_1/patch_1/headless_prompt.md"
+}

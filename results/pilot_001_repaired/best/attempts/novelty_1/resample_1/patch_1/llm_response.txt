@@ -1,0 +1,12 @@
+<NAME>
+guarded_win_stay</NAME>
+<DESCRIPTION>
+This uses a guarded win-stay/lose-shift core: it preserves mutually beneficial cooperation and repeats successful exploitation, while switching after poor outcomes. Inspired by history-responsive strategies, it adds a distinct early defector guard: if the opponent has never cooperated after several rounds, it permanently defects instead of falling into an unprofitable alternating pattern against unconditional defectors.
+</DESCRIPTION>
+<CODE>
+```python
+# EVOLVE-BLOCK-START
+def policy(own_history, opponent_history):
+    return 0 if len(opponent_history) == 0 else 1 if len(opponent_history) > 2 and opponent_history.count(0) == 0 else own_history[-1] if opponent_history[-1] == 0 else 1 - own_history[-1]
+# EVOLVE-BLOCK-END
+```

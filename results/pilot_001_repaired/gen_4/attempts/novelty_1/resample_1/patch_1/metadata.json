@@ -1,0 +1,15 @@
+{
+  "generation": 4,
+  "novelty_attempt": 1,
+  "resample_attempt": 1,
+  "patch_attempt": 1,
+  "success": true,
+  "num_applied": 1,
+  "patch_name": "forgiving_tft",
+  "patch_description": "Opens cooperatively, mirrors the opponent to sustain mutual cooperation, and switches to permanent defection after observing three consecutive defections. This preserves high payoff against cooperative strategies while avoiding repeated exploitation by unconditional defectors.",
+  "error_msg": null,
+  "timestamp": "2026-09-08T04:58:39.654768",
+  "llm_cost": 0.0184532,
+  "llm_model": "headless/codex@gpt-5.6-terra?effort=low",
+  "headless_prompt_path": "/home/roland/actir/shinka-tit-for-tat/results/pilot_001_repaired/gen_4/attempts/novelty_1/resample_1/patch_1/headless_prompt.md"
+}

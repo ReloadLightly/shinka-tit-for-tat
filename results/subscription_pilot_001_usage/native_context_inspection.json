@@ -1,0 +1,66 @@
+[
+  {
+    "invocation": 2,
+    "native_model_response_usage_records": 1,
+    "response_ids": [
+      "resp_0e4d996e10a77d36016a9f7962472887d2b6da30533ff71573"
+    ],
+    "tool_calls_observed": 0,
+    "native_context_prohibited_terms": {
+      "HOLDOUT_OPPONENTS": false,
+      "tit-for-tat": false,
+      "tit_for_tat": false,
+      "baseline.json": false,
+      "PROJECT_STATUS.md": false,
+      "shinka-tit-for-tat": false
+    }
+  },
+  {
+    "invocation": 3,
+    "native_model_response_usage_records": 1,
+    "response_ids": [
+      "resp_0ad7c5e1ca58d858016a9f797fe2c487d294a6593f7f34f52d"
+    ],
+    "tool_calls_observed": 0,
+    "native_context_prohibited_terms": {
+      "HOLDOUT_OPPONENTS": false,
+      "tit-for-tat": false,
+      "tit_for_tat": false,
+      "baseline.json": false,
+      "PROJECT_STATUS.md": false,
+      "shinka-tit-for-tat": false
+    }
+  },
+  {
+    "invocation": 4,
+    "native_model_response_usage_records": 1,
+    "response_ids": [
+      "resp_0bf02e2238f871c8016a9f79971e3c87d2a26f3b26cb9fc23c"
+    ],
+    "tool_calls_observed": 0,
+    "native_context_prohibited_terms": {
+      "HOLDOUT_OPPONENTS": false,
+      "tit-for-tat": false,
+      "tit_for_tat": false,
+      "baseline.json": false,
+      "PROJECT_STATUS.md": false,
+      "shinka-tit-for-tat": false
+    }
+  },
+  {
+    "invocation": 5,
+    "native_model_response_usage_records": 1,
+    "response_ids": [
+      "resp_00d909f34402f95b016a9f79d0b85887d2bc4071c8fe42e8d7"
+    ],
+    "tool_calls_observed": 0,
+    "native_context_prohibited_terms": {
+      "HOLDOUT_OPPONENTS": false,
+      "tit-for-tat": false,
+      "tit_for_tat": false,
+      "baseline.json": false,
+      "PROJECT_STATUS.md": false,
+      "shinka-tit-for-tat": false
+    }
+  }
+]

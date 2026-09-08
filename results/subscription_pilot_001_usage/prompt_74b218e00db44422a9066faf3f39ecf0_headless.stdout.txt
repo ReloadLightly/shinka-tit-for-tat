@@ -1,0 +1,16 @@
+<NAME>
+adaptive_probe_tft
+</NAME>
+
+<DESCRIPTION>
+Uses an initial cooperation phase, detects persistently cooperative opponents for exploitation, and otherwise follows a forgiving retaliation pattern based on the latest actions. This separates probing, classification, and response into clear conditional branches.
+</DESCRIPTION>
+
+<CODE>
+```python
+# EVOLVE-BLOCK-START
+def policy(own_history, opponent_history):
+    return 0 if len(opponent_history) < 4 else 1 if opponent_history.count(1) == 0 and len(opponent_history) % 9 == 0 else 0 if opponent_history[-1] == 0 else 0 if own_history[-1] == 1 and opponent_history[-2] == 1 else 1
+# EVOLVE-BLOCK-END
+```
+{"usage":{"agent":"codex","provider":"openai","model":"gpt-5.6-terra","inputTokens":4640,"cacheReadTokens":7936,"cacheWriteTokens":0,"outputTokens":685,"reasoningOutputTokens":516,"totalTokens":13261,"usageStatus":"reported","cost":{"input":0.00928,"cacheRead":0.0015872,"cacheWrite":0,"output":0.00822,"total":0.0190872},"costBasis":"api-list-price-estimate","pricingSource":"models.dev","pricingStatus":"priced"}}

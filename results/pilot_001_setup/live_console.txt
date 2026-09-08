@@ -1,0 +1,342 @@
+2026-09-08 04:52:14 - shinka.core.async_runner - INFO - Pricing catalog:        
+source=cache fetched_at=2026-09-07T21:43:14.738628+00:00 stale=False            
+sha256=184c9310e490052f391d6eb30d5487281636da1cb49b313f9af024b53fd7899f         
+  @@@@@@@@@@@@@@@@@@@@@      ░██████╗██╗░░██╗██╗███╗░░██╗██╗░░██╗░█████╗░
+  @                   @      ██╔════╝██║░░██║██║████╗░██║██║░██╔╝██╔══██╗
+  @          @        @      ╚█████╗░███████║██║██╔██╗██║█████═╝░███████║
+  @    @@   @@  @@    @      ░╚═══██╗██╔══██║██║██║╚████║██╔═██╗░██╔══██║
+  @   @     @    @@   @      ██████╔╝██║░░██║██║██║░╚███║██║░╚██╗██║░░██║
+  @    @@  @    @     @      ╚═════╝░╚═╝░░╚═╝╚═╝╚═╝░░╚══╝╚═╝░░╚═╝╚═╝░░╚═╝
+  @        @          @      @@@@@@@@@@@@@@@
+  @                   @   @@                 @@@@@
+  @@@@@@@@@@@@@@@@@@@@ @@                       @  @@                 █▀▀
+                      @                          @@  @                ██▄
+                    @      @@                      @  @@
+                   @       @         @              @   @             █░█
+                   @                 @               @  @             ▀▄▀
+                     @@@@@          @     @           @  @
+                      @            @          @       @ @@            █▀█
+                   @@    @@     @@       @@   @        @              █▄█
+                  @@        @@         @     @         @
+                 @@       @@   @@       @@@@@          @        @@    █░░
+              @ @@                @                    @              █▄▄
+             @ @@@@@             @@ @@                 @      @@
+            @                  @       @@              @    @@        █░█
+       @@@@@@@@@@@@@@@@@@@@@@             @@@          @@@@@@@  @@    ▀▄▀
+       @     @         @                      @@         @@@  @@
+        @@               @                      @      @   @  @@      █▀▀
+          @@@@@@@@@@@@@@@@@@                   @    @   @   @@        ██▄
+                                               @  @  @   @
+                                               @  @  @@@@
+                                               @  @@
+
+2026-09-08 04:52:14 - shinka.core.async_runner - INFO - 🖥️  System resources    
+detected:                                                                       
+2026-09-08 04:52:14 - shinka.core.async_runner - INFO -    • CPU cores: 8       
+2026-09-08 04:52:14 - shinka.core.async_runner - INFO -    • Memory: 3.7 GB     
+2026-09-08 04:52:14 - shinka.core.async_runner - INFO - 🔧 Concurrency settings:
+2026-09-08 04:52:14 - shinka.core.async_runner - INFO -    • Evaluation jobs: 1 
+2026-09-08 04:52:14 - shinka.core.async_runner - INFO -    • Proposal jobs: 1   
+2026-09-08 04:52:14 - shinka.core.async_runner - INFO -    • DB workers: 1      
+2026-09-08 04:52:14 - shinka.core.async_runner - INFO -    • Total threads: 3   
+2026-09-08 04:52:14 - shinka.core.async_runner - INFO - Configured local numeric
+thread cap per eval process: 8                                                  
+2026-09-08 04:52:14 - shinka.core.async_runner - INFO -                         
+================================================================================
+2026-09-08 04:52:14 - shinka.core.async_runner - INFO - ASYNC EVOLUTION RUN     
+STARTED                                                                         
+2026-09-08 04:52:14 - shinka.core.async_runner - INFO -                         
+================================================================================
+2026-09-08 04:52:14 - shinka.core.async_runner - INFO - Max evaluation jobs: 1  
+2026-09-08 04:52:14 - shinka.core.async_runner - INFO - Max proposal jobs: 1    
+2026-09-08 04:52:14 - shinka.core.async_runner - INFO - Target generations: 6   
+2026-09-08 04:52:14 - shinka.core.async_runner - INFO - Language: python        
+2026-09-08 04:52:14 - shinka.core.async_runner - INFO - Results directory:      
+/home/roland/actir/shinka-tit-for-tat/results/pilot_001                         
+2026-09-08 04:52:14 - shinka.core.async_runner - INFO - Log file:               
+/home/roland/actir/shinka-tit-for-tat/results/pilot_001/evolution_run.log       
+2026-09-08 04:52:14 - shinka.core.async_runner - INFO -                         
+================================================================================
+2026-09-08 04:52:14 - shinka.database.async_dbase - INFO - 🔧 AsyncDB           
+initialized with 1 workers, 1 concurrent DB ops (WAL mode)                      
+2026-09-08 04:52:14 - shinka.core.async_runner - INFO - Copying initial program 
+from /home/roland/actir/shinka-tit-for-tat/initial.py                           
+2026-09-08 04:52:14 - shinka.core.async_runner - INFO - Starting initial program
+evaluation:                                                                     
+/home/roland/actir/shinka-tit-for-tat/results/pilot_001/gen_0/main.py           
+2026-09-08 04:52:14 - shinka.launch.local - INFO - Submitted local process with 
+PID: 1225316                                                                    
+2026-09-08 04:52:14 - shinka.launch.local - INFO - Launched local command:      
+/home/roland/actir/shinka-tit-for-tat/.venv/bin/python                          
+/home/roland/actir/shinka-tit-for-tat/evaluate.py --program_path                
+/home/roland/actir/shinka-tit-for-tat/results/pilot_001/gen_0/main.py           
+--results_dir                                                                   
+/home/roland/actir/shinka-tit-for-tat/results/pilot_001/gen_0/results           
+2026-09-08 04:52:14 - shinka.core.async_runner - INFO - Initial program         
+evaluation completed in 0.51s                                                   
+2026-09-08 04:52:14 - shinka.core.async_runner - INFO - Initial program         
+evaluated - correct: True, combined_score: 2.3310772701635645                   
+2026-09-08 04:52:15 - shinka.database.dbase - WARNING - Program                 
+913bd7b3-4624-41da-a554-a55b16cb1154 embedding is not a list, defaulting to     
+empty list.                                                                     
+2026-09-08 04:52:15 - shinka.database.dbase - INFO - Program                    
+913bd7b3-4624-41da-a554-a55b16cb1154 added to DB - score: 2.3310772701635645.   
+2026-09-08 04:52:15 - shinka.database.dbase - INFO - New best program:          
+913bd7b3-4624-41da-a554-a55b16cb1154 (gen: 0, score: 2.3311, initialized island:
+0).                                                                             
+                                 Program Evaluation Summary - Gen 0 | Total Cost
+╭─────────────┬─────────┬───────────────┬─────────┬─────────────────────────────
+│  GenID: 0   │ Island  │    Status     │   Score │ Patch Name                  
+├─────────────┼─────────┼───────────────┼─────────┼─────────────────────────────
+│ Best: 2.331 │   I-0   │   ✓ Correct   │   2.331 │ initial_program             
+╰─────────────┴─────────┴───────────────┴─────────┴─────────────────────────────
+2026-09-08 04:52:15 - shinka.database.dbase - INFO - Creating copies of initial 
+program 913bd7b3-4624-41da-a554-a55b16cb1154 for all islands                    
+2026-09-08 04:52:15 - shinka.core.async_runner - INFO - Setup initial program:  
+913bd7b3-4624-41da-a554-a55b16cb1154                                            
+2026-09-08 04:52:15 - shinka.core.async_runner - INFO - Generation 0 completed  
+during setup                                                                    
+2026-09-08 04:52:15 - shinka.core.async_runner - INFO - Verifying database is   
+ready for sampling...                                                           
+2026-09-08 04:52:15 - shinka.core.async_runner - INFO - Database ready - 1      
+program(s) available for sampling                                               
+2026-09-08 04:52:15 - shinka.core.async_runner - INFO - Database verification   
+completed - ready for proposal generation                                       
+2026-09-08 04:52:15 - shinka.core.async_runner - INFO - 🔄 Job monitor task     
+started                                                                         
+2026-09-08 04:52:15 - shinka.core.async_runner - INFO - Proposal target=1       
+(sampling_ewma=0.00s, evaluation_ewma=0.00s, timing_samples=0,                  
+active_proposals=0, running_jobs=0)                                             
+2026-09-08 04:52:15 - shinka.core.async_runner - INFO - Starting 1 new          
+proposals. Pipeline: 0/1 (running_jobs=0, active_proposals=0/1), Remaining      
+completed work: 5 (completed=1/6, next_generation=1)                            
+2026-09-08 04:52:15 - shinka.core.async_runner - INFO - Started proposal task   
+for generation 1 (cost: $0.0000)                                                
+2026-09-08 04:52:15 - shinka.core.async_runner - INFO - Generating proposal for 
+generation 1                                                                    
+2026-09-08 04:52:15 - shinka.database.parents - INFO - Island 0 =>              
+Probabilities: [1.0]                                                            
+2026-09-08 04:52:15 - shinka.database.parents - INFO - Island 0 => Scores:      
+[2.3310772701635645]                                                            
+2026-09-08 04:52:15 - shinka.database.parents - INFO - Sampled parent           
+913bd7b3-4624-41da-a554-a55b16cb1154 (Gen: 0, Score: 2.3311, Children: 0,       
+Island: 0)                                                                      
+              Parent & Context Sampling Summary - Gen 1 | Total Cost: $0.00 (Nov
+┏━━━━━━━━━━━━━┳━━━━━━┳━━━━━━━━━┳━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+┃ Role        ┃ Gen  ┃ Island  ┃  ✓/✗  ┃    Score ┃ Patch Name                  
+┡━━━━━━━━━━━━━╇━━━━━━╇━━━━━━━━━╇━━━━━━━╇━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+│ PARENT      │  0   │   I-0   │   ✓   │    2.331 │ initial_program             
+└─────────────┴──────┴─────────┴───────┴──────────┴─────────────────────────────
+2026-09-08 04:52:15 - shinka.core.async_runner - INFO - Generated patch type:   
+full                                                                            
+2026-09-08 04:52:15 - shinka.llm.llm - INFO - ==> SAMPLING:                     
+  headless/codex@gpt-5.6-terra?effort=low   1.0000                              
+2026-09-08 04:52:15 - shinka.llm.llm - INFO - ==> QUERYING:                     
+['headless/codex@gpt-5.6-terra?effort=low', '/tmp/shinka_mutation_s0lnwsdc']    
+2026-09-08 04:52:18 - shinka.llm.llm - INFO - 1/1 Error in query: Headless query
+failed: Error loading config.toml: model_providers contains reserved built-in   
+provider IDs: `openai`. Built-in providers cannot be overridden. Rename your    
+custom provider (for example, `openai-custom`).                                 
+in `model_providers`                                                            
+2026-09-08 04:52:18 - shinka.core.async_runner - WARNING - Failed to generate   
+proposal for generation 1 after all attempts                                    
+2026-09-08 04:52:20 - shinka.core.async_runner - INFO - Starting 1 new          
+proposals. Pipeline: 0/1 (running_jobs=0, active_proposals=0/1), Remaining      
+completed work: 5 (completed=1/6, next_generation=2)                            
+2026-09-08 04:52:20 - shinka.core.async_runner - INFO - Started proposal task   
+for generation 2 (cost: $0.0000)                                                
+2026-09-08 04:52:20 - shinka.core.async_runner - INFO - Generating proposal for 
+generation 2                                                                    
+2026-09-08 04:52:20 - shinka.database.parents - INFO - Island 0 =>              
+Probabilities: [1.0]                                                            
+2026-09-08 04:52:20 - shinka.database.parents - INFO - Island 0 => Scores:      
+[2.3310772701635645]                                                            
+2026-09-08 04:52:20 - shinka.database.parents - INFO - Sampled parent           
+913bd7b3-4624-41da-a554-a55b16cb1154 (Gen: 0, Score: 2.3311, Children: 0,       
+Island: 0)                                                                      
+              Parent & Context Sampling Summary - Gen 2 | Total Cost: $0.00 (Nov
+┏━━━━━━━━━━━━━┳━━━━━━┳━━━━━━━━━┳━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+┃ Role        ┃ Gen  ┃ Island  ┃  ✓/✗  ┃    Score ┃ Patch Name                  
+┡━━━━━━━━━━━━━╇━━━━━━╇━━━━━━━━━╇━━━━━━━╇━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+│ PARENT      │  0   │   I-0   │   ✓   │    2.331 │ initial_program             
+└─────────────┴──────┴─────────┴───────┴──────────┴─────────────────────────────
+2026-09-08 04:52:20 - shinka.core.async_runner - INFO - Generated patch type:   
+full                                                                            
+2026-09-08 04:52:20 - shinka.llm.llm - INFO - ==> SAMPLING:                     
+  headless/codex@gpt-5.6-terra?effort=low   1.0000                              
+2026-09-08 04:52:20 - shinka.llm.llm - INFO - ==> QUERYING:                     
+['headless/codex@gpt-5.6-terra?effort=low', '/tmp/shinka_mutation_s0lnwsdc']    
+2026-09-08 04:52:22 - shinka.llm.llm - INFO - 1/1 Error in query: Headless query
+failed: Pilot guard: Subscription pilot stopped after backend failure           
+2026-09-08 04:52:22 - shinka.core.async_runner - WARNING - Failed to generate   
+proposal for generation 2 after all attempts                                    
+2026-09-08 04:52:25 - shinka.core.async_runner - INFO - Starting 1 new          
+proposals. Pipeline: 0/1 (running_jobs=0, active_proposals=0/1), Remaining      
+completed work: 5 (completed=1/6, next_generation=3)                            
+2026-09-08 04:52:25 - shinka.core.async_runner - INFO - Started proposal task   
+for generation 3 (cost: $0.0000)                                                
+2026-09-08 04:52:25 - shinka.core.async_runner - INFO - Generating proposal for 
+generation 3                                                                    
+2026-09-08 04:52:25 - shinka.database.parents - INFO - Island 0 =>              
+Probabilities: [1.0]                                                            
+2026-09-08 04:52:25 - shinka.database.parents - INFO - Island 0 => Scores:      
+[2.3310772701635645]                                                            
+2026-09-08 04:52:25 - shinka.database.parents - INFO - Sampled parent           
+913bd7b3-4624-41da-a554-a55b16cb1154 (Gen: 0, Score: 2.3311, Children: 0,       
+Island: 0)                                                                      
+              Parent & Context Sampling Summary - Gen 3 | Total Cost: $0.00 (Nov
+┏━━━━━━━━━━━━━┳━━━━━━┳━━━━━━━━━┳━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+┃ Role        ┃ Gen  ┃ Island  ┃  ✓/✗  ┃    Score ┃ Patch Name                  
+┡━━━━━━━━━━━━━╇━━━━━━╇━━━━━━━━━╇━━━━━━━╇━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+│ PARENT      │  0   │   I-0   │   ✓   │    2.331 │ initial_program             
+└─────────────┴──────┴─────────┴───────┴──────────┴─────────────────────────────
+2026-09-08 04:52:25 - shinka.core.async_runner - INFO - Generated patch type:   
+full                                                                            
+2026-09-08 04:52:25 - shinka.llm.llm - INFO - ==> SAMPLING:                     
+  headless/codex@gpt-5.6-terra?effort=low   1.0000                              
+2026-09-08 04:52:25 - shinka.llm.llm - INFO - ==> QUERYING:                     
+['headless/codex@gpt-5.6-terra?effort=low', '/tmp/shinka_mutation_s0lnwsdc']    
+2026-09-08 04:52:31 - shinka.llm.llm - INFO - 1/1 Error in query: Headless query
+failed: Pilot guard: Subscription pilot stopped after backend failure           
+2026-09-08 04:52:31 - shinka.core.async_runner - WARNING - Failed to generate   
+proposal for generation 3 after all attempts                                    
+2026-09-08 04:52:35 - shinka.core.async_runner - INFO - Starting 1 new          
+proposals. Pipeline: 0/1 (running_jobs=0, active_proposals=0/1), Remaining      
+completed work: 5 (completed=1/6, next_generation=4)                            
+2026-09-08 04:52:35 - shinka.core.async_runner - INFO - Started proposal task   
+for generation 4 (cost: $0.0000)                                                
+2026-09-08 04:52:35 - shinka.core.async_runner - INFO - Generating proposal for 
+generation 4                                                                    
+2026-09-08 04:52:35 - shinka.database.parents - INFO - Island 0 =>              
+Probabilities: [1.0]                                                            
+2026-09-08 04:52:35 - shinka.database.parents - INFO - Island 0 => Scores:      
+[2.3310772701635645]                                                            
+2026-09-08 04:52:35 - shinka.database.parents - INFO - Sampled parent           
+913bd7b3-4624-41da-a554-a55b16cb1154 (Gen: 0, Score: 2.3311, Children: 0,       
+Island: 0)                                                                      
+              Parent & Context Sampling Summary - Gen 4 | Total Cost: $0.00 (Nov
+┏━━━━━━━━━━━━━┳━━━━━━┳━━━━━━━━━┳━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+┃ Role        ┃ Gen  ┃ Island  ┃  ✓/✗  ┃    Score ┃ Patch Name                  
+┡━━━━━━━━━━━━━╇━━━━━━╇━━━━━━━━━╇━━━━━━━╇━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+│ PARENT      │  0   │   I-0   │   ✓   │    2.331 │ initial_program             
+└─────────────┴──────┴─────────┴───────┴──────────┴─────────────────────────────
+2026-09-08 04:52:35 - shinka.core.async_runner - INFO - Generated patch type:   
+full                                                                            
+2026-09-08 04:52:35 - shinka.llm.llm - INFO - ==> SAMPLING:                     
+  headless/codex@gpt-5.6-terra?effort=low   1.0000                              
+2026-09-08 04:52:35 - shinka.llm.llm - INFO - ==> QUERYING:                     
+['headless/codex@gpt-5.6-terra?effort=low', '/tmp/shinka_mutation_s0lnwsdc']    
+2026-09-08 04:52:37 - shinka.llm.llm - INFO - 1/1 Error in query: Headless query
+failed: Pilot guard: Subscription pilot stopped after backend failure           
+2026-09-08 04:52:37 - shinka.core.async_runner - WARNING - Failed to generate   
+proposal for generation 4 after all attempts                                    
+2026-09-08 04:52:40 - shinka.core.async_runner - INFO - Starting 1 new          
+proposals. Pipeline: 0/1 (running_jobs=0, active_proposals=0/1), Remaining      
+completed work: 5 (completed=1/6, next_generation=5)                            
+2026-09-08 04:52:40 - shinka.core.async_runner - INFO - Started proposal task   
+for generation 5 (cost: $0.0000)                                                
+2026-09-08 04:52:40 - shinka.core.async_runner - INFO - Generating proposal for 
+generation 5                                                                    
+2026-09-08 04:52:40 - shinka.database.parents - INFO - Island 0 =>              
+Probabilities: [1.0]                                                            
+2026-09-08 04:52:40 - shinka.database.parents - INFO - Island 0 => Scores:      
+[2.3310772701635645]                                                            
+2026-09-08 04:52:40 - shinka.database.parents - INFO - Sampled parent           
+913bd7b3-4624-41da-a554-a55b16cb1154 (Gen: 0, Score: 2.3311, Children: 0,       
+Island: 0)                                                                      
+              Parent & Context Sampling Summary - Gen 5 | Total Cost: $0.00 (Nov
+┏━━━━━━━━━━━━━┳━━━━━━┳━━━━━━━━━┳━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+┃ Role        ┃ Gen  ┃ Island  ┃  ✓/✗  ┃    Score ┃ Patch Name                  
+┡━━━━━━━━━━━━━╇━━━━━━╇━━━━━━━━━╇━━━━━━━╇━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+│ PARENT      │  0   │   I-0   │   ✓   │    2.331 │ initial_program             
+└─────────────┴──────┴─────────┴───────┴──────────┴─────────────────────────────
+2026-09-08 04:52:40 - shinka.core.async_runner - INFO - Generated patch type:   
+full                                                                            
+2026-09-08 04:52:40 - shinka.llm.llm - INFO - ==> SAMPLING:                     
+  headless/codex@gpt-5.6-terra?effort=low   1.0000                              
+2026-09-08 04:52:40 - shinka.llm.llm - INFO - ==> QUERYING:                     
+['headless/codex@gpt-5.6-terra?effort=low', '/tmp/shinka_mutation_s0lnwsdc']    
+2026-09-08 04:52:44 - shinka.llm.llm - INFO - 1/1 Error in query: Headless query
+failed: Pilot guard: Subscription pilot stopped after backend failure           
+2026-09-08 04:52:44 - shinka.core.async_runner - WARNING - Failed to generate   
+proposal for generation 5 after all attempts                                    
+2026-09-08 04:52:45 - shinka.core.async_runner - WARNING - Generation budget    
+exhausted before reaching target completed generations: completed=1, target=6,  
+next_generation=6, missing_generations=[1, 2, 3, 4, 5]. Stopping without        
+oversampling additional generations.                                            
+2026-09-08 04:52:45 - shinka.core.async_runner - INFO - 🔄 Performing final     
+embedding recomputation and meta summary...                                     
+2026-09-08 04:52:45 - shinka.core.async_runner - INFO - Job monitor task exited 
+2026-09-08 04:52:45 - shinka.core.async_runner - INFO - 🏁 All final operations 
+completed, proceeding to cleanup...                                             
+2026-09-08 04:52:45 - shinka.database.async_dbase - INFO - 🔧 Closing async     
+database with monitoring...                                                     
+2026-09-08 04:52:45 - shinka.database.async_dbase - INFO - Async database closed
+2026-09-08 04:52:45 - shinka.core.async_runner - INFO -                         
+================================================================================
+2026-09-08 04:52:45 - shinka.core.async_runner - INFO - ASYNC EVOLUTION         
+COMPLETED                                                                       
+2026-09-08 04:52:45 - shinka.core.async_runner - INFO -                         
+================================================================================
+2026-09-08 04:52:45 - shinka.core.async_runner - INFO - Target generations: 6   
+2026-09-08 04:52:45 - shinka.core.async_runner - INFO - Stored programs: 1      
+2026-09-08 04:52:45 - shinka.core.async_runner - INFO - Generations without     
+program (proposal generation exhausted retries): 5                              
+2026-09-08 04:52:45 - shinka.core.async_runner - INFO - Generation IDs without  
+program after proposal retries: [1, 2, 3, 4, 5]                                 
+2026-09-08 04:52:45 - shinka.core.async_runner - INFO - Total proposals         
+generated: 5                                                                    
+2026-09-08 04:52:45 - shinka.core.async_runner - INFO - Total API cost: $0.0000 
+2026-09-08 04:52:45 - shinka.core.async_runner - INFO - Total runtime: 31.37    
+seconds                                                                         
+2026-09-08 04:52:45 - shinka.core.async_runner - INFO - Average time per        
+proposal: 6.27 seconds                                                          
+2026-09-08 04:52:45 - shinka.core.async_runner - INFO -                         
+----------------------------------------                                        
+2026-09-08 04:52:45 - shinka.core.async_runner - INFO - FINAL OPERATIONS STATUS:
+2026-09-08 04:52:45 - shinka.core.async_runner - INFO - PCA/Embedding           
+recomputation: SKIPPED (no embedding client)                                    
+2026-09-08 04:52:45 - shinka.core.async_runner - INFO - Meta summary generation:
+SKIPPED (no meta summarizer)                                                    
+2026-09-08 04:52:45 - shinka.core.async_runner - INFO -                         
+----------------------------------------                                        
+        Program Database Summary        
+╭──────────────────────┬───────────────╮
+│ Metric               │ Value         │
+├──────────────────────┼───────────────┤
+│ Overall Best Score   │ 2.33          │
+│ Total Programs       │ 1 / 6         │
+│ Correct Programs     │ 1 / 1 (100%)  │
+│ Archived Programs    │ 1 / 16 (6%)   │
+│ Island Populations   │ I0: 1         │
+│ Migration Policy     │ 10G, 0%(E)    │
+╰──────────────────────┴───────────────╯
+              Best Program              
+╭────────────────┬─────────────────────╮
+│ Attribute      │ Value               │
+├────────────────┼─────────────────────┤
+│ ID             │ 913bd7b3...         │
+│ Generation     │ 0                   │
+│ Complexity     │ 0.08                │
+│ Embedding[0]   │ N/A                 │
+│ Metric: Score  │ 2.33                │
+│ Timestamp      │ 2026-09-08 04:52:14 │
+╰────────────────┴─────────────────────╯
+          Cost & Stats Summary          
+╭───────────────────────┬──────────────╮
+│ Metric                │ Value        │
+├───────────────────────┼──────────────┤
+│ Total Compute         │ 0h 0m 0s     │
+╰───────────────────────┴──────────────╯
+                                            Top 10 Best Performing Programs     
+╭──────┬──────┬────┬────────┬──────────┬────────────────────────────────┬───────
+│ Rank │ Gen  │ ✓… │  Score │ Complex… │ Patch Name                     │ Type  
+├──────┼──────┼────┼────────┼──────────┼────────────────────────────────┼───────
+│  #1  │  0   │ ✓  │  2.331 │      0.1 │ initial_program                │ init  
+│      │      │    │        │          │                                │       
+╰──────┴──────┴────┴────────┴──────────┴────────────────────────────────┴───────
+{
+  "status": "stopped_after_backend_failure",
+  "results_dir": "/home/roland/actir/shinka-tit-for-tat/results/pilot_001",
+  "external_proposal_invocations": 1
+}

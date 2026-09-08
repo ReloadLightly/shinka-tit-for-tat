@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a07ef3-d006-7c90-aafe-37e401037a16"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"<NAME>\nforgiving_tft\n</NAME>\n\n<DESCRIPTION>\nOpens cooperatively, mirrors the opponent to sustain mutual cooperation, and switches to permanent defection after observing three consecutive defections. This preserves high payoff against cooperative strategies while avoiding repeated exploitation by unconditional defectors.\n</DESCRIPTION>\n\n<CODE>\n```python\n# EVOLVE-BLOCK-START\ndef policy(own_history, opponent_history):\n    return 0 if len(opponent_history) == 0 else 1 if len(opponent_history) > 2 and opponent_history[-3:] == (1, 1, 1) else opponent_history[-1]\n# EVOLVE-BLOCK-END\n```"}}
+{"type":"turn.completed","usage":{"input_tokens":12541,"cached_input_tokens":7936,"cache_write_input_tokens":0,"output_tokens":638,"reasoning_output_tokens":495}}
